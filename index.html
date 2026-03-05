@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min-Hsiu Hsieh (謝明修) - Director, Hon Hai Quantum Computing Research Center</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --bg-color: #fff;
+            --light-gray: #f8f9fa;
+            --border-color: #e9ecef;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background: var(--bg-color);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        header .chinese-name {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        header .title {
+            font-size: 1.1rem;
+            opacity: 0.85;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--light-gray);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Sections */
+        section {
+            padding: 50px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin: 25px 0 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* News List */
+        .news-list {
+            list-style: none;
+        }
+
+        .news-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .news-list li:last-child {
+            border-bottom: none;
+        }
+
+        .news-date {
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-right: 10px;
+        }
+
+        .news-list a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .news-list a:hover {
+            text-decoration: underline;
+        }
+
+        /* Committee List */
+        .committee-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .committee-list li {
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .committee-list li:before {
+            content: "•";
+            color: var(--accent-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Contact */
+        .contact-info {
+            background: var(--light-gray);
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            header .chinese-name {
+                font-size: 1.2rem;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Min-Hsiu Hsieh</h1>
+            <div class="chinese-name">謝明修</div>
+            <div class="title">Director, Hon Hai (Foxconn) Quantum Computing Research Center</div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#news">Latest News</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#hiring">Hiring</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I have been the director of the Hon Hai Quantum Computing Research Center in Taiwan since January 2021. 
+                Prior to this role, I was an Associate Professor at the University of Technology Sydney in Australia 
+                and a member of the UTS Centre for Quantum Software and Information from 2014 to 2020.
+            </p>
+            <p>
+                From 2010 to 2012, I was a postdoctoral research fellow at the University of Cambridge in the UK, 
+                where I was affiliated with the Centre for Quantum Information and Foundations. Before that, I worked 
+                as a research scientist with the ERATO-SORST Quantum Computation and Information Project in Japan, 
+                which was funded by the Japan Science and Technology Agency. During this time, I was also affiliated 
+                with the Department of Computer Science at the University of Tokyo.
+            </p>
+            <p>
+                From 2014 to 2018, I held an Australian Research Council Future Fellowship.
+            </p>
+        </section>
+
+        <section id="news">
+            <h2>Latest News</h2>
+            <ul class="news-list">
+                <li>
+                    <span class="news-date">24/02/2026:</span>
+                    "Deep variational quantum circuits with barren-plateau-free architectures" accepted for publication in the Artificial Intelligence Science and Engineering.
+                </li>
+                <li>
+                    <span class="news-date">21/02/2026:</span>
+                    <a href="https://arxiv.org/abs/2510.08313" target="_blank" rel="noopener">arXiv:2510.08313</a> accepted in QCTiP 2026.
+                </li>
+                <li>
+                    <span class="news-date">02/02/2026:</span>
+                    New paper: "AQER: a scalable and efficient data loader for digital quantum computers" released. 
+                    [<a href="https://arxiv.org/abs/2602.02165" target="_blank" rel="noopener">arXiv:2602.02165</a>]
+                </li>
+                <li>
+                    <span class="news-date">24-30/01/2026:</span>
+                    Attend QIP 2026 @ Riga, Latvia.
+                </li>
+                <li>
+                    <span class="news-date">30/01/2026:</span>
+                    QIP accepted talk: Universal classical-quantum channel resolvability and private channel coding.
+                </li>
+                <li>
+                    <span class="news-date">30/01/2026:</span>
+                    <a href="https://arxiv.org/abs/2407.00450" target="_blank" rel="noopener">arXiv:2407.00450</a> accepted in npj Quantum Information.
+                </li>
+                <li>
+                    <span class="news-date">29/01/2026:</span>
+                    QIP accepted talk: Single-Shot, Universal Protocols via Code Switching.
+                </li>
+                <li>
+                    <span class="news-date">27/01/2026:</span>
+                    <a href="https://arxiv.org/abs/2501.04310" target="_blank" rel="noopener">arXiv:2501.04310</a> accepted in IEEE Transactions on Information Theory.
+                </li>
+                <li>
+                    <span class="news-date">26/01/2026:</span>
+                    "AQER: A Scalable and Efficient Data Loader for Digital Quantum Computers" accepted in ICLR 2026.
+                </li>
+                <li>
+                    <span class="news-date">24/01/2026:</span>
+                    Merge of arXiv:2408.01769 & arXiv:2309.16104: "Almost Optimal Geometrically Local Quantum LDPC Codes in any Dimension" accepted in Nature Communications.
+                </li>
+                <li>
+                    <span class="news-date">22/01/2026:</span>
+                    <a href="https://arxiv.org/abs/2507.04253" target="_blank" rel="noopener">arXiv:2507.04253</a>: "Optimizing Quantum Chemistry Simulations with a Hybrid Quantization Scheme" accepted in Communications Physics.
+                </li>
+                <li>
+                    <span class="news-date">18/01/2026:</span>
+                    "Pre-training Tensor-Train Networks Facilitates Machine Learning with Variational Quantum Circuits" accepted in IEEE ICASSP 2026.
+                </li>
+                <li>
+                    <span class="news-date">10/01/2026:</span>
+                    New paper: "Continual Quantum Architecture Search with Tensor-Train Encoding: Theory and Applications to Signal Processing" released. 
+                    [<a href="https://arxiv.org/abs/2601.06392" target="_blank" rel="noopener">arXiv:2601.06392</a>]
+                </li>
+                <li>
+                    <span class="news-date">05-09/01/2026:</span>
+                    Visit Prof Mio Murao @ the University of Tokyo, Japan.
+                </li>
+                <li>
+                    <span class="news-date">05/01/2026:</span>
+                    New paper: "Random-Matrix-Induced Simplicity Bias in Over-parameterized Variational Quantum Circuits" released 
+                    [<a href="https://arxiv.org/abs/2601.01877" target="_blank" rel="noopener">arXiv:2601.01877</a>].
+                </li>
+            </ul>
+        </section>
+
+        <section id="service">
+            <h2>Professional Service</h2>
+            <p>I serve on the steering committee of:</p>
+            <ul class="committee-list">
+                <li>Asian Quantum Information Science Conference (AQIS), 2024 – present</li>
+                <li>Conference on the Theory of Quantum Computation, Communication and Cryptography (TQC), 2021–2025</li>
+                <li>Conference series on Quantum Information Processing (QIP), 2021–2025</li>
+                <li>Beyond IID in Information Theory (BIID), 2020 – 2022</li>
+            </ul>
+            <p style="margin-top: 15px;">
+                I was the program chair of the TQC 2021 and BIID 2021.
+            </p>
+        </section>
+
+        <section id="research">
+            <h2>Research Interests</h2>
+            <p>
+                My research interests include general topics in quantum information and computation.
+            </p>
+        </section>
+
+        <section id="hiring">
+            <h2>Hiring</h2>
+            <p>
+                The Hon Hai (Foxconn) Quantum Computing Research Center constantly has all levels of positions available. 
+                Applicants should send their CV (including contact details of possible references) to Dr Min-Hsiu Hsieh.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong> min-hsiu.hsieh@foxconn.com</p>
+                <p><strong>Address:</strong> No.32, Jihu Rd., Neihu Dist., Taipei City 114699, Taiwan</p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/minhsiuh" target="_blank" rel="noopener">@minhsiuh</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Min-Hsiu Hsieh. All rights reserved.</p>
+            <p>Powered by <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></p>
+        </div>
+    </footer>
+</body>
+</html>
