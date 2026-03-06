@@ -358,20 +358,20 @@
             
             <div class="stats-box">
                 <div class="stat-item">
-                    <div class="stat-number">108</div>
+                    <div class="stat-number" id="journal-count">--</div>
                     <div class="stat-label">Journal Papers</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">40</div>
+                    <div class="stat-number" id="conference-count">--</div>
                     <div class="stat-label">Conference Papers</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">8,094</div>
-                    <div class="stat-label">Citations</div>
+                    <div class="stat-number" id="arxiv-count">--</div>
+                    <div class="stat-label">arXiv Preprints</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">42</div>
-                    <div class="stat-label">h-index</div>
+                    <div class="stat-number" id="total-count">--</div>
+                    <div class="stat-label">Total Publications</div>
                 </div>
             </div>
 
@@ -672,5 +672,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Auto-count publications from each section
+        document.addEventListener('DOMContentLoaded', function() {
+            // Helper function to find h3 by text content
+            function findSectionByTitle(title) {
+                const h3s = document.querySelectorAll('h3');
+                for (let h3 of h3s) {
+                    if (h3.textContent.includes(title)) {
+                        return h3.nextElementSibling;
+                    }
+                }
+                return null;
+            }
+            
+            // Count publications from each section
+            const arxivList = findSectionByTitle('arXiv Preprints');
+            const journalList = findSectionByTitle('Journal Articles');
+            const confList = findSectionByTitle('Conference Proceedings');
+            
+            const arxivCount = arxivList ? arxivList.querySelectorAll('li').length : 0;
+            const journalCount = journalList ? journalList.querySelectorAll('li').length : 0;
+            const confCount = confList ? confList.querySelectorAll('li').length : 0;
+            
+            // Update the stats
+            document.getElementById('arxiv-count').textContent = arxivCount;
+            document.getElementById('journal-count').textContent = journalCount;
+            document.getElementById('conference-count').textContent = confCount;
+            document.getElementById('total-count').textContent = arxivCount + journalCount + confCount;
+        });
+    </script>
 </body>
 </html>
