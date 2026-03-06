@@ -92,34 +92,64 @@
             color: var(--accent-color);
         }
 
-        /* Sub-navigation */
-        .sub-nav {
-            background: var(--light-gray);
-            border-bottom: 1px solid var(--border-color);
-            position: sticky;
-            top: 50px;
-            z-index: 99;
-        }
-
-        .sub-nav ul {
-            list-style: none;
+        /* Main content layout */
+        .publications-wrapper {
             display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 10px 0;
-            flex-wrap: wrap;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
 
-        .sub-nav a {
+        /* Side navigation */
+        .side-nav {
+            flex: 0 0 250px;
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .side-nav h3 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+        }
+
+        .side-nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .side-nav li {
+            margin-bottom: 12px;
+        }
+
+        .side-nav a {
             text-decoration: none;
             color: var(--primary-color);
-            font-size: 0.9rem;
+            font-size: 1rem;
             font-weight: 500;
-            transition: color 0.2s;
+            transition: all 0.2s;
+            display: block;
+            padding: 8px 12px;
+            border-radius: 5px;
         }
 
-        .sub-nav a:hover {
+        .side-nav a:hover {
             color: var(--accent-color);
+            background: var(--light-gray);
+        }
+
+        .side-nav a.active {
+            color: var(--accent-color);
+            background: var(--light-gray);
+        }
+
+        /* Main content */
+        .publications-main {
+            flex: 1;
         }
 
         /* Sections */
@@ -336,7 +366,7 @@
         }
 
         /* Responsive */
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
             header h1 {
                 font-size: 1.8rem;
             }
@@ -358,12 +388,29 @@
                 grid-template-columns: repeat(2, 1fr);
             }
 
-            .sub-nav ul {
-                gap: 10px;
+            .publications-wrapper {
+                flex-direction: column;
             }
 
-            .sub-nav a {
-                font-size: 0.85rem;
+            .side-nav {
+                flex: none;
+                position: static;
+                width: 100%;
+            }
+
+            .side-nav h3 {
+                text-align: center;
+            }
+
+            .side-nav ul {
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+
+            .side-nav li {
+                margin: 0;
             }
         }
     </style>
@@ -388,8 +435,9 @@
         </div>
     </nav>
 
-    <div class="sub-nav">
-        <div class="container">
+    <div class="publications-wrapper">
+        <aside class="side-nav">
+            <h3>Contents</h3>
             <ul>
                 <li><a href="#arxiv">arXiv Preprints</a></li>
                 <li><a href="#books">Books/Chapters</a></li>
@@ -397,13 +445,12 @@
                 <li><a href="#conferences">Conference Proceedings</a></li>
                 <li><a href="#talks">Conference Talks</a></li>
             </ul>
-        </div>
-    </div>
+        </aside>
 
-    <main class="container">
-        <a href="index.html" class="back-btn">← Back to Home</a>
+        <main class="publications-main">
+            <a href="index.html" class="back-btn">← Back to Home</a>
 
-        <section id="publications">
+            <section id="publications">
             <h2>Publications</h2>
             
             <div class="stats-box">
@@ -680,7 +727,9 @@
                 <li>The 6th Asian Conference on Quantum Information Science (AQIS 2006), University of Science and Technology of China, Beijing, China, 01–04/09/2006.</li>
             </ul>
         </section>
-    </main>
+            </section>
+        </main>
+    </div>
 
     <footer>
         <div class="footer-content">
