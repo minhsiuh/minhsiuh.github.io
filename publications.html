@@ -92,6 +92,36 @@
             color: var(--accent-color);
         }
 
+        /* Sub-navigation */
+        .sub-nav {
+            background: var(--light-gray);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 50px;
+            z-index: 99;
+        }
+
+        .sub-nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+            flex-wrap: wrap;
+        }
+
+        .sub-nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .sub-nav a:hover {
+            color: var(--accent-color);
+        }
+
         /* Sections */
         section {
             padding: 40px 0;
@@ -327,6 +357,14 @@
             .stats-box {
                 grid-template-columns: repeat(2, 1fr);
             }
+
+            .sub-nav ul {
+                gap: 10px;
+            }
+
+            .sub-nav a {
+                font-size: 0.85rem;
+            }
         }
     </style>
 </head>
@@ -349,6 +387,18 @@
             </ul>
         </div>
     </nav>
+
+    <div class="sub-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#arxiv">arXiv Preprints</a></li>
+                <li><a href="#books">Books/Chapters</a></li>
+                <li><a href="#journals">Journal Articles</a></li>
+                <li><a href="#conferences">Conference Proceedings</a></li>
+                <li><a href="#talks">Conference Talks</a></li>
+            </ul>
+        </div>
+    </div>
 
     <main class="container">
         <a href="index.html" class="back-btn">← Back to Home</a>
@@ -377,7 +427,7 @@
 
             <p style="margin-bottom: 20px;"><em>Note: Underlined indicates the students working under my supervision. Prior to 2018, the order of authors is generally alphabetical. From 2018, I adopted engineering convention: being a group leader, I put myself to the last in the author list.</em></p>
 
-            <h3>arXiv Preprints</h3>
+            <h3 id="arxiv">arXiv Preprints</h3>
             <ul class="pub-list">
                 <li>Adam Wills, Ting-Chun Lin, Rachel Yun Zhang, Min-Hsiu Hsieh. Linear-Time Encodable and Decodable Quantum Error-Correcting Codes. [<a href="https://arxiv.org/abs/2603.04543" target="_blank" rel="noopener">arXiv:2603.04543</a>] (2026).</li>
                 <li>Min-Hsiu Hsieh, Xingjian Li, Ting-Chun Lin. Simplified Quantum Weight Reduction with Optimal Bounds. [<a href="https://arxiv.org/abs/2510.09601" target="_blank" rel="noopener">arXiv:2510.09601</a>] (2025).</li>
@@ -416,14 +466,14 @@
                 <li>Chao Zhang, <u>Min-Hsiu Hsieh</u>, Dacheng Tao. Generalization Bounds for Vicinal Risk Minimization Principle. [<a href="https://arxiv.org/abs/1811.04351" target="_blank" rel="noopener">arXiv:1811.04351</a>] (2018).</li>
             </ul>
 
-            <h3>Book/Book Chapters</h3>
+            <h3 id="books">Book/Book Chapters</h3>
             <ul class="pub-list">
                 <li>Yuxuan Du, Xinbiao Wang, Naixu Guo, Zhan Yu, Yang Qian, Kaining Zhang, <u>Min-Hsiu Hsieh</u>, Patrick Rebentrost, Dacheng Tao. A Gentle Introduction to Quantum Machine Learning. Springer (ISBN-13: 978-9819512836), 2025 [<a href="https://arxiv.org/abs/2502.01146" target="_blank" rel="noopener">arXiv:2502.01146</a>]. [<a href="https://www.amazon.com.au/Gentle-Introduction-Quantum-Machine-Learning/dp/9819512832" target="_blank" rel="noopener">Amazon</a>]</li>
                 <li>Proceedings of the 16th Conference on the Theory of Quantum Computation, Communication and Cryptography (TQC 2021). July 5-8, 2021, Virtual Conference. <u>Min-Hsiu Hsieh</u> (Ed.) ISBN 978-3-95977-198-6, LIPICS Vol. 197. ISSN 1868-8969. [<a href="https://www.dagstuhl.de/dagpub/978-3-95977-198-6" target="_blank" rel="noopener">Link</a>]</li>
                 <li>Todd Brun and Min-Hsiu Hsieh. Entanglement-assisted quantum error-correcting codes. Quantum Error Correction, in D. Lidar and T. Brun (eds.), Cambridge University Press (ISBN: 9780521897877), 2013. [<a href="https://arxiv.org/abs/1610.04013" target="_blank" rel="noopener">arXiv:1610.04013</a>]</li>
             </ul>
 
-            <h3>Journal Articles</h3>
+            <h3 id="journals">Journal Articles</h3>
             <ul class="pub-list">
                 <li>Xingjian Li, Ting-Chun Lin, Min-Hsiu Hsieh. Transform Arbitrary Good Quantum LDPC Codes into Good Geometrically Local Codes in Any Dimension. accepted in Nature Communications on Dec 20, 2025. [<a href="https://arxiv.org/abs/2408.01769" target="_blank" rel="noopener">arXiv:2408.01769</a>] (2024).</li>
                 <li>Jun Qi, Chao-Han Yang, Pin-Yu Chen, <u>Min-Hsiu Hsieh</u>. TensoMeta-VQC: A Tensor-Train-Guided Meta-Learning Framework for Robust and Scalable Variational Quantum Computing. Accepted in npj Quantum Information on 28 Nov 2025. [<a href="https://arxiv.org/abs/2508.01116" target="_blank" rel="noopener">arXiv:2508.01116</a>] (2025).</li>
@@ -536,7 +586,7 @@
                 <li>Todd Brun, Igor Devetak, and Min-Hsiu Hsieh. Correcting quantum errors with entanglement. Science, vol. 314, no. 5798, pp. 436–439 (2006). [<a href="https://arxiv.org/abs/quant-ph/0610092" target="_blank" rel="noopener">arXiv:quant-ph/0610092</a>]</li>
             </ul>
 
-            <h3>Conference Proceedings</h3>
+            <h3 id="conferences">Conference Proceedings</h3>
             <ul class="pub-list">
                 <li>Wei-Jia Huang, Jingyi Mei, Alfons Laarman, Yu-Fang Chen, Christophe Chareton, Kai-Min Chung and Min-Hsiu Hsieh. Equivalence Checking of Quantum Circuits via Path-Sum and Weighted Model Counting. Accepted in TACAS'26 on Dec 22, 2025.</li>
                 <li>Kuan-Cheng Chen, Felix Burt, Shang Yu, Chen-Yu Liu, <u>Min-Hsiu Hsieh</u>, Kin K. Leung. Resource-Efficient Compilation of Distributed Quantum Circuits for Solving Large-Scale Wireless Communication Network Problems. 2025 IEEE International Symposium on Circuits and Systems (ISCAS), London, United Kingdom, 2025, pp. 1-5. [<a href="https://doi.org/10.1109/ISCAS56072.2025.11043411" target="_blank" rel="noopener">doi</a>] [<a href="https://arxiv.org/abs/2501.10242" target="_blank" rel="noopener">arXiv:2501.10242</a>].</li>
@@ -580,7 +630,7 @@
                 <li>Igor Devetak, Todd Brun, and Min-Hsiu Hsieh. Entanglement-assisted quantum error-correcting codes. The International Congress on Mathematical Physics (ICMP 2006), Rio de Janeiro, Brazil, August 7-11, 2006.</li>
             </ul>
 
-            <h3>Referred Conference Talks Without Proceedings</h3>
+            <h3 id="talks">Referred Conference Talks Without Proceedings</h3>
             <ul class="pub-list">
                 <li>Shi Jie Samuel Tan, Yifan Hong, Ting-Chun Lin, Michael J. Gullans, Min-Hsiu Hsieh. Single-Shot Universality in Quantum LDPC Codes via Code-Switching. Long Plenary Talk in QIP 2026.</li>
                 <li>Takaya Matsuura, Masahito Hayashi, Min-Hsiu Hsieh. Universal classical-quantum channel resolvability and private channel coding. QIP 2026.</li>
