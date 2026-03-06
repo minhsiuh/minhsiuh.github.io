@@ -202,6 +202,73 @@
             text-decoration: underline;
         }
 
+        /* Journal Stats Box */
+        .journal-stats-box {
+            background: var(--light-gray);
+            border-radius: 8px;
+            padding: 25px;
+            margin: 20px 0 30px 0;
+            border: 1px solid var(--border-color);
+        }
+
+        .stats-header {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        .stats-header h4 {
+            margin: 0;
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .stats-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .stats-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .stats-table td:first-child {
+            font-weight: 500;
+            color: var(--primary-color);
+        }
+
+        .stats-table td.count {
+            text-align: center;
+            font-weight: 700;
+            color: var(--accent-color);
+            font-size: 1.1rem;
+            width: 80px;
+        }
+
+        .stats-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .stats-table tr:hover {
+            background: #f0f4f8;
+        }
+
+        @media (max-width: 768px) {
+            .journal-stats-box {
+                padding: 20px;
+            }
+
+            .stats-table td {
+                padding: 10px 12px;
+            }
+
+            .stats-table td.count {
+                font-size: 1rem;
+            }
+        }
+
         .pub-journal {
             font-style: italic;
             color: #666;
@@ -503,6 +570,29 @@
             </ul>
 
             <h3 id="journals">Journal Articles</h3>
+            
+            <div class="journal-stats-box">
+                <div class="stats-header">
+                    <h4>Journal Publications</h4>
+                </div>
+                <table class="stats-table">
+                    <tbody>
+                        <tr>
+                            <td>IEEE Transactions on Information Theory</td>
+                            <td class="count">28</td>
+                        </tr>
+                        <tr>
+                            <td>Nature Communications</td>
+                            <td class="count">3</td>
+                        </tr>
+                        <tr>
+                            <td>npj Quantum Information</td>
+                            <td class="count">2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
             <ul class="pub-list">
                 <li>Xingjian Li, Ting-Chun Lin, Min-Hsiu Hsieh. Almost optimal geometrically local quantum LDPC codes in any dimension. Nature Communications (2026). [<a href="https://www.nature.com/articles/s41467-026-69031-w" target="_blank" rel="noopener">doi</a>] [<a href="https://arxiv.org/abs/2408.01769" target="_blank" rel="noopener">arXiv:2408.01769</a>].</li>
                 <li>Jun Qi, Chao-Han Yang, Pin-Yu Chen, Min-Hsiu Hsieh. TensorHyper-VQC: a tensor-train-guided hypernetwork for robust and scalable variational quantum computing. npj Quantum Information (2026). [<a href="https://www.nature.com/articles/s41534-025-01157-z" target="_blank" rel="noopener">doi</a>] [<a href="https://arxiv.org/abs/2508.01116" target="_blank" rel="noopener">arXiv:2508.01116</a>].</li>
