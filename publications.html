@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Min-Hsiu Hsieh (謝明修)</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --bg-color: #fff;
+            --light-gray: #f8f9fa;
+            --border-color: #e9ecef;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background: var(--bg-color);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        header .chinese-name {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        header .title {
+            font-size: 1.1rem;
+            opacity: 0.85;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--light-gray);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        nav a.active {
+            color: var(--accent-color);
+        }
+
+        /* Sections */
+        section {
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin: 25px 0 15px;
+            font-weight: 600;
+        }
+
+        /* Publication List */
+        .pub-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .pub-list li {
+            padding: 12px 0;
+            padding-left: 20px;
+            position: relative;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .pub-list li:last-child {
+            border-bottom: none;
+        }
+
+        .pub-list li:before {
+            content: "•";
+            color: var(--accent-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+
+        .pub-list a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .pub-list a:hover {
+            text-decoration: underline;
+        }
+
+        .pub-journal {
+            font-style: italic;
+            color: #666;
+        }
+
+        .pub-year {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-right: 8px;
+        }
+
+        /* Stats Box */
+        .stats-box {
+            background: var(--light-gray);
+            padding: 25px;
+            border-radius: 8px;
+            margin: 20px 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-color);
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        /* Back Button */
+        .back-btn {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.2s;
+        }
+
+        .back-btn:hover {
+            background: #2980b9;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            header .chinese-name {
+                font-size: 1.2rem;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .stats-box {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Min-Hsiu Hsieh</h1>
+            <div class="chinese-name">謝明修</div>
+            <div class="title">Director, Hon Hai (Foxconn) Quantum Computing Research Center</div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="publications.html" class="active">Publications</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <a href="index.html" class="back-btn">← Back to Home</a>
+
+        <section id="publications">
+            <h2>Publications</h2>
+            
+            <div class="stats-box">
+                <div class="stat-item">
+                    <div class="stat-number">108</div>
+                    <div class="stat-label">Journal Papers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">40</div>
+                    <div class="stat-label">Conference Papers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">8,094</div>
+                    <div class="stat-label">Citations</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">42</div>
+                    <div class="stat-label">h-index</div>
+                </div>
+            </div>
+
+            <h3>Selected Publications (2024-2026)</h3>
+            <ul class="pub-list">
+                <li>
+                    <span class="pub-year">2026:</span>
+                    "Deep variational quantum circuits with barren-plateau-free architectures"<br>
+                    <span class="pub-journal">Artificial Intelligence Science and Engineering</span>
+                </li>
+                <li>
+                    <span class="pub-year">2026:</span>
+                    "AQER: a scalable and efficient data loader for digital quantum computers"<br>
+                    <span class="pub-journal">arXiv:2602.02165</span>
+                </li>
+                <li>
+                    <span class="pub-year">2026:</span>
+                    "Continual Quantum Architecture Search with Tensor-Train Encoding: Theory and Applications to Signal Processing"<br>
+                    <span class="pub-journal">arXiv:2601.06392</span>
+                </li>
+                <li>
+                    <span class="pub-year">2026:</span>
+                    "Random-Matrix-Induced Simplicity Bias in Over-parameterized Variational Quantum Circuits"<br>
+                    <span class="pub-journal">arXiv:2601.01877</span>
+                </li>
+                <li>
+                    <span class="pub-year">2026:</span>
+                    "Almost Optimal Geometrically Local Quantum LDPC Codes in any Dimension"<br>
+                    <span class="pub-journal">Nature Communications</span>
+                </li>
+                <li>
+                    <span class="pub-year">2026:</span>
+                    "Optimizing Quantum Chemistry Simulations with a Hybrid Quantization Scheme"<br>
+                    <span class="pub-journal">Communications Physics</span>
+                </li>
+                <li>
+                    <span class="pub-year">2026:</span>
+                    "AQER: A Scalable and Efficient Data Loader for Digital Quantum Computers"<br>
+                    <span class="pub-journal">ICLR 2026</span>
+                </li>
+                <li>
+                    <span class="pub-year">2026:</span>
+                    "Pre-training Tensor-Train Networks Facilitates Machine Learning with Variational Quantum Circuits"<br>
+                    <span class="pub-journal">IEEE ICASSP 2026</span>
+                </li>
+                <li>
+                    <span class="pub-year">2026:</span>
+                    "Universal classical-quantum channel resolvability and private channel coding"<br>
+                    <span class="pub-journal">QIP 2026</span>
+                </li>
+                <li>
+                    <span class="pub-year">2026:</span>
+                    "Single-Shot, Universal Protocols via Code Switching"<br>
+                    <span class="pub-journal">QIP 2026</span>
+                </li>
+            </ul>
+
+            <p style="margin-top: 30px; text-align: center;">
+                <em>For complete publication list, please visit <a href="https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID" target="_blank" rel="noopener">Google Scholar</a> or <a href="https://orcid.org/0000-0002-3396-8427" target="_blank" rel="noopener">ORCID</a></em>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Min-Hsiu Hsieh. All rights reserved.</p>
+            <p>Powered by <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></p>
+        </div>
+    </footer>
+</body>
+</html>
