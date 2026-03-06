@@ -98,6 +98,49 @@
             border-bottom: none;
         }
 
+        /* About Me Layout */
+        .about-content {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+
+        .about-image {
+            flex: 0 0 300px;
+        }
+
+        .about-image img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .about-image {
+                flex: none;
+            }
+
+            .about-image img {
+                width: 250px;
+                height: 250px;
+            }
+
+            .about-text {
+                text-align: left;
+            }
+        }
+
         h2 {
             font-size: 1.8rem;
             color: var(--primary-color);
@@ -342,32 +385,39 @@
     <main class="container">
         <section id="about">
             <h2>About Me</h2>
-            <p>
-                I have been the director of the Hon Hai Quantum Computing Research Center in Taiwan since January 2021. 
-                Prior to this role, I was an Associate Professor at the University of Technology Sydney in Australia 
-                and a member of the UTS Centre for Quantum Software and Information from 2014 to 2020. 
-                From 2010 to 2012, I was a postdoctoral research fellow at the University of Cambridge in the UK, 
-                where I was affiliated with the Centre for Quantum Information and Foundations. 
-                Before that, I worked as a research scientist with the ERATO-SORST Quantum Computation and Information Project in Japan, 
-                which was funded by the Japan Science and Technology Agency. 
-                During this time, I was also affiliated with the Department of Computer Science at the University of Tokyo. 
-                From 2014 to 2018, I held an Australian Research Council Future Fellowship.
-            </p>
-            <p>
-                I serve on the steering committee of:
-            </p>
-            <ul style="margin-left: 20px; margin-bottom: 15px;">
-                <li>Asian Quantum Information Science Conference (AQIS), 2024 - .</li>
-                <li>Conference on the Theory of Quantum Computation, Communication and Cryptography (TQC), 2021-2025;</li>
-                <li>Conference series on Quantum Information Processing (QIP), 2021-2025;</li>
-                <li>Beyond IID in Information Theory (BIID), 2020 - 2022.</li>
-            </ul>
-            <p>
-                I was the program chair of the TQC 2021 and BIID 2021.
-            </p>
-            <p>
-                My research interests include general topics in quantum information and computation.
-            </p>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="profile.jpg" alt="Min-Hsiu Hsieh">
+                </div>
+                <div class="about-text">
+                    <p>
+                        I have been the director of the Hon Hai Quantum Computing Research Center in Taiwan since January 2021. 
+                        Prior to this role, I was an Associate Professor at the University of Technology Sydney in Australia 
+                        and a member of the UTS Centre for Quantum Software and Information from 2014 to 2020. 
+                        From 2010 to 2012, I was a postdoctoral research fellow at the University of Cambridge in the UK, 
+                        where I was affiliated with the Centre for Quantum Information and Foundations. 
+                        Before that, I worked as a research scientist with the ERATO-SORST Quantum Computation and Information Project in Japan, 
+                        which was funded by the Japan Science and Technology Agency. 
+                        During this time, I was also affiliated with the Department of Computer Science at the University of Tokyo. 
+                        From 2014 to 2018, I held an Australian Research Council Future Fellowship.
+                    </p>
+                    <p>
+                        I serve on the steering committee of:
+                    </p>
+                    <ul style="margin-left: 20px; margin-bottom: 15px;">
+                        <li>Asian Quantum Information Science Conference (AQIS), 2024 - .</li>
+                        <li>Conference on the Theory of Quantum Computation, Communication and Cryptography (TQC), 2021-2025;</li>
+                        <li>Conference series on Quantum Information Processing (QIP), 2021-2025;</li>
+                        <li>Beyond IID in Information Theory (BIID), 2020 - 2022.</li>
+                    </ul>
+                    <p>
+                        I was the program chair of the TQC 2021 and BIID 2021.
+                    </p>
+                    <p>
+                        My research interests include general topics in quantum information and computation.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <section id="news">
