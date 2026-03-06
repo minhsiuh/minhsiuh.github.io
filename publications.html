@@ -218,6 +218,15 @@
         }
 
         .footer-item {
+
+        .footer-item a:hover {
+            opacity: 0.8;
+        }
+
+        .footer-item a:hover .footer-icon {
+            background: #e67e22;
+            transform: scale(1.05);
+        }
             display: flex;
             align-items: flex-start;
             gap: 15px;
@@ -614,13 +623,15 @@
         <div class="footer-content">
             <div class="footer-grid">
                 <div class="footer-item">
-                    <div class="footer-icon">
-                        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-                    </div>
-                    <div class="footer-text">
-                        <h4>Contact</h4>
-                        <p>min-hsiu.hsieh (at) foxconn.com</p>
-                    </div>
+                    <a href="mailto:min-hsiu.hsieh@foxconn.com" style="display: flex; align-items: flex-start; gap: 15px; text-decoration: none;">
+                        <div class="footer-icon">
+                            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        </div>
+                        <div class="footer-text">
+                            <h4>Contact</h4>
+                            <p>min-hsiu.hsieh@foxconn.com</p>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="footer-item">
