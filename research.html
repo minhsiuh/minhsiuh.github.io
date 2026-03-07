@@ -92,6 +92,66 @@
             color: var(--accent-color);
         }
 
+        /* Main content */
+        .research-wrapper {
+            display: flex;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Side navigation */
+        .side-nav {
+            flex: 0 0 250px;
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .side-nav h3 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+        }
+
+        .side-nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .side-nav li {
+            margin-bottom: 12px;
+        }
+
+        .side-nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-size: 1rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            display: block;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        .side-nav a:hover {
+            color: var(--accent-color);
+            background: var(--light-gray);
+        }
+
+        .side-nav a.active {
+            color: var(--accent-color);
+            background: var(--light-gray);
+        }
+
+        /* Main content */
+        .research-main {
+            flex: 1;
+        }
+
         /* Sections */
         section {
             padding: 40px 0;
@@ -123,47 +183,159 @@
             text-align: justify;
         }
 
-        /* Research Areas */
-        .research-grid {
+        /* Research Vision Box */
+        .vision-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+        }
+
+        .vision-box h2 {
+            color: white;
+            border-bottom-color: rgba(255,255,255,0.3);
+            margin-bottom: 20px;
+        }
+
+        .vision-box p {
+            text-align: left;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* Category Cards */
+        .category-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
-            margin: 20px 0;
+            margin-top: 30px;
         }
 
-        .research-card {
-            background: var(--light-gray);
-            padding: 25px;
-            border-radius: 8px;
-            border-left: 4px solid var(--accent-color);
+        .category-card {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 30px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
 
-        .research-card h4 {
-            font-size: 1.1rem;
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-color: var(--accent-color);
+        }
+
+        .category-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+        }
+
+        .category-card.hardware::before {
+            background: linear-gradient(90deg, #3498db, #2980b9);
+        }
+
+        .category-card.software::before {
+            background: linear-gradient(90deg, #9b59b6, #8e44ad);
+        }
+
+        .category-card.applications::before {
+            background: linear-gradient(90deg, #27ae60, #229954);
+        }
+
+        .category-card.others::before {
+            background: linear-gradient(90deg, #95a5a6, #7f8c8d);
+        }
+
+        .category-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .category-card h3 {
+            font-size: 1.3rem;
+            margin: 0 0 12px 0;
             color: var(--primary-color);
-            margin-bottom: 12px;
-            font-weight: 600;
         }
 
-        .research-card p {
+        .category-card p {
+            color: #666;
             font-size: 0.95rem;
-            margin-bottom: 0;
+            line-height: 1.6;
+            text-align: left;
+            margin-bottom: 20px;
         }
 
-        /* Back Button */
-        .back-btn {
-            display: inline-block;
-            margin: 20px 0;
-            padding: 10px 20px;
-            background: var(--accent-color);
-            color: white;
+        .category-topics {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .category-topics li {
+            padding: 4px 0;
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        .category-topics li:before {
+            content: '· ';
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .category-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--accent-color);
             text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.2s;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: gap 0.2s;
         }
 
-        .back-btn:hover {
-            background: #2980b9;
+        .category-link:hover {
+            gap: 12px;
+        }
+
+        .category-link svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+
+        /* Stats */
+        .research-stats {
+            background: var(--light-gray);
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 5px;
         }
 
         /* Footer */
@@ -188,6 +360,10 @@
         }
 
         .footer-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
 
         .footer-item a:hover {
             opacity: 0.8;
@@ -201,10 +377,6 @@
         .footer-icon-link {
             display: inline-block;
             text-decoration: none;
-        }
-            display: flex;
-            align-items: flex-start;
-            gap: 15px;
         }
 
         .footer-icon {
@@ -269,13 +441,6 @@
             text-align: center;
             padding: 20px 0;
         }
-        footer {
-            background: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 30px 0;
-            margin-top: 50px;
-        }
 
         footer a {
             color: white;
@@ -283,7 +448,7 @@
         }
 
         /* Responsive */
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
             header h1 {
                 font-size: 1.8rem;
             }
@@ -301,7 +466,32 @@
                 font-size: 1.5rem;
             }
 
-            .research-grid {
+            .research-wrapper {
+                flex-direction: column;
+            }
+
+            .side-nav {
+                flex: none;
+                position: static;
+                width: 100%;
+            }
+
+            .side-nav h3 {
+                text-align: center;
+            }
+
+            .side-nav ul {
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+
+            .side-nav li {
+                margin: 0;
+            }
+
+            .category-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -327,59 +517,121 @@
         </div>
     </nav>
 
-    <main class="container">
-        <section id="research">
-            <h2>Research Topics</h2>
-            
-            <p>
-                My research interests include general topics in quantum information and computation. 
-                At the Hon Hai (Foxconn) Quantum Computing Research Center, we are actively pursuing 
-                breakthroughs in various aspects of quantum technologies.
-            </p>
+    <div class="research-wrapper">
+        <aside class="side-nav">
+            <h3>Research Areas</h3>
+            <ul>
+                <li><a href="#vision">Research Vision</a></li>
+                <li><a href="#hardware">Hardware Enabling Technology</a></li>
+                <li><a href="#software">Software with Enhanced Advantage</a></li>
+                <li><a href="#applications">Real-World Applications</a></li>
+                <li><a href="#others">Foundations & Theory</a></li>
+            </ul>
+        </aside>
 
-            <div class="research-grid">
-                <div class="research-card">
-                    <h4>Quantum Information Theory</h4>
-                    <p>Foundational aspects of quantum information, quantum coding theory, quantum channel capacities, and quantum error correction.</p>
+        <main class="research-main">
+            <section id="research">
+                <h2>Research</h2>
+                
+                <div class="vision-box" id="vision">
+                    <h2>Research Vision</h2>
+                    <p>
+                        My research program spans the full stack of quantum computing, from foundational theory to practical applications. 
+                        I lead a diverse team exploring quantum error correction, quantum machine learning, quantum algorithms, and their 
+                        real-world applications in simulation, communication, and metrology. Our goal is to bridge the gap between 
+                        theoretical quantum advantage and practical quantum computing systems.
+                    </p>
                 </div>
-                <div class="research-card">
-                    <h4>Quantum Computing</h4>
-                    <p>Quantum algorithms, quantum complexity theory, variational quantum circuits, and quantum machine learning.</p>
-                </div>
-                <div class="research-card">
-                    <h4>Quantum Communication</h4>
-                    <p>Quantum key distribution, quantum networks, quantum repeaters, and quantum internet protocols.</p>
-                </div>
-                <div class="research-card">
-                    <h4>Quantum Error Correction</h4>
-                    <p>Quantum LDPC codes, fault-tolerant quantum computation, and topological quantum codes.</p>
-                </div>
-                <div class="research-card">
-                    <h4>Quantum Machine Learning</h4>
-                    <p>Quantum-enhanced machine learning algorithms, tensor-train networks, and variational quantum classifiers.</p>
-                </div>
-                <div class="research-card">
-                    <h4>Quantum Chemistry</h4>
-                    <p>Quantum simulation of molecular systems, quantum algorithms for chemistry, and hybrid quantization schemes.</p>
-                </div>
-            </div>
 
-            <h3 style="margin-top: 40px;">Current Research Projects</h3>
-            <p>
-                At the Hon Hai Quantum Computing Research Center, we are currently overseeing a dozen 
-                cutting-edge research projects aimed at pushing the boundaries of quantum computing. 
-                Our research team comprises twenty talented researchers working on various aspects of 
-                quantum technologies.
-            </p>
+                <div class="research-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">200+</div>
+                        <div class="stat-label">Publications</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">8700+</div>
+                        <div class="stat-label">Citations</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">43</div>
+                        <div class="stat-label">h-index</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">13</div>
+                        <div class="stat-label">Research Topics</div>
+                    </div>
+                </div>
 
-            <h3 style="margin-top: 30px;">Collaboration</h3>
-            <p>
-                We maintain active collaborations with leading research institutions worldwide and 
-                welcome opportunities for new partnerships. If you are interested in collaborating 
-                on quantum information and computation research, please feel free to reach out.
-            </p>
-        </section>
-    </main>
+                <h3 style="margin-top: 40px;">Research Categories</h3>
+                
+                <div class="category-grid">
+                    <!-- Hardware Enabling Technology -->
+                    <div class="category-card hardware" id="hardware">
+                        <div class="category-icon">🛠️</div>
+                        <h3>Hardware Enabling Technology</h3>
+                        <p>Building the physical and architectural foundation for reliable, scalable quantum computation through error correction and robust characterization.</p>
+                        <ul class="category-topics">
+                            <li>Quantum Error Correction</li>
+                            <li>Randomized Benchmarking</li>
+                            <li>Quantum Architecture</li>
+                        </ul>
+                        <a href="research-hardware.html" class="category-link">
+                            Explore this area
+                            <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Software with Enhanced Advantage -->
+                    <div class="category-card software" id="software">
+                        <div class="category-icon">💎</div>
+                        <h3>Software with Enhanced Advantage</h3>
+                        <p>Developing quantum algorithms, machine learning protocols, and verification tools that unlock computational advantages over classical methods.</p>
+                        <ul class="category-topics">
+                            <li>Quantum Machine Learning</li>
+                            <li>Quantum Algorithms</li>
+                            <li>Quantum Complexity Theory</li>
+                            <li>Circuit Verification</li>
+                        </ul>
+                        <a href="research-software.html" class="category-link">
+                            Explore this area
+                            <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Real-World Applications -->
+                    <div class="category-card applications" id="applications">
+                        <div class="category-icon">🌐</div>
+                        <h3>Real-World Applications</h3>
+                        <p>Translating quantum computing capabilities into practical solutions for simulation, sensing, and communication challenges.</p>
+                        <ul class="category-topics">
+                            <li>Quantum Simulation</li>
+                            <li>Quantum Metrology</li>
+                            <li>Quantum Communication</li>
+                        </ul>
+                        <a href="research-applications.html" class="category-link">
+                            Explore this area
+                            <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Foundations & Theory -->
+                    <div class="category-card others" id="others">
+                        <div class="category-icon">🔬</div>
+                        <h3>Foundations & Theory</h3>
+                        <p>Exploring the fundamental limits and physical principles underlying quantum information processing and communication.</p>
+                        <ul class="category-topics">
+                            <li>Quantum Shannon Theory</li>
+                            <li>Physics Foundations</li>
+                        </ul>
+                        <a href="research-others.html" class="category-link">
+                            Explore this area
+                            <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 
     <footer>
         <div class="footer-content">
@@ -406,7 +658,7 @@
                         <a href="https://x.com/quantum_minhsiu" target="_blank" rel="noopener" title="Twitter">
                             <svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
                         </a>
-                        <a href="https://scholar.google.com/" target="_blank" rel="noopener" title="Google Scholar">
+                        <a href="https://scholar.google.com/citations?user=UXx1jNYAAAAJ" target="_blank" rel="noopener" title="Google Scholar">
                             <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
                         </a>
                     </div>
@@ -429,5 +681,21 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
