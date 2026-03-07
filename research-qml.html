@@ -729,7 +729,7 @@
                 <div style="margin-top: 40px;">
                     <h2>Global Collaborations</h2>
                     <p style="margin-bottom: 20px; color: #666;">
-                        QML research collaborations span across 6 countries and 11 leading institutions worldwide.
+                        QML research collaborations span across 8 countries and 15 leading institutions worldwide.
                     </p>
                     
                     <div class="collab-map-container">
@@ -738,19 +738,19 @@
                     
                     <div class="collab-stats">
                         <div class="collab-stat">
-                            <div class="collab-stat-number">11</div>
+                            <div class="collab-stat-number">15</div>
                             <div class="collab-stat-label">Institutions</div>
                         </div>
                         <div class="collab-stat">
-                            <div class="collab-stat-number">6</div>
+                            <div class="collab-stat-number">8</div>
                             <div class="collab-stat-label">Countries</div>
                         </div>
                         <div class="collab-stat">
-                            <div class="collab-stat-number">16</div>
+                            <div class="collab-stat-number">17</div>
                             <div class="collab-stat-label">Joint Papers</div>
                         </div>
                         <div class="collab-stat">
-                            <div class="collab-stat-number">20</div>
+                            <div class="collab-stat-number">25</div>
                             <div class="collab-stat-label">Collaborators</div>
                         </div>
                     </div>
@@ -779,28 +779,35 @@
                             shadowSize: [41, 41]
                         });
                         
-                        // QML Collaboration institutions
+                        // QML Collaboration institutions (extracted from all QML publications)
                         const institutions = [
                             {
                                 name: "University of Sydney",
                                 location: [-33.8886, 151.1873],
                                 country: "Australia",
-                                collaborators: ["Dacheng Tao", "Yuxuan Du", "Tongliang Liu"],
-                                papers: ["Expressive power (PRR 2020)", "Learnability (PRX Quantum 2021)", "QGAN (PRApplied 2021)"]
+                                collaborators: ["Dacheng Tao", "Tongliang Liu"],
+                                papers: ["Expressive power (PRR 2020)", "Learnability (PRX Quantum 2021)", "Efficient Learning (Nature Comm 2025)"]
+                            },
+                            {
+                                name: "UNSW Sydney",
+                                location: [-33.9173, 151.2313],
+                                country: "Australia",
+                                collaborators: ["Yuxuan Du"],
+                                papers: ["Expressive power (PRR 2020)", "AQER (ICLR 2026)"]
                             },
                             {
                                 name: "Hon Hai Quantum Computing Research Center",
                                 location: [25.0703, 121.5775],
                                 country: "Taiwan",
-                                collaborators: ["Jun Qi", "Yu-Cheng Chen", "Calvin Ku"],
-                                papers: ["TensorHyper-VQC (npj QI 2026)", "Continual QAS (arXiv 2026)"]
+                                collaborators: ["Min-Hsiu Hsieh", "Jun Qi", "Yu-Cheng Chen", "Calvin Ku"],
+                                papers: ["TensorHyper-VQC (npj QI 2026)", "Continual QAS (arXiv 2026)", "QGAN Chemistry (JCIM 2023)"]
                             },
                             {
                                 name: "University of Technology Sydney",
                                 location: [-33.8839, 151.2006],
                                 country: "Australia",
                                 collaborators: ["Kaining Zhang", "Shan You"],
-                                papers: ["Barren plateaus (NeurIPS 2022)", "QNN expressivity (PRR 2020)"]
+                                papers: ["Barren plateaus (NeurIPS 2022)", "Toward Trainability (arXiv 2022)"]
                             },
                             {
                                 name: "IBM Research",
@@ -827,8 +834,8 @@
                                 name: "Zhejiang University",
                                 location: [30.3087, 120.0810],
                                 country: "China",
-                                collaborators: ["Yuxuan Du"],
-                                papers: ["Expressive power (PRR 2020)"]
+                                collaborators: ["Xinbiao Wang"],
+                                papers: ["AQER (ICLR 2026)"]
                             },
                             {
                                 name: "Shanghai Jiao Tong University",
@@ -845,6 +852,20 @@
                                 papers: ["Single-Shot Universality (QIP 2026)"]
                             },
                             {
+                                name: "University of Science and Technology of China",
+                                location: [31.8206, 117.2272],
+                                country: "China",
+                                collaborators: ["Kehuan Linghu", "Yang Qian", "Haifeng Yu", "Yirong Jin"],
+                                papers: ["QAS on superconducting processor (Entropy 2024)", "Experimental QGAN (PRApplied 2021)"]
+                            },
+                            {
+                                name: "Beijing Academy of Quantum Information Sciences",
+                                location: [40.0731, 116.2119],
+                                country: "China",
+                                collaborators: ["Ruixia Wang", "Meng-Jun Hu", "Zhiyuan Li"],
+                                papers: ["QAS on superconducting processor (Entropy 2024)"]
+                            },
+                            {
                                 name: "University of Toronto",
                                 location: [43.6629, -79.3957],
                                 country: "Canada",
@@ -857,6 +878,13 @@
                                 country: "Japan",
                                 collaborators: ["Hayata Yamasaki"],
                                 papers: ["Constant-Overhead MSD (Nature Physics 2025)"]
+                            },
+                            {
+                                name: "Singapore University of Technology and Design",
+                                location: [1.3414, 103.9617],
+                                country: "Singapore",
+                                collaborators: ["Yifan Hong"],
+                                papers: ["Multimodal deep representation (PRL 2024)"]
                             }
                         ];
                         
