@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Simulation - Research - Min-Hsiu Hsieh</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #27ae60;
+            --category-color: #27ae60;
+            --category-gradient: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+            --text-color: #333;
+            --bg-color: #fff;
+            --light-gray: #f8f9fa;
+            --border-color: #e9ecef;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background: var(--bg-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        header .chinese-name {
+            font-size: 1.5rem;
+            opacity: 0.9;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--light-gray);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        nav a.active {
+            color: var(--accent-color);
+        }
+
+        /* Topic Hero */
+        .topic-hero {
+            background: var(--category-gradient);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .topic-hero .topic-icon {
+            font-size: 4rem;
+            margin-bottom: 15px;
+        }
+
+        .topic-hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .topic-hero .tagline {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            background: var(--light-gray);
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .breadcrumb a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumb span {
+            color: #666;
+        }
+
+        /* Two-column layout */
+        .topic-wrapper {
+            display: flex;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Main content */
+        .topic-main {
+            flex: 1;
+            max-width: 70%;
+        }
+
+        /* Side navigation */
+        .side-nav {
+            flex: 0 0 280px;
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .side-nav h3 {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+            font-weight: 600;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--category-color);
+        }
+
+        .side-nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .side-nav li {
+            margin-bottom: 10px;
+        }
+
+        .side-nav a {
+            text-decoration: none;
+            color: #555;
+            font-size: 0.95rem;
+            transition: all 0.2s;
+            display: block;
+            padding: 6px 12px;
+            border-radius: 5px;
+        }
+
+        .side-nav a:hover {
+            color: var(--category-color);
+            background: var(--light-gray);
+        }
+
+        .side-nav a.active {
+            color: var(--category-color);
+            background: var(--light-gray);
+            font-weight: 600;
+        }
+
+        .side-nav h4 {
+            font-size: 0.95rem;
+            color: #666;
+            margin: 20px 0 10px 0;
+            font-weight: 600;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--category-color);
+            display: inline-block;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin: 30px 0 15px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* Overview Box */
+        .overview-box {
+            background: white;
+            padding: 30px;
+            border-left: 4px solid var(--category-color);
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .overview-box p {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        /* Research Goals */
+        .goals-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .goals-list li {
+            padding: 12px 0 12px 35px;
+            position: relative;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .goals-list li:last-child {
+            border-bottom: none;
+        }
+
+        .goals-list li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--category-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Publications by Sub-topic */
+        .pub-group {
+            margin: 30px 0;
+        }
+
+        .pub-group h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .publications-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .publications-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border-color);
+            text-align: left;
+        }
+
+        .publications-list li:last-child {
+            border-bottom: none;
+        }
+
+        .pub-title {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        .pub-authors {
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        .pub-venue {
+            color: #666;
+            font-style: italic;
+            font-size: 0.95rem;
+        }
+
+        .pub-links {
+            margin-top: 8px;
+        }
+
+        .pub-links a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-right: 15px;
+        }
+
+        .pub-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Collaborators */
+        .collaborators-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .collaborator-group {
+            background: var(--light-gray);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .collaborator-group h4 {
+            font-size: 1rem;
+            color: var(--primary-color);
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .collaborator-group ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .collaborator-group li {
+            padding: 4px 0;
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        /* Related Topics */
+        .related-topics {
+            background: var(--light-gray);
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+
+        .related-topics h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .related-topics a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-right: 20px;
+            display: inline-block;
+            margin-bottom: 8px;
+            padding: 8px 15px;
+            background: white;
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            transition: all 0.2s;
+        }
+
+        .related-topics a:hover {
+            background: var(--category-color);
+            color: white;
+            border-color: var(--category-color);
+        }
+
+        /* Navigation Links */
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .nav-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 12px 20px;
+            background: var(--light-gray);
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        .nav-link:hover {
+            background: #e9ecef;
+            gap: 12px;
+        }
+
+        .nav-link svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-color);
+            color: white;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            background: #2980b9;
+            padding: 30px 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 50px;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .footer-item a:hover {
+            opacity: 0.8;
+        }
+
+        .footer-item a:hover .footer-icon {
+            background: #e67e22;
+            transform: scale(1.05);
+        }
+
+        .footer-icon-link {
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .footer-icon {
+            width: 50px;
+            height: 50px;
+            background: #e67e22;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .footer-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            width: 32px;
+            height: 32px;
+            background: white;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+        }
+
+        .social-links a:hover {
+            background: #e67e22;
+        }
+
+        .social-links svg {
+            width: 18px;
+            height: 18px;
+            fill: #2980b9;
+        }
+
+        footer .copyright {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .topic-wrapper {
+                flex-direction: column;
+            }
+
+            .topic-main {
+                max-width: 100%;
+            }
+
+            .side-nav {
+                flex: none;
+                position: static;
+                width: 100%;
+            }
+
+            .collaborators-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .topic-hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .topic-hero .tagline {
+                font-size: 1rem;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Min-Hsiu Hsieh</h1>
+            <div class="chinese-name">謝明修</div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="research.html">Research</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="topic-hero">
+        <div class="container">
+            <div class="topic-icon">🧪</div>
+            <h1>Quantum Simulation</h1>
+            <p class="tagline">Simulating quantum systems for chemistry, materials science, and fundamental physics</p>
+        </div>
+    </div>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a> <span>&gt;</span> 
+            <a href="research.html">Research</a> <span>&gt;</span> 
+            <a href="research-applications.html">Applications</a> <span>&gt;</span> 
+            <span>Quantum Simulation</span>
+        </div>
+    </div>
+
+    <div class="topic-wrapper">
+        <main class="topic-main">
+            <section id="overview">
+                <h2>Overview</h2>
+                
+                <div class="overview-box">
+                    <p>
+                        Quantum simulation is one of the most promising near-term applications of quantum computing, 
+                        offering exponential advantages for simulating quantum many-body systems, chemical reactions, 
+                        and materials properties that are intractable for classical computers.
+                    </p>
+                    <p>
+                        Our research focuses on developing resource-efficient quantum simulation algorithms, with 
+                        particular emphasis on fermionic encoding schemes, quantum chemistry applications, and 
+                        hybrid quantum-classical approaches. We've made significant advances in fermionic compression 
+                        encoding, neural network-assisted simulation methods, and clustering algorithms for 
+                        eigenspectrum preparation.
+                    </p>
+                    <p>
+                        This research bridges fundamental quantum algorithms with practical applications in drug 
+                        discovery, materials design, and computational chemistry. Our recent work demonstrates 
+                        pathways to quantum advantage in scientific computing through innovative encoding schemes 
+                        and error mitigation techniques compatible with near-term quantum hardware.
+                    </p>
+                </div>
+
+                <h3>Research Goals</h3>
+                <ul class="goals-list">
+                    <li>
+                        <strong>Develop efficient fermionic encoding schemes</strong> — Create resource-optimal mappings from fermionic operators to qubits, minimizing qubit count and circuit depth
+                    </li>
+                    <li>
+                        <strong>Enable practical quantum chemistry simulations</strong> — Design algorithms for molecular simulation that are compatible with near-term quantum devices
+                    </li>
+                    <li>
+                        <strong>Reduce simulation overhead</strong> — Minimize resource requirements through compression, clustering, and hybrid quantum-classical approaches
+                    </li>
+                    <li>
+                        <strong>Demonstrate quantum advantage in scientific computing</strong> — Identify and solve real-world chemistry and materials problems beyond classical capabilities
+                    </li>
+                </ul>
+            </section>
+
+            <section id="publications">
+                <h2>Selected Publications</h2>
+
+                <div class="pub-group">
+                    <h4>🔬 Fermionic Encoding & Compression</h4>
+                    <ul class="publications-list">
+                        <li>
+                            <div class="pub-title">Neural network assisted fermionic compression encoding: A lossy quantum-selected configuration interaction framework</div>
+                            <div class="pub-authors">YC Chen, R Wu, MH Cheng, MH Hsieh</div>
+                            <div class="pub-venue">Physical Review Research 8 (1), 013128, 2026</div>
+                            <div class="pub-links">
+                                <a href="https://arxiv.org/abs/2505.17846" target="_blank" rel="noopener">arXiv</a>
+                                <a href="https://doi.org/10.1103/9x8b-4j41" target="_blank" rel="noopener">DOI</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pub-title">Optimal number-conserved linear encoding for practical fermionic simulation</div>
+                            <div class="pub-authors">MH Cheng, YC Chen, Q Wang, V Bartsch, AC Medina, MS Kim, A Hu, MH Hsieh</div>
+                            <div class="pub-venue">Physical Review Research 7, 033280, 2025</div>
+                            <div class="pub-links">
+                                <a href="https://arxiv.org/abs/2309.09370" target="_blank" rel="noopener">arXiv</a>
+                                <a href="https://doi.org/10.1103/lzf5-x6hc" target="_blank" rel="noopener">DOI</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pub-title">Neural Network Assisted Fermionic Compression Encoding: A Lossy-QSCI Framework for Scalable Quantum Chemistry Simulations</div>
+                            <div class="pub-authors">YC Chen, R Wu, MH Cheng, MH Hsieh</div>
+                            <div class="pub-venue">International Conference on Quantum Engineering Sciences and Technologies, 2025 · 2 citations</div>
+                            <div class="pub-links">
+                                <a href="https://arxiv.org/abs/2505.17846" target="_blank" rel="noopener">arXiv</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pub-group">
+                    <h4>⚗️ Quantum Chemistry Applications</h4>
+                    <ul class="publications-list">
+                        <li>
+                            <div class="pub-title">Hybrid Quantum-Classical Clustering for Preparing a Prior Distribution of Eigenspectrum</div>
+                            <div class="pub-authors">M Ren, YC Chen, CJ Lai, MH Hsieh, A Hu</div>
+                            <div class="pub-venue">npj Quantum Information, 2026</div>
+                            <div class="pub-links">
+                                <a href="https://arxiv.org/abs/2407.00450" target="_blank" rel="noopener">arXiv</a>
+                                <a href="https://doi.org/10.1038/s41534-026-01194-2" target="_blank" rel="noopener">DOI</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pub-title">Quantum Simulation of Preferred Tautomeric State Prediction</div>
+                            <div class="pub-authors">Y Shee, TL Yeh, JY Hsiao, A Yang, YC Lin, MH Hsieh</div>
+                            <div class="pub-venue">npj Quantum Information 9, 102, 2023</div>
+                            <div class="pub-links">
+                                <a href="https://arxiv.org/abs/2210.02977" target="_blank" rel="noopener">arXiv</a>
+                                <a href="https://www.nature.com/articles/s41534-023-00767-9" target="_blank" rel="noopener">DOI</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pub-title">Exploring the Advantages of Quantum Generative Adversarial Networks in Generative Chemistry</div>
+                            <div class="pub-authors">PY Kao, YC Yang, WY Chiang, JY Hsiao, Y Cao, A Aliper, F Ren, A Aspuru-Guzik, A Zhavoronkov, MH Hsieh, YC Lin</div>
+                            <div class="pub-venue">Journal of Chemical Information and Modeling 63 (11), 3307-3318, 2023 · 113 citations</div>
+                            <div class="pub-links">
+                                <a href="https://arxiv.org/abs/2210.16823" target="_blank" rel="noopener">arXiv</a>
+                                <a href="https://doi.org/10.1021/acs.jcim.3c00562" target="_blank" rel="noopener">DOI</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pub-group">
+                    <h4>🔧 Simulation Algorithms</h4>
+                    <ul class="publications-list">
+                        <li>
+                            <div class="pub-title">Benchmarking Quantum Simulation Methods</div>
+                            <div class="pub-authors">C Ku, YC Chen, A Hu, MH Hsieh</div>
+                            <div class="pub-venue">arXiv preprint arXiv:2510.01710, 2025</div>
+                            <div class="pub-links">
+                                <a href="https://arxiv.org/abs/2510.01710" target="_blank" rel="noopener">arXiv</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pub-title">A Gell-Mann & Low Theorem Perspective on Quantum Computing: New Paradigm for Designing Quantum Algorithm</div>
+                            <div class="pub-authors">CT Li, T Tzen Ong, L Wang, MC Hsu, H Lin, MH Hsieh</div>
+                            <div class="pub-venue">arXiv preprint arXiv:2311.18271, 2023</div>
+                            <div class="pub-links">
+                                <a href="https://arxiv.org/abs/2311.18271" target="_blank" rel="noopener">arXiv</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pub-title">Quantum Algorithm for Low Energy Effective Hamiltonian and Quasi-Degenerate Eigenvalue Problem</div>
+                            <div class="pub-authors">CT Li, T Ong, CY Lin, YC Chen, H Lin, MH Hsieh</div>
+                            <div class="pub-venue">arXiv preprint arXiv:2510.08088, 2025</div>
+                            <div class="pub-links">
+                                <a href="https://arxiv.org/abs/2510.08088" target="_blank" rel="noopener">arXiv</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="collaborators">
+                <h2>Key Collaborators</h2>
+                <div class="collaborators-grid">
+                    <div class="collaborator-group">
+                        <h4>Hon Hai Quantum Computing Research Center</h4>
+                        <ul>
+                            <li>Yu-Cheng Chen</li>
+                            <li>Alice Hu</li>
+                            <li>Calvin Ku</li>
+                            <li>M. H. Cheng</li>
+                            <li>Mengzhen Ren</li>
+                        </ul>
+                    </div>
+                    <div class="collaborator-group">
+                        <h4>Academia Sinica</h4>
+                        <ul>
+                            <li>Ching-Jui Lai</li>
+                        </ul>
+                    </div>
+                    <div class="collaborator-group">
+                        <h4>National Yang Ming Chiao Tung University</h4>
+                        <ul>
+                            <li>Yen-Chu Lin</li>
+                        </ul>
+                    </div>
+                    <div class="collaborator-group">
+                        <h4>University of Copenhagen</h4>
+                        <ul>
+                            <li>Ronin Wu</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="related-topics">
+                    <h3>Related Research Topics</h3>
+                    <a href="research-qml.html">→ Quantum Machine Learning</a>
+                    <a href="research-algo.html">→ Quantum Algorithms</a>
+                    <a href="research-metrology.html">→ Quantum Metrology</a>
+                    <a href="research-qec.html">→ Quantum Error Correction</a>
+                </div>
+                
+                <div class="nav-links">
+                    <a href="research-applications.html" class="nav-link">
+                        <svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+                        Back to Applications
+                    </a>
+                    <a href="research.html" class="nav-link">
+                        <svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+                        Back to Research Overview
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <aside class="side-nav">
+            <h3>In This Topic</h3>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#collaborators">Collaborators</a></li>
+                <li><a href="#related">Related Topics</a></li>
+            </ul>
+
+            <h4>Publications by Sub-topic</h4>
+            <ul>
+                <li><a href="#publications">Fermionic Encoding</a></li>
+                <li><a href="#publications">Quantum Chemistry</a></li>
+                <li><a href="#publications">Simulation Algorithms</a></li>
+            </ul>
+
+            <h4>Quick Jump</h4>
+            <ul>
+                <li><a href="#overview">↑ To top</a></li>
+                <li><a href="#publications">↓ To publications</a></li>
+                <li><a href="#collaborators">↓ To collaborators</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-item">
+                    <a href="mailto:min-hsiu.hsieh@foxconn.com" class="footer-icon-link" title="Email">
+                        <div class="footer-icon">
+                            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="footer-item">
+                    <div class="footer-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/min-hsiu-hsieh-6199b0/" target="_blank" rel="noopener" title="LinkedIn">
+                            <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                        </a>
+                        <a href="https://x.com/quantum_minhsiu" target="_blank" rel="noopener" title="Twitter">
+                            <svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                        </a>
+                        <a href="https://scholar.google.com/citations?user=UXx1jNYAAAAJ" target="_blank" rel="noopener" title="Google Scholar">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-item">
+                    <a href="https://maps.app.goo.gl/jwDW2MSc6T7pYtRYA" target="_blank" rel="noopener" class="footer-icon-link" title="Address">
+                        <div class="footer-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2026 Min-Hsiu Hsieh. All rights reserved.</p>
+                <p>Powered by <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
