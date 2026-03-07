@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software with Enhanced Advantage - Research - Min-Hsiu Hsieh</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #9b59b6;
+            --category-color: #9b59b6;
+            --category-gradient: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+            --text-color: #333;
+            --bg-color: #fff;
+            --light-gray: #f8f9fa;
+            --border-color: #e9ecef;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background: var(--bg-color);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        header .chinese-name {
+            font-size: 1.5rem;
+            opacity: 0.9;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--light-gray);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        nav a.active {
+            color: var(--accent-color);
+        }
+
+        /* Category Hero */
+        .category-hero {
+            background: var(--category-gradient);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .category-hero .category-icon {
+            font-size: 4rem;
+            margin-bottom: 15px;
+        }
+
+        .category-hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .category-hero .tagline {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            background: var(--light-gray);
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .breadcrumb a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumb span {
+            color: #666;
+        }
+
+        /* Main content */
+        .research-wrapper {
+            display: flex;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Side navigation */
+        .side-nav {
+            flex: 0 0 250px;
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .side-nav h3 {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .side-nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .side-nav li {
+            margin-bottom: 10px;
+        }
+
+        .side-nav a {
+            text-decoration: none;
+            color: #555;
+            font-size: 0.95rem;
+            transition: all 0.2s;
+            display: block;
+            padding: 6px 12px;
+            border-radius: 5px;
+        }
+
+        .side-nav a:hover {
+            color: var(--category-color);
+            background: var(--light-gray);
+        }
+
+        .side-nav a.active {
+            color: var(--category-color);
+            background: var(--light-gray);
+            font-weight: 600;
+        }
+
+        /* Main content */
+        .research-main {
+            flex: 1;
+        }
+
+        /* Sections */
+        section {
+            padding: 40px 0;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--category-color);
+            display: inline-block;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin: 25px 0 15px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* Overview Box */
+        .overview-box {
+            background: white;
+            padding: 30px;
+            border-left: 4px solid var(--category-color);
+            margin: 30px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .overview-box p {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        /* Topic Cards */
+        .topic-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .topic-card {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 30px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .topic-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-color: var(--category-color);
+        }
+
+        .topic-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--category-gradient);
+        }
+
+        .topic-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .topic-card h3 {
+            font-size: 1.3rem;
+            margin: 0 0 12px 0;
+            color: var(--primary-color);
+        }
+
+        .topic-card p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .topic-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--category-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: gap 0.2s;
+        }
+
+        .topic-link:hover {
+            gap: 12px;
+        }
+
+        .topic-link svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+
+        /* Key Contributions */
+        .contributions-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .contributions-list li {
+            padding: 12px 0 12px 35px;
+            position: relative;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .contributions-list li:last-child {
+            border-bottom: none;
+        }
+
+        .contributions-list li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--category-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Publications List */
+        .publications-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .publications-list li {
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border-color);
+            text-align: left;
+        }
+
+        .publications-list li:last-child {
+            border-bottom: none;
+        }
+
+        .pub-title {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .pub-authors {
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        .pub-venue {
+            color: #666;
+            font-style: italic;
+        }
+
+        .pub-links {
+            margin-top: 8px;
+        }
+
+        .pub-links a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-right: 15px;
+        }
+
+        .pub-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Related Categories */
+        .related-categories {
+            background: var(--light-gray);
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+
+        .related-categories h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .related-categories a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-right: 20px;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .related-categories a:hover {
+            text-decoration: underline;
+        }
+
+        /* Back Link */
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: var(--light-gray);
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        .back-link:hover {
+            background: #e9ecef;
+            gap: 12px;
+        }
+
+        .back-link svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-color);
+            color: white;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            background: #2980b9;
+            padding: 30px 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 50px;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .footer-item a:hover {
+            opacity: 0.8;
+        }
+
+        .footer-item a:hover .footer-icon {
+            background: #e67e22;
+            transform: scale(1.05);
+        }
+
+        .footer-icon-link {
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .footer-icon {
+            width: 50px;
+            height: 50px;
+            background: #e67e22;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .footer-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            width: 32px;
+            height: 32px;
+            background: white;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+        }
+
+        .social-links a:hover {
+            background: #e67e22;
+        }
+
+        .social-links svg {
+            width: 18px;
+            height: 18px;
+            fill: #2980b9;
+        }
+
+        footer .copyright {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .category-hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .category-hero .tagline {
+                font-size: 1rem;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .research-wrapper {
+                flex-direction: column;
+            }
+
+            .side-nav {
+                flex: none;
+                position: static;
+                width: 100%;
+            }
+
+            .side-nav h3 {
+                text-align: center;
+            }
+
+            .side-nav ul {
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+
+            .side-nav li {
+                margin: 0;
+            }
+
+            .topic-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Min-Hsiu Hsieh</h1>
+            <div class="chinese-name">謝明修</div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="research.html">Research</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="category-hero">
+        <div class="container">
+            <div class="category-icon">💎</div>
+            <h1>Software with Enhanced Advantage</h1>
+            <p class="tagline">Unlocking quantum computational advantage through advanced algorithms, machine learning, and verification tools</p>
+        </div>
+    </div>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a> <span>&gt;</span> 
+            <a href="research.html">Research</a> <span>&gt;</span> 
+            <span>Software with Enhanced Advantage</span>
+        </div>
+    </div>
+
+    <div class="research-wrapper">
+        <aside class="side-nav">
+            <h3>Research Topics</h3>
+            <ul>
+                <li><a href="#qml">Quantum Machine Learning</a></li>
+                <li><a href="#algo">Quantum Algorithms</a></li>
+                <li><a href="#complexity">Complexity Theory</a></li>
+                <li><a href="#verification">Circuit Verification</a></li>
+            </ul>
+            <h3 style="margin-top: 25px;">Quick Links</h3>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#contributions">Key Contributions</a></li>
+                <li><a href="#publications">Publications</a></li>
+            </ul>
+        </aside>
+
+        <main class="research-main">
+            <section id="overview">
+                <h2>Overview</h2>
+                
+                <div class="overview-box">
+                    <p>
+                        Quantum computers promise exponential speedups for certain computational tasks, but realizing 
+                        this advantage requires sophisticated algorithms, robust learning protocols, and reliable 
+                        verification tools. Our research develops the software stack that unlocks quantum advantage.
+                    </p>
+                    <p>
+                        We pioneered quantum neural networks and quantum generative adversarial learning, analyzed 
+                        barren plateaus in variational circuits, and developed efficient quantum architecture search 
+                        methods. Our work on circuit verification provides essential tools for validating quantum 
+                        computations, while our complexity theory research establishes fundamental limits of 
+                        quantum computation.
+                    </p>
+                </div>
+
+                <h3>Research Topics</h3>
+                
+                <div class="topic-grid">
+                    <div class="topic-card" id="qml">
+                        <div class="topic-icon">🤖</div>
+                        <h3>Quantum Machine Learning</h3>
+                        <p>Developing quantum neural networks, QGANs, and variational quantum algorithms. Our research addresses barren plateaus, trainability, and practical applications of quantum learning.</p>
+                        <a href="research-qml.html" class="topic-link">
+                            Learn More
+                            <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                        </a>
+                    </div>
+
+                    <div class="topic-card" id="algo">
+                        <div class="topic-icon">⚡</div>
+                        <h3>Quantum Algorithms</h3>
+                        <p>Designing quantum algorithms for optimization, search, and simulation. Our work explores quantum speedups and efficient implementations for practical problems.</p>
+                        <a href="research-algo.html" class="topic-link">
+                            Learn More
+                            <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                        </a>
+                    </div>
+
+                    <div class="topic-card" id="complexity">
+                        <div class="topic-icon">📐</div>
+                        <h3>Quantum Complexity Theory</h3>
+                        <p>Establishing computational complexity of quantum problems, hardness results, and separations between classical and quantum computing power.</p>
+                        <a href="research-complexity.html" class="topic-link">
+                            Learn More
+                            <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                        </a>
+                    </div>
+
+                    <div class="topic-card" id="verification">
+                        <div class="topic-icon">✅</div>
+                        <h3>Circuit Verification</h3>
+                        <p>Developing tools for verifying quantum circuits and programs. Our AutoQ toolkit provides automated verification for quantum computing systems.</p>
+                        <a href="research-verification.html" class="topic-link">
+                            Learn More
+                            <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contributions">
+                <h2>Key Contributions</h2>
+                <ul class="contributions-list">
+                    <li>
+                        <strong>Expressive power of quantum neural networks</strong> — Established theoretical foundations for QNN expressivity and trainability, showing advantages over classical networks (Physical Review Research, 2020)
+                    </li>
+                    <li>
+                        <strong>Quantum generative adversarial learning</strong> — Pioneered QGAN algorithms with experimental demonstrations, enabling quantum-enhanced generative modeling (Physical Review Applied, 2021)
+                    </li>
+                    <li>
+                        <strong>Barren plateau analysis and mitigation</strong> — Identified barren plateau phenomenon in deep variational circuits and developed Gaussian initialization strategies to escape them (NeurIPS 2022)
+                    </li>
+                    <li>
+                        <strong>Quantum architecture search</strong> — Developed efficient methods for discovering optimal quantum circuit architectures, enabling automated quantum algorithm design (npj Quantum Information, 2022)
+                    </li>
+                    <li>
+                        <strong>AutoQ verification toolkit</strong> — Created automated verification tools for quantum circuits and programs, ensuring correctness of quantum computations (TACAS 2025)
+                    </li>
+                </ul>
+            </section>
+
+            <section id="publications">
+                <h2>Selected Publications</h2>
+                <ul class="publications-list">
+                    <li>
+                        <div class="pub-title">Expressive power of parametrized quantum circuits</div>
+                        <div class="pub-authors">Y Du, MH Hsieh, T Liu, D Tao</div>
+                        <div class="pub-venue">Physical Review Research 2 (3), 033125, 2020</div>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/abs/1810.11922" target="_blank" rel="noopener">arXiv</a>
+                            <a href="https://doi.org/10.1103/PhysRevResearch.2.033125" target="_blank" rel="noopener">DOI</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pub-title">Experimental quantum generative adversarial networks for image generation</div>
+                        <div class="pub-authors">HL Huang, Y Du, M Gong, Y Zhao, Y Wu, C Wang, S Li, F Liang, J Lin, MH Hsieh, et al.</div>
+                        <div class="pub-venue">Physical Review Applied 16 (2), 024051, 2021</div>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/abs/2010.06201" target="_blank" rel="noopener">arXiv</a>
+                            <a href="https://doi.org/10.1103/PhysRevApplied.16.024051" target="_blank" rel="noopener">DOI</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pub-title">Learnability of quantum neural networks</div>
+                        <div class="pub-authors">Y Du, MH Hsieh, T Liu, S You, D Tao</div>
+                        <div class="pub-venue">PRX Quantum 2 (4), 040337, 2021</div>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/abs/2007.12369" target="_blank" rel="noopener">arXiv</a>
+                            <a href="https://doi.org/10.1103/PRXQuantum.2.040337" target="_blank" rel="noopener">DOI</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pub-title">Escaping from the barren plateau via gaussian initializations</div>
+                        <div class="pub-authors">K Zhang, L Liu, MH Hsieh, D Tao</div>
+                        <div class="pub-venue">NeurIPS 2022, 18612-18627</div>
+                        <div class="pub-links">
+                            <a href="https://openreview.net/forum?id=jXgbJdQ2YIy" target="_blank" rel="noopener">OpenReview</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pub-title">Quantum circuit architecture search for variational quantum algorithms</div>
+                        <div class="pub-authors">Y Du, T Huang, S You, MH Hsieh, D Tao</div>
+                        <div class="pub-venue">npj Quantum Information 8 (1), 62, 2022</div>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/abs/2010.10217" target="_blank" rel="noopener">arXiv</a>
+                            <a href="https://doi.org/10.1038/s41534-022-00570-y" target="_blank" rel="noopener">DOI</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pub-title">AutoQ 2.0: From verification of quantum circuits to verification of quantum programs</div>
+                        <div class="pub-authors">YF Chen, KM Chung, MH Hsieh, WJ Huang, O Lengál, JA Lin, WL Tsai</div>
+                        <div class="pub-venue">TACAS 2025, Lecture Notes in Computer Science, vol 15698</div>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/abs/2411.09121" target="_blank" rel="noopener">arXiv</a>
+                            <a href="https://doi.org/10.1007/978-3-031-90660-2_5" target="_blank" rel="noopener">DOI</a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <div class="related-categories">
+                    <h3>Related Research Areas</h3>
+                    <a href="research-hardware.html">→ Hardware Enabling Technology</a>
+                    <a href="research-applications.html">→ Real-World Applications</a>
+                </div>
+                
+                <a href="research.html" class="back-link">
+                    <svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+                    Back to Research Overview
+                </a>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-item">
+                    <a href="mailto:min-hsiu.hsieh@foxconn.com" class="footer-icon-link" title="Email">
+                        <div class="footer-icon">
+                            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="footer-item">
+                    <div class="footer-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/min-hsiu-hsieh-6199b0/" target="_blank" rel="noopener" title="LinkedIn">
+                            <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                        </a>
+                        <a href="https://x.com/quantum_minhsiu" target="_blank" rel="noopener" title="Twitter">
+                            <svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                        </a>
+                        <a href="https://scholar.google.com/citations?user=UXx1jNYAAAAJ" target="_blank" rel="noopener" title="Google Scholar">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-item">
+                    <a href="https://maps.app.goo.gl/jwDW2MSc6T7pYtRYA" target="_blank" rel="noopener" class="footer-icon-link" title="Address">
+                        <div class="footer-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2026 Min-Hsiu Hsieh. All rights reserved.</p>
+                <p>Powered by <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
