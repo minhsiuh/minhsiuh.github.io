@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quantum Error Correction - Research - Min-Hsiu Hsieh</title>
+    
+    <!-- Leaflet.js for interactive maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
     <style>
         :root {
             --primary-color: #2c3e50;
@@ -342,29 +347,67 @@
             margin: 20px 0;
         }
 
-        .collaborator-group {
-            background: var(--light-gray);
-            padding: 20px;
+        /* Collaboration Map */
+        .collab-map-container {
+            background: white;
+            border: 1px solid var(--border-color);
             border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
 
-        .collaborator-group h4 {
+        #collab-map {
+            height: 500px;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .map-popup h4 {
             font-size: 1rem;
             color: var(--primary-color);
-            margin-bottom: 12px;
+            margin-bottom: 8px;
             font-weight: 600;
         }
 
-        .collaborator-group ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
+        .map-popup p {
+            font-size: 0.9rem;
+            color: #555;
+            margin: 4px 0;
+            text-align: left;
         }
 
-        .collaborator-group li {
-            padding: 4px 0;
-            color: #555;
-            font-size: 0.95rem;
+        .map-popup .papers {
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid #eee;
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .collab-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+            padding: 20px;
+            background: var(--light-gray);
+            border-radius: 8px;
+        }
+
+        .collab-stat {
+            text-align: center;
+        }
+
+        .collab-stat-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--category-color);
+        }
+
+        .collab-stat-label {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 4px;
         }
 
         /* Related Topics */
@@ -810,51 +853,118 @@
             </section>
 
             <section id="collaborators">
-                <h2>Key Collaborators</h2>
-                <div class="collaborators-grid">
-                    <div class="collaborator-group">
-                        <h4>University of Southern California</h4>
-                        <ul>
-                            <li>Todd Brun</li>
-                            <li>Igor Devetak</li>
-                        </ul>
+                <h2>Global Collaborations</h2>
+                <p style="margin-bottom: 20px; color: #666;">
+                    QEC research collaborations span across 6 countries and 6 leading institutions worldwide.
+                </p>
+                
+                <div class="collab-map-container">
+                    <div id="collab-map"></div>
+                </div>
+                
+                <div class="collab-stats">
+                    <div class="collab-stat">
+                        <div class="collab-stat-number">6</div>
+                        <div class="collab-stat-label">Institutions</div>
                     </div>
-                    <div class="collaborator-group">
-                        <h4>Hon Hai Quantum Computing Research Center</h4>
-                        <ul>
-                            <li>Ting-Chun Lin</li>
-                            <li>Adam Wills</li>
-                            <li>Hsin-Po Wang</li>
-                            <li>Xingjian Li</li>
-                        </ul>
+                    <div class="collab-stat">
+                        <div class="collab-stat-number">6</div>
+                        <div class="collab-stat-label">Countries</div>
                     </div>
-                    <div class="collaborator-group">
-                        <h4>Hebrew University of Jerusalem</h4>
-                        <ul>
-                            <li>Irit Dinur</li>
-                        </ul>
+                    <div class="collab-stat">
+                        <div class="collab-stat-number">15+</div>
+                        <div class="collab-stat-label">Joint Papers</div>
                     </div>
-                    <div class="collaborator-group">
-                        <h4>University of Warwick</h4>
-                        <ul>
-                            <li>Sergii Strelchuk</li>
-                        </ul>
-                    </div>
-                    <div class="collaborator-group">
-                        <h4>Ghent University</h4>
-                        <ul>
-                            <li>Kristiaan De Greve</li>
-                            <li>Quinten Eggerickx</li>
-                        </ul>
-                    </div>
-                    <div class="collaborator-group">
-                        <h4>NTT</h4>
-                        <ul>
-                            <li>Hayata Yamasaki</li>
-                        </ul>
+                    <div class="collab-stat">
+                        <div class="collab-stat-number">20+</div>
+                        <div class="collab-stat-label">Collaborators</div>
                     </div>
                 </div>
             </section>
+            
+            <script>
+                // Initialize the map
+                const map = L.map('collab-map').setView([25, 0], 2);
+                
+                // Add OpenStreetMap tiles
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+                    maxZoom: 18
+                }).addTo(map);
+                
+                // Custom pin icon
+                const pinIcon = L.icon({
+                    iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
+                    iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
+                    shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+                    iconSize: [25, 41],
+                    iconAnchor: [12, 41],
+                    popupAnchor: [1, -34],
+                    shadowSize: [41, 41]
+                });
+                
+                // Collaboration institutions
+                const institutions = [
+                    {
+                        name: "University of Southern California",
+                        location: [34.0224, -118.2851],
+                        country: "USA",
+                        collaborators: ["Todd Brun", "Igor Devetak"],
+                        papers: ["EA-QECC (Science 2006)", "Catalytic QEC (IEEE TIT 2014)"]
+                    },
+                    {
+                        name: "Hon Hai Quantum Computing Research Center",
+                        location: [25.0703, 121.5775],
+                        country: "Taiwan",
+                        collaborators: ["Ting-Chun Lin", "Adam Wills", "Hsin-Po Wang", "Xingjian Li"],
+                        papers: ["Good Q-LDPC Codes (STOC 2023)", "Local Testability (npj QI 2024)"]
+                    },
+                    {
+                        name: "Hebrew University of Jerusalem",
+                        location: [31.7940, 35.2045],
+                        country: "Israel",
+                        collaborators: ["Irit Dinur"],
+                        papers: ["Good Q-LDPC Codes (STOC 2023)"]
+                    },
+                    {
+                        name: "University of Warwick",
+                        location: [52.3813, -1.5615],
+                        country: "UK",
+                        collaborators: ["Sergii Strelchuk"],
+                        papers: ["Constant-Overhead MSD (Nature Physics 2025)"]
+                    },
+                    {
+                        name: "Ghent University",
+                        location: [51.0543, 3.7174],
+                        country: "Belgium",
+                        collaborators: ["Kristiaan De Greve", "Quinten Eggerickx"],
+                        papers: ["Almost Linear Decoder (PRR 2025)"]
+                    },
+                    {
+                        name: "NTT",
+                        location: [35.6895, 139.6917],
+                        country: "Japan",
+                        collaborators: ["Hayata Yamasaki"],
+                        papers: ["Constant-Overhead MSD (Nature Physics 2025)"]
+                    }
+                ];
+                
+                // Add markers
+                institutions.forEach(inst => {
+                    const popupContent = `
+                        <div class="map-popup">
+                            <h4>${inst.name}</h4>
+                            <p><strong>📍 ${inst.country}</strong></p>
+                            <p><strong>Collaborators:</strong><br>${inst.collaborators.join(', ')}</p>
+                            <div class="papers"><strong>Key Papers:</strong><br>${inst.papers.join('<br>')}</div>
+                        </div>
+                    `;
+                    
+                    L.marker(inst.location, { icon: pinIcon })
+                        .addTo(map)
+                        .bindPopup(popupContent);
+                });
+            </script>
 
             <section>
                 <div class="related-topics">
@@ -883,7 +993,7 @@
             <ul>
                 <li><a href="#overview">Overview</a></li>
                 <li><a href="#publications">Publications</a></li>
-                <li><a href="#collaborators">Collaborators</a></li>
+                <li><a href="#collaborators">Global Collaborations</a></li>
                 <li><a href="#related">Related Topics</a></li>
             </ul>
 
