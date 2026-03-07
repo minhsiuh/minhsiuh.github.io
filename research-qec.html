@@ -923,8 +923,10 @@
             </section>
             
             <script>
-                // Initialize the map
-                const map = L.map('collab-map').setView([25, 0], 2);
+                // Wait for DOM to be ready
+                document.addEventListener('DOMContentLoaded', function() {
+                    // Initialize the map
+                    const map = L.map('collab-map').setView([25, 0], 2);
                 
                 // Add OpenStreetMap tiles
                 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -1059,6 +1061,7 @@
                     L.marker(inst.location, { icon: pinIcon })
                         .addTo(map)
                         .bindPopup(popupContent);
+                });
                 });
             </script>
 
