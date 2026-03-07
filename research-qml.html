@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quantum Machine Learning - Research - Min-Hsiu Hsieh</title>
+    
+    <!-- Leaflet.js for interactive maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
     <style>
         :root {
             --primary-color: #2c3e50;
@@ -342,6 +347,69 @@
             margin: 20px 0;
         }
 
+        /* Collaboration Map */
+        .collab-map-container {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        #collab-map {
+            height: 500px;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .map-popup h4 {
+            font-size: 1rem;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .map-popup p {
+            font-size: 0.9rem;
+            color: #555;
+            margin: 4px 0;
+            text-align: left;
+        }
+
+        .map-popup .papers {
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid #eee;
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .collab-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+            padding: 20px;
+            background: var(--light-gray);
+            border-radius: 8px;
+        }
+
+        .collab-stat {
+            text-align: center;
+        }
+
+        .collab-stat-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--category-color);
+        }
+
+        .collab-stat-label {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 4px;
+        }
+
         .collaborator-group {
             background: var(--light-gray);
             padding: 20px;
@@ -656,6 +724,159 @@
                         <strong>Bridge quantum learning and applications</strong> — Apply QML to real-world problems in chemistry, optimization, and data analysis
                     </li>
                 </ul>
+                
+                <!-- Global Collaborations Map -->
+                <div style="margin-top: 40px;">
+                    <h2>Global Collaborations</h2>
+                    <p style="margin-bottom: 20px; color: #666;">
+                        QML research collaborations span across 6 countries and 11 leading institutions worldwide.
+                    </p>
+                    
+                    <div class="collab-map-container">
+                        <div id="collab-map"></div>
+                    </div>
+                    
+                    <div class="collab-stats">
+                        <div class="collab-stat">
+                            <div class="collab-stat-number">11</div>
+                            <div class="collab-stat-label">Institutions</div>
+                        </div>
+                        <div class="collab-stat">
+                            <div class="collab-stat-number">6</div>
+                            <div class="collab-stat-label">Countries</div>
+                        </div>
+                        <div class="collab-stat">
+                            <div class="collab-stat-number">16</div>
+                            <div class="collab-stat-label">Joint Papers</div>
+                        </div>
+                        <div class="collab-stat">
+                            <div class="collab-stat-number">20</div>
+                            <div class="collab-stat-label">Collaborators</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <script>
+                    // Wait for DOM to be ready
+                    document.addEventListener('DOMContentLoaded', function() {
+                        // Initialize the map
+                        const map = L.map('collab-map').setView([25, 0], 2);
+                        
+                        // Add OpenStreetMap tiles
+                        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+                            maxZoom: 18
+                        }).addTo(map);
+                        
+                        // Custom pin icon
+                        const pinIcon = L.icon({
+                            iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
+                            iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
+                            shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+                            iconSize: [25, 41],
+                            iconAnchor: [12, 41],
+                            popupAnchor: [1, -34],
+                            shadowSize: [41, 41]
+                        });
+                        
+                        // QML Collaboration institutions
+                        const institutions = [
+                            {
+                                name: "University of Sydney",
+                                location: [-33.8886, 151.1873],
+                                country: "Australia",
+                                collaborators: ["Dacheng Tao", "Yuxuan Du", "Tongliang Liu"],
+                                papers: ["Expressive power (PRR 2020)", "Learnability (PRX Quantum 2021)", "QGAN (PRApplied 2021)"]
+                            },
+                            {
+                                name: "Hon Hai Quantum Computing Research Center",
+                                location: [25.0703, 121.5775],
+                                country: "Taiwan",
+                                collaborators: ["Jun Qi", "Yu-Cheng Chen", "Calvin Ku"],
+                                papers: ["TensorHyper-VQC (npj QI 2026)", "Continual QAS (arXiv 2026)"]
+                            },
+                            {
+                                name: "University of Technology Sydney",
+                                location: [-33.8839, 151.2006],
+                                country: "Australia",
+                                collaborators: ["Kaining Zhang", "Shan You"],
+                                papers: ["Barren plateaus (NeurIPS 2022)", "QNN expressivity (PRR 2020)"]
+                            },
+                            {
+                                name: "IBM Research",
+                                location: [41.0534, -73.7134],
+                                country: "USA",
+                                collaborators: ["Pin-Yu Chen"],
+                                papers: ["VQC-MLPNet (arXiv 2025)", "Random-Matrix-Induced Simplicity (arXiv 2026)"]
+                            },
+                            {
+                                name: "University of Copenhagen",
+                                location: [55.6761, 12.5683],
+                                country: "Denmark",
+                                collaborators: ["Nana Liu"],
+                                papers: ["Quantum noise protection (PRR 2021)"]
+                            },
+                            {
+                                name: "Tsinghua University",
+                                location: [39.9997, 116.3266],
+                                country: "China",
+                                collaborators: ["Yifan Hong"],
+                                papers: ["Problem-Dependent Power (PRL 2023)"]
+                            },
+                            {
+                                name: "Zhejiang University",
+                                location: [30.3087, 120.0810],
+                                country: "China",
+                                collaborators: ["Yuxuan Du"],
+                                papers: ["Expressive power (PRR 2020)"]
+                            },
+                            {
+                                name: "Shanghai Jiao Tong University",
+                                location: [31.0234, 121.4354],
+                                country: "China",
+                                collaborators: ["Tao Huang"],
+                                papers: ["QAS (npj QI 2022)"]
+                            },
+                            {
+                                name: "Fudan University",
+                                location: [31.2989, 121.5400],
+                                country: "China",
+                                collaborators: ["Shi Jie Samuel Tan"],
+                                papers: ["Single-Shot Universality (QIP 2026)"]
+                            },
+                            {
+                                name: "University of Toronto",
+                                location: [43.6629, -79.3957],
+                                country: "Canada",
+                                collaborators: ["Patrick Rebentrost"],
+                                papers: ["A Gentle Introduction to QML (Springer 2025)"]
+                            },
+                            {
+                                name: "RIKEN Center for Quantum Computing",
+                                location: [35.7143, 139.7915],
+                                country: "Japan",
+                                collaborators: ["Hayata Yamasaki"],
+                                papers: ["Constant-Overhead MSD (Nature Physics 2025)"]
+                            }
+                        ];
+                        
+                        // Add markers
+                        institutions.forEach(inst => {
+                            const popupContent = `
+                                <div class="map-popup">
+                                    <h4>${inst.name}</h4>
+                                    <p><strong>📍 ${inst.country}</strong></p>
+                                    <p><strong>Collaborators:</strong><br>${inst.collaborators.join(', ')}</p>
+                                    <div class="papers"><strong>Key Papers:</strong><br>${inst.papers.join('<br>')}</div>
+                                </div>
+                            `;
+                            
+                            L.marker(inst.location, { icon: pinIcon })
+                                .addTo(map)
+                                .bindPopup(popupContent);
+                        });
+                    });
+                </script>
             </section>
 
             <section id="publications">
@@ -822,48 +1043,7 @@
                 </div>
             </section>
 
-            <section id="collaborators">
-                <h2>Key Collaborators</h2>
-                <div class="collaborators-grid">
-                    <div class="collaborator-group">
-                        <h4>University of Sydney</h4>
-                        <ul>
-                            <li>Dacheng Tao</li>
-                            <li>Yuxuan Du</li>
-                            <li>Tongliang Liu</li>
-                        </ul>
-                    </div>
-                    <div class="collaborator-group">
-                        <h4>Hon Hai Quantum Computing Research Center</h4>
-                        <ul>
-                            <li>Jun Qi</li>
-                            <li>Yu-Cheng Chen</li>
-                            <li>Calvin Ku</li>
-                        </ul>
-                    </div>
-                    <div class="collaborator-group">
-                        <h4>University of Technology Sydney</h4>
-                        <ul>
-                            <li>Kaining Zhang</li>
-                            <li>Shan You</li>
-                        </ul>
-                    </div>
-                    <div class="collaborator-group">
-                        <h4>IBM Research</h4>
-                        <ul>
-                            <li>Pin-Yu Chen</li>
-                        </ul>
-                    </div>
-                    <div class="collaborator-group">
-                        <h4>University of Copenhagen</h4>
-                        <ul>
-                            <li>Nana Liu</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section>
+            <section id="related">
                 <div class="related-topics">
                     <h3>Related Research Topics</h3>
                     <a href="research-algo.html">→ Quantum Algorithms</a>
@@ -890,7 +1070,6 @@
             <ul>
                 <li><a href="#overview">Overview</a></li>
                 <li><a href="#publications">Publications</a></li>
-                <li><a href="#collaborators">Collaborators</a></li>
                 <li><a href="#related">Related Topics</a></li>
             </ul>
 
@@ -907,7 +1086,6 @@
             <ul>
                 <li><a href="#overview">↑ To top</a></li>
                 <li><a href="#publications">↓ To publications</a></li>
-                <li><a href="#collaborators">↓ To collaborators</a></li>
             </ul>
         </aside>
     </div>
