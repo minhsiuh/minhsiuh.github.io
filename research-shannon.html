@@ -786,7 +786,7 @@
             <section id="collaborators">
                 <h2>Collaborators Network Map</h2>
                 <p style="margin-bottom: 20px; color: #666;">
-                    Curated collaborators for Quantum Shannon Theory (verified from listed publications on this page).
+                    Complete collaborators list extracted from all selected publications on this Quantum Shannon Theory page.
                 </p>
 
                 <div class="collab-map-container">
@@ -795,31 +795,52 @@
 
                 <div class="collab-stats">
                     <div class="collab-stat">
-                        <div class="collab-stat-number">6</div>
-                        <div class="collab-stat-label">Institutions</div>
-                    </div>
-                    <div class="collab-stat">
-                        <div class="collab-stat-number">4</div>
-                        <div class="collab-stat-label">Countries</div>
-                    </div>
-                    <div class="collab-stat">
-                        <div class="collab-stat-number">9</div>
+                        <div class="collab-stat-number">22</div>
                         <div class="collab-stat-label">Named Collaborators</div>
                     </div>
                     <div class="collab-stat">
-                        <div class="collab-stat-number">10+</div>
-                        <div class="collab-stat-label">Representative Papers</div>
+                        <div class="collab-stat-number">19</div>
+                        <div class="collab-stat-label">Selected Publications</div>
+                    </div>
+                    <div class="collab-stat">
+                        <div class="collab-stat-number">4+</div>
+                        <div class="collab-stat-label">Countries (minimum)</div>
+                    </div>
+                    <div class="collab-stat">
+                        <div class="collab-stat-number">2026</div>
+                        <div class="collab-stat-label">Last Updated</div>
                     </div>
                 </div>
 
-                <h3 style="margin-top: 28px;">Key Collaborators</h3>
+                <h3 style="margin-top: 28px;">Complete Collaborators List</h3>
                 <div class="collaborators-grid">
-                    <div class="collaborator-group"><h4>University of Southern California</h4><ul><li>Igor Devetak</li><li>Todd Brun</li></ul></div>
-                    <div class="collaborator-group"><h4>University of Cambridge</h4><ul><li>Nilanjana Datta</li><li>Andreas Winter</li></ul></div>
-                    <div class="collaborator-group"><h4>Louisiana State University</h4><ul><li>Mark Wilde</li></ul></div>
-                    <div class="collaborator-group"><h4>Nagoya University</h4><ul><li>Masahito Hayashi</li><li>Takaya Matsuura</li></ul></div>
-                    <div class="collaborator-group"><h4>Academia Sinica</h4><ul><li>Hao-Chung Cheng</li></ul></div>
-                    <div class="collaborator-group"><h4>MIT</h4><ul><li>Peter W. Shor</li></ul></div>
+                    <div class="collaborator-group" style="grid-column: 1 / -1;">
+                        <h4>All Co-authors in Selected Publications (Alphabetical)</h4>
+                        <ul style="columns: 2; column-gap: 32px;">
+                            <li>Hao-Chung Cheng</li>
+                            <li>Eric Chitambar</li>
+                            <li>Nilanjana Datta</li>
+                            <li>Igor Devetak</li>
+                            <li>Li Gao</li>
+                            <li>Ian George</li>
+                            <li>Saikat Guha</li>
+                            <li>Eric P. Hanson</li>
+                            <li>Masahito Hayashi</li>
+                            <li>Isaac H. Kim</li>
+                            <li>Ting-Chun Lin</li>
+                            <li>Takaya Matsuura</li>
+                            <li>Yoshifumi Nakata</li>
+                            <li>Haowei Shi</li>
+                            <li>Peter W. Shor</li>
+                            <li>Eyuri Wakakuwa</li>
+                            <li>Shun Watanabe</li>
+                            <li>Mark M. Wilde</li>
+                            <li>Andreas Winter</li>
+                            <li>Zheshen Zhang</li>
+                            <li>Elton Yechao Zhu</li>
+                            <li>Quntao Zhuang</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
@@ -1136,12 +1157,16 @@
             }).addTo(map);
 
             const institutions = [
-                {name:'University of Southern California', location:[34.0224,-118.2851], country:'USA', collaborators:['Igor Devetak','Todd Brun'], papers:['EA capacity of QMAC (IEEE TIT 2008)','EA communication (IEEE TIT 2010)']},
-                {name:'University of Cambridge', location:[52.2053,0.1218], country:'UK', collaborators:['Nilanjana Datta','Andreas Winter'], papers:['Quantum rate distortion (IEEE TIT 2013)','One-shot EA communication (IEEE TIT 2013)']},
-                {name:'Louisiana State University', location:[30.4133,-91.1800], country:'USA', collaborators:['Mark Wilde'], papers:['EA communication and trade-off results']},
-                {name:'Nagoya University', location:[35.1549,136.9656], country:'Japan', collaborators:['Masahito Hayashi','Takaya Matsuura'], papers:['Universal c-q channel resolvability (arXiv 2025)']},
-                {name:'Academia Sinica', location:[25.0418,121.6146], country:'Taiwan', collaborators:['Hao-Chung Cheng'], papers:['Moderate deviations and non-asymptotic analyses']},
-                {name:'MIT', location:[42.3601,-71.0942], country:'USA', collaborators:['Peter W. Shor'], papers:['Superadditivity in trade-off capacities (IEEE TIT 2019)']}
+                {name:'University of Southern California', location:[34.0224,-118.2851], country:'USA', collaborators:['Igor Devetak','Todd Brun'], papers:['EA capacity and communication (IEEE TIT)']},
+                {name:'University of Cambridge', location:[52.2053,0.1218], country:'UK', collaborators:['Nilanjana Datta','Andreas Winter'], papers:['Rate-distortion and one-shot communication']},
+                {name:'Louisiana State University', location:[30.4133,-91.1800], country:'USA', collaborators:['Mark M. Wilde'], papers:['Resource trade-offs and channel capacities']},
+                {name:'Nagoya University', location:[35.1549,136.9656], country:'Japan', collaborators:['Masahito Hayashi','Takaya Matsuura'], papers:['Channel resolvability and private coding']},
+                {name:'Academia Sinica', location:[25.0418,121.6146], country:'Taiwan', collaborators:['Hao-Chung Cheng','Eric P. Hanson'], papers:['Non-asymptotic analyses']},
+                {name:'MIT', location:[42.3601,-71.0942], country:'USA', collaborators:['Peter W. Shor','Isaac H. Kim'], papers:['Channel properties and operator inequalities']},
+                {name:'University of Technology Sydney', location:[-33.8830,151.2006], country:'Australia', collaborators:['Quntao Zhuang','Zheshen Zhang'], papers:['Communication and channel trade-off studies']},
+                {name:'University of Hong Kong', location:[22.2830,114.1371], country:'Hong Kong', collaborators:['Eyuri Wakakuwa','Yoshifumi Nakata'], papers:['One-shot state redistribution']},
+                {name:'University of Illinois Chicago', location:[41.8708,-87.6505], country:'USA', collaborators:['Eric Chitambar','Ian George'], papers:['Distributed source simulation and correlation cost']},
+                {name:'National Taiwan University', location:[25.0173,121.5398], country:'Taiwan', collaborators:['Ting-Chun Lin','Li Gao'], papers:['Noncommutative Renyi and channel properties']}
             ];
 
             institutions.forEach(inst => {
