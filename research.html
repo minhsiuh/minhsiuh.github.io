@@ -107,63 +107,10 @@
         }
 
         /* Main content */
-        .research-wrapper {
-            display: flex;
-            gap: 40px;
-            max-width: 1200px;
+        .research-main {
+            max-width: 980px;
             margin: 0 auto;
             padding: 0 20px;
-        }
-
-        /* Side navigation */
-        .side-nav {
-            flex: 0 0 250px;
-            position: sticky;
-            top: 100px;
-            height: fit-content;
-        }
-
-        .side-nav h3 {
-            font-size: 1.2rem;
-            margin-bottom: 15px;
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 10px;
-        }
-
-        .side-nav ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .side-nav li {
-            margin-bottom: 12px;
-        }
-
-        .side-nav a {
-            text-decoration: none;
-            color: var(--primary-color);
-            font-size: 1rem;
-            font-weight: 500;
-            transition: all 0.2s;
-            display: block;
-            padding: 8px 12px;
-            border-radius: 5px;
-        }
-
-        .side-nav a:hover {
-            color: var(--accent-color);
-            background: var(--light-gray);
-        }
-
-        .side-nav a.active {
-            color: var(--accent-color);
-            background: var(--light-gray);
-        }
-
-        /* Main content */
-        .research-main {
-            flex: 1;
         }
 
         /* Sections */
@@ -495,31 +442,6 @@
                 font-size: 1.5rem;
             }
 
-            .research-wrapper {
-                flex-direction: column;
-            }
-
-            .side-nav {
-                flex: none;
-                position: static;
-                width: 100%;
-            }
-
-            .side-nav h3 {
-                text-align: center;
-            }
-
-            .side-nav ul {
-                display: flex;
-                justify-content: center;
-                gap: 15px;
-                flex-wrap: wrap;
-            }
-
-            .side-nav li {
-                margin: 0;
-            }
-
             .category-grid {
                 grid-template-columns: 1fr;
             }
@@ -546,18 +468,7 @@
         </div>
     </nav>
 
-    <div class="research-wrapper">
-        <aside class="side-nav">
-            <h3>Research Areas</h3>
-            <ul>
-                <li><a href="#hardware">Hardware Enabling Technology</a></li>
-                <li><a href="#software">Software with Enhanced Advantage</a></li>
-                <li><a href="#applications">Real-World Applications</a></li>
-                <li><a href="#others">Foundations & Theory</a></li>
-            </ul>
-        </aside>
-
-        <main class="research-main">
+    <main class="research-main">
             <section id="research">
                 <h2>Research</h2>
                 
@@ -639,8 +550,7 @@
                     </div>
                 </div>
             </section>
-        </main>
-    </div>
+    </main>
 
     <footer>
         <div class="footer-content">
