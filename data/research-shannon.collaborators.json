@@ -1,0 +1,291 @@
+{
+  "topic": "Quantum Shannon Theory",
+  "collaborators": [
+    "Fernando G. S. L. Brandao",
+    "Hao-Chung Cheng",
+    "Eric Chitambar",
+    "Nilanjana Datta",
+    "Igor Devetak",
+    "Li Gao",
+    "Ian George",
+    "Saikat Guha",
+    "Eric P. Hanson",
+    "Masahito Hayashi",
+    "Isaac H. Kim",
+    "Ting-Chun Lin",
+    "Takaya Matsuura",
+    "Milan Mosonyi",
+    "Yoshifumi Nakata",
+    "Haowei Shi",
+    "Peter W. Shor",
+    "Marco Tomamichel",
+    "Eyuri Wakakuwa",
+    "Shun Watanabe",
+    "Mark M. Wilde",
+    "Andreas Winter",
+    "Zheshen Zhang",
+    "Elton Yechao Zhu",
+    "Quntao Zhuang"
+  ],
+  "institutions": [
+    {
+      "name": "University of Southern California",
+      "country": "USA",
+      "location": [
+        34.0224,
+        -118.2851
+      ],
+      "collaborators": [
+        "Igor Devetak",
+        "Todd Brun"
+      ],
+      "papers": [
+        "EA capacity and communication (IEEE TIT)"
+      ]
+    },
+    {
+      "name": "University of Cambridge",
+      "country": "UK",
+      "location": [
+        52.2053,
+        0.1218
+      ],
+      "collaborators": [
+        "Nilanjana Datta"
+      ],
+      "papers": [
+        "Rate-distortion and one-shot communication"
+      ]
+    },
+    {
+      "name": "University of Bristol",
+      "country": "UK",
+      "location": [
+        51.4584,
+        -2.603
+      ],
+      "collaborators": [
+        "Milán Mosonyi"
+      ],
+      "papers": [
+        "Smooth entropy approach to quantum hypothesis testing"
+      ]
+    },
+    {
+      "name": "Universitat Autònoma de Barcelona",
+      "country": "Spain",
+      "location": [
+        41.5,
+        2.1079
+      ],
+      "collaborators": [
+        "Andreas Winter"
+      ],
+      "papers": [
+        "Rate-distortion and one-shot communication collaborations"
+      ]
+    },
+    {
+      "name": "Louisiana State University",
+      "country": "USA",
+      "location": [
+        30.4133,
+        -91.18
+      ],
+      "collaborators": [
+        "Mark M. Wilde"
+      ],
+      "papers": [
+        "Resource trade-offs and channel capacities"
+      ]
+    },
+    {
+      "name": "Nagoya University",
+      "country": "Japan",
+      "location": [
+        35.1549,
+        136.9656
+      ],
+      "collaborators": [
+        "Masahito Hayashi"
+      ],
+      "papers": [
+        "Channel resolvability and private coding"
+      ]
+    },
+    {
+      "name": "RIKEN",
+      "country": "Japan",
+      "location": [
+        35.7006,
+        139.76
+      ],
+      "collaborators": [
+        "Takaya Matsuura"
+      ],
+      "papers": [
+        "Universal c-q channel resolvability and private channel coding"
+      ]
+    },
+    {
+      "name": "Academia Sinica",
+      "country": "Taiwan",
+      "location": [
+        25.0418,
+        121.6146
+      ],
+      "collaborators": [
+        "Hao-Chung Cheng",
+        "Eric P. Hanson"
+      ],
+      "papers": [
+        "Non-asymptotic analyses"
+      ]
+    },
+    {
+      "name": "MIT",
+      "country": "USA",
+      "location": [
+        42.3601,
+        -71.0942
+      ],
+      "collaborators": [
+        "Peter W. Shor",
+        "Elton Yechao Zhu"
+      ],
+      "papers": [
+        "Channel properties and operator inequalities"
+      ]
+    },
+    {
+      "name": "ETH Zürich",
+      "country": "Switzerland",
+      "location": [
+        47.3763,
+        8.5476
+      ],
+      "collaborators": [
+        "Fernando G. S. L. Brandao"
+      ],
+      "papers": [
+        "Smooth entropy approach to quantum hypothesis testing"
+      ]
+    },
+    {
+      "name": "UC Davis",
+      "country": "USA",
+      "location": [
+        38.5382,
+        -121.7617
+      ],
+      "collaborators": [
+        "Isaac H. Kim"
+      ],
+      "papers": [
+        "Operator extension of weak monotonicity (LMP 2023)"
+      ]
+    },
+    {
+      "name": "University of Arizona",
+      "country": "USA",
+      "location": [
+        32.2319,
+        -110.9501
+      ],
+      "collaborators": [
+        "Haowei Shi",
+        "Saikat Guha",
+        "Quntao Zhuang",
+        "Zheshen Zhang"
+      ],
+      "papers": [
+        "Entanglement-assisted multiple-access channels and related communication studies"
+      ]
+    },
+    {
+      "name": "Kyoto University",
+      "country": "Japan",
+      "location": [
+        35.0262,
+        135.7808
+      ],
+      "collaborators": [
+        "Yoshifumi Nakata"
+      ],
+      "papers": [
+        "One-shot state redistribution"
+      ]
+    },
+    {
+      "name": "The University of Electro-Communications",
+      "country": "Japan",
+      "location": [
+        35.6547,
+        139.5433
+      ],
+      "collaborators": [
+        "Eyuri Wakakuwa"
+      ],
+      "papers": [
+        "One-shot trade-off bounds for state redistribution"
+      ]
+    },
+    {
+      "name": "University of Illinois Chicago",
+      "country": "USA",
+      "location": [
+        41.8708,
+        -87.6505
+      ],
+      "collaborators": [
+        "Eric Chitambar",
+        "Ian George"
+      ],
+      "papers": [
+        "Distributed source simulation and correlation cost"
+      ]
+    },
+    {
+      "name": "University of Houston",
+      "country": "USA",
+      "location": [
+        29.7199,
+        -95.3422
+      ],
+      "collaborators": [
+        "Li Gao"
+      ],
+      "papers": [
+        "Noncommutative Renyi and channel properties"
+      ]
+    },
+    {
+      "name": "UC San Diego (UCSD)",
+      "country": "USA",
+      "location": [
+        32.8801,
+        -117.234
+      ],
+      "collaborators": [
+        "Ting-Chun Lin"
+      ],
+      "papers": [
+        "An operator extension of weak monotonicity (LMP 2023)"
+      ]
+    },
+    {
+      "name": "National University of Singapore (NUS)",
+      "country": "Singapore",
+      "location": [
+        1.2966,
+        103.7764
+      ],
+      "collaborators": [
+        "Marco Tomamichel"
+      ],
+      "papers": [
+        "Quantum sphere-packing bounds (IEEE TIT 2019)"
+      ]
+    }
+  ]
+}

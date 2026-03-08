@@ -1,0 +1,332 @@
+{
+  "topic": "Quantum Shannon Theory",
+  "groups": [
+    {
+      "group": "📡 Channel Capacities, Multiple Access & Resource Trade-offs",
+      "publications": [
+        {
+          "title": "Entanglement-assisted capacity of quantum multiple-access channels",
+          "authors": "MH Hsieh, I Devetak, A Winter",
+          "venue": "IEEE Transactions on Information Theory 54 (7), 3078-3090, 2008 · 122 citations",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/quant-ph/0511228"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1109/TIT.2008.924716"
+            }
+          ]
+        },
+        {
+          "title": "Entanglement-assisted communication of classical and quantum information",
+          "authors": "MH Hsieh, MM Wilde",
+          "venue": "IEEE Transactions on Information Theory 56 (9), 4682-4704, 2010 · 117 citations",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/0811.4227"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1109/TIT.2010.2056631"
+            }
+          ]
+        },
+        {
+          "title": "The Private and Public Correlation Cost of Three Random Variables With Collaboration",
+          "authors": "Eric Chitambar, MH Hsieh, Andreas Winter",
+          "venue": "IEEE Transactions on Information Theory 62 (4), 2034-2043, 2016",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/1411.0729"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1109/TIT.2016.2530086"
+            }
+          ]
+        },
+        {
+          "title": "Entanglement-assisted multiple-access channels: capacity regions and protocol designs",
+          "authors": "H Shi, MH Hsieh, S Guha, Z Zhang, Q Zhuang",
+          "venue": "npj Quantum Information 7, 74, 2021",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2101.12173"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1038/s41534-021-00412-3"
+            }
+          ]
+        },
+        {
+          "title": "Trading classical communication, quantum communication, and entanglement in quantum Shannon theory",
+          "authors": "MH Hsieh, MM Wilde",
+          "venue": "IEEE Transactions on Information Theory 56 (9), 4705-4730, 2010 · 84 citations",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/0901.3038"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1109/TIT.2010.2056632"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "📦 Rate-Distortion & Source Coding",
+      "publications": [
+        {
+          "title": "Quantum rate distortion, reverse Shannon theorems, and source-channel separation",
+          "authors": "N Datta, MH Hsieh, MM Wilde",
+          "venue": "IEEE Transactions on Information Theory 59 (1), 615-630, 2013 · 139 citations",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/1108.4940"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1109/TIT.2012.2212272"
+            }
+          ]
+        },
+        {
+          "title": "Quantum-to-classical rate distortion coding",
+          "authors": "N Datta, MH Hsieh, MM Wilde, A Winter",
+          "venue": "Journal of Mathematical Physics 54 (4), 042201, 2013",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/1210.6962"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1063/1.4795107"
+            }
+          ]
+        },
+        {
+          "title": "Quantum rate-distortion coding with auxiliary resources",
+          "authors": "MM Wilde, N Datta, MH Hsieh, A Winter",
+          "venue": "IEEE Transactions on Information Theory 59 (10), 6755-6773, 2013 · 68 citations",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/1212.5316"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1109/TIT.2013.2270168"
+            }
+          ]
+        },
+        {
+          "title": "Channel Simulation and Coded Source Compression",
+          "authors": "MH Hsieh, S Watanabe",
+          "venue": "IEEE Transactions on Information Theory 62 (11), 6609-6619, 2016",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/1511.06071"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1109/TIT.2016.2600560"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "⚡ One-Shot & Non-Asymptotic Theory",
+      "publications": [
+        {
+          "title": "One-shot entanglement-assisted quantum and classical communication",
+          "authors": "N Datta, MH Hsieh",
+          "venue": "IEEE Transactions on Information Theory 59 (3), 1929-1939, 2013 · 109 citations",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/1105.3321"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1109/TIT.2012.2222887"
+            }
+          ]
+        },
+        {
+          "title": "Non-Asymptotic Classical Data Compression with Quantum Side Information",
+          "authors": "HC Cheng, EP Hanson, N Datta, MH Hsieh",
+          "venue": "IEEE Transactions on Information Theory 67 (2), 902-930, 2021 · 34 citations",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/1803.07505"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1109/TIT.2020.3038517"
+            }
+          ]
+        },
+        {
+          "title": "One-Shot Distributed Source Simulation: As Quantum as it Can Get",
+          "authors": "Ian George, MH Hsieh, Eric Chitambar",
+          "venue": "IEEE Transactions on Information Theory 71 (12), 9251-9284, Dec. 2025",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2301.04301"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1109/TIT.2025.3624812"
+            }
+          ]
+        },
+        {
+          "title": "One-Shot Trade-Off Bounds for State Redistribution of Classical-Quantum Sources",
+          "authors": "Eyuri Wakakuwa, Yoshifumi Nakata, MH Hsieh",
+          "venue": "Quantum 6, 724, 2022",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2006.12059"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.22331/q-2022-05-30-724"
+            }
+          ]
+        },
+        {
+          "title": "Moderate Deviation Analysis for Classical-Quantum Channels and Quantum Hypothesis Testing",
+          "authors": "Hao-Chung Cheng, MH Hsieh",
+          "venue": "IEEE Transactions on Information Theory 64 (2), 1385-1403, 2018",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/1701.03195"
+            }
+          ]
+        },
+        {
+          "title": "A smooth entropy approach to quantum hypothesis testing and the classical capacity of quantum channels",
+          "authors": "Nilanjana Datta, Milan Mosonyi, MH Hsieh, Fernando G. S. L. Brandao",
+          "venue": "IEEE Transactions on Information Theory 59 (12), 8014-8026, 2013",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/1106.3089"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1109/TIT.2013.2282160"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "🧩 Properties of Quantum Channels",
+      "publications": [
+        {
+          "title": "Superadditivity in trade-off capacities of quantum channels",
+          "authors": "Elton Yechao Zhu, Quntao Zhuang, MH Hsieh, Peter W. Shor",
+          "venue": "IEEE Transactions on Information Theory 65 (6), 3973-3989, 2019",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/1708.04314"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1109/TIT.2018.2889082"
+            }
+          ]
+        },
+        {
+          "title": "Concavity of the Auxiliary Function for Classical-Quantum Channels",
+          "authors": "Hao-Chung Cheng, MH Hsieh",
+          "venue": "IEEE Transactions on Information Theory 62 (10), 5960-5965, 2016",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/1602.03297"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1109/TIT.2016.2598835"
+            }
+          ]
+        },
+        {
+          "title": "Properties of Noncommutative Renyi and Augustin Information",
+          "authors": "Hao-Chung Cheng, Li Gao, MH Hsieh",
+          "venue": "Communications in Mathematical Physics 390, 501-544, 2022",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/1811.04218"
+            },
+            {
+              "label": "DOI",
+              "url": "https://link.springer.com/article/10.1007/s00220-022-04319-8"
+            }
+          ]
+        },
+        {
+          "title": "Universal classical-quantum channel resolvability and private channel coding",
+          "authors": "T Matsuura, M Hayashi, MH Hsieh",
+          "venue": "arXiv preprint arXiv:2510.02883, 2025",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2510.02883"
+            }
+          ]
+        },
+        {
+          "title": "An operator extension of weak monotonicity",
+          "authors": "Ting-Chun Lin, Isaac H. Kim, MH Hsieh",
+          "venue": "Letters in Mathematical Physics 113, 68, 2023",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2211.13372"
+            },
+            {
+              "label": "DOI",
+              "url": "https://link.springer.com/article/10.1007/s11005-023-01688-6#citeas"
+            }
+          ]
+        },
+        {
+          "title": "Quantum Sphere-Packing Bounds with Polynomial Prefactors",
+          "authors": "Hao-Chung Cheng, MH Hsieh, Marco Tomamichel",
+          "venue": "IEEE Transactions on Information Theory 65 (5), 2872-2898, 2019",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/1704.05703"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1109/TIT.2019.2891347"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
