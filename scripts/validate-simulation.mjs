@@ -8,6 +8,12 @@ const aliases = JSON.parse(fs.readFileSync(new URL('../data/research-simulation.
 
 const errors = [];
 
+const venueAbbrevRules = [
+  { pattern: /\bPhys\.\s*Rev\.\s*A\b/i, expected: 'Physical Review A' },
+  { pattern: /\bPhys\.\s*Rev\.\s*Lett\.\b/i, expected: 'Physical Review Letters' },
+  { pattern: /\bJ\.\s*Chem\.\s*Inf\.\s*Model\.\b/i, expected: 'Journal of Chemical Information and Modeling' }
+];
+
 for (const g of pubs.groups || []) {
   for (const p of g.publications || []) {
     const labels = (p.links || []).map(l => (l.label || '').toLowerCase());
@@ -22,6 +28,14 @@ for (const g of pubs.groups || []) {
     for (const shortName of Object.keys(aliases)) {
       if (authorStr.includes(shortName)) {
         errors.push(`Author alias not normalized (${shortName}) in: ${p.title}`);
+      }
+    }
+
+    // enforce full journal names (no short abbreviation forms)
+    const venue = p.venue || '';
+    for (const rule of venueAbbrevRules) {
+      if (rule.pattern.test(venue)) {
+        errors.push(`Venue abbreviation detected in \"${p.title}\". Use full name: ${rule.expected}`);
       }
     }
   }
