@@ -2,7 +2,7 @@
   "topic": "Quantum Simulation",
   "collaborators": [
     "Yu-Cheng Chen",
-    "M. H. Cheng",
+    "Man Hei Cheng",
     "Alice Hu",
     "Myungshik Kim",
     "Calvin Ku",
@@ -24,7 +24,6 @@
         "Yu-Cheng Chen",
         "Alice Hu",
         "Calvin Ku",
-        "M. H. Cheng",
         "Mengzhen Ren"
       ],
       "papers": [
@@ -95,7 +94,8 @@
         -0.1749
       ],
       "collaborators": [
-        "Myungshik Kim"
+        "Myungshik Kim",
+        "Man Hei Cheng"
       ],
       "papers": [
         "Optimal number-conserved linear encoding for practical fermionic simulation"
