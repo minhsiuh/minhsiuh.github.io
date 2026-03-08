@@ -301,6 +301,39 @@
         }
 
         /* Publications by Sub-topic */
+
+        /* Topic Stats */
+        .topic-stats {
+            background: var(--light-gray);
+            padding: 22px;
+            border-radius: 10px;
+            margin: 10px 0 28px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 14px;
+        }
+
+        .topic-stat-item {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 14px;
+            text-align: center;
+        }
+
+        .topic-stat-number {
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: var(--category-color);
+            line-height: 1.2;
+        }
+
+        .topic-stat-label {
+            margin-top: 6px;
+            font-size: 0.82rem;
+            color: #666;
+        }
+
         .pub-group {
             margin: 30px 0;
         }
@@ -795,6 +828,13 @@
 
             <section id="publications">
                 <h2>Selected Publications</h2>
+                <div class="topic-stats">
+                    <div class="topic-stat-item"><div class="topic-stat-number">19</div><div class="topic-stat-label">Papers in This Topic</div></div>
+                    <div class="topic-stat-item"><div class="topic-stat-number">673</div><div class="topic-stat-label">Known Citations (listed)</div></div>
+                    <div class="topic-stat-item"><div class="topic-stat-number">1929–2034</div><div class="topic-stat-label">Publication Year Range</div></div>
+                    <div class="topic-stat-item"><div class="topic-stat-number">19/0</div><div class="topic-stat-label">Journal / Conference</div></div>
+                </div>
+
 
                 <div class="pub-group">
                     <h4>📡 Channel Capacities, Multiple Access & Resource Trade-offs</h4>
