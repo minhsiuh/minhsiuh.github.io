@@ -109,10 +109,12 @@
         136.9656
       ],
       "collaborators": [
-        "Masahito Hayashi"
+        "Masahito Hayashi",
+        "Francesco Buscemi"
       ],
       "papers": [
-        "Channel resolvability and private coding"
+        "Channel resolvability and private coding",
+        "The information-theoretic costs of simulating quantum measurements (J. Phys. A 2012)"
       ]
     },
     {
@@ -287,6 +289,20 @@
       ],
       "papers": [
         "Quantum sphere-packing bounds (IEEE TIT 2019)"
+      ]
+    },
+    {
+      "name": "McGill University",
+      "country": "Canada",
+      "location": [
+        45.5048,
+        -73.5772
+      ],
+      "collaborators": [
+        "Patrick Hayden"
+      ],
+      "papers": [
+        "The information-theoretic costs of simulating quantum measurements (J. Phys. A 2012)"
       ]
     }
   ]
