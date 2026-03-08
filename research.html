@@ -218,6 +218,44 @@
             line-height: 1.8;
         }
 
+        /* Research Focus Quick Links */
+        .focus-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin: 20px 0 35px;
+        }
+
+        .focus-card {
+            display: block;
+            text-decoration: none;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 16px;
+            background: #fff;
+            transition: all 0.2s ease;
+        }
+
+        .focus-card:hover {
+            border-color: var(--accent-color);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .focus-card h4 {
+            margin: 0 0 8px;
+            font-size: 1rem;
+            color: var(--primary-color);
+        }
+
+        .focus-card p {
+            margin: 0;
+            text-align: left;
+            color: #666;
+            font-size: 0.92rem;
+            line-height: 1.5;
+        }
+
         /* Category Cards */
         .category-grid {
             display: grid;
@@ -556,7 +594,35 @@
                     </p>
                 </div>
 
-                <h3 style="margin-top: 40px;">Research Categories</h3>
+                <h3 style="margin-top: 40px;">Research Focus</h3>
+                <div class="focus-grid">
+                    <a class="focus-card" href="research-qec.html">
+                        <h4>Quantum Error Correction</h4>
+                        <p>Fault-tolerant protocols, code constructions, and practical pathways to reliable quantum computation.</p>
+                    </a>
+                    <a class="focus-card" href="research-qml.html">
+                        <h4>Quantum Machine Learning</h4>
+                        <p>Variational architectures, trainability, and hybrid models for data-driven quantum advantage.</p>
+                    </a>
+                    <a class="focus-card" href="research-shannon.html">
+                        <h4>Quantum Shannon Theory</h4>
+                        <p>Capacity limits, coding theorems, and information-theoretic foundations of quantum communication.</p>
+                    </a>
+                    <a class="focus-card" href="research-simulation.html">
+                        <h4>Quantum Simulation</h4>
+                        <p>Algorithms and methods for simulating quantum systems in chemistry, physics, and materials.</p>
+                    </a>
+                    <a class="focus-card" href="research-hardware.html">
+                        <h4>Hardware Enabling Technology</h4>
+                        <p>Benchmarking, architecture-aware design, and co-optimization across device and protocol layers.</p>
+                    </a>
+                    <a class="focus-card" href="research-applications.html">
+                        <h4>Real-World Applications</h4>
+                        <p>End-to-end quantum workflows targeting practical impact in science and engineering domains.</p>
+                    </a>
+                </div>
+
+                <h3 style="margin-top: 30px;">Research Categories</h3>
                 
                 <div class="category-grid">
                     <!-- Hardware Enabling Technology -->
