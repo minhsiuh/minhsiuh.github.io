@@ -61,7 +61,23 @@
 
 ---
 
-## 4) 品質檢查（必跑）
+## 4) 知識圖表重建（建議每次更新後執行）
+
+在 repo 目錄執行：
+
+```bash
+node scripts/build-shannon-knowledge-graph.mjs
+```
+
+會輸出：
+- `data/research-shannon.knowledge-graph.json`
+- `data/research-shannon.collab-matrix.csv`
+
+用途：
+- 維持 `合作者 | affiliation | 國家 | 文章編號` 的可追蹤矩陣
+- 方便後續做統計、視覺化與外部匯出
+
+## 5) 品質檢查（必跑）
 
 在 repo 目錄執行：
 
@@ -76,7 +92,7 @@ node scripts/validate-shannon.mjs
 
 ---
 
-## 5) 提交與部署
+## 6) 提交與部署
 
 1. commit（訊息要清楚描述更新內容）
 2. 推送：
@@ -90,7 +106,7 @@ git push origin main
 
 ---
 
-## 6) 格式規範（固定）
+## 7) 格式規範（固定）
 
 - 連結順序：`arXiv` 在前，`DOI` 在後
 - 連結分隔：`[arXiv] [DOI]`（中間**不要逗號**）
@@ -99,7 +115,7 @@ git push origin main
 
 ---
 
-## 7) 例外處理
+## 8) 例外處理
 
 - Preprint 無 DOI：可只放 arXiv
 - DOI 多來源（publisher / doi.org）：以 `https://doi.org/...` 為優先
