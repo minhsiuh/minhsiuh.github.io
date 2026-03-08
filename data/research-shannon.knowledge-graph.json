@@ -1,0 +1,1122 @@
+{
+  "version": "1.0",
+  "topic": "Quantum Shannon Theory",
+  "lastCurated": "2026-03-08",
+  "papers": [
+    {
+      "paperId": "P001",
+      "group": "📡 Channel Capacities, Multiple Access & Resource Trade-offs",
+      "title": "Entanglement-assisted capacity of quantum multiple-access channels",
+      "year": 2008,
+      "venue": "IEEE Transactions on Information Theory 54 (7), 3078-3090, 2008 · 122 citations",
+      "doi": "https://doi.org/10.1109/TIT.2008.924726",
+      "arxiv": "https://arxiv.org/abs/quant-ph/0511228"
+    },
+    {
+      "paperId": "P002",
+      "group": "📡 Channel Capacities, Multiple Access & Resource Trade-offs",
+      "title": "Entanglement-assisted communication of classical and quantum information",
+      "year": 2010,
+      "venue": "IEEE Transactions on Information Theory 56 (9), 4682-4704, 2010 · 117 citations",
+      "doi": "https://doi.org/10.1109/TIT.2010.2053903",
+      "arxiv": "https://arxiv.org/abs/0811.4227"
+    },
+    {
+      "paperId": "P003",
+      "group": "📡 Channel Capacities, Multiple Access & Resource Trade-offs",
+      "title": "The Private and Public Correlation Cost of Three Random Variables With Collaboration",
+      "year": 2016,
+      "venue": "IEEE Transactions on Information Theory 62 (4), 2034-2043, 2016",
+      "doi": "https://doi.org/10.1109/TIT.2016.2530086",
+      "arxiv": "https://arxiv.org/abs/1411.0729"
+    },
+    {
+      "paperId": "P004",
+      "group": "📡 Channel Capacities, Multiple Access & Resource Trade-offs",
+      "title": "Entanglement-assisted capacity regions and protocol designs for quantum multiple-access channels",
+      "year": 2021,
+      "venue": "npj Quantum Information 7, 74, 2021",
+      "doi": "https://doi.org/10.1038/s41534-021-00412-3",
+      "arxiv": "https://arxiv.org/abs/2101.12173"
+    },
+    {
+      "paperId": "P005",
+      "group": "📡 Channel Capacities, Multiple Access & Resource Trade-offs",
+      "title": "Trading classical communication, quantum communication, and entanglement in quantum Shannon theory",
+      "year": 2010,
+      "venue": "IEEE Transactions on Information Theory 56 (9), 4705-4730, 2010 · 84 citations",
+      "doi": "https://doi.org/10.1109/TIT.2010.2054532",
+      "arxiv": "https://arxiv.org/abs/0901.3038"
+    },
+    {
+      "paperId": "P006",
+      "group": "📡 Channel Capacities, Multiple Access & Resource Trade-offs",
+      "title": "The information-theoretic costs of simulating quantum measurements",
+      "year": 2012,
+      "venue": "Journal of Physics A: Mathematical and Theoretical 45 (45), 453001, 2012",
+      "doi": "https://doi.org/10.1088/1751-8113/45/45/453001",
+      "arxiv": "https://arxiv.org/abs/1206.4121"
+    },
+    {
+      "paperId": "P007",
+      "group": "📦 Rate-Distortion & Source Coding",
+      "title": "Quantum rate distortion, reverse Shannon theorems, and source-channel separation",
+      "year": 2013,
+      "venue": "IEEE Transactions on Information Theory 59 (1), 615-630, 2013 · 139 citations",
+      "doi": "https://doi.org/10.1109/TIT.2012.2212272",
+      "arxiv": "https://arxiv.org/abs/1108.4940"
+    },
+    {
+      "paperId": "P008",
+      "group": "📦 Rate-Distortion & Source Coding",
+      "title": "Quantum-to-classical rate distortion coding",
+      "year": 2013,
+      "venue": "Journal of Mathematical Physics 54 (4), 042201, 2013",
+      "doi": "https://doi.org/10.1063/1.4798396",
+      "arxiv": "https://arxiv.org/abs/1210.6962"
+    },
+    {
+      "paperId": "P009",
+      "group": "📦 Rate-Distortion & Source Coding",
+      "title": "Quantum rate-distortion coding with auxiliary resources",
+      "year": 2013,
+      "venue": "IEEE Transactions on Information Theory 59 (10), 6755-6773, 2013 · 68 citations",
+      "doi": "https://doi.org/10.1109/TIT.2013.2271772",
+      "arxiv": "https://arxiv.org/abs/1212.5316"
+    },
+    {
+      "paperId": "P010",
+      "group": "📦 Rate-Distortion & Source Coding",
+      "title": "Channel Simulation and Coded Source Compression",
+      "year": 2016,
+      "venue": "IEEE Transactions on Information Theory 62 (11), 6609-6619, 2016",
+      "doi": "https://doi.org/10.1109/TIT.2016.2597853",
+      "arxiv": "https://arxiv.org/abs/1511.06071"
+    },
+    {
+      "paperId": "P011",
+      "group": "⚡ One-Shot & Non-Asymptotic Theory",
+      "title": "One-shot entanglement-assisted quantum and classical communication",
+      "year": 2013,
+      "venue": "IEEE Transactions on Information Theory 59 (3), 1929-1939, 2013 · 109 citations",
+      "doi": "https://doi.org/10.1109/TIT.2012.2215575",
+      "arxiv": "https://arxiv.org/abs/1105.3321"
+    },
+    {
+      "paperId": "P012",
+      "group": "⚡ One-Shot & Non-Asymptotic Theory",
+      "title": "Non-Asymptotic Classical Data Compression with Quantum Side Information",
+      "year": 2021,
+      "venue": "IEEE Transactions on Information Theory 67 (2), 902-930, 2021 · 34 citations",
+      "doi": "https://doi.org/10.1063/1.4798396",
+      "arxiv": "https://arxiv.org/abs/1803.07505"
+    },
+    {
+      "paperId": "P013",
+      "group": "⚡ One-Shot & Non-Asymptotic Theory",
+      "title": "One-Shot Distributed Source Simulation: As Quantum as it Can Get",
+      "year": 2025,
+      "venue": "IEEE Transactions on Information Theory 71 (12), 9251-9284, Dec. 2025",
+      "doi": "https://doi.org/10.1109/TIT.2025.3624812",
+      "arxiv": "https://arxiv.org/abs/2301.04301"
+    },
+    {
+      "paperId": "P014",
+      "group": "⚡ One-Shot & Non-Asymptotic Theory",
+      "title": "One-Shot Hybrid State Redistribution",
+      "year": 2022,
+      "venue": "Quantum 6, 724, 2022",
+      "doi": "https://doi.org/10.22331/q-2022-05-30-724",
+      "arxiv": "https://arxiv.org/abs/2006.12059"
+    },
+    {
+      "paperId": "P015",
+      "group": "⚡ One-Shot & Non-Asymptotic Theory",
+      "title": "Moderate Deviation Analysis for Classical-Quantum Channels and Quantum Hypothesis Testing",
+      "year": 2018,
+      "venue": "IEEE Transactions on Information Theory 64 (2), 1385-1403, 2018",
+      "doi": "https://doi.org/10.1109/TIT.2017.2781254",
+      "arxiv": "https://arxiv.org/abs/1701.03195"
+    },
+    {
+      "paperId": "P016",
+      "group": "⚡ One-Shot & Non-Asymptotic Theory",
+      "title": "A smooth entropy approach to quantum hypothesis testing and the classical capacity of quantum channels",
+      "year": 2013,
+      "venue": "IEEE Transactions on Information Theory 59 (12), 8014-8026, 2013",
+      "doi": "https://doi.org/10.1109/TIT.2013.2282160",
+      "arxiv": "https://arxiv.org/abs/1106.3089"
+    },
+    {
+      "paperId": "P017",
+      "group": "🧩 Properties of Quantum Channels",
+      "title": "Superadditivity in trade-off capacities of quantum channels",
+      "year": 2019,
+      "venue": "IEEE Transactions on Information Theory 65 (6), 3973-3989, 2019",
+      "doi": "https://doi.org/10.1109/TIT.2018.2889082",
+      "arxiv": "https://arxiv.org/abs/1708.04314"
+    },
+    {
+      "paperId": "P018",
+      "group": "🧩 Properties of Quantum Channels",
+      "title": "Concavity of the Auxiliary Function for Classical-Quantum Channels",
+      "year": 2016,
+      "venue": "IEEE Transactions on Information Theory 62 (10), 5960-5965, 2016",
+      "doi": "https://doi.org/10.1109/TIT.2016.2598835",
+      "arxiv": "https://arxiv.org/abs/1602.03297"
+    },
+    {
+      "paperId": "P019",
+      "group": "🧩 Properties of Quantum Channels",
+      "title": "Properties of Noncommutative Renyi and Augustin Information",
+      "year": 2022,
+      "venue": "Communications in Mathematical Physics 390, 501-544, 2022",
+      "doi": "https://link.springer.com/article/10.1007/s00220-022-04319-8",
+      "arxiv": "https://arxiv.org/abs/1811.04218"
+    },
+    {
+      "paperId": "P020",
+      "group": "🧩 Properties of Quantum Channels",
+      "title": "Universal classical-quantum channel resolvability and private channel coding",
+      "year": 2025,
+      "venue": "arXiv preprint arXiv:2510.02883, 2025",
+      "doi": null,
+      "arxiv": "https://arxiv.org/abs/2510.02883"
+    },
+    {
+      "paperId": "P021",
+      "group": "🧩 Properties of Quantum Channels",
+      "title": "An operator extension of weak monotonicity",
+      "year": 2023,
+      "venue": "Letters in Mathematical Physics 113, 68, 2023",
+      "doi": "https://link.springer.com/article/10.1007/s11005-023-01688-6#citeas",
+      "arxiv": "https://arxiv.org/abs/2211.13372"
+    },
+    {
+      "paperId": "P022",
+      "group": "🧩 Properties of Quantum Channels",
+      "title": "Quantum Sphere-Packing Bounds with Polynomial Prefactors",
+      "year": 2019,
+      "venue": "IEEE Transactions on Information Theory 65 (5), 2872-2898, 2019",
+      "doi": "https://doi.org/10.1109/TIT.2019.2891347",
+      "arxiv": "https://arxiv.org/abs/1704.05703"
+    }
+  ],
+  "collaborators": [
+    {
+      "collaboratorId": "C001",
+      "name": "Fernando G. S. L. Brandao",
+      "affiliations": [
+        {
+          "institutionId": "I009",
+          "institution": "ETH Zürich",
+          "country": "Switzerland",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P016"
+      ]
+    },
+    {
+      "collaboratorId": "C002",
+      "name": "Francesco Buscemi",
+      "affiliations": [
+        {
+          "institutionId": "I006",
+          "institution": "Nagoya University",
+          "country": "Japan",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P006"
+      ]
+    },
+    {
+      "collaboratorId": "C003",
+      "name": "Hao-Chung Cheng",
+      "affiliations": [
+        {
+          "institutionId": "I019",
+          "institution": "National Taiwan University",
+          "country": "Taiwan",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P012",
+        "P015",
+        "P018",
+        "P019",
+        "P022"
+      ]
+    },
+    {
+      "collaboratorId": "C004",
+      "name": "Eric Chitambar",
+      "affiliations": [
+        {
+          "institutionId": "I014",
+          "institution": "University of Illinois Chicago",
+          "country": "USA",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P003",
+        "P013"
+      ]
+    },
+    {
+      "collaboratorId": "C005",
+      "name": "Nilanjana Datta",
+      "affiliations": [
+        {
+          "institutionId": "I002",
+          "institution": "University of Cambridge",
+          "country": "UK",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P007",
+        "P008",
+        "P009",
+        "P011",
+        "P012",
+        "P016"
+      ]
+    },
+    {
+      "collaboratorId": "C006",
+      "name": "Igor Devetak",
+      "affiliations": [
+        {
+          "institutionId": "I001",
+          "institution": "University of Southern California",
+          "country": "USA",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P001"
+      ]
+    },
+    {
+      "collaboratorId": "C007",
+      "name": "Li Gao",
+      "affiliations": [
+        {
+          "institutionId": "I015",
+          "institution": "University of Houston",
+          "country": "USA",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P019"
+      ]
+    },
+    {
+      "collaboratorId": "C008",
+      "name": "Ian George",
+      "affiliations": [
+        {
+          "institutionId": "I014",
+          "institution": "University of Illinois Chicago",
+          "country": "USA",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P013"
+      ]
+    },
+    {
+      "collaboratorId": "C009",
+      "name": "Saikat Guha",
+      "affiliations": [
+        {
+          "institutionId": "I011",
+          "institution": "University of Arizona",
+          "country": "USA",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P004"
+      ]
+    },
+    {
+      "collaboratorId": "C010",
+      "name": "Eric P. Hanson",
+      "affiliations": [
+        {
+          "institutionId": "I002",
+          "institution": "University of Cambridge",
+          "country": "UK",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P012"
+      ]
+    },
+    {
+      "collaboratorId": "C011",
+      "name": "Masahito Hayashi",
+      "affiliations": [
+        {
+          "institutionId": "I006",
+          "institution": "Nagoya University",
+          "country": "Japan",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P020"
+      ]
+    },
+    {
+      "collaboratorId": "C012",
+      "name": "Patrick Hayden",
+      "affiliations": [
+        {
+          "institutionId": "I018",
+          "institution": "McGill University",
+          "country": "Canada",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P006"
+      ]
+    },
+    {
+      "collaboratorId": "C013",
+      "name": "Isaac H. Kim",
+      "affiliations": [
+        {
+          "institutionId": "I010",
+          "institution": "UC Davis",
+          "country": "USA",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P021"
+      ]
+    },
+    {
+      "collaboratorId": "C014",
+      "name": "Ting-Chun Lin",
+      "affiliations": [
+        {
+          "institutionId": "I016",
+          "institution": "UC San Diego (UCSD)",
+          "country": "USA",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P021"
+      ]
+    },
+    {
+      "collaboratorId": "C015",
+      "name": "Takaya Matsuura",
+      "affiliations": [
+        {
+          "institutionId": "I007",
+          "institution": "RIKEN",
+          "country": "Japan",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P020"
+      ]
+    },
+    {
+      "collaboratorId": "C016",
+      "name": "Milan Mosonyi",
+      "affiliations": [
+        {
+          "institutionId": "I003",
+          "institution": "University of Bristol",
+          "country": "UK",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P016"
+      ]
+    },
+    {
+      "collaboratorId": "C017",
+      "name": "Yoshifumi Nakata",
+      "affiliations": [
+        {
+          "institutionId": "I012",
+          "institution": "Kyoto University",
+          "country": "Japan",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P014"
+      ]
+    },
+    {
+      "collaboratorId": "C018",
+      "name": "Haowei Shi",
+      "affiliations": [
+        {
+          "institutionId": "I011",
+          "institution": "University of Arizona",
+          "country": "USA",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P004"
+      ]
+    },
+    {
+      "collaboratorId": "C019",
+      "name": "Peter W. Shor",
+      "affiliations": [
+        {
+          "institutionId": "I008",
+          "institution": "MIT",
+          "country": "USA",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P017"
+      ]
+    },
+    {
+      "collaboratorId": "C020",
+      "name": "Marco Tomamichel",
+      "affiliations": [
+        {
+          "institutionId": "I017",
+          "institution": "National University of Singapore (NUS)",
+          "country": "Singapore",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P022"
+      ]
+    },
+    {
+      "collaboratorId": "C021",
+      "name": "Eyuri Wakakuwa",
+      "affiliations": [
+        {
+          "institutionId": "I013",
+          "institution": "The University of Electro-Communications",
+          "country": "Japan",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P014"
+      ]
+    },
+    {
+      "collaboratorId": "C022",
+      "name": "Shun Watanabe",
+      "affiliations": [],
+      "paperIds": [
+        "P010"
+      ]
+    },
+    {
+      "collaboratorId": "C023",
+      "name": "Mark M. Wilde",
+      "affiliations": [
+        {
+          "institutionId": "I005",
+          "institution": "Louisiana State University",
+          "country": "USA",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P002",
+        "P005",
+        "P007",
+        "P008",
+        "P009"
+      ]
+    },
+    {
+      "collaboratorId": "C024",
+      "name": "Mark Wilde",
+      "affiliations": [],
+      "paperIds": [
+        "P006"
+      ]
+    },
+    {
+      "collaboratorId": "C025",
+      "name": "Andreas Winter",
+      "affiliations": [
+        {
+          "institutionId": "I004",
+          "institution": "Universitat Autònoma de Barcelona",
+          "country": "Spain",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P001",
+        "P003",
+        "P008",
+        "P009"
+      ]
+    },
+    {
+      "collaboratorId": "C026",
+      "name": "Zheshen Zhang",
+      "affiliations": [
+        {
+          "institutionId": "I011",
+          "institution": "University of Arizona",
+          "country": "USA",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P004"
+      ]
+    },
+    {
+      "collaboratorId": "C027",
+      "name": "Elton Yechao Zhu",
+      "affiliations": [
+        {
+          "institutionId": "I008",
+          "institution": "MIT",
+          "country": "USA",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P017"
+      ]
+    },
+    {
+      "collaboratorId": "C028",
+      "name": "Quntao Zhuang",
+      "affiliations": [
+        {
+          "institutionId": "I011",
+          "institution": "University of Arizona",
+          "country": "USA",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P004",
+        "P017"
+      ]
+    }
+  ],
+  "institutions": [
+    {
+      "institutionId": "I001",
+      "name": "University of Southern California",
+      "country": "USA",
+      "lat": 34.0224,
+      "lon": -118.2851
+    },
+    {
+      "institutionId": "I002",
+      "name": "University of Cambridge",
+      "country": "UK",
+      "lat": 52.2053,
+      "lon": 0.1218
+    },
+    {
+      "institutionId": "I003",
+      "name": "University of Bristol",
+      "country": "UK",
+      "lat": 51.4584,
+      "lon": -2.603
+    },
+    {
+      "institutionId": "I004",
+      "name": "Universitat Autònoma de Barcelona",
+      "country": "Spain",
+      "lat": 41.5,
+      "lon": 2.1079
+    },
+    {
+      "institutionId": "I005",
+      "name": "Louisiana State University",
+      "country": "USA",
+      "lat": 30.4133,
+      "lon": -91.18
+    },
+    {
+      "institutionId": "I006",
+      "name": "Nagoya University",
+      "country": "Japan",
+      "lat": 35.1549,
+      "lon": 136.9656
+    },
+    {
+      "institutionId": "I007",
+      "name": "RIKEN",
+      "country": "Japan",
+      "lat": 35.7006,
+      "lon": 139.76
+    },
+    {
+      "institutionId": "I008",
+      "name": "MIT",
+      "country": "USA",
+      "lat": 42.3601,
+      "lon": -71.0942
+    },
+    {
+      "institutionId": "I009",
+      "name": "ETH Zürich",
+      "country": "Switzerland",
+      "lat": 47.3763,
+      "lon": 8.5476
+    },
+    {
+      "institutionId": "I010",
+      "name": "UC Davis",
+      "country": "USA",
+      "lat": 38.5382,
+      "lon": -121.7617
+    },
+    {
+      "institutionId": "I011",
+      "name": "University of Arizona",
+      "country": "USA",
+      "lat": 32.2319,
+      "lon": -110.9501
+    },
+    {
+      "institutionId": "I012",
+      "name": "Kyoto University",
+      "country": "Japan",
+      "lat": 35.0262,
+      "lon": 135.7808
+    },
+    {
+      "institutionId": "I013",
+      "name": "The University of Electro-Communications",
+      "country": "Japan",
+      "lat": 35.6547,
+      "lon": 139.5433
+    },
+    {
+      "institutionId": "I014",
+      "name": "University of Illinois Chicago",
+      "country": "USA",
+      "lat": 41.8708,
+      "lon": -87.6505
+    },
+    {
+      "institutionId": "I015",
+      "name": "University of Houston",
+      "country": "USA",
+      "lat": 29.7199,
+      "lon": -95.3422
+    },
+    {
+      "institutionId": "I016",
+      "name": "UC San Diego (UCSD)",
+      "country": "USA",
+      "lat": 32.8801,
+      "lon": -117.234
+    },
+    {
+      "institutionId": "I017",
+      "name": "National University of Singapore (NUS)",
+      "country": "Singapore",
+      "lat": 1.2966,
+      "lon": 103.7764
+    },
+    {
+      "institutionId": "I018",
+      "name": "McGill University",
+      "country": "Canada",
+      "lat": 45.5048,
+      "lon": -73.5772
+    },
+    {
+      "institutionId": "I019",
+      "name": "National Taiwan University",
+      "country": "Taiwan",
+      "lat": 25.0173,
+      "lon": 121.5398
+    }
+  ],
+  "edges": [
+    {
+      "paperId": "P001",
+      "collaboratorId": "C006",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P001",
+      "collaboratorId": "C025",
+      "institutionId": "I004",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P002",
+      "collaboratorId": "C023",
+      "institutionId": "I005",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P003",
+      "collaboratorId": "C004",
+      "institutionId": "I014",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P003",
+      "collaboratorId": "C025",
+      "institutionId": "I004",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P004",
+      "collaboratorId": "C018",
+      "institutionId": "I011",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P004",
+      "collaboratorId": "C009",
+      "institutionId": "I011",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P004",
+      "collaboratorId": "C026",
+      "institutionId": "I011",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P004",
+      "collaboratorId": "C028",
+      "institutionId": "I011",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P005",
+      "collaboratorId": "C023",
+      "institutionId": "I005",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P006",
+      "collaboratorId": "C024",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P006",
+      "collaboratorId": "C012",
+      "institutionId": "I018",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P006",
+      "collaboratorId": "C002",
+      "institutionId": "I006",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P007",
+      "collaboratorId": "C005",
+      "institutionId": "I002",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P007",
+      "collaboratorId": "C023",
+      "institutionId": "I005",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P008",
+      "collaboratorId": "C005",
+      "institutionId": "I002",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P008",
+      "collaboratorId": "C023",
+      "institutionId": "I005",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P008",
+      "collaboratorId": "C025",
+      "institutionId": "I004",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P009",
+      "collaboratorId": "C023",
+      "institutionId": "I005",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P009",
+      "collaboratorId": "C005",
+      "institutionId": "I002",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P009",
+      "collaboratorId": "C025",
+      "institutionId": "I004",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P010",
+      "collaboratorId": "C022",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P011",
+      "collaboratorId": "C005",
+      "institutionId": "I002",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P012",
+      "collaboratorId": "C003",
+      "institutionId": "I019",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P012",
+      "collaboratorId": "C010",
+      "institutionId": "I002",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P012",
+      "collaboratorId": "C005",
+      "institutionId": "I002",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P013",
+      "collaboratorId": "C008",
+      "institutionId": "I014",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P013",
+      "collaboratorId": "C004",
+      "institutionId": "I014",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P014",
+      "collaboratorId": "C021",
+      "institutionId": "I013",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P014",
+      "collaboratorId": "C017",
+      "institutionId": "I012",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P015",
+      "collaboratorId": "C003",
+      "institutionId": "I019",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P016",
+      "collaboratorId": "C005",
+      "institutionId": "I002",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P016",
+      "collaboratorId": "C016",
+      "institutionId": "I003",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P016",
+      "collaboratorId": "C001",
+      "institutionId": "I009",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P017",
+      "collaboratorId": "C027",
+      "institutionId": "I008",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P017",
+      "collaboratorId": "C028",
+      "institutionId": "I011",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P017",
+      "collaboratorId": "C019",
+      "institutionId": "I008",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P018",
+      "collaboratorId": "C003",
+      "institutionId": "I019",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P019",
+      "collaboratorId": "C003",
+      "institutionId": "I019",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P019",
+      "collaboratorId": "C007",
+      "institutionId": "I015",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P020",
+      "collaboratorId": "C015",
+      "institutionId": "I007",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P020",
+      "collaboratorId": "C011",
+      "institutionId": "I006",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P021",
+      "collaboratorId": "C014",
+      "institutionId": "I016",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P021",
+      "collaboratorId": "C013",
+      "institutionId": "I010",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P022",
+      "collaboratorId": "C003",
+      "institutionId": "I019",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P022",
+      "collaboratorId": "C020",
+      "institutionId": "I017",
+      "role": "coauthor"
+    }
+  ]
+}
