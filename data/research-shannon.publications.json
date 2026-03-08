@@ -78,6 +78,21 @@
               "url": "https://doi.org/10.1109/TIT.2010.2056632"
             }
           ]
+        },
+        {
+          "title": "The information-theoretic costs of simulating quantum measurements",
+          "authors": "Mark Wilde, Patrick Hayden, Francesco Buscemi, MH Hsieh",
+          "venue": "Journal of Physics A: Mathematical and Theoretical 45 (45), 453001, 2012",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/1206.4121"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1088/1751-8113/45/45/453001"
+            }
+          ]
         }
       ]
     },
