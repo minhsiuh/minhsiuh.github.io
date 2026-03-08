@@ -795,15 +795,15 @@
 
                 <div class="collab-stats">
                     <div class="collab-stat">
-                        <div class="collab-stat-number">25</div>
+                        <div class="collab-stat-number" id="stat-collab-count">25</div>
                         <div class="collab-stat-label">Named Collaborators</div>
                     </div>
                     <div class="collab-stat">
-                        <div class="collab-stat-number">21</div>
+                        <div class="collab-stat-number" id="stat-selected-pubs">21</div>
                         <div class="collab-stat-label">Selected Publications</div>
                     </div>
                     <div class="collab-stat">
-                        <div class="collab-stat-number">7</div>
+                        <div class="collab-stat-number" id="stat-country-count">7</div>
                         <div class="collab-stat-label">Countries</div>
                     </div>
                     <div class="collab-stat">
@@ -816,7 +816,7 @@
                 <div class="collaborators-grid">
                     <div class="collaborator-group" style="grid-column: 1 / -1;">
                         <h4>All Co-authors in Selected Publications (Alphabetical)</h4>
-                        <ul style="columns: 2; column-gap: 32px;">
+                        <ul id="complete-collaborators-list" style="columns: 2; column-gap: 32px;">
                             <li>Fernando G. S. L. Brandao</li>
                             <li>Hao-Chung Cheng</li>
                             <li>Eric Chitambar</li>
@@ -850,10 +850,10 @@
             <section id="publications">
                 <h2>Selected Publications</h2>
                 <div class="topic-stats">
-                    <div class="topic-stat-item"><div class="topic-stat-number">21</div><div class="topic-stat-label">Papers in This Topic</div></div>
-                    <div class="topic-stat-item"><div class="topic-stat-number">673</div><div class="topic-stat-label">Known Citations (listed)</div></div>
-                    <div class="topic-stat-item"><div class="topic-stat-number">2008–2025</div><div class="topic-stat-label">Publication Year Range</div></div>
-                    <div class="topic-stat-item"><div class="topic-stat-number">21/0</div><div class="topic-stat-label">Journal / Conference</div></div>
+                    <div class="topic-stat-item"><div class="topic-stat-number" id="stat-topic-papers">21</div><div class="topic-stat-label">Papers in This Topic</div></div>
+                    <div class="topic-stat-item"><div class="topic-stat-number" id="stat-topic-citations">673</div><div class="topic-stat-label">Known Citations (listed)</div></div>
+                    <div class="topic-stat-item"><div class="topic-stat-number" id="stat-topic-years">2008–2025</div><div class="topic-stat-label">Publication Year Range</div></div>
+                    <div class="topic-stat-item"><div class="topic-stat-number" id="stat-topic-jc">21/0</div><div class="topic-stat-label">Journal / Conference</div></div>
                 </div>
 
 
@@ -1173,44 +1173,83 @@
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', async function() {
             const mapEl = document.getElementById('collab-map');
             if (!mapEl || typeof L === 'undefined') return;
 
+            async function loadJson(path) {
+                const res = await fetch(path, { cache: 'no-store' });
+                if (!res.ok) throw new Error(`Failed to load ${path}`);
+                return res.json();
+            }
+
+            let collabData, pubData;
+            try {
+                [collabData, pubData] = await Promise.all([
+                    loadJson('data/research-shannon.collaborators.json'),
+                    loadJson('data/research-shannon.publications.json')
+                ]);
+            } catch (e) {
+                console.error(e);
+                return;
+            }
+
+            // ===== Stats from JSON =====
+            const pubs = (pubData.groups || []).flatMap(g => g.publications || []);
+            const years = pubs.map(p => {
+                const m = (p.venue || '').match(/(19|20)\d{2}/g);
+                return m ? Number(m[m.length - 1]) : null;
+            }).filter(Boolean);
+            const cites = pubs.map(p => {
+                const m = (p.venue || '').match(/·\s*(\d+)\s+citations/i);
+                return m ? Number(m[1]) : 0;
+            });
+            const confKeywords = ['ISIT', 'QIP', 'STOC', 'Conference', 'Proceedings'];
+            const confCount = pubs.filter(p => confKeywords.some(k => (p.venue || '').includes(k))).length;
+            const jourCount = Math.max(0, pubs.length - confCount);
+
+            const setText = (id, v) => {
+                const el = document.getElementById(id);
+                if (el) el.textContent = String(v);
+            };
+            setText('stat-topic-papers', pubs.length);
+            setText('stat-topic-citations', cites.reduce((a,b)=>a+b,0) || '—');
+            setText('stat-topic-years', years.length ? `${Math.min(...years)}–${Math.max(...years)}` : '—');
+            setText('stat-topic-jc', `${jourCount}/${confCount}`);
+
+            const collabs = collabData.collaborators || [];
+            const institutions = collabData.institutions || [];
+            const countries = [...new Set(institutions.map(i => i.country).filter(Boolean))];
+            setText('stat-collab-count', collabs.length);
+            setText('stat-selected-pubs', pubs.length);
+            setText('stat-country-count', countries.length);
+
+            // collaborators full list
+            const ul = document.getElementById('complete-collaborators-list');
+            if (ul) {
+                ul.innerHTML = '';
+                [...collabs].sort((a,b)=>a.localeCompare(b)).forEach(name => {
+                    const li = document.createElement('li');
+                    li.textContent = name;
+                    ul.appendChild(li);
+                });
+            }
+
+            // ===== Map from JSON =====
             const map = L.map('collab-map').setView([28, 20], 2);
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
                 maxZoom: 18
             }).addTo(map);
 
-            const institutions = [
-                {name:'University of Southern California', location:[34.0224,-118.2851], country:'USA', collaborators:['Igor Devetak','Todd Brun'], papers:['EA capacity and communication (IEEE TIT)']},
-                {name:'University of Cambridge', location:[52.2053,0.1218], country:'UK', collaborators:['Nilanjana Datta'], papers:['Rate-distortion and one-shot communication']},
-                {name:'University of Bristol', location:[51.4584,-2.6030], country:'UK', collaborators:['Milán Mosonyi'], papers:['Smooth entropy approach to quantum hypothesis testing']},
-                {name:'Universitat Autònoma de Barcelona', location:[41.5000,2.1079], country:'Spain', collaborators:['Andreas Winter'], papers:['Rate-distortion and one-shot communication collaborations']},
-                {name:'Louisiana State University', location:[30.4133,-91.1800], country:'USA', collaborators:['Mark M. Wilde'], papers:['Resource trade-offs and channel capacities']},
-                {name:'Nagoya University', location:[35.1549,136.9656], country:'Japan', collaborators:['Masahito Hayashi'], papers:['Channel resolvability and private coding']},
-                {name:'RIKEN', location:[35.7006,139.7600], country:'Japan', collaborators:['Takaya Matsuura'], papers:['Universal c-q channel resolvability and private channel coding']},
-                {name:'Academia Sinica', location:[25.0418,121.6146], country:'Taiwan', collaborators:['Hao-Chung Cheng','Eric P. Hanson'], papers:['Non-asymptotic analyses']},
-                {name:'MIT', location:[42.3601,-71.0942], country:'USA', collaborators:['Peter W. Shor','Elton Yechao Zhu'], papers:['Channel properties and operator inequalities']},
-                {name:'ETH Zürich', location:[47.3763,8.5476], country:'Switzerland', collaborators:['Fernando G. S. L. Brandao'], papers:['Smooth entropy approach to quantum hypothesis testing']},
-                {name:'UC Davis', location:[38.5382,-121.7617], country:'USA', collaborators:['Isaac H. Kim'], papers:['Operator extension of weak monotonicity (LMP 2023)']},
-                {name:'University of Arizona', location:[32.2319,-110.9501], country:'USA', collaborators:['Haowei Shi','Saikat Guha','Quntao Zhuang','Zheshen Zhang'], papers:['Entanglement-assisted multiple-access channels and related communication studies']},
-                {name:'Kyoto University', location:[35.0262,135.7808], country:'Japan', collaborators:['Yoshifumi Nakata'], papers:['One-shot state redistribution']},
-                {name:'The University of Electro-Communications', location:[35.6547,139.5433], country:'Japan', collaborators:['Eyuri Wakakuwa'], papers:['One-shot trade-off bounds for state redistribution']},
-                {name:'University of Illinois Chicago', location:[41.8708,-87.6505], country:'USA', collaborators:['Eric Chitambar','Ian George'], papers:['Distributed source simulation and correlation cost']},
-                {name:'University of Houston', location:[29.7199,-95.3422], country:'USA', collaborators:['Li Gao'], papers:['Noncommutative Renyi and channel properties']},
-                {name:'UC San Diego (UCSD)', location:[32.8801,-117.2340], country:'USA', collaborators:['Ting-Chun Lin'], papers:['An operator extension of weak monotonicity (LMP 2023)']},
-                {name:'National University of Singapore (NUS)', location:[1.2966,103.7764], country:'Singapore', collaborators:['Marco Tomamichel'], papers:['Quantum sphere-packing bounds (IEEE TIT 2019)']}
-            ];
-
             institutions.forEach(inst => {
+                if (!Array.isArray(inst.location) || inst.location.length !== 2) return;
                 const popup = `
                     <div class="map-popup">
-                        <h4>${inst.name}</h4>
-                        <p><strong>📍 ${inst.country}</strong></p>
-                        <p><strong>Collaborators:</strong><br>${inst.collaborators.join(', ')}</p>
-                        <div class="papers"><strong>Representative work:</strong><br>${inst.papers.join('<br>')}</div>
+                        <h4>${inst.name || ''}</h4>
+                        <p><strong>📍 ${inst.country || ''}</strong></p>
+                        <p><strong>Collaborators:</strong><br>${(inst.collaborators || []).join(', ')}</p>
+                        <div class="papers"><strong>Representative work:</strong><br>${(inst.papers || []).join('<br>')}</div>
                     </div>`;
                 L.marker(inst.location).addTo(map).bindPopup(popup);
             });
