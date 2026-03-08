@@ -1228,11 +1228,18 @@
             const ul = document.getElementById('complete-collaborators-list');
             if (ul) {
                 ul.innerHTML = '';
-                [...collabs].sort((a,b)=>a.localeCompare(b)).forEach(name => {
-                    const li = document.createElement('li');
-                    li.textContent = name;
-                    ul.appendChild(li);
-                });
+                [...collabs]
+                    .sort((a, b) => {
+                        const la = a.trim().split(/\s+/).slice(-1)[0].toLowerCase();
+                        const lb = b.trim().split(/\s+/).slice(-1)[0].toLowerCase();
+                        if (la !== lb) return la.localeCompare(lb);
+                        return a.localeCompare(b);
+                    })
+                    .forEach(name => {
+                        const li = document.createElement('li');
+                        li.textContent = name;
+                        ul.appendChild(li);
+                    });
             }
 
             // ===== Map from JSON =====
