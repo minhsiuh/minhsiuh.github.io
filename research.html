@@ -218,44 +218,6 @@
             line-height: 1.8;
         }
 
-        /* Research Focus Quick Links */
-        .focus-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 16px;
-            margin: 20px 0 35px;
-        }
-
-        .focus-card {
-            display: block;
-            text-decoration: none;
-            border: 1px solid var(--border-color);
-            border-radius: 10px;
-            padding: 16px;
-            background: #fff;
-            transition: all 0.2s ease;
-        }
-
-        .focus-card:hover {
-            border-color: var(--accent-color);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-        }
-
-        .focus-card h4 {
-            margin: 0 0 8px;
-            font-size: 1rem;
-            color: var(--primary-color);
-        }
-
-        .focus-card p {
-            margin: 0;
-            text-align: left;
-            color: #666;
-            font-size: 0.92rem;
-            line-height: 1.5;
-        }
-
         /* Category Cards */
         .category-grid {
             display: grid;
@@ -336,10 +298,25 @@
             font-size: 0.9rem;
         }
 
-        .category-topics li:before {
-            content: '· ';
+        .category-topics li a {
+            display: block;
+            text-decoration: none;
+            color: #555;
+            background: #f8fafc;
+            border: 1px solid #e6edf5;
+            border-radius: 8px;
+            padding: 8px 10px;
+            transition: all 0.2s ease;
+        }
+
+        .category-topics li a:hover {
             color: var(--accent-color);
-            font-weight: bold;
+            border-color: #cfe5f8;
+            background: #f2f8fe;
+        }
+
+        .category-topics li:before {
+            content: '';
         }
 
         .category-link {
@@ -594,34 +571,6 @@
                     </p>
                 </div>
 
-                <h3 style="margin-top: 40px;">Research Focus</h3>
-                <div class="focus-grid">
-                    <a class="focus-card" href="research-qec.html">
-                        <h4>Quantum Error Correction</h4>
-                        <p>Fault-tolerant protocols, code constructions, and practical pathways to reliable quantum computation.</p>
-                    </a>
-                    <a class="focus-card" href="research-qml.html">
-                        <h4>Quantum Machine Learning</h4>
-                        <p>Variational architectures, trainability, and hybrid models for data-driven quantum advantage.</p>
-                    </a>
-                    <a class="focus-card" href="research-shannon.html">
-                        <h4>Quantum Shannon Theory</h4>
-                        <p>Capacity limits, coding theorems, and information-theoretic foundations of quantum communication.</p>
-                    </a>
-                    <a class="focus-card" href="research-simulation.html">
-                        <h4>Quantum Simulation</h4>
-                        <p>Algorithms and methods for simulating quantum systems in chemistry, physics, and materials.</p>
-                    </a>
-                    <a class="focus-card" href="research-hardware.html">
-                        <h4>Hardware Enabling Technology</h4>
-                        <p>Benchmarking, architecture-aware design, and co-optimization across device and protocol layers.</p>
-                    </a>
-                    <a class="focus-card" href="research-applications.html">
-                        <h4>Real-World Applications</h4>
-                        <p>End-to-end quantum workflows targeting practical impact in science and engineering domains.</p>
-                    </a>
-                </div>
-
                 <h3 style="margin-top: 30px;">Research Categories</h3>
                 
                 <div class="category-grid">
@@ -631,9 +580,9 @@
                         <h3>Hardware Enabling Technology</h3>
                         <p>Building the physical and architectural foundation for reliable, scalable quantum computation through error correction and robust characterization.</p>
                         <ul class="category-topics">
-                            <li>Quantum Error Correction</li>
-                            <li>Randomized Benchmarking</li>
-                            <li>Quantum Architecture</li>
+                            <li><a href="research-qec.html">Quantum Error Correction</a></li>
+                            <li><a href="research-hardware.html">Randomized Benchmarking</a></li>
+                            <li><a href="research-hardware.html">Quantum Architecture</a></li>
                         </ul>
                         <a href="research-hardware.html" class="category-link">
                             Explore this area
@@ -647,10 +596,10 @@
                         <h3>Software with Enhanced Advantage</h3>
                         <p>Developing quantum algorithms, machine learning protocols, and verification tools that unlock computational advantages over classical methods.</p>
                         <ul class="category-topics">
-                            <li>Quantum Machine Learning</li>
-                            <li>Quantum Algorithms</li>
-                            <li>Quantum Complexity Theory</li>
-                            <li>Circuit Verification</li>
+                            <li><a href="research-qml.html">Quantum Machine Learning</a></li>
+                            <li><a href="research-software.html">Quantum Algorithms</a></li>
+                            <li><a href="research-software.html">Quantum Complexity Theory</a></li>
+                            <li><a href="research-software.html">Circuit Verification</a></li>
                         </ul>
                         <a href="research-software.html" class="category-link">
                             Explore this area
@@ -664,9 +613,9 @@
                         <h3>Real-World Applications</h3>
                         <p>Translating quantum computing capabilities into practical solutions for simulation, sensing, and communication challenges.</p>
                         <ul class="category-topics">
-                            <li>Quantum Simulation</li>
-                            <li>Quantum Metrology</li>
-                            <li>Quantum Communication</li>
+                            <li><a href="research-simulation.html">Quantum Simulation</a></li>
+                            <li><a href="research-applications.html">Quantum Metrology</a></li>
+                            <li><a href="research-applications.html">Quantum Communication</a></li>
                         </ul>
                         <a href="research-applications.html" class="category-link">
                             Explore this area
@@ -680,8 +629,8 @@
                         <h3>Foundations & Theory</h3>
                         <p>Exploring the fundamental limits and physical principles underlying quantum information processing and communication.</p>
                         <ul class="category-topics">
-                            <li>Quantum Shannon Theory</li>
-                            <li>Physics Foundations</li>
+                            <li><a href="research-shannon.html">Quantum Shannon Theory</a></li>
+                            <li><a href="research-others.html">Physics Foundations</a></li>
                         </ul>
                         <a href="research-others.html" class="category-link">
                             Explore this area
