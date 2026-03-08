@@ -130,8 +130,17 @@
         {
           "title": "Doubling the order of approximation via the randomized product formula",
           "authors": "Chien Hung Cho, Dominic W. Berry, Min-Hsiu Hsieh",
-          "venue": "TQC 2023, Aveiro, Portugal, 24-28/07/2023",
-          "links": []
+          "venue": "Phys. Rev. A 109, 062431, 2024",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2210.11281"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1103/PhysRevA.109.062431"
+            }
+          ]
         }
       ]
     }
