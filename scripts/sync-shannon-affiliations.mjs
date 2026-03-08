@@ -81,16 +81,6 @@ async function openalexByDoi(doi) {
 const allPubs = (pubs.groups || []).flatMap(g => g.publications || []);
 const report = { scanned: 0, doiFound: 0, affiliationsAdded: 0, unresolved: [] };
 
-function paperAuthorsExcludingSelf(paper) {
-  return splitAuthors(paper.authors).filter(a => !isSelf(a));
-}
-
-function allPaperAuthorsAssigned(paper) {
-  const names = paperAuthorsExcludingSelf(paper);
-  if (!names.length) return true;
-  return names.every(n => hasCollaboratorAssigned(n));
-}
-
 for (const p of allPubs) {
   report.scanned += 1;
   const doi = extractDoiFromLinks(p.links);
@@ -99,10 +89,7 @@ for (const p of allPubs) {
 
   const work = await openalexByDoi(doi);
   if (!work) {
-    // If all authors already have known affiliations, treat DOI miss as non-blocking.
-    if (!allPaperAuthorsAssigned(p)) {
-      report.unresolved.push({ title: p.title, reason: `OpenAlex not found for DOI ${doi}` });
-    }
+    report.unresolved.push({ title: p.title, reason: `OpenAlex not found for DOI ${doi}` });
     continue;
   }
 
@@ -117,9 +104,7 @@ for (const p of allPubs) {
 
     const inst = (auth.institutions || [])[0];
     if (!inst?.display_name) {
-      if (!hasCollaboratorAssigned(matchInPaper)) {
-        report.unresolved.push({ title: p.title, author: authorName, reason: 'No institution in OpenAlex authorship' });
-      }
+      report.unresolved.push({ title: p.title, author: authorName, reason: 'No institution in OpenAlex authorship' });
       continue;
     }
 
