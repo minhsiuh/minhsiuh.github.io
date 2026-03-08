@@ -43,7 +43,7 @@ for (const g of pubs.groups) {
 const totalPubs = pubs.groups.reduce((n, g) => n + g.publications.length, 0);
 const collabCount = collab.collaborators.length;
 
-if (!html.includes(`Papers in This Topic</div></div>`)) {
+if (!html.includes('id="stat-topic-papers"')) {
   warnings.push('Could not locate publications stats block in HTML.');
 }
 
