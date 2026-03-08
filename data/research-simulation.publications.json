@@ -71,6 +71,17 @@
               "url": "https://arxiv.org/abs/2510.08088"
             }
           ]
+        },
+        {
+          "title": "A Neural-Guided Variational Quantum Algorithm for Efficient Sign Structure Learning in Hybrid Architectures",
+          "authors": "Mengzhen Ren, Yu-Cheng Chen, Yangsen Ye, Min-Hsiu Hsieh, Alice Hu, Chang-Yu Hsieh",
+          "venue": "arXiv preprint arXiv:2507.07555, 2025",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2507.07555"
+            }
+          ]
         }
       ]
     },
