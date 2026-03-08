@@ -616,6 +616,7 @@
       "paperIds": [
         "P002",
         "P005",
+        "P006",
         "P007",
         "P008",
         "P009"
@@ -623,14 +624,6 @@
     },
     {
       "collaboratorId": "C024",
-      "name": "Mark Wilde",
-      "affiliations": [],
-      "paperIds": [
-        "P006"
-      ]
-    },
-    {
-      "collaboratorId": "C025",
       "name": "Andreas Winter",
       "affiliations": [
         {
@@ -651,7 +644,7 @@
       ]
     },
     {
-      "collaboratorId": "C026",
+      "collaboratorId": "C025",
       "name": "Zheshen Zhang",
       "affiliations": [
         {
@@ -669,7 +662,7 @@
       ]
     },
     {
-      "collaboratorId": "C027",
+      "collaboratorId": "C026",
       "name": "Elton Yechao Zhu",
       "affiliations": [
         {
@@ -687,7 +680,7 @@
       ]
     },
     {
-      "collaboratorId": "C028",
+      "collaboratorId": "C027",
       "name": "Quntao Zhuang",
       "affiliations": [
         {
@@ -850,7 +843,7 @@
     },
     {
       "paperId": "P001",
-      "collaboratorId": "C025",
+      "collaboratorId": "C024",
       "institutionId": "I004",
       "role": "coauthor"
     },
@@ -868,7 +861,7 @@
     },
     {
       "paperId": "P003",
-      "collaboratorId": "C025",
+      "collaboratorId": "C024",
       "institutionId": "I004",
       "role": "coauthor"
     },
@@ -886,13 +879,13 @@
     },
     {
       "paperId": "P004",
-      "collaboratorId": "C026",
+      "collaboratorId": "C025",
       "institutionId": "I011",
       "role": "coauthor"
     },
     {
       "paperId": "P004",
-      "collaboratorId": "C028",
+      "collaboratorId": "C027",
       "institutionId": "I011",
       "role": "coauthor"
     },
@@ -904,8 +897,8 @@
     },
     {
       "paperId": "P006",
-      "collaboratorId": "C024",
-      "institutionId": null,
+      "collaboratorId": "C023",
+      "institutionId": "I005",
       "role": "coauthor"
     },
     {
@@ -946,7 +939,7 @@
     },
     {
       "paperId": "P008",
-      "collaboratorId": "C025",
+      "collaboratorId": "C024",
       "institutionId": "I004",
       "role": "coauthor"
     },
@@ -964,7 +957,7 @@
     },
     {
       "paperId": "P009",
-      "collaboratorId": "C025",
+      "collaboratorId": "C024",
       "institutionId": "I004",
       "role": "coauthor"
     },
@@ -1048,13 +1041,13 @@
     },
     {
       "paperId": "P017",
-      "collaboratorId": "C027",
+      "collaboratorId": "C026",
       "institutionId": "I008",
       "role": "coauthor"
     },
     {
       "paperId": "P017",
-      "collaboratorId": "C028",
+      "collaboratorId": "C027",
       "institutionId": "I011",
       "role": "coauthor"
     },
