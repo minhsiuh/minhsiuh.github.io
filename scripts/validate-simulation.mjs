@@ -4,6 +4,7 @@ import fs from 'node:fs';
 const html = fs.readFileSync(new URL('../research-simulation.html', import.meta.url), 'utf8');
 const pubs = JSON.parse(fs.readFileSync(new URL('../data/research-simulation.publications.json', import.meta.url), 'utf8'));
 const collab = JSON.parse(fs.readFileSync(new URL('../data/research-simulation.collaborators.json', import.meta.url), 'utf8'));
+const aliases = JSON.parse(fs.readFileSync(new URL('../data/research-simulation.name-aliases.json', import.meta.url), 'utf8'));
 
 const errors = [];
 
@@ -14,6 +15,14 @@ for (const g of pubs.groups || []) {
     const di = labels.indexOf('doi');
     if (ai !== -1 && di !== -1 && ai > di) {
       errors.push(`Link order wrong (arXiv should be before DOI): ${p.title}`);
+    }
+
+    // enforce alias normalization for known names
+    const authorStr = p.authors || '';
+    for (const shortName of Object.keys(aliases)) {
+      if (authorStr.includes(shortName)) {
+        errors.push(`Author alias not normalized (${shortName}) in: ${p.title}`);
+      }
     }
   }
 }

@@ -6,7 +6,7 @@
       "publications": [
         {
           "title": "Neural network assisted fermionic compression encoding: A lossy quantum-selected configuration interaction framework",
-          "authors": "YC Chen, R Wu, MH Cheng, MH Hsieh",
+          "authors": "Yu-Cheng Chen, Ronin Wu, MH Cheng, Min-Hsiu Hsieh",
           "venue": "Physical Review Research 8 (1), 013128, 2026",
           "links": [
             {
@@ -21,7 +21,7 @@
         },
         {
           "title": "Optimal number-conserved linear encoding for practical fermionic simulation",
-          "authors": "MH Cheng, YC Chen, Q Wang, V Bartsch, AC Medina, MS Kim, A Hu, MH Hsieh",
+          "authors": "MH Cheng, Yu-Cheng Chen, Q Wang, V Bartsch, AC Medina, MS Kim, Alice Hu, Min-Hsiu Hsieh",
           "venue": "Physical Review Research 7, 033280, 2025",
           "links": [
             {
@@ -36,7 +36,7 @@
         },
         {
           "title": "Neural Network Assisted Fermionic Compression Encoding: A Lossy-QSCI Framework for Scalable Quantum Chemistry Simulations",
-          "authors": "YC Chen, R Wu, MH Cheng, MH Hsieh",
+          "authors": "Yu-Cheng Chen, Ronin Wu, MH Cheng, Min-Hsiu Hsieh",
           "venue": "International Conference on Quantum Engineering Sciences and Technologies, 2025 · 2 citations",
           "links": [
             {
@@ -52,7 +52,7 @@
       "publications": [
         {
           "title": "Benchmarking Quantum Simulation Methods",
-          "authors": "C Ku, YC Chen, A Hu, MH Hsieh",
+          "authors": "Calvin Ku, Yu-Cheng Chen, Alice Hu, Min-Hsiu Hsieh",
           "venue": "arXiv preprint arXiv:2510.01710, 2025",
           "links": [
             {
@@ -63,7 +63,7 @@
         },
         {
           "title": "A Gell-Mann & Low Theorem Perspective on Quantum Computing: New Paradigm for Designing Quantum Algorithm",
-          "authors": "CT Li, T Tzen Ong, L Wang, MC Hsu, H Lin, MH Hsieh",
+          "authors": "CT Li, T Tzen Ong, L Wang, MC Hsu, H Lin, Min-Hsiu Hsieh",
           "venue": "arXiv preprint arXiv:2311.18271, 2023",
           "links": [
             {
@@ -74,7 +74,7 @@
         },
         {
           "title": "Quantum Algorithm for Low Energy Effective Hamiltonian and Quasi-Degenerate Eigenvalue Problem",
-          "authors": "CT Li, T Ong, CY Lin, YC Chen, H Lin, MH Hsieh",
+          "authors": "CT Li, T Ong, CY Lin, Yu-Cheng Chen, H Lin, Min-Hsiu Hsieh",
           "venue": "arXiv preprint arXiv:2510.08088, 2025",
           "links": [
             {
@@ -90,7 +90,7 @@
       "publications": [
         {
           "title": "Hybrid Quantum-Classical Clustering for Preparing a Prior Distribution of Eigenspectrum",
-          "authors": "M Ren, YC Chen, CJ Lai, MH Hsieh, A Hu",
+          "authors": "Mengzhen Ren, Yu-Cheng Chen, Ching-Jui Lai, Min-Hsiu Hsieh, Alice Hu",
           "venue": "npj Quantum Information, 2026",
           "links": [
             {
@@ -105,7 +105,7 @@
         },
         {
           "title": "Quantum Simulation of Preferred Tautomeric State Prediction",
-          "authors": "Y Shee, TL Yeh, JY Hsiao, A Yang, YC Lin, MH Hsieh",
+          "authors": "Y Shee, TL Yeh, JY Hsiao, A Yang, Yen-Chu Lin, Min-Hsiu Hsieh",
           "venue": "npj Quantum Information 9, 102, 2023",
           "links": [
             {
@@ -120,7 +120,7 @@
         },
         {
           "title": "Exploring the Advantages of Quantum Generative Adversarial Networks in Generative Chemistry",
-          "authors": "PY Kao, YC Yang, WY Chiang, JY Hsiao, Y Cao, A Aliper, F Ren, A Aspuru-Guzik, A Zhavoronkov, MH Hsieh, YC Lin",
+          "authors": "PY Kao, YC Yang, WY Chiang, JY Hsiao, Y Cao, A Aliper, F Ren, A Aspuru-Guzik, A Zhavoronkov, Min-Hsiu Hsieh, Yen-Chu Lin",
           "venue": "Journal of Chemical Information and Modeling 63 (11), 3307-3318, 2023 · 113 citations",
           "links": [
             {
