@@ -232,6 +232,10 @@
             {
               "label": "arXiv",
               "url": "https://arxiv.org/abs/1701.03195"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1109/TIT.2017.2781254"
             }
           ]
         },
