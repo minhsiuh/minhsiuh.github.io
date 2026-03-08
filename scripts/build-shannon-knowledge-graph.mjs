@@ -32,15 +32,20 @@ for (const g of pubs.groups || []) {
   }
 }
 
-const papers = paperList.map((p, i) => ({
-  paperId: `P${String(i + 1).padStart(3, '0')}`,
-  group: p.group,
-  title: p.title,
-  year: p.year,
-  venue: p.venue,
-  doi: p.doi,
-  arxiv: p.arxiv
-}));
+const papers = paperList.map((p, i) => {
+  const cm = (p.venue || '').match(/·\s*(\d+)\s+citations/i);
+  const citations = cm ? Number(cm[1]) : null;
+  return {
+    paperId: `P${String(i + 1).padStart(3, '0')}`,
+    group: p.group,
+    title: p.title,
+    year: p.year,
+    venue: p.venue,
+    doi: p.doi,
+    arxiv: p.arxiv,
+    citations
+  };
+});
 
 const institutionIdMap = new Map();
 const institutions = (collab.institutions || []).map((inst, i) => {
@@ -148,7 +153,7 @@ fs.writeFileSync(outGraphPath, JSON.stringify(graph, null, 2));
 
 // Build matrix CSV: collaborator|affiliation|country|paper_id
 const paperById = new Map(papers.map(p => [p.paperId, p]));
-const csvRows = [['collaborator_name', 'affiliation', 'country', 'paper_id', 'paper_title', 'year', 'doi']];
+const csvRows = [['collaborator_name', 'affiliation', 'country', 'paper_id', 'paper_title', 'year', 'citations', 'doi']];
 for (const c of collaborators) {
   const primary = c.affiliations?.[0] || {};
   for (const pid of c.paperIds || []) {
@@ -160,6 +165,7 @@ for (const c of collaborators) {
       pid,
       p.title || '',
       p.year ?? '',
+      p.citations ?? '',
       p.doi || ''
     ]);
   }
