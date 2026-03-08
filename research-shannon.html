@@ -344,6 +344,27 @@
             margin-bottom: 15px;
             padding-bottom: 8px;
             border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .group-count {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 28px;
+            height: 24px;
+            border-radius: 999px;
+            padding: 0 10px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: #1f4f78;
+            background: #e8f2fb;
+            border: 1px solid #cde2f5;
+            line-height: 1;
+            white-space: nowrap;
         }
 
         .publications-list {
@@ -353,7 +374,7 @@
         }
 
         .publications-list li {
-            padding: 12px 0;
+            padding: 14px 0;
             border-bottom: 1px solid var(--border-color);
             text-align: left;
         }
@@ -365,7 +386,8 @@
         .pub-title {
             font-weight: 600;
             color: var(--primary-color);
-            margin-bottom: 5px;
+            margin-bottom: 6px;
+            line-height: 1.55;
         }
 
         .pub-authors {
@@ -374,9 +396,12 @@
         }
 
         .pub-venue {
-            color: #666;
+            color: #5f6c7a;
             font-style: italic;
-            font-size: 0.95rem;
+            font-size: 0.93rem;
+            font-weight: 500;
+            margin-top: 2px;
+            line-height: 1.45;
         }
 
         .pub-links {
@@ -438,6 +463,21 @@
             border-top: 1px solid #eee;
             font-size: 0.85rem;
             color: #666;
+        }
+
+        .fit-map-btn {
+            background: white;
+            border: 1px solid #d0dbe6;
+            border-radius: 6px;
+            padding: 6px 10px;
+            font-size: 0.82rem;
+            color: #2c3e50;
+            cursor: pointer;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+        }
+
+        .fit-map-btn:hover {
+            background: #f4f8fc;
         }
 
         .collab-stats {
@@ -685,6 +725,10 @@
 
             .topic-hero .tagline {
                 font-size: 1rem;
+            }
+
+            #collab-map {
+                height: 400px;
             }
 
             nav ul {
@@ -981,7 +1025,13 @@
                     gDiv.className = 'pub-group';
 
                     const h4 = document.createElement('h4');
-                    h4.textContent = g.group || '';
+                    const h4Label = document.createElement('span');
+                    h4Label.textContent = g.group || '';
+                    const h4Count = document.createElement('span');
+                    h4Count.className = 'group-count';
+                    h4Count.textContent = String((g.publications || []).length);
+                    h4.appendChild(h4Label);
+                    h4.appendChild(h4Count);
                     gDiv.appendChild(h4);
 
                     const ul = document.createElement('ul');
@@ -1087,6 +1137,7 @@
                 maxZoom: 18
             }).addTo(map);
 
+            const markerPoints = [];
             institutions.forEach(inst => {
                 if (!Array.isArray(inst.location) || inst.location.length !== 2) return;
                 const popup = `
@@ -1096,8 +1147,27 @@
                         <p><strong>Collaborators:</strong><br>${(inst.collaborators || []).join(', ')}</p>
                         <div class="papers"><strong>Representative work:</strong><br>${(inst.papers || []).join('<br>')}</div>
                     </div>`;
+                markerPoints.push(inst.location);
                 L.marker(inst.location).addTo(map).bindPopup(popup);
             });
+
+            if (markerPoints.length) {
+                const bounds = L.latLngBounds(markerPoints);
+                map.fitBounds(bounds.pad(0.18));
+
+                const FitControl = L.Control.extend({
+                    options: { position: 'topright' },
+                    onAdd: function() {
+                        const btn = L.DomUtil.create('button', 'fit-map-btn');
+                        btn.type = 'button';
+                        btn.innerText = 'Fit all';
+                        L.DomEvent.disableClickPropagation(btn);
+                        L.DomEvent.on(btn, 'click', () => map.fitBounds(bounds.pad(0.18)));
+                        return btn;
+                    }
+                });
+                map.addControl(new FitControl());
+            }
         });
     </script>
 
