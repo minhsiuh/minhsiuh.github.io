@@ -53,10 +53,12 @@
         0.1218
       ],
       "collaborators": [
-        "Nilanjana Datta"
+        "Nilanjana Datta",
+        "Eric P. Hanson"
       ],
       "papers": [
-        "Rate-distortion and one-shot communication"
+        "Rate-distortion and one-shot communication",
+        "Non-asymptotic analyses"
       ]
     },
     {
@@ -129,21 +131,6 @@
       ],
       "papers": [
         "Universal c-q channel resolvability and private channel coding"
-      ]
-    },
-    {
-      "name": "Academia Sinica",
-      "country": "Taiwan",
-      "location": [
-        25.0418,
-        121.6146
-      ],
-      "collaborators": [
-        "Hao-Chung Cheng",
-        "Eric P. Hanson"
-      ],
-      "papers": [
-        "Non-asymptotic analyses"
       ]
     },
     {
@@ -303,6 +290,20 @@
       ],
       "papers": [
         "The information-theoretic costs of simulating quantum measurements (J. Phys. A 2012)"
+      ]
+    },
+    {
+      "name": "National Taiwan University",
+      "country": "Taiwan",
+      "location": [
+        25.0173,
+        121.5398
+      ],
+      "collaborators": [
+        "Hao-Chung Cheng"
+      ],
+      "papers": [
+        "Non-asymptotic analyses"
       ]
     }
   ]
