@@ -305,6 +305,20 @@
       "papers": [
         "Non-asymptotic analyses"
       ]
+    },
+    {
+      "name": "Tokyo University of Agriculture and Technology",
+      "country": "JP",
+      "location": [
+        0,
+        0
+      ],
+      "collaborators": [
+        "Shun Watanabe"
+      ],
+      "papers": [
+        "Channel Simulation and Coded Source Compression (10.1109/TIT.2016.2597853)"
+      ]
     }
   ]
 }
