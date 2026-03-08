@@ -21,6 +21,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=4">
     <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png?v=4">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=4">
+    
+    <!-- Leaflet.js for interactive maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
     <style>
         :root {
             --primary-color: #2c3e50;
@@ -362,6 +367,70 @@
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
             margin: 20px 0;
+        }
+
+        /* Collaboration Map */
+        .collab-map-container {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 18px;
+        }
+
+        #collab-map {
+            height: 500px;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .map-popup h4 {
+            font-size: 1rem;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .map-popup p {
+            font-size: 0.9rem;
+            color: #555;
+            margin: 4px 0;
+            text-align: left;
+        }
+
+        .map-popup .papers {
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid #eee;
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .collab-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+            padding: 20px;
+            background: var(--light-gray);
+            border-radius: 8px;
+        }
+
+        .collab-stat {
+            text-align: center;
+        }
+
+        .collab-stat-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--category-color);
+        }
+
+        .collab-stat-label {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 4px;
         }
 
         .collaborator-group {
@@ -843,57 +912,49 @@
             </section>
 
             <section id="collaborators">
-                <h2>Key Collaborators</h2>
+                <h2>Collaborators Network Map</h2>
+                <p style="margin-bottom: 20px; color: #666;">
+                    Global collaborators across core Quantum Shannon Theory institutions and joint publications.
+                </p>
+
+                <div class="collab-map-container">
+                    <div id="collab-map"></div>
+                </div>
+
+                <div class="collab-stats">
+                    <div class="collab-stat">
+                        <div class="collab-stat-number">9</div>
+                        <div class="collab-stat-label">Institutions</div>
+                    </div>
+                    <div class="collab-stat">
+                        <div class="collab-stat-number">6</div>
+                        <div class="collab-stat-label">Countries</div>
+                    </div>
+                    <div class="collab-stat">
+                        <div class="collab-stat-number">12+</div>
+                        <div class="collab-stat-label">Key Joint Papers</div>
+                    </div>
+                    <div class="collab-stat">
+                        <div class="collab-stat-number">10+</div>
+                        <div class="collab-stat-label">Collaborators</div>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 28px;">Key Collaborators</h3>
                 <div class="collaborators-grid">
-                    <div class="collaborator-group">
-                        <h4>McGill University</h4>
-                        <ul>
-                            <li>Patrick Hayden</li>
-                        </ul>
-                    </div>
-                    <div class="collaborator-group">
-                        <h4>University of Cambridge</h4>
-                        <ul>
-                            <li>Nilanjana Datta</li>
-                            <li>Andreas Winter</li>
-                        </ul>
-                    </div>
-                    <div class="collaborator-group">
-                        <h4>University of Southern California</h4>
-                        <ul>
-                            <li>Igor Devetak</li>
-                            <li>Todd Brun</li>
-                        </ul>
-                    </div>
-                    <div class="collaborator-group">
-                        <h4>Louisiana State University</h4>
-                        <ul>
-                            <li>Mark Wilde</li>
-                        </ul>
-                    </div>
-                    <div class="collaborator-group">
-                        <h4>Nagoya University</h4>
-                        <ul>
-                            <li>Masahito Hayashi</li>
-                            <li>Takaya Matsuura</li>
-                        </ul>
-                    </div>
-                    <div class="collaborator-group">
-                        <h4>Academia Sinica</h4>
-                        <ul>
-                            <li>Hao-Chung Cheng</li>
-                        </ul>
-                    </div>
-                    <div class="collaborator-group">
-                        <h4>MIT</h4>
-                        <ul>
-                            <li>Seth Lloyd</li>
-                        </ul>
-                    </div>
+                    <div class="collaborator-group"><h4>McGill University</h4><ul><li>Patrick Hayden</li></ul></div>
+                    <div class="collaborator-group"><h4>University of Cambridge</h4><ul><li>Nilanjana Datta</li><li>Andreas Winter</li></ul></div>
+                    <div class="collaborator-group"><h4>University of Southern California</h4><ul><li>Igor Devetak</li><li>Todd Brun</li></ul></div>
+                    <div class="collaborator-group"><h4>Louisiana State University</h4><ul><li>Mark Wilde</li></ul></div>
+                    <div class="collaborator-group"><h4>Nagoya University</h4><ul><li>Masahito Hayashi</li><li>Takaya Matsuura</li></ul></div>
+                    <div class="collaborator-group"><h4>Academia Sinica</h4><ul><li>Hao-Chung Cheng</li></ul></div>
+                    <div class="collaborator-group"><h4>MIT</h4><ul><li>Seth Lloyd</li></ul></div>
+                    <div class="collaborator-group"><h4>University of Technology Sydney</h4><ul><li>Collaborative network in information theory</li></ul></div>
+                    <div class="collaborator-group"><h4>Toyota Technological Institute at Chicago</h4><ul><li>Andreas Winter (affiliation period)</li></ul></div>
                 </div>
             </section>
 
-            <section>
+            <section id="related">
                 <div class="related-topics">
                     <h3>Related Research Topics</h3>
                     <a href="research-physics.html">→ Physics Foundations</a>
@@ -986,5 +1047,42 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mapEl = document.getElementById('collab-map');
+            if (!mapEl || typeof L === 'undefined') return;
+
+            const map = L.map('collab-map').setView([28, 20], 2);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+                maxZoom: 18
+            }).addTo(map);
+
+            const institutions = [
+                {name:'University of Southern California', location:[34.0224,-118.2851], country:'USA', collaborators:['Igor Devetak','Todd Brun'], papers:['EA capacity of QMAC (IEEE TIT 2008)','EA communication (IEEE TIT 2010)']},
+                {name:'University of Cambridge', location:[52.2053,0.1218], country:'UK', collaborators:['Nilanjana Datta','Andreas Winter'], papers:['Quantum rate distortion (IEEE TIT 2013)','One-shot EA communication (IEEE TIT 2013)']},
+                {name:'McGill University', location:[45.5048,-73.5772], country:'Canada', collaborators:['Patrick Hayden'], papers:['Foundational quantum information collaborations']},
+                {name:'Louisiana State University', location:[30.4133,-91.1800], country:'USA', collaborators:['Mark Wilde'], papers:['Dynamic capacity and resource trade-offs']},
+                {name:'Nagoya University', location:[35.1549,136.9656], country:'Japan', collaborators:['Masahito Hayashi','Takaya Matsuura'], papers:['Universal c-q channel resolvability (arXiv 2025)']},
+                {name:'Academia Sinica', location:[25.0418,121.6146], country:'Taiwan', collaborators:['Hao-Chung Cheng'], papers:['Non-asymptotic source coding with QSI (IEEE TIT 2021)']},
+                {name:'MIT', location:[42.3601,-71.0942], country:'USA', collaborators:['Seth Lloyd'], papers:['Quantum information theory interactions']},
+                {name:'UTS', location:[-33.8830,151.2006], country:'Australia', collaborators:['Information theory collaborators'], papers:['Network and theory collaborations']},
+                {name:'TTIC', location:[41.7914,-87.6017], country:'USA', collaborators:['Andreas Winter (affiliation period)'], papers:['Rate-distortion and source coding collaborations']}
+            ];
+
+            institutions.forEach(inst => {
+                const popup = `
+                    <div class="map-popup">
+                        <h4>${inst.name}</h4>
+                        <p><strong>📍 ${inst.country}</strong></p>
+                        <p><strong>Collaborators:</strong><br>${inst.collaborators.join(', ')}</p>
+                        <div class="papers"><strong>Representative work:</strong><br>${inst.papers.join('<br>')}</div>
+                    </div>`;
+                L.marker(inst.location).addTo(map).bindPopup(popup);
+            });
+        });
+    </script>
+
 </body>
 </html>
