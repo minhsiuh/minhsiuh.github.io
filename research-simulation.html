@@ -13,14 +13,35 @@
     <meta property="og:description" content="Research topic page on simulation by Min-Hsiu Hsieh, focused on quantum information and computation.">
     <meta property="og:url" content="https://minhsiuh.github.io/research-simulation.html">
     <meta property="og:image" content="https://minhsiuh.github.io/profile.jpg">
+    <meta property="og:site_name" content="Min-Hsiu Hsieh Research">
+    <meta property="og:locale" content="en_US">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Quantum Simulation - Research - Min-Hsiu Hsieh">
     <meta name="twitter:description" content="Research topic page on simulation by Min-Hsiu Hsieh, focused on quantum information and computation.">
     <meta name="twitter:image" content="https://minhsiuh.github.io/profile.jpg">
+    <meta name="twitter:site" content="@quantum_minhsiu">
+    <meta name="author" content="Min-Hsiu Hsieh">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#2c3e50">
     <title>Quantum Simulation - Research - Min-Hsiu Hsieh</title>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=4">
     <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png?v=4">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=4">
+    
+    <!-- Leaflet.js for interactive maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Quantum Simulation — Research",
+      "url": "https://minhsiuh.github.io/research-simulation.html",
+      "description": "Research overview and selected publications on Quantum Simulation by Min-Hsiu Hsieh.",
+      "isPartOf": {"@type": "WebSite", "name": "Min-Hsiu Hsieh Research", "url": "https://minhsiuh.github.io/"},
+      "author": {"@type": "Person", "name": "Min-Hsiu Hsieh", "url": "https://minhsiuh.github.io/about.html"}
+    }
+    </script>
     <style>
         :root {
             --primary-color: #2c3e50;
@@ -306,6 +327,27 @@
             margin-bottom: 15px;
             padding-bottom: 8px;
             border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .group-count {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 28px;
+            height: 24px;
+            border-radius: 999px;
+            padding: 0 10px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: #1f4f78;
+            background: #e8f2fb;
+            border: 1px solid #cde2f5;
+            line-height: 1;
+            white-space: nowrap;
         }
 
         .publications-list {
@@ -355,6 +397,26 @@
         .pub-links a:hover {
             text-decoration: underline;
         }
+
+        .topic-stats {
+            background: var(--light-gray);
+            padding: 22px;
+            border-radius: 10px;
+            margin: 10px 0 28px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 14px;
+        }
+        .topic-stat-item { background: white; border: 1px solid var(--border-color); border-radius: 8px; padding: 14px; text-align: center; }
+        .topic-stat-number { font-size: 1.7rem; font-weight: 700; color: var(--category-color); line-height: 1.2; }
+        .topic-stat-label { margin-top: 6px; font-size: 0.82rem; color: #666; }
+        .collab-map-container { background: white; border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-bottom: 18px; }
+        #collab-map { height: 500px; width: 100%; z-index: 1; }
+        .map-popup h4 { font-size: 1rem; color: var(--primary-color); margin-bottom: 8px; font-weight: 600; }
+        .map-popup p { font-size: 0.9rem; color: #555; margin: 4px 0; text-align: left; }
+        .map-popup .papers { margin-top: 8px; padding-top: 8px; border-top: 1px solid #eee; font-size: 0.85rem; color: #666; }
+        .fit-map-btn { background: white; border: 1px solid #d0dbe6; border-radius: 6px; padding: 6px 10px; font-size: 0.82rem; color: #2c3e50; cursor: pointer; box-shadow: 0 1px 4px rgba(0,0,0,0.12); }
+        .fit-map-btn:hover { background: #f4f8fc; }
 
         /* Collaborators */
         .collaborators-grid {
@@ -561,6 +623,10 @@
                 max-width: 100%;
             }
 
+            #collab-map {
+                height: 400px;
+            }
+
             .side-nav {
                 flex: none;
                 position: static;
@@ -681,138 +747,36 @@
 
             <section id="publications">
                 <h2>Selected Publications</h2>
-
-                <div class="pub-group">
-                    <h4>🔬 Fermionic Encoding & Compression</h4>
-                    <ul class="publications-list">
-                        <li>
-                            <div class="pub-title">Neural network assisted fermionic compression encoding: A lossy quantum-selected configuration interaction framework</div>
-                            <div class="pub-authors">YC Chen, R Wu, MH Cheng, MH Hsieh</div>
-                            <div class="pub-venue">Physical Review Research 8 (1), 013128, 2026</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2505.17846" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://doi.org/10.1103/9x8b-4j41" target="_blank" rel="noopener">DOI</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">Optimal number-conserved linear encoding for practical fermionic simulation</div>
-                            <div class="pub-authors">MH Cheng, YC Chen, Q Wang, V Bartsch, AC Medina, MS Kim, A Hu, MH Hsieh</div>
-                            <div class="pub-venue">Physical Review Research 7, 033280, 2025</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2309.09370" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://doi.org/10.1103/lzf5-x6hc" target="_blank" rel="noopener">DOI</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">Neural Network Assisted Fermionic Compression Encoding: A Lossy-QSCI Framework for Scalable Quantum Chemistry Simulations</div>
-                            <div class="pub-authors">YC Chen, R Wu, MH Cheng, MH Hsieh</div>
-                            <div class="pub-venue">International Conference on Quantum Engineering Sciences and Technologies, 2025 · 2 citations</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2505.17846" target="_blank" rel="noopener">arXiv</a>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="topic-stats">
+                    <div class="topic-stat-item"><div class="topic-stat-number" id="stat-topic-papers">0</div><div class="topic-stat-label">Papers in This Topic</div></div>
+                    <div class="topic-stat-item"><div class="topic-stat-number" id="stat-topic-citations">—</div><div class="topic-stat-label">Known Citations (listed)</div></div>
+                    <div class="topic-stat-item"><div class="topic-stat-number" id="stat-topic-years">—</div><div class="topic-stat-label">Publication Year Range</div></div>
+                    <div class="topic-stat-item"><div class="topic-stat-number" id="stat-topic-jc">0/0</div><div class="topic-stat-label">Journal / Conference</div></div>
                 </div>
-
-                <div class="pub-group">
-                    <h4>⚗️ Quantum Chemistry Applications</h4>
-                    <ul class="publications-list">
-                        <li>
-                            <div class="pub-title">Hybrid Quantum-Classical Clustering for Preparing a Prior Distribution of Eigenspectrum</div>
-                            <div class="pub-authors">M Ren, YC Chen, CJ Lai, MH Hsieh, A Hu</div>
-                            <div class="pub-venue">npj Quantum Information, 2026</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2407.00450" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://doi.org/10.1038/s41534-026-01194-2" target="_blank" rel="noopener">DOI</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">Quantum Simulation of Preferred Tautomeric State Prediction</div>
-                            <div class="pub-authors">Y Shee, TL Yeh, JY Hsiao, A Yang, YC Lin, MH Hsieh</div>
-                            <div class="pub-venue">npj Quantum Information 9, 102, 2023</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2210.02977" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://www.nature.com/articles/s41534-023-00767-9" target="_blank" rel="noopener">DOI</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">Exploring the Advantages of Quantum Generative Adversarial Networks in Generative Chemistry</div>
-                            <div class="pub-authors">PY Kao, YC Yang, WY Chiang, JY Hsiao, Y Cao, A Aliper, F Ren, A Aspuru-Guzik, A Zhavoronkov, MH Hsieh, YC Lin</div>
-                            <div class="pub-venue">Journal of Chemical Information and Modeling 63 (11), 3307-3318, 2023 · 113 citations</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2210.16823" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://doi.org/10.1021/acs.jcim.3c00562" target="_blank" rel="noopener">DOI</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="pub-group">
-                    <h4>🔧 Simulation Algorithms</h4>
-                    <ul class="publications-list">
-                        <li>
-                            <div class="pub-title">Benchmarking Quantum Simulation Methods</div>
-                            <div class="pub-authors">C Ku, YC Chen, A Hu, MH Hsieh</div>
-                            <div class="pub-venue">arXiv preprint arXiv:2510.01710, 2025</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2510.01710" target="_blank" rel="noopener">arXiv</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">A Gell-Mann & Low Theorem Perspective on Quantum Computing: New Paradigm for Designing Quantum Algorithm</div>
-                            <div class="pub-authors">CT Li, T Tzen Ong, L Wang, MC Hsu, H Lin, MH Hsieh</div>
-                            <div class="pub-venue">arXiv preprint arXiv:2311.18271, 2023</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2311.18271" target="_blank" rel="noopener">arXiv</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">Quantum Algorithm for Low Energy Effective Hamiltonian and Quasi-Degenerate Eigenvalue Problem</div>
-                            <div class="pub-authors">CT Li, T Ong, CY Lin, YC Chen, H Lin, MH Hsieh</div>
-                            <div class="pub-venue">arXiv preprint arXiv:2510.08088, 2025</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2510.08088" target="_blank" rel="noopener">arXiv</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                <p id="last-curated" style="margin: 4px 0 18px; color:#6b7280; font-size:0.9rem;">Last curated: 2026-03-09</p>
+                <div id="pub-groups"></div>
             </section>
 
             <section id="collaborators">
-                <h2>Key Collaborators</h2>
+                <h2>Collaborators Network Map</h2>
+                <p style="margin-bottom: 20px; color: #666;">Collaborator map and roster for Quantum Simulation.</p>
+                <div class="collab-map-container"><div id="collab-map"></div></div>
+                <div class="topic-stats">
+                    <div class="topic-stat-item"><div class="topic-stat-number" id="stat-collab-count">0</div><div class="topic-stat-label">Named Collaborators</div></div>
+                    <div class="topic-stat-item"><div class="topic-stat-number" id="stat-selected-pubs">0</div><div class="topic-stat-label">Selected Publications</div></div>
+                    <div class="topic-stat-item"><div class="topic-stat-number" id="stat-country-count">0</div><div class="topic-stat-label">Countries</div></div>
+                    <div class="topic-stat-item"><div class="topic-stat-number">2026</div><div class="topic-stat-label">Last Updated</div></div>
+                </div>
+                <h3 style="margin-top: 28px;">All Co-authors in Selected Publications</h3>
                 <div class="collaborators-grid">
-                    <div class="collaborator-group">
-                        <h4>Hon Hai Quantum Computing Research Center</h4>
-                        <ul>
-                            <li>Yu-Cheng Chen</li>
-                            <li>Alice Hu</li>
-                            <li>Calvin Ku</li>
-                            <li>M. H. Cheng</li>
-                            <li>Mengzhen Ren</li>
-                        </ul>
-                    </div>
-                    <div class="collaborator-group">
-                        <h4>Academia Sinica</h4>
-                        <ul>
-                            <li>Ching-Jui Lai</li>
-                        </ul>
-                    </div>
-                    <div class="collaborator-group">
-                        <h4>National Yang Ming Chiao Tung University</h4>
-                        <ul>
-                            <li>Yen-Chu Lin</li>
-                        </ul>
-                    </div>
-                    <div class="collaborator-group">
-                        <h4>University of Copenhagen</h4>
-                        <ul>
-                            <li>Ronin Wu</li>
-                        </ul>
+                    <div class="collaborator-group" style="grid-column: 1 / -1;">
+                        <h4>Alphabetical by Last Name</h4>
+                        <ul id="complete-collaborators-list" style="columns: 2; column-gap: 32px;"></ul>
                     </div>
                 </div>
             </section>
 
-            <section>
+            <section id="related">
                 <div class="related-topics">
                     <h3>Related Research Topics</h3>
                     <a href="research-qml.html">→ Quantum Machine Learning</a>
@@ -904,5 +868,92 @@
             </div>
         </div>
     </footer>
+<script>
+        document.addEventListener('DOMContentLoaded', async function() {
+            async function loadJson(path) {
+                const res = await fetch(path, { cache: 'no-store' });
+                if (!res.ok) throw new Error(`Failed to load ${path}`);
+                return res.json();
+            }
+            let pubData, collabData;
+            try {
+                [pubData, collabData] = await Promise.all([
+                    loadJson('data/research-simulation.publications.json'),
+                    loadJson('data/research-simulation.collaborators.json')
+                ]);
+            } catch (e) { console.error(e); return; }
+
+            const groups = pubData.groups || [];
+            const pubs = groups.flatMap(g => g.publications || []);
+            const pubContainer = document.getElementById('pub-groups');
+            if (pubContainer) {
+                pubContainer.innerHTML = '';
+                for (const g of groups) {
+                    const gDiv = document.createElement('div');
+                    gDiv.className = 'pub-group';
+                    const h4 = document.createElement('h4');
+                    const t = document.createElement('span'); t.textContent = g.group || '';
+                    const n = document.createElement('span'); n.className='group-count'; n.textContent=String((g.publications||[]).length);
+                    h4.appendChild(t); h4.appendChild(n); gDiv.appendChild(h4);
+                    const ul = document.createElement('ul'); ul.className='publications-list';
+                    for (const p of (g.publications || [])) {
+                        const li = document.createElement('li');
+                        li.innerHTML = '<div class="pub-title"></div><div class="pub-authors"></div><div class="pub-venue"></div><div class="pub-links"></div>';
+                        li.querySelector('.pub-title').textContent = p.title || '';
+                        li.querySelector('.pub-authors').textContent = p.authors || '';
+                        li.querySelector('.pub-venue').textContent = p.venue || '';
+                        const linksDiv = li.querySelector('.pub-links');
+                        const sorted = [...(p.links||[])].sort((a,b)=>{const la=(a.label||'').toLowerCase(), lb=(b.label||'').toLowerCase(); const pa=la==='arxiv'?0:la==='doi'?1:2; const pb=lb==='arxiv'?0:lb==='doi'?1:2; return pa-pb;});
+                        for (const l of sorted){ const a=document.createElement('a'); a.href=l.url; a.target='_blank'; a.rel='noopener'; a.textContent=l.label; linksDiv.appendChild(a);}                        
+                        ul.appendChild(li);
+                    }
+                    gDiv.appendChild(ul); pubContainer.appendChild(gDiv);
+                }
+            }
+
+            const years = pubs.map(p => { const m=(p.venue||'').match(/(19|20)\d{2}/g); return m ? Number(m[m.length-1]) : null; }).filter(Boolean);
+            const cites = pubs.map(p => { const m=(p.venue||'').match(/·\s*(\d+)\s+citations/i); return m?Number(m[1]):0; });
+            const confKeys=['ISIT','QIP','STOC','Conference','Proceedings','International Conference'];
+            const conf = pubs.filter(p=>confKeys.some(k=>(p.venue||'').includes(k))).length;
+            const jour = Math.max(0,pubs.length-conf);
+            const setText=(id,v)=>{const el=document.getElementById(id); if(el) el.textContent=String(v);};
+            setText('stat-topic-papers', pubs.length);
+            setText('stat-topic-citations', cites.reduce((a,b)=>a+b,0) || '—');
+            setText('stat-topic-years', years.length?`${Math.min(...years)}–${Math.max(...years)}`:'—');
+            setText('stat-topic-jc', `${jour}/${conf}`);
+
+            const collabs = collabData.collaborators || [];
+            const institutions = collabData.institutions || [];
+            const countries = [...new Set(institutions.map(i=>i.country).filter(Boolean))];
+            setText('stat-collab-count', collabs.length);
+            setText('stat-selected-pubs', pubs.length);
+            setText('stat-country-count', countries.length);
+
+            const ul = document.getElementById('complete-collaborators-list');
+            if (ul) {
+                ul.innerHTML = '';
+                [...collabs].sort((a,b)=>{ const la=a.trim().split(/\s+/).slice(-1)[0].toLowerCase(); const lb=b.trim().split(/\s+/).slice(-1)[0].toLowerCase(); if(la!==lb) return la.localeCompare(lb); return a.localeCompare(b); })
+                    .forEach(name=>{const li=document.createElement('li'); li.textContent=name; ul.appendChild(li);});
+            }
+
+            const mapEl = document.getElementById('collab-map');
+            if (mapEl && typeof L !== 'undefined') {
+                const map = L.map('collab-map').setView([25,121], 3);
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 18 }).addTo(map);
+                const pts=[];
+                institutions.forEach(inst=>{
+                    if(!Array.isArray(inst.location)||inst.location.length!==2) return;
+                    pts.push(inst.location);
+                    const popup=`<div class="map-popup"><h4>${inst.name||''}</h4><p><strong>📍 ${inst.country||''}</strong></p><p><strong>Collaborators:</strong><br>${(inst.collaborators||[]).join(', ')}</p><div class="papers"><strong>Representative work:</strong><br>${(inst.papers||[]).join('<br>')}</div></div>`;
+                    L.marker(inst.location).addTo(map).bindPopup(popup);
+                });
+                if(pts.length){
+                    const bounds=L.latLngBounds(pts); map.fitBounds(bounds.pad(0.18));
+                    const FitControl=L.Control.extend({options:{position:'topright'},onAdd:function(){const btn=L.DomUtil.create('button','fit-map-btn');btn.type='button';btn.innerText='Fit all';L.DomEvent.disableClickPropagation(btn);L.DomEvent.on(btn,'click',()=>map.fitBounds(bounds.pad(0.18)));return btn;}});
+                    map.addControl(new FitControl());
+                }
+            }
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,75 @@
+{
+  "topic": "Quantum Simulation",
+  "collaborators": [
+    "Yu-Cheng Chen",
+    "Alice Hu",
+    "Calvin Ku",
+    "M. H. Cheng",
+    "Mengzhen Ren",
+    "Ching-Jui Lai",
+    "Yen-Chu Lin",
+    "Ronin Wu"
+  ],
+  "institutions": [
+    {
+      "name": "Hon Hai Quantum Computing Research Center",
+      "country": "Taiwan",
+      "location": [
+        25.0478,
+        121.5319
+      ],
+      "collaborators": [
+        "Yu-Cheng Chen",
+        "Alice Hu",
+        "Calvin Ku",
+        "M. H. Cheng",
+        "Mengzhen Ren"
+      ],
+      "papers": [
+        "Quantum simulation collaborations"
+      ]
+    },
+    {
+      "name": "Academia Sinica",
+      "country": "Taiwan",
+      "location": [
+        25.0418,
+        121.6146
+      ],
+      "collaborators": [
+        "Ching-Jui Lai"
+      ],
+      "papers": [
+        "Quantum simulation collaborations"
+      ]
+    },
+    {
+      "name": "National Yang Ming Chiao Tung University",
+      "country": "Taiwan",
+      "location": [
+        24.7867,
+        120.9975
+      ],
+      "collaborators": [
+        "Yen-Chu Lin"
+      ],
+      "papers": [
+        "Quantum simulation collaborations"
+      ]
+    },
+    {
+      "name": "University of Copenhagen",
+      "country": "Denmark",
+      "location": [
+        55.6805,
+        12.5615
+      ],
+      "collaborators": [
+        "Ronin Wu"
+      ],
+      "papers": [
+        "Quantum simulation collaborations"
+      ]
+    }
+  ]
+}
