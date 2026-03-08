@@ -48,6 +48,44 @@
       ]
     },
     {
+      "group": "🔧 Simulation Algorithms",
+      "publications": [
+        {
+          "title": "Benchmarking Quantum Simulation Methods",
+          "authors": "C Ku, YC Chen, A Hu, MH Hsieh",
+          "venue": "arXiv preprint arXiv:2510.01710, 2025",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2510.01710"
+            }
+          ]
+        },
+        {
+          "title": "A Gell-Mann & Low Theorem Perspective on Quantum Computing: New Paradigm for Designing Quantum Algorithm",
+          "authors": "CT Li, T Tzen Ong, L Wang, MC Hsu, H Lin, MH Hsieh",
+          "venue": "arXiv preprint arXiv:2311.18271, 2023",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2311.18271"
+            }
+          ]
+        },
+        {
+          "title": "Quantum Algorithm for Low Energy Effective Hamiltonian and Quasi-Degenerate Eigenvalue Problem",
+          "authors": "CT Li, T Ong, CY Lin, YC Chen, H Lin, MH Hsieh",
+          "venue": "arXiv preprint arXiv:2510.08088, 2025",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2510.08088"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "group": "⚗️ Quantum Chemistry Applications",
       "publications": [
         {
@@ -92,44 +130,6 @@
             {
               "label": "DOI",
               "url": "https://doi.org/10.1021/acs.jcim.3c00562"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "group": "🔧 Simulation Algorithms",
-      "publications": [
-        {
-          "title": "Benchmarking Quantum Simulation Methods",
-          "authors": "C Ku, YC Chen, A Hu, MH Hsieh",
-          "venue": "arXiv preprint arXiv:2510.01710, 2025",
-          "links": [
-            {
-              "label": "arXiv",
-              "url": "https://arxiv.org/abs/2510.01710"
-            }
-          ]
-        },
-        {
-          "title": "A Gell-Mann & Low Theorem Perspective on Quantum Computing: New Paradigm for Designing Quantum Algorithm",
-          "authors": "CT Li, T Tzen Ong, L Wang, MC Hsu, H Lin, MH Hsieh",
-          "venue": "arXiv preprint arXiv:2311.18271, 2023",
-          "links": [
-            {
-              "label": "arXiv",
-              "url": "https://arxiv.org/abs/2311.18271"
-            }
-          ]
-        },
-        {
-          "title": "Quantum Algorithm for Low Energy Effective Hamiltonian and Quasi-Degenerate Eigenvalue Problem",
-          "authors": "CT Li, T Ong, CY Lin, YC Chen, H Lin, MH Hsieh",
-          "venue": "arXiv preprint arXiv:2510.08088, 2025",
-          "links": [
-            {
-              "label": "arXiv",
-              "url": "https://arxiv.org/abs/2510.08088"
             }
           ]
         }
