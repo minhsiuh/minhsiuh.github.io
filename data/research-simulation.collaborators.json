@@ -2,12 +2,14 @@
   "topic": "Quantum Simulation",
   "collaborators": [
     "Yu-Cheng Chen",
-    "Alice Hu",
-    "Calvin Ku",
     "M. H. Cheng",
-    "Mengzhen Ren",
+    "Alice Hu",
+    "Myungshik Kim",
+    "Calvin Ku",
     "Ching-Jui Lai",
     "Yen-Chu Lin",
+    "Arcesio Castañeda Medina",
+    "Mengzhen Ren",
     "Ronin Wu"
   ],
   "institutions": [
@@ -69,6 +71,34 @@
       ],
       "papers": [
         "Quantum simulation collaborations"
+      ]
+    },
+    {
+      "name": "Fraunhofer ITWM",
+      "country": "Germany",
+      "location": [
+        49.4447,
+        7.7689
+      ],
+      "collaborators": [
+        "Arcesio Castañeda Medina"
+      ],
+      "papers": [
+        "Optimal number-conserved linear encoding for practical fermionic simulation"
+      ]
+    },
+    {
+      "name": "Imperial College London",
+      "country": "United Kingdom",
+      "location": [
+        51.4988,
+        -0.1749
+      ],
+      "collaborators": [
+        "Myungshik Kim"
+      ],
+      "papers": [
+        "Optimal number-conserved linear encoding for practical fermionic simulation"
       ]
     }
   ]
