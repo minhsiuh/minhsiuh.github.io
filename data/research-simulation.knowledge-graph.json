@@ -142,7 +142,17 @@
     {
       "collaboratorId": "C004",
       "name": "Dominic W. Berry",
-      "affiliations": [],
+      "affiliations": [
+        {
+          "institutionId": "I012",
+          "institution": "Macquarie University",
+          "country": "AU",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
       "paperIds": [
         "P010"
       ]
@@ -150,7 +160,17 @@
     {
       "collaboratorId": "C005",
       "name": "Yudong Cao",
-      "affiliations": [],
+      "affiliations": [
+        {
+          "institutionId": "I010",
+          "institution": "Zapata (United States)",
+          "country": "US",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
       "paperIds": [
         "P009"
       ]
@@ -200,7 +220,17 @@
     {
       "collaboratorId": "C008",
       "name": "Wei-Yin Chiang",
-      "affiliations": [],
+      "affiliations": [
+        {
+          "institutionId": "I009",
+          "institution": "Foxconn (Taiwan)",
+          "country": "TW",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
       "paperIds": [
         "P009"
       ]
@@ -208,7 +238,17 @@
     {
       "collaboratorId": "C009",
       "name": "Chien Hung Cho",
-      "affiliations": [],
+      "affiliations": [
+        {
+          "institutionId": "I011",
+          "institution": "National Taiwan University",
+          "country": "TW",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
       "paperIds": [
         "P010"
       ]
@@ -216,7 +256,17 @@
     {
       "collaboratorId": "C010",
       "name": "Jen-Yueh Hsiao",
-      "affiliations": [],
+      "affiliations": [
+        {
+          "institutionId": "I009",
+          "institution": "Foxconn (Taiwan)",
+          "country": "TW",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
       "paperIds": [
         "P008",
         "P009"
@@ -386,22 +436,15 @@
     },
     {
       "collaboratorId": "C023",
-      "name": "T. Tzen Ong",
-      "affiliations": [],
-      "paperIds": [
-        "P004"
-      ]
-    },
-    {
-      "collaboratorId": "C024",
       "name": "Tzen Ong",
       "affiliations": [],
       "paperIds": [
+        "P004",
         "P005"
       ]
     },
     {
-      "collaboratorId": "C025",
+      "collaboratorId": "C024",
       "name": "Fang Ren",
       "affiliations": [],
       "paperIds": [
@@ -409,7 +452,7 @@
       ]
     },
     {
-      "collaboratorId": "C026",
+      "collaboratorId": "C025",
       "name": "Mengzhen Ren",
       "affiliations": [
         {
@@ -428,7 +471,7 @@
       ]
     },
     {
-      "collaboratorId": "C027",
+      "collaboratorId": "C026",
       "name": "Yu Shee",
       "affiliations": [],
       "paperIds": [
@@ -436,7 +479,7 @@
       ]
     },
     {
-      "collaboratorId": "C028",
+      "collaboratorId": "C027",
       "name": "Lucas Wang",
       "affiliations": [],
       "paperIds": [
@@ -444,7 +487,7 @@
       ]
     },
     {
-      "collaboratorId": "C029",
+      "collaboratorId": "C028",
       "name": "Qian Wang",
       "affiliations": [
         {
@@ -462,7 +505,7 @@
       ]
     },
     {
-      "collaboratorId": "C030",
+      "collaboratorId": "C029",
       "name": "Ronin Wu",
       "affiliations": [
         {
@@ -480,7 +523,7 @@
       ]
     },
     {
-      "collaboratorId": "C031",
+      "collaboratorId": "C030",
       "name": "Ann Yang",
       "affiliations": [],
       "paperIds": [
@@ -488,7 +531,7 @@
       ]
     },
     {
-      "collaboratorId": "C032",
+      "collaboratorId": "C031",
       "name": "Yen-Chi Yang",
       "affiliations": [],
       "paperIds": [
@@ -496,7 +539,7 @@
       ]
     },
     {
-      "collaboratorId": "C033",
+      "collaboratorId": "C032",
       "name": "Yangsen Ye",
       "affiliations": [],
       "paperIds": [
@@ -504,7 +547,7 @@
       ]
     },
     {
-      "collaboratorId": "C034",
+      "collaboratorId": "C033",
       "name": "Tzu-Lan Yeh",
       "affiliations": [],
       "paperIds": [
@@ -512,7 +555,7 @@
       ]
     },
     {
-      "collaboratorId": "C035",
+      "collaboratorId": "C034",
       "name": "Alex Zhavoronkov",
       "affiliations": [],
       "paperIds": [
@@ -576,6 +619,34 @@
       "country": "Germany",
       "lat": 53.5511,
       "lon": 9.9937
+    },
+    {
+      "institutionId": "I009",
+      "name": "Foxconn (Taiwan)",
+      "country": "TW",
+      "lat": 0,
+      "lon": 0
+    },
+    {
+      "institutionId": "I010",
+      "name": "Zapata (United States)",
+      "country": "US",
+      "lat": 0,
+      "lon": 0
+    },
+    {
+      "institutionId": "I011",
+      "name": "National Taiwan University",
+      "country": "TW",
+      "lat": 0,
+      "lon": 0
+    },
+    {
+      "institutionId": "I012",
+      "name": "Macquarie University",
+      "country": "AU",
+      "lat": 0,
+      "lon": 0
     }
   ],
   "edges": [
@@ -587,7 +658,7 @@
     },
     {
       "paperId": "P001",
-      "collaboratorId": "C030",
+      "collaboratorId": "C029",
       "institutionId": "I004",
       "role": "coauthor"
     },
@@ -611,7 +682,7 @@
     },
     {
       "paperId": "P002",
-      "collaboratorId": "C029",
+      "collaboratorId": "C028",
       "institutionId": "I007",
       "role": "coauthor"
     },
@@ -671,7 +742,7 @@
     },
     {
       "paperId": "P004",
-      "collaboratorId": "C028",
+      "collaboratorId": "C027",
       "institutionId": null,
       "role": "coauthor"
     },
@@ -695,7 +766,7 @@
     },
     {
       "paperId": "P005",
-      "collaboratorId": "C024",
+      "collaboratorId": "C023",
       "institutionId": null,
       "role": "coauthor"
     },
@@ -719,7 +790,7 @@
     },
     {
       "paperId": "P006",
-      "collaboratorId": "C026",
+      "collaboratorId": "C025",
       "institutionId": "I001",
       "role": "coauthor"
     },
@@ -731,7 +802,7 @@
     },
     {
       "paperId": "P006",
-      "collaboratorId": "C033",
+      "collaboratorId": "C032",
       "institutionId": null,
       "role": "coauthor"
     },
@@ -749,7 +820,7 @@
     },
     {
       "paperId": "P007",
-      "collaboratorId": "C026",
+      "collaboratorId": "C025",
       "institutionId": "I001",
       "role": "coauthor"
     },
@@ -773,25 +844,25 @@
     },
     {
       "paperId": "P008",
-      "collaboratorId": "C027",
+      "collaboratorId": "C026",
       "institutionId": null,
       "role": "coauthor"
     },
     {
       "paperId": "P008",
-      "collaboratorId": "C034",
+      "collaboratorId": "C033",
       "institutionId": null,
       "role": "coauthor"
     },
     {
       "paperId": "P008",
       "collaboratorId": "C010",
-      "institutionId": null,
+      "institutionId": "I009",
       "role": "coauthor"
     },
     {
       "paperId": "P008",
-      "collaboratorId": "C031",
+      "collaboratorId": "C030",
       "institutionId": null,
       "role": "coauthor"
     },
@@ -809,26 +880,26 @@
     },
     {
       "paperId": "P009",
-      "collaboratorId": "C032",
+      "collaboratorId": "C031",
       "institutionId": null,
       "role": "coauthor"
     },
     {
       "paperId": "P009",
       "collaboratorId": "C008",
-      "institutionId": null,
+      "institutionId": "I009",
       "role": "coauthor"
     },
     {
       "paperId": "P009",
       "collaboratorId": "C010",
-      "institutionId": null,
+      "institutionId": "I009",
       "role": "coauthor"
     },
     {
       "paperId": "P009",
       "collaboratorId": "C005",
-      "institutionId": null,
+      "institutionId": "I010",
       "role": "coauthor"
     },
     {
@@ -839,7 +910,7 @@
     },
     {
       "paperId": "P009",
-      "collaboratorId": "C025",
+      "collaboratorId": "C024",
       "institutionId": null,
       "role": "coauthor"
     },
@@ -851,7 +922,7 @@
     },
     {
       "paperId": "P009",
-      "collaboratorId": "C035",
+      "collaboratorId": "C034",
       "institutionId": null,
       "role": "coauthor"
     },
@@ -864,13 +935,13 @@
     {
       "paperId": "P010",
       "collaboratorId": "C009",
-      "institutionId": null,
+      "institutionId": "I011",
       "role": "coauthor"
     },
     {
       "paperId": "P010",
       "collaboratorId": "C004",
-      "institutionId": null,
+      "institutionId": "I012",
       "role": "coauthor"
     }
   ]

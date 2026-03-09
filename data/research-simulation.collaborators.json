@@ -23,7 +23,6 @@
     "Hsin Lin",
     "Yen-Chu Lin",
     "Arcesio Castañeda Medina",
-    "T. Tzen Ong",
     "Tzen Ong",
     "Fang Ren",
     "Mengzhen Ren",
@@ -152,6 +151,63 @@
       ],
       "papers": [
         "Optimal number-conserved linear encoding for practical fermionic simulation"
+      ]
+    },
+    {
+      "name": "Foxconn (Taiwan)",
+      "country": "TW",
+      "location": [
+        0,
+        0
+      ],
+      "collaborators": [
+        "Wei-Yin Chiang",
+        "Jen-Yueh Hsiao"
+      ],
+      "papers": [
+        "Exploring the Advantages of Quantum Generative Adversarial Networks in Generative Chemistry"
+      ]
+    },
+    {
+      "name": "Zapata (United States)",
+      "country": "US",
+      "location": [
+        0,
+        0
+      ],
+      "collaborators": [
+        "Yudong Cao"
+      ],
+      "papers": [
+        "Exploring the Advantages of Quantum Generative Adversarial Networks in Generative Chemistry"
+      ]
+    },
+    {
+      "name": "National Taiwan University",
+      "country": "TW",
+      "location": [
+        0,
+        0
+      ],
+      "collaborators": [
+        "Chien Hung Cho"
+      ],
+      "papers": [
+        "Doubling the order of approximation via the randomized product formula"
+      ]
+    },
+    {
+      "name": "Macquarie University",
+      "country": "AU",
+      "location": [
+        0,
+        0
+      ],
+      "collaborators": [
+        "Dominic W. Berry"
+      ],
+      "papers": [
+        "Doubling the order of approximation via the randomized product formula"
       ]
     }
   ]
