@@ -2,8 +2,7 @@
   "topic": "Quantum Machine Learning",
   "lastCurated": "2026-03-09",
   "collaborators": [
-    "Kaining Zhang (2025-)",
-    "Kaining Zhang (before 2024)",
+    "Kaining Zhang",
     "A Aliper",
     "A Aspuru-Guzik",
     "Y Cao",
@@ -113,7 +112,8 @@
       "collaborators": [
         "Yuxuan Du",
         "Dacheng Tao",
-        "Tongliang Liu"
+        "Tongliang Liu",
+        "Kaining Zhang"
       ],
       "papers": [
         "Expressive power (PRR 2020)",
@@ -148,9 +148,7 @@
         151.2006
       ],
       "country": "Australia",
-      "collaborators": [
-        "Kaining Zhang (before 2024)"
-      ],
+      "collaborators": [],
       "papers": [
         "Barren plateaus (NeurIPS 2022)",
         "Toward Trainability (arXiv 2022)"
@@ -164,7 +162,7 @@
       ],
       "country": "Singapore",
       "collaborators": [
-        "Kaining Zhang (2025-)",
+        "Kaining Zhang",
         "Weibo Gao"
       ],
       "papers": [
