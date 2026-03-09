@@ -1,0 +1,877 @@
+{
+  "version": "1.0",
+  "topic": "Quantum Simulation",
+  "lastCurated": "2026-03-09",
+  "papers": [
+    {
+      "paperId": "P001",
+      "group": "🔬 Fermionic Encoding & Compression",
+      "title": "Neural network assisted fermionic compression encoding: A lossy quantum-selected configuration interaction framework",
+      "year": 2026,
+      "citations": null,
+      "venue": "Physical Review Research 8 (1), 013128, 2026",
+      "doi": "https://doi.org/10.1103/9x8b-4j41",
+      "arxiv": "https://arxiv.org/abs/2505.17846"
+    },
+    {
+      "paperId": "P002",
+      "group": "🔬 Fermionic Encoding & Compression",
+      "title": "Optimal number-conserved linear encoding for practical fermionic simulation",
+      "year": 2025,
+      "citations": null,
+      "venue": "Physical Review Research 7, 033280, 2025",
+      "doi": "https://doi.org/10.1103/lzf5-x6hc",
+      "arxiv": "https://arxiv.org/abs/2309.09370"
+    },
+    {
+      "paperId": "P003",
+      "group": "🔧 Simulation Algorithms",
+      "title": "Benchmarking Quantum Simulation Methods",
+      "year": 2025,
+      "citations": null,
+      "venue": "arXiv preprint arXiv:2510.01710, 2025",
+      "doi": null,
+      "arxiv": "https://arxiv.org/abs/2510.01710"
+    },
+    {
+      "paperId": "P004",
+      "group": "🔧 Simulation Algorithms",
+      "title": "A Gell-Mann & Low Theorem Perspective on Quantum Computing: New Paradigm for Designing Quantum Algorithm",
+      "year": 2023,
+      "citations": null,
+      "venue": "arXiv preprint arXiv:2311.18271, 2023",
+      "doi": null,
+      "arxiv": "https://arxiv.org/abs/2311.18271"
+    },
+    {
+      "paperId": "P005",
+      "group": "🔧 Simulation Algorithms",
+      "title": "Quantum Algorithm for Low Energy Effective Hamiltonian and Quasi-Degenerate Eigenvalue Problem",
+      "year": 2025,
+      "citations": null,
+      "venue": "arXiv preprint arXiv:2510.08088, 2025",
+      "doi": null,
+      "arxiv": "https://arxiv.org/abs/2510.08088"
+    },
+    {
+      "paperId": "P006",
+      "group": "🔧 Simulation Algorithms",
+      "title": "A Neural-Guided Variational Quantum Algorithm for Efficient Sign Structure Learning in Hybrid Architectures",
+      "year": 2025,
+      "citations": null,
+      "venue": "arXiv preprint arXiv:2507.07555, 2025",
+      "doi": null,
+      "arxiv": "https://arxiv.org/abs/2507.07555"
+    },
+    {
+      "paperId": "P007",
+      "group": "⚗️ Quantum Chemistry Applications",
+      "title": "Hybrid Quantum-Classical Clustering for Preparing a Prior Distribution of Eigenspectrum",
+      "year": 2026,
+      "citations": null,
+      "venue": "npj Quantum Information, 2026",
+      "doi": "https://doi.org/10.1038/s41534-026-01194-2",
+      "arxiv": "https://arxiv.org/abs/2407.00450"
+    },
+    {
+      "paperId": "P008",
+      "group": "⚗️ Quantum Chemistry Applications",
+      "title": "Quantum Simulation of Preferred Tautomeric State Prediction",
+      "year": 2023,
+      "citations": null,
+      "venue": "npj Quantum Information 9, 102, 2023",
+      "doi": "https://www.nature.com/articles/s41534-023-00767-9",
+      "arxiv": "https://arxiv.org/abs/2210.02977"
+    },
+    {
+      "paperId": "P009",
+      "group": "⚗️ Quantum Chemistry Applications",
+      "title": "Exploring the Advantages of Quantum Generative Adversarial Networks in Generative Chemistry",
+      "year": 2023,
+      "citations": 113,
+      "venue": "Journal of Chemical Information and Modeling 63 (11), 3307-3318, 2023 · 113 citations",
+      "doi": "https://doi.org/10.1021/acs.jcim.3c00562",
+      "arxiv": "https://arxiv.org/abs/2210.16823"
+    },
+    {
+      "paperId": "P010",
+      "group": "📈 Performance Analysis",
+      "title": "Doubling the order of approximation via the randomized product formula",
+      "year": 2024,
+      "citations": null,
+      "venue": "Physical Review A 109, 062431, 2024",
+      "doi": "https://doi.org/10.1103/PhysRevA.109.062431",
+      "arxiv": "https://arxiv.org/abs/2210.11281"
+    }
+  ],
+  "collaborators": [
+    {
+      "collaboratorId": "C001",
+      "name": "Alexander Aliper",
+      "affiliations": [],
+      "paperIds": [
+        "P009"
+      ]
+    },
+    {
+      "collaboratorId": "C002",
+      "name": "Alán Aspuru-Guzik",
+      "affiliations": [],
+      "paperIds": [
+        "P009"
+      ]
+    },
+    {
+      "collaboratorId": "C003",
+      "name": "Valeria Bartsch",
+      "affiliations": [
+        {
+          "institutionId": "I008",
+          "institution": "Fraunhofer Center for Maritime Logistics",
+          "country": "Germany",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P002"
+      ]
+    },
+    {
+      "collaboratorId": "C004",
+      "name": "Dominic W. Berry",
+      "affiliations": [],
+      "paperIds": [
+        "P010"
+      ]
+    },
+    {
+      "collaboratorId": "C005",
+      "name": "Yudong Cao",
+      "affiliations": [],
+      "paperIds": [
+        "P009"
+      ]
+    },
+    {
+      "collaboratorId": "C006",
+      "name": "Yu-Cheng Chen",
+      "affiliations": [
+        {
+          "institutionId": "I001",
+          "institution": "Hon Hai Quantum Computing Research Center",
+          "country": "Taiwan",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P001",
+        "P002",
+        "P003",
+        "P005",
+        "P006",
+        "P007"
+      ]
+    },
+    {
+      "collaboratorId": "C007",
+      "name": "Man Hei Cheng",
+      "affiliations": [
+        {
+          "institutionId": "I006",
+          "institution": "Imperial College London",
+          "country": "United Kingdom",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P001",
+        "P002"
+      ]
+    },
+    {
+      "collaboratorId": "C008",
+      "name": "Wei-Yin Chiang",
+      "affiliations": [],
+      "paperIds": [
+        "P009"
+      ]
+    },
+    {
+      "collaboratorId": "C009",
+      "name": "Chien Hung Cho",
+      "affiliations": [],
+      "paperIds": [
+        "P010"
+      ]
+    },
+    {
+      "collaboratorId": "C010",
+      "name": "Jen-Yueh Hsiao",
+      "affiliations": [],
+      "paperIds": [
+        "P008",
+        "P009"
+      ]
+    },
+    {
+      "collaboratorId": "C011",
+      "name": "Chang-Yu Hsieh",
+      "affiliations": [],
+      "paperIds": [
+        "P006"
+      ]
+    },
+    {
+      "collaboratorId": "C012",
+      "name": "Ming-Chien Hsu",
+      "affiliations": [],
+      "paperIds": [
+        "P004"
+      ]
+    },
+    {
+      "collaboratorId": "C013",
+      "name": "Alice Hu",
+      "affiliations": [
+        {
+          "institutionId": "I001",
+          "institution": "Hon Hai Quantum Computing Research Center",
+          "country": "Taiwan",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P002",
+        "P003",
+        "P006",
+        "P007"
+      ]
+    },
+    {
+      "collaboratorId": "C014",
+      "name": "Po-Yao Kao",
+      "affiliations": [],
+      "paperIds": [
+        "P009"
+      ]
+    },
+    {
+      "collaboratorId": "C015",
+      "name": "Myungshik Kim",
+      "affiliations": [
+        {
+          "institutionId": "I006",
+          "institution": "Imperial College London",
+          "country": "United Kingdom",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P002"
+      ]
+    },
+    {
+      "collaboratorId": "C016",
+      "name": "Calvin Ku",
+      "affiliations": [
+        {
+          "institutionId": "I001",
+          "institution": "Hon Hai Quantum Computing Research Center",
+          "country": "Taiwan",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P003"
+      ]
+    },
+    {
+      "collaboratorId": "C017",
+      "name": "Ching-Jui Lai",
+      "affiliations": [
+        {
+          "institutionId": "I002",
+          "institution": "Academia Sinica",
+          "country": "Taiwan",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P007"
+      ]
+    },
+    {
+      "collaboratorId": "C018",
+      "name": "Chun-Tse Li",
+      "affiliations": [],
+      "paperIds": [
+        "P004",
+        "P005"
+      ]
+    },
+    {
+      "collaboratorId": "C019",
+      "name": "Chih-Yun Lin",
+      "affiliations": [],
+      "paperIds": [
+        "P005"
+      ]
+    },
+    {
+      "collaboratorId": "C020",
+      "name": "Hsin Lin",
+      "affiliations": [],
+      "paperIds": [
+        "P004",
+        "P005"
+      ]
+    },
+    {
+      "collaboratorId": "C021",
+      "name": "Yen-Chu Lin",
+      "affiliations": [
+        {
+          "institutionId": "I003",
+          "institution": "National Yang Ming Chiao Tung University",
+          "country": "Taiwan",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P008",
+        "P009"
+      ]
+    },
+    {
+      "collaboratorId": "C022",
+      "name": "Arcesio Castañeda Medina",
+      "affiliations": [
+        {
+          "institutionId": "I005",
+          "institution": "Fraunhofer ITWM",
+          "country": "Germany",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P002"
+      ]
+    },
+    {
+      "collaboratorId": "C023",
+      "name": "T. Tzen Ong",
+      "affiliations": [],
+      "paperIds": [
+        "P004"
+      ]
+    },
+    {
+      "collaboratorId": "C024",
+      "name": "Tzen Ong",
+      "affiliations": [],
+      "paperIds": [
+        "P005"
+      ]
+    },
+    {
+      "collaboratorId": "C025",
+      "name": "Fang Ren",
+      "affiliations": [],
+      "paperIds": [
+        "P009"
+      ]
+    },
+    {
+      "collaboratorId": "C026",
+      "name": "Mengzhen Ren",
+      "affiliations": [
+        {
+          "institutionId": "I001",
+          "institution": "Hon Hai Quantum Computing Research Center",
+          "country": "Taiwan",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P006",
+        "P007"
+      ]
+    },
+    {
+      "collaboratorId": "C027",
+      "name": "Yu Shee",
+      "affiliations": [],
+      "paperIds": [
+        "P008"
+      ]
+    },
+    {
+      "collaboratorId": "C028",
+      "name": "Lucas Wang",
+      "affiliations": [],
+      "paperIds": [
+        "P004"
+      ]
+    },
+    {
+      "collaboratorId": "C029",
+      "name": "Qian Wang",
+      "affiliations": [
+        {
+          "institutionId": "I007",
+          "institution": "City University of Hong Kong",
+          "country": "Hong Kong",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P002"
+      ]
+    },
+    {
+      "collaboratorId": "C030",
+      "name": "Ronin Wu",
+      "affiliations": [
+        {
+          "institutionId": "I004",
+          "institution": "University of Copenhagen",
+          "country": "Denmark",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P001"
+      ]
+    },
+    {
+      "collaboratorId": "C031",
+      "name": "Ann Yang",
+      "affiliations": [],
+      "paperIds": [
+        "P008"
+      ]
+    },
+    {
+      "collaboratorId": "C032",
+      "name": "Yen-Chi Yang",
+      "affiliations": [],
+      "paperIds": [
+        "P009"
+      ]
+    },
+    {
+      "collaboratorId": "C033",
+      "name": "Yangsen Ye",
+      "affiliations": [],
+      "paperIds": [
+        "P006"
+      ]
+    },
+    {
+      "collaboratorId": "C034",
+      "name": "Tzu-Lan Yeh",
+      "affiliations": [],
+      "paperIds": [
+        "P008"
+      ]
+    },
+    {
+      "collaboratorId": "C035",
+      "name": "Alex Zhavoronkov",
+      "affiliations": [],
+      "paperIds": [
+        "P009"
+      ]
+    }
+  ],
+  "institutions": [
+    {
+      "institutionId": "I001",
+      "name": "Hon Hai Quantum Computing Research Center",
+      "country": "Taiwan",
+      "lat": 25.0478,
+      "lon": 121.5319
+    },
+    {
+      "institutionId": "I002",
+      "name": "Academia Sinica",
+      "country": "Taiwan",
+      "lat": 25.0418,
+      "lon": 121.6146
+    },
+    {
+      "institutionId": "I003",
+      "name": "National Yang Ming Chiao Tung University",
+      "country": "Taiwan",
+      "lat": 24.7867,
+      "lon": 120.9975
+    },
+    {
+      "institutionId": "I004",
+      "name": "University of Copenhagen",
+      "country": "Denmark",
+      "lat": 55.6805,
+      "lon": 12.5615
+    },
+    {
+      "institutionId": "I005",
+      "name": "Fraunhofer ITWM",
+      "country": "Germany",
+      "lat": 49.4447,
+      "lon": 7.7689
+    },
+    {
+      "institutionId": "I006",
+      "name": "Imperial College London",
+      "country": "United Kingdom",
+      "lat": 51.4988,
+      "lon": -0.1749
+    },
+    {
+      "institutionId": "I007",
+      "name": "City University of Hong Kong",
+      "country": "Hong Kong",
+      "lat": 22.3366,
+      "lon": 114.1733
+    },
+    {
+      "institutionId": "I008",
+      "name": "Fraunhofer Center for Maritime Logistics",
+      "country": "Germany",
+      "lat": 53.5511,
+      "lon": 9.9937
+    }
+  ],
+  "edges": [
+    {
+      "paperId": "P001",
+      "collaboratorId": "C006",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P001",
+      "collaboratorId": "C030",
+      "institutionId": "I004",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P001",
+      "collaboratorId": "C007",
+      "institutionId": "I006",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P002",
+      "collaboratorId": "C007",
+      "institutionId": "I006",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P002",
+      "collaboratorId": "C006",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P002",
+      "collaboratorId": "C029",
+      "institutionId": "I007",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P002",
+      "collaboratorId": "C003",
+      "institutionId": "I008",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P002",
+      "collaboratorId": "C022",
+      "institutionId": "I005",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P002",
+      "collaboratorId": "C015",
+      "institutionId": "I006",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P002",
+      "collaboratorId": "C013",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P003",
+      "collaboratorId": "C016",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P003",
+      "collaboratorId": "C006",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P003",
+      "collaboratorId": "C013",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P004",
+      "collaboratorId": "C018",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P004",
+      "collaboratorId": "C023",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P004",
+      "collaboratorId": "C028",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P004",
+      "collaboratorId": "C012",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P004",
+      "collaboratorId": "C020",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P005",
+      "collaboratorId": "C018",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P005",
+      "collaboratorId": "C024",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P005",
+      "collaboratorId": "C019",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P005",
+      "collaboratorId": "C006",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P005",
+      "collaboratorId": "C020",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P006",
+      "collaboratorId": "C026",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P006",
+      "collaboratorId": "C006",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P006",
+      "collaboratorId": "C033",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P006",
+      "collaboratorId": "C013",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P006",
+      "collaboratorId": "C011",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P007",
+      "collaboratorId": "C026",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P007",
+      "collaboratorId": "C006",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P007",
+      "collaboratorId": "C017",
+      "institutionId": "I002",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P007",
+      "collaboratorId": "C013",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P008",
+      "collaboratorId": "C027",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P008",
+      "collaboratorId": "C034",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P008",
+      "collaboratorId": "C010",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P008",
+      "collaboratorId": "C031",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P008",
+      "collaboratorId": "C021",
+      "institutionId": "I003",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P009",
+      "collaboratorId": "C014",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P009",
+      "collaboratorId": "C032",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P009",
+      "collaboratorId": "C008",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P009",
+      "collaboratorId": "C010",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P009",
+      "collaboratorId": "C005",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P009",
+      "collaboratorId": "C001",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P009",
+      "collaboratorId": "C025",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P009",
+      "collaboratorId": "C002",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P009",
+      "collaboratorId": "C035",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P009",
+      "collaboratorId": "C021",
+      "institutionId": "I003",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P010",
+      "collaboratorId": "C009",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P010",
+      "collaboratorId": "C004",
+      "institutionId": null,
+      "role": "coauthor"
+    }
+  ]
+}
