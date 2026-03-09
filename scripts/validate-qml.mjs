@@ -15,6 +15,18 @@ for (const g of pubs.groups || []) {
     if (ai !== -1 && di !== -1 && ai > di) {
       errors.push(`Link order wrong (arXiv should be before DOI): ${p.title}`);
     }
+
+    // Author full-name gate: disallow initial-based short forms like "Y Du" / "MH Hsieh"
+    const authorParts = String(p.authors || '')
+      .split(',')
+      .map(s => s.trim())
+      .filter(Boolean)
+      .filter(s => s.toLowerCase() !== 'et al.');
+    for (const a of authorParts) {
+      if (/^[A-Z]{1,3}\s+[A-Z][a-zA-Z\-'.]+$/.test(a)) {
+        errors.push(`Author not in full-name format (${a}) in: ${p.title}`);
+      }
+    }
   }
 }
 
