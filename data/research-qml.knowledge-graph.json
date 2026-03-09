@@ -207,28 +207,10 @@
   "collaborators": [
     {
       "collaboratorId": "C001",
-      "name": "A Aliper",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C002",
-      "name": "A Aspuru-Guzik",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C003",
-      "name": "Y Cao",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C004",
       "name": "Pin-Yu Chen",
       "affiliations": [
         {
-          "institutionId": "I006",
+          "institutionId": "I005",
           "institution": "IBM Research",
           "country": "USA",
           "startYear": null,
@@ -244,17 +226,11 @@
       ]
     },
     {
-      "collaboratorId": "C005",
-      "name": "PY Chen",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C006",
+      "collaboratorId": "C002",
       "name": "Yu-Ao Chen",
       "affiliations": [
         {
-          "institutionId": "I011",
+          "institutionId": "I017",
           "institution": "University of Science and Technology of China (USTC)",
           "country": "China",
           "startYear": null,
@@ -268,11 +244,11 @@
       ]
     },
     {
-      "collaboratorId": "C007",
+      "collaboratorId": "C003",
       "name": "Yu-Cheng Chen",
       "affiliations": [
         {
-          "institutionId": "I002",
+          "institutionId": "I004",
           "institution": "Hon Hai Quantum Computing Research Center",
           "country": "Taiwan",
           "startYear": null,
@@ -284,34 +260,22 @@
       "paperIds": []
     },
     {
-      "collaboratorId": "C008",
-      "name": "WY Chiang",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C009",
-      "name": "G Chiribella",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C010",
+      "collaboratorId": "C004",
       "name": "Giulio Chiribella",
       "affiliations": [
         {
-          "institutionId": "I016",
-          "institution": "University of Oxford",
-          "country": "UK",
+          "institutionId": "I011",
+          "institution": "The University of Hong Kong",
+          "country": "Hong Kong",
           "startYear": null,
           "endYear": null,
           "isPrimary": true,
           "source": "manual"
         },
         {
-          "institutionId": "I020",
-          "institution": "The University of Hong Kong",
-          "country": "Hong Kong",
+          "institutionId": "I016",
+          "institution": "University of Oxford",
+          "country": "UK",
           "startYear": null,
           "endYear": null,
           "isPrimary": false,
@@ -323,17 +287,11 @@
       ]
     },
     {
-      "collaboratorId": "C011",
-      "name": "Y Du",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C012",
+      "collaboratorId": "C005",
       "name": "Yuxuan Du",
       "affiliations": [
         {
-          "institutionId": "I001",
+          "institutionId": "I018",
           "institution": "University of Sydney",
           "country": "Australia",
           "startYear": null,
@@ -360,17 +318,11 @@
       ]
     },
     {
-      "collaboratorId": "C013",
-      "name": "J Eisert",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C014",
+      "collaboratorId": "C006",
       "name": "Jens Eisert",
       "affiliations": [
         {
-          "institutionId": "I014",
+          "institutionId": "I002",
           "institution": "Freie Universität Berlin",
           "country": "Germany",
           "startYear": null,
@@ -384,17 +336,11 @@
       ]
     },
     {
-      "collaboratorId": "C015",
-      "name": "W Gao",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C016",
+      "collaboratorId": "C007",
       "name": "Weibo Gao",
       "affiliations": [
         {
-          "institutionId": "I004",
+          "institutionId": "I007",
           "institution": "Nanyang Technological University (NTU)",
           "country": "Singapore",
           "startYear": null,
@@ -408,35 +354,11 @@
       ]
     },
     {
-      "collaboratorId": "C017",
-      "name": "M Gong",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C018",
-      "name": "N Guo",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C019",
-      "name": "Z He",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C020",
-      "name": "JY Hsiao",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C021",
+      "collaboratorId": "C008",
       "name": "Meng-Jun Hu",
       "affiliations": [
         {
-          "institutionId": "I012",
+          "institutionId": "I001",
           "institution": "Beijing Academy of Quantum Information Sciences (BAQIS)",
           "country": "China",
           "startYear": null,
@@ -450,29 +372,11 @@
       ]
     },
     {
-      "collaboratorId": "C022",
-      "name": "MJ Hu",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C023",
-      "name": "HL Huang",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C024",
-      "name": "T Huang",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C025",
+      "collaboratorId": "C009",
       "name": "Tao Huang",
       "affiliations": [
         {
-          "institutionId": "I008",
+          "institutionId": "I009",
           "institution": "SenseTime, Beijing",
           "country": "China",
           "startYear": null,
@@ -486,23 +390,11 @@
       ]
     },
     {
-      "collaboratorId": "C026",
-      "name": "W Huang",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C027",
-      "name": "Y Jin",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C028",
+      "collaboratorId": "C010",
       "name": "Yirong Jin",
       "affiliations": [
         {
-          "institutionId": "I012",
+          "institutionId": "I001",
           "institution": "Beijing Academy of Quantum Information Sciences (BAQIS)",
           "country": "China",
           "startYear": null,
@@ -516,17 +408,11 @@
       ]
     },
     {
-      "collaboratorId": "C029",
-      "name": "PY Kao",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C030",
+      "collaboratorId": "C011",
       "name": "Calvin Ku",
       "affiliations": [
         {
-          "institutionId": "I002",
+          "institutionId": "I004",
           "institution": "Hon Hai Quantum Computing Research Center",
           "country": "Taiwan",
           "startYear": null,
@@ -538,13 +424,7 @@
       "paperIds": []
     },
     {
-      "collaboratorId": "C031",
-      "name": "L Li",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C032",
+      "collaboratorId": "C012",
       "name": "Ling Li",
       "affiliations": [
         {
@@ -562,29 +442,11 @@
       ]
     },
     {
-      "collaboratorId": "C033",
-      "name": "S Li",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C034",
-      "name": "X Li",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C035",
-      "name": "Z Li",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C036",
+      "collaboratorId": "C013",
       "name": "Zhiyuan Li",
       "affiliations": [
         {
-          "institutionId": "I012",
+          "institutionId": "I001",
           "institution": "Beijing Academy of Quantum Information Sciences (BAQIS)",
           "country": "China",
           "startYear": null,
@@ -598,53 +460,11 @@
       ]
     },
     {
-      "collaboratorId": "C037",
-      "name": "F Liang",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C038",
-      "name": "J Lin",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C039",
-      "name": "YC Lin",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C040",
-      "name": "K Linghu",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C041",
-      "name": "DE Liu",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C042",
-      "name": "L Liu",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C043",
-      "name": "N Liu",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C044",
+      "collaboratorId": "C014",
       "name": "Nana Liu",
       "affiliations": [
         {
-          "institutionId": "I009",
+          "institutionId": "I010",
           "institution": "Shanghai Jiao Tong University",
           "country": "China",
           "startYear": null,
@@ -658,23 +478,11 @@
       ]
     },
     {
-      "collaboratorId": "C045",
-      "name": "Q Liu",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C046",
-      "name": "T Liu",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C047",
+      "collaboratorId": "C015",
       "name": "Tongliang Liu",
       "affiliations": [
         {
-          "institutionId": "I001",
+          "institutionId": "I018",
           "institution": "University of Sydney",
           "country": "Australia",
           "startYear": null,
@@ -693,11 +501,11 @@
       ]
     },
     {
-      "collaboratorId": "C048",
+      "collaboratorId": "C016",
       "name": "Chao-Yang Lu",
       "affiliations": [
         {
-          "institutionId": "I011",
+          "institutionId": "I017",
           "institution": "University of Science and Technology of China (USTC)",
           "country": "China",
           "startYear": null,
@@ -711,17 +519,11 @@
       ]
     },
     {
-      "collaboratorId": "C049",
-      "name": "T Ma",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C050",
+      "collaboratorId": "C017",
       "name": "Jian-Wei Pan",
       "affiliations": [
         {
-          "institutionId": "I011",
+          "institutionId": "I017",
           "institution": "University of Science and Technology of China (USTC)",
           "country": "China",
           "startYear": null,
@@ -735,17 +537,11 @@
       ]
     },
     {
-      "collaboratorId": "C051",
-      "name": "J Qi",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C052",
+      "collaboratorId": "C018",
       "name": "Jun Qi",
       "affiliations": [
         {
-          "institutionId": "I005",
+          "institutionId": "I003",
           "institution": "Georgia Institute of Technology",
           "country": "USA",
           "startYear": null,
@@ -761,23 +557,11 @@
       ]
     },
     {
-      "collaboratorId": "C053",
-      "name": "Y Qian",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C054",
-      "name": "P Rebentrost",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C055",
+      "collaboratorId": "C019",
       "name": "Patrick Rebentrost",
       "affiliations": [
         {
-          "institutionId": "I013",
+          "institutionId": "I008",
           "institution": "National University of Singapore (NUS)",
           "country": "Singapore",
           "startYear": null,
@@ -792,17 +576,11 @@
       ]
     },
     {
-      "collaboratorId": "C056",
-      "name": "F Ren",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C057",
+      "collaboratorId": "C020",
       "name": "Barry C. Sanders",
       "affiliations": [
         {
-          "institutionId": "I018",
+          "institutionId": "I013",
           "institution": "University of Calgary / Perimeter Institute",
           "country": "Canada",
           "startYear": null,
@@ -816,40 +594,22 @@
       ]
     },
     {
-      "collaboratorId": "C058",
-      "name": "BC Sanders",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C059",
-      "name": "X Sun",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C060",
-      "name": "D Tao",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C061",
+      "collaboratorId": "C021",
       "name": "Dacheng Tao",
       "affiliations": [
         {
-          "institutionId": "I001",
-          "institution": "University of Sydney",
-          "country": "Australia",
+          "institutionId": "I007",
+          "institution": "Nanyang Technological University (NTU)",
+          "country": "Singapore",
           "startYear": null,
           "endYear": null,
           "isPrimary": true,
           "source": "manual"
         },
         {
-          "institutionId": "I004",
-          "institution": "Nanyang Technological University (NTU)",
-          "country": "Singapore",
+          "institutionId": "I018",
+          "institution": "University of Sydney",
+          "country": "Australia",
           "startYear": null,
           "endYear": null,
           "isPrimary": false,
@@ -876,17 +636,11 @@
       ]
     },
     {
-      "collaboratorId": "C062",
-      "name": "J Tejedor",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C063",
+      "collaboratorId": "C022",
       "name": "Javier Tejedor",
       "affiliations": [
         {
-          "institutionId": "I017",
+          "institutionId": "I012",
           "institution": "Universidad San Pablo-CEU",
           "country": "Spain",
           "startYear": null,
@@ -900,29 +654,11 @@
       ]
     },
     {
-      "collaboratorId": "C064",
-      "name": "J Tian",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C065",
-      "name": "C Wang",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C066",
-      "name": "R Wang",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C067",
+      "collaboratorId": "C023",
       "name": "Ruixia Wang",
       "affiliations": [
         {
-          "institutionId": "I012",
+          "institutionId": "I001",
           "institution": "Beijing Academy of Quantum Information Sciences (BAQIS)",
           "country": "China",
           "startYear": null,
@@ -936,17 +672,11 @@
       ]
     },
     {
-      "collaboratorId": "C068",
-      "name": "X Wang",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C069",
+      "collaboratorId": "C024",
       "name": "Xinbiao Wang",
       "affiliations": [
         {
-          "institutionId": "I010",
+          "institutionId": "I019",
           "institution": "Zhejiang University",
           "country": "China",
           "startYear": null,
@@ -961,23 +691,11 @@
       ]
     },
     {
-      "collaboratorId": "C070",
-      "name": "X Wu",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C071",
-      "name": "Y Wu",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C072",
+      "collaboratorId": "C025",
       "name": "Ya-Dong Wu",
       "affiliations": [
         {
-          "institutionId": "I009",
+          "institutionId": "I010",
           "institution": "Shanghai Jiao Tong University",
           "country": "China",
           "startYear": null,
@@ -991,23 +709,11 @@
       ]
     },
     {
-      "collaboratorId": "C073",
-      "name": "YD Wu",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C074",
-      "name": "H Xu",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C075",
+      "collaboratorId": "C026",
       "name": "Chao-Han Huck Yang",
       "affiliations": [
         {
-          "institutionId": "I007",
+          "institutionId": "I006",
           "institution": "NVIDIA Research",
           "country": "USA",
           "startYear": null,
@@ -1023,47 +729,11 @@
       ]
     },
     {
-      "collaboratorId": "C076",
-      "name": "CHH Yang",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C077",
-      "name": "W Yang",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C078",
-      "name": "Y Yang",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C079",
-      "name": "YC Yang",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C080",
-      "name": "W Yi",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C081",
-      "name": "S You",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C082",
+      "collaboratorId": "C027",
       "name": "Shan You",
       "affiliations": [
         {
-          "institutionId": "I008",
+          "institutionId": "I009",
           "institution": "SenseTime, Beijing",
           "country": "China",
           "startYear": null,
@@ -1078,17 +748,11 @@
       ]
     },
     {
-      "collaboratorId": "C083",
-      "name": "H Yu",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C084",
+      "collaboratorId": "C028",
       "name": "Haifeng Yu",
       "affiliations": [
         {
-          "institutionId": "I012",
+          "institutionId": "I001",
           "institution": "Beijing Academy of Quantum Information Sciences (BAQIS)",
           "country": "China",
           "startYear": null,
@@ -1102,40 +766,22 @@
       ]
     },
     {
-      "collaboratorId": "C085",
-      "name": "Z Yu",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C086",
-      "name": "J Zhang",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C087",
-      "name": "K Zhang",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C088",
+      "collaboratorId": "C029",
       "name": "Kaining Zhang",
       "affiliations": [
         {
-          "institutionId": "I001",
-          "institution": "University of Sydney",
-          "country": "Australia",
+          "institutionId": "I007",
+          "institution": "Nanyang Technological University (NTU)",
+          "country": "Singapore",
           "startYear": null,
           "endYear": null,
           "isPrimary": true,
           "source": "manual"
         },
         {
-          "institutionId": "I004",
-          "institution": "Nanyang Technological University (NTU)",
-          "country": "Singapore",
+          "institutionId": "I018",
+          "institution": "University of Sydney",
+          "country": "Australia",
           "startYear": null,
           "endYear": null,
           "isPrimary": false,
@@ -1151,17 +797,11 @@
       ]
     },
     {
-      "collaboratorId": "C089",
-      "name": "YH Zhang",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C090",
+      "collaboratorId": "C030",
       "name": "Yuan-Hang Zhang",
       "affiliations": [
         {
-          "institutionId": "I019",
+          "institutionId": "I014",
           "institution": "University of California, San Diego",
           "country": "USA",
           "startYear": null,
@@ -1175,35 +815,11 @@
       ]
     },
     {
-      "collaboratorId": "C091",
-      "name": "P Zhao",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C092",
-      "name": "S Zhao",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C093",
-      "name": "Y Zhao",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C094",
-      "name": "A Zhavoronkov",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C095",
+      "collaboratorId": "C031",
       "name": "Xiaobo Zhu",
       "affiliations": [
         {
-          "institutionId": "I011",
+          "institutionId": "I017",
           "institution": "University of Science and Technology of China (USTC)",
           "country": "China",
           "startYear": null,
@@ -1217,17 +833,11 @@
       ]
     },
     {
-      "collaboratorId": "C096",
-      "name": "Y Zhu",
-      "affiliations": [],
-      "paperIds": []
-    },
-    {
-      "collaboratorId": "C097",
+      "collaboratorId": "C032",
       "name": "Yan Zhu",
       "affiliations": [
         {
-          "institutionId": "I020",
+          "institutionId": "I011",
           "institution": "The University of Hong Kong",
           "country": "Hong Kong",
           "startYear": null,
@@ -1244,101 +854,101 @@
   "institutions": [
     {
       "institutionId": "I001",
-      "name": "University of Sydney",
-      "country": "Australia",
-      "lat": -33.8886,
-      "lon": 151.1873
-    },
-    {
-      "institutionId": "I002",
-      "name": "Hon Hai Quantum Computing Research Center",
-      "country": "Taiwan",
-      "lat": 25.0703,
-      "lon": 121.5775
-    },
-    {
-      "institutionId": "I003",
-      "name": "University of Technology Sydney",
-      "country": "Australia",
-      "lat": -33.8839,
-      "lon": 151.2006
-    },
-    {
-      "institutionId": "I004",
-      "name": "Nanyang Technological University (NTU)",
-      "country": "Singapore",
-      "lat": 1.3521,
-      "lon": 103.8198
-    },
-    {
-      "institutionId": "I005",
-      "name": "Georgia Institute of Technology",
-      "country": "USA",
-      "lat": 33.7756,
-      "lon": -84.3963
-    },
-    {
-      "institutionId": "I006",
-      "name": "IBM Research",
-      "country": "USA",
-      "lat": 41.0534,
-      "lon": -73.7134
-    },
-    {
-      "institutionId": "I007",
-      "name": "NVIDIA Research",
-      "country": "USA",
-      "lat": 37.3861,
-      "lon": -122.0839
-    },
-    {
-      "institutionId": "I008",
-      "name": "SenseTime, Beijing",
-      "country": "China",
-      "lat": 39.9042,
-      "lon": 116.4074
-    },
-    {
-      "institutionId": "I009",
-      "name": "Shanghai Jiao Tong University",
-      "country": "China",
-      "lat": 31.0234,
-      "lon": 121.4354
-    },
-    {
-      "institutionId": "I010",
-      "name": "Zhejiang University",
-      "country": "China",
-      "lat": 30.3087,
-      "lon": 120.081
-    },
-    {
-      "institutionId": "I011",
-      "name": "University of Science and Technology of China (USTC)",
-      "country": "China",
-      "lat": 31.8206,
-      "lon": 117.2272
-    },
-    {
-      "institutionId": "I012",
       "name": "Beijing Academy of Quantum Information Sciences (BAQIS)",
       "country": "China",
       "lat": 40.0731,
       "lon": 116.2119
     },
     {
-      "institutionId": "I013",
+      "institutionId": "I002",
+      "name": "Freie Universität Berlin",
+      "country": "Germany",
+      "lat": 52.4539,
+      "lon": 13.2917
+    },
+    {
+      "institutionId": "I003",
+      "name": "Georgia Institute of Technology",
+      "country": "USA",
+      "lat": 33.7756,
+      "lon": -84.3963
+    },
+    {
+      "institutionId": "I004",
+      "name": "Hon Hai Quantum Computing Research Center",
+      "country": "Taiwan",
+      "lat": 25.0703,
+      "lon": 121.5775
+    },
+    {
+      "institutionId": "I005",
+      "name": "IBM Research",
+      "country": "USA",
+      "lat": 41.0534,
+      "lon": -73.7134
+    },
+    {
+      "institutionId": "I006",
+      "name": "NVIDIA Research",
+      "country": "USA",
+      "lat": 37.3861,
+      "lon": -122.0839
+    },
+    {
+      "institutionId": "I007",
+      "name": "Nanyang Technological University (NTU)",
+      "country": "Singapore",
+      "lat": 1.3521,
+      "lon": 103.8198
+    },
+    {
+      "institutionId": "I008",
       "name": "National University of Singapore (NUS)",
       "country": "Singapore",
       "lat": 1.2966,
       "lon": 103.7764
     },
     {
+      "institutionId": "I009",
+      "name": "SenseTime, Beijing",
+      "country": "China",
+      "lat": 39.9042,
+      "lon": 116.4074
+    },
+    {
+      "institutionId": "I010",
+      "name": "Shanghai Jiao Tong University",
+      "country": "China",
+      "lat": 31.0234,
+      "lon": 121.4354
+    },
+    {
+      "institutionId": "I011",
+      "name": "The University of Hong Kong",
+      "country": "Hong Kong",
+      "lat": 22.2836,
+      "lon": 114.1389
+    },
+    {
+      "institutionId": "I012",
+      "name": "Universidad San Pablo-CEU",
+      "country": "Spain",
+      "lat": 40.4069,
+      "lon": -3.7038
+    },
+    {
+      "institutionId": "I013",
+      "name": "University of Calgary / Perimeter Institute",
+      "country": "Canada",
+      "lat": 51.0775,
+      "lon": -114.1317
+    },
+    {
       "institutionId": "I014",
-      "name": "Freie Universität Berlin",
-      "country": "Germany",
-      "lat": 52.4539,
-      "lon": 13.2917
+      "name": "University of California, San Diego",
+      "country": "USA",
+      "lat": 32.8801,
+      "lon": -117.234
     },
     {
       "institutionId": "I015",
@@ -1356,488 +966,481 @@
     },
     {
       "institutionId": "I017",
-      "name": "Universidad San Pablo-CEU",
-      "country": "Spain",
-      "lat": 40.4069,
-      "lon": -3.7038
+      "name": "University of Science and Technology of China (USTC)",
+      "country": "China",
+      "lat": 31.8206,
+      "lon": 117.2272
     },
     {
       "institutionId": "I018",
-      "name": "University of Calgary / Perimeter Institute",
-      "country": "Canada",
-      "lat": 51.0775,
-      "lon": -114.1317
+      "name": "University of Sydney",
+      "country": "Australia",
+      "lat": -33.8886,
+      "lon": 151.1873
     },
     {
       "institutionId": "I019",
-      "name": "University of California, San Diego",
-      "country": "USA",
-      "lat": 32.8801,
-      "lon": -117.234
-    },
-    {
-      "institutionId": "I020",
-      "name": "The University of Hong Kong",
-      "country": "Hong Kong",
-      "lat": 22.2836,
-      "lon": 114.1389
+      "name": "Zhejiang University",
+      "country": "China",
+      "lat": 30.3087,
+      "lon": 120.081
     }
   ],
   "edges": [
     {
       "paperId": "P001",
-      "collaboratorId": "C012",
-      "institutionId": "I001",
+      "collaboratorId": "C005",
+      "institutionId": "I018",
       "role": "coauthor"
     },
     {
       "paperId": "P001",
-      "collaboratorId": "C047",
-      "institutionId": "I001",
+      "collaboratorId": "C015",
+      "institutionId": "I018",
       "role": "coauthor"
     },
     {
       "paperId": "P001",
-      "collaboratorId": "C061",
-      "institutionId": "I001",
+      "collaboratorId": "C021",
+      "institutionId": "I007",
       "role": "coauthor"
     },
     {
       "paperId": "P002",
-      "collaboratorId": "C012",
-      "institutionId": "I001",
+      "collaboratorId": "C005",
+      "institutionId": "I018",
       "role": "coauthor"
     },
     {
       "paperId": "P002",
-      "collaboratorId": "C047",
-      "institutionId": "I001",
+      "collaboratorId": "C015",
+      "institutionId": "I018",
       "role": "coauthor"
     },
     {
       "paperId": "P002",
-      "collaboratorId": "C082",
-      "institutionId": "I008",
+      "collaboratorId": "C027",
+      "institutionId": "I009",
       "role": "coauthor"
     },
     {
       "paperId": "P002",
-      "collaboratorId": "C061",
-      "institutionId": "I001",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P003",
-      "collaboratorId": "C052",
-      "institutionId": "I005",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P003",
-      "collaboratorId": "C075",
+      "collaboratorId": "C021",
       "institutionId": "I007",
       "role": "coauthor"
     },
     {
       "paperId": "P003",
-      "collaboratorId": "C004",
+      "collaboratorId": "C018",
+      "institutionId": "I003",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P003",
+      "collaboratorId": "C026",
       "institutionId": "I006",
       "role": "coauthor"
     },
     {
-      "paperId": "P004",
-      "collaboratorId": "C088",
-      "institutionId": "I001",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P004",
-      "collaboratorId": "C061",
-      "institutionId": "I001",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P005",
-      "collaboratorId": "C088",
-      "institutionId": "I001",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P005",
-      "collaboratorId": "C061",
-      "institutionId": "I001",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P006",
-      "collaboratorId": "C052",
+      "paperId": "P003",
+      "collaboratorId": "C001",
       "institutionId": "I005",
       "role": "coauthor"
     },
     {
-      "paperId": "P006",
-      "collaboratorId": "C075",
+      "paperId": "P004",
+      "collaboratorId": "C029",
+      "institutionId": "I007",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P004",
+      "collaboratorId": "C021",
+      "institutionId": "I007",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P005",
+      "collaboratorId": "C029",
+      "institutionId": "I007",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P005",
+      "collaboratorId": "C021",
       "institutionId": "I007",
       "role": "coauthor"
     },
     {
       "paperId": "P006",
-      "collaboratorId": "C004",
+      "collaboratorId": "C018",
+      "institutionId": "I003",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P006",
+      "collaboratorId": "C026",
       "institutionId": "I006",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P006",
+      "collaboratorId": "C001",
+      "institutionId": "I005",
       "role": "coauthor"
     },
     {
       "paperId": "P007",
-      "collaboratorId": "C067",
-      "institutionId": "I012",
+      "collaboratorId": "C023",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P007",
+      "collaboratorId": "C008",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P007",
+      "collaboratorId": "C013",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P007",
+      "collaboratorId": "C005",
+      "institutionId": "I018",
       "role": "coauthor"
     },
     {
       "paperId": "P007",
       "collaboratorId": "C021",
-      "institutionId": "I012",
+      "institutionId": "I007",
       "role": "coauthor"
     },
     {
       "paperId": "P007",
-      "collaboratorId": "C036",
-      "institutionId": "I012",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P007",
-      "collaboratorId": "C012",
-      "institutionId": "I001",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P007",
-      "collaboratorId": "C061",
+      "collaboratorId": "C010",
       "institutionId": "I001",
       "role": "coauthor"
     },
     {
       "paperId": "P007",
       "collaboratorId": "C028",
-      "institutionId": "I012",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P007",
-      "collaboratorId": "C084",
-      "institutionId": "I012",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P008",
-      "collaboratorId": "C012",
       "institutionId": "I001",
       "role": "coauthor"
     },
     {
       "paperId": "P008",
-      "collaboratorId": "C025",
-      "institutionId": "I008",
+      "collaboratorId": "C005",
+      "institutionId": "I018",
       "role": "coauthor"
     },
     {
       "paperId": "P008",
-      "collaboratorId": "C082",
-      "institutionId": "I008",
+      "collaboratorId": "C009",
+      "institutionId": "I009",
       "role": "coauthor"
     },
     {
       "paperId": "P008",
-      "collaboratorId": "C061",
-      "institutionId": "I001",
+      "collaboratorId": "C027",
+      "institutionId": "I009",
       "role": "coauthor"
     },
     {
-      "paperId": "P009",
-      "collaboratorId": "C052",
-      "institutionId": "I005",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P009",
-      "collaboratorId": "C075",
+      "paperId": "P008",
+      "collaboratorId": "C021",
       "institutionId": "I007",
       "role": "coauthor"
     },
     {
       "paperId": "P009",
-      "collaboratorId": "C004",
+      "collaboratorId": "C018",
+      "institutionId": "I003",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P009",
+      "collaboratorId": "C026",
       "institutionId": "I006",
       "role": "coauthor"
     },
     {
       "paperId": "P009",
-      "collaboratorId": "C063",
-      "institutionId": "I017",
+      "collaboratorId": "C001",
+      "institutionId": "I005",
       "role": "coauthor"
     },
     {
       "paperId": "P009",
-      "collaboratorId": "C032",
+      "collaboratorId": "C022",
+      "institutionId": "I012",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P009",
+      "collaboratorId": "C012",
       "institutionId": "I015",
       "role": "coauthor"
     },
     {
       "paperId": "P010",
-      "collaboratorId": "C012",
-      "institutionId": "I001",
+      "collaboratorId": "C005",
+      "institutionId": "I018",
       "role": "coauthor"
     },
     {
       "paperId": "P010",
-      "collaboratorId": "C061",
-      "institutionId": "I001",
+      "collaboratorId": "C021",
+      "institutionId": "I007",
       "role": "coauthor"
     },
     {
       "paperId": "P011",
-      "collaboratorId": "C012",
-      "institutionId": "I001",
+      "collaboratorId": "C005",
+      "institutionId": "I018",
       "role": "coauthor"
     },
     {
       "paperId": "P011",
-      "collaboratorId": "C047",
-      "institutionId": "I001",
+      "collaboratorId": "C015",
+      "institutionId": "I018",
       "role": "coauthor"
     },
     {
       "paperId": "P011",
-      "collaboratorId": "C048",
-      "institutionId": "I011",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P011",
-      "collaboratorId": "C006",
-      "institutionId": "I011",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P011",
-      "collaboratorId": "C061",
-      "institutionId": "I001",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P011",
-      "collaboratorId": "C095",
-      "institutionId": "I011",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P011",
-      "collaboratorId": "C050",
-      "institutionId": "I011",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P012",
-      "collaboratorId": "C012",
-      "institutionId": "I001",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P012",
-      "collaboratorId": "C061",
-      "institutionId": "I001",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P014",
-      "collaboratorId": "C012",
-      "institutionId": "I001",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P014",
-      "collaboratorId": "C061",
-      "institutionId": "I001",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P015",
-      "collaboratorId": "C012",
-      "institutionId": "I001",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P015",
-      "collaboratorId": "C097",
-      "institutionId": "I020",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P015",
-      "collaboratorId": "C090",
-      "institutionId": "I019",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P015",
-      "collaboratorId": "C055",
-      "institutionId": "I013",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P015",
       "collaboratorId": "C016",
-      "institutionId": "I004",
+      "institutionId": "I017",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P011",
+      "collaboratorId": "C002",
+      "institutionId": "I017",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P011",
+      "collaboratorId": "C021",
+      "institutionId": "I007",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P011",
+      "collaboratorId": "C031",
+      "institutionId": "I017",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P011",
+      "collaboratorId": "C017",
+      "institutionId": "I017",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P012",
+      "collaboratorId": "C005",
+      "institutionId": "I018",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P012",
+      "collaboratorId": "C021",
+      "institutionId": "I007",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P014",
+      "collaboratorId": "C005",
+      "institutionId": "I018",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P014",
+      "collaboratorId": "C021",
+      "institutionId": "I007",
       "role": "coauthor"
     },
     {
       "paperId": "P015",
-      "collaboratorId": "C072",
-      "institutionId": "I009",
+      "collaboratorId": "C005",
+      "institutionId": "I018",
       "role": "coauthor"
     },
     {
       "paperId": "P015",
-      "collaboratorId": "C014",
+      "collaboratorId": "C032",
+      "institutionId": "I011",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P015",
+      "collaboratorId": "C030",
       "institutionId": "I014",
       "role": "coauthor"
     },
     {
       "paperId": "P015",
-      "collaboratorId": "C010",
-      "institutionId": "I016",
+      "collaboratorId": "C019",
+      "institutionId": "I008",
       "role": "coauthor"
     },
     {
       "paperId": "P015",
-      "collaboratorId": "C061",
-      "institutionId": "I001",
+      "collaboratorId": "C007",
+      "institutionId": "I007",
       "role": "coauthor"
     },
     {
       "paperId": "P015",
-      "collaboratorId": "C057",
+      "collaboratorId": "C025",
+      "institutionId": "I010",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P015",
+      "collaboratorId": "C006",
+      "institutionId": "I002",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P015",
+      "collaboratorId": "C004",
+      "institutionId": "I011",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P015",
+      "collaboratorId": "C021",
+      "institutionId": "I007",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P015",
+      "collaboratorId": "C020",
+      "institutionId": "I013",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P016",
+      "collaboratorId": "C005",
       "institutionId": "I018",
       "role": "coauthor"
     },
     {
       "paperId": "P016",
-      "collaboratorId": "C012",
-      "institutionId": "I001",
+      "collaboratorId": "C029",
+      "institutionId": "I007",
       "role": "coauthor"
     },
     {
       "paperId": "P016",
-      "collaboratorId": "C088",
-      "institutionId": "I001",
+      "collaboratorId": "C015",
+      "institutionId": "I018",
       "role": "coauthor"
     },
     {
       "paperId": "P016",
-      "collaboratorId": "C047",
-      "institutionId": "I001",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P016",
-      "collaboratorId": "C061",
-      "institutionId": "I001",
+      "collaboratorId": "C021",
+      "institutionId": "I007",
       "role": "coauthor"
     },
     {
       "paperId": "P017",
-      "collaboratorId": "C012",
-      "institutionId": "I001",
+      "collaboratorId": "C005",
+      "institutionId": "I018",
       "role": "coauthor"
     },
     {
       "paperId": "P017",
-      "collaboratorId": "C069",
+      "collaboratorId": "C024",
+      "institutionId": "I019",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P017",
+      "collaboratorId": "C029",
+      "institutionId": "I007",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P017",
+      "collaboratorId": "C019",
+      "institutionId": "I008",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P017",
+      "collaboratorId": "C021",
+      "institutionId": "I007",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P018",
+      "collaboratorId": "C005",
+      "institutionId": "I018",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P018",
+      "collaboratorId": "C015",
+      "institutionId": "I018",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P018",
+      "collaboratorId": "C021",
+      "institutionId": "I007",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P018",
+      "collaboratorId": "C014",
       "institutionId": "I010",
       "role": "coauthor"
     },
     {
-      "paperId": "P017",
-      "collaboratorId": "C088",
-      "institutionId": "I001",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P017",
-      "collaboratorId": "C055",
-      "institutionId": "I013",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P017",
-      "collaboratorId": "C061",
-      "institutionId": "I001",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P018",
-      "collaboratorId": "C012",
-      "institutionId": "I001",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P018",
-      "collaboratorId": "C047",
-      "institutionId": "I001",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P018",
-      "collaboratorId": "C061",
-      "institutionId": "I001",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P018",
-      "collaboratorId": "C044",
-      "institutionId": "I009",
+      "paperId": "P019",
+      "collaboratorId": "C005",
+      "institutionId": "I018",
       "role": "coauthor"
     },
     {
       "paperId": "P019",
-      "collaboratorId": "C012",
-      "institutionId": "I001",
+      "collaboratorId": "C015",
+      "institutionId": "I018",
       "role": "coauthor"
     },
     {
       "paperId": "P019",
-      "collaboratorId": "C047",
-      "institutionId": "I001",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P019",
-      "collaboratorId": "C061",
-      "institutionId": "I001",
+      "collaboratorId": "C021",
+      "institutionId": "I007",
       "role": "coauthor"
     },
     {
       "paperId": "P020",
-      "collaboratorId": "C088",
-      "institutionId": "I001",
+      "collaboratorId": "C029",
+      "institutionId": "I007",
       "role": "coauthor"
     },
     {
       "paperId": "P020",
-      "collaboratorId": "C069",
-      "institutionId": "I010",
+      "collaboratorId": "C024",
+      "institutionId": "I019",
       "role": "coauthor"
     },
     {
       "paperId": "P020",
-      "collaboratorId": "C012",
-      "institutionId": "I001",
+      "collaboratorId": "C005",
+      "institutionId": "I018",
       "role": "coauthor"
     },
     {
       "paperId": "P020",
-      "collaboratorId": "C061",
-      "institutionId": "I001",
+      "collaboratorId": "C021",
+      "institutionId": "I007",
       "role": "coauthor"
     }
   ]

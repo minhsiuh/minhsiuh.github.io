@@ -2,171 +2,69 @@
   "topic": "Quantum Machine Learning",
   "lastCurated": "2026-03-09",
   "collaborators": [
-    "Kaining Zhang",
-    "A Aliper",
-    "A Aspuru-Guzik",
-    "Y Cao",
-    "Pin-Yu Chen",
-    "PY Chen",
-    "Yu-Ao Chen",
     "Yu-Cheng Chen",
-    "WY Chiang",
-    "G Chiribella",
+    "Pin-Yu Chen",
+    "Yu-Ao Chen",
     "Giulio Chiribella",
-    "Y Du",
     "Yuxuan Du",
-    "J Eisert",
     "Jens Eisert",
-    "W Gao",
     "Weibo Gao",
-    "M Gong",
-    "N Guo",
-    "Z He",
-    "JY Hsiao",
     "Meng-Jun Hu",
-    "MJ Hu",
-    "HL Huang",
-    "T Huang",
     "Tao Huang",
-    "W Huang",
-    "Y Jin",
     "Yirong Jin",
-    "PY Kao",
     "Calvin Ku",
-    "L Li",
-    "Ling Li",
-    "S Li",
-    "X Li",
-    "Z Li",
     "Zhiyuan Li",
-    "F Liang",
-    "J Lin",
-    "YC Lin",
-    "K Linghu",
-    "DE Liu",
-    "L Liu",
-    "N Liu",
-    "Nana Liu",
-    "Q Liu",
-    "T Liu",
+    "Ling Li",
     "Tongliang Liu",
+    "Nana Liu",
     "Chao-Yang Lu",
-    "T Ma",
     "Jian-Wei Pan",
-    "J Qi",
     "Jun Qi",
-    "Y Qian",
-    "P Rebentrost",
     "Patrick Rebentrost",
-    "F Ren",
     "Barry C. Sanders",
-    "BC Sanders",
-    "X Sun",
-    "D Tao",
     "Dacheng Tao",
-    "J Tejedor",
     "Javier Tejedor",
-    "J Tian",
-    "C Wang",
-    "R Wang",
-    "Ruixia Wang",
-    "X Wang",
     "Xinbiao Wang",
-    "X Wu",
-    "Y Wu",
+    "Ruixia Wang",
     "Ya-Dong Wu",
-    "YD Wu",
-    "H Xu",
     "Chao-Han Huck Yang",
-    "CHH Yang",
-    "W Yang",
-    "Y Yang",
-    "YC Yang",
-    "W Yi",
-    "S You",
     "Shan You",
-    "H Yu",
     "Haifeng Yu",
-    "Z Yu",
-    "J Zhang",
-    "K Zhang",
-    "YH Zhang",
+    "Kaining Zhang",
     "Yuan-Hang Zhang",
-    "P Zhao",
-    "S Zhao",
-    "Y Zhao",
-    "A Zhavoronkov",
     "Xiaobo Zhu",
-    "Y Zhu",
     "Yan Zhu"
   ],
   "institutions": [
     {
-      "name": "University of Sydney",
+      "name": "Beijing Academy of Quantum Information Sciences (BAQIS)",
       "location": [
-        -33.8886,
-        151.1873
+        40.0731,
+        116.2119
       ],
-      "country": "Australia",
+      "country": "China",
       "collaborators": [
-        "Yuxuan Du",
-        "Dacheng Tao",
-        "Tongliang Liu",
-        "Kaining Zhang"
+        "Meng-Jun Hu",
+        "Yirong Jin",
+        "Zhiyuan Li",
+        "Ruixia Wang",
+        "Haifeng Yu"
       ],
       "papers": [
-        "Expressive power (PRR 2020)",
-        "Learnability (PRX Quantum 2021)",
-        "Efficient Learning (Nature Comm 2025)",
-        "AQER (ICLR 2026)",
-        "QAS (npj QI 2022)"
+        "QAS on superconducting processor (Entropy 2024)"
       ]
     },
     {
-      "name": "Hon Hai Quantum Computing Research Center",
+      "name": "Freie Universität Berlin",
       "location": [
-        25.0703,
-        121.5775
+        52.4539,
+        13.2917
       ],
-      "country": "Taiwan",
+      "country": "Germany",
       "collaborators": [
-        "Yu-Cheng Chen",
-        "Calvin Ku"
+        "Jens Eisert"
       ],
       "papers": [
-        "TensorHyper-VQC (npj QI 2026)",
-        "Continual QAS (arXiv 2026)",
-        "QGAN Chemistry (JCIM 2023)"
-      ]
-    },
-    {
-      "name": "University of Technology Sydney",
-      "location": [
-        -33.8839,
-        151.2006
-      ],
-      "country": "Australia",
-      "collaborators": [],
-      "papers": [
-        "Barren plateaus (NeurIPS 2022)",
-        "Toward Trainability (arXiv 2022)"
-      ]
-    },
-    {
-      "name": "Nanyang Technological University (NTU)",
-      "location": [
-        1.3521,
-        103.8198
-      ],
-      "country": "Singapore",
-      "collaborators": [
-        "Kaining Zhang",
-        "Weibo Gao",
-        "Dacheng Tao"
-      ],
-      "papers": [
-        "AQER (ICLR 2026)",
-        "Recent Advances (TPAMI 2023)",
         "AI for quantum systems (arXiv 2025)"
       ]
     },
@@ -184,6 +82,23 @@
         "TensorHyper-VQC (npj QI 2026)",
         "Random-Matrix (arXiv 2026)",
         "Continual QAS (arXiv 2026)"
+      ]
+    },
+    {
+      "name": "Hon Hai Quantum Computing Research Center",
+      "location": [
+        25.0703,
+        121.5775
+      ],
+      "country": "Taiwan",
+      "collaborators": [
+        "Yu-Cheng Chen",
+        "Calvin Ku"
+      ],
+      "papers": [
+        "TensorHyper-VQC (npj QI 2026)",
+        "Continual QAS (arXiv 2026)",
+        "QGAN Chemistry (JCIM 2023)"
       ]
     },
     {
@@ -218,6 +133,39 @@
       ]
     },
     {
+      "name": "Nanyang Technological University (NTU)",
+      "location": [
+        1.3521,
+        103.8198
+      ],
+      "country": "Singapore",
+      "collaborators": [
+        "Weibo Gao",
+        "Dacheng Tao",
+        "Kaining Zhang"
+      ],
+      "papers": [
+        "AQER (ICLR 2026)",
+        "Recent Advances (TPAMI 2023)",
+        "AI for quantum systems (arXiv 2025)"
+      ]
+    },
+    {
+      "name": "National University of Singapore (NUS)",
+      "location": [
+        1.2966,
+        103.7764
+      ],
+      "country": "Singapore",
+      "collaborators": [
+        "Patrick Rebentrost"
+      ],
+      "papers": [
+        "Gentle Introduction (Springer 2025)",
+        "AI for quantum systems (arXiv 2025)"
+      ]
+    },
+    {
       "name": "SenseTime, Beijing",
       "location": [
         39.9042,
@@ -225,8 +173,8 @@
       ],
       "country": "China",
       "collaborators": [
-        "Shan You",
-        "Tao Huang"
+        "Tao Huang",
+        "Shan You"
       ],
       "papers": [
         "Learnability (PRX Quantum 2021)",
@@ -251,107 +199,15 @@
       ]
     },
     {
-      "name": "Zhejiang University",
+      "name": "The University of Hong Kong",
       "location": [
-        30.3087,
-        120.081
+        22.2836,
+        114.1389
       ],
-      "country": "China",
+      "country": "Hong Kong",
       "collaborators": [
-        "Xinbiao Wang"
-      ],
-      "papers": [
-        "AQER (ICLR 2026)",
-        "Gentle Introduction (Springer 2025)"
-      ]
-    },
-    {
-      "name": "University of Science and Technology of China (USTC)",
-      "location": [
-        31.8206,
-        117.2272
-      ],
-      "country": "China",
-      "collaborators": [
-        "Jian-Wei Pan",
-        "Xiaobo Zhu",
-        "Yu-Ao Chen",
-        "Chao-Yang Lu"
-      ],
-      "papers": [
-        "Experimental QGAN (PRApplied 2021)"
-      ]
-    },
-    {
-      "name": "Beijing Academy of Quantum Information Sciences (BAQIS)",
-      "location": [
-        40.0731,
-        116.2119
-      ],
-      "country": "China",
-      "collaborators": [
-        "Ruixia Wang",
-        "Meng-Jun Hu",
-        "Zhiyuan Li",
-        "Yirong Jin",
-        "Haifeng Yu"
-      ],
-      "papers": [
-        "QAS on superconducting processor (Entropy 2024)"
-      ]
-    },
-    {
-      "name": "National University of Singapore (NUS)",
-      "location": [
-        1.2966,
-        103.7764
-      ],
-      "country": "Singapore",
-      "collaborators": [
-        "Patrick Rebentrost"
-      ],
-      "papers": [
-        "Gentle Introduction (Springer 2025)",
-        "AI for quantum systems (arXiv 2025)"
-      ]
-    },
-    {
-      "name": "Freie Universität Berlin",
-      "location": [
-        52.4539,
-        13.2917
-      ],
-      "country": "Germany",
-      "collaborators": [
-        "Jens Eisert"
-      ],
-      "papers": [
-        "AI for quantum systems (arXiv 2025)"
-      ]
-    },
-    {
-      "name": "University of London",
-      "location": [
-        51.5074,
-        -0.1278
-      ],
-      "country": "UK",
-      "collaborators": [
-        "Ling Li"
-      ],
-      "papers": [
-        "Continual QAS (arXiv 2026)"
-      ]
-    },
-    {
-      "name": "University of Oxford",
-      "location": [
-        51.7548,
-        -1.2544
-      ],
-      "country": "UK",
-      "collaborators": [
-        "Giulio Chiribella"
+        "Giulio Chiribella",
+        "Yan Zhu"
       ],
       "papers": [
         "AI for quantum systems (arXiv 2025)"
@@ -401,18 +257,84 @@
       ]
     },
     {
-      "name": "The University of Hong Kong",
+      "name": "University of London",
       "location": [
-        22.2836,
-        114.1389
+        51.5074,
+        -0.1278
       ],
-      "country": "Hong Kong",
+      "country": "UK",
       "collaborators": [
-        "Yan Zhu",
+        "Ling Li"
+      ],
+      "papers": [
+        "Continual QAS (arXiv 2026)"
+      ]
+    },
+    {
+      "name": "University of Oxford",
+      "location": [
+        51.7548,
+        -1.2544
+      ],
+      "country": "UK",
+      "collaborators": [
         "Giulio Chiribella"
       ],
       "papers": [
         "AI for quantum systems (arXiv 2025)"
+      ]
+    },
+    {
+      "name": "University of Science and Technology of China (USTC)",
+      "location": [
+        31.8206,
+        117.2272
+      ],
+      "country": "China",
+      "collaborators": [
+        "Yu-Ao Chen",
+        "Chao-Yang Lu",
+        "Jian-Wei Pan",
+        "Xiaobo Zhu"
+      ],
+      "papers": [
+        "Experimental QGAN (PRApplied 2021)"
+      ]
+    },
+    {
+      "name": "University of Sydney",
+      "location": [
+        -33.8886,
+        151.1873
+      ],
+      "country": "Australia",
+      "collaborators": [
+        "Yuxuan Du",
+        "Tongliang Liu",
+        "Dacheng Tao",
+        "Kaining Zhang"
+      ],
+      "papers": [
+        "Expressive power (PRR 2020)",
+        "Learnability (PRX Quantum 2021)",
+        "Efficient Learning (Nature Comm 2025)",
+        "AQER (ICLR 2026)",
+        "QAS (npj QI 2022)"
+      ]
+    },
+    {
+      "name": "Zhejiang University",
+      "location": [
+        30.3087,
+        120.081
+      ],
+      "country": "China",
+      "collaborators": [
+        "Xinbiao Wang"
+      ],
+      "papers": [
+        "AQER (ICLR 2026)",
+        "Gentle Introduction (Springer 2025)"
       ]
     }
   ]
