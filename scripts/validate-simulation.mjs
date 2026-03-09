@@ -31,6 +31,19 @@ for (const g of pubs.groups || []) {
       }
     }
 
+    // strict rule: no initial-only given names (e.g., "Y Shee", "TL Yeh", "A Yang")
+    const authors = authorStr.split(',').map(a => a.trim()).filter(Boolean);
+    const allowedInitialStyle = new Set(['T. Tzen Ong']);
+    for (const name of authors) {
+      if (allowedInitialStyle.has(name)) continue;
+      const parts = name.split(/\s+/).filter(Boolean);
+      if (!parts.length) continue;
+      const first = parts[0].replace(/\./g, '');
+      if (/^[A-Z]{1,3}$/.test(first)) {
+        errors.push(`Author not in full-name format (${name}) in: ${p.title}`);
+      }
+    }
+
     // enforce full journal names (no short abbreviation forms)
     const venue = p.venue || '';
     for (const rule of venueAbbrevRules) {
