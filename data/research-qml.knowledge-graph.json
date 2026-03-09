@@ -315,6 +315,15 @@
           "endYear": null,
           "isPrimary": true,
           "source": "manual"
+        },
+        {
+          "institutionId": "I020",
+          "institution": "The University of Hong Kong",
+          "country": "Hong Kong",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": false,
+          "source": "manual"
         }
       ],
       "paperIds": []
