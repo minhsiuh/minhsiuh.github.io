@@ -1,0 +1,67 @@
+{
+  "topic": "Randomized Benchmarking",
+  "lastCurated": "2026-03-09",
+  "groups": [
+    {
+      "group": "Randomized Benchmarking and Non-Markovian Noise",
+      "publications": [
+        {
+          "title": "Machine Learning of Average Non-Markovianity from Randomized Benchmarking",
+          "authors": "Shih-Xian Yang, Pedro Figueroa-Romero, Min-Hsiu Hsieh",
+          "venue": "arXiv preprint arXiv:2207.01542, 2022",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2207.01542"
+            }
+          ]
+        },
+        {
+          "title": "Towards a general framework of Randomized Benchmarking incorporating non-Markovian Noise",
+          "authors": "Pedro Figueroa-Romero, Kavan Modi, Min-Hsiu Hsieh",
+          "venue": "Quantum 6, 868, 2022",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2202.11338"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.22331/q-2022-12-01-868"
+            }
+          ]
+        },
+        {
+          "title": "Randomised benchmarking for non-Markovian noise",
+          "authors": "Pedro Figueroa-Romero, Kavan Modi, Thomas M. Stace, Min-Hsiu Hsieh",
+          "venue": "PRX Quantum 2, 040351, 2021",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2107.05403"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1103/PRXQuantum.2.040351"
+            }
+          ]
+        },
+        {
+          "title": "Operational Markovianization in Randomized Benchmarking",
+          "authors": "Pedro Figueroa-Romero, Miha Papič, Adrian Auer, Min-Hsiu Hsieh, Kavan Modi, Inés de Vega",
+          "venue": "Quantum Science and Technology 9 (3), 035020, 2024",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2305.04704"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1088/2058-9565/ad3f44"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
