@@ -8,7 +8,52 @@
     "Thomas M. Stace",
     "Miha Papič",
     "Adrian Auer",
-    "Inés de Vega"
+    "Inés de Vega",
+    "Min-Hsiu Hsieh"
   ],
-  "institutions": []
+  "institutions": [
+    {
+      "name": "Hon Hai Quantum Computing Research Center",
+      "country": "Taiwan",
+      "location": [
+        25.0703,
+        121.5775
+      ],
+      "collaborators": [
+        "Pedro Figueroa-Romero",
+        "Min-Hsiu Hsieh"
+      ],
+      "papers": [
+        "Towards a general framework of Randomized Benchmarking incorporating non-Markovian Noise"
+      ]
+    },
+    {
+      "name": "Monash University",
+      "country": "Australia",
+      "location": [
+        -37.9105,
+        145.1362
+      ],
+      "collaborators": [
+        "Kavan Modi"
+      ],
+      "papers": [
+        "Towards a general framework of Randomized Benchmarking incorporating non-Markovian Noise"
+      ]
+    },
+    {
+      "name": "Centre for Quantum Technologies, Transport for New South Wales",
+      "country": "Australia",
+      "location": [
+        -33.8688,
+        151.2093
+      ],
+      "collaborators": [
+        "Kavan Modi"
+      ],
+      "papers": [
+        "Towards a general framework of Randomized Benchmarking incorporating non-Markovian Noise"
+      ]
+    }
+  ]
 }
