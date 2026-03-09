@@ -183,38 +183,23 @@
             display: inline-flex;
             width: 40px;
             height: 40px;
-            border-radius: 50%;
+            border-radius: 10px;
             align-items: center;
             justify-content: center;
             transition: all 0.2s;
-        }
-
-        .about-social a.orcid {
-            background: #A6CE39;
-        }
-
-        .about-social a.scholar,
-        .about-social a.arxiv {
-            background: var(--accent-color);
+            background: #fff;
+            border: 1px solid var(--border-color);
         }
 
         .about-social a:hover {
-            transform: scale(1.1);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
         }
 
-        .about-social a.orcid:hover {
-            background: #8CB632;
-        }
-
-        .about-social a.scholar:hover,
-        .about-social a.arxiv:hover {
-            background: var(--primary-color);
-        }
-
-        .about-social svg {
-            width: 20px;
-            height: 20px;
-            fill: white;
+        .about-social img {
+            width: 22px;
+            height: 22px;
+            display: block;
         }
 
         .about-text {
@@ -546,14 +531,14 @@
                 <div class="about-image">
                     <img src="profile.jpg" alt="Min-Hsiu Hsieh" width="300" height="300" decoding="async" fetchpriority="high">
                     <div class="about-social">
-                        <a href="https://orcid.org/0000-0002-3396-8427" target="_blank" rel="noopener" title="ORCID" class="orcid">
-                            <svg viewBox="0 0 24 24" style="font-family: Arial, sans-serif; font-weight: bold;"><text x="50%" y="55%" text-anchor="middle" fill="white" font-size="14" style="font-weight: bold;">iD</text></svg>
+                        <a href="https://orcid.org/0000-0002-3396-8427" target="_blank" rel="noopener" title="ORCID">
+                            <img src="https://cdn.simpleicons.org/orcid/A6CE39" alt="ORCID icon" width="22" height="22" loading="lazy" decoding="async">
                         </a>
-                        <a href="https://scholar.google.com/citations?user=UXx1jNYAAAAJ" target="_blank" rel="noopener" title="Google Scholar" class="scholar">
-                            <svg viewBox="0 0 24 24"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/></svg>
+                        <a href="https://scholar.google.com/citations?user=UXx1jNYAAAAJ" target="_blank" rel="noopener" title="Google Scholar">
+                            <img src="https://cdn.simpleicons.org/googlescholar/4285F4" alt="Google Scholar icon" width="22" height="22" loading="lazy" decoding="async">
                         </a>
-                        <a href="https://arxiv.org/search/?searchtype=author&query=Hsieh%2C+M-H" target="_blank" rel="noopener" title="arXiv" class="arxiv">
-                            <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 21.75C6.624 21.75 2.25 17.376 2.25 12S6.624 2.25 12 2.25 21.75 6.624 21.75 12 17.376 21.75 12 21.75zm-1.732-9.642v6.185h1.964v-1.195c.591.887 1.546 1.395 2.728 1.395 2.363 0 3.872-1.792 3.872-4.563 0-2.793-1.509-4.564-3.872-4.564-1.204 0-2.18.53-2.75 1.417V12.108h-1.942z"/></svg>
+                        <a href="https://arxiv.org/search/?searchtype=author&query=Hsieh%2C+M-H" target="_blank" rel="noopener" title="arXiv">
+                            <img src="https://cdn.simpleicons.org/arxiv/B31B1B" alt="arXiv icon" width="22" height="22" loading="lazy" decoding="async">
                         </a>
                     </div>
                 </div>
