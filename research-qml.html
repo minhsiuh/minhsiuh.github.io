@@ -776,7 +776,7 @@
                 <div style="margin-top: 40px;">
                     <h2>Global Collaborations</h2>
                     <p style="margin-bottom: 20px; color: #666;">
-                        QML research collaborations span across 9 countries and 21 leading institutions worldwide.
+                        QML research collaborations span across leading institutions worldwide.
                     </p>
                     
                     <div class="collab-map-container">
@@ -785,423 +785,29 @@
                     
                     <div class="collab-stats">
                         <div class="collab-stat">
-                            <div class="collab-stat-number">21</div>
+                            <div class="collab-stat-number" id="stat-institutions">0</div>
                             <div class="collab-stat-label">Institutions</div>
                         </div>
                         <div class="collab-stat">
-                            <div class="collab-stat-number">9</div>
+                            <div class="collab-stat-number" id="stat-countries">0</div>
                             <div class="collab-stat-label">Countries</div>
                         </div>
                         <div class="collab-stat">
-                            <div class="collab-stat-number">20</div>
+                            <div class="collab-stat-number" id="stat-joint-papers">0</div>
                             <div class="collab-stat-label">Joint Papers</div>
                         </div>
                         <div class="collab-stat">
-                            <div class="collab-stat-number">41</div>
+                            <div class="collab-stat-number" id="stat-collaborators">0</div>
                             <div class="collab-stat-label">Collaborators</div>
                         </div>
                     </div>
                 </div>
-                
-                <script>
-                    // Wait for DOM to be ready
-                    document.addEventListener('DOMContentLoaded', function() {
-                        // Initialize the map
-                        const map = L.map('collab-map').setView([25, 10], 2);
-                        
-                        // Add OpenStreetMap tiles
-                        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-                            maxZoom: 18
-                        }).addTo(map);
-                        
-                        // Custom pin icon
-                        const pinIcon = L.icon({
-                            iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
-                            iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
-                            shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
-                            iconSize: [25, 41],
-                            iconAnchor: [12, 41],
-                            popupAnchor: [1, -34],
-                            shadowSize: [41, 41]
-                        });
-                        
-                        // QML Collaboration institutions (extracted from all QML publications)
-                        const institutions = [
-                            {
-                                name: "University of Sydney",
-                                location: [-33.8886, 151.1873],
-                                country: "Australia",
-                                collaborators: ["Yuxuan Du", "Dacheng Tao", "Tongliang Liu"],
-                                papers: ["Expressive power (PRR 2020)", "Learnability (PRX Quantum 2021)", "Efficient Learning (Nature Comm 2025)", "AQER (ICLR 2026)", "QAS (npj QI 2022)"]
-                            },
-                            {
-                                name: "Hon Hai Quantum Computing Research Center",
-                                location: [25.0703, 121.5775],
-                                country: "Taiwan",
-                                collaborators: ["Min-Hsiu Hsieh", "Yu-Cheng Chen", "Calvin Ku"],
-                                papers: ["TensorHyper-VQC (npj QI 2026)", "Continual QAS (arXiv 2026)", "QGAN Chemistry (JCIM 2023)"]
-                            },
-                            {
-                                name: "University of Technology Sydney",
-                                location: [-33.8839, 151.2006],
-                                country: "Australia",
-                                collaborators: ["Kaining Zhang (before 2024)"],
-                                papers: ["Barren plateaus (NeurIPS 2022)", "Toward Trainability (arXiv 2022)"]
-                            },
-                            {
-                                name: "Nanyang Technological University (NTU)",
-                                location: [1.3521, 103.8198],
-                                country: "Singapore",
-                                collaborators: ["Kaining Zhang (2025-)", "Weibo Gao"],
-                                papers: ["AQER (ICLR 2026)", "Recent Advances (TPAMI 2023)", "AI for quantum systems (arXiv 2025)"]
-                            },
-                            {
-                                name: "Georgia Institute of Technology",
-                                location: [33.7756, -84.3963],
-                                country: "USA",
-                                collaborators: ["Jun Qi"],
-                                papers: ["TensorHyper-VQC (npj QI 2026)", "Random-Matrix (arXiv 2026)", "Continual QAS (arXiv 2026)"]
-                            },
-                            {
-                                name: "IBM Research",
-                                location: [41.0534, -73.7134],
-                                country: "USA",
-                                collaborators: ["Pin-Yu Chen"],
-                                papers: ["VQC-MLPNet (arXiv 2025)", "Random-Matrix (arXiv 2026)"]
-                            },
-                            {
-                                name: "NVIDIA Research",
-                                location: [37.3861, -122.0839],
-                                country: "USA",
-                                collaborators: ["Chao-Han Huck Yang"],
-                                papers: ["TensorHyper-VQC (npj QI 2026)", "Random-Matrix (arXiv 2026)", "Continual QAS (arXiv 2026)"]
-                            },
-                            {
-                                name: "SenseTime, Beijing",
-                                location: [39.9042, 116.4074],
-                                country: "China",
-                                collaborators: ["Shan You", "Tao Huang"],
-                                papers: ["Learnability (PRX Quantum 2021)", "QAS (npj QI 2022)"]
-                            },
-                            {
-                                name: "Shanghai Jiao Tong University",
-                                location: [31.0234, 121.4354],
-                                country: "China",
-                                collaborators: ["Nana Liu", "Ya-Dong Wu"],
-                                papers: ["Quantum noise (PRR 2021)", "QAS (npj QI 2022)", "AI for quantum systems (arXiv 2025)"]
-                            },
-
-                            {
-                                name: "Zhejiang University",
-                                location: [30.3087, 120.0810],
-                                country: "China",
-                                collaborators: ["Xinbiao Wang"],
-                                papers: ["AQER (ICLR 2026)", "Gentle Introduction (Springer 2025)"]
-                            },
-                            {
-                                name: "University of Science and Technology of China (USTC)",
-                                location: [31.8206, 117.2272],
-                                country: "China",
-                                collaborators: ["Jian-Wei Pan", "Xiaobo Zhu", "Yu-Ao Chen", "Chao-Yang Lu"],
-                                papers: ["Experimental QGAN (PRApplied 2021)"]
-                            },
-                            {
-                                name: "Beijing Academy of Quantum Information Sciences (BAQIS)",
-                                location: [40.0731, 116.2119],
-                                country: "China",
-                                collaborators: ["Ruixia Wang", "Meng-Jun Hu", "Zhiyuan Li", "Yirong Jin", "Haifeng Yu"],
-                                papers: ["QAS on superconducting processor (Entropy 2024)"]
-                            },
-                            {
-                                name: "National University of Singapore (NUS)",
-                                location: [1.2966, 103.7764],
-                                country: "Singapore",
-                                collaborators: ["Patrick Rebentrost"],
-                                papers: ["Gentle Introduction (Springer 2025)", "AI for quantum systems (arXiv 2025)"]
-                            },
-                            {
-                                name: "Freie Universität Berlin",
-                                location: [52.4539, 13.2917],
-                                country: "Germany",
-                                collaborators: ["Jens Eisert"],
-                                papers: ["AI for quantum systems (arXiv 2025)"]
-                            },
-                            {
-                                name: "University of London",
-                                location: [51.5074, -0.1278],
-                                country: "UK",
-                                collaborators: ["Ling Li"],
-                                papers: ["Continual QAS (arXiv 2026)"]
-                            },
-                            {
-                                name: "University of Oxford",
-                                location: [51.7548, -1.2544],
-                                country: "UK",
-                                collaborators: ["Giulio Chiribella"],
-                                papers: ["AI for quantum systems (arXiv 2025)"]
-                            },
-                            {
-                                name: "Universidad San Pablo-CEU",
-                                location: [40.4069, -3.7038],
-                                country: "Spain",
-                                collaborators: ["Javier Tejedor"],
-                                papers: ["Continual QAS (arXiv 2026)"]
-                            },
-                            {
-                                name: "University of Calgary / Perimeter Institute",
-                                location: [51.0775, -114.1317],
-                                country: "Canada",
-                                collaborators: ["Barry C. Sanders"],
-                                papers: ["AI for quantum systems (arXiv 2025)", "Gentle Introduction (Springer 2025)"]
-                            },
-                            {
-                                name: "University of California, San Diego",
-                                location: [32.8801, -117.2340],
-                                country: "USA",
-                                collaborators: ["Yuan-Hang Zhang"],
-                                papers: ["AI for quantum systems (arXiv 2025)"]
-                            },
-                            {
-                                name: "The University of Hong Kong",
-                                location: [22.2836, 114.1389],
-                                country: "Hong Kong",
-                                collaborators: ["Yan Zhu"],
-                                papers: ["AI for quantum systems (arXiv 2025)"]
-                            }
-                        ];
-                        
-                        // Add markers
-                        institutions.forEach(inst => {
-                            const popupContent = `
-                                <div class="map-popup">
-                                    <h4>${inst.name}</h4>
-                                    <p><strong>📍 ${inst.country}</strong></p>
-                                    <p><strong>Collaborators:</strong><br>${inst.collaborators.join(', ')}</p>
-                                    <div class="papers"><strong>Key Papers:</strong><br>${inst.papers.join('<br>')}</div>
-                                </div>
-                            `;
-                            
-                            L.marker(inst.location, { icon: pinIcon })
-                                .addTo(map)
-                                .bindPopup(popupContent);
-                        });
-                    });
-                </script>
             </section>
 
             <section id="publications">
                 <h2>Selected Publications</h2>
-
-                <div class="pub-group">
-                    <h4>🧠 Quantum Neural Networks & Expressivity</h4>
-                    <ul class="publications-list">
-                        <li>
-                            <div class="pub-title">Expressive power of parametrized quantum circuits</div>
-                            <div class="pub-authors">Y Du, MH Hsieh, T Liu, D Tao</div>
-                            <div class="pub-venue">Physical Review Research 2 (3), 033125, 2020 · 515 citations</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/1810.11922" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://doi.org/10.1103/PhysRevResearch.2.033125" target="_blank" rel="noopener">DOI</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">Learnability of quantum neural networks</div>
-                            <div class="pub-authors">Y Du, MH Hsieh, T Liu, S You, D Tao</div>
-                            <div class="pub-venue">PRX Quantum 2 (4), 040337, 2021 · 160 citations</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2007.12369" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://doi.org/10.1103/PRXQuantum.2.040337" target="_blank" rel="noopener">DOI</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">TensorHyper-VQC: a tensor-train-guided hypernetwork for robust and scalable variational quantum computing</div>
-                            <div class="pub-authors">J Qi, CHH Yang, PY Chen, MH Hsieh</div>
-                            <div class="pub-venue">npj Quantum Information, 2026</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2508.01116" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://www.nature.com/articles/s41534-025-01157-z" target="_blank" rel="noopener">DOI</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="pub-group">
-                    <h4>📉 Barren Plateaus & Trainability</h4>
-                    <ul class="publications-list">
-                        <li>
-                            <div class="pub-title">Toward Trainability of Deep Quantum Neural Networks</div>
-                            <div class="pub-authors">K Zhang, MH Hsieh, L Liu, D Tao</div>
-                            <div class="pub-venue">arXiv preprint arXiv:2112.15002, 2022</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2112.15002" target="_blank" rel="noopener">arXiv</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">Escaping from the barren plateau via gaussian initializations in deep variational quantum circuits</div>
-                            <div class="pub-authors">K Zhang, L Liu, MH Hsieh, D Tao</div>
-                            <div class="pub-venue">NeurIPS 2022, 18612-18627 · 151 citations</div>
-                            <div class="pub-links">
-                                <a href="https://openreview.net/forum?id=jXgbJdQ2YIy" target="_blank" rel="noopener">OpenReview</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">Random-Matrix-Induced Simplicity Bias in Over-parameterized Variational Quantum Circuits</div>
-                            <div class="pub-authors">J Qi, CHH Yang, PY Chen, MH Hsieh</div>
-                            <div class="pub-venue">arXiv preprint arXiv:2601.01877, 2026</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2601.01877" target="_blank" rel="noopener">arXiv</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="pub-group">
-                    <h4>🔍 Quantum Architecture Search</h4>
-                    <ul class="publications-list">
-                        <li>
-                            <div class="pub-title">Quantum circuit architecture search on a superconducting processor</div>
-                            <div class="pub-authors">K Linghu, Y Qian, R Wang, MJ Hu, Z Li, X Li, H Xu, J Zhang, T Ma, P Zhao, DE Liu, MH Hsieh, X Wu, Y Du, D Tao, Y Jin, H Yu</div>
-                            <div class="pub-venue">Entropy 26 (12), 1025, 2024</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2201.00934" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://doi.org/10.3390/e26121025" target="_blank" rel="noopener">DOI</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">Quantum circuit architecture search for variational quantum algorithms</div>
-                            <div class="pub-authors">Y Du, T Huang, S You, MH Hsieh, D Tao</div>
-                            <div class="pub-venue">npj Quantum Information 8 (1), 62, 2022 · 263 citations</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2010.10217" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://doi.org/10.1038/s41534-022-00570-y" target="_blank" rel="noopener">DOI</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">Continual Quantum Architecture Search with Tensor-Train Encoding: Theory and Applications to Signal Processing</div>
-                            <div class="pub-authors">J Qi, CHH Yang, PY Chen, J Tejedor, L Li, MH Hsieh</div>
-                            <div class="pub-venue">arXiv preprint arXiv:2601.06392, 2026</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2601.06392" target="_blank" rel="noopener">arXiv</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="pub-group">
-                    <h4>🚀 Learning Advantage and Applications</h4>
-                    <ul class="publications-list">
-                        <li>
-                            <div class="pub-title">Efficient Learning for Linear Properties of Bounded-Gate Quantum Circuits</div>
-                            <div class="pub-authors">Y Du, MH Hsieh, D Tao</div>
-                            <div class="pub-venue">Nature Communications 16, 3790, 2025</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2408.12199" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://doi.org/10.1038/s41467-025-59198-z" target="_blank" rel="noopener">DOI</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">Experimental quantum generative adversarial networks for image generation</div>
-                            <div class="pub-authors">HL Huang, Y Du, M Gong, Y Zhao, Y Wu, C Wang, S Li, F Liang, J Lin, MH Hsieh, et al.</div>
-                            <div class="pub-venue">Physical Review Applied 16 (2), 024051, 2021 · 339 citations</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2010.06201" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://doi.org/10.1103/PhysRevApplied.16.024051" target="_blank" rel="noopener">DOI</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">Problem-Dependent Power of Quantum Neural Networks on Multi-Class Classification</div>
-                            <div class="pub-authors">Y Du, Y Yang, D Tao, MH Hsieh</div>
-                            <div class="pub-venue">Physical Review Letters 131, 140601, 2023</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2301.01597" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.131.140601" target="_blank" rel="noopener">DOI</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">Exploring the Advantages of Quantum Generative Adversarial Networks in Generative Chemistry</div>
-                            <div class="pub-authors">PY Kao, YC Yang, WY Chiang, JY Hsiao, Y Cao, A Aliper, F Ren, A Aspuru-Guzik, A Zhavoronkov, MH Hsieh, YC Lin</div>
-                            <div class="pub-venue">Journal of Chemical Information and Modeling 63 (11), 3307-3318, 2023 · 113 citations</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2210.16823" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://doi.org/10.1021/acs.jcim.3c00562" target="_blank" rel="noopener">DOI</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">Multimodal deep representation learning for quantum cross-platform verification</div>
-                            <div class="pub-authors">Y Qian, Y Du, Z He, MH Hsieh, D Tao</div>
-                            <div class="pub-venue">Physical Review Letters 133, 130601, 2024</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2311.03713" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://doi.org/10.1103/PhysRevLett.133.130601" target="_blank" rel="noopener">DOI</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="pub-group">
-                    <h4>📚 Recent Advances & Reviews</h4>
-                    <ul class="publications-list">
-                        <li>
-                            <div class="pub-title">Artificial intelligence for representing and characterizing quantum systems</div>
-                            <div class="pub-authors">Y Du, Y Zhu, YH Zhang, MH Hsieh, P Rebentrost, W Gao, YD Wu, J Eisert, G Chiribella, D Tao, BC Sanders</div>
-                            <div class="pub-venue">arXiv preprint arXiv:2509.04923, 2025</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2509.04923" target="_blank" rel="noopener">arXiv</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">Recent Advances for Quantum Neural Networks in Generative Learning</div>
-                            <div class="pub-authors">J Tian, X Sun, Y Du, S Zhao, Q Liu, K Zhang, W Yi, W Huang, C Wang, MH Hsieh, T Liu, W Yang, D Tao</div>
-                            <div class="pub-venue">IEEE Transactions on Pattern Analysis and Machine Intelligence 45 (10), 12321-12340, 2023 · 139 citations</div>
-                            <div class="pub-links">
-                                <a href="https://doi.org/10.1109/TPAMI.2023.3272029" target="_blank" rel="noopener">DOI</a>
-                                <a href="https://arxiv.org/abs/2206.03066" target="_blank" rel="noopener">arXiv</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">A Gentle Introduction to Quantum Machine Learning</div>
-                            <div class="pub-authors">Y Du, X Wang, N Guo, Z Yu, Y Qian, K Zhang, MH Hsieh, P Rebentrost, D Tao</div>
-                            <div class="pub-venue">Springer Nature, 2025 · 3 citations</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2502.01146" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://www.amazon.com.au/Gentle-Introduction-Quantum-Machine-Learning/dp/9819512832" target="_blank" rel="noopener">Amazon</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="pub-group">
-                    <h4>📦 Others</h4>
-                    <ul class="publications-list">
-                        <li>
-                            <div class="pub-title">Quantum noise protects quantum classifiers against adversaries</div>
-                            <div class="pub-authors">Y Du, MH Hsieh, T Liu, D Tao, N Liu</div>
-                            <div class="pub-venue">Physical Review Research 3 (2), 023153, 2021 · 190 citations</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2003.09416" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://doi.org/10.1103/PhysRevResearch.3.023153" target="_blank" rel="noopener">DOI</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">A Grover-search based quantum learning scheme for classification</div>
-                            <div class="pub-authors">Y Du, MH Hsieh, T Liu, D Tao</div>
-                            <div class="pub-venue">New Journal of Physics 23, 023020, 2021</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/1809.06056" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://doi.org/10.1088/1367-2630/abdefa" target="_blank" rel="noopener">DOI</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">AQER: a scalable and efficient data loader for digital quantum computers</div>
-                            <div class="pub-authors">K Zhang, X Wang, Y Du, MH Hsieh, D Tao</div>
-                            <div class="pub-venue">ICLR 2026</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2602.02165" target="_blank" rel="noopener">arXiv</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                <p id="last-curated" style="margin: 4px 0 18px; color:#6b7280; font-size:0.9rem;">Last curated: —</p>
+                <div id="pub-groups"></div>
             </section>
 
             <section id="related">
@@ -1299,25 +905,110 @@
     </footer>
 
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        document.querySelectorAll('#publications .pub-group').forEach(function (group) {
-          const h4 = group.querySelector('h4');
-          const items = group.querySelectorAll('.publications-list > li');
-          if (!h4 || !items.length) return;
+      document.addEventListener('DOMContentLoaded', async function () {
+        async function loadJson(path) {
+          const res = await fetch(path, { cache: 'no-store' });
+          if (!res.ok) throw new Error(`Failed to load ${path}`);
+          return res.json();
+        }
 
-          if (!h4.querySelector('.group-title')) {
+        let pubData, collabData;
+        try {
+          [pubData, collabData] = await Promise.all([
+            loadJson('data/research-qml.publications.json'),
+            loadJson('data/research-qml.collaborators.json')
+          ]);
+        } catch (e) {
+          console.error(e);
+          return;
+        }
+
+        const groups = pubData.groups || [];
+        const publications = groups.flatMap(g => g.publications || []);
+        const institutions = collabData.institutions || [];
+        const collaborators = collabData.collaborators || [];
+
+        const setText = (id, value) => {
+          const el = document.getElementById(id);
+          if (el) el.textContent = String(value);
+        };
+
+        setText('last-curated', `Last curated: ${pubData.lastCurated || collabData.lastCurated || '—'}`);
+        setText('stat-institutions', institutions.length);
+        setText('stat-collaborators', collaborators.length);
+        setText('stat-countries', new Set(institutions.map(i => i.country).filter(Boolean)).size);
+        setText('stat-joint-papers', publications.length);
+
+        const pubContainer = document.getElementById('pub-groups');
+        if (pubContainer) {
+          pubContainer.innerHTML = '';
+          for (const group of groups) {
+            const groupDiv = document.createElement('div');
+            groupDiv.className = 'pub-group';
+
+            const heading = document.createElement('h4');
             const title = document.createElement('span');
             title.className = 'group-title';
-            title.textContent = h4.textContent.trim();
-            h4.textContent = '';
-            h4.appendChild(title);
-          }
+            title.textContent = group.group || '';
+            const count = document.createElement('span');
+            count.className = 'group-count';
+            count.textContent = String((group.publications || []).length);
+            heading.appendChild(title);
+            heading.appendChild(count);
+            groupDiv.appendChild(heading);
 
-          const count = h4.querySelector('.group-count') || document.createElement('span');
-          count.className = 'group-count';
-          count.textContent = String(items.length);
-          if (!count.parentNode) h4.appendChild(count);
-        });
+            const ul = document.createElement('ul');
+            ul.className = 'publications-list';
+            for (const p of (group.publications || [])) {
+              const li = document.createElement('li');
+              li.innerHTML = '<div class="pub-title"></div><div class="pub-authors"></div><div class="pub-venue"></div><div class="pub-links"></div>';
+              li.querySelector('.pub-title').textContent = p.title || '';
+              li.querySelector('.pub-authors').textContent = p.authors || '';
+              li.querySelector('.pub-venue').textContent = p.venue || '';
+
+              const linksDiv = li.querySelector('.pub-links');
+              const sortedLinks = [...(p.links || [])].sort((a, b) => {
+                const la = (a.label || '').toLowerCase();
+                const lb = (b.label || '').toLowerCase();
+                const pa = la === 'arxiv' ? 0 : la === 'doi' ? 1 : 2;
+                const pb = lb === 'arxiv' ? 0 : lb === 'doi' ? 1 : 2;
+                return pa - pb;
+              });
+
+              for (const l of sortedLinks) {
+                const a = document.createElement('a');
+                a.href = l.url;
+                a.target = '_blank';
+                a.rel = 'noopener';
+                a.textContent = l.label;
+                linksDiv.appendChild(a);
+              }
+              ul.appendChild(li);
+            }
+            groupDiv.appendChild(ul);
+            pubContainer.appendChild(groupDiv);
+          }
+        }
+
+        if (typeof L !== 'undefined') {
+          const map = L.map('collab-map').setView([25, 10], 2);
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            maxZoom: 18
+          }).addTo(map);
+
+          institutions.forEach(inst => {
+            if (!Array.isArray(inst.location) || inst.location.length !== 2) return;
+            const popupContent = `
+              <div class="map-popup">
+                <h4>${inst.name || ''}</h4>
+                <p><strong>📍 ${inst.country || ''}</strong></p>
+                <p><strong>Collaborators:</strong><br>${(inst.collaborators || []).join(', ')}</p>
+                <div class="papers"><strong>Key Papers:</strong><br>${(inst.papers || []).join('<br>')}</div>
+              </div>`;
+            L.marker(inst.location).addTo(map).bindPopup(popupContent);
+          });
+        }
       });
     </script>
 </body>

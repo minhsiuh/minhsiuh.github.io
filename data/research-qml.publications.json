@@ -1,0 +1,312 @@
+{
+  "topic": "Quantum Machine Learning",
+  "lastCurated": "2026-03-09",
+  "groups": [
+    {
+      "group": "🧠 Quantum Neural Networks & Expressivity",
+      "publications": [
+        {
+          "title": "Expressive power of parametrized quantum circuits",
+          "authors": "Y Du, MH Hsieh, T Liu, D Tao",
+          "venue": "Physical Review Research 2 (3), 033125, 2020 · 515 citations",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/1810.11922"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1103/PhysRevResearch.2.033125"
+            }
+          ]
+        },
+        {
+          "title": "Learnability of quantum neural networks",
+          "authors": "Y Du, MH Hsieh, T Liu, S You, D Tao",
+          "venue": "PRX Quantum 2 (4), 040337, 2021 · 160 citations",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2007.12369"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1103/PRXQuantum.2.040337"
+            }
+          ]
+        },
+        {
+          "title": "TensorHyper-VQC: a tensor-train-guided hypernetwork for robust and scalable variational quantum computing",
+          "authors": "J Qi, CHH Yang, PY Chen, MH Hsieh",
+          "venue": "npj Quantum Information, 2026",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2508.01116"
+            },
+            {
+              "label": "DOI",
+              "url": "https://www.nature.com/articles/s41534-025-01157-z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "📉 Barren Plateaus & Trainability",
+      "publications": [
+        {
+          "title": "Toward Trainability of Deep Quantum Neural Networks",
+          "authors": "K Zhang, MH Hsieh, L Liu, D Tao",
+          "venue": "arXiv preprint arXiv:2112.15002, 2022",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2112.15002"
+            }
+          ]
+        },
+        {
+          "title": "Escaping from the barren plateau via gaussian initializations in deep variational quantum circuits",
+          "authors": "K Zhang, L Liu, MH Hsieh, D Tao",
+          "venue": "NeurIPS 2022, 18612-18627 · 151 citations",
+          "links": [
+            {
+              "label": "OpenReview",
+              "url": "https://openreview.net/forum?id=jXgbJdQ2YIy"
+            }
+          ]
+        },
+        {
+          "title": "Random-Matrix-Induced Simplicity Bias in Over-parameterized Variational Quantum Circuits",
+          "authors": "J Qi, CHH Yang, PY Chen, MH Hsieh",
+          "venue": "arXiv preprint arXiv:2601.01877, 2026",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2601.01877"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "🔍 Quantum Architecture Search",
+      "publications": [
+        {
+          "title": "Quantum circuit architecture search on a superconducting processor",
+          "authors": "K Linghu, Y Qian, R Wang, MJ Hu, Z Li, X Li, H Xu, J Zhang, T Ma, P Zhao, DE Liu, MH Hsieh, X Wu, Y Du, D Tao, Y Jin, H Yu",
+          "venue": "Entropy 26 (12), 1025, 2024",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2201.00934"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.3390/e26121025"
+            }
+          ]
+        },
+        {
+          "title": "Quantum circuit architecture search for variational quantum algorithms",
+          "authors": "Y Du, T Huang, S You, MH Hsieh, D Tao",
+          "venue": "npj Quantum Information 8 (1), 62, 2022 · 263 citations",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2010.10217"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1038/s41534-022-00570-y"
+            }
+          ]
+        },
+        {
+          "title": "Continual Quantum Architecture Search with Tensor-Train Encoding: Theory and Applications to Signal Processing",
+          "authors": "J Qi, CHH Yang, PY Chen, J Tejedor, L Li, MH Hsieh",
+          "venue": "arXiv preprint arXiv:2601.06392, 2026",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2601.06392"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "🚀 Learning Advantage and Applications",
+      "publications": [
+        {
+          "title": "Efficient Learning for Linear Properties of Bounded-Gate Quantum Circuits",
+          "authors": "Y Du, MH Hsieh, D Tao",
+          "venue": "Nature Communications 16, 3790, 2025",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2408.12199"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1038/s41467-025-59198-z"
+            }
+          ]
+        },
+        {
+          "title": "Experimental quantum generative adversarial networks for image generation",
+          "authors": "HL Huang, Y Du, M Gong, Y Zhao, Y Wu, C Wang, S Li, F Liang, J Lin, MH Hsieh, et al.",
+          "venue": "Physical Review Applied 16 (2), 024051, 2021 · 339 citations",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2010.06201"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1103/PhysRevApplied.16.024051"
+            }
+          ]
+        },
+        {
+          "title": "Problem-Dependent Power of Quantum Neural Networks on Multi-Class Classification",
+          "authors": "Y Du, Y Yang, D Tao, MH Hsieh",
+          "venue": "Physical Review Letters 131, 140601, 2023",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2301.01597"
+            },
+            {
+              "label": "DOI",
+              "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.131.140601"
+            }
+          ]
+        },
+        {
+          "title": "Exploring the Advantages of Quantum Generative Adversarial Networks in Generative Chemistry",
+          "authors": "PY Kao, YC Yang, WY Chiang, JY Hsiao, Y Cao, A Aliper, F Ren, A Aspuru-Guzik, A Zhavoronkov, MH Hsieh, YC Lin",
+          "venue": "Journal of Chemical Information and Modeling 63 (11), 3307-3318, 2023 · 113 citations",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2210.16823"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1021/acs.jcim.3c00562"
+            }
+          ]
+        },
+        {
+          "title": "Multimodal deep representation learning for quantum cross-platform verification",
+          "authors": "Y Qian, Y Du, Z He, MH Hsieh, D Tao",
+          "venue": "Physical Review Letters 133, 130601, 2024",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2311.03713"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1103/PhysRevLett.133.130601"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "📚 Recent Advances & Reviews",
+      "publications": [
+        {
+          "title": "Artificial intelligence for representing and characterizing quantum systems",
+          "authors": "Y Du, Y Zhu, YH Zhang, MH Hsieh, P Rebentrost, W Gao, YD Wu, J Eisert, G Chiribella, D Tao, BC Sanders",
+          "venue": "arXiv preprint arXiv:2509.04923, 2025",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2509.04923"
+            }
+          ]
+        },
+        {
+          "title": "Recent Advances for Quantum Neural Networks in Generative Learning",
+          "authors": "J Tian, X Sun, Y Du, S Zhao, Q Liu, K Zhang, W Yi, W Huang, C Wang, MH Hsieh, T Liu, W Yang, D Tao",
+          "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence 45 (10), 12321-12340, 2023 · 139 citations",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2206.03066"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1109/TPAMI.2023.3272029"
+            }
+          ]
+        },
+        {
+          "title": "A Gentle Introduction to Quantum Machine Learning",
+          "authors": "Y Du, X Wang, N Guo, Z Yu, Y Qian, K Zhang, MH Hsieh, P Rebentrost, D Tao",
+          "venue": "Springer Nature, 2025 · 3 citations",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2502.01146"
+            },
+            {
+              "label": "Amazon",
+              "url": "https://www.amazon.com.au/Gentle-Introduction-Quantum-Machine-Learning/dp/9819512832"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "📦 Others",
+      "publications": [
+        {
+          "title": "Quantum noise protects quantum classifiers against adversaries",
+          "authors": "Y Du, MH Hsieh, T Liu, D Tao, N Liu",
+          "venue": "Physical Review Research 3 (2), 023153, 2021 · 190 citations",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2003.09416"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1103/PhysRevResearch.3.023153"
+            }
+          ]
+        },
+        {
+          "title": "A Grover-search based quantum learning scheme for classification",
+          "authors": "Y Du, MH Hsieh, T Liu, D Tao",
+          "venue": "New Journal of Physics 23, 023020, 2021",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/1809.06056"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1088/1367-2630/abdefa"
+            }
+          ]
+        },
+        {
+          "title": "AQER: a scalable and efficient data loader for digital quantum computers",
+          "authors": "K Zhang, X Wang, Y Du, MH Hsieh, D Tao",
+          "venue": "ICLR 2026",
+          "links": [
+            {
+              "label": "arXiv",
+              "url": "https://arxiv.org/abs/2602.02165"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
