@@ -24,6 +24,25 @@ if (!html.includes('id="last-curated"')) errors.push('Missing Last curated label
 if (!html.includes('id="collab-map"')) errors.push('Missing collaborator map container');
 if (!html.includes('id="pub-groups"')) errors.push('Missing dynamic publications container');
 
+// Structure consistency gate (aligned with QEC/Simulation/Shannon)
+const requiredSections = ['id="overview"', 'id="collaborators"', 'id="publications"', 'id="related"'];
+for (const sec of requiredSections) {
+  if (!html.includes(sec)) errors.push(`Missing required section: ${sec}`);
+}
+const posOverview = html.indexOf('id="overview"');
+const posCollaborators = html.indexOf('id="collaborators"');
+const posPublications = html.indexOf('id="publications"');
+const posRelated = html.indexOf('id="related"');
+if (!(posOverview < posCollaborators && posCollaborators < posPublications && posPublications < posRelated)) {
+  errors.push('Section order must be overview -> collaborators -> publications -> related');
+}
+if (!html.includes('<li><a href="#collaborators">Collaborators</a></li>')) {
+  errors.push('Side-nav missing Collaborators anchor');
+}
+if (!html.includes('id="complete-collaborators-list"')) {
+  errors.push('Missing complete collaborators list container');
+}
+
 const allNames = new Set((collab.collaborators || []).map(n => n.trim()));
 for (const inst of collab.institutions || []) {
   for (const name of inst.collaborators || []) {
