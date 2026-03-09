@@ -1,0 +1,238 @@
+{
+  "topic": "Quantum Error Correction",
+  "collaborators": [
+    "Zahra Babar",
+    "Todd Brun",
+    "Igor Devetak",
+    "Irit Dinur",
+    "Quinten Eggerickx",
+    "Jihao Fan",
+    "François Le Gall",
+    "Kristiaan De Greve",
+    "Michael J. Gullans",
+    "Yifan Hong",
+    "Jun Li",
+    "Xingjian Li",
+    "Ting-Chun Lin",
+    "H. Vincent Poor",
+    "Shi Jie Samuel Tan",
+    "Thomas Vidick",
+    "Mark Wilde",
+    "Adam Wills",
+    "Hayata Yamasaki",
+    "Yongbin Zhou"
+  ],
+  "institutions": [
+    {
+      "name": "University of Southern California",
+      "location": [
+        34.0224,
+        -118.2851
+      ],
+      "country": "USA",
+      "collaborators": [
+        "Todd Brun",
+        "Igor Devetak"
+      ],
+      "papers": [
+        "Correcting quantum errors (Science 2006)",
+        "General EA-QECC (PRA 2007)",
+        "Catalytic QEC (IEEE TIT 2014)"
+      ]
+    },
+    {
+      "name": "Southeast University",
+      "location": [
+        32.0584,
+        118.7965
+      ],
+      "country": "China",
+      "collaborators": [
+        "Jihao Fan",
+        "Jun Li",
+        "Yongbin Zhou"
+      ],
+      "papers": [
+        "EA-concatenated quantum codes (PNAS 2022)"
+      ]
+    },
+    {
+      "name": "Princeton University",
+      "location": [
+        40.343,
+        -74.6514
+      ],
+      "country": "USA",
+      "collaborators": [
+        "H. Vincent Poor"
+      ],
+      "papers": [
+        "EA-concatenated quantum codes (PNAS 2022)"
+      ]
+    },
+    {
+      "name": "Hon Hai Quantum Computing Research Center",
+      "location": [
+        25.0703,
+        121.5775
+      ],
+      "country": "Taiwan",
+      "collaborators": [
+        "Ting-Chun Lin",
+        "Adam Wills",
+        "Shi Jie Samuel Tan"
+      ],
+      "papers": [
+        "Good Q-LDPC Codes (STOC 2023)",
+        "Almost optimal (Nature Comm 2026)",
+        "Local Testability (npj QI 2024)"
+      ]
+    },
+    {
+      "name": "UC San Diego (UCSD)",
+      "location": [
+        32.8801,
+        -117.234
+      ],
+      "country": "USA",
+      "collaborators": [
+        "Ting-Chun Lin"
+      ],
+      "papers": [
+        "Good Q-LDPC Codes (STOC 2023)",
+        "Almost optimal (Nature Comm 2026)"
+      ]
+    },
+    {
+      "name": "Hebrew University of Jerusalem",
+      "location": [
+        31.794,
+        35.2045
+      ],
+      "country": "Israel",
+      "collaborators": [
+        "Irit Dinur"
+      ],
+      "papers": [
+        "Good Q-LDPC Codes (STOC 2023)"
+      ]
+    },
+    {
+      "name": "California Institute of Technology",
+      "location": [
+        34.1377,
+        -118.1253
+      ],
+      "country": "USA",
+      "collaborators": [
+        "Thomas Vidick"
+      ],
+      "papers": [
+        "Good Q-LDPC Codes (STOC 2023)"
+      ]
+    },
+    {
+      "name": "Ghent University",
+      "location": [
+        51.0543,
+        3.7174
+      ],
+      "country": "Belgium",
+      "collaborators": [
+        "Kristiaan De Greve",
+        "Quinten Eggerickx"
+      ],
+      "papers": [
+        "Almost Linear Decoder (PRR 2025)"
+      ]
+    },
+    {
+      "name": "University of Tokyo",
+      "location": [
+        35.7143,
+        139.7915
+      ],
+      "country": "Japan",
+      "collaborators": [
+        "Hayata Yamasaki",
+        "François Le Gall"
+      ],
+      "papers": [
+        "Constant-Overhead MSD (Nature Physics 2025)",
+        "NP-hardness of decoding (PRA 2011)"
+      ]
+    },
+    {
+      "name": "Louisiana State University",
+      "location": [
+        30.4118,
+        -91.18
+      ],
+      "country": "USA",
+      "collaborators": [
+        "Mark Wilde"
+      ],
+      "papers": [
+        "EA-quantum turbo codes (IEEE TIT 2014)"
+      ]
+    },
+    {
+      "name": "QuTech / TU Delft",
+      "location": [
+        52.0069,
+        4.356
+      ],
+      "country": "Netherlands",
+      "collaborators": [
+        "Zahra Babar"
+      ],
+      "papers": [
+        "EA-quantum turbo codes (IEEE TIT 2014)"
+      ]
+    },
+    {
+      "name": "Massachusetts Institute of Technology (MIT)",
+      "location": [
+        42.3601,
+        -71.0942
+      ],
+      "country": "USA",
+      "collaborators": [
+        "Adam Wills"
+      ],
+      "papers": [
+        "Constant-Overhead MSD (Nature Physics 2025)"
+      ]
+    },
+    {
+      "name": "Tsinghua University",
+      "location": [
+        39.9997,
+        116.3266
+      ],
+      "country": "China",
+      "collaborators": [
+        "Xingjian Li"
+      ],
+      "papers": [
+        "Almost optimal (Nature Comm 2026)"
+      ]
+    },
+    {
+      "name": "University of Maryland / QuICS",
+      "location": [
+        38.9869,
+        -76.9426
+      ],
+      "country": "USA",
+      "collaborators": [
+        "Yifan Hong",
+        "Michael J. Gullans",
+        "Shi Jie Samuel Tan"
+      ],
+      "papers": [
+        "Single-Shot Universality (QIP 2026)"
+      ]
+    }
+  ]
+}

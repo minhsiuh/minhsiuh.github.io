@@ -13,10 +13,16 @@
     <meta property="og:description" content="Research topic page on qec by Min-Hsiu Hsieh, focused on quantum information and computation.">
     <meta property="og:url" content="https://minhsiuh.github.io/research-qec.html">
     <meta property="og:image" content="https://minhsiuh.github.io/profile.jpg">
+    <meta property="og:site_name" content="Min-Hsiu Hsieh Research">
+    <meta property="og:locale" content="en_US">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Quantum Error Correction - Research - Min-Hsiu Hsieh">
     <meta name="twitter:description" content="Research topic page on qec by Min-Hsiu Hsieh, focused on quantum information and computation.">
     <meta name="twitter:image" content="https://minhsiuh.github.io/profile.jpg">
+    <meta name="twitter:site" content="@quantum_minhsiu">
+    <meta name="author" content="Min-Hsiu Hsieh">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#2c3e50">
     <title>Quantum Error Correction - Research - Min-Hsiu Hsieh</title>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=4">
     <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png?v=4">
@@ -26,6 +32,9 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"CollectionPage","name":"Quantum Error Correction — Research","url":"https://minhsiuh.github.io/research-qec.html","description":"Research overview and selected publications on Quantum Error Correction by Min-Hsiu Hsieh.","isPartOf":{"@type":"WebSite","name":"Min-Hsiu Hsieh Research","url":"https://minhsiuh.github.io/"},"author":{"@type":"Person","name":"Min-Hsiu Hsieh","url":"https://minhsiuh.github.io/about.html"}}
+    </script>
     <style>
         :root {
             --primary-color: #2c3e50;
@@ -360,6 +369,15 @@
         .pub-links a:hover {
             text-decoration: underline;
         }
+
+
+        .group-count { display:inline-flex; align-items:center; justify-content:center; min-width:28px; height:24px; border-radius:999px; padding:0 10px; font-size:0.82rem; font-weight:700; color:#1f4f78; background:#e8f2fb; border:1px solid #cde2f5; line-height:1; white-space:nowrap; }
+        .topic-stats { background: var(--light-gray); padding:22px; border-radius:10px; margin:10px 0 28px; display:grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap:14px; }
+        .topic-stat-item { background:white; border:1px solid var(--border-color); border-radius:8px; padding:14px; text-align:center; }
+        .topic-stat-number { font-size:1.7rem; font-weight:700; color:var(--category-color); line-height:1.2; }
+        .topic-stat-label { margin-top:6px; font-size:0.82rem; color:#666; }
+        .fit-map-btn { background:white; border:1px solid #d0dbe6; border-radius:6px; padding:6px 10px; font-size:0.82rem; color:#2c3e50; cursor:pointer; box-shadow:0 1px 4px rgba(0,0,0,0.12); }
+        .fit-map-btn:hover { background:#f4f8fc; }
 
         /* Collaborators */
         .collaborators-grid {
@@ -720,341 +738,32 @@
                         <strong>Enable practical implementation</strong> — Bridge theory and experiment by developing codes compatible with realistic hardware constraints and noise models
                     </li>
                 </ul>
-                
-                <!-- Global Collaborations Map -->
-                <div style="margin-top: 40px;">
-                    <h2>Global Collaborations</h2>
-                    <p style="margin-bottom: 20px; color: #666;">
-                        QEC research collaborations span across 7 countries and 14 leading institutions worldwide.
-                    </p>
-                    
-                    <div class="collab-map-container">
-                        <div id="collab-map"></div>
-                    </div>
-                    
-                    <div class="collab-stats">
-                        <div class="collab-stat">
-                            <div class="collab-stat-number">14</div>
-                            <div class="collab-stat-label">Institutions</div>
-                        </div>
-                        <div class="collab-stat">
-                            <div class="collab-stat-number">7</div>
-                            <div class="collab-stat-label">Countries</div>
-                        </div>
-                        <div class="collab-stat">
-                            <div class="collab-stat-number">15</div>
-                            <div class="collab-stat-label">Joint Papers</div>
-                        </div>
-                        <div class="collab-stat">
-                            <div class="collab-stat-number">21</div>
-                            <div class="collab-stat-label">Collaborators</div>
-                        </div>
-                    </div>
+            </section>
+
+            <section id="collaborators">
+                <h2>Collaborators Network Map</h2>
+                <p style="margin-bottom: 20px; color: #666;">Global collaborators across Quantum Error Correction institutions.</p>
+                <div class="collab-map-container"><div id="collab-map"></div></div>
+                <div class="topic-stats">
+                    <div class="topic-stat-item"><div class="topic-stat-number" id="stat-collab-count">0</div><div class="topic-stat-label">Named Collaborators</div></div>
+                    <div class="topic-stat-item"><div class="topic-stat-number" id="stat-selected-pubs">0</div><div class="topic-stat-label">Selected Publications</div></div>
+                    <div class="topic-stat-item"><div class="topic-stat-number" id="stat-country-count">0</div><div class="topic-stat-label">Countries</div></div>
+                    <div class="topic-stat-item"><div class="topic-stat-number">2026</div><div class="topic-stat-label">Last Updated</div></div>
                 </div>
-                
-                <script>
-                    // Wait for DOM to be ready
-                    document.addEventListener('DOMContentLoaded', function() {
-                        // Initialize the map
-                        const map = L.map('collab-map').setView([25, 0], 2);
-                        
-                        // Add OpenStreetMap tiles
-                        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-                            maxZoom: 18
-                        }).addTo(map);
-                        
-                        // Custom pin icon
-                        const pinIcon = L.icon({
-                            iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
-                            iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
-                            shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
-                            iconSize: [25, 41],
-                            iconAnchor: [12, 41],
-                            popupAnchor: [1, -34],
-                            shadowSize: [41, 41]
-                        });
-                        
-                        // Collaboration institutions (extracted from all QEC publications)
-                        const institutions = [
-                            {
-                                name: "University of Southern California",
-                                location: [34.0224, -118.2851],
-                                country: "USA",
-                                collaborators: ["Todd Brun", "Igor Devetak"],
-                                papers: ["Correcting quantum errors (Science 2006)", "General EA-QECC (PRA 2007)", "Catalytic QEC (IEEE TIT 2014)"]
-                            },
-                            {
-                                name: "Southeast University",
-                                location: [32.0584, 118.7965],
-                                country: "China",
-                                collaborators: ["Jihao Fan", "Jun Li", "Yongbin Zhou"],
-                                papers: ["EA-concatenated quantum codes (PNAS 2022)"]
-                            },
-                            {
-                                name: "Princeton University",
-                                location: [40.3430, -74.6514],
-                                country: "USA",
-                                collaborators: ["H. Vincent Poor"],
-                                papers: ["EA-concatenated quantum codes (PNAS 2022)"]
-                            },
-                            {
-                                name: "Hon Hai Quantum Computing Research Center",
-                                location: [25.0703, 121.5775],
-                                country: "Taiwan",
-                                collaborators: ["Ting-Chun Lin", "Adam Wills", "Shi Jie Samuel Tan"],
-                                papers: ["Good Q-LDPC Codes (STOC 2023)", "Almost optimal (Nature Comm 2026)", "Local Testability (npj QI 2024)"]
-                            },
-                            {
-                                name: "UC San Diego (UCSD)",
-                                location: [32.8801, -117.2340],
-                                country: "USA",
-                                collaborators: ["Ting-Chun Lin"],
-                                papers: ["Good Q-LDPC Codes (STOC 2023)", "Almost optimal (Nature Comm 2026)"]
-                            },
-                            {
-                                name: "Hebrew University of Jerusalem",
-                                location: [31.7940, 35.2045],
-                                country: "Israel",
-                                collaborators: ["Irit Dinur"],
-                                papers: ["Good Q-LDPC Codes (STOC 2023)"]
-                            },
-                            {
-                                name: "California Institute of Technology",
-                                location: [34.1377, -118.1253],
-                                country: "USA",
-                                collaborators: ["Thomas Vidick"],
-                                papers: ["Good Q-LDPC Codes (STOC 2023)"]
-                            },
-                            {
-                                name: "Ghent University",
-                                location: [51.0543, 3.7174],
-                                country: "Belgium",
-                                collaborators: ["Kristiaan De Greve", "Quinten Eggerickx"],
-                                papers: ["Almost Linear Decoder (PRR 2025)"]
-                            },
-                            {
-                                name: "University of Tokyo",
-                                location: [35.7143, 139.7915],
-                                country: "Japan",
-                                collaborators: ["Hayata Yamasaki", "François Le Gall"],
-                                papers: ["Constant-Overhead MSD (Nature Physics 2025)", "NP-hardness of decoding (PRA 2011)"]
-                            },
-                            {
-                                name: "Louisiana State University",
-                                location: [30.4118, -91.1800],
-                                country: "USA",
-                                collaborators: ["Mark Wilde"],
-                                papers: ["EA-quantum turbo codes (IEEE TIT 2014)"]
-                            },
-                            {
-                                name: "QuTech / TU Delft",
-                                location: [52.0069, 4.3560],
-                                country: "Netherlands",
-                                collaborators: ["Zahra Babar"],
-                                papers: ["EA-quantum turbo codes (IEEE TIT 2014)"]
-                            },
-                            {
-                                name: "Massachusetts Institute of Technology (MIT)",
-                                location: [42.3601, -71.0942],
-                                country: "USA",
-                                collaborators: ["Adam Wills"],
-                                papers: ["Constant-Overhead MSD (Nature Physics 2025)"]
-                            },
-                            {
-                                name: "Tsinghua University",
-                                location: [39.9997, 116.3266],
-                                country: "China",
-                                collaborators: ["Xingjian Li"],
-                                papers: ["Almost optimal (Nature Comm 2026)"]
-                            },
-                            {
-                                name: "University of Maryland / QuICS",
-                                location: [38.9869, -76.9426],
-                                country: "USA",
-                                collaborators: ["Yifan Hong", "Michael J. Gullans", "Shi Jie Samuel Tan"],
-                                papers: ["Single-Shot Universality (QIP 2026)"]
-                            }
-                        ];
-                        
-                        // Add markers
-                        institutions.forEach(inst => {
-                            const popupContent = `
-                                <div class="map-popup">
-                                    <h4>${inst.name}</h4>
-                                    <p><strong>📍 ${inst.country}</strong></p>
-                                    <p><strong>Collaborators:</strong><br>${inst.collaborators.join(', ')}</p>
-                                    <div class="papers"><strong>Key Papers:</strong><br>${inst.papers.join('<br>')}</div>
-                                </div>
-                            `;
-                            
-                            L.marker(inst.location, { icon: pinIcon })
-                                .addTo(map)
-                                .bindPopup(popupContent);
-                        });
-                    });
-                </script>
+                <h3 style="margin-top: 28px;">All Co-authors in Selected Publications</h3>
+                <div class="collaborators-grid"><div class="collaborator-group" style="grid-column: 1 / -1;"><h4>Alphabetical by Last Name</h4><ul id="complete-collaborators-list" style="columns: 2; column-gap: 32px;"></ul></div></div>
             </section>
 
             <section id="publications">
                 <h2>Selected Publications</h2>
-
-                <div class="pub-group">
-                    <h4>🔗 Entanglement-Assisted Quantum Error Correction</h4>
-                    <ul class="publications-list">
-                        <li>
-                            <div class="pub-title">Correcting quantum errors with entanglement</div>
-                            <div class="pub-authors">T Brun, I Devetak, MH Hsieh</div>
-                            <div class="pub-venue">Science 314 (5798), 436-439, 2006 · 558 citations</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/quant-ph/0610092" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://doi.org/10.1126/science.1131563" target="_blank" rel="noopener">DOI</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">General entanglement-assisted quantum error-correcting codes</div>
-                            <div class="pub-authors">MH Hsieh, I Devetak, T Brun</div>
-                            <div class="pub-venue">Physical Review A 76 (6), 062313, 2007 · 150 citations</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/0708.2142" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://doi.org/10.1103/PhysRevA.76.062313" target="_blank" rel="noopener">DOI</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">Entanglement-assisted quantum quasicyclic low-density parity-check codes</div>
-                            <div class="pub-authors">MH Hsieh, TA Brun, I Devetak</div>
-                            <div class="pub-venue">Physical Review A 79 (3), 032340, 2009 · 121 citations</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/0803.0100" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://doi.org/10.1103/PhysRevA.79.032340" target="_blank" rel="noopener">DOI</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">Entanglement-assisted quantum turbo codes</div>
-                            <div class="pub-authors">MM Wilde, MH Hsieh, Z Babar</div>
-                            <div class="pub-venue">IEEE Transactions on Information Theory 60 (2), 1203-1222, 2014 · 127 citations</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/1010.1256" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://doi.org/10.1109/TIT.2013.2292056" target="_blank" rel="noopener">DOI</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">Catalytic quantum error correction</div>
-                            <div class="pub-authors">T Brun, I Devetak, MH Hsieh</div>
-                            <div class="pub-venue">IEEE Transactions on Information Theory 60 (6), 3073-3089, 2014 · 135 citations</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/quant-ph/0608027" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://doi.org/10.1109/TIT.2014.2314381" target="_blank" rel="noopener">DOI</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">Entanglement-assisted concatenated quantum codes</div>
-                            <div class="pub-authors">Jihao Fan, Jun Li, Yongbin Zhou, MH Hsieh, H. Vincent Poor</div>
-                            <div class="pub-venue">Proceedings of the National Academy of Sciences (PNAS) 119 (24) e2202235119, 2022</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2202.08084" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://doi.org/10.1073/pnas.2202235119" target="_blank" rel="noopener">DOI</a>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="topic-stats">
+                    <div class="topic-stat-item"><div class="topic-stat-number" id="stat-topic-papers">0</div><div class="topic-stat-label">Papers in This Topic</div></div>
+                    <div class="topic-stat-item"><div class="topic-stat-number" id="stat-topic-citations">—</div><div class="topic-stat-label">Known Citations (listed)</div></div>
+                    <div class="topic-stat-item"><div class="topic-stat-number" id="stat-topic-years">—</div><div class="topic-stat-label">Publication Year Range</div></div>
+                    <div class="topic-stat-item"><div class="topic-stat-number" id="stat-topic-jc">0/0</div><div class="topic-stat-label">Journal / Conference</div></div>
                 </div>
-
-                <div class="pub-group">
-                    <h4>📊 Quantum LDPC Codes</h4>
-                    <ul class="publications-list">
-                        <li>
-                            <div class="pub-title">Good quantum LDPC codes with linear time decoder from lossless expanders</div>
-                            <div class="pub-authors">Ting-Chun Lin, MH Hsieh</div>
-                            <div class="pub-venue">arXiv preprint arXiv:2203.03581, 2022</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2203.03581" target="_blank" rel="noopener">arXiv</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">Good quantum LDPC codes with linear time decoders</div>
-                            <div class="pub-authors">I Dinur, MH Hsieh, TC Lin, T Vidick</div>
-                            <div class="pub-venue">Proceedings of STOC 2023, 905-918 · 192 citations</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2206.07750" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://doi.org/10.1145/3564246.3585101" target="_blank" rel="noopener">DOI</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">Almost optimal geometrically local quantum LDPC codes in any dimension</div>
-                            <div class="pub-authors">X Li, TC Lin, A Wills, MH Hsieh</div>
-                            <div class="pub-venue">Nature Communications, 2026</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2408.01769" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://doi.org/10.1038/s41467-026-69031-w" target="_blank" rel="noopener">DOI</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">Almost Linear Decoder for Optimal Geometrically Local Quantum Codes</div>
-                            <div class="pub-authors">Quinten Eggerickx, Adam Wills, Ting-Chun Lin, Kristiaan De Greve, MH Hsieh</div>
-                            <div class="pub-venue">Physical Review Research 7, 023300, 2025</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2411.02928" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://doi.org/10.1103/sxdx-qbcz" target="_blank" rel="noopener">DOI</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="pub-group">
-                    <h4>🔧 QEC for FTQC</h4>
-                    <ul class="publications-list">
-                        <li>
-                            <div class="pub-title">Constant-Overhead Magic State Distillation</div>
-                            <div class="pub-authors">Adam Wills, MH Hsieh, Hayata Yamasaki</div>
-                            <div class="pub-venue">Nature Physics 21 (11), 1842-1846, 2025 · 49 citations</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2408.07764" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://doi.org/10.1038/s41567-025-03026-0" target="_blank" rel="noopener">DOI</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">Single-Shot Universality in Quantum LDPC Codes via Code-Switching</div>
-                            <div class="pub-authors">Shi Jie Samuel Tan, Yifan Hong, Ting-Chun Lin, Michael J. Gullans, MH Hsieh</div>
-                            <div class="pub-venue">Long Plenary Talk in QIP 2026</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2510.08552" target="_blank" rel="noopener">arXiv</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="pub-group">
-                    <h4>🔬 Other QEC Contributions</h4>
-                    <ul class="publications-list">
-                        <li>
-                            <div class="pub-title">Local testability of distance-balanced quantum codes</div>
-                            <div class="pub-authors">Adam Wills, Ting-Chun Lin, MH Hsieh</div>
-                            <div class="pub-venue">npj Quantum Information 10, 120, 2024</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2305.00689" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://doi.org/10.1038/s41534-024-00908-8" target="_blank" rel="noopener">DOI</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">Tradeoff Constructions for Quantum Locally Testable Codes</div>
-                            <div class="pub-authors">Adam Wills, Ting-Chun Lin, MH Hsieh</div>
-                            <div class="pub-venue">IEEE Transactions on Information Theory 71 (1), 426-458, 2025</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2309.05541" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://doi.org/10.1109/TIT.2024.3503500" target="_blank" rel="noopener">DOI</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pub-title">NP-hardness of decoding quantum error-correction codes</div>
-                            <div class="pub-authors">MH Hsieh, F Le Gall</div>
-                            <div class="pub-venue">Physical Review A 83 (5), 052331, 2011 · 104 citations</div>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/1009.1319" target="_blank" rel="noopener">arXiv</a>
-                                <a href="https://doi.org/10.1103/PhysRevA.83.052331" target="_blank" rel="noopener">DOI</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                <p id="last-curated" style="margin: 4px 0 18px; color:#6b7280; font-size:0.9rem;">Last curated: 2026-03-09</p>
+                <div id="pub-groups"></div>
             </section>
 
             <section id="related">
@@ -1148,5 +857,20 @@
             </div>
         </div>
     </footer>
+<script>
+document.addEventListener('DOMContentLoaded', async function() {
+  async function loadJson(path){const r=await fetch(path,{cache:'no-store'}); if(!r.ok) throw new Error(path); return r.json();}
+  let pubData, collabData; try { [pubData, collabData]=await Promise.all([loadJson('data/research-qec.publications.json'), loadJson('data/research-qec.collaborators.json')]); } catch(e){ console.error(e); return; }
+  const groups=pubData.groups||[]; const pubs=groups.flatMap(g=>g.publications||[]);
+  const pubContainer=document.getElementById('pub-groups'); if(pubContainer){ pubContainer.innerHTML='';
+    for(const g of groups){ const gd=document.createElement('div'); gd.className='pub-group'; const h4=document.createElement('h4'); const t=document.createElement('span'); t.textContent=g.group||''; const c=document.createElement('span'); c.className='group-count'; c.textContent=String((g.publications||[]).length); h4.appendChild(t); h4.appendChild(c); gd.appendChild(h4); const ul=document.createElement('ul'); ul.className='publications-list';
+      for(const p of (g.publications||[])){ const li=document.createElement('li'); li.innerHTML='<div class="pub-title"></div><div class="pub-authors"></div><div class="pub-venue"></div><div class="pub-links"></div>'; li.querySelector('.pub-title').textContent=p.title||''; li.querySelector('.pub-authors').textContent=p.authors||''; li.querySelector('.pub-venue').textContent=p.venue||''; const ld=li.querySelector('.pub-links'); const sorted=[...(p.links||[])].sort((a,b)=>{const la=(a.label||'').toLowerCase(),lb=(b.label||'').toLowerCase(); const pa=la==='arxiv'?0:la==='doi'?1:2; const pb=lb==='arxiv'?0:lb==='doi'?1:2; return pa-pb;}); for(const l of sorted){ const a=document.createElement('a'); a.href=l.url; a.target='_blank'; a.rel='noopener'; a.textContent=l.label; ld.appendChild(a);} ul.appendChild(li);} gd.appendChild(ul); pubContainer.appendChild(gd);} }
+  const years=pubs.map(p=>{const m=(p.venue||'').match(/(19|20)\d{2}/g); return m?Number(m[m.length-1]):null;}).filter(Boolean); const cites=pubs.map(p=>{const m=(p.venue||'').match(/·\s*(\d+)\s+citations/i); return m?Number(m[1]):0;}); const confKeys=['STOC','Conference','Proceedings','QIP']; const conf=pubs.filter(p=>confKeys.some(k=>(p.venue||'').includes(k))).length; const jour=Math.max(0,pubs.length-conf);
+  const setText=(id,v)=>{const e=document.getElementById(id); if(e) e.textContent=String(v);}; setText('stat-topic-papers',pubs.length); setText('stat-topic-citations',cites.reduce((a,b)=>a+b,0)||'—'); setText('stat-topic-years',years.length?`${Math.min(...years)}–${Math.max(...years)}`:'—'); setText('stat-topic-jc',`${jour}/${conf}`);
+  const collabs=collabData.collaborators||[]; const institutions=collabData.institutions||[]; const countries=[...new Set(institutions.map(i=>i.country).filter(Boolean))]; setText('stat-collab-count',collabs.length); setText('stat-selected-pubs',pubs.length); setText('stat-country-count',countries.length);
+  const ul=document.getElementById('complete-collaborators-list'); if(ul){ ul.innerHTML=''; [...collabs].sort((a,b)=>{const la=a.trim().split(/\s+/).slice(-1)[0].toLowerCase(); const lb=b.trim().split(/\s+/).slice(-1)[0].toLowerCase(); if(la!==lb) return la.localeCompare(lb); return a.localeCompare(b);}).forEach(n=>{const li=document.createElement('li'); li.textContent=n; ul.appendChild(li);}); }
+  const mapEl=document.getElementById('collab-map'); if(mapEl && typeof L!=='undefined'){ const map=L.map('collab-map').setView([25,0],2); L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',maxZoom:18}).addTo(map); const pts=[]; institutions.forEach(inst=>{ if(!Array.isArray(inst.location)||inst.location.length!==2) return; pts.push(inst.location); const popup=`<div class="map-popup"><h4>${inst.name||''}</h4><p><strong>📍 ${inst.country||''}</strong></p><p><strong>Collaborators:</strong><br>${(inst.collaborators||[]).join(', ')}</p><div class="papers"><strong>Key Papers:</strong><br>${(inst.papers||[]).join('<br>')}</div></div>`; L.marker(inst.location).addTo(map).bindPopup(popup);}); if(pts.length){const b=L.latLngBounds(pts); map.fitBounds(b.pad(0.18)); const Fit=L.Control.extend({options:{position:'topright'}, onAdd:function(){const btn=L.DomUtil.create('button','fit-map-btn');btn.type='button';btn.innerText='Fit all';L.DomEvent.disableClickPropagation(btn);L.DomEvent.on(btn,'click',()=>map.fitBounds(b.pad(0.18)));return btn;}}); map.addControl(new Fit()); } }
+});
+</script>
 </body>
 </html>

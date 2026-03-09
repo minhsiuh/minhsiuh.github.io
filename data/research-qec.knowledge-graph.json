@@ -1,0 +1,753 @@
+{
+  "version": "1.0",
+  "topic": "Quantum Error Correction",
+  "lastCurated": "2026-03-09",
+  "papers": [
+    {
+      "paperId": "P001",
+      "group": "🔗 Entanglement-Assisted Quantum Error Correction",
+      "title": "Correcting quantum errors with entanglement",
+      "year": 2006,
+      "citations": 558,
+      "venue": "Science 314 (5798), 436-439, 2006 · 558 citations",
+      "doi": "https://doi.org/10.1126/science.1131563",
+      "arxiv": "https://arxiv.org/abs/quant-ph/0610092"
+    },
+    {
+      "paperId": "P002",
+      "group": "🔗 Entanglement-Assisted Quantum Error Correction",
+      "title": "General entanglement-assisted quantum error-correcting codes",
+      "year": 2007,
+      "citations": 150,
+      "venue": "Physical Review A 76 (6), 062313, 2007 · 150 citations",
+      "doi": "https://doi.org/10.1103/PhysRevA.76.062313",
+      "arxiv": "https://arxiv.org/abs/0708.2142"
+    },
+    {
+      "paperId": "P003",
+      "group": "🔗 Entanglement-Assisted Quantum Error Correction",
+      "title": "Entanglement-assisted quantum quasicyclic low-density parity-check codes",
+      "year": 2009,
+      "citations": 121,
+      "venue": "Physical Review A 79 (3), 032340, 2009 · 121 citations",
+      "doi": "https://doi.org/10.1103/PhysRevA.79.032340",
+      "arxiv": "https://arxiv.org/abs/0803.0100"
+    },
+    {
+      "paperId": "P004",
+      "group": "🔗 Entanglement-Assisted Quantum Error Correction",
+      "title": "Entanglement-assisted quantum turbo codes",
+      "year": 2014,
+      "citations": 127,
+      "venue": "IEEE Transactions on Information Theory 60 (2), 1203-1222, 2014 · 127 citations",
+      "doi": "https://doi.org/10.1109/TIT.2013.2292056",
+      "arxiv": "https://arxiv.org/abs/1010.1256"
+    },
+    {
+      "paperId": "P005",
+      "group": "🔗 Entanglement-Assisted Quantum Error Correction",
+      "title": "Catalytic quantum error correction",
+      "year": 2014,
+      "citations": 135,
+      "venue": "IEEE Transactions on Information Theory 60 (6), 3073-3089, 2014 · 135 citations",
+      "doi": "https://doi.org/10.1109/TIT.2014.2314381",
+      "arxiv": "https://arxiv.org/abs/quant-ph/0608027"
+    },
+    {
+      "paperId": "P006",
+      "group": "🔗 Entanglement-Assisted Quantum Error Correction",
+      "title": "Entanglement-assisted concatenated quantum codes",
+      "year": 2022,
+      "citations": null,
+      "venue": "Proceedings of the National Academy of Sciences (PNAS) 119 (24) e2202235119, 2022",
+      "doi": "https://doi.org/10.1073/pnas.2202235119",
+      "arxiv": "https://arxiv.org/abs/2202.08084"
+    },
+    {
+      "paperId": "P007",
+      "group": "📊 Quantum LDPC Codes",
+      "title": "Good quantum LDPC codes with linear time decoder from lossless expanders",
+      "year": 2022,
+      "citations": null,
+      "venue": "arXiv preprint arXiv:2203.03581, 2022",
+      "doi": null,
+      "arxiv": "https://arxiv.org/abs/2203.03581"
+    },
+    {
+      "paperId": "P008",
+      "group": "📊 Quantum LDPC Codes",
+      "title": "Good quantum LDPC codes with linear time decoders",
+      "year": 2023,
+      "citations": 192,
+      "venue": "Proceedings of STOC 2023, 905-918 · 192 citations",
+      "doi": "https://doi.org/10.1145/3564246.3585101",
+      "arxiv": "https://arxiv.org/abs/2206.07750"
+    },
+    {
+      "paperId": "P009",
+      "group": "📊 Quantum LDPC Codes",
+      "title": "Almost optimal geometrically local quantum LDPC codes in any dimension",
+      "year": 2026,
+      "citations": null,
+      "venue": "Nature Communications, 2026",
+      "doi": "https://doi.org/10.1038/s41467-026-69031-w",
+      "arxiv": "https://arxiv.org/abs/2408.01769"
+    },
+    {
+      "paperId": "P010",
+      "group": "📊 Quantum LDPC Codes",
+      "title": "Almost Linear Decoder for Optimal Geometrically Local Quantum Codes",
+      "year": 2025,
+      "citations": null,
+      "venue": "Physical Review Research 7, 023300, 2025",
+      "doi": "https://doi.org/10.1103/sxdx-qbcz",
+      "arxiv": "https://arxiv.org/abs/2411.02928"
+    },
+    {
+      "paperId": "P011",
+      "group": "🔧 QEC for FTQC",
+      "title": "Constant-Overhead Magic State Distillation",
+      "year": 2025,
+      "citations": 49,
+      "venue": "Nature Physics 21 (11), 1842-1846, 2025 · 49 citations",
+      "doi": "https://doi.org/10.1038/s41567-025-03026-0",
+      "arxiv": "https://arxiv.org/abs/2408.07764"
+    },
+    {
+      "paperId": "P012",
+      "group": "🔧 QEC for FTQC",
+      "title": "Single-Shot Universality in Quantum LDPC Codes via Code-Switching",
+      "year": 2026,
+      "citations": null,
+      "venue": "Long Plenary Talk in QIP 2026",
+      "doi": null,
+      "arxiv": "https://arxiv.org/abs/2510.08552"
+    },
+    {
+      "paperId": "P013",
+      "group": "🔬 Other QEC Contributions",
+      "title": "Local testability of distance-balanced quantum codes",
+      "year": 2024,
+      "citations": null,
+      "venue": "npj Quantum Information 10, 120, 2024",
+      "doi": "https://doi.org/10.1038/s41534-024-00908-8",
+      "arxiv": "https://arxiv.org/abs/2305.00689"
+    },
+    {
+      "paperId": "P014",
+      "group": "🔬 Other QEC Contributions",
+      "title": "Tradeoff Constructions for Quantum Locally Testable Codes",
+      "year": 2025,
+      "citations": null,
+      "venue": "IEEE Transactions on Information Theory 71 (1), 426-458, 2025",
+      "doi": "https://doi.org/10.1109/TIT.2024.3503500",
+      "arxiv": "https://arxiv.org/abs/2309.05541"
+    },
+    {
+      "paperId": "P015",
+      "group": "🔬 Other QEC Contributions",
+      "title": "NP-hardness of decoding quantum error-correction codes",
+      "year": 2011,
+      "citations": 104,
+      "venue": "Physical Review A 83 (5), 052331, 2011 · 104 citations",
+      "doi": "https://doi.org/10.1103/PhysRevA.83.052331",
+      "arxiv": "https://arxiv.org/abs/1009.1319"
+    }
+  ],
+  "collaborators": [
+    {
+      "collaboratorId": "C001",
+      "name": "Zahra Babar",
+      "affiliations": [
+        {
+          "institutionId": "I011",
+          "institution": "QuTech / TU Delft",
+          "country": "Netherlands",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": []
+    },
+    {
+      "collaboratorId": "C002",
+      "name": "Todd Brun",
+      "affiliations": [
+        {
+          "institutionId": "I001",
+          "institution": "University of Southern California",
+          "country": "USA",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": []
+    },
+    {
+      "collaboratorId": "C003",
+      "name": "Igor Devetak",
+      "affiliations": [
+        {
+          "institutionId": "I001",
+          "institution": "University of Southern California",
+          "country": "USA",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": []
+    },
+    {
+      "collaboratorId": "C004",
+      "name": "Irit Dinur",
+      "affiliations": [
+        {
+          "institutionId": "I006",
+          "institution": "Hebrew University of Jerusalem",
+          "country": "Israel",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": []
+    },
+    {
+      "collaboratorId": "C005",
+      "name": "Quinten Eggerickx",
+      "affiliations": [
+        {
+          "institutionId": "I008",
+          "institution": "Ghent University",
+          "country": "Belgium",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P010"
+      ]
+    },
+    {
+      "collaboratorId": "C006",
+      "name": "Jihao Fan",
+      "affiliations": [
+        {
+          "institutionId": "I002",
+          "institution": "Southeast University",
+          "country": "China",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P006"
+      ]
+    },
+    {
+      "collaboratorId": "C007",
+      "name": "François Le Gall",
+      "affiliations": [
+        {
+          "institutionId": "I009",
+          "institution": "University of Tokyo",
+          "country": "Japan",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": []
+    },
+    {
+      "collaboratorId": "C008",
+      "name": "Kristiaan De Greve",
+      "affiliations": [
+        {
+          "institutionId": "I008",
+          "institution": "Ghent University",
+          "country": "Belgium",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P010"
+      ]
+    },
+    {
+      "collaboratorId": "C009",
+      "name": "Michael J. Gullans",
+      "affiliations": [
+        {
+          "institutionId": "I014",
+          "institution": "University of Maryland / QuICS",
+          "country": "USA",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P012"
+      ]
+    },
+    {
+      "collaboratorId": "C010",
+      "name": "Yifan Hong",
+      "affiliations": [
+        {
+          "institutionId": "I014",
+          "institution": "University of Maryland / QuICS",
+          "country": "USA",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P012"
+      ]
+    },
+    {
+      "collaboratorId": "C011",
+      "name": "Jun Li",
+      "affiliations": [
+        {
+          "institutionId": "I002",
+          "institution": "Southeast University",
+          "country": "China",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P006"
+      ]
+    },
+    {
+      "collaboratorId": "C012",
+      "name": "Xingjian Li",
+      "affiliations": [
+        {
+          "institutionId": "I013",
+          "institution": "Tsinghua University",
+          "country": "China",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": []
+    },
+    {
+      "collaboratorId": "C013",
+      "name": "Ting-Chun Lin",
+      "affiliations": [
+        {
+          "institutionId": "I004",
+          "institution": "Hon Hai Quantum Computing Research Center",
+          "country": "Taiwan",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        },
+        {
+          "institutionId": "I005",
+          "institution": "UC San Diego (UCSD)",
+          "country": "USA",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": false,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P007",
+        "P010",
+        "P012",
+        "P013",
+        "P014"
+      ]
+    },
+    {
+      "collaboratorId": "C014",
+      "name": "H. Vincent Poor",
+      "affiliations": [
+        {
+          "institutionId": "I003",
+          "institution": "Princeton University",
+          "country": "USA",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P006"
+      ]
+    },
+    {
+      "collaboratorId": "C015",
+      "name": "Shi Jie Samuel Tan",
+      "affiliations": [
+        {
+          "institutionId": "I004",
+          "institution": "Hon Hai Quantum Computing Research Center",
+          "country": "Taiwan",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        },
+        {
+          "institutionId": "I014",
+          "institution": "University of Maryland / QuICS",
+          "country": "USA",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": false,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P012"
+      ]
+    },
+    {
+      "collaboratorId": "C016",
+      "name": "Thomas Vidick",
+      "affiliations": [
+        {
+          "institutionId": "I007",
+          "institution": "California Institute of Technology",
+          "country": "USA",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": []
+    },
+    {
+      "collaboratorId": "C017",
+      "name": "Mark Wilde",
+      "affiliations": [
+        {
+          "institutionId": "I010",
+          "institution": "Louisiana State University",
+          "country": "USA",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": []
+    },
+    {
+      "collaboratorId": "C018",
+      "name": "Adam Wills",
+      "affiliations": [
+        {
+          "institutionId": "I004",
+          "institution": "Hon Hai Quantum Computing Research Center",
+          "country": "Taiwan",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        },
+        {
+          "institutionId": "I012",
+          "institution": "Massachusetts Institute of Technology (MIT)",
+          "country": "USA",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": false,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P010",
+        "P011",
+        "P013",
+        "P014"
+      ]
+    },
+    {
+      "collaboratorId": "C019",
+      "name": "Hayata Yamasaki",
+      "affiliations": [
+        {
+          "institutionId": "I009",
+          "institution": "University of Tokyo",
+          "country": "Japan",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P011"
+      ]
+    },
+    {
+      "collaboratorId": "C020",
+      "name": "Yongbin Zhou",
+      "affiliations": [
+        {
+          "institutionId": "I002",
+          "institution": "Southeast University",
+          "country": "China",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P006"
+      ]
+    }
+  ],
+  "institutions": [
+    {
+      "institutionId": "I001",
+      "name": "University of Southern California",
+      "country": "USA",
+      "lat": 34.0224,
+      "lon": -118.2851
+    },
+    {
+      "institutionId": "I002",
+      "name": "Southeast University",
+      "country": "China",
+      "lat": 32.0584,
+      "lon": 118.7965
+    },
+    {
+      "institutionId": "I003",
+      "name": "Princeton University",
+      "country": "USA",
+      "lat": 40.343,
+      "lon": -74.6514
+    },
+    {
+      "institutionId": "I004",
+      "name": "Hon Hai Quantum Computing Research Center",
+      "country": "Taiwan",
+      "lat": 25.0703,
+      "lon": 121.5775
+    },
+    {
+      "institutionId": "I005",
+      "name": "UC San Diego (UCSD)",
+      "country": "USA",
+      "lat": 32.8801,
+      "lon": -117.234
+    },
+    {
+      "institutionId": "I006",
+      "name": "Hebrew University of Jerusalem",
+      "country": "Israel",
+      "lat": 31.794,
+      "lon": 35.2045
+    },
+    {
+      "institutionId": "I007",
+      "name": "California Institute of Technology",
+      "country": "USA",
+      "lat": 34.1377,
+      "lon": -118.1253
+    },
+    {
+      "institutionId": "I008",
+      "name": "Ghent University",
+      "country": "Belgium",
+      "lat": 51.0543,
+      "lon": 3.7174
+    },
+    {
+      "institutionId": "I009",
+      "name": "University of Tokyo",
+      "country": "Japan",
+      "lat": 35.7143,
+      "lon": 139.7915
+    },
+    {
+      "institutionId": "I010",
+      "name": "Louisiana State University",
+      "country": "USA",
+      "lat": 30.4118,
+      "lon": -91.18
+    },
+    {
+      "institutionId": "I011",
+      "name": "QuTech / TU Delft",
+      "country": "Netherlands",
+      "lat": 52.0069,
+      "lon": 4.356
+    },
+    {
+      "institutionId": "I012",
+      "name": "Massachusetts Institute of Technology (MIT)",
+      "country": "USA",
+      "lat": 42.3601,
+      "lon": -71.0942
+    },
+    {
+      "institutionId": "I013",
+      "name": "Tsinghua University",
+      "country": "China",
+      "lat": 39.9997,
+      "lon": 116.3266
+    },
+    {
+      "institutionId": "I014",
+      "name": "University of Maryland / QuICS",
+      "country": "USA",
+      "lat": 38.9869,
+      "lon": -76.9426
+    }
+  ],
+  "edges": [
+    {
+      "paperId": "P006",
+      "collaboratorId": "C006",
+      "institutionId": "I002",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P006",
+      "collaboratorId": "C011",
+      "institutionId": "I002",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P006",
+      "collaboratorId": "C020",
+      "institutionId": "I002",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P006",
+      "collaboratorId": "C014",
+      "institutionId": "I003",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P007",
+      "collaboratorId": "C013",
+      "institutionId": "I004",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P010",
+      "collaboratorId": "C005",
+      "institutionId": "I008",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P010",
+      "collaboratorId": "C018",
+      "institutionId": "I004",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P010",
+      "collaboratorId": "C013",
+      "institutionId": "I004",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P010",
+      "collaboratorId": "C008",
+      "institutionId": "I008",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P011",
+      "collaboratorId": "C018",
+      "institutionId": "I004",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P011",
+      "collaboratorId": "C019",
+      "institutionId": "I009",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P012",
+      "collaboratorId": "C015",
+      "institutionId": "I004",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P012",
+      "collaboratorId": "C010",
+      "institutionId": "I014",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P012",
+      "collaboratorId": "C013",
+      "institutionId": "I004",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P012",
+      "collaboratorId": "C009",
+      "institutionId": "I014",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P013",
+      "collaboratorId": "C018",
+      "institutionId": "I004",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P013",
+      "collaboratorId": "C013",
+      "institutionId": "I004",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P014",
+      "collaboratorId": "C018",
+      "institutionId": "I004",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P014",
+      "collaboratorId": "C013",
+      "institutionId": "I004",
+      "role": "coauthor"
+    }
+  ]
+}
