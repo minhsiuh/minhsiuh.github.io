@@ -3,6 +3,7 @@
   "collaborators": [
     "Zahra Babar",
     "Todd Brun",
+    "Todd A. Brun",
     "Igor Devetak",
     "Irit Dinur",
     "Quinten Eggerickx",
@@ -17,7 +18,7 @@
     "H. Vincent Poor",
     "Shi Jie Samuel Tan",
     "Thomas Vidick",
-    "Mark Wilde",
+    "Mark M. Wilde",
     "Adam Wills",
     "Hayata Yamasaki",
     "Yongbin Zhou"
@@ -32,6 +33,7 @@
       "country": "USA",
       "collaborators": [
         "Todd Brun",
+        "Todd A. Brun",
         "Igor Devetak"
       ],
       "papers": [
@@ -170,7 +172,7 @@
       ],
       "country": "USA",
       "collaborators": [
-        "Mark Wilde"
+        "Mark M. Wilde"
       ],
       "papers": [
         "EA-quantum turbo codes (IEEE TIT 2014)"

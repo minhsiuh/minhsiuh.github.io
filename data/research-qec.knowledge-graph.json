@@ -169,10 +169,30 @@
           "source": "manual"
         }
       ],
-      "paperIds": []
+      "paperIds": [
+        "P004"
+      ]
     },
     {
       "collaboratorId": "C002",
+      "name": "Todd A. Brun",
+      "affiliations": [
+        {
+          "institutionId": "I001",
+          "institution": "University of Southern California",
+          "country": "USA",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P003"
+      ]
+    },
+    {
+      "collaboratorId": "C003",
       "name": "Todd Brun",
       "affiliations": [
         {
@@ -185,10 +205,14 @@
           "source": "manual"
         }
       ],
-      "paperIds": []
+      "paperIds": [
+        "P001",
+        "P002",
+        "P005"
+      ]
     },
     {
-      "collaboratorId": "C003",
+      "collaboratorId": "C004",
       "name": "Igor Devetak",
       "affiliations": [
         {
@@ -201,10 +225,15 @@
           "source": "manual"
         }
       ],
-      "paperIds": []
+      "paperIds": [
+        "P001",
+        "P002",
+        "P003",
+        "P005"
+      ]
     },
     {
-      "collaboratorId": "C004",
+      "collaboratorId": "C005",
       "name": "Irit Dinur",
       "affiliations": [
         {
@@ -217,10 +246,12 @@
           "source": "manual"
         }
       ],
-      "paperIds": []
+      "paperIds": [
+        "P008"
+      ]
     },
     {
-      "collaboratorId": "C005",
+      "collaboratorId": "C006",
       "name": "Quinten Eggerickx",
       "affiliations": [
         {
@@ -238,7 +269,7 @@
       ]
     },
     {
-      "collaboratorId": "C006",
+      "collaboratorId": "C007",
       "name": "Jihao Fan",
       "affiliations": [
         {
@@ -256,7 +287,7 @@
       ]
     },
     {
-      "collaboratorId": "C007",
+      "collaboratorId": "C008",
       "name": "François Le Gall",
       "affiliations": [
         {
@@ -269,10 +300,12 @@
           "source": "manual"
         }
       ],
-      "paperIds": []
+      "paperIds": [
+        "P015"
+      ]
     },
     {
-      "collaboratorId": "C008",
+      "collaboratorId": "C009",
       "name": "Kristiaan De Greve",
       "affiliations": [
         {
@@ -290,7 +323,7 @@
       ]
     },
     {
-      "collaboratorId": "C009",
+      "collaboratorId": "C010",
       "name": "Michael J. Gullans",
       "affiliations": [
         {
@@ -308,7 +341,7 @@
       ]
     },
     {
-      "collaboratorId": "C010",
+      "collaboratorId": "C011",
       "name": "Yifan Hong",
       "affiliations": [
         {
@@ -326,7 +359,7 @@
       ]
     },
     {
-      "collaboratorId": "C011",
+      "collaboratorId": "C012",
       "name": "Jun Li",
       "affiliations": [
         {
@@ -344,7 +377,7 @@
       ]
     },
     {
-      "collaboratorId": "C012",
+      "collaboratorId": "C013",
       "name": "Xingjian Li",
       "affiliations": [
         {
@@ -357,10 +390,12 @@
           "source": "manual"
         }
       ],
-      "paperIds": []
+      "paperIds": [
+        "P009"
+      ]
     },
     {
-      "collaboratorId": "C013",
+      "collaboratorId": "C014",
       "name": "Ting-Chun Lin",
       "affiliations": [
         {
@@ -384,6 +419,8 @@
       ],
       "paperIds": [
         "P007",
+        "P008",
+        "P009",
         "P010",
         "P012",
         "P013",
@@ -391,7 +428,7 @@
       ]
     },
     {
-      "collaboratorId": "C014",
+      "collaboratorId": "C015",
       "name": "H. Vincent Poor",
       "affiliations": [
         {
@@ -409,7 +446,7 @@
       ]
     },
     {
-      "collaboratorId": "C015",
+      "collaboratorId": "C016",
       "name": "Shi Jie Samuel Tan",
       "affiliations": [
         {
@@ -436,7 +473,7 @@
       ]
     },
     {
-      "collaboratorId": "C016",
+      "collaboratorId": "C017",
       "name": "Thomas Vidick",
       "affiliations": [
         {
@@ -449,11 +486,13 @@
           "source": "manual"
         }
       ],
-      "paperIds": []
+      "paperIds": [
+        "P008"
+      ]
     },
     {
-      "collaboratorId": "C017",
-      "name": "Mark Wilde",
+      "collaboratorId": "C018",
+      "name": "Mark M. Wilde",
       "affiliations": [
         {
           "institutionId": "I010",
@@ -465,10 +504,12 @@
           "source": "manual"
         }
       ],
-      "paperIds": []
+      "paperIds": [
+        "P004"
+      ]
     },
     {
-      "collaboratorId": "C018",
+      "collaboratorId": "C019",
       "name": "Adam Wills",
       "affiliations": [
         {
@@ -491,6 +532,7 @@
         }
       ],
       "paperIds": [
+        "P009",
         "P010",
         "P011",
         "P013",
@@ -498,7 +540,7 @@
       ]
     },
     {
-      "collaboratorId": "C019",
+      "collaboratorId": "C020",
       "name": "Hayata Yamasaki",
       "affiliations": [
         {
@@ -516,7 +558,7 @@
       ]
     },
     {
-      "collaboratorId": "C020",
+      "collaboratorId": "C021",
       "name": "Yongbin Zhou",
       "affiliations": [
         {
@@ -636,74 +678,182 @@
   ],
   "edges": [
     {
+      "paperId": "P001",
+      "collaboratorId": "C003",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P001",
+      "collaboratorId": "C004",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P002",
+      "collaboratorId": "C004",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P002",
+      "collaboratorId": "C003",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P003",
+      "collaboratorId": "C002",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P003",
+      "collaboratorId": "C004",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P004",
+      "collaboratorId": "C018",
+      "institutionId": "I010",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P004",
+      "collaboratorId": "C001",
+      "institutionId": "I011",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P005",
+      "collaboratorId": "C003",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P005",
+      "collaboratorId": "C004",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
       "paperId": "P006",
-      "collaboratorId": "C006",
+      "collaboratorId": "C007",
       "institutionId": "I002",
       "role": "coauthor"
     },
     {
       "paperId": "P006",
-      "collaboratorId": "C011",
+      "collaboratorId": "C012",
       "institutionId": "I002",
       "role": "coauthor"
     },
     {
       "paperId": "P006",
-      "collaboratorId": "C020",
+      "collaboratorId": "C021",
       "institutionId": "I002",
       "role": "coauthor"
     },
     {
       "paperId": "P006",
-      "collaboratorId": "C014",
+      "collaboratorId": "C015",
       "institutionId": "I003",
       "role": "coauthor"
     },
     {
       "paperId": "P007",
-      "collaboratorId": "C013",
+      "collaboratorId": "C014",
       "institutionId": "I004",
       "role": "coauthor"
     },
     {
-      "paperId": "P010",
+      "paperId": "P008",
       "collaboratorId": "C005",
-      "institutionId": "I008",
+      "institutionId": "I006",
       "role": "coauthor"
     },
     {
-      "paperId": "P010",
-      "collaboratorId": "C018",
+      "paperId": "P008",
+      "collaboratorId": "C014",
       "institutionId": "I004",
       "role": "coauthor"
     },
     {
-      "paperId": "P010",
+      "paperId": "P008",
+      "collaboratorId": "C017",
+      "institutionId": "I007",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P009",
       "collaboratorId": "C013",
+      "institutionId": "I013",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P009",
+      "collaboratorId": "C014",
+      "institutionId": "I004",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P009",
+      "collaboratorId": "C019",
       "institutionId": "I004",
       "role": "coauthor"
     },
     {
       "paperId": "P010",
-      "collaboratorId": "C008",
+      "collaboratorId": "C006",
       "institutionId": "I008",
       "role": "coauthor"
     },
     {
-      "paperId": "P011",
-      "collaboratorId": "C018",
+      "paperId": "P010",
+      "collaboratorId": "C019",
       "institutionId": "I004",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P010",
+      "collaboratorId": "C014",
+      "institutionId": "I004",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P010",
+      "collaboratorId": "C009",
+      "institutionId": "I008",
       "role": "coauthor"
     },
     {
       "paperId": "P011",
       "collaboratorId": "C019",
+      "institutionId": "I004",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P011",
+      "collaboratorId": "C020",
       "institutionId": "I009",
       "role": "coauthor"
     },
     {
       "paperId": "P012",
-      "collaboratorId": "C015",
+      "collaboratorId": "C016",
+      "institutionId": "I004",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P012",
+      "collaboratorId": "C011",
+      "institutionId": "I014",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P012",
+      "collaboratorId": "C014",
       "institutionId": "I004",
       "role": "coauthor"
     },
@@ -714,39 +864,33 @@
       "role": "coauthor"
     },
     {
-      "paperId": "P012",
-      "collaboratorId": "C013",
-      "institutionId": "I004",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P012",
-      "collaboratorId": "C009",
-      "institutionId": "I014",
-      "role": "coauthor"
-    },
-    {
       "paperId": "P013",
-      "collaboratorId": "C018",
+      "collaboratorId": "C019",
       "institutionId": "I004",
       "role": "coauthor"
     },
     {
       "paperId": "P013",
-      "collaboratorId": "C013",
+      "collaboratorId": "C014",
       "institutionId": "I004",
       "role": "coauthor"
     },
     {
       "paperId": "P014",
-      "collaboratorId": "C018",
+      "collaboratorId": "C019",
       "institutionId": "I004",
       "role": "coauthor"
     },
     {
       "paperId": "P014",
-      "collaboratorId": "C013",
+      "collaboratorId": "C014",
       "institutionId": "I004",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P015",
+      "collaboratorId": "C008",
+      "institutionId": "I009",
       "role": "coauthor"
     }
   ]
