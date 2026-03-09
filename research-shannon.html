@@ -1188,7 +1188,6 @@
 
             if (markerPoints.length) {
                 const bounds = L.latLngBounds(markerPoints);
-                map.fitBounds(bounds.pad(0.18));
 
                 const FitControl = L.Control.extend({
                     options: { position: 'topright' },
