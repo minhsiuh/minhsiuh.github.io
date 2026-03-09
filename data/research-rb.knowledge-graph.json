@@ -1,0 +1,281 @@
+{
+  "version": "1.0",
+  "topic": "Randomized Benchmarking",
+  "lastCurated": "2026-03-09",
+  "papers": [
+    {
+      "paperId": "P001",
+      "group": "Randomized Benchmarking and Non-Markovian Noise",
+      "title": "Machine Learning of Average Non-Markovianity from Randomized Benchmarking",
+      "year": 2022,
+      "citations": null,
+      "venue": "arXiv preprint arXiv:2207.01542, 2022",
+      "doi": null,
+      "arxiv": "https://arxiv.org/abs/2207.01542"
+    },
+    {
+      "paperId": "P002",
+      "group": "Randomized Benchmarking and Non-Markovian Noise",
+      "title": "Towards a general framework of Randomized Benchmarking incorporating non-Markovian Noise",
+      "year": 2022,
+      "citations": null,
+      "venue": "Quantum 6, 868, 2022",
+      "doi": "https://doi.org/10.22331/q-2022-12-01-868",
+      "arxiv": "https://arxiv.org/abs/2202.11338"
+    },
+    {
+      "paperId": "P003",
+      "group": "Randomized Benchmarking and Non-Markovian Noise",
+      "title": "Randomised benchmarking for non-Markovian noise",
+      "year": 2021,
+      "citations": null,
+      "venue": "PRX Quantum 2, 040351, 2021",
+      "doi": "https://doi.org/10.1103/PRXQuantum.2.040351",
+      "arxiv": "https://arxiv.org/abs/2107.05403"
+    },
+    {
+      "paperId": "P004",
+      "group": "Randomized Benchmarking and Non-Markovian Noise",
+      "title": "Operational Markovianization in Randomized Benchmarking",
+      "year": 2024,
+      "citations": null,
+      "venue": "Quantum Science and Technology 9 (3), 035020, 2024",
+      "doi": "https://doi.org/10.1088/2058-9565/ad3f44",
+      "arxiv": "https://arxiv.org/abs/2305.04704"
+    }
+  ],
+  "collaborators": [
+    {
+      "collaboratorId": "C001",
+      "name": "Adrian Auer",
+      "affiliations": [],
+      "paperIds": [
+        "P004"
+      ]
+    },
+    {
+      "collaboratorId": "C002",
+      "name": "Pedro Figueroa-Romero",
+      "affiliations": [
+        {
+          "institutionId": "I001",
+          "institution": "Hon Hai Quantum Computing Research Center",
+          "country": "Taiwan",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P001",
+        "P002",
+        "P003",
+        "P004"
+      ]
+    },
+    {
+      "collaboratorId": "C003",
+      "name": "Min-Hsiu Hsieh",
+      "affiliations": [
+        {
+          "institutionId": "I001",
+          "institution": "Hon Hai Quantum Computing Research Center",
+          "country": "Taiwan",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P001",
+        "P002",
+        "P003",
+        "P004"
+      ]
+    },
+    {
+      "collaboratorId": "C004",
+      "name": "Kavan Modi",
+      "affiliations": [
+        {
+          "institutionId": "I002",
+          "institution": "Monash University",
+          "country": "Australia",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        },
+        {
+          "institutionId": "I003",
+          "institution": "Centre for Quantum Technologies, Transport for New South Wales",
+          "country": "Australia",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": false,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P002",
+        "P003",
+        "P004"
+      ]
+    },
+    {
+      "collaboratorId": "C005",
+      "name": "Miha Papič",
+      "affiliations": [],
+      "paperIds": [
+        "P004"
+      ]
+    },
+    {
+      "collaboratorId": "C006",
+      "name": "Thomas M. Stace",
+      "affiliations": [],
+      "paperIds": [
+        "P003"
+      ]
+    },
+    {
+      "collaboratorId": "C007",
+      "name": "Inés de Vega",
+      "affiliations": [],
+      "paperIds": [
+        "P004"
+      ]
+    },
+    {
+      "collaboratorId": "C008",
+      "name": "Shih-Xian Yang",
+      "affiliations": [],
+      "paperIds": [
+        "P001"
+      ]
+    }
+  ],
+  "institutions": [
+    {
+      "institutionId": "I001",
+      "name": "Hon Hai Quantum Computing Research Center",
+      "country": "Taiwan",
+      "lat": 25.0703,
+      "lon": 121.5775
+    },
+    {
+      "institutionId": "I002",
+      "name": "Monash University",
+      "country": "Australia",
+      "lat": -37.9105,
+      "lon": 145.1362
+    },
+    {
+      "institutionId": "I003",
+      "name": "Centre for Quantum Technologies, Transport for New South Wales",
+      "country": "Australia",
+      "lat": -33.8688,
+      "lon": 151.2093
+    }
+  ],
+  "edges": [
+    {
+      "paperId": "P001",
+      "collaboratorId": "C008",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P001",
+      "collaboratorId": "C002",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P001",
+      "collaboratorId": "C003",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P002",
+      "collaboratorId": "C002",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P002",
+      "collaboratorId": "C004",
+      "institutionId": "I002",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P002",
+      "collaboratorId": "C003",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P003",
+      "collaboratorId": "C002",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P003",
+      "collaboratorId": "C004",
+      "institutionId": "I002",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P003",
+      "collaboratorId": "C006",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P003",
+      "collaboratorId": "C003",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P004",
+      "collaboratorId": "C002",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P004",
+      "collaboratorId": "C005",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P004",
+      "collaboratorId": "C001",
+      "institutionId": null,
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P004",
+      "collaboratorId": "C003",
+      "institutionId": "I001",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P004",
+      "collaboratorId": "C004",
+      "institutionId": "I002",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P004",
+      "collaboratorId": "C007",
+      "institutionId": null,
+      "role": "coauthor"
+    }
+  ]
+}
