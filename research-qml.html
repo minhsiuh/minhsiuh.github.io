@@ -1041,7 +1041,12 @@
             return m ? Number(m[m.length - 1]) : null;
           })
           .filter(v => Number.isFinite(v));
-        const citations = publications.reduce((sum, p) => sum + (Number(p.citations || 0) || 0), 0);
+        const citations = publications.reduce((sum, p) => {
+          const direct = Number(p.citations || 0) || 0;
+          if (direct) return sum + direct;
+          const m = String(p.venue || '').match(/(\d[\d,]*)\s+citations?/i);
+          return sum + (m ? Number(m[1].replace(/,/g, '')) : 0);
+        }, 0);
         const journalCount = publications.filter(p => {
           const v = String(p.venue || '').toLowerCase();
           return !(v.includes('conference') || v.includes('iclr') || v.includes('neurips') || v.includes('qip') || v.includes('tqc'));
