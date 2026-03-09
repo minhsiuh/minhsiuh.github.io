@@ -912,6 +912,15 @@
           "endYear": null,
           "isPrimary": true,
           "source": "manual"
+        },
+        {
+          "institutionId": "I004",
+          "institution": "Nanyang Technological University (NTU)",
+          "country": "Singapore",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": false,
+          "source": "manual"
         }
       ],
       "paperIds": []
