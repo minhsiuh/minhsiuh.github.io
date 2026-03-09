@@ -311,6 +311,31 @@
             margin-bottom: 15px;
             padding-bottom: 8px;
             border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .group-title {
+            font-weight: 600;
+        }
+
+        .group-count {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 28px;
+            height: 24px;
+            border-radius: 999px;
+            padding: 0 10px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: #1f4f78;
+            background: #e8f2fb;
+            border: 1px solid #cde2f5;
+            line-height: 1;
+            white-space: nowrap;
         }
 
         .publications-list {
@@ -1272,5 +1297,28 @@
             </div>
         </div>
     </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('#publications .pub-group').forEach(function (group) {
+          const h4 = group.querySelector('h4');
+          const items = group.querySelectorAll('.publications-list > li');
+          if (!h4 || !items.length) return;
+
+          if (!h4.querySelector('.group-title')) {
+            const title = document.createElement('span');
+            title.className = 'group-title';
+            title.textContent = h4.textContent.trim();
+            h4.textContent = '';
+            h4.appendChild(title);
+          }
+
+          const count = h4.querySelector('.group-count') || document.createElement('span');
+          count.className = 'group-count';
+          count.textContent = String(items.length);
+          if (!count.parentNode) h4.appendChild(count);
+        });
+      });
+    </script>
 </body>
 </html>
