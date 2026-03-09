@@ -1,14 +1,26 @@
-# WORKFLOW.md — `research-shannon.html` 維護流程
+# WORKFLOW.md — Tier 4 研究頁面維護流程
 
 這份流程用來確保新增/修正論文時，**資料、統計、合作者、地圖**都同步更新，不再靠人工記憶。
+
+## 適用範圍（Scope）
+
+本流程適用於所有 Tier 4 網頁（統一規範、同步執行）：
+- `research-qec.html`
+- `research-simulation.html`
+- `research-rb.html`
+- `research-shannon.html`
+
+> 原則：Tier 4 任一頁面的實作與更新，都必須遵循本文件流程。
 
 ---
 
 ## 0) Source of Truth（唯一資料來源）
 
-- Publications: `data/research-shannon.publications.json`
-- Collaborators + Map: `data/research-shannon.collaborators.json`
-- 頁面渲染: `research-shannon.html`（由 JSON 載入後顯示）
+- Publications: `data/research-<topic>.publications.json`
+- Collaborators + Map: `data/research-<topic>.collaborators.json`
+- 頁面渲染: `research-<topic>.html`（由 JSON 載入後顯示）
+
+`<topic>` 可為：`qec`、`simulation`、`rb`、`shannon`。
 
 > 原則：**先改 JSON，再看頁面**。
 
@@ -63,13 +75,13 @@
 
 ## 4) 知識圖表重建（建議每次更新後執行）
 
-在 repo 目錄執行：
+在 repo 目錄執行對應主題的建置腳本（以 Shannon 為例）：
 
 ```bash
 node scripts/build-shannon-knowledge-graph.mjs
 ```
 
-會輸出：
+會輸出對應主題檔案（以 Shannon 為例）：
 - `data/research-shannon.knowledge-graph.json`
 - `data/research-shannon.collab-matrix.csv`
 
@@ -79,7 +91,7 @@ node scripts/build-shannon-knowledge-graph.mjs
 
 ## 5) 品質檢查（必跑）
 
-在 repo 目錄執行：
+在 repo 目錄執行對應主題驗證腳本（以 Shannon 為例）：
 
 ```bash
 node scripts/validate-shannon.mjs
