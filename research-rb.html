@@ -150,8 +150,9 @@
   <script>
     document.addEventListener('DOMContentLoaded', async function () {
       async function loadJson(path){const r=await fetch(path,{cache:'no-store'}); if(!r.ok) return null; return r.json();}
-      const pubs = await loadJson('data/research-rb.publications.json') || {lastCurated:'—', groups:[]};
-      const collab = await loadJson('data/research-rb.collaborators.json') || {collaborators:[], institutions:[]};
+      const rbVersion = '20260309-2148';
+      const pubs = await loadJson(`data/research-rb.publications.json?v=${rbVersion}`) || {lastCurated:'—', groups:[]};
+      const collab = await loadJson(`data/research-rb.collaborators.json?v=${rbVersion}`) || {collaborators:[], institutions:[]};
       const groups = pubs.groups || [];
       const publications = groups.flatMap(g => g.publications || []);
       const institutions = collab.institutions || [];
