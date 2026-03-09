@@ -1,38 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Randomized Benchmarking page is currently under construction.">
-    <link rel="canonical" href="https://minhsiuh.github.io/research-rb.html">
-    <title>Randomized Benchmarking — Under Construction</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=4">
-    <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png?v=4">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=4">
-    <style>
-        body {font-family:"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; margin:0; background:#f8fafc; color:#243447;}
-        .wrap {max-width:760px; margin:10vh auto; padding:0 20px;}
-        .card {background:#fff; border:1px solid #dbe7f3; border-left:6px solid #3498db; border-radius:12px; padding:32px; box-shadow:0 6px 18px rgba(31,45,61,0.06);}
-        h1 {font-family:"Source Serif 4", Georgia, serif; margin:0 0 12px; color:#1f2d3d;}
-        p {line-height:1.75; color:#4b5563; margin:0 0 16px;}
-        .actions a {display:inline-block; margin-right:10px; text-decoration:none; color:#fff; background:#3498db; padding:10px 14px; border-radius:8px; font-weight:600;}
-        .actions a.secondary {background:#2c3e50;}
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Research topic page: Randomized Benchmarking.">
+  <link rel="canonical" href="https://minhsiuh.github.io/research-rb.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Randomized Benchmarking - Min-Hsiu Hsieh">
+  <meta property="og:description" content="Overview, collaborators, and selected publications in randomized benchmarking.">
+  <meta property="og:url" content="https://minhsiuh.github.io/research-rb.html">
+  <meta property="og:image" content="https://minhsiuh.github.io/profile.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Randomized Benchmarking - Min-Hsiu Hsieh">
+  <meta name="twitter:description" content="Overview, collaborators, and selected publications in randomized benchmarking.">
+  <meta name="twitter:image" content="https://minhsiuh.github.io/profile.jpg">
+  <title>Randomized Benchmarking - Min-Hsiu Hsieh</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=4">
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png?v=4">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=4">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <style>
+    :root { --primary-color:#2c3e50; --accent-color:#3498db; --text-color:#333; --bg-color:#fff; --light-gray:#f8f9fa; --border-color:#e9ecef; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:"Inter", -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; line-height:1.7; color:var(--text-color); background:var(--bg-color); }
+    .container { max-width:900px; margin:0 auto; padding:0 20px; }
+    header { background:var(--primary-color); color:#fff; padding:34px 0; text-align:center; }
+    header h1 { font-size:2.2rem; }
+    .chinese-name { opacity:.9; margin-top:6px; }
+    nav { background:var(--light-gray); border-bottom:1px solid var(--border-color); }
+    nav ul { list-style:none; display:flex; justify-content:center; gap:30px; padding:14px 0; }
+    nav a { text-decoration:none; color:var(--primary-color); font-weight:500; }
+    .topic-hero { background:linear-gradient(135deg,#1f4f78 0%,#2f7bbd 100%); color:#fff; padding:44px 0; }
+    .topic-icon { font-size:2rem; margin-bottom:8px; }
+    .breadcrumb { background:#f5f7fa; border-top:1px solid #e5edf5; border-bottom:1px solid #e5edf5; font-size:.95rem; }
+    .breadcrumb .container { padding:10px 20px; }
+    .topic-wrapper { display:grid; grid-template-columns:minmax(0,1fr) 260px; gap:34px; max-width:1200px; margin:0 auto; padding:30px 20px; }
+    .topic-main section { margin-bottom:34px; }
+    h1,h2,h3,h4 { font-family:"Source Serif 4", Georgia, serif; }
+    h2 { color:var(--primary-color); margin-bottom:16px; }
+    .overview-box { background:#fff; border:1px solid #e5edf5; border-left:6px solid #2f7bbd; border-radius:10px; padding:20px; }
+    .overview-box p { margin-bottom:12px; }
+    .goals-list { margin-top:10px; list-style:none; }
+    .goals-list li { padding-left:24px; position:relative; margin-bottom:10px; }
+    .goals-list li:before { content:'✓'; position:absolute; left:0; color:#2f7bbd; font-weight:700; }
+    .collab-map-container { border:1px solid #dbe7f3; border-radius:10px; overflow:hidden; }
+    #collab-map { width:100%; height:390px; }
+    .collab-stats { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-top:14px; }
+    .collab-stat { background:#fff; border:1px solid #e5edf5; border-radius:10px; padding:12px; text-align:center; }
+    .collab-stat-number { font-size:1.2rem; font-weight:700; color:#1f4f78; }
+    .collab-stat-label { font-size:.84rem; color:#6b7280; }
+    .pub-group { margin:26px 0; }
+    .pub-group h4 { font-size:1.1rem; color:var(--primary-color); margin-bottom:15px; padding-bottom:8px; border-bottom:1px solid var(--border-color); display:flex; justify-content:space-between; align-items:center; gap:12px; }
+    .group-count { display:inline-flex; align-items:center; justify-content:center; min-width:28px; height:24px; border-radius:999px; padding:0 10px; font-size:.82rem; font-weight:700; color:#1f4f78; background:#e8f2fb; border:1px solid #cde2f5; }
+    .publications-list { list-style:none; }
+    .publications-list li { padding:12px 0; border-bottom:1px solid var(--border-color); }
+    .pub-title { font-weight:600; margin-bottom:4px; }
+    .pub-authors,.pub-venue { color:#6b7280; font-size:.95rem; }
+    .pub-links { margin-top:6px; }
+    .pub-links a { color:#2f7bbd; text-decoration:none; margin-right:10px; }
+    .side-nav { position:sticky; top:90px; align-self:start; background:#fff; border:1px solid #e5edf5; border-radius:10px; padding:16px; }
+    .side-nav h3,.side-nav h4 { margin-bottom:10px; color:#1f4f78; }
+    .side-nav ul { list-style:none; margin-bottom:12px; }
+    .side-nav li { margin-bottom:7px; }
+    .side-nav a { color:#365a77; text-decoration:none; }
+    .related-topics a { display:block; color:#2f7bbd; text-decoration:none; margin-bottom:6px; }
+    @media (max-width:1000px){ .topic-wrapper{grid-template-columns:1fr;} .side-nav{position:relative; top:auto;} .collab-stats{grid-template-columns:repeat(2,1fr);} }
+  </style>
 </head>
 <body>
-    <div class="wrap">
-        <div class="card">
-            <h1>Randomized Benchmarking</h1>
-            <p>This section is currently under construction. Content and representative publications will be added soon.</p>
-            <p>In the meantime, you can explore the main research overview and related categories.</p>
-            <div class="actions">
-                <a href="research.html">Back to Research Overview</a>
-                <a class="secondary" href="index.html">Home</a>
-            </div>
+  <header><div class="container"><h1>Min-Hsiu Hsieh</h1><div class="chinese-name">謝明修</div></div></header>
+  <nav><div class="container"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="publications.html">Publications</a></li><li><a href="research.html">Research</a></li></ul></div></nav>
+
+  <div class="topic-hero"><div class="container"><div class="topic-icon">📏</div><h1>Randomized Benchmarking</h1><p class="tagline">Characterizing quantum gate performance with robust and scalable benchmarking protocols</p></div></div>
+  <div class="breadcrumb"><div class="container"><a href="index.html">Home</a> &gt; <a href="research.html">Research</a> &gt; <a href="research-hardware.html">Hardware</a> &gt; <span>Randomized Benchmarking</span></div></div>
+
+  <div class="topic-wrapper">
+    <main class="topic-main">
+      <section id="overview">
+        <h2>Overview</h2>
+        <div class="overview-box">
+          <p>This page is now prepared with the same architecture used in QEC/Simulation/Shannon: overview, collaborators, selected publications, and related topics.</p>
+          <p>Data is wired for JSON-driven updates so publications, collaborator map, and stats remain consistent.</p>
         </div>
-    </div>
+        <h3 style="margin-top:18px;">Research Goals</h3>
+        <ul class="goals-list">
+          <li><strong>Protocol design</strong> — Develop robust benchmarking methods under realistic noise.</li>
+          <li><strong>Error characterization</strong> — Connect benchmarking observables to operational metrics.</li>
+          <li><strong>Scalability</strong> — Extend benchmarking tools to larger devices and circuit families.</li>
+        </ul>
+      </section>
+
+      <section id="collaborators">
+        <h2>Collaborators Network Map</h2>
+        <p style="margin-bottom:20px;color:#666;">Global collaborators across Randomized Benchmarking institutions.</p>
+        <div class="collab-map-container"><div id="collab-map"></div></div>
+        <div class="collab-stats">
+          <div class="collab-stat"><div class="collab-stat-number" id="stat-collab-count">0</div><div class="collab-stat-label">Named Collaborators</div></div>
+          <div class="collab-stat"><div class="collab-stat-number" id="stat-selected-pubs">0</div><div class="collab-stat-label">Selected Publications</div></div>
+          <div class="collab-stat"><div class="collab-stat-number" id="stat-country-count">0</div><div class="collab-stat-label">Countries</div></div>
+          <div class="collab-stat"><div class="collab-stat-number" id="stat-institutions">0</div><div class="collab-stat-label">Institutions</div></div>
+        </div>
+        <h3 style="margin-top:28px;">All Co-authors in Selected Publications</h3>
+        <ul id="complete-collaborators-list" style="columns:2;column-gap:32px;"></ul>
+      </section>
+
+      <section id="publications">
+        <h2>Selected Publications</h2>
+        <div class="collab-stats" style="margin-top:10px;margin-bottom:12px;">
+          <div class="collab-stat"><div class="collab-stat-number" id="stat-topic-papers">0</div><div class="collab-stat-label">Papers in This Topic</div></div>
+          <div class="collab-stat"><div class="collab-stat-number" id="stat-topic-citations">—</div><div class="collab-stat-label">Known Citations (listed)</div></div>
+          <div class="collab-stat"><div class="collab-stat-number" id="stat-topic-years">—</div><div class="collab-stat-label">Publication Year Range</div></div>
+          <div class="collab-stat"><div class="collab-stat-number" id="stat-topic-jc">0/0</div><div class="collab-stat-label">Journal / Conference</div></div>
+        </div>
+        <p id="last-curated" style="margin:4px 0 18px;color:#6b7280;font-size:.9rem;">Last curated: —</p>
+        <div id="pub-groups"></div>
+      </section>
+
+      <section id="related">
+        <div class="related-topics">
+          <h3>Related Research Topics</h3>
+          <a href="research-qec.html">→ Quantum Error Correction</a>
+          <a href="research-verification.html">→ Circuit Verification</a>
+          <a href="research-arch.html">→ Quantum Architecture</a>
+          <a href="research-hardware.html">→ Hardware</a>
+        </div>
+      </section>
+    </main>
+
+    <aside class="side-nav">
+      <h3>In This Topic</h3>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#collaborators">Collaborators</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#related">Related Topics</a></li>
+      </ul>
+      <h4>Quick Jump</h4>
+      <ul>
+        <li><a href="#overview">↑ To top</a></li>
+        <li><a href="#publications">↓ To publications</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', async function () {
+      async function loadJson(path){const r=await fetch(path,{cache:'no-store'}); if(!r.ok) return null; return r.json();}
+      const pubs = await loadJson('data/research-rb.publications.json') || {lastCurated:'—', groups:[]};
+      const collab = await loadJson('data/research-rb.collaborators.json') || {collaborators:[], institutions:[]};
+      const groups = pubs.groups || [];
+      const publications = groups.flatMap(g => g.publications || []);
+      const institutions = collab.institutions || [];
+      const collaborators = collab.collaborators || [];
+      const set=(id,v)=>{const e=document.getElementById(id); if(e) e.textContent=String(v);};
+      set('last-curated', `Last curated: ${pubs.lastCurated || collab.lastCurated || '—'}`);
+      set('stat-collab-count', collaborators.length);
+      set('stat-selected-pubs', publications.length);
+      set('stat-country-count', new Set(institutions.map(i=>i.country).filter(Boolean)).size);
+      set('stat-institutions', institutions.length);
+      const years=publications.map(p=>{const m=String(p.venue||'').match(/\b(19|20)\d{2}\b/g); return m?Number(m[m.length-1]):null;}).filter(Number.isFinite);
+      const citations=publications.reduce((s,p)=>s+(Number(p.citations||0)||0),0);
+      const journalCount=publications.filter(p=>!/(conference|iclr|neurips|qip|tqc)/i.test(String(p.venue||''))).length;
+      set('stat-topic-papers', publications.length);
+      set('stat-topic-citations', citations?citations:'—');
+      set('stat-topic-years', years.length?`${Math.min(...years)}–${Math.max(...years)}`:'—');
+      set('stat-topic-jc', `${journalCount}/${Math.max(0,publications.length-journalCount)}`);
+
+      const list=document.getElementById('complete-collaborators-list');
+      if(list){ list.innerHTML=''; [...collaborators].sort((a,b)=>{const al=(a.split(/\s+/).slice(-1)[0]||'').toLowerCase(); const bl=(b.split(/\s+/).slice(-1)[0]||'').toLowerCase(); return al===bl?a.localeCompare(b):al.localeCompare(bl);}).forEach(n=>{const li=document.createElement('li'); li.textContent=n; list.appendChild(li);}); }
+
+      const container=document.getElementById('pub-groups');
+      if(container){ container.innerHTML=''; for(const g of groups){ const gd=document.createElement('div'); gd.className='pub-group'; const h=document.createElement('h4'); const t=document.createElement('span'); t.textContent=g.group||''; const c=document.createElement('span'); c.className='group-count'; c.textContent=String((g.publications||[]).length); h.appendChild(t); h.appendChild(c); gd.appendChild(h); const ul=document.createElement('ul'); ul.className='publications-list'; for(const p of (g.publications||[])){ const li=document.createElement('li'); li.innerHTML='<div class="pub-title"></div><div class="pub-authors"></div><div class="pub-venue"></div><div class="pub-links"></div>'; li.querySelector('.pub-title').textContent=p.title||''; li.querySelector('.pub-authors').textContent=p.authors||''; li.querySelector('.pub-venue').textContent=p.venue||''; const links=[...(p.links||[])].sort((a,b)=>((a.label||'').toLowerCase()==='arxiv'?0:(a.label||'').toLowerCase()==='doi'?1:2)-((b.label||'').toLowerCase()==='arxiv'?0:(b.label||'').toLowerCase()==='doi'?1:2)); const div=li.querySelector('.pub-links'); for(const l of links){ const a=document.createElement('a'); a.href=l.url; a.target='_blank'; a.rel='noopener'; a.textContent=l.label; div.appendChild(a);} ul.appendChild(li);} gd.appendChild(ul); container.appendChild(gd);} }
+
+      if (typeof L !== 'undefined') {
+        const map=L.map('collab-map').setView([25,10],2);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',maxZoom:18}).addTo(map);
+        institutions.forEach(inst=>{ if(!Array.isArray(inst.location)||inst.location.length!==2) return; const popup=`<div><h4>${inst.name||''}</h4><p><strong>📍 ${inst.country||''}</strong></p><p><strong>Collaborators:</strong><br>${(inst.collaborators||[]).join(', ')}</p></div>`; L.marker(inst.location).addTo(map).bindPopup(popup); });
+      }
+    });
+  </script>
 </body>
 </html>
