@@ -48,7 +48,17 @@
     {
       "collaboratorId": "C001",
       "name": "Adrian Auer",
-      "affiliations": [],
+      "affiliations": [
+        {
+          "institutionId": "I006",
+          "institution": "University of Konstanz",
+          "country": "Germany",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
       "paperIds": [
         "P004"
       ]
@@ -107,15 +117,6 @@
           "endYear": null,
           "isPrimary": true,
           "source": "manual"
-        },
-        {
-          "institutionId": "I003",
-          "institution": "Centre for Quantum Technologies, Transport for New South Wales",
-          "country": "Australia",
-          "startYear": null,
-          "endYear": null,
-          "isPrimary": false,
-          "source": "manual"
         }
       ],
       "paperIds": [
@@ -127,7 +128,17 @@
     {
       "collaboratorId": "C005",
       "name": "Miha Papič",
-      "affiliations": [],
+      "affiliations": [
+        {
+          "institutionId": "I005",
+          "institution": "Ludwig-Maximilians-Universität München",
+          "country": "Germany",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
       "paperIds": [
         "P004"
       ]
@@ -135,7 +146,17 @@
     {
       "collaboratorId": "C006",
       "name": "Thomas M. Stace",
-      "affiliations": [],
+      "affiliations": [
+        {
+          "institutionId": "I003",
+          "institution": "University of Queensland",
+          "country": "Australia",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
       "paperIds": [
         "P003"
       ]
@@ -143,7 +164,17 @@
     {
       "collaboratorId": "C007",
       "name": "Inés de Vega",
-      "affiliations": [],
+      "affiliations": [
+        {
+          "institutionId": "I005",
+          "institution": "Ludwig-Maximilians-Universität München",
+          "country": "Germany",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
       "paperIds": [
         "P004"
       ]
@@ -151,7 +182,17 @@
     {
       "collaboratorId": "C008",
       "name": "Shih-Xian Yang",
-      "affiliations": [],
+      "affiliations": [
+        {
+          "institutionId": "I004",
+          "institution": "National Cheng Kung University",
+          "country": "Taiwan",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
       "paperIds": [
         "P001"
       ]
@@ -174,17 +215,38 @@
     },
     {
       "institutionId": "I003",
-      "name": "Centre for Quantum Technologies, Transport for New South Wales",
+      "name": "University of Queensland",
       "country": "Australia",
-      "lat": -33.8688,
-      "lon": 151.2093
+      "lat": -27.4975,
+      "lon": 153.0137
+    },
+    {
+      "institutionId": "I004",
+      "name": "National Cheng Kung University",
+      "country": "Taiwan",
+      "lat": 22.9988,
+      "lon": 120.2195
+    },
+    {
+      "institutionId": "I005",
+      "name": "Ludwig-Maximilians-Universität München",
+      "country": "Germany",
+      "lat": 48.1509,
+      "lon": 11.5802
+    },
+    {
+      "institutionId": "I006",
+      "name": "University of Konstanz",
+      "country": "Germany",
+      "lat": 47.69,
+      "lon": 9.188
     }
   ],
   "edges": [
     {
       "paperId": "P001",
       "collaboratorId": "C008",
-      "institutionId": null,
+      "institutionId": "I004",
       "role": "coauthor"
     },
     {
@@ -232,7 +294,7 @@
     {
       "paperId": "P003",
       "collaboratorId": "C006",
-      "institutionId": null,
+      "institutionId": "I003",
       "role": "coauthor"
     },
     {
@@ -250,13 +312,13 @@
     {
       "paperId": "P004",
       "collaboratorId": "C005",
-      "institutionId": null,
+      "institutionId": "I005",
       "role": "coauthor"
     },
     {
       "paperId": "P004",
       "collaboratorId": "C001",
-      "institutionId": null,
+      "institutionId": "I006",
       "role": "coauthor"
     },
     {
@@ -274,7 +336,7 @@
     {
       "paperId": "P004",
       "collaboratorId": "C007",
-      "institutionId": null,
+      "institutionId": "I005",
       "role": "coauthor"
     }
   ]

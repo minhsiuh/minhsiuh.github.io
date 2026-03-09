@@ -24,7 +24,8 @@
         "Min-Hsiu Hsieh"
       ],
       "papers": [
-        "Towards a general framework of Randomized Benchmarking incorporating non-Markovian Noise"
+        "Towards a general framework of Randomized Benchmarking incorporating non-Markovian Noise",
+        "Randomized Benchmarking for Non-Markovian Noise"
       ]
     },
     {
@@ -42,17 +43,60 @@
       ]
     },
     {
-      "name": "Centre for Quantum Technologies, Transport for New South Wales",
+      "name": "University of Queensland",
       "country": "Australia",
       "location": [
-        -33.8688,
-        151.2093
+        -27.4975,
+        153.0137
       ],
       "collaborators": [
-        "Kavan Modi"
+        "Thomas M. Stace"
       ],
       "papers": [
-        "Towards a general framework of Randomized Benchmarking incorporating non-Markovian Noise"
+        "Randomized Benchmarking for Non-Markovian Noise"
+      ]
+    },
+    {
+      "name": "National Cheng Kung University",
+      "country": "Taiwan",
+      "location": [
+        22.9988,
+        120.2195
+      ],
+      "collaborators": [
+        "Shih-Xian Yang"
+      ],
+      "papers": [
+        "Machine Learning of Average Non-Markovianity from Randomized Benchmarking"
+      ]
+    },
+    {
+      "name": "Ludwig-Maximilians-Universität München",
+      "country": "Germany",
+      "location": [
+        48.1509,
+        11.5802
+      ],
+      "collaborators": [
+        "Miha Papič",
+        "Inés de Vega"
+      ],
+      "papers": [
+        "Operational Markovianization in Randomized Benchmarking"
+      ]
+    },
+    {
+      "name": "University of Konstanz",
+      "country": "Germany",
+      "location": [
+        47.69,
+        9.188
+      ],
+      "collaborators": [
+        "Adrian Auer"
+      ],
+      "papers": [
+        "Operational Markovianization in Randomized Benchmarking"
       ]
     }
   ]
