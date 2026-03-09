@@ -108,7 +108,17 @@
     {
       "collaboratorId": "C001",
       "name": "Alexander Aliper",
-      "affiliations": [],
+      "affiliations": [
+        {
+          "institutionId": "I001",
+          "institution": "Insilico Medicine AI Limited",
+          "country": "UAE",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
       "paperIds": [
         "P009"
       ]
@@ -116,7 +126,44 @@
     {
       "collaboratorId": "C002",
       "name": "Alán Aspuru-Guzik",
-      "affiliations": [],
+      "affiliations": [
+        {
+          "institutionId": "I002",
+          "institution": "University of Toronto",
+          "country": "Canada",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        },
+        {
+          "institutionId": "I003",
+          "institution": "University of Toronto Department of Computer Science",
+          "country": "Canada",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": false,
+          "source": "manual"
+        },
+        {
+          "institutionId": "I004",
+          "institution": "Vector Institute for Artificial Intelligence",
+          "country": "Canada",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": false,
+          "source": "manual"
+        },
+        {
+          "institutionId": "I005",
+          "institution": "CIFAR",
+          "country": "Canada",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": false,
+          "source": "manual"
+        }
+      ],
       "paperIds": [
         "P009"
       ]
@@ -126,8 +173,8 @@
       "name": "Valeria Bartsch",
       "affiliations": [
         {
-          "institutionId": "I008",
-          "institution": "Fraunhofer Center for Maritime Logistics",
+          "institutionId": "I006",
+          "institution": "Fraunhofer Institute for Industrial Mathematics",
           "country": "Germany",
           "startYear": null,
           "endYear": null,
@@ -144,9 +191,9 @@
       "name": "Dominic W. Berry",
       "affiliations": [
         {
-          "institutionId": "I012",
+          "institutionId": "I007",
           "institution": "Macquarie University",
-          "country": "AU",
+          "country": "Australia",
           "startYear": null,
           "endYear": null,
           "isPrimary": true,
@@ -162,9 +209,9 @@
       "name": "Yudong Cao",
       "affiliations": [
         {
-          "institutionId": "I010",
-          "institution": "Zapata (United States)",
-          "country": "US",
+          "institutionId": "I008",
+          "institution": "Zapata Computing, Inc.",
+          "country": "United States",
           "startYear": null,
           "endYear": null,
           "isPrimary": true,
@@ -180,8 +227,8 @@
       "name": "Yu-Cheng Chen",
       "affiliations": [
         {
-          "institutionId": "I001",
-          "institution": "Hon Hai Quantum Computing Research Center",
+          "institutionId": "I009",
+          "institution": "Hon Hai (Foxconn) Research Institute",
           "country": "Taiwan",
           "startYear": null,
           "endYear": null,
@@ -203,7 +250,7 @@
       "name": "Man Hei Cheng",
       "affiliations": [
         {
-          "institutionId": "I006",
+          "institutionId": "I010",
           "institution": "Imperial College London",
           "country": "United Kingdom",
           "startYear": null,
@@ -223,8 +270,8 @@
       "affiliations": [
         {
           "institutionId": "I009",
-          "institution": "Foxconn (Taiwan)",
-          "country": "TW",
+          "institution": "Hon Hai (Foxconn) Research Institute",
+          "country": "Taiwan",
           "startYear": null,
           "endYear": null,
           "isPrimary": true,
@@ -242,7 +289,7 @@
         {
           "institutionId": "I011",
           "institution": "National Taiwan University",
-          "country": "TW",
+          "country": "Taiwan",
           "startYear": null,
           "endYear": null,
           "isPrimary": true,
@@ -259,8 +306,8 @@
       "affiliations": [
         {
           "institutionId": "I009",
-          "institution": "Foxconn (Taiwan)",
-          "country": "TW",
+          "institution": "Hon Hai (Foxconn) Research Institute",
+          "country": "Taiwan",
           "startYear": null,
           "endYear": null,
           "isPrimary": true,
@@ -275,7 +322,17 @@
     {
       "collaboratorId": "C011",
       "name": "Chang-Yu Hsieh",
-      "affiliations": [],
+      "affiliations": [
+        {
+          "institutionId": "I012",
+          "institution": "Zhejiang University",
+          "country": "China",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
       "paperIds": [
         "P006"
       ]
@@ -283,7 +340,17 @@
     {
       "collaboratorId": "C012",
       "name": "Ming-Chien Hsu",
-      "affiliations": [],
+      "affiliations": [
+        {
+          "institutionId": "I009",
+          "institution": "Hon Hai (Foxconn) Research Institute",
+          "country": "Taiwan",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
       "paperIds": [
         "P004"
       ]
@@ -293,9 +360,9 @@
       "name": "Alice Hu",
       "affiliations": [
         {
-          "institutionId": "I001",
-          "institution": "Hon Hai Quantum Computing Research Center",
-          "country": "Taiwan",
+          "institutionId": "I013",
+          "institution": "City University of Hong Kong",
+          "country": "Hong Kong SAR, China",
           "startYear": null,
           "endYear": null,
           "isPrimary": true,
@@ -312,7 +379,17 @@
     {
       "collaboratorId": "C014",
       "name": "Po-Yao Kao",
-      "affiliations": [],
+      "affiliations": [
+        {
+          "institutionId": "I014",
+          "institution": "Insilico Medicine Taiwan Ltd.",
+          "country": "Taiwan",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
       "paperIds": [
         "P009"
       ]
@@ -322,7 +399,7 @@
       "name": "Myungshik Kim",
       "affiliations": [
         {
-          "institutionId": "I006",
+          "institutionId": "I010",
           "institution": "Imperial College London",
           "country": "United Kingdom",
           "startYear": null,
@@ -340,7 +417,7 @@
       "name": "Calvin Ku",
       "affiliations": [
         {
-          "institutionId": "I001",
+          "institutionId": "I015",
           "institution": "Hon Hai Quantum Computing Research Center",
           "country": "Taiwan",
           "startYear": null,
@@ -358,8 +435,8 @@
       "name": "Ching-Jui Lai",
       "affiliations": [
         {
-          "institutionId": "I002",
-          "institution": "Academia Sinica",
+          "institutionId": "I016",
+          "institution": "National Cheng Kung University",
           "country": "Taiwan",
           "startYear": null,
           "endYear": null,
@@ -374,7 +451,17 @@
     {
       "collaboratorId": "C018",
       "name": "Chun-Tse Li",
-      "affiliations": [],
+      "affiliations": [
+        {
+          "institutionId": "I011",
+          "institution": "National Taiwan University",
+          "country": "Taiwan",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
       "paperIds": [
         "P004",
         "P005"
@@ -383,7 +470,17 @@
     {
       "collaboratorId": "C019",
       "name": "Chih-Yun Lin",
-      "affiliations": [],
+      "affiliations": [
+        {
+          "institutionId": "I017",
+          "institution": "Academia Sinica",
+          "country": "Taiwan",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
       "paperIds": [
         "P005"
       ]
@@ -391,7 +488,17 @@
     {
       "collaboratorId": "C020",
       "name": "Hsin Lin",
-      "affiliations": [],
+      "affiliations": [
+        {
+          "institutionId": "I017",
+          "institution": "Academia Sinica",
+          "country": "Taiwan",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
       "paperIds": [
         "P004",
         "P005"
@@ -402,12 +509,21 @@
       "name": "Yen-Chu Lin",
       "affiliations": [
         {
-          "institutionId": "I003",
-          "institution": "National Yang Ming Chiao Tung University",
+          "institutionId": "I014",
+          "institution": "Insilico Medicine Taiwan Ltd.",
           "country": "Taiwan",
           "startYear": null,
           "endYear": null,
           "isPrimary": true,
+          "source": "manual"
+        },
+        {
+          "institutionId": "I018",
+          "institution": "National Yang Ming Chiao Tung University",
+          "country": "Taiwan",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": false,
           "source": "manual"
         }
       ],
@@ -421,8 +537,8 @@
       "name": "Arcesio Castañeda Medina",
       "affiliations": [
         {
-          "institutionId": "I005",
-          "institution": "Fraunhofer ITWM",
+          "institutionId": "I019",
+          "institution": "Fraunhofer Institute for Industrial Mathematics (ITWM)",
           "country": "Germany",
           "startYear": null,
           "endYear": null,
@@ -437,7 +553,17 @@
     {
       "collaboratorId": "C023",
       "name": "Tzen Ong",
-      "affiliations": [],
+      "affiliations": [
+        {
+          "institutionId": "I017",
+          "institution": "Academia Sinica",
+          "country": "Taiwan",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
       "paperIds": [
         "P004",
         "P005"
@@ -446,7 +572,17 @@
     {
       "collaboratorId": "C024",
       "name": "Fang Ren",
-      "affiliations": [],
+      "affiliations": [
+        {
+          "institutionId": "I020",
+          "institution": "Insilico Medicine Shanghai Ltd.",
+          "country": "China",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
       "paperIds": [
         "P009"
       ]
@@ -456,9 +592,9 @@
       "name": "Mengzhen Ren",
       "affiliations": [
         {
-          "institutionId": "I001",
-          "institution": "Hon Hai Quantum Computing Research Center",
-          "country": "Taiwan",
+          "institutionId": "I013",
+          "institution": "City University of Hong Kong",
+          "country": "Hong Kong SAR, China",
           "startYear": null,
           "endYear": null,
           "isPrimary": true,
@@ -473,7 +609,17 @@
     {
       "collaboratorId": "C026",
       "name": "Yu Shee",
-      "affiliations": [],
+      "affiliations": [
+        {
+          "institutionId": "I021",
+          "institution": "Yale University",
+          "country": "United States",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
       "paperIds": [
         "P008"
       ]
@@ -481,7 +627,17 @@
     {
       "collaboratorId": "C027",
       "name": "Lucas Wang",
-      "affiliations": [],
+      "affiliations": [
+        {
+          "institutionId": "I022",
+          "institution": "University of Chicago",
+          "country": "United States",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
       "paperIds": [
         "P004"
       ]
@@ -491,9 +647,9 @@
       "name": "Qian Wang",
       "affiliations": [
         {
-          "institutionId": "I007",
+          "institutionId": "I013",
           "institution": "City University of Hong Kong",
-          "country": "Hong Kong",
+          "country": "Hong Kong SAR, China",
           "startYear": null,
           "endYear": null,
           "isPrimary": true,
@@ -509,8 +665,8 @@
       "name": "Ronin Wu",
       "affiliations": [
         {
-          "institutionId": "I004",
-          "institution": "University of Copenhagen",
+          "institutionId": "I023",
+          "institution": "QunaSys Europe",
           "country": "Denmark",
           "startYear": null,
           "endYear": null,
@@ -532,8 +688,18 @@
     },
     {
       "collaboratorId": "C031",
-      "name": "Yen-Chi Yang",
-      "affiliations": [],
+      "name": "Ya-Chu Yang",
+      "affiliations": [
+        {
+          "institutionId": "I014",
+          "institution": "Insilico Medicine Taiwan Ltd.",
+          "country": "Taiwan",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
       "paperIds": [
         "P009"
       ]
@@ -541,7 +707,17 @@
     {
       "collaboratorId": "C032",
       "name": "Yangsen Ye",
-      "affiliations": [],
+      "affiliations": [
+        {
+          "institutionId": "I024",
+          "institution": "University of Science and Technology of China",
+          "country": "China",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
       "paperIds": [
         "P006"
       ]
@@ -549,7 +725,17 @@
     {
       "collaboratorId": "C033",
       "name": "Tzu-Lan Yeh",
-      "affiliations": [],
+      "affiliations": [
+        {
+          "institutionId": "I014",
+          "institution": "Insilico Medicine Taiwan Ltd.",
+          "country": "Taiwan",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
       "paperIds": [
         "P008"
       ]
@@ -557,7 +743,17 @@
     {
       "collaboratorId": "C034",
       "name": "Alex Zhavoronkov",
-      "affiliations": [],
+      "affiliations": [
+        {
+          "institutionId": "I025",
+          "institution": "Insilico Medicine Hong Kong Ltd.",
+          "country": "Hong Kong SAR, China",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
       "paperIds": [
         "P009"
       ]
@@ -566,292 +762,383 @@
   "institutions": [
     {
       "institutionId": "I001",
-      "name": "Hon Hai Quantum Computing Research Center",
-      "country": "Taiwan",
-      "lat": 25.0478,
-      "lon": 121.5319
+      "name": "Insilico Medicine AI Limited",
+      "country": "UAE",
+      "lat": 24.4539,
+      "lon": 54.3773
     },
     {
       "institutionId": "I002",
-      "name": "Academia Sinica",
-      "country": "Taiwan",
-      "lat": 25.0418,
-      "lon": 121.6146
+      "name": "University of Toronto",
+      "country": "Canada",
+      "lat": 43.6629,
+      "lon": -79.3957
     },
     {
       "institutionId": "I003",
-      "name": "National Yang Ming Chiao Tung University",
-      "country": "Taiwan",
-      "lat": 24.7867,
-      "lon": 120.9975
+      "name": "University of Toronto Department of Computer Science",
+      "country": "Canada",
+      "lat": 43.6617,
+      "lon": -79.395
     },
     {
       "institutionId": "I004",
-      "name": "University of Copenhagen",
-      "country": "Denmark",
-      "lat": 55.6805,
-      "lon": 12.5615
+      "name": "Vector Institute for Artificial Intelligence",
+      "country": "Canada",
+      "lat": 43.6466,
+      "lon": -79.3853
     },
     {
       "institutionId": "I005",
-      "name": "Fraunhofer ITWM",
+      "name": "CIFAR",
+      "country": "Canada",
+      "lat": 43.6532,
+      "lon": -79.3832
+    },
+    {
+      "institutionId": "I006",
+      "name": "Fraunhofer Institute for Industrial Mathematics",
       "country": "Germany",
       "lat": 49.4447,
       "lon": 7.7689
     },
     {
-      "institutionId": "I006",
+      "institutionId": "I007",
+      "name": "Macquarie University",
+      "country": "Australia",
+      "lat": -33.7734,
+      "lon": 151.1125
+    },
+    {
+      "institutionId": "I008",
+      "name": "Zapata Computing, Inc.",
+      "country": "United States",
+      "lat": 42.3601,
+      "lon": -71.0589
+    },
+    {
+      "institutionId": "I009",
+      "name": "Hon Hai (Foxconn) Research Institute",
+      "country": "Taiwan",
+      "lat": 25.0478,
+      "lon": 121.5319
+    },
+    {
+      "institutionId": "I010",
       "name": "Imperial College London",
       "country": "United Kingdom",
       "lat": 51.4988,
       "lon": -0.1749
     },
     {
-      "institutionId": "I007",
-      "name": "City University of Hong Kong",
-      "country": "Hong Kong",
-      "lat": 22.3366,
-      "lon": 114.1733
-    },
-    {
-      "institutionId": "I008",
-      "name": "Fraunhofer Center for Maritime Logistics",
-      "country": "Germany",
-      "lat": 53.5511,
-      "lon": 9.9937
-    },
-    {
-      "institutionId": "I009",
-      "name": "Foxconn (Taiwan)",
-      "country": "TW",
-      "lat": 0,
-      "lon": 0
-    },
-    {
-      "institutionId": "I010",
-      "name": "Zapata (United States)",
-      "country": "US",
-      "lat": 0,
-      "lon": 0
-    },
-    {
       "institutionId": "I011",
       "name": "National Taiwan University",
-      "country": "TW",
-      "lat": 0,
-      "lon": 0
+      "country": "Taiwan",
+      "lat": 25.0173,
+      "lon": 121.5398
     },
     {
       "institutionId": "I012",
-      "name": "Macquarie University",
-      "country": "AU",
-      "lat": 0,
-      "lon": 0
+      "name": "Zhejiang University",
+      "country": "China",
+      "lat": 30.2655,
+      "lon": 120.1229
+    },
+    {
+      "institutionId": "I013",
+      "name": "City University of Hong Kong",
+      "country": "Hong Kong SAR, China",
+      "lat": 22.344,
+      "lon": 114.1794
+    },
+    {
+      "institutionId": "I014",
+      "name": "Insilico Medicine Taiwan Ltd.",
+      "country": "Taiwan",
+      "lat": 25.033,
+      "lon": 121.5654
+    },
+    {
+      "institutionId": "I015",
+      "name": "Hon Hai Quantum Computing Research Center",
+      "country": "Taiwan",
+      "lat": 25.0478,
+      "lon": 121.5319
+    },
+    {
+      "institutionId": "I016",
+      "name": "National Cheng Kung University",
+      "country": "Taiwan",
+      "lat": 22.9969,
+      "lon": 120.2195
+    },
+    {
+      "institutionId": "I017",
+      "name": "Academia Sinica",
+      "country": "Taiwan",
+      "lat": 25.0418,
+      "lon": 121.6146
+    },
+    {
+      "institutionId": "I018",
+      "name": "National Yang Ming Chiao Tung University",
+      "country": "Taiwan",
+      "lat": 24.7867,
+      "lon": 120.9975
+    },
+    {
+      "institutionId": "I019",
+      "name": "Fraunhofer Institute for Industrial Mathematics (ITWM)",
+      "country": "Germany",
+      "lat": 49.4447,
+      "lon": 7.7689
+    },
+    {
+      "institutionId": "I020",
+      "name": "Insilico Medicine Shanghai Ltd.",
+      "country": "China",
+      "lat": 31.2304,
+      "lon": 121.4737
+    },
+    {
+      "institutionId": "I021",
+      "name": "Yale University",
+      "country": "United States",
+      "lat": 41.3163,
+      "lon": -72.9223
+    },
+    {
+      "institutionId": "I022",
+      "name": "University of Chicago",
+      "country": "United States",
+      "lat": 41.7897,
+      "lon": -87.5997
+    },
+    {
+      "institutionId": "I023",
+      "name": "QunaSys Europe",
+      "country": "Denmark",
+      "lat": 55.6761,
+      "lon": 12.5683
+    },
+    {
+      "institutionId": "I024",
+      "name": "University of Science and Technology of China",
+      "country": "China",
+      "lat": 31.8389,
+      "lon": 117.257
+    },
+    {
+      "institutionId": "I025",
+      "name": "Insilico Medicine Hong Kong Ltd.",
+      "country": "Hong Kong SAR, China",
+      "lat": 22.3193,
+      "lon": 114.1694
     }
   ],
   "edges": [
     {
       "paperId": "P001",
       "collaboratorId": "C006",
-      "institutionId": "I001",
+      "institutionId": "I009",
       "role": "coauthor"
     },
     {
       "paperId": "P001",
       "collaboratorId": "C029",
-      "institutionId": "I004",
+      "institutionId": "I023",
       "role": "coauthor"
     },
     {
       "paperId": "P001",
       "collaboratorId": "C007",
-      "institutionId": "I006",
+      "institutionId": "I010",
       "role": "coauthor"
     },
     {
       "paperId": "P002",
       "collaboratorId": "C007",
-      "institutionId": "I006",
+      "institutionId": "I010",
       "role": "coauthor"
     },
     {
       "paperId": "P002",
       "collaboratorId": "C006",
-      "institutionId": "I001",
+      "institutionId": "I009",
       "role": "coauthor"
     },
     {
       "paperId": "P002",
       "collaboratorId": "C028",
-      "institutionId": "I007",
+      "institutionId": "I013",
       "role": "coauthor"
     },
     {
       "paperId": "P002",
       "collaboratorId": "C003",
-      "institutionId": "I008",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P002",
-      "collaboratorId": "C022",
-      "institutionId": "I005",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P002",
-      "collaboratorId": "C015",
       "institutionId": "I006",
       "role": "coauthor"
     },
     {
       "paperId": "P002",
+      "collaboratorId": "C022",
+      "institutionId": "I019",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P002",
+      "collaboratorId": "C015",
+      "institutionId": "I010",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P002",
       "collaboratorId": "C013",
-      "institutionId": "I001",
+      "institutionId": "I013",
       "role": "coauthor"
     },
     {
       "paperId": "P003",
       "collaboratorId": "C016",
-      "institutionId": "I001",
+      "institutionId": "I015",
       "role": "coauthor"
     },
     {
       "paperId": "P003",
       "collaboratorId": "C006",
-      "institutionId": "I001",
+      "institutionId": "I009",
       "role": "coauthor"
     },
     {
       "paperId": "P003",
       "collaboratorId": "C013",
-      "institutionId": "I001",
+      "institutionId": "I013",
       "role": "coauthor"
     },
     {
       "paperId": "P004",
       "collaboratorId": "C018",
-      "institutionId": null,
+      "institutionId": "I011",
       "role": "coauthor"
     },
     {
       "paperId": "P004",
       "collaboratorId": "C023",
-      "institutionId": null,
+      "institutionId": "I017",
       "role": "coauthor"
     },
     {
       "paperId": "P004",
       "collaboratorId": "C027",
-      "institutionId": null,
+      "institutionId": "I022",
       "role": "coauthor"
     },
     {
       "paperId": "P004",
       "collaboratorId": "C012",
-      "institutionId": null,
+      "institutionId": "I009",
       "role": "coauthor"
     },
     {
       "paperId": "P004",
       "collaboratorId": "C020",
-      "institutionId": null,
+      "institutionId": "I017",
       "role": "coauthor"
     },
     {
       "paperId": "P005",
       "collaboratorId": "C018",
-      "institutionId": null,
+      "institutionId": "I011",
       "role": "coauthor"
     },
     {
       "paperId": "P005",
       "collaboratorId": "C023",
-      "institutionId": null,
+      "institutionId": "I017",
       "role": "coauthor"
     },
     {
       "paperId": "P005",
       "collaboratorId": "C019",
-      "institutionId": null,
+      "institutionId": "I017",
       "role": "coauthor"
     },
     {
       "paperId": "P005",
       "collaboratorId": "C006",
-      "institutionId": "I001",
+      "institutionId": "I009",
       "role": "coauthor"
     },
     {
       "paperId": "P005",
       "collaboratorId": "C020",
-      "institutionId": null,
+      "institutionId": "I017",
       "role": "coauthor"
     },
     {
       "paperId": "P006",
       "collaboratorId": "C025",
-      "institutionId": "I001",
+      "institutionId": "I013",
       "role": "coauthor"
     },
     {
       "paperId": "P006",
       "collaboratorId": "C006",
-      "institutionId": "I001",
+      "institutionId": "I009",
       "role": "coauthor"
     },
     {
       "paperId": "P006",
       "collaboratorId": "C032",
-      "institutionId": null,
+      "institutionId": "I024",
       "role": "coauthor"
     },
     {
       "paperId": "P006",
       "collaboratorId": "C013",
-      "institutionId": "I001",
+      "institutionId": "I013",
       "role": "coauthor"
     },
     {
       "paperId": "P006",
       "collaboratorId": "C011",
-      "institutionId": null,
+      "institutionId": "I012",
       "role": "coauthor"
     },
     {
       "paperId": "P007",
       "collaboratorId": "C025",
-      "institutionId": "I001",
+      "institutionId": "I013",
       "role": "coauthor"
     },
     {
       "paperId": "P007",
       "collaboratorId": "C006",
-      "institutionId": "I001",
+      "institutionId": "I009",
       "role": "coauthor"
     },
     {
       "paperId": "P007",
       "collaboratorId": "C017",
-      "institutionId": "I002",
+      "institutionId": "I016",
       "role": "coauthor"
     },
     {
       "paperId": "P007",
       "collaboratorId": "C013",
-      "institutionId": "I001",
+      "institutionId": "I013",
       "role": "coauthor"
     },
     {
       "paperId": "P008",
       "collaboratorId": "C026",
-      "institutionId": null,
+      "institutionId": "I021",
       "role": "coauthor"
     },
     {
       "paperId": "P008",
       "collaboratorId": "C033",
-      "institutionId": null,
+      "institutionId": "I014",
       "role": "coauthor"
     },
     {
@@ -869,19 +1156,19 @@
     {
       "paperId": "P008",
       "collaboratorId": "C021",
-      "institutionId": "I003",
+      "institutionId": "I014",
       "role": "coauthor"
     },
     {
       "paperId": "P009",
       "collaboratorId": "C014",
-      "institutionId": null,
+      "institutionId": "I014",
       "role": "coauthor"
     },
     {
       "paperId": "P009",
       "collaboratorId": "C031",
-      "institutionId": null,
+      "institutionId": "I014",
       "role": "coauthor"
     },
     {
@@ -899,37 +1186,37 @@
     {
       "paperId": "P009",
       "collaboratorId": "C005",
-      "institutionId": "I010",
+      "institutionId": "I008",
       "role": "coauthor"
     },
     {
       "paperId": "P009",
       "collaboratorId": "C001",
-      "institutionId": null,
+      "institutionId": "I001",
       "role": "coauthor"
     },
     {
       "paperId": "P009",
       "collaboratorId": "C024",
-      "institutionId": null,
+      "institutionId": "I020",
       "role": "coauthor"
     },
     {
       "paperId": "P009",
       "collaboratorId": "C002",
-      "institutionId": null,
+      "institutionId": "I002",
       "role": "coauthor"
     },
     {
       "paperId": "P009",
       "collaboratorId": "C034",
-      "institutionId": null,
+      "institutionId": "I025",
       "role": "coauthor"
     },
     {
       "paperId": "P009",
       "collaboratorId": "C021",
-      "institutionId": "I003",
+      "institutionId": "I014",
       "role": "coauthor"
     },
     {
@@ -941,7 +1228,7 @@
     {
       "paperId": "P010",
       "collaboratorId": "C004",
-      "institutionId": "I012",
+      "institutionId": "I007",
       "role": "coauthor"
     }
   ]

@@ -31,12 +31,218 @@
     "Qian Wang",
     "Ronin Wu",
     "Ann Yang",
-    "Yen-Chi Yang",
+    "Ya-Chu Yang",
     "Yangsen Ye",
     "Tzu-Lan Yeh",
     "Alex Zhavoronkov"
   ],
   "institutions": [
+    {
+      "name": "Insilico Medicine AI Limited",
+      "country": "UAE",
+      "location": [
+        24.4539,
+        54.3773
+      ],
+      "collaborators": [
+        "Alexander Aliper"
+      ],
+      "papers": [
+        "Quantum simulation collaborations"
+      ]
+    },
+    {
+      "name": "University of Toronto",
+      "country": "Canada",
+      "location": [
+        43.6629,
+        -79.3957
+      ],
+      "collaborators": [
+        "Alán Aspuru-Guzik"
+      ],
+      "papers": [
+        "Quantum simulation collaborations"
+      ]
+    },
+    {
+      "name": "University of Toronto Department of Computer Science",
+      "country": "Canada",
+      "location": [
+        43.6617,
+        -79.395
+      ],
+      "collaborators": [
+        "Alán Aspuru-Guzik"
+      ],
+      "papers": [
+        "Quantum simulation collaborations"
+      ]
+    },
+    {
+      "name": "Vector Institute for Artificial Intelligence",
+      "country": "Canada",
+      "location": [
+        43.6466,
+        -79.3853
+      ],
+      "collaborators": [
+        "Alán Aspuru-Guzik"
+      ],
+      "papers": [
+        "Quantum simulation collaborations"
+      ]
+    },
+    {
+      "name": "CIFAR",
+      "country": "Canada",
+      "location": [
+        43.6532,
+        -79.3832
+      ],
+      "collaborators": [
+        "Alán Aspuru-Guzik"
+      ],
+      "papers": [
+        "Quantum simulation collaborations"
+      ]
+    },
+    {
+      "name": "Fraunhofer Institute for Industrial Mathematics",
+      "country": "Germany",
+      "location": [
+        49.4447,
+        7.7689
+      ],
+      "collaborators": [
+        "Valeria Bartsch"
+      ],
+      "papers": [
+        "Quantum simulation collaborations"
+      ]
+    },
+    {
+      "name": "Macquarie University",
+      "country": "Australia",
+      "location": [
+        -33.7734,
+        151.1125
+      ],
+      "collaborators": [
+        "Dominic W. Berry"
+      ],
+      "papers": [
+        "Quantum simulation collaborations"
+      ]
+    },
+    {
+      "name": "Zapata Computing, Inc.",
+      "country": "United States",
+      "location": [
+        42.3601,
+        -71.0589
+      ],
+      "collaborators": [
+        "Yudong Cao"
+      ],
+      "papers": [
+        "Quantum simulation collaborations"
+      ]
+    },
+    {
+      "name": "Hon Hai (Foxconn) Research Institute",
+      "country": "Taiwan",
+      "location": [
+        25.0478,
+        121.5319
+      ],
+      "collaborators": [
+        "Yu-Cheng Chen",
+        "Wei-Yin Chiang",
+        "Jen-Yueh Hsiao",
+        "Ming-Chien Hsu"
+      ],
+      "papers": [
+        "Quantum simulation collaborations"
+      ]
+    },
+    {
+      "name": "Imperial College London",
+      "country": "United Kingdom",
+      "location": [
+        51.4988,
+        -0.1749
+      ],
+      "collaborators": [
+        "Man Hei Cheng",
+        "Myungshik Kim"
+      ],
+      "papers": [
+        "Quantum simulation collaborations"
+      ]
+    },
+    {
+      "name": "National Taiwan University",
+      "country": "Taiwan",
+      "location": [
+        25.0173,
+        121.5398
+      ],
+      "collaborators": [
+        "Chien Hung Cho",
+        "Chun-Tse Li"
+      ],
+      "papers": [
+        "Quantum simulation collaborations"
+      ]
+    },
+    {
+      "name": "Zhejiang University",
+      "country": "China",
+      "location": [
+        30.2655,
+        120.1229
+      ],
+      "collaborators": [
+        "Chang-Yu Hsieh"
+      ],
+      "papers": [
+        "Quantum simulation collaborations"
+      ]
+    },
+    {
+      "name": "City University of Hong Kong",
+      "country": "Hong Kong SAR, China",
+      "location": [
+        22.344,
+        114.1794
+      ],
+      "collaborators": [
+        "Alice Hu",
+        "Mengzhen Ren",
+        "Qian Wang"
+      ],
+      "papers": [
+        "Quantum simulation collaborations"
+      ]
+    },
+    {
+      "name": "Insilico Medicine Taiwan Ltd.",
+      "country": "Taiwan",
+      "location": [
+        25.033,
+        121.5654
+      ],
+      "collaborators": [
+        "Po-Yao Kao",
+        "Yen-Chu Lin",
+        "Ya-Chu Yang",
+        "Tzu-Lan Yeh"
+      ],
+      "papers": [
+        "Quantum simulation collaborations"
+      ]
+    },
     {
       "name": "Hon Hai Quantum Computing Research Center",
       "country": "Taiwan",
@@ -45,10 +251,21 @@
         121.5319
       ],
       "collaborators": [
-        "Yu-Cheng Chen",
-        "Alice Hu",
-        "Calvin Ku",
-        "Mengzhen Ren"
+        "Calvin Ku"
+      ],
+      "papers": [
+        "Quantum simulation collaborations"
+      ]
+    },
+    {
+      "name": "National Cheng Kung University",
+      "country": "Taiwan",
+      "location": [
+        22.9969,
+        120.2195
+      ],
+      "collaborators": [
+        "Ching-Jui Lai"
       ],
       "papers": [
         "Quantum simulation collaborations"
@@ -62,7 +279,9 @@
         121.6146
       ],
       "collaborators": [
-        "Ching-Jui Lai"
+        "Chih-Yun Lin",
+        "Hsin Lin",
+        "Tzen Ong"
       ],
       "papers": [
         "Quantum simulation collaborations"
@@ -83,21 +302,7 @@
       ]
     },
     {
-      "name": "University of Copenhagen",
-      "country": "Denmark",
-      "location": [
-        55.6805,
-        12.5615
-      ],
-      "collaborators": [
-        "Ronin Wu"
-      ],
-      "papers": [
-        "Quantum simulation collaborations"
-      ]
-    },
-    {
-      "name": "Fraunhofer ITWM",
+      "name": "Fraunhofer Institute for Industrial Mathematics (ITWM)",
       "country": "Germany",
       "location": [
         49.4447,
@@ -107,107 +312,91 @@
         "Arcesio Castañeda Medina"
       ],
       "papers": [
-        "Optimal number-conserved linear encoding for practical fermionic simulation"
+        "Quantum simulation collaborations"
       ]
     },
     {
-      "name": "Imperial College London",
-      "country": "United Kingdom",
+      "name": "Insilico Medicine Shanghai Ltd.",
+      "country": "China",
       "location": [
-        51.4988,
-        -0.1749
+        31.2304,
+        121.4737
       ],
       "collaborators": [
-        "Myungshik Kim",
-        "Man Hei Cheng"
+        "Fang Ren"
       ],
       "papers": [
-        "Optimal number-conserved linear encoding for practical fermionic simulation"
+        "Quantum simulation collaborations"
       ]
     },
     {
-      "name": "City University of Hong Kong",
-      "country": "Hong Kong",
+      "name": "Yale University",
+      "country": "United States",
       "location": [
-        22.3366,
-        114.1733
+        41.3163,
+        -72.9223
       ],
       "collaborators": [
-        "Qian Wang"
+        "Yu Shee"
       ],
       "papers": [
-        "Optimal number-conserved linear encoding for practical fermionic simulation"
+        "Quantum simulation collaborations"
       ]
     },
     {
-      "name": "Fraunhofer Center for Maritime Logistics",
-      "country": "Germany",
+      "name": "University of Chicago",
+      "country": "United States",
       "location": [
-        53.5511,
-        9.9937
+        41.7897,
+        -87.5997
       ],
       "collaborators": [
-        "Valeria Bartsch"
+        "Lucas Wang"
       ],
       "papers": [
-        "Optimal number-conserved linear encoding for practical fermionic simulation"
+        "Quantum simulation collaborations"
       ]
     },
     {
-      "name": "Foxconn (Taiwan)",
-      "country": "TW",
+      "name": "QunaSys Europe",
+      "country": "Denmark",
       "location": [
-        0,
-        0
+        55.6761,
+        12.5683
       ],
       "collaborators": [
-        "Wei-Yin Chiang",
-        "Jen-Yueh Hsiao"
+        "Ronin Wu"
       ],
       "papers": [
-        "Exploring the Advantages of Quantum Generative Adversarial Networks in Generative Chemistry"
+        "Quantum simulation collaborations"
       ]
     },
     {
-      "name": "Zapata (United States)",
-      "country": "US",
+      "name": "University of Science and Technology of China",
+      "country": "China",
       "location": [
-        0,
-        0
+        31.8389,
+        117.257
       ],
       "collaborators": [
-        "Yudong Cao"
+        "Yangsen Ye"
       ],
       "papers": [
-        "Exploring the Advantages of Quantum Generative Adversarial Networks in Generative Chemistry"
+        "Quantum simulation collaborations"
       ]
     },
     {
-      "name": "National Taiwan University",
-      "country": "TW",
+      "name": "Insilico Medicine Hong Kong Ltd.",
+      "country": "Hong Kong SAR, China",
       "location": [
-        0,
-        0
+        22.3193,
+        114.1694
       ],
       "collaborators": [
-        "Chien Hung Cho"
+        "Alex Zhavoronkov"
       ],
       "papers": [
-        "Doubling the order of approximation via the randomized product formula"
-      ]
-    },
-    {
-      "name": "Macquarie University",
-      "country": "AU",
-      "location": [
-        0,
-        0
-      ],
-      "collaborators": [
-        "Dominic W. Berry"
-      ],
-      "papers": [
-        "Doubling the order of approximation via the randomized product formula"
+        "Quantum simulation collaborations"
       ]
     }
   ]
