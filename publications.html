@@ -95,6 +95,16 @@
             background: var(--bg-color);
         }
 
+        a:focus-visible,
+        button:focus-visible,
+        input:focus-visible,
+        select:focus-visible,
+        textarea:focus-visible {
+            outline: 3px solid #ffbf47;
+            outline-offset: 2px;
+            border-radius: 4px;
+        }
+
         .container {
             max-width: 900px;
             margin: 0 auto;
@@ -260,6 +270,7 @@
         .pub-list li {
             padding: 12px 0;
             border-bottom: 1px solid var(--border-color);
+            max-width: 76ch;
         }
 
         .pub-list li:last-child {
@@ -495,6 +506,12 @@
                 font-size: 1.8rem;
             }
 
+            .pub-list li {
+                max-width: 100%;
+                padding: 10px 0;
+                line-height: 1.6;
+            }
+
             header .chinese-name {
                 font-size: 1.2rem;
             }
@@ -548,7 +565,7 @@
         </div>
     </header>
 
-    <nav>
+    <nav aria-label="Primary">
         <div class="container">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -560,7 +577,7 @@
     </nav>
 
     <div class="publications-wrapper">
-        <aside class="side-nav">
+        <aside class="side-nav" aria-label="Publications sections">
             <h3>Contents</h3>
             <ul>
                 <li><a href="#arxiv">arXiv Preprints</a></li>
