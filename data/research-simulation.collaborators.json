@@ -1,6 +1,7 @@
 {
   "topic": "Quantum Simulation",
   "collaborators": [
+    "Valeria Bartsch",
     "Yu-Cheng Chen",
     "Man Hei Cheng",
     "Alice Hu",
@@ -10,6 +11,7 @@
     "Yen-Chu Lin",
     "Arcesio Castañeda Medina",
     "Mengzhen Ren",
+    "Qian Wang",
     "Ronin Wu"
   ],
   "institutions": [
@@ -96,6 +98,34 @@
       "collaborators": [
         "Myungshik Kim",
         "Man Hei Cheng"
+      ],
+      "papers": [
+        "Optimal number-conserved linear encoding for practical fermionic simulation"
+      ]
+    },
+    {
+      "name": "City University of Hong Kong",
+      "country": "Hong Kong",
+      "location": [
+        22.3366,
+        114.1733
+      ],
+      "collaborators": [
+        "Qian Wang"
+      ],
+      "papers": [
+        "Optimal number-conserved linear encoding for practical fermionic simulation"
+      ]
+    },
+    {
+      "name": "Fraunhofer Center for Maritime Logistics",
+      "country": "Germany",
+      "location": [
+        53.5511,
+        9.9937
+      ],
+      "collaborators": [
+        "Valeria Bartsch"
       ],
       "papers": [
         "Optimal number-conserved linear encoding for practical fermionic simulation"
