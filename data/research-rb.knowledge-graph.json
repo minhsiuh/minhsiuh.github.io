@@ -50,8 +50,8 @@
       "name": "Adrian Auer",
       "affiliations": [
         {
-          "institutionId": "I006",
-          "institution": "University of Konstanz",
+          "institutionId": "I002",
+          "institution": "IQM (Germany)",
           "country": "Germany",
           "startYear": null,
           "endYear": null,
@@ -75,26 +75,14 @@
           "endYear": null,
           "isPrimary": true,
           "source": "manual"
-        }
-      ],
-      "paperIds": [
-        "P001",
-        "P002",
-        "P003",
-        "P004"
-      ]
-    },
-    {
-      "collaboratorId": "C003",
-      "name": "Min-Hsiu Hsieh",
-      "affiliations": [
+        },
         {
-          "institutionId": "I001",
-          "institution": "Hon Hai Quantum Computing Research Center",
-          "country": "Taiwan",
+          "institutionId": "I002",
+          "institution": "IQM (Germany)",
+          "country": "Germany",
           "startYear": null,
           "endYear": null,
-          "isPrimary": true,
+          "isPrimary": false,
           "source": "manual"
         }
       ],
@@ -106,11 +94,11 @@
       ]
     },
     {
-      "collaboratorId": "C004",
+      "collaboratorId": "C003",
       "name": "Kavan Modi",
       "affiliations": [
         {
-          "institutionId": "I002",
+          "institutionId": "I003",
           "institution": "Monash University",
           "country": "Australia",
           "startYear": null,
@@ -126,16 +114,25 @@
       ]
     },
     {
-      "collaboratorId": "C005",
+      "collaboratorId": "C004",
       "name": "Miha Papič",
       "affiliations": [
+        {
+          "institutionId": "I002",
+          "institution": "IQM (Germany)",
+          "country": "Germany",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        },
         {
           "institutionId": "I005",
           "institution": "Ludwig-Maximilians-Universität München",
           "country": "Germany",
           "startYear": null,
           "endYear": null,
-          "isPrimary": true,
+          "isPrimary": false,
           "source": "manual"
         }
       ],
@@ -144,11 +141,11 @@
       ]
     },
     {
-      "collaboratorId": "C006",
+      "collaboratorId": "C005",
       "name": "Thomas M. Stace",
       "affiliations": [
         {
-          "institutionId": "I003",
+          "institutionId": "I004",
           "institution": "University of Queensland",
           "country": "Australia",
           "startYear": null,
@@ -162,16 +159,25 @@
       ]
     },
     {
-      "collaboratorId": "C007",
+      "collaboratorId": "C006",
       "name": "Inés de Vega",
       "affiliations": [
+        {
+          "institutionId": "I002",
+          "institution": "IQM (Germany)",
+          "country": "Germany",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        },
         {
           "institutionId": "I005",
           "institution": "Ludwig-Maximilians-Universität München",
           "country": "Germany",
           "startYear": null,
           "endYear": null,
-          "isPrimary": true,
+          "isPrimary": false,
           "source": "manual"
         }
       ],
@@ -180,12 +186,12 @@
       ]
     },
     {
-      "collaboratorId": "C008",
+      "collaboratorId": "C007",
       "name": "Shih-Xian Yang",
       "affiliations": [
         {
-          "institutionId": "I004",
-          "institution": "National Cheng Kung University",
+          "institutionId": "I001",
+          "institution": "Hon Hai Quantum Computing Research Center",
           "country": "Taiwan",
           "startYear": null,
           "endYear": null,
@@ -208,24 +214,24 @@
     },
     {
       "institutionId": "I002",
+      "name": "IQM (Germany)",
+      "country": "Germany",
+      "lat": 48.1351,
+      "lon": 11.582
+    },
+    {
+      "institutionId": "I003",
       "name": "Monash University",
       "country": "Australia",
       "lat": -37.9105,
       "lon": 145.1362
     },
     {
-      "institutionId": "I003",
+      "institutionId": "I004",
       "name": "University of Queensland",
       "country": "Australia",
       "lat": -27.4975,
       "lon": 153.0137
-    },
-    {
-      "institutionId": "I004",
-      "name": "National Cheng Kung University",
-      "country": "Taiwan",
-      "lat": 22.9988,
-      "lon": 120.2195
     },
     {
       "institutionId": "I005",
@@ -233,31 +239,18 @@
       "country": "Germany",
       "lat": 48.1509,
       "lon": 11.5802
-    },
-    {
-      "institutionId": "I006",
-      "name": "University of Konstanz",
-      "country": "Germany",
-      "lat": 47.69,
-      "lon": 9.188
     }
   ],
   "edges": [
     {
       "paperId": "P001",
-      "collaboratorId": "C008",
-      "institutionId": "I004",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P001",
-      "collaboratorId": "C002",
+      "collaboratorId": "C007",
       "institutionId": "I001",
       "role": "coauthor"
     },
     {
       "paperId": "P001",
-      "collaboratorId": "C003",
+      "collaboratorId": "C002",
       "institutionId": "I001",
       "role": "coauthor"
     },
@@ -269,61 +262,31 @@
     },
     {
       "paperId": "P002",
-      "collaboratorId": "C004",
-      "institutionId": "I002",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P002",
       "collaboratorId": "C003",
-      "institutionId": "I001",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P003",
-      "collaboratorId": "C002",
-      "institutionId": "I001",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P003",
-      "collaboratorId": "C004",
-      "institutionId": "I002",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P003",
-      "collaboratorId": "C006",
       "institutionId": "I003",
       "role": "coauthor"
     },
     {
       "paperId": "P003",
-      "collaboratorId": "C003",
-      "institutionId": "I001",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P004",
       "collaboratorId": "C002",
       "institutionId": "I001",
       "role": "coauthor"
     },
     {
-      "paperId": "P004",
-      "collaboratorId": "C005",
-      "institutionId": "I005",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P004",
-      "collaboratorId": "C001",
-      "institutionId": "I006",
-      "role": "coauthor"
-    },
-    {
-      "paperId": "P004",
+      "paperId": "P003",
       "collaboratorId": "C003",
+      "institutionId": "I003",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P003",
+      "collaboratorId": "C005",
+      "institutionId": "I004",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P004",
+      "collaboratorId": "C002",
       "institutionId": "I001",
       "role": "coauthor"
     },
@@ -335,8 +298,20 @@
     },
     {
       "paperId": "P004",
-      "collaboratorId": "C007",
-      "institutionId": "I005",
+      "collaboratorId": "C001",
+      "institutionId": "I002",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P004",
+      "collaboratorId": "C003",
+      "institutionId": "I003",
+      "role": "coauthor"
+    },
+    {
+      "paperId": "P004",
+      "collaboratorId": "C006",
+      "institutionId": "I002",
       "role": "coauthor"
     }
   ]

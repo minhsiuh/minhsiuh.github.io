@@ -8,8 +8,7 @@
     "Thomas M. Stace",
     "Miha Papič",
     "Adrian Auer",
-    "Inés de Vega",
-    "Min-Hsiu Hsieh"
+    "Inés de Vega"
   ],
   "institutions": [
     {
@@ -20,12 +19,30 @@
         121.5775
       ],
       "collaborators": [
-        "Pedro Figueroa-Romero",
-        "Min-Hsiu Hsieh"
+        "Shih-Xian Yang",
+        "Pedro Figueroa-Romero"
       ],
       "papers": [
+        "Machine Learning of Average Non-Markovianity from Randomized Benchmarking",
         "Towards a general framework of Randomized Benchmarking incorporating non-Markovian Noise",
         "Randomized Benchmarking for Non-Markovian Noise"
+      ]
+    },
+    {
+      "name": "IQM (Germany)",
+      "country": "Germany",
+      "location": [
+        48.1351,
+        11.582
+      ],
+      "collaborators": [
+        "Pedro Figueroa-Romero",
+        "Miha Papič",
+        "Adrian Auer",
+        "Inés de Vega"
+      ],
+      "papers": [
+        "Operational Markovianization in Randomized Benchmarking"
       ]
     },
     {
@@ -57,20 +74,6 @@
       ]
     },
     {
-      "name": "National Cheng Kung University",
-      "country": "Taiwan",
-      "location": [
-        22.9988,
-        120.2195
-      ],
-      "collaborators": [
-        "Shih-Xian Yang"
-      ],
-      "papers": [
-        "Machine Learning of Average Non-Markovianity from Randomized Benchmarking"
-      ]
-    },
-    {
       "name": "Ludwig-Maximilians-Universität München",
       "country": "Germany",
       "location": [
@@ -80,20 +83,6 @@
       "collaborators": [
         "Miha Papič",
         "Inés de Vega"
-      ],
-      "papers": [
-        "Operational Markovianization in Randomized Benchmarking"
-      ]
-    },
-    {
-      "name": "University of Konstanz",
-      "country": "Germany",
-      "location": [
-        47.69,
-        9.188
-      ],
-      "collaborators": [
-        "Adrian Auer"
       ],
       "papers": [
         "Operational Markovianization in Randomized Benchmarking"
