@@ -948,7 +948,7 @@
                     L.marker(inst.location).addTo(map).bindPopup(popup);
                 });
                 if(pts.length){
-                    const bounds=L.latLngBounds(pts); map.fitBounds(bounds.pad(0.18));
+                    const bounds=L.latLngBounds(pts);
                     const FitControl=L.Control.extend({options:{position:'topright'},onAdd:function(){const btn=L.DomUtil.create('button','fit-map-btn');btn.type='button';btn.innerText='Fit all';L.DomEvent.disableClickPropagation(btn);L.DomEvent.on(btn,'click',()=>map.fitBounds(bounds.pad(0.18)));return btn;}});
                     map.addControl(new FitControl());
                 }
