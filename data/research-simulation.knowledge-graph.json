@@ -680,14 +680,6 @@
     },
     {
       "collaboratorId": "C030",
-      "name": "Ann Yang",
-      "affiliations": [],
-      "paperIds": [
-        "P008"
-      ]
-    },
-    {
-      "collaboratorId": "C031",
       "name": "Ya-Chu Yang",
       "affiliations": [
         {
@@ -701,11 +693,12 @@
         }
       ],
       "paperIds": [
+        "P008",
         "P009"
       ]
     },
     {
-      "collaboratorId": "C032",
+      "collaboratorId": "C031",
       "name": "Yangsen Ye",
       "affiliations": [
         {
@@ -723,7 +716,7 @@
       ]
     },
     {
-      "collaboratorId": "C033",
+      "collaboratorId": "C032",
       "name": "Tzu-Lan Yeh",
       "affiliations": [
         {
@@ -741,7 +734,7 @@
       ]
     },
     {
-      "collaboratorId": "C034",
+      "collaboratorId": "C033",
       "name": "Alex Zhavoronkov",
       "affiliations": [
         {
@@ -1089,7 +1082,7 @@
     },
     {
       "paperId": "P006",
-      "collaboratorId": "C032",
+      "collaboratorId": "C031",
       "institutionId": "I024",
       "role": "coauthor"
     },
@@ -1137,7 +1130,7 @@
     },
     {
       "paperId": "P008",
-      "collaboratorId": "C033",
+      "collaboratorId": "C032",
       "institutionId": "I014",
       "role": "coauthor"
     },
@@ -1150,7 +1143,7 @@
     {
       "paperId": "P008",
       "collaboratorId": "C030",
-      "institutionId": null,
+      "institutionId": "I014",
       "role": "coauthor"
     },
     {
@@ -1167,7 +1160,7 @@
     },
     {
       "paperId": "P009",
-      "collaboratorId": "C031",
+      "collaboratorId": "C030",
       "institutionId": "I014",
       "role": "coauthor"
     },
@@ -1209,7 +1202,7 @@
     },
     {
       "paperId": "P009",
-      "collaboratorId": "C034",
+      "collaboratorId": "C033",
       "institutionId": "I025",
       "role": "coauthor"
     },
