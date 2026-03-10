@@ -163,14 +163,14 @@
     },
     {
       "id": "talks-12",
-      "contentHtml": "Adam Wills, Ting-Chun Lin, Min-Hsiu Hsieh. General Distance Balancing for Quantum Locally Testable Codes. AQIS 2023.",
+      "contentHtml": "Adam Wills, Ting-Chun Lin, Min-Hsiu Hsieh. General Distance Balancing for Quantum Locally Testable Codes. The 23rd Asian Conference on Quantum Information Science (AQIS 2023).",
       "title": "General Distance Balancing for Quantum Locally Testable Codes",
       "authors": [
         "Adam Wills",
         "Ting-Chun Lin",
         "Min-Hsiu Hsieh"
       ],
-      "venue": "AQIS 2023",
+      "venue": "The 23rd Asian Conference on Quantum Information Science (AQIS 2023)",
       "date": "2023",
       "location": "",
       "type": "Talk"
