@@ -1208,8 +1208,8 @@
                             const plainEnc = encodeURIComponent(plainCitationText(p));
                             const bibSource = { title: titleText, authors: authorText, year: p.year };
                             const typeText = String(item.type || '').trim();
-                            const isLongType = /long\s*(talk|plenary)/i.test(typeText);
-                            const talkBadge = (isTalk && isLongType) ? `<span class="talk-type-badge">${esc(typeText)}</span>` : '';
+                            const isHighlightedType = /(long|short)\s*(talk|plenary)/i.test(typeText);
+                            const talkBadge = (isTalk && isHighlightedType) ? `<span class="talk-type-badge">${esc(typeText)}</span>` : '';
                             const talkRefInfo = isTalk
                               ? [item.venue, item.location, item.date].filter(Boolean).join(', ')
                               : '';
