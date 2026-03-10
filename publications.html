@@ -892,24 +892,94 @@
                 return String(s || '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
             }
 
-            function bibtex(item, key, opts = {}) {
-                const type = opts.type || 'article';
-                const title = (item.title || '').replace(/[{}]/g, '');
-                const authors = (item.authors || '').replace(/[{}]/g, '');
-                const year = item.year || 'N/A';
-                const fields = [
-                    `  title={${title}}`,
-                    `  author={${authors}}`,
-                    `  year={${year}}`
-                ];
+            function bibEscape(s) {
+                return String(s || '').replace(/[{}]/g, '').trim();
+            }
 
-                if (opts.refInfo) {
-                    if (type === 'inproceedings') fields.push(`  booktitle={${opts.refInfo.replace(/[{}]/g, '')}}`);
-                    else fields.push(`  journal={${opts.refInfo.replace(/[{}]/g, '')}}`);
+            function extractDoiValue(doiHref) {
+                if (!doiHref) return '';
+                const m = doiHref.match(/doi\.org\/(.+)$/i);
+                return m ? m[1] : doiHref;
+            }
+
+            function extractPages(refInfo) {
+                const s = String(refInfo || '');
+                const range = s.match(/pp?\.\s*([0-9]+)\s*[-–]\s*([0-9]+)/i) || s.match(/\b([0-9]+)\s*[-–]\s*([0-9]+)\b/);
+                if (range) return `${range[1]}--${range[2]}`;
+                const single = s.match(/,\s*([0-9]+)\s*(?:\(|$)/);
+                return single ? single[1] : '';
+            }
+
+            function extractVolume(refInfo) {
+                const s = String(refInfo || '');
+                const explicit = s.match(/\bvol\.?\s*([0-9]+)/i);
+                if (explicit) return explicit[1];
+                const inferred = s.match(/\b([0-9]+)\s*,\s*[0-9]+\s*(?:\(|$)/);
+                return inferred ? inferred[1] : '';
+            }
+
+            function extractNumber(refInfo) {
+                const m = String(refInfo || '').match(/\bno\.?\s*([0-9]+)/i) || String(refInfo || '').match(/\bissue\s*:?\s*([0-9]+)/i);
+                return m ? m[1] : '';
+            }
+
+            function extractArxivId(arxivHref) {
+                if (!arxivHref) return '';
+                const m = arxivHref.match(/arxiv\.org\/abs\/([^/?#]+)/i);
+                return m ? m[1] : '';
+            }
+
+            function buildBibtex(mode, item, key, extra = {}) {
+                const title = bibEscape(item.title);
+                const authors = bibEscape(item.authors);
+                const year = bibEscape(item.year || 'N/A');
+
+                if (mode === 'arxiv') {
+                    const arxivId = extractArxivId(extra.arxivHref);
+                    const primaryClass = arxivId.startsWith('quant-ph/') ? 'quant-ph' : 'quant-ph';
+                    return `@misc{${key},\n  author = {${authors}},\n  title = {${title}},\n  year = {${year}},\n  eprint = {arXiv:${arxivId}},\n  archivePrefix = {arXiv},\n  primaryClass = {${primaryClass}}\n}`;
                 }
-                if (opts.url) fields.push(`  url={${opts.url}}`);
 
-                return `@${type}{${key},\n${fields.join(',\n')}\n}`;
+                if (mode === 'conference') {
+                    const booktitle = bibEscape(extra.refInfo || 'Proceedings');
+                    const pages = extractPages(extra.refInfo);
+                    const fields = [
+                        `  author = {${authors}}`,
+                        `  title = {${title}}`,
+                        `  booktitle = {${booktitle}}`,
+                        `  year = {${year}}`
+                    ];
+                    if (pages) fields.push(`  pages = {${pages}}`);
+                    return `@inproceedings{${key},\n${fields.join(',\n')}\n}`;
+                }
+
+                if (mode === 'book') {
+                    const publisher = bibEscape(extra.publisher || '');
+                    const fields = [
+                        `  author = {${authors}}`,
+                        `  title = {${title}}`,
+                        `  year = {${year}}`
+                    ];
+                    if (publisher) fields.push(`  publisher = {${publisher}}`);
+                    return `@book{${key},\n${fields.join(',\n')}\n}`;
+                }
+
+                const journal = bibEscape(extra.refInfo || '');
+                const volume = extractVolume(extra.refInfo);
+                const number = extractNumber(extra.refInfo);
+                const pages = extractPages(extra.refInfo);
+                const doi = extractDoiValue(extra.doiHref);
+                const fields = [
+                    `  author = {${authors}}`,
+                    `  title = {${title}}`,
+                    `  journal = {${journal}}`,
+                    `  year = {${year}}`
+                ];
+                if (volume) fields.push(`  volume = {${volume}}`);
+                if (number) fields.push(`  number = {${number}}`);
+                if (pages) fields.push(`  pages = {${pages}}`);
+                if (doi) fields.push(`  doi = {${doi}}`);
+                return `@article{${key},\n${fields.join(',\n')}\n}`;
             }
 
             function copyText(text, btn) {
@@ -964,7 +1034,7 @@
                             const arxivId = p.arxiv ? (p.arxiv.href.match(/arxiv\.org\/abs\/([^/?#]+)/)?.[1] || 'link') : null;
                             const arxivLink = p.arxiv ? `<a href="${p.arxiv.href}" target="_blank" rel="noopener">arXiv:${arxivId}</a>` : `<a class="disabled">arXiv</a>`;
                             const plainEnc = encodeURIComponent(p.plain);
-                            const bibEnc = encodeURIComponent(bibtex(p, `arxiv_${i + 1}`, { type: 'article', refInfo: 'arXiv preprint', url: p.arxiv ? p.arxiv.href : '' }));
+                            const bibEnc = encodeURIComponent(buildBibtex('arxiv', p, `Hsieh${p.year}Arxiv${i + 1}`, { arxivHref: p.arxiv ? p.arxiv.href : '' }));
                             return `
                               <li>
                                 <article class="pub-card">
@@ -997,9 +1067,11 @@
                             const authorText = j.authors || p.authors;
                             const plainEnc = encodeURIComponent(p.plain);
                             const bibSource = { title: titleText, authors: authorText, year: p.year };
-                            const bibUrl = (p.doi && p.doi.href) ? p.doi.href : (p.arxiv && p.arxiv.href ? p.arxiv.href : '');
-                            const bibType = mode === 'conference-card' ? 'inproceedings' : 'article';
-                            const bibEnc = encodeURIComponent(bibtex(bibSource, `${keyPrefix}_${i + 1}`, { type: bibType, refInfo: j.refInfo || '', url: bibUrl }));
+                            const bibMode = mode === 'conference-card' ? 'conference' : 'journal';
+                            const bibKey = mode === 'conference-card'
+                              ? `Hsieh${p.year}Conf${i + 1}`
+                              : `Hsieh${p.year}Journal${i + 1}`;
+                            const bibEnc = encodeURIComponent(buildBibtex(bibMode, bibSource, bibKey, { refInfo: j.refInfo || '', doiHref: p.doi ? p.doi.href : '' }));
                             return `
                               <li>
                                 <article class="pub-card">
