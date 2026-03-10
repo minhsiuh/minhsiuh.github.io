@@ -34,14 +34,14 @@
     },
     {
       "id": "talks-3",
-      "contentHtml": "Yuxuan Du, Min-Hsiu Hsieh, Dacheng Tao. Efficient Learning for Linear Properties of Bounded-Gate Quantum Circuits. QTML 2025.",
+      "contentHtml": "Yuxuan Du, Min-Hsiu Hsieh, Dacheng Tao. Efficient Learning for Linear Properties of Bounded-Gate Quantum Circuits. The 9th International Conference on Quantum Techniques in Machine Learning (QTML 2025).",
       "title": "Efficient Learning for Linear Properties of Bounded-Gate Quantum Circuits",
       "authors": [
         "Yuxuan Du",
         "Min-Hsiu Hsieh",
         "Dacheng Tao"
       ],
-      "venue": "QTML 2025",
+      "venue": "The 9th International Conference on Quantum Techniques in Machine Learning (QTML 2025)",
       "date": "2025",
       "location": "",
       "type": "Talk"
