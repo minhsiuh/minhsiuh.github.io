@@ -4,7 +4,7 @@
   "items": [
     {
       "id": "talks-1",
-      "contentHtml": "Shi Jie Samuel Tan, Yifan Hong, Ting-Chun Lin, Michael J. Gullans, Min-Hsiu Hsieh. Single-Shot Universality in Quantum LDPC Codes via Code-Switching. Long Plenary Talk in QIP 2026.",
+      "contentHtml": "Shi Jie Samuel Tan, Yifan Hong, Ting-Chun Lin, Michael J. Gullans, Min-Hsiu Hsieh. Single-Shot Universality in Quantum LDPC Codes via Code-Switching. Long Plenary Talk in The 29th Conference on Quantum Information Processing (QIP 2026).",
       "title": "Single-Shot Universality in Quantum LDPC Codes via Code-Switching",
       "authors": [
         "Shi Jie Samuel Tan",
@@ -13,21 +13,21 @@
         "Michael J. Gullans",
         "Min-Hsiu Hsieh"
       ],
-      "venue": "QIP 2026",
+      "venue": "The 29th Conference on Quantum Information Processing (QIP 2026)",
       "date": "2026",
       "location": "",
       "type": "Long Plenary Talk"
     },
     {
       "id": "talks-2",
-      "contentHtml": "Takaya Matsuura, Masahito Hayashi, Min-Hsiu Hsieh. Universal classical-quantum channel resolvability and private channel coding. QIP 2026.",
+      "contentHtml": "Takaya Matsuura, Masahito Hayashi, Min-Hsiu Hsieh. Universal classical-quantum channel resolvability and private channel coding. The 29th Conference on Quantum Information Processing (QIP 2026).",
       "title": "Universal classical-quantum channel resolvability and private channel coding",
       "authors": [
         "Takaya Matsuura",
         "Masahito Hayashi",
         "Min-Hsiu Hsieh"
       ],
-      "venue": "QIP 2026",
+      "venue": "The 29th Conference on Quantum Information Processing (QIP 2026)",
       "date": "2026",
       "location": "",
       "type": "Talk"
