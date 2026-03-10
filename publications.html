@@ -1216,8 +1216,14 @@
                             const titleText = cleanTitle(a.title || parseJournalHead(p.head || '').title || p.head || p.plain);
                             const authorText = (a.author || parseJournalHead(p.head || '').authors || '').replace(/\s+and\s+/gi, ', ');
 
+                            const journalName = String(a.journal || '')
+                              .replace(/,?\s*Volume:\s*\d+.*$/i, '')
+                              .replace(/\s+Advance Publication\s+\d+\s*[-–]\s*\d+$/i, ' Advance Publication')
+                              .replace(/,?\s*pages?\s*\d+\s*[-–]\s*\d+.*$/i, '')
+                              .replace(/,?\s*pp?\.?\s*\d+\s*[-–]\s*\d+.*$/i, '')
+                              .trim();
                             const ieeeParts = [];
-                            if (a.journal) ieeeParts.push(a.journal);
+                            if (journalName) ieeeParts.push(journalName);
                             if (a.volume) ieeeParts.push(`vol. ${a.volume}`);
                             if (a.number) ieeeParts.push(`no. ${a.number}`);
                             if (a.pages) {
