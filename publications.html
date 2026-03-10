@@ -310,12 +310,14 @@
             margin-bottom: 0;
         }
 
+        #books-list,
         #journals-list,
         #conferences-list {
             list-style: none;
             padding-left: 0;
         }
 
+        #books-list li,
         #journals-list li,
         #conferences-list li {
             padding: 0;
@@ -324,6 +326,7 @@
             margin-bottom: 8px;
         }
 
+        #books-list li:last-child,
         #journals-list li:last-child,
         #conferences-list li:last-child {
             margin-bottom: 0;
@@ -967,6 +970,13 @@
                 return m ? m[1] : '';
             }
 
+            function extractPublisher(refInfo) {
+                const s = String(refInfo || '');
+                const known = s.match(/(Springer[^,.;]*|Cambridge University Press|IEEE|ACM|Oxford University Press|Elsevier|Wiley)/i);
+                if (known) return known[1];
+                return '';
+            }
+
             function buildBibtex(mode, item, key, extra = {}) {
                 const title = bibEscape(item.title);
                 const authors = bibEscape(item.authors);
@@ -1007,6 +1017,7 @@
                         `  year = {${year}}`
                     ];
                     if (publisher) fields.push(`  publisher = {${publisher}}`);
+                    if (extra.url) fields.push(`  url = {${extra.url}}`);
                     return `@book{${key},\n${fields.join(',\n')}\n}`;
                 }
 
@@ -1105,22 +1116,28 @@
                                 copyText(text, btn);
                             });
                         });
-                    } else if (mode === 'journal-card' || mode === 'conference-card') {
+                    } else if (mode === 'book-card' || mode === 'journal-card' || mode === 'conference-card') {
                         list.innerHTML = items.map((item, i) => {
                             const p = parseItem(item.contentHtml || '');
                             const j = parseJournalHead(p.head || '');
                             const arxivLink = p.arxiv ? `<a href="${p.arxiv.href}" target="_blank" rel="noopener">arXiv</a>` : `<a class="disabled">arXiv</a>`;
                             const doiLink = p.doi ? `<a href="${p.doi.href}" target="_blank" rel="noopener">DOI</a>` : `<a class="disabled">DOI</a>`;
-                            const keyPrefix = mode === 'conference-card' ? 'conf' : 'journal';
-                            const titleText = cleanTitle(j.title || p.head || p.plain);
+                                                        const titleText = cleanTitle(j.title || p.head || p.plain);
                             const authorText = j.authors || '';
                             const plainEnc = encodeURIComponent(plainCitationText(p));
                             const bibSource = { title: titleText, authors: authorText, year: p.year };
-                            const bibMode = mode === 'conference-card' ? 'conference' : 'journal';
-                            const bibKey = mode === 'conference-card'
-                              ? `Hsieh${p.year}Conf${i + 1}`
-                              : `Hsieh${p.year}Journal${i + 1}`;
-                            const bibEnc = encodeURIComponent(buildBibtex(bibMode, bibSource, bibKey, { refInfo: j.refInfo || '', doiHref: p.doi ? p.doi.href : '' }));
+                            const isBook = mode === 'book-card';
+                            const isConf = mode === 'conference-card';
+                            const bibMode = isBook ? 'book' : (isConf ? 'conference' : 'journal');
+                            const bibKey = isBook
+                              ? `Hsieh${p.year}Book${i + 1}`
+                              : (isConf ? `Hsieh${p.year}Conf${i + 1}` : `Hsieh${p.year}Journal${i + 1}`);
+                            const bibEnc = encodeURIComponent(buildBibtex(bibMode, bibSource, bibKey, {
+                              refInfo: j.refInfo || '',
+                              doiHref: p.doi ? p.doi.href : '',
+                              publisher: extractPublisher(j.refInfo || ''),
+                              url: (p.doi && p.doi.href) ? p.doi.href : (p.arxiv && p.arxiv.href ? p.arxiv.href : '')
+                            }));
                             return `
                               <li>
                                 <article class="pub-card">
@@ -1158,7 +1175,7 @@
 
             const [arxivCount, booksCount, journalCount, confCount, talksCount] = await Promise.all([
                 renderListFromJson('arxiv-list', 'publications.arxiv.json', 'card'),
-                renderListFromJson('books-list', 'publications.books.json'),
+                renderListFromJson('books-list', 'publications.books.json', 'book-card'),
                 renderListFromJson('journals-list', 'publications.journals.json', 'journal-card'),
                 renderListFromJson('conferences-list', 'publications.conferences.json', 'conference-card'),
                 renderListFromJson('talks-list', 'publications.talks.json')
