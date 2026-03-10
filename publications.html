@@ -312,14 +312,16 @@
 
         #books-list,
         #journals-list,
-        #conferences-list {
+        #conferences-list,
+        #talks-list {
             list-style: none;
             padding-left: 0;
         }
 
         #books-list li,
         #journals-list li,
-        #conferences-list li {
+        #conferences-list li,
+        #talks-list li {
             padding: 0;
             border-bottom: none;
             max-width: 100%;
@@ -328,7 +330,8 @@
 
         #books-list li:last-child,
         #journals-list li:last-child,
-        #conferences-list li:last-child {
+        #conferences-list li:last-child,
+        #talks-list li:last-child {
             margin-bottom: 0;
         }
 
@@ -1121,7 +1124,7 @@
                                 copyText(text, btn);
                             });
                         });
-                    } else if (mode === 'book-card' || mode === 'journal-card' || mode === 'conference-card') {
+                    } else if (mode === 'book-card' || mode === 'journal-card' || mode === 'conference-card' || mode === 'talk-card') {
                         list.innerHTML = items.map((item, i) => {
                             const p = parseItem(item.contentHtml || '');
                             const j = parseJournalHead(p.head || '');
@@ -1131,6 +1134,7 @@
                             const authorText = j.authors || '';
                             const plainEnc = encodeURIComponent(plainCitationText(p));
                             const bibSource = { title: titleText, authors: authorText, year: p.year };
+                            const isTalk = mode === 'talk-card';
                             const isBook = mode === 'book-card';
                             const isConf = mode === 'conference-card';
                             const bibMode = isBook ? 'book' : (isConf ? 'conference' : 'journal');
@@ -1149,13 +1153,13 @@
                                   <h4 class="pub-title" title="${esc(titleText)}">${esc(titleText)}</h4>
                                   <p class="pub-authors">${esc(authorText).replace('Min-Hsiu Hsieh', '<span class="author-me">Min-Hsiu Hsieh</span>')}</p>
                                   <div class="pub-links"><span style="color:#4b5563; margin-right:10px;">${esc(j.refInfo || '')}</span></div>
-                                  <div class="pub-actions">
+                                  ${isTalk ? '' : `<div class="pub-actions">
                                     <span>[${arxivLink}]</span>
                                     <span>[${doiLink}]</span>
                                     <span style="color:#9ca3af;">|</span>
                                     <button type="button" data-copy="plain" data-copy-text="${plainEnc}">Copy citation (plain)</button>
                                     <button type="button" data-copy="bib" data-copy-text="${bibEnc}">Copy Bibtex</button>
-                                  </div>
+                                  </div>`}
                                 </article>
                               </li>`;
                         }).join('');
@@ -1183,7 +1187,7 @@
                 renderListFromJson('books-list', 'publications.books.json', 'book-card'),
                 renderListFromJson('journals-list', 'publications.journals.json', 'journal-card'),
                 renderListFromJson('conferences-list', 'publications.conferences.json', 'conference-card'),
-                renderListFromJson('talks-list', 'publications.talks.json')
+                renderListFromJson('talks-list', 'publications.talks.json', 'talk-card')
             ]);
 
             updateStats({ arxivCount, journalCount, confCount });
