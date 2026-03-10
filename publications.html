@@ -1216,19 +1216,21 @@
                             const titleText = cleanTitle(a.title || parseJournalHead(p.head || '').title || p.head || p.plain);
                             const authorText = (a.author || parseJournalHead(p.head || '').authors || '').replace(/\s+and\s+/gi, ', ');
 
-                            const refParts = [];
-                            if (a.journal) refParts.push(a.journal);
-                            if (a.volume && a.number) refParts.push(`${a.volume}(${a.number})`);
-                            else if (a.volume) refParts.push(a.volume);
-                            else if (a.number) refParts.push(`(${a.number})`);
-                            if (a.pages) refParts.push(a.pages);
-                            const refCore = refParts.join(', ');
-                            const refInfo = a.year ? `${refCore} (${a.year})` : refCore;
+                            const ieeeParts = [];
+                            if (a.journal) ieeeParts.push(a.journal);
+                            if (a.volume) ieeeParts.push(`vol. ${a.volume}`);
+                            if (a.number) ieeeParts.push(`no. ${a.number}`);
+                            if (a.pages) {
+                                const pageText = /^\d+--\d+$/.test(String(a.pages)) ? `pp. ${a.pages}` : `art. no. ${a.pages}`;
+                                ieeeParts.push(pageText);
+                            }
+                            if (a.year) ieeeParts.push(String(a.year));
+                            const refInfo = ieeeParts.join(', ');
 
                             const arxivLink = p.arxiv ? `<a href="${p.arxiv.href}" target="_blank" rel="noopener">arXiv</a>` : `<a class="disabled">arXiv</a>`;
                             const doiHref = a.doi ? `https://doi.org/${a.doi}` : (p.doi ? p.doi.href : '');
                             const doiLink = doiHref ? `<a href="${doiHref}" target="_blank" rel="noopener">DOI</a>` : `<a class="disabled">DOI</a>`;
-                            const plainEnc = encodeURIComponent(`${authorText}. ${titleText}. ${refInfo}.`);
+                            const plainEnc = encodeURIComponent(`${authorText}, "${titleText}," ${refInfo}.`);
                             const bibEnc = encodeURIComponent(buildBibtexArticleFields(a, `Hsieh${a.year || 'YYYY'}Journal${i + 1}`));
 
                             return `
