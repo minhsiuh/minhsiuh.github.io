@@ -149,43 +149,144 @@
     },
     {
       "id": "talks-11",
-      "contentHtml": "Ting-Chun Lin, Adam Wills, Min-Hsiu Hsieh. Geometrically Local Quantum and Classical Codes from Subdivision. QIP 2024, Taipei, Taiwan, 13-19/01/2024."
+      "contentHtml": "Ting-Chun Lin, Adam Wills, Min-Hsiu Hsieh. Geometrically Local Quantum and Classical Codes from Subdivision. QIP 2024, Taipei, Taiwan, 13-19/01/2024.",
+      "title": "Geometrically Local Quantum and Classical Codes from Subdivision",
+      "authors": [
+        "Ting-Chun Lin",
+        "Adam Wills",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "QIP 2024",
+      "date": "13-19/01/2024",
+      "location": "Taipei, Taiwan",
+      "type": "Talk"
     },
     {
       "id": "talks-12",
-      "contentHtml": "Adam Wills, Ting-Chun Lin, Min-Hsiu Hsieh. General Distance Balancing for Quantum Locally Testable Codes. AQIS 2023."
+      "contentHtml": "Adam Wills, Ting-Chun Lin, Min-Hsiu Hsieh. General Distance Balancing for Quantum Locally Testable Codes. AQIS 2023.",
+      "title": "General Distance Balancing for Quantum Locally Testable Codes",
+      "authors": [
+        "Adam Wills",
+        "Ting-Chun Lin",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "AQIS 2023",
+      "date": "2023",
+      "location": "",
+      "type": "Talk"
     },
     {
       "id": "talks-13",
-      "contentHtml": "Chien Hung Cho, Dominic W. Berry, Min-Hsiu Hsieh. Doubling the order of approximation via the randomized product formula. TQC 2023, Aveiro, Portugal, 24-28/07/2023."
+      "contentHtml": "Chien Hung Cho, Dominic W. Berry, Min-Hsiu Hsieh. Doubling the order of approximation via the randomized product formula. TQC 2023, Aveiro, Portugal, 24-28/07/2023.",
+      "title": "Doubling the order of approximation via the randomized product formula",
+      "authors": [
+        "Chien Hung Cho",
+        "Dominic W. Berry",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "TQC 2023",
+      "date": "24-28/07/2023",
+      "location": "Aveiro, Portugal",
+      "type": "Talk"
     },
     {
       "id": "talks-14",
-      "contentHtml": "Ting-Chun Lin, Isaac H. Kim, Min-Hsiu Hsieh. An operator extension of weak monotonicity. BIID 2023, Tübingen, Germany, 31/07-04/08/2023."
+      "contentHtml": "Ting-Chun Lin, Isaac H. Kim, Min-Hsiu Hsieh. An operator extension of weak monotonicity. BIID 2023, Tübingen, Germany, 31/07-04/08/2023.",
+      "title": "An operator extension of weak monotonicity",
+      "authors": [
+        "Ting-Chun Lin",
+        "Isaac H. Kim",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "BIID 2023",
+      "date": "31/07-04/08/2023",
+      "location": "Tübingen, Germany",
+      "type": "Talk"
     },
     {
       "id": "talks-15",
-      "contentHtml": "Irit Dinur, Min-Hsiu Hsieh, Ting-Chun Lin, Thomas Vidick. Good Quantum LDPC Codes with Linear Time Decoders. QIP 2023, Ghent, Belgium, 04-10/02/2023."
+      "contentHtml": "Irit Dinur, Min-Hsiu Hsieh, Ting-Chun Lin, Thomas Vidick. Good Quantum LDPC Codes with Linear Time Decoders. QIP 2023, Ghent, Belgium, 04-10/02/2023.",
+      "title": "Good Quantum LDPC Codes with Linear Time Decoders",
+      "authors": [
+        "Irit Dinur",
+        "Min-Hsiu Hsieh",
+        "Ting-Chun Lin",
+        "Thomas Vidick"
+      ],
+      "venue": "QIP 2023",
+      "date": "04-10/02/2023",
+      "location": "Ghent, Belgium",
+      "type": "Talk"
     },
     {
       "id": "talks-16",
-      "contentHtml": "Tom Gur, Min-Hsiu Hsieh, Sathyawageeswar Subramanian. Sublinear quantum algorithms for estimating von Neumann entropy. QIP 2022, Caltech, USA, 07-11/03/2022."
+      "contentHtml": "Tom Gur, Min-Hsiu Hsieh, Sathyawageeswar Subramanian. Sublinear quantum algorithms for estimating von Neumann entropy. QIP 2022, Caltech, USA, 07-11/03/2022.",
+      "title": "Sublinear quantum algorithms for estimating von Neumann entropy",
+      "authors": [
+        "Tom Gur",
+        "Min-Hsiu Hsieh",
+        "Sathyawageeswar Subramanian"
+      ],
+      "venue": "QIP 2022",
+      "date": "07-11/03/2022",
+      "location": "Caltech, USA",
+      "type": "Talk"
     },
     {
       "id": "talks-17",
-      "contentHtml": "Pedro Figueroa-Romero, Kavan Modi, Thomas M. Stace, Min-Hsiu Hsieh. Randomized benchmarking for non-Markovian noise. BIID'9 (Online)."
+      "contentHtml": "Pedro Figueroa-Romero, Kavan Modi, Thomas M. Stace, Min-Hsiu Hsieh. Randomized benchmarking for non-Markovian noise. BIID'9 (Online).",
+      "title": "Randomized benchmarking for non-Markovian noise",
+      "authors": [
+        "Pedro Figueroa-Romero",
+        "Kavan Modi",
+        "Thomas M. Stace",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "BIID 9",
+      "date": "",
+      "location": "Online",
+      "type": "Talk"
     },
     {
       "id": "talks-18",
-      "contentHtml": "Sathyawageeswar Subramanian and Min-Hsiu Hsieh. Quantum algorithm for estimating α-Renyi entropies of density matrices in an oracular setting. The 19th Asian Conference on Quantum Information Science (AQIS 2019), Seoul, Korea, 19-23/08/2019."
+      "contentHtml": "Sathyawageeswar Subramanian and Min-Hsiu Hsieh. Quantum algorithm for estimating α-Renyi entropies of density matrices in an oracular setting. The 19th Asian Conference on Quantum Information Science (AQIS 2019), Seoul, Korea, 19-23/08/2019.",
+      "title": "Quantum algorithm for estimating α-Renyi entropies of density matrices in an oracular setting",
+      "authors": [
+        "Sathyawageeswar Subramanian",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "19th Asian Conference on Quantum Information Science (AQIS 2019)",
+      "date": "19-23/08/2019",
+      "location": "Seoul, Korea",
+      "type": "Talk"
     },
     {
       "id": "talks-19",
-      "contentHtml": "Yuxuan Du, Min-Hsiu Hsieh and Dacheng Tao. Efficient Online Quantum Generative Adversarial Learning Algorithms with Applications. The 19th Asian Conference on Quantum Information Science (AQIS 2019), Seoul, Korea, 19-23/08/2019."
+      "contentHtml": "Yuxuan Du, Min-Hsiu Hsieh and Dacheng Tao. Efficient Online Quantum Generative Adversarial Learning Algorithms with Applications. The 19th Asian Conference on Quantum Information Science (AQIS 2019), Seoul, Korea, 19-23/08/2019.",
+      "title": "Efficient Online Quantum Generative Adversarial Learning Algorithms with Applications",
+      "authors": [
+        "Yuxuan Du",
+        "Min-Hsiu Hsieh",
+        "Dacheng Tao"
+      ],
+      "venue": "19th Asian Conference on Quantum Information Science (AQIS 2019)",
+      "date": "19-23/08/2019",
+      "location": "Seoul, Korea",
+      "type": "Talk"
     },
     {
       "id": "talks-20",
-      "contentHtml": "Madhav Krishnan Vijayan, Eric Chitambar, Min-Hsiu Hsieh. One-shot concentration of resource in a general resource theory. The 7th Beyond iid Conference in Information Theory, Sydney, Australia, 1-5/07/2019."
+      "contentHtml": "Madhav Krishnan Vijayan, Eric Chitambar, Min-Hsiu Hsieh. One-shot concentration of resource in a general resource theory. The 7th Beyond iid Conference in Information Theory, Sydney, Australia, 1-5/07/2019.",
+      "title": "One-shot concentration of resource in a general resource theory",
+      "authors": [
+        "Madhav Krishnan Vijayan",
+        "Eric Chitambar",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "7th Beyond iid Conference in Information Theory",
+      "date": "1-5/07/2019",
+      "location": "Sydney, Australia",
+      "type": "Talk"
     },
     {
       "id": "talks-21",
