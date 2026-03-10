@@ -717,7 +717,7 @@
                     <h4>Journal Publications</h4>
                 </div>
                 <table class="stats-table">
-                    <tbody>
+                    <tbody id="journal-stats-body">
                         <tr>
                             <td>IEEE Transactions on Information Theory</td>
                             <td class="count">29</td>
@@ -862,6 +862,36 @@
                 document.getElementById('journal-count').textContent = journalCount;
                 document.getElementById('conference-count').textContent = confCount;
                 document.getElementById('total-count').textContent = arxivCount + journalCount + confCount;
+            }
+
+            async function updateJournalStatsTable() {
+                const tbody = document.getElementById('journal-stats-body');
+                if (!tbody) return;
+
+                try {
+                    const response = await fetch('data/publications.journals.json', { cache: 'no-store' });
+                    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                    const data = await response.json();
+                    const items = Array.isArray(data.items) ? data.items : [];
+                    const counts = new Map();
+
+                    for (const item of items) {
+                        const p = parseItem(item.contentHtml || '');
+                        const j = parseJournalHead(p.head || '');
+                        const journal = extractJournalName(j.refInfo || '');
+                        if (!journal) continue;
+                        counts.set(journal, (counts.get(journal) || 0) + 1);
+                    }
+
+                    const rows = [...counts.entries()]
+                        .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+
+                    tbody.innerHTML = rows
+                        .map(([name, count]) => `<tr><td>${esc(name)}</td><td class="count">${count}</td></tr>`)
+                        .join('');
+                } catch (err) {
+                    console.warn('[publications] Failed to compute journal stats table from data', err);
+                }
             }
 
             function parseItem(contentHtml) {
@@ -1191,6 +1221,7 @@
             ]);
 
             updateStats({ arxivCount, journalCount, confCount });
+            await updateJournalStatsTable();
             window.__pubCounts = { arxivCount, booksCount, journalCount, confCount, talksCount };
         });
     </script>
