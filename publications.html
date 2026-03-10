@@ -1222,8 +1222,8 @@
                             else if (a.volume) refParts.push(a.volume);
                             else if (a.number) refParts.push(`(${a.number})`);
                             if (a.pages) refParts.push(a.pages);
-                            if (a.year) refParts.push(`(${a.year})`);
-                            const refInfo = refParts.join(', ');
+                            const refCore = refParts.join(', ');
+                            const refInfo = a.year ? `${refCore} (${a.year})` : refCore;
 
                             const arxivLink = p.arxiv ? `<a href="${p.arxiv.href}" target="_blank" rel="noopener">arXiv</a>` : `<a class="disabled">arXiv</a>`;
                             const doiHref = a.doi ? `https://doi.org/${a.doi}` : (p.doi ? p.doi.href : '');
