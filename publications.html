@@ -888,6 +888,10 @@
                 return { authors, title, refInfo };
             }
 
+            function esc(s) {
+                return String(s || '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+            }
+
             function bibtex(item, key) {
                 return `@article{${key},\n  title={${item.title.replace(/[{}]/g,'')}},\n  author={${item.authors.replace(/[{}]/g,'')}},\n  year={${item.year}}\n}`;
             }
@@ -943,18 +947,18 @@
                             const p = parseItem(item.contentHtml || '');
                             const arxivId = p.arxiv ? (p.arxiv.href.match(/arxiv\.org\/abs\/([^/?#]+)/)?.[1] || 'link') : null;
                             const arxivLink = p.arxiv ? `<a href="${p.arxiv.href}" target="_blank" rel="noopener">arXiv:${arxivId}</a>` : `<a class="disabled">arXiv</a>`;
+                            const plainEnc = encodeURIComponent(p.plain);
+                            const bibEnc = encodeURIComponent(bibtex(p, `arxiv_${i + 1}`));
                             return `
                               <li>
                                 <article class="pub-card">
-                                  <h4 class="pub-title" title="${p.title}">${p.title}</h4>
-                                  <p class="pub-authors">${p.authors.replace('Min-Hsiu Hsieh', '<span class="author-me">Min-Hsiu Hsieh</span>')}</p>
-                                  <div class="pub-links">${arxivLink}<span style="color:#6b7280; margin-left:4px;">(${p.year})</span></div>
+                                  <h4 class="pub-title" title="${esc(p.title)}">${esc(p.title)}</h4>
+                                  <p class="pub-authors">${esc(p.authors).replace('Min-Hsiu Hsieh', '<span class="author-me">Min-Hsiu Hsieh</span>')}</p>
+                                  <div class="pub-links">${arxivLink}<span style="color:#6b7280; margin-left:4px;">(${esc(p.year)})</span></div>
                                   <div class="pub-actions">
-                                    <button type="button" data-copy="plain">Copy citation (plain)</button>
-                                    <button type="button" data-copy="bib">Copy BibTeX</button>
+                                    <button type="button" data-copy="plain" data-copy-text="${plainEnc}">Copy citation (plain)</button>
+                                    <button type="button" data-copy="bib" data-copy-text="${bibEnc}">Copy BibTeX</button>
                                   </div>
-                                  <textarea class="plain" hidden>${p.plain}</textarea>
-                                  <textarea class="bib" hidden>${bibtex(p, `arxiv_${i + 1}`)}</textarea>
                                 </article>
                               </li>`;
                         }).join('');
@@ -962,9 +966,7 @@
                         list.querySelectorAll('.pub-actions button').forEach((btn) => {
                             btn.addEventListener('click', () => {
                                 const card = btn.closest('.pub-card');
-                                const text = btn.dataset.copy === 'bib'
-                                  ? card.querySelector('.bib').value
-                                  : card.querySelector('.plain').value;
+                                const text = decodeURIComponent(btn.dataset.copyText || '');
                                 copyText(text, btn);
                             });
                         });
@@ -975,21 +977,23 @@
                             const arxivLink = p.arxiv ? `<a href="${p.arxiv.href}" target="_blank" rel="noopener">arXiv</a>` : `<a class="disabled">arXiv</a>`;
                             const doiLink = p.doi ? `<a href="${p.doi.href}" target="_blank" rel="noopener">DOI</a>` : `<a class="disabled">DOI</a>`;
                             const keyPrefix = mode === 'conference-card' ? 'conf' : 'journal';
+                            const plainEnc = encodeURIComponent(p.plain);
+                            const bibEnc = encodeURIComponent(bibtex(p, `${keyPrefix}_${i + 1}`));
+                            const titleText = j.title || p.title;
+                            const authorText = j.authors || p.authors;
                             return `
                               <li>
                                 <article class="pub-card">
-                                  <h4 class="pub-title" title="${j.title || p.title}">${j.title || p.title}</h4>
-                                  <p class="pub-authors">${(j.authors || p.authors).replace('Min-Hsiu Hsieh', '<span class="author-me">Min-Hsiu Hsieh</span>')}</p>
-                                  <div class="pub-links"><span style="color:#4b5563; margin-right:10px;">${j.refInfo || ''}</span></div>
+                                  <h4 class="pub-title" title="${esc(titleText)}">${esc(titleText)}</h4>
+                                  <p class="pub-authors">${esc(authorText).replace('Min-Hsiu Hsieh', '<span class="author-me">Min-Hsiu Hsieh</span>')}</p>
+                                  <div class="pub-links"><span style="color:#4b5563; margin-right:10px;">${esc(j.refInfo || '')}</span></div>
                                   <div class="pub-actions">
                                     <span>[${arxivLink}]</span>
                                     <span>[${doiLink}]</span>
                                     <span style="color:#9ca3af;">|</span>
-                                    <button type="button" data-copy="plain">Copy citation (plain)</button>
-                                    <button type="button" data-copy="bib">Copy Bibtex</button>
+                                    <button type="button" data-copy="plain" data-copy-text="${plainEnc}">Copy citation (plain)</button>
+                                    <button type="button" data-copy="bib" data-copy-text="${bibEnc}">Copy Bibtex</button>
                                   </div>
-                                  <textarea class="plain" hidden>${p.plain}</textarea>
-                                  <textarea class="bib" hidden>${bibtex(p, `${keyPrefix}_${i + 1}`)}</textarea>
                                 </article>
                               </li>`;
                         }).join('');
@@ -997,9 +1001,7 @@
                         list.querySelectorAll('.pub-actions button').forEach((btn) => {
                             btn.addEventListener('click', () => {
                                 const card = btn.closest('.pub-card');
-                                const text = btn.dataset.copy === 'bib'
-                                  ? card.querySelector('.bib').value
-                                  : card.querySelector('.plain').value;
+                                const text = decodeURIComponent(btn.dataset.copyText || '');
                                 copyText(text, btn);
                             });
                         });
