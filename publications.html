@@ -953,8 +953,8 @@
                                     <button type="button" data-copy="plain">Copy citation (plain)</button>
                                     <button type="button" data-copy="bib">Copy BibTeX</button>
                                   </div>
-                                  <template class="plain">${p.plain}</template>
-                                  <template class="bib">${bibtex(p, `arxiv_${i + 1}`)}</template>
+                                  <textarea class="plain" hidden>${p.plain}</textarea>
+                                  <textarea class="bib" hidden>${bibtex(p, `arxiv_${i + 1}`)}</textarea>
                                 </article>
                               </li>`;
                         }).join('');
@@ -963,8 +963,8 @@
                             btn.addEventListener('click', () => {
                                 const card = btn.closest('.pub-card');
                                 const text = btn.dataset.copy === 'bib'
-                                  ? card.querySelector('.bib').textContent
-                                  : card.querySelector('.plain').textContent;
+                                  ? card.querySelector('.bib').value
+                                  : card.querySelector('.plain').value;
                                 copyText(text, btn);
                             });
                         });
@@ -988,8 +988,8 @@
                                     <button type="button" data-copy="plain">Copy citation (plain)</button>
                                     <button type="button" data-copy="bib">Copy Bibtex</button>
                                   </div>
-                                  <template class="plain">${p.plain}</template>
-                                  <template class="bib">${bibtex(p, `${keyPrefix}_${i + 1}`)}</template>
+                                  <textarea class="plain" hidden>${p.plain}</textarea>
+                                  <textarea class="bib" hidden>${bibtex(p, `${keyPrefix}_${i + 1}`)}</textarea>
                                 </article>
                               </li>`;
                         }).join('');
@@ -998,8 +998,8 @@
                             btn.addEventListener('click', () => {
                                 const card = btn.closest('.pub-card');
                                 const text = btn.dataset.copy === 'bib'
-                                  ? card.querySelector('.bib').textContent
-                                  : card.querySelector('.plain').textContent;
+                                  ? card.querySelector('.bib').value
+                                  : card.querySelector('.plain').value;
                                 copyText(text, btn);
                             });
                         });
