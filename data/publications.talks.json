@@ -205,7 +205,7 @@
     },
     {
       "id": "talks-15",
-      "contentHtml": "Irit Dinur, Min-Hsiu Hsieh, Ting-Chun Lin, Thomas Vidick. Good Quantum LDPC Codes with Linear Time Decoders. QIP 2023, Ghent, Belgium, 04-10/02/2023.",
+      "contentHtml": "Irit Dinur, Min-Hsiu Hsieh, Ting-Chun Lin, Thomas Vidick. Good Quantum LDPC Codes with Linear Time Decoders. The 26th Conference on Quantum Information Processing (QIP 2023), Ghent, Belgium, 04-10/02/2023.",
       "title": "Good Quantum LDPC Codes with Linear Time Decoders",
       "authors": [
         "Irit Dinur",
@@ -213,7 +213,7 @@
         "Ting-Chun Lin",
         "Thomas Vidick"
       ],
-      "venue": "QIP 2023",
+      "venue": "The 26th Conference on Quantum Information Processing (QIP 2023)",
       "date": "04-10/02/2023",
       "location": "Ghent, Belgium",
       "type": "Talk"
