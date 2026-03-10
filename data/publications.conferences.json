@@ -60,7 +60,7 @@
     },
     {
       "id": "conferences-15",
-      "contentHtml": "Kaining Zhang, Min-Hsiu Hsieh, Liu Liu, Dacheng Tao. Gaussian initializations help deep variational quantum circuits escape from the barren plateau. in NeurIPS 2022. [<a href=\"https://openreview.net/forum?id=jXgbJdQ2YIy\" target=\"_blank\" rel=\"noopener\">OpenReview</a>]."
+      "contentHtml": "Kaining Zhang, Liu Liu, Min-Hsiu Hsieh, Dacheng Tao. Escaping from the Barren Plateau via Gaussian Initializations in Deep Variational Quantum Circuits. Advances in Neural Information Processing Systems (NeurIPS 2022). [<a href=\"https://openreview.net/forum?id=jXgbJdQ2YIy\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
     },
     {
       "id": "conferences-16",
