@@ -885,13 +885,17 @@
                   .trim();
             }
 
+            function cleanTitle(title) {
+                return String(title || '').trim().replace(/\.+$/,'').trim();
+            }
+
             function parseJournalHead(head) {
                 const raw = String(head || '').trim();
                 const quoted = raw.match(/^(.+?),\s*"([^"]+)"\s*,?\s*(.+)$/);
                 if (quoted) {
                     return {
                         authors: normalizeAuthors(quoted[1]),
-                        title: quoted[2].trim(),
+                        title: cleanTitle(quoted[2]),
                         refInfo: quoted[3].trim()
                     };
                 }
@@ -899,7 +903,7 @@
                 const protectedHead = raw.replace(/\b([A-Z])\.\s/g, '$1§ ');
                 const parts = protectedHead.split('. ').map(s => s.replace(/§/g, '.').trim()).filter(Boolean);
                 const authors = normalizeAuthors(parts[0] || '');
-                const title = parts[1] || '';
+                const title = cleanTitle(parts[1] || '');
                 const refInfo = parts.slice(2).join('. ');
                 return { authors, title, refInfo };
             }
@@ -1074,7 +1078,7 @@
                         list.innerHTML = items.map((item, i) => {
                             const p = parseItem(item.contentHtml || '');
                             const s = parseJournalHead(p.head || '');
-                            const titleText = s.title || p.plain;
+                            const titleText = cleanTitle(s.title || p.plain);
                             const authorText = s.authors || '';
                             const arxivId = p.arxiv ? (p.arxiv.href.match(/arxiv\.org\/abs\/([^/?#]+)/)?.[1] || 'link') : null;
                             const arxivLink = p.arxiv ? `<a href="${p.arxiv.href}" target="_blank" rel="noopener">arXiv:${arxivId}</a>` : `<a class="disabled">arXiv</a>`;
@@ -1108,7 +1112,7 @@
                             const arxivLink = p.arxiv ? `<a href="${p.arxiv.href}" target="_blank" rel="noopener">arXiv</a>` : `<a class="disabled">arXiv</a>`;
                             const doiLink = p.doi ? `<a href="${p.doi.href}" target="_blank" rel="noopener">DOI</a>` : `<a class="disabled">DOI</a>`;
                             const keyPrefix = mode === 'conference-card' ? 'conf' : 'journal';
-                            const titleText = j.title || p.head || p.plain;
+                            const titleText = cleanTitle(j.title || p.head || p.plain);
                             const authorText = j.authors || '';
                             const plainEnc = encodeURIComponent(plainCitationText(p));
                             const bibSource = { title: titleText, authors: authorText, year: p.year };
