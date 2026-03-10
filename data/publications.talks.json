@@ -479,7 +479,7 @@
     },
     {
       "id": "talks-35",
-      "contentHtml": "Yi-Chan Lee, Min-Hsiu Hsieh, Steve Flammia, and Ray-Kuang Lee. Local PT Symmetry Violates the No-Signaling Principle. The 14th Asian Conference on Quantum Information Science (AQIS 2014), Kyoto University, Japan, 20–24/08/2014.",
+      "contentHtml": "Yi-Chan Lee, Min-Hsiu Hsieh, Steve Flammia, and Ray-Kuang Lee. Local PT Symmetry Violates the No-Signaling Principle. The The 14th Asian Conference on Quantum Information Science (AQIS 2014), Kyoto University, Japan, 20–24/08/2014.",
       "title": "Local PT Symmetry Violates the No-Signaling Principle",
       "authors": [
         "Yi-Chan Lee",
@@ -487,7 +487,7 @@
         "Steve Flammia",
         "Ray-Kuang Lee"
       ],
-      "venue": "14th Asian Conference on Quantum Information Science (AQIS 2014)",
+      "venue": "The 14th Asian Conference on Quantum Information Science (AQIS 2014)",
       "date": "20–24/08/2014",
       "location": "Kyoto University, Japan",
       "type": "Talk"
@@ -508,14 +508,14 @@
     },
     {
       "id": "talks-37",
-      "contentHtml": "Nilanjana Datta, Min-Hsiu Hsieh and Mark Wilde. Quantum rate distortion, reverse Shannon theorems, and source-channel separation. The 14th workshop on Quantum Information Processing (QIP 2012), Montreal, Canada, 12–16/12/2011.",
+      "contentHtml": "Nilanjana Datta, Min-Hsiu Hsieh and Mark Wilde. Quantum rate distortion, reverse Shannon theorems, and source-channel separation. The The 14th workshop on Quantum Information Processing (QIP 2012), Montreal, Canada, 12–16/12/2011.",
       "title": "Quantum rate distortion, reverse Shannon theorems, and source-channel separation",
       "authors": [
         "Nilanjana Datta",
         "Min-Hsiu Hsieh",
         "Mark Wilde"
       ],
-      "venue": "14th workshop on Quantum Information Processing (QIP 2012)",
+      "venue": "The 14th workshop on Quantum Information Processing (QIP 2012)",
       "date": "12–16/12/2011",
       "location": "Montreal, Canada",
       "type": "Talk"
