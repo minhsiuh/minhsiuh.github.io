@@ -886,11 +886,24 @@
                     const items = Array.isArray(data.items) ? data.items : [];
                     const counts = new Map(whitelist.map((name) => [name, 0]));
 
+                    function canonicalJournalName(raw) {
+                        const s = String(raw || '');
+                        if (/IEEE Transactions on Information Theory/i.test(s)) return 'IEEE Transactions on Information Theory';
+                        if (/Physical Review Letters/i.test(s)) return 'Physical Review Letters';
+                        if (/^PRX[-\s]?Quantum$/i.test(s) || /PRX[-\s]?Quantum/i.test(s)) return 'PRX Quantum';
+                        if (/Nature Communications/i.test(s)) return 'Nature Communications';
+                        if (/npj Quantum Information/i.test(s)) return 'npj Quantum Information';
+                        if (/^Physical Review A$/i.test(s) || /Physical Review A/i.test(s)) return 'Physical Review A';
+                        if (/Physical Review Research/i.test(s)) return 'Physical Review Research';
+                        return null;
+                    }
+
                     for (const item of items) {
                         const p = parseItem(item.contentHtml || '');
                         const j = parseJournalHead(p.head || '');
-                        const journal = extractJournalName(j.refInfo || '');
-                        if (!counts.has(journal)) continue;
+                        const journalRaw = extractJournalName(j.refInfo || '');
+                        const journal = canonicalJournalName(journalRaw);
+                        if (!journal || !counts.has(journal)) continue;
                         counts.set(journal, (counts.get(journal) || 0) + 1);
                     }
 
