@@ -4,447 +4,1890 @@
   "items": [
     {
       "id": "journals-1",
-      "contentHtml": "Jihao Fan, Min-Hsiu Hsieh. Characterizing the Burst Error Correction Ability of Quantum Cyclic Codes. accepted in IEEE Transactions on Information Theory. (2025) [<a href=\"https://arxiv.org/abs/2501.04310\" target=\"_blank\" rel=\"noopener\">arXiv:2501.04310</a>] [<a href=\"https://doi.org/10.1109/tit.2026.3659999\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Jihao Fan, Min-Hsiu Hsieh. Characterizing the Burst Error Correction Ability of Quantum Cyclic Codes. accepted in IEEE Transactions on Information Theory. (2025) [<a href=\"https://arxiv.org/abs/2501.04310\" target=\"_blank\" rel=\"noopener\">arXiv:2501.04310</a>] [<a href=\"https://doi.org/10.1109/tit.2026.3659999\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Jihao Fan, Min-Hsiu Hsieh",
+        "title": "Characterizing the Burst Error Correction Ability of Quantum Cyclic Codes",
+        "journal": "accepted in IEEE Transactions on Information Theory",
+        "year": "20",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "doi": "10.1109/tit.2026.3659999",
+        "url": "https://arxiv.org/abs/2501.04310",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal1"
+      }
     },
     {
       "id": "journals-2",
-      "contentHtml": "Mengzhen Ren, Yu-Cheng Chen, Ching-Jui Lai, Min-Hsiu Hsieh, Alice Hu. Hybrid Quantum-Classical Clustering for Preparing a Prior Distribution of Eigenspectrum. npj Quantum Information (2026) [<a href=\"https://arxiv.org/abs/2407.00450\" target=\"_blank\" rel=\"noopener\">arXiv:2407.00450</a>] [<a href=\"https://doi.org/10.1038/s41534-026-01194-2\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Mengzhen Ren, Yu-Cheng Chen, Ching-Jui Lai, Min-Hsiu Hsieh, Alice Hu. Hybrid Quantum-Classical Clustering for Preparing a Prior Distribution of Eigenspectrum. npj Quantum Information (2026) [<a href=\"https://arxiv.org/abs/2407.00450\" target=\"_blank\" rel=\"noopener\">arXiv:2407.00450</a>] [<a href=\"https://doi.org/10.1038/s41534-026-01194-2\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Mengzhen Ren, Yu-Cheng Chen, Ching-Jui Lai, Min-Hsiu Hsieh, Alice Hu",
+        "title": "Hybrid Quantum-Classical Clustering for Preparing a Prior Distribution of Eigenspectrum",
+        "journal": "npj Quantum Information",
+        "year": "20",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "doi": "10.1038/s41534-026-01194-2",
+        "url": "https://arxiv.org/abs/2407.00450",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal2"
+      }
     },
     {
       "id": "journals-3",
-      "contentHtml": "Xingjian Li, Ting-Chun Lin, Min-Hsiu Hsieh. Almost optimal geometrically local quantum LDPC codes in any dimension. Nature Communications (2026) [<a href=\"https://arxiv.org/abs/2408.01769\" target=\"_blank\" rel=\"noopener\">arXiv:2408.01769</a>] [<a href=\"https://www.nature.com/articles/s41467-026-69031-w\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Xingjian Li, Ting-Chun Lin, Min-Hsiu Hsieh. Almost optimal geometrically local quantum LDPC codes in any dimension. Nature Communications (2026) [<a href=\"https://arxiv.org/abs/2408.01769\" target=\"_blank\" rel=\"noopener\">arXiv:2408.01769</a>] [<a href=\"https://www.nature.com/articles/s41467-026-69031-w\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Xingjian Li, Ting-Chun Lin, Min-Hsiu Hsieh",
+        "title": "Almost optimal geometrically local quantum LDPC codes in any dimension",
+        "journal": "Nature Communications",
+        "year": "20",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "doi": "https://www.nature.com/articles/s41467-026-69031-w",
+        "url": "https://arxiv.org/abs/2408.01769",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal3"
+      }
     },
     {
       "id": "journals-4",
-      "contentHtml": "Jun Qi, Chao-Han Yang, Pin-Yu Chen, Min-Hsiu Hsieh. TensorHyper-VQC: a tensor-train-guided hypernetwork for robust and scalable variational quantum computing. npj Quantum Information (2026) [<a href=\"https://arxiv.org/abs/2508.01116\" target=\"_blank\" rel=\"noopener\">arXiv:2508.01116</a>] [<a href=\"https://doi.org/10.1038/s41534-025-01157-z\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Jun Qi, Chao-Han Yang, Pin-Yu Chen, Min-Hsiu Hsieh. TensorHyper-VQC: a tensor-train-guided hypernetwork for robust and scalable variational quantum computing. npj Quantum Information (2026) [<a href=\"https://arxiv.org/abs/2508.01116\" target=\"_blank\" rel=\"noopener\">arXiv:2508.01116</a>] [<a href=\"https://doi.org/10.1038/s41534-025-01157-z\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Jun Qi, Chao-Han Yang, Pin-Yu Chen, Min-Hsiu Hsieh",
+        "title": "TensorHyper-VQC: a tensor-train-guided hypernetwork for robust and scalable variational quantum computing",
+        "journal": "npj Quantum Information",
+        "year": "20",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "doi": "10.1038/s41534-025-01157-z",
+        "url": "https://arxiv.org/abs/2508.01116",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal4"
+      }
     },
     {
       "id": "journals-5",
-      "contentHtml": "Ian George, Min-Hsiu Hsieh, Eric Chitambar. One-Shot Distributed Source Simulation: As Quantum as It Can Get. IEEE Transactions on Information Theory, vol. 71, no. 12, pp. 9251-9284, Dec. 2025 [<a href=\"https://arxiv.org/abs/2301.04301\" target=\"_blank\" rel=\"noopener\">arXiv:2301.04301</a>] [<a href=\"https://doi.org/10.1109/TIT.2025.3624812\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Ian George, Min-Hsiu Hsieh, Eric Chitambar. One-Shot Distributed Source Simulation: As Quantum as It Can Get. IEEE Transactions on Information Theory, vol. 71, no. 12, pp. 9251-9284, Dec. 2025 [<a href=\"https://arxiv.org/abs/2301.04301\" target=\"_blank\" rel=\"noopener\">arXiv:2301.04301</a>] [<a href=\"https://doi.org/10.1109/TIT.2025.3624812\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Ian George, Min-Hsiu Hsieh, Eric Chitambar",
+        "title": "One-Shot Distributed Source Simulation: As Quantum as It Can Get",
+        "journal": "IEEE Transactions on Information Theory",
+        "year": "20",
+        "volume": "71",
+        "number": "12",
+        "pages": "9251--9284",
+        "doi": "10.1109/TIT.2025.3624812",
+        "url": "https://arxiv.org/abs/2301.04301",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal5"
+      }
     },
     {
       "id": "journals-6",
-      "contentHtml": "Yu-cheng Chen, Ronin Wu, M. H. Cheng, Min-Hsiu Hsieh. Neural network assisted fermionic compression encoding: A lossy quantum-selected configuration interaction framework for resource-efficient ground-state simulations. Physical Review Research 8, 013128 (2026) [<a href=\"https://arxiv.org/abs/2505.17846\" target=\"_blank\" rel=\"noopener\">arXiv:2505.17846</a>] [<a href=\"https://doi.org/10.1103/9x8b-4j41\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Yu-cheng Chen, Ronin Wu, M. H. Cheng, Min-Hsiu Hsieh. Neural network assisted fermionic compression encoding: A lossy quantum-selected configuration interaction framework for resource-efficient ground-state simulations. Physical Review Research 8, 013128 (2026) [<a href=\"https://arxiv.org/abs/2505.17846\" target=\"_blank\" rel=\"noopener\">arXiv:2505.17846</a>] [<a href=\"https://doi.org/10.1103/9x8b-4j41\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Yu-cheng Chen, Ronin Wu, M. H. Cheng, Min-Hsiu Hsieh",
+        "title": "Neural network assisted fermionic compression encoding: A lossy quantum-selected configuration interaction framework for resource-efficient ground-state simulations",
+        "journal": "Physical Review Research",
+        "year": "20",
+        "volume": "8",
+        "number": "",
+        "pages": "",
+        "doi": "10.1103/9x8b-4j41",
+        "url": "https://arxiv.org/abs/2505.17846",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal6"
+      }
     },
     {
       "id": "journals-7",
-      "contentHtml": "M. H. Cheng, Yu-Cheng Chen, Qian Wang, V. Bartsch, A. C. Medina, M. S. Kim, Alice Hu, Min-Hsiu Hsieh. Optimal number-conserved linear encoding for practical fermionic simulation. Physical Review Research 7, 033280 (2025) [<a href=\"https://arxiv.org/abs/2309.09370\" target=\"_blank\" rel=\"noopener\">arXiv:2309.09370</a>] [<a href=\"https://doi.org/10.1103/lzf5-x6hc\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "M. H. Cheng, Yu-Cheng Chen, Qian Wang, V. Bartsch, A. C. Medina, M. S. Kim, Alice Hu, Min-Hsiu Hsieh. Optimal number-conserved linear encoding for practical fermionic simulation. Physical Review Research 7, 033280 (2025) [<a href=\"https://arxiv.org/abs/2309.09370\" target=\"_blank\" rel=\"noopener\">arXiv:2309.09370</a>] [<a href=\"https://doi.org/10.1103/lzf5-x6hc\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "M. H. Cheng, Yu-Cheng Chen, Qian Wang, V. Bartsch, A. C. Medina, M. S. Kim, Alice Hu, Min-Hsiu Hsieh",
+        "title": "Optimal number-conserved linear encoding for practical fermionic simulation",
+        "journal": "Physical Review Research",
+        "year": "20",
+        "volume": "7",
+        "number": "",
+        "pages": "",
+        "doi": "10.1103/lzf5-x6hc",
+        "url": "https://arxiv.org/abs/2309.09370",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal7"
+      }
     },
     {
       "id": "journals-8",
-      "contentHtml": "Chen-Yu Liu, En-Jui Kuo, Chu-Hsuan Abraham Lin, Jason Gemsun Young, Yeong-Jar Chang, Min-Hsiu Hsieh, Hsi-Sheng Goan. Quantum-Train: rethinking hybrid quantum-classical machine learning in the model compression perspective. Quantum Machine Intelligence 7, 80 (2025) [<a href=\"https://arxiv.org/abs/2405.11304\" target=\"_blank\" rel=\"noopener\">arXiv:2405.11304</a>] [<a href=\"https://doi.org/10.1007/s42484-025-00305-0\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Chen-Yu Liu, En-Jui Kuo, Chu-Hsuan Abraham Lin, Jason Gemsun Young, Yeong-Jar Chang, Min-Hsiu Hsieh, Hsi-Sheng Goan. Quantum-Train: rethinking hybrid quantum-classical machine learning in the model compression perspective. Quantum Machine Intelligence 7, 80 (2025) [<a href=\"https://arxiv.org/abs/2405.11304\" target=\"_blank\" rel=\"noopener\">arXiv:2405.11304</a>] [<a href=\"https://doi.org/10.1007/s42484-025-00305-0\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Chen-Yu Liu, En-Jui Kuo, Chu-Hsuan Abraham Lin, Jason Gemsun Young, Yeong-Jar Chang, Min-Hsiu Hsieh, Hsi-Sheng Goan",
+        "title": "Quantum-Train: rethinking hybrid quantum-classical machine learning in the model compression perspective",
+        "journal": "Quantum Machine Intelligence",
+        "year": "20",
+        "volume": "7",
+        "number": "",
+        "pages": "",
+        "doi": "10.1007/s42484-025-00305-0",
+        "url": "https://arxiv.org/abs/2405.11304",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal8"
+      }
     },
     {
       "id": "journals-9",
-      "contentHtml": "Chin-Yi Lin, Kuo-Chin Chen, Philippe Lemey, Marc A. Suchard, Andrew J. Holbrook, Min-Hsiu Hsieh. Quantum Speedups for Multiproposal MCMC. Bayesian Anal. Advance Publication 1-28 (2025) [<a href=\"https://arxiv.org/abs/2312.01402\" target=\"_blank\" rel=\"noopener\">arXiv:2312.01402</a>] [<a href=\"https://doi.org/10.1214/25-BA1546\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Chin-Yi Lin, Kuo-Chin Chen, Philippe Lemey, Marc A. Suchard, Andrew J. Holbrook, Min-Hsiu Hsieh. Quantum Speedups for Multiproposal MCMC. Bayesian Anal. Advance Publication 1-28 (2025) [<a href=\"https://arxiv.org/abs/2312.01402\" target=\"_blank\" rel=\"noopener\">arXiv:2312.01402</a>] [<a href=\"https://doi.org/10.1214/25-BA1546\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Chin-Yi Lin, Kuo-Chin Chen, Philippe Lemey, Marc A. Suchard, Andrew J. Holbrook, Min-Hsiu Hsieh",
+        "title": "Quantum Speedups for Multiproposal MCMC",
+        "journal": "Bayesian Anal Advance Publication 1-28",
+        "year": "20",
+        "volume": "",
+        "number": "",
+        "pages": "1--28",
+        "doi": "10.1214/25-BA1546",
+        "url": "https://arxiv.org/abs/2312.01402",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal9"
+      }
     },
     {
       "id": "journals-10",
-      "contentHtml": "Quinten Eggerickx, Adam Wills, Ting-Chun Lin, Kristiaan De Greve, Min-Hsiu Hsieh. Almost Linear Decoder for Optimal Geometrically Local Quantum Codes. Physical Review Research 7, 023300 (2025) [<a href=\"https://arxiv.org/abs/2411.02928\" target=\"_blank\" rel=\"noopener\">arXiv:2411.02928</a>] [<a href=\"https://doi.org/10.1103/sxdx-qbcz\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Quinten Eggerickx, Adam Wills, Ting-Chun Lin, Kristiaan De Greve, Min-Hsiu Hsieh. Almost Linear Decoder for Optimal Geometrically Local Quantum Codes. Physical Review Research 7, 023300 (2025) [<a href=\"https://arxiv.org/abs/2411.02928\" target=\"_blank\" rel=\"noopener\">arXiv:2411.02928</a>] [<a href=\"https://doi.org/10.1103/sxdx-qbcz\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Quinten Eggerickx, Adam Wills, Ting-Chun Lin, Kristiaan De Greve, Min-Hsiu Hsieh",
+        "title": "Almost Linear Decoder for Optimal Geometrically Local Quantum Codes",
+        "journal": "Physical Review Research",
+        "year": "20",
+        "volume": "7",
+        "number": "",
+        "pages": "",
+        "doi": "10.1103/sxdx-qbcz",
+        "url": "https://arxiv.org/abs/2411.02928",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal10"
+      }
     },
     {
       "id": "journals-11",
-      "contentHtml": "Adam Wills, Min-Hsiu Hsieh, Hayata Yamasaki. Constant-Overhead Magic State Distillation. Nature Physics 21, 1842–1846 (2025) [<a href=\"https://arxiv.org/abs/2408.07764\" target=\"_blank\" rel=\"noopener\">arXiv:2408.07764</a>] [<a href=\"https://doi.org/10.1038/s41567-025-03026-0\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Adam Wills, Min-Hsiu Hsieh, Hayata Yamasaki. Constant-Overhead Magic State Distillation. Nature Physics 21, 1842–1846 (2025) [<a href=\"https://arxiv.org/abs/2408.07764\" target=\"_blank\" rel=\"noopener\">arXiv:2408.07764</a>] [<a href=\"https://doi.org/10.1038/s41567-025-03026-0\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Adam Wills, Min-Hsiu Hsieh, Hayata Yamasaki",
+        "title": "Constant-Overhead Magic State Distillation",
+        "journal": "Nature Physics",
+        "year": "20",
+        "volume": "21",
+        "number": "",
+        "pages": "1842--1846",
+        "doi": "10.1038/s41567-025-03026-0",
+        "url": "https://arxiv.org/abs/2408.07764",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal11"
+      }
     },
     {
       "id": "journals-12",
-      "contentHtml": "Yuxuan Du, Min-Hsiu Hsieh, Dacheng Tao. Efficient Learning for Linear Properties of Bounded-Gate Quantum Circuits. Nature Communications volume 16, Article number: 3790 (2025) [<a href=\"https://arxiv.org/abs/2408.12199\" target=\"_blank\" rel=\"noopener\">arXiv:2408.12199</a>] [<a href=\"https://doi.org/10.1038/s41467-025-59198-z\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Yuxuan Du, Min-Hsiu Hsieh, Dacheng Tao. Efficient Learning for Linear Properties of Bounded-Gate Quantum Circuits. Nature Communications volume 16, Article number: 3790 (2025) [<a href=\"https://arxiv.org/abs/2408.12199\" target=\"_blank\" rel=\"noopener\">arXiv:2408.12199</a>] [<a href=\"https://doi.org/10.1038/s41467-025-59198-z\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Yuxuan Du, Min-Hsiu Hsieh, Dacheng Tao",
+        "title": "Efficient Learning for Linear Properties of Bounded-Gate Quantum Circuits",
+        "journal": "Nature Communications",
+        "year": "20",
+        "volume": "16",
+        "number": "",
+        "pages": "3790",
+        "doi": "10.1038/s41467-025-59198-z",
+        "url": "https://arxiv.org/abs/2408.12199",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal12"
+      }
     },
     {
       "id": "journals-13",
-      "contentHtml": "Michael de Oliveira, Sathyawageeswar Subramanian, Leandro Mendes, Min-Hsiu Hsieh. Unconditional advantage of noisy qudit quantum circuits over biased threshold circuits in constant depth. Nature Communications volume 16, Article number: 3559 (2025) [<a href=\"https://arxiv.org/abs/2408.16378\" target=\"_blank\" rel=\"noopener\">arXiv:2408.16378</a>] [<a href=\"https://doi.org/10.1038/s41467-025-58545-4\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Michael de Oliveira, Sathyawageeswar Subramanian, Leandro Mendes, Min-Hsiu Hsieh. Unconditional advantage of noisy qudit quantum circuits over biased threshold circuits in constant depth. Nature Communications volume 16, Article number: 3559 (2025) [<a href=\"https://arxiv.org/abs/2408.16378\" target=\"_blank\" rel=\"noopener\">arXiv:2408.16378</a>] [<a href=\"https://doi.org/10.1038/s41467-025-58545-4\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Michael de Oliveira, Sathyawageeswar Subramanian, Leandro Mendes, Min-Hsiu Hsieh",
+        "title": "Unconditional advantage of noisy qudit quantum circuits over biased threshold circuits in constant depth",
+        "journal": "Nature Communications",
+        "year": "20",
+        "volume": "16",
+        "number": "",
+        "pages": "3559",
+        "doi": "10.1038/s41467-025-58545-4",
+        "url": "https://arxiv.org/abs/2408.16378",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal13"
+      }
     },
     {
       "id": "journals-14",
-      "contentHtml": "Adam Wills, Ting-Chun Lin, Min-Hsiu Hsieh. Tradeoff Constructions for Quantum Locally Testable Codes. IEEE Transactions on Information Theory, vol. 71, no. 1, pp. 426-458, Jan. 2025 [<a href=\"https://arxiv.org/abs/2309.05541\" target=\"_blank\" rel=\"noopener\">arXiv:2309.05541</a>] [<a href=\"https://doi.org/10.1109/TIT.2024.3503500\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Adam Wills, Ting-Chun Lin, Min-Hsiu Hsieh. Tradeoff Constructions for Quantum Locally Testable Codes. IEEE Transactions on Information Theory, vol. 71, no. 1, pp. 426-458, Jan. 2025 [<a href=\"https://arxiv.org/abs/2309.05541\" target=\"_blank\" rel=\"noopener\">arXiv:2309.05541</a>] [<a href=\"https://doi.org/10.1109/TIT.2024.3503500\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Adam Wills, Ting-Chun Lin, Min-Hsiu Hsieh",
+        "title": "Tradeoff Constructions for Quantum Locally Testable Codes",
+        "journal": "IEEE Transactions on Information Theory",
+        "year": "20",
+        "volume": "71",
+        "number": "1",
+        "pages": "426--458",
+        "doi": "10.1109/TIT.2024.3503500",
+        "url": "https://arxiv.org/abs/2309.05541",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal14"
+      }
     },
     {
       "id": "journals-15",
-      "contentHtml": "Kehuan Linghu, Yang Qian, Ruixia Wang, Meng-Jun Hu, Zhiyuan Li, Xuegang Li, Huikai Xu, Jingning Zhang, Teng Ma, Peng Zhao, Dong E. Liu, Min-Hsiu Hsieh, Xingyao Wu, Yuxuan Du, Dacheng Tao, Yirong Jin, and Haifeng Yu. Quantum circuit architecture search on a superconducting processor. Entropy 2024, 26(12), 1025 (2024) [<a href=\"https://arxiv.org/abs/2201.00934\" target=\"_blank\" rel=\"noopener\">arXiv:2201.00934</a>] [<a href=\"https://doi.org/10.3390/e26121025\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Kehuan Linghu, Yang Qian, Ruixia Wang, Meng-Jun Hu, Zhiyuan Li, Xuegang Li, Huikai Xu, Jingning Zhang, Teng Ma, Peng Zhao, Dong E. Liu, Min-Hsiu Hsieh, Xingyao Wu, Yuxuan Du, Dacheng Tao, Yirong Jin, and Haifeng Yu. Quantum circuit architecture search on a superconducting processor. Entropy 2024, 26(12), 1025 (2024) [<a href=\"https://arxiv.org/abs/2201.00934\" target=\"_blank\" rel=\"noopener\">arXiv:2201.00934</a>] [<a href=\"https://doi.org/10.3390/e26121025\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Kehuan Linghu, Yang Qian, Ruixia Wang, Meng-Jun Hu, Zhiyuan Li, Xuegang Li, Huikai Xu, Jingning Zhang, Teng Ma, Peng Zhao, Dong E. Liu, Min-Hsiu Hsieh, Xingyao Wu, Yuxuan Du, Dacheng Tao, Yirong Jin, and Haifeng Yu",
+        "title": "Quantum circuit architecture search on a superconducting processor",
+        "journal": "Entropy 2024",
+        "year": "20",
+        "volume": "26",
+        "number": "12",
+        "pages": "",
+        "doi": "10.3390/e26121025",
+        "url": "https://arxiv.org/abs/2201.00934",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal15"
+      }
     },
     {
       "id": "journals-16",
-      "contentHtml": "Yang Qian, Yuxuan Du, Zhenliang He, Min-Hsiu Hsieh, Dacheng Tao. Multimodal deep representation learning for quantum cross-platform verification. Physical Review Letters 133, 130601 (2024) [<a href=\"https://arxiv.org/abs/2311.03713\" target=\"_blank\" rel=\"noopener\">arXiv:2311.03713</a>] [<a href=\"https://doi.org/10.1103/PhysRevLett.133.130601\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Yang Qian, Yuxuan Du, Zhenliang He, Min-Hsiu Hsieh, Dacheng Tao. Multimodal deep representation learning for quantum cross-platform verification. Physical Review Letters 133, 130601 (2024) [<a href=\"https://arxiv.org/abs/2311.03713\" target=\"_blank\" rel=\"noopener\">arXiv:2311.03713</a>] [<a href=\"https://doi.org/10.1103/PhysRevLett.133.130601\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Yang Qian, Yuxuan Du, Zhenliang He, Min-Hsiu Hsieh, Dacheng Tao",
+        "title": "Multimodal deep representation learning for quantum cross-platform verification",
+        "journal": "Physical Review Letters",
+        "year": "20",
+        "volume": "133",
+        "number": "",
+        "pages": "",
+        "doi": "10.1103/PhysRevLett.133.130601",
+        "url": "https://arxiv.org/abs/2311.03713",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal16"
+      }
     },
     {
       "id": "journals-17",
-      "contentHtml": "Adam Wills, Min-Hsiu Hsieh, Sergii Strelchuk. Efficient Algorithms for All Port-Based Teleportation Protocols. PRX Quantum 5, 030354 (2024) [<a href=\"https://arxiv.org/abs/2311.12012\" target=\"_blank\" rel=\"noopener\">arXiv:2311.12012</a>] [<a href=\"https://doi.org/10.1103/PRXQuantum.5.030354\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Adam Wills, Min-Hsiu Hsieh, Sergii Strelchuk. Efficient Algorithms for All Port-Based Teleportation Protocols. PRX Quantum 5, 030354 (2024) [<a href=\"https://arxiv.org/abs/2311.12012\" target=\"_blank\" rel=\"noopener\">arXiv:2311.12012</a>] [<a href=\"https://doi.org/10.1103/PRXQuantum.5.030354\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Adam Wills, Min-Hsiu Hsieh, Sergii Strelchuk",
+        "title": "Efficient Algorithms for All Port-Based Teleportation Protocols",
+        "journal": "PRX Quantum",
+        "year": "20",
+        "volume": "5",
+        "number": "",
+        "pages": "",
+        "doi": "10.1103/PRXQuantum.5.030354",
+        "url": "https://arxiv.org/abs/2311.12012",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal17"
+      }
     },
     {
       "id": "journals-18",
-      "contentHtml": "Adam Wills, Ting-Chun Lin, Min-Hsiu Hsieh. Local testability of distance-balanced quantum codes. npj Quantum Information 10, 120 (2024) [<a href=\"https://arxiv.org/abs/2305.00689\" target=\"_blank\" rel=\"noopener\">arXiv:2305.00689</a>] [<a href=\"https://doi.org/10.1038/s41534-024-00908-8\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Adam Wills, Ting-Chun Lin, Min-Hsiu Hsieh. Local testability of distance-balanced quantum codes. npj Quantum Information 10, 120 (2024) [<a href=\"https://arxiv.org/abs/2305.00689\" target=\"_blank\" rel=\"noopener\">arXiv:2305.00689</a>] [<a href=\"https://doi.org/10.1038/s41534-024-00908-8\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Adam Wills, Ting-Chun Lin, Min-Hsiu Hsieh",
+        "title": "Local testability of distance-balanced quantum codes",
+        "journal": "npj Quantum Information",
+        "year": "20",
+        "volume": "10",
+        "number": "",
+        "pages": "",
+        "doi": "10.1038/s41534-024-00908-8",
+        "url": "https://arxiv.org/abs/2305.00689",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal18"
+      }
     },
     {
       "id": "journals-19",
-      "contentHtml": "Yidong Liao, Min-Hsiu Hsieh, Chris Ferrie. Quantum Optimization for Training Quantum Neural Networks. Quantum Machine Intelligence 6, 33 (2024) [<a href=\"https://arxiv.org/abs/2103.17047\" target=\"_blank\" rel=\"noopener\">arXiv:2103.17047</a>] [<a href=\"https://doi.org/10.1007/s42484-024-00169-w\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Yidong Liao, Min-Hsiu Hsieh, Chris Ferrie. Quantum Optimization for Training Quantum Neural Networks. Quantum Machine Intelligence 6, 33 (2024) [<a href=\"https://arxiv.org/abs/2103.17047\" target=\"_blank\" rel=\"noopener\">arXiv:2103.17047</a>] [<a href=\"https://doi.org/10.1007/s42484-024-00169-w\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Yidong Liao, Min-Hsiu Hsieh, Chris Ferrie",
+        "title": "Quantum Optimization for Training Quantum Neural Networks",
+        "journal": "Quantum Machine Intelligence",
+        "year": "20",
+        "volume": "6",
+        "number": "",
+        "pages": "",
+        "doi": "10.1007/s42484-024-00169-w",
+        "url": "https://arxiv.org/abs/2103.17047",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal19"
+      }
     },
     {
       "id": "journals-20",
-      "contentHtml": "Chien Hung Cho, Dominic W. Berry, Min-Hsiu Hsieh. Doubling the order of approximation via the randomized product formula. Physical Review A 109, 062431 (2024) [<a href=\"https://arxiv.org/abs/2210.11281\" target=\"_blank\" rel=\"noopener\">arXiv:2210.11281</a>] [<a href=\"https://doi.org/10.1103/PhysRevA.109.062431\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Chien Hung Cho, Dominic W. Berry, Min-Hsiu Hsieh. Doubling the order of approximation via the randomized product formula. Physical Review A 109, 062431 (2024) [<a href=\"https://arxiv.org/abs/2210.11281\" target=\"_blank\" rel=\"noopener\">arXiv:2210.11281</a>] [<a href=\"https://doi.org/10.1103/PhysRevA.109.062431\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Chien Hung Cho, Dominic W. Berry, Min-Hsiu Hsieh",
+        "title": "Doubling the order of approximation via the randomized product formula",
+        "journal": "Physical Review A",
+        "year": "20",
+        "volume": "109",
+        "number": "",
+        "pages": "",
+        "doi": "10.1103/PhysRevA.109.062431",
+        "url": "https://arxiv.org/abs/2210.11281",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal20"
+      }
     },
     {
       "id": "journals-21",
-      "contentHtml": "Ming-Chien Hsu, En-Jui Kuo, Wei-Hsuan Yu, Jian-Feng Cai, Min-Hsiu Hsieh. Quantum state tomography via non-convex Riemannian gradient descent. Physical Review Letters 132, 240804 (2024) [<a href=\"https://arxiv.org/abs/2210.04717\" target=\"_blank\" rel=\"noopener\">arXiv:2210.04717</a>] [<a href=\"https://doi.org/10.1103/PhysRevLett.132.240804\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Ming-Chien Hsu, En-Jui Kuo, Wei-Hsuan Yu, Jian-Feng Cai, Min-Hsiu Hsieh. Quantum state tomography via non-convex Riemannian gradient descent. Physical Review Letters 132, 240804 (2024) [<a href=\"https://arxiv.org/abs/2210.04717\" target=\"_blank\" rel=\"noopener\">arXiv:2210.04717</a>] [<a href=\"https://doi.org/10.1103/PhysRevLett.132.240804\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Ming-Chien Hsu, En-Jui Kuo, Wei-Hsuan Yu, Jian-Feng Cai, Min-Hsiu Hsieh",
+        "title": "Quantum state tomography via non-convex Riemannian gradient descent",
+        "journal": "Physical Review Letters",
+        "year": "20",
+        "volume": "132",
+        "number": "",
+        "pages": "",
+        "doi": "10.1103/PhysRevLett.132.240804",
+        "url": "https://arxiv.org/abs/2210.04717",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal21"
+      }
     },
     {
       "id": "journals-22",
-      "contentHtml": "Pedro Figueroa-Romero, Miha Papič, Adrian Auer, Min-Hsiu Hsieh, Kavan Modi, Inés de Vega. Operational Markovianization in Randomized Benchmarking. Quantum Science and Technology Volume 9, Number 3, 035020 (2024) [<a href=\"https://arxiv.org/abs/2305.04704\" target=\"_blank\" rel=\"noopener\">arXiv:2305.04704</a>] [<a href=\"https://doi.org/10.1088/2058-9565/ad3f44\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Pedro Figueroa-Romero, Miha Papič, Adrian Auer, Min-Hsiu Hsieh, Kavan Modi, Inés de Vega. Operational Markovianization in Randomized Benchmarking. Quantum Science and Technology Volume 9, Number 3, 035020 (2024) [<a href=\"https://arxiv.org/abs/2305.04704\" target=\"_blank\" rel=\"noopener\">arXiv:2305.04704</a>] [<a href=\"https://doi.org/10.1088/2058-9565/ad3f44\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Pedro Figueroa-Romero, Miha Papič, Adrian Auer, Min-Hsiu Hsieh, Kavan Modi, Inés de Vega",
+        "title": "Operational Markovianization in Randomized Benchmarking",
+        "journal": "Quantum Science and Technology",
+        "year": "20",
+        "volume": "9",
+        "number": "",
+        "pages": "",
+        "doi": "10.1088/2058-9565/ad3f44",
+        "url": "https://arxiv.org/abs/2305.04704",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal22"
+      }
     },
     {
       "id": "journals-23",
-      "contentHtml": "Yen-Chi Lee, Yun-Feng Lo, Jen-Ming Wu, Min-Hsiu Hsieh. Characterizing First Arrival Position Channels: Noise Distribution and Capacity Analysis. IEEE Transactions on Communications, vol. 72, no. 7, pp. 4010-4025, July 2024 [<a href=\"https://arxiv.org/abs/2306.08353\" target=\"_blank\" rel=\"noopener\">arXiv:2306.08353</a>] [<a href=\"https://doi.org/10.1109/TCOMM.2024.3374348\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Yen-Chi Lee, Yun-Feng Lo, Jen-Ming Wu, Min-Hsiu Hsieh. Characterizing First Arrival Position Channels: Noise Distribution and Capacity Analysis. IEEE Transactions on Communications, vol. 72, no. 7, pp. 4010-4025, July 2024 [<a href=\"https://arxiv.org/abs/2306.08353\" target=\"_blank\" rel=\"noopener\">arXiv:2306.08353</a>] [<a href=\"https://doi.org/10.1109/TCOMM.2024.3374348\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Yen-Chi Lee, Yun-Feng Lo, Jen-Ming Wu, Min-Hsiu Hsieh",
+        "title": "Characterizing First Arrival Position Channels: Noise Distribution and Capacity Analysis",
+        "journal": "IEEE Transactions on Communications",
+        "year": "20",
+        "volume": "72",
+        "number": "7",
+        "pages": "4010--4025",
+        "doi": "10.1109/TCOMM.2024.3374348",
+        "url": "https://arxiv.org/abs/2306.08353",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal23"
+      }
     },
     {
       "id": "journals-24",
-      "contentHtml": "Yu Shee, Tzu-Lan Yeh, Jen-Yueh Hsiao, Ann Yang, Yen-Chu Lin, Min-Hsiu Hsieh. Quantum Simulation of Preferred Tautomeric State Prediction. npj Quantum Information 9, Article number: 102 (2023) [<a href=\"https://arxiv.org/abs/2210.02977\" target=\"_blank\" rel=\"noopener\">arXiv:2210.02977</a>] [<a href=\"https://www.nature.com/articles/s41534-023-00767-9\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Yu Shee, Tzu-Lan Yeh, Jen-Yueh Hsiao, Ann Yang, Yen-Chu Lin, Min-Hsiu Hsieh. Quantum Simulation of Preferred Tautomeric State Prediction. npj Quantum Information 9, Article number: 102 (2023) [<a href=\"https://arxiv.org/abs/2210.02977\" target=\"_blank\" rel=\"noopener\">arXiv:2210.02977</a>] [<a href=\"https://www.nature.com/articles/s41534-023-00767-9\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Yu Shee, Tzu-Lan Yeh, Jen-Yueh Hsiao, Ann Yang, Yen-Chu Lin, Min-Hsiu Hsieh",
+        "title": "Quantum Simulation of Preferred Tautomeric State Prediction",
+        "journal": "npj Quantum Information",
+        "year": "20",
+        "volume": "9",
+        "number": "",
+        "pages": "102",
+        "doi": "https://www.nature.com/articles/s41534-023-00767-9",
+        "url": "https://arxiv.org/abs/2210.02977",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal24"
+      }
     },
     {
       "id": "journals-25",
-      "contentHtml": "Yuxuan Du, Yibo Yang, Dacheng Tao, Min-Hsiu Hsieh. Problem-Dependent Power of Quantum Neural Networks on Multi-Class Classification. Physical Review Letters 131, 140601 (2023) [<a href=\"https://arxiv.org/abs/2301.01597\" target=\"_blank\" rel=\"noopener\">arXiv:2301.01597</a>] [<a href=\"https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.131.140601\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Yuxuan Du, Yibo Yang, Dacheng Tao, Min-Hsiu Hsieh. Problem-Dependent Power of Quantum Neural Networks on Multi-Class Classification. Physical Review Letters 131, 140601 (2023) [<a href=\"https://arxiv.org/abs/2301.01597\" target=\"_blank\" rel=\"noopener\">arXiv:2301.01597</a>] [<a href=\"https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.131.140601\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Yuxuan Du, Yibo Yang, Dacheng Tao, Min-Hsiu Hsieh",
+        "title": "Problem-Dependent Power of Quantum Neural Networks on Multi-Class Classification",
+        "journal": "Physical Review Letters",
+        "year": "20",
+        "volume": "131",
+        "number": "",
+        "pages": "",
+        "doi": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.131.140601",
+        "url": "https://arxiv.org/abs/2301.01597",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal25"
+      }
     },
     {
       "id": "journals-26",
-      "contentHtml": "Yingkai Ouyang, Kaumudibikash Goswami, Jacquiline Romero, Barry C. Sanders, Min-Hsiu Hsieh, Marco Tomamichel. Approximate reconstructability of quantum states and noisy quantum secret sharing schemes. Physical Review A 108, 012425 (2023) [<a href=\"https://arxiv.org/abs/2302.02509\" target=\"_blank\" rel=\"noopener\">arXiv:2302.02509</a>] [<a href=\"https://journals.aps.org/pra/abstract/10.1103/PhysRevA.108.012425\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Yingkai Ouyang, Kaumudibikash Goswami, Jacquiline Romero, Barry C. Sanders, Min-Hsiu Hsieh, Marco Tomamichel. Approximate reconstructability of quantum states and noisy quantum secret sharing schemes. Physical Review A 108, 012425 (2023) [<a href=\"https://arxiv.org/abs/2302.02509\" target=\"_blank\" rel=\"noopener\">arXiv:2302.02509</a>] [<a href=\"https://journals.aps.org/pra/abstract/10.1103/PhysRevA.108.012425\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Yingkai Ouyang, Kaumudibikash Goswami, Jacquiline Romero, Barry C. Sanders, Min-Hsiu Hsieh, Marco Tomamichel",
+        "title": "Approximate reconstructability of quantum states and noisy quantum secret sharing schemes",
+        "journal": "Physical Review A",
+        "year": "20",
+        "volume": "108",
+        "number": "",
+        "pages": "",
+        "doi": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.108.012425",
+        "url": "https://arxiv.org/abs/2302.02509",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal26"
+      }
     },
     {
       "id": "journals-27",
-      "contentHtml": "Tanmay Singal, Che Chiang, Eugene Hsu, Eunsang Kim, Hsi-Sheng Goan, Min-Hsiu Hsieh. Counting stabiliser codes for arbitrary dimension. Quantum 7, 1048 (2023) [<a href=\"https://arxiv.org/abs/2209.01449\" target=\"_blank\" rel=\"noopener\">arXiv:2209.01449</a>] [<a href=\"https://doi.org/10.22331/q-2023-07-06-1048\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Tanmay Singal, Che Chiang, Eugene Hsu, Eunsang Kim, Hsi-Sheng Goan, Min-Hsiu Hsieh. Counting stabiliser codes for arbitrary dimension. Quantum 7, 1048 (2023) [<a href=\"https://arxiv.org/abs/2209.01449\" target=\"_blank\" rel=\"noopener\">arXiv:2209.01449</a>] [<a href=\"https://doi.org/10.22331/q-2023-07-06-1048\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Tanmay Singal, Che Chiang, Eugene Hsu, Eunsang Kim, Hsi-Sheng Goan, Min-Hsiu Hsieh",
+        "title": "Counting stabiliser codes for arbitrary dimension",
+        "journal": "Quantum",
+        "year": "20",
+        "volume": "7",
+        "number": "",
+        "pages": "",
+        "doi": "10.22331/q-2023-07-06-1048",
+        "url": "https://arxiv.org/abs/2209.01449",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal27"
+      }
     },
     {
       "id": "journals-28",
-      "contentHtml": "Ting-Chun Lin, Isaac H. Kim, Min-Hsiu Hsieh. An operator extension of weak monotonicity. Letters in Mathematical Physics on 113, 68 (2023) [<a href=\"https://arxiv.org/abs/2211.13372\" target=\"_blank\" rel=\"noopener\">arXiv:2211.13372</a>] [<a href=\"https://link.springer.com/article/10.1007/s11005-023-01688-6\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Ting-Chun Lin, Isaac H. Kim, Min-Hsiu Hsieh. An operator extension of weak monotonicity. Letters in Mathematical Physics on 113, 68 (2023) [<a href=\"https://arxiv.org/abs/2211.13372\" target=\"_blank\" rel=\"noopener\">arXiv:2211.13372</a>] [<a href=\"https://link.springer.com/article/10.1007/s11005-023-01688-6\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Ting-Chun Lin, Isaac H. Kim, Min-Hsiu Hsieh",
+        "title": "An operator extension of weak monotonicity",
+        "journal": "Letters in Mathematical Physics on",
+        "year": "20",
+        "volume": "113",
+        "number": "",
+        "pages": "",
+        "doi": "https://link.springer.com/article/10.1007/s11005-023-01688-6",
+        "url": "https://arxiv.org/abs/2211.13372",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal28"
+      }
     },
     {
       "id": "journals-29",
-      "contentHtml": "Po-Yu Kao, Ya-Chu Yang, Wei-Yin Chiang, Jen-Yueh Hsiao, Yudong Cao, Alex Aliper, Feng Ren, Alan Aspuru-Guzik, Alex Zhavoronkov, Min-Hsiu Hsieh, Yen-Chu Lin. Exploring the Advantages of Quantum Generative Adversarial Networks in Generative Chemistry. Journal of Chemical Information and Modeling 2023, 63, 11, 3307–3318 [<a href=\"https://arxiv.org/abs/2210.16823\" target=\"_blank\" rel=\"noopener\">arXiv:2210.16823</a>] [<a href=\"https://doi.org/10.1021/acs.jcim.3c00562\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Po-Yu Kao, Ya-Chu Yang, Wei-Yin Chiang, Jen-Yueh Hsiao, Yudong Cao, Alex Aliper, Feng Ren, Alan Aspuru-Guzik, Alex Zhavoronkov, Min-Hsiu Hsieh, Yen-Chu Lin. Exploring the Advantages of Quantum Generative Adversarial Networks in Generative Chemistry. Journal of Chemical Information and Modeling 2023, 63, 11, 3307–3318 [<a href=\"https://arxiv.org/abs/2210.16823\" target=\"_blank\" rel=\"noopener\">arXiv:2210.16823</a>] [<a href=\"https://doi.org/10.1021/acs.jcim.3c00562\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Po-Yu Kao, Ya-Chu Yang, Wei-Yin Chiang, Jen-Yueh Hsiao, Yudong Cao, Alex Aliper, Feng Ren, Alan Aspuru-Guzik, Alex Zhavoronkov, Min-Hsiu Hsieh, Yen-Chu Lin",
+        "title": "Exploring the Advantages of Quantum Generative Adversarial Networks in Generative Chemistry",
+        "journal": "Journal of Chemical Information and Modeling",
+        "year": "20",
+        "volume": "2023",
+        "number": "",
+        "pages": "3307--3318",
+        "doi": "10.1021/acs.jcim.3c00562",
+        "url": "https://arxiv.org/abs/2210.16823",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal29"
+      }
     },
     {
       "id": "journals-30",
-      "contentHtml": "Jinkai Tian, Xiaoyu Sun, Yuxuan Du, Shanshan Zhao, Qing Liu, Kaining Zhang, Wei Yi, Wanrong Huang, Chaoyue Wang, Xingyao Wu, Min-Hsiu Hsieh, Tongliang Liu, Wenjing Yang, Dacheng Tao. Recent Advances for Quantum Neural Networks in Generative Learning. IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 45, no. 10, pp. 12321-12340 (2023) [<a href=\"https://arxiv.org/abs/2206.03066\" target=\"_blank\" rel=\"noopener\">arXiv:2206.03066</a>] [<a href=\"https://doi.org/10.1109/TPAMI.2023.3272029\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Jinkai Tian, Xiaoyu Sun, Yuxuan Du, Shanshan Zhao, Qing Liu, Kaining Zhang, Wei Yi, Wanrong Huang, Chaoyue Wang, Xingyao Wu, Min-Hsiu Hsieh, Tongliang Liu, Wenjing Yang, Dacheng Tao. Recent Advances for Quantum Neural Networks in Generative Learning. IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 45, no. 10, pp. 12321-12340 (2023) [<a href=\"https://arxiv.org/abs/2206.03066\" target=\"_blank\" rel=\"noopener\">arXiv:2206.03066</a>] [<a href=\"https://doi.org/10.1109/TPAMI.2023.3272029\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Jinkai Tian, Xiaoyu Sun, Yuxuan Du, Shanshan Zhao, Qing Liu, Kaining Zhang, Wei Yi, Wanrong Huang, Chaoyue Wang, Xingyao Wu, Min-Hsiu Hsieh, Tongliang Liu, Wenjing Yang, Dacheng Tao",
+        "title": "Recent Advances for Quantum Neural Networks in Generative Learning",
+        "journal": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+        "year": "20",
+        "volume": "45",
+        "number": "10",
+        "pages": "12321--12340",
+        "doi": "10.1109/TPAMI.2023.3272029",
+        "url": "https://arxiv.org/abs/2206.03066",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal30"
+      }
     },
     {
       "id": "journals-31",
-      "contentHtml": "Jun Qi, Chao-Han Huck Yang, Pin-Yu Chen, Min-Hsiu Hsieh. Theoretical Error Performance Analysis for Variational Quantum Circuit Based Functional Regression. npj Quantum Information 9, Article number: 4 (2023) [<a href=\"https://arxiv.org/abs/2206.04804\" target=\"_blank\" rel=\"noopener\">arXiv:2206.04804</a>] [<a href=\"https://doi.org/10.1038/s41534-022-00672-7\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Jun Qi, Chao-Han Huck Yang, Pin-Yu Chen, Min-Hsiu Hsieh. Theoretical Error Performance Analysis for Variational Quantum Circuit Based Functional Regression. npj Quantum Information 9, Article number: 4 (2023) [<a href=\"https://arxiv.org/abs/2206.04804\" target=\"_blank\" rel=\"noopener\">arXiv:2206.04804</a>] [<a href=\"https://doi.org/10.1038/s41534-022-00672-7\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Jun Qi, Chao-Han Huck Yang, Pin-Yu Chen, Min-Hsiu Hsieh",
+        "title": "Theoretical Error Performance Analysis for Variational Quantum Circuit Based Functional Regression",
+        "journal": "npj Quantum Information",
+        "year": "20",
+        "volume": "9",
+        "number": "",
+        "pages": "4",
+        "doi": "10.1038/s41534-022-00672-7",
+        "url": "https://arxiv.org/abs/2206.04804",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal31"
+      }
     },
     {
       "id": "journals-32",
-      "contentHtml": "Jihao Fan, Jun Li, Ya Wang, Yonghui Li, Min-Hsiu Hsieh, Jiangfeng Du. Partially Concatenated Calderbank-Shor-Steane Codes Achieving the Quantum Gilbert-Varshamov Bound Asymptotically. IEEE Transactions on Information Theory, vol. 69, no. 1, pp. 262-272, (2023) [<a href=\"https://arxiv.org/abs/2107.05174\" target=\"_blank\" rel=\"noopener\">arXiv:2107.05174</a>] [<a href=\"https://doi.org/10.1109/TIT.2022.3201239\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Jihao Fan, Jun Li, Ya Wang, Yonghui Li, Min-Hsiu Hsieh, Jiangfeng Du. Partially Concatenated Calderbank-Shor-Steane Codes Achieving the Quantum Gilbert-Varshamov Bound Asymptotically. IEEE Transactions on Information Theory, vol. 69, no. 1, pp. 262-272, (2023) [<a href=\"https://arxiv.org/abs/2107.05174\" target=\"_blank\" rel=\"noopener\">arXiv:2107.05174</a>] [<a href=\"https://doi.org/10.1109/TIT.2022.3201239\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Jihao Fan, Jun Li, Ya Wang, Yonghui Li, Min-Hsiu Hsieh, Jiangfeng Du",
+        "title": "Partially Concatenated Calderbank-Shor-Steane Codes Achieving the Quantum Gilbert-Varshamov Bound Asymptotically",
+        "journal": "IEEE Transactions on Information Theory",
+        "year": "20",
+        "volume": "69",
+        "number": "1",
+        "pages": "262--272",
+        "doi": "10.1109/TIT.2022.3201239",
+        "url": "https://arxiv.org/abs/2107.05174",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal32"
+      }
     },
     {
       "id": "journals-33",
-      "contentHtml": "Pedro Figueroa-Romero, Kavan Modi, and Min-Hsiu Hsieh. Towards a general framework of Randomized Benchmarking incorporating non-Markovian Noise. Quantum 6, 868 (2022) [<a href=\"https://arxiv.org/abs/2202.11338\" target=\"_blank\" rel=\"noopener\">arXiv:2202.11338</a>] [<a href=\"https://doi.org/10.22331/q-2022-12-01-868\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Pedro Figueroa-Romero, Kavan Modi, and Min-Hsiu Hsieh. Towards a general framework of Randomized Benchmarking incorporating non-Markovian Noise. Quantum 6, 868 (2022) [<a href=\"https://arxiv.org/abs/2202.11338\" target=\"_blank\" rel=\"noopener\">arXiv:2202.11338</a>] [<a href=\"https://doi.org/10.22331/q-2022-12-01-868\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Pedro Figueroa-Romero, Kavan Modi, and Min-Hsiu Hsieh",
+        "title": "Towards a general framework of Randomized Benchmarking incorporating non-Markovian Noise",
+        "journal": "Quantum",
+        "year": "20",
+        "volume": "6",
+        "number": "",
+        "pages": "",
+        "doi": "10.22331/q-2022-12-01-868",
+        "url": "https://arxiv.org/abs/2202.11338",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal33"
+      }
     },
     {
       "id": "journals-34",
-      "contentHtml": "Eyuri Wakakuwa, Yoshifumi Nakata, Min-Hsiu Hsieh. One-Shot Trade-Off Bounds for State Redistribution of Classical-Quantum Sources. Quantum 6, 724 (2022) [<a href=\"https://arxiv.org/abs/2006.12059\" target=\"_blank\" rel=\"noopener\">arXiv:2006.12059</a>] [<a href=\"https://doi.org/10.22331/q-2022-05-30-724\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Eyuri Wakakuwa, Yoshifumi Nakata, Min-Hsiu Hsieh. One-Shot Trade-Off Bounds for State Redistribution of Classical-Quantum Sources. Quantum 6, 724 (2022) [<a href=\"https://arxiv.org/abs/2006.12059\" target=\"_blank\" rel=\"noopener\">arXiv:2006.12059</a>] [<a href=\"https://doi.org/10.22331/q-2022-05-30-724\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Eyuri Wakakuwa, Yoshifumi Nakata, Min-Hsiu Hsieh",
+        "title": "One-Shot Trade-Off Bounds for State Redistribution of Classical-Quantum Sources",
+        "journal": "Quantum",
+        "year": "20",
+        "volume": "6",
+        "number": "",
+        "pages": "",
+        "doi": "10.22331/q-2022-05-30-724",
+        "url": "https://arxiv.org/abs/2006.12059",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal34"
+      }
     },
     {
       "id": "journals-35",
-      "contentHtml": "Hao-Chung Cheng, Eric P. Hanson, Nilanjana Datta, Min-Hsiu Hsieh. Duality between source coding with quantum side information and c-q channel coding. IEEE Transactions on Information Theory, Volume: 68, Issue: 11, pp. 7315-7345, 2022 [<a href=\"https://arxiv.org/abs/1809.11143\" target=\"_blank\" rel=\"noopener\">arXiv:1809.11143</a>] [<a href=\"https://doi.org/10.1109/TIT.2022.3182748\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Hao-Chung Cheng, Eric P. Hanson, Nilanjana Datta, Min-Hsiu Hsieh. Duality between source coding with quantum side information and c-q channel coding. IEEE Transactions on Information Theory, Volume: 68, Issue: 11, pp. 7315-7345, 2022 [<a href=\"https://arxiv.org/abs/1809.11143\" target=\"_blank\" rel=\"noopener\">arXiv:1809.11143</a>] [<a href=\"https://doi.org/10.1109/TIT.2022.3182748\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Hao-Chung Cheng, Eric P. Hanson, Nilanjana Datta, Min-Hsiu Hsieh",
+        "title": "Duality between source coding with quantum side information and c-q channel coding",
+        "journal": "IEEE Transactions on Information Theory, Volume: 68, Issue: 11, pp 7315-7345, 2022",
+        "year": "20",
+        "volume": "7345",
+        "number": "11",
+        "pages": "7315--7345",
+        "doi": "10.1109/TIT.2022.3182748",
+        "url": "https://arxiv.org/abs/1809.11143",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal35"
+      }
     },
     {
       "id": "journals-36",
-      "contentHtml": "Yuxuan Du, Tao Huang, Shan You, Min-Hsiu Hsieh, Dacheng Tao. Quantum circuit architecture search for variational quantum algorithms. npj Quantum Information volume 8, Article number: 62 (2022) [<a href=\"https://arxiv.org/abs/2010.10217\" target=\"_blank\" rel=\"noopener\">arXiv:2010.10217</a>] [<a href=\"https://doi.org/10.1038/s41534-022-00570-y\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Yuxuan Du, Tao Huang, Shan You, Min-Hsiu Hsieh, Dacheng Tao. Quantum circuit architecture search for variational quantum algorithms. npj Quantum Information volume 8, Article number: 62 (2022) [<a href=\"https://arxiv.org/abs/2010.10217\" target=\"_blank\" rel=\"noopener\">arXiv:2010.10217</a>] [<a href=\"https://doi.org/10.1038/s41534-022-00570-y\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Yuxuan Du, Tao Huang, Shan You, Min-Hsiu Hsieh, Dacheng Tao",
+        "title": "Quantum circuit architecture search for variational quantum algorithms",
+        "journal": "npj Quantum Information",
+        "year": "20",
+        "volume": "8",
+        "number": "",
+        "pages": "62",
+        "doi": "10.1038/s41534-022-00570-y",
+        "url": "https://arxiv.org/abs/2010.10217",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal36"
+      }
     },
     {
       "id": "journals-37",
-      "contentHtml": "Yuxuan Du, Min-Hsiu Hsieh, Tongliang Liu, Shan You, Dacheng Tao. Quantum differentially private sparse regression learning. IEEE Transactions on Information Theory, Volume: 68, Issue: 8, pp. 5217-5233, 2022 [<a href=\"https://arxiv.org/abs/2007.11921\" target=\"_blank\" rel=\"noopener\">arXiv:2007.11921</a>] [<a href=\"https://doi.org/10.1109/TIT.2022.3164726\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Yuxuan Du, Min-Hsiu Hsieh, Tongliang Liu, Shan You, Dacheng Tao. Quantum differentially private sparse regression learning. IEEE Transactions on Information Theory, Volume: 68, Issue: 8, pp. 5217-5233, 2022 [<a href=\"https://arxiv.org/abs/2007.11921\" target=\"_blank\" rel=\"noopener\">arXiv:2007.11921</a>] [<a href=\"https://doi.org/10.1109/TIT.2022.3164726\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Yuxuan Du, Min-Hsiu Hsieh, Tongliang Liu, Shan You, Dacheng Tao",
+        "title": "Quantum differentially private sparse regression learning",
+        "journal": "IEEE Transactions on Information Theory, Volume: 68, Issue: 8, pp 5217-5233, 2022",
+        "year": "19",
+        "volume": "5233",
+        "number": "8",
+        "pages": "5217--5233",
+        "doi": "10.1109/TIT.2022.3164726",
+        "url": "https://arxiv.org/abs/2007.11921",
+        "entryType": "article",
+        "citationKey": "Hsieh19Journal37"
+      }
     },
     {
       "id": "journals-38",
-      "contentHtml": "Jihao Fan, Jun Li, Yongbin Zhou, Min-Hsiu Hsieh, H. Vincent Poor. Entanglement-assisted concatenated quantum codes. The Proceedings of the National Academy of Sciences (PNAS) 119 (24) e2202235119 (2022) [<a href=\"https://arxiv.org/abs/2202.08084\" target=\"_blank\" rel=\"noopener\">arXiv:2202.08084</a>] [<a href=\"https://doi.org/10.1073/pnas.2202235119\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Jihao Fan, Jun Li, Yongbin Zhou, Min-Hsiu Hsieh, H. Vincent Poor. Entanglement-assisted concatenated quantum codes. The Proceedings of the National Academy of Sciences (PNAS) 119 (24) e2202235119 (2022) [<a href=\"https://arxiv.org/abs/2202.08084\" target=\"_blank\" rel=\"noopener\">arXiv:2202.08084</a>] [<a href=\"https://doi.org/10.1073/pnas.2202235119\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Jihao Fan, Jun Li, Yongbin Zhou, Min-Hsiu Hsieh, H. Vincent Poor",
+        "title": "Entanglement-assisted concatenated quantum codes",
+        "journal": "The Proceedings of the National Academy of Sciences (PNAS)",
+        "year": "20",
+        "volume": "119",
+        "number": "24",
+        "pages": "",
+        "doi": "10.1073/pnas.2202235119",
+        "url": "https://arxiv.org/abs/2202.08084",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal38"
+      }
     },
     {
       "id": "journals-39",
-      "contentHtml": "Xu-Fei Yin, Yuxuan Du, Yue-Yang Fei, Rui Zhang, Li-Zheng Liu, Yingqiu Mao, Tongliang Liu, Min-Hsiu Hsieh, Li Li, Nai-Le Liu, Dacheng Tao, Yu-Ao Chen, Jian-Wei Pan. Efficient Bipartite Entanglement Detection Scheme with a Quantum Adversarial Solver. Physical Review Letters 128 (11): 110501 (2022). [<a href=\"https://arxiv.org/abs/2203.07749\" target=\"_blank\" rel=\"noopener\">arXiv:2203.07749</a>] [<a href=\"https://doi.org/10.1103/PhysRevLett.128.110501\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Xu-Fei Yin, Yuxuan Du, Yue-Yang Fei, Rui Zhang, Li-Zheng Liu, Yingqiu Mao, Tongliang Liu, Min-Hsiu Hsieh, Li Li, Nai-Le Liu, Dacheng Tao, Yu-Ao Chen, Jian-Wei Pan. Efficient Bipartite Entanglement Detection Scheme with a Quantum Adversarial Solver. Physical Review Letters 128 (11): 110501 (2022). [<a href=\"https://arxiv.org/abs/2203.07749\" target=\"_blank\" rel=\"noopener\">arXiv:2203.07749</a>] [<a href=\"https://doi.org/10.1103/PhysRevLett.128.110501\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Xu-Fei Yin, Yuxuan Du, Yue-Yang Fei, Rui Zhang, Li-Zheng Liu, Yingqiu Mao, Tongliang Liu, Min-Hsiu Hsieh, Li Li, Nai-Le Liu, Dacheng Tao, Yu-Ao Chen, Jian-Wei Pan",
+        "title": "Efficient Bipartite Entanglement Detection Scheme with a Quantum Adversarial Solver",
+        "journal": "Physical Review Letters",
+        "year": "20",
+        "volume": "128",
+        "number": "11",
+        "pages": "",
+        "doi": "10.1103/PhysRevLett.128.110501",
+        "url": "https://arxiv.org/abs/2203.07749",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal39"
+      }
     },
     {
       "id": "journals-40",
-      "contentHtml": "Hao-Chung Cheng, Li Gao, Min-Hsiu Hsieh. Properties of Noncommutative Renyi and Augustin Information. Communications in Mathematical Physics 390, pages 501–544 (2022) [<a href=\"https://arxiv.org/abs/1811.04218\" target=\"_blank\" rel=\"noopener\">arXiv:1811.04218</a>] [<a href=\"https://link.springer.com/article/10.1007/s00220-022-04319-8\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Hao-Chung Cheng, Li Gao, Min-Hsiu Hsieh. Properties of Noncommutative Renyi and Augustin Information. Communications in Mathematical Physics 390, pages 501–544 (2022) [<a href=\"https://arxiv.org/abs/1811.04218\" target=\"_blank\" rel=\"noopener\">arXiv:1811.04218</a>] [<a href=\"https://link.springer.com/article/10.1007/s00220-022-04319-8\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Hao-Chung Cheng, Li Gao, Min-Hsiu Hsieh",
+        "title": "Properties of Noncommutative Renyi and Augustin Information",
+        "journal": "Communications in Mathematical Physics 390, pages 501–544",
+        "year": "20",
+        "volume": "",
+        "number": "",
+        "pages": "501--544",
+        "doi": "https://link.springer.com/article/10.1007/s00220-022-04319-8",
+        "url": "https://arxiv.org/abs/1811.04218",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal40"
+      }
     },
     {
       "id": "journals-41",
-      "contentHtml": "Pedro Figueroa-Romero, Kavan Modi, Thomas M. Stace, Min-Hsiu Hsieh. Randomised benchmarking for non-Markovian noise. PRX Quantum 2, 040351 (2021) [<a href=\"https://arxiv.org/abs/2107.05403\" target=\"_blank\" rel=\"noopener\">arXiv:2107.05403</a>] [<a href=\"https://doi.org/10.1103/PRXQuantum.2.040351\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Pedro Figueroa-Romero, Kavan Modi, Thomas M. Stace, Min-Hsiu Hsieh. Randomised benchmarking for non-Markovian noise. PRX Quantum 2, 040351 (2021) [<a href=\"https://arxiv.org/abs/2107.05403\" target=\"_blank\" rel=\"noopener\">arXiv:2107.05403</a>] [<a href=\"https://doi.org/10.1103/PRXQuantum.2.040351\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Pedro Figueroa-Romero, Kavan Modi, Thomas M. Stace, Min-Hsiu Hsieh",
+        "title": "Randomised benchmarking for non-Markovian noise",
+        "journal": "PRX Quantum",
+        "year": "20",
+        "volume": "2",
+        "number": "",
+        "pages": "",
+        "doi": "10.1103/PRXQuantum.2.040351",
+        "url": "https://arxiv.org/abs/2107.05403",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal41"
+      }
     },
     {
       "id": "journals-42",
-      "contentHtml": "Yuxuan Du, Min-Hsiu Hsieh, Tongliang Liu, Shan You, Dacheng Tao. On the learnability of quantum neural networks. PRX Quantum 2, 040337 (2021) [<a href=\"https://arxiv.org/abs/2007.12369\" target=\"_blank\" rel=\"noopener\">arXiv:2007.12369</a>] [<a href=\"https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.2.040337\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Yuxuan Du, Min-Hsiu Hsieh, Tongliang Liu, Shan You, Dacheng Tao. On the learnability of quantum neural networks. PRX Quantum 2, 040337 (2021) [<a href=\"https://arxiv.org/abs/2007.12369\" target=\"_blank\" rel=\"noopener\">arXiv:2007.12369</a>] [<a href=\"https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.2.040337\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Yuxuan Du, Min-Hsiu Hsieh, Tongliang Liu, Shan You, Dacheng Tao",
+        "title": "On the learnability of quantum neural networks",
+        "journal": "PRX Quantum",
+        "year": "20",
+        "volume": "2",
+        "number": "",
+        "pages": "",
+        "doi": "https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.2.040337",
+        "url": "https://arxiv.org/abs/2007.12369",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal42"
+      }
     },
     {
       "id": "journals-43",
-      "contentHtml": "Kaining Zhang, Min-Hsiu Hsieh, Liu Liu, Dacheng Tao. Quantum Gram-Schmidt processes and their application to efficient state readout for quantum algorithms. Physical Review Research 3, 04395 (2021) [<a href=\"https://arxiv.org/abs/2004.06421\" target=\"_blank\" rel=\"noopener\">arXiv:2004.06421</a>] [<a href=\"https://doi.org/10.1103/PhysRevResearch.3.043095\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Kaining Zhang, Min-Hsiu Hsieh, Liu Liu, Dacheng Tao. Quantum Gram-Schmidt processes and their application to efficient state readout for quantum algorithms. Physical Review Research 3, 04395 (2021) [<a href=\"https://arxiv.org/abs/2004.06421\" target=\"_blank\" rel=\"noopener\">arXiv:2004.06421</a>] [<a href=\"https://doi.org/10.1103/PhysRevResearch.3.043095\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Kaining Zhang, Min-Hsiu Hsieh, Liu Liu, Dacheng Tao",
+        "title": "Quantum Gram-Schmidt processes and their application to efficient state readout for quantum algorithms",
+        "journal": "Physical Review Research",
+        "year": "20",
+        "volume": "3",
+        "number": "",
+        "pages": "",
+        "doi": "10.1103/PhysRevResearch.3.043095",
+        "url": "https://arxiv.org/abs/2004.06421",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal43"
+      }
     },
     {
       "id": "journals-44",
-      "contentHtml": "He-Liang Huang, Yuxuan Du, Ming Gong, Youwei Zhao, Yulin Wu, Chaoyue Wang, Shaowei Li, Futian Liang, Jin Lin, Yu Xu, Rui Yang, Tongliang Liu, Min-Hsiu Hsieh, Hui Deng, Hao Rong, Cheng-Zhi Peng, Chao-Yang Lu, Yu-Ao Chen, Dacheng Tao, Xiaobo Zhu, Jian-Wei Pan. Experimental Quantum Generative Adversarial Networks for Image Generation. Physical Review Applied 16, 024051 (2021) [<a href=\"https://arxiv.org/abs/2010.06201\" target=\"_blank\" rel=\"noopener\">arXiv:2010.06201</a>] [<a href=\"https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.16.024051\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "He-Liang Huang, Yuxuan Du, Ming Gong, Youwei Zhao, Yulin Wu, Chaoyue Wang, Shaowei Li, Futian Liang, Jin Lin, Yu Xu, Rui Yang, Tongliang Liu, Min-Hsiu Hsieh, Hui Deng, Hao Rong, Cheng-Zhi Peng, Chao-Yang Lu, Yu-Ao Chen, Dacheng Tao, Xiaobo Zhu, Jian-Wei Pan. Experimental Quantum Generative Adversarial Networks for Image Generation. Physical Review Applied 16, 024051 (2021) [<a href=\"https://arxiv.org/abs/2010.06201\" target=\"_blank\" rel=\"noopener\">arXiv:2010.06201</a>] [<a href=\"https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.16.024051\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "He-Liang Huang, Yuxuan Du, Ming Gong, Youwei Zhao, Yulin Wu, Chaoyue Wang, Shaowei Li, Futian Liang, Jin Lin, Yu Xu, Rui Yang, Tongliang Liu, Min-Hsiu Hsieh, Hui Deng, Hao Rong, Cheng-Zhi Peng, Chao-Yang Lu, Yu-Ao Chen, Dacheng Tao, Xiaobo Zhu, Jian-Wei Pan",
+        "title": "Experimental Quantum Generative Adversarial Networks for Image Generation",
+        "journal": "Physical Review Applied",
+        "year": "20",
+        "volume": "16",
+        "number": "",
+        "pages": "",
+        "doi": "https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.16.024051",
+        "url": "https://arxiv.org/abs/2010.06201",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal44"
+      }
     },
     {
       "id": "journals-45",
-      "contentHtml": "Sathyawageeswar Subramanian, Min-Hsiu Hsieh. Quantum algorithm for estimating Renyi entropies of quantum states. Physical Review A 104, 022428 (2021) [<a href=\"https://arxiv.org/abs/1908.05251\" target=\"_blank\" rel=\"noopener\">arXiv:1908.05251</a>] [<a href=\"https://journals.aps.org/pra/abstract/10.1103/PhysRevA.104.022428\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Sathyawageeswar Subramanian, Min-Hsiu Hsieh. Quantum algorithm for estimating Renyi entropies of quantum states. Physical Review A 104, 022428 (2021) [<a href=\"https://arxiv.org/abs/1908.05251\" target=\"_blank\" rel=\"noopener\">arXiv:1908.05251</a>] [<a href=\"https://journals.aps.org/pra/abstract/10.1103/PhysRevA.104.022428\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Sathyawageeswar Subramanian, Min-Hsiu Hsieh",
+        "title": "Quantum algorithm for estimating Renyi entropies of quantum states",
+        "journal": "Physical Review A",
+        "year": "19",
+        "volume": "104",
+        "number": "",
+        "pages": "",
+        "doi": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.104.022428",
+        "url": "https://arxiv.org/abs/1908.05251",
+        "entryType": "article",
+        "citationKey": "Hsieh19Journal45"
+      }
     },
     {
       "id": "journals-46",
-      "contentHtml": "Hayata Yamasaki, Madhav Krishnan Vijayan, Min-Hsiu Hsieh. Hierarchy of quantum operations in manipulating coherence and entanglement. Quantum 5, 480 (2021) [<a href=\"https://arxiv.org/abs/1912.11049\" target=\"_blank\" rel=\"noopener\">arXiv:1912.11049</a>] [<a href=\"https://doi.org/10.22331/q-2021-06-24-480\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Hayata Yamasaki, Madhav Krishnan Vijayan, Min-Hsiu Hsieh. Hierarchy of quantum operations in manipulating coherence and entanglement. Quantum 5, 480 (2021) [<a href=\"https://arxiv.org/abs/1912.11049\" target=\"_blank\" rel=\"noopener\">arXiv:1912.11049</a>] [<a href=\"https://doi.org/10.22331/q-2021-06-24-480\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Hayata Yamasaki, Madhav Krishnan Vijayan, Min-Hsiu Hsieh",
+        "title": "Hierarchy of quantum operations in manipulating coherence and entanglement",
+        "journal": "Quantum",
+        "year": "19",
+        "volume": "5",
+        "number": "",
+        "pages": "",
+        "doi": "10.22331/q-2021-06-24-480",
+        "url": "https://arxiv.org/abs/1912.11049",
+        "entryType": "article",
+        "citationKey": "Hsieh19Journal46"
+      }
     },
     {
       "id": "journals-47",
-      "contentHtml": "Jihao Fan, Jun Li, Jianxin Wang, Zhihui Wei, Min-Hsiu Hsieh. Asymmetric Quantum Concatenated and Tensor Product Codes With Large Z-Distances. IEEE Transactions on Communications, Volume: 69, Issue: 6, pp: 3971-3983 (2021) [<a href=\"https://arxiv.org/abs/2012.00226\" target=\"_blank\" rel=\"noopener\">arXiv:2012.00226</a>] [<a href=\"https://doi.org/10.1109/TCOMM.2021.3064566\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Jihao Fan, Jun Li, Jianxin Wang, Zhihui Wei, Min-Hsiu Hsieh. Asymmetric Quantum Concatenated and Tensor Product Codes With Large Z-Distances. IEEE Transactions on Communications, Volume: 69, Issue: 6, pp: 3971-3983 (2021) [<a href=\"https://arxiv.org/abs/2012.00226\" target=\"_blank\" rel=\"noopener\">arXiv:2012.00226</a>] [<a href=\"https://doi.org/10.1109/TCOMM.2021.3064566\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Jihao Fan, Jun Li, Jianxin Wang, Zhihui Wei, Min-Hsiu Hsieh",
+        "title": "Asymmetric Quantum Concatenated and Tensor Product Codes With Large Z-Distances",
+        "journal": "IEEE Transactions on Communications, Volume: 69, Issue: 6, pp: 3971-3983",
+        "year": "20",
+        "volume": "",
+        "number": "6",
+        "pages": "3971--3983",
+        "doi": "10.1109/TCOMM.2021.3064566",
+        "url": "https://arxiv.org/abs/2012.00226",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal47"
+      }
     },
     {
       "id": "journals-48",
-      "contentHtml": "Yuxuan Du, Min-Hsiu Hsieh, Tongliang Liu, Dacheng Tao, Nana Liu. Quantum noise protects quantum classifiers against adversaries. Physical Review Research 3, 023153 (2021) [<a href=\"https://arxiv.org/abs/2003.09416\" target=\"_blank\" rel=\"noopener\">arXiv:2003.09416</a>] [<a href=\"https://doi.org/10.1103/PhysRevResearch.3.023153\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Yuxuan Du, Min-Hsiu Hsieh, Tongliang Liu, Dacheng Tao, Nana Liu. Quantum noise protects quantum classifiers against adversaries. Physical Review Research 3, 023153 (2021) [<a href=\"https://arxiv.org/abs/2003.09416\" target=\"_blank\" rel=\"noopener\">arXiv:2003.09416</a>] [<a href=\"https://doi.org/10.1103/PhysRevResearch.3.023153\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Yuxuan Du, Min-Hsiu Hsieh, Tongliang Liu, Dacheng Tao, Nana Liu",
+        "title": "Quantum noise protects quantum classifiers against adversaries",
+        "journal": "Physical Review Research",
+        "year": "20",
+        "volume": "3",
+        "number": "",
+        "pages": "",
+        "doi": "10.1103/PhysRevResearch.3.023153",
+        "url": "https://arxiv.org/abs/2003.09416",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal48"
+      }
     },
     {
       "id": "journals-49",
-      "contentHtml": "Haowei Shi, Min-Hsiu Hsieh, Saikat Guha, Zheshen Zhang, Quntao Zhuang. Entanglement-assisted multiple-access channels: capacity regions and protocol designs. npj Quantum Information volume 7, Article number: 74 (2021) [<a href=\"https://arxiv.org/abs/2101.12173\" target=\"_blank\" rel=\"noopener\">arXiv:2101.12173</a>] [<a href=\"https://doi.org/10.1038/s41534-021-00412-3\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Haowei Shi, Min-Hsiu Hsieh, Saikat Guha, Zheshen Zhang, Quntao Zhuang. Entanglement-assisted multiple-access channels: capacity regions and protocol designs. npj Quantum Information volume 7, Article number: 74 (2021) [<a href=\"https://arxiv.org/abs/2101.12173\" target=\"_blank\" rel=\"noopener\">arXiv:2101.12173</a>] [<a href=\"https://doi.org/10.1038/s41534-021-00412-3\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Haowei Shi, Min-Hsiu Hsieh, Saikat Guha, Zheshen Zhang, Quntao Zhuang",
+        "title": "Entanglement-assisted multiple-access channels: capacity regions and protocol designs",
+        "journal": "npj Quantum Information",
+        "year": "20",
+        "volume": "7",
+        "number": "",
+        "pages": "74",
+        "doi": "10.1038/s41534-021-00412-3",
+        "url": "https://arxiv.org/abs/2101.12173",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal49"
+      }
     },
     {
       "id": "journals-50",
-      "contentHtml": "Yuxuan Du, Min-Hsiu Hsieh, Tongliang Liu, Dacheng Tao. A Grover-search based quantum learning scheme for classification. New Journal of Physics, Volume 23, 023020 (2021) [<a href=\"https://arxiv.org/abs/1809.06056\" target=\"_blank\" rel=\"noopener\">arXiv:1809.06056</a>] [<a href=\"https://dx.doi.org/10.1088/1367-2630/abdefa\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Yuxuan Du, Min-Hsiu Hsieh, Tongliang Liu, Dacheng Tao. A Grover-search based quantum learning scheme for classification. New Journal of Physics, Volume 23, 023020 (2021) [<a href=\"https://arxiv.org/abs/1809.06056\" target=\"_blank\" rel=\"noopener\">arXiv:1809.06056</a>] [<a href=\"https://dx.doi.org/10.1088/1367-2630/abdefa\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Yuxuan Du, Min-Hsiu Hsieh, Tongliang Liu, Dacheng Tao",
+        "title": "A Grover-search based quantum learning scheme for classification",
+        "journal": "New Journal of Physics",
+        "year": "20",
+        "volume": "23",
+        "number": "",
+        "pages": "",
+        "doi": "https://dx.doi.org/10.1088/1367-2630/abdefa",
+        "url": "https://arxiv.org/abs/1809.06056",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal50"
+      }
     },
     {
       "id": "journals-51",
-      "contentHtml": "Ximing Wang, Yuechi Ma, Min-Hsiu Hsieh, Manhong Yung. Quantum Speedup in Adaptive Boosting of Binary Classification. SCIENCE CHINA Physics, Mechanics & Astronomy, Volume 64, Issue 2: 220311 (2021) [<a href=\"https://arxiv.org/abs/1902.00869\" target=\"_blank\" rel=\"noopener\">arXiv:1902.00869</a>] [<a href=\"https://doi.org/10.1007/s11433-020-1638-5\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Ximing Wang, Yuechi Ma, Min-Hsiu Hsieh, Manhong Yung. Quantum Speedup in Adaptive Boosting of Binary Classification. SCIENCE CHINA Physics, Mechanics & Astronomy, Volume 64, Issue 2: 220311 (2021) [<a href=\"https://arxiv.org/abs/1902.00869\" target=\"_blank\" rel=\"noopener\">arXiv:1902.00869</a>] [<a href=\"https://doi.org/10.1007/s11433-020-1638-5\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Ximing Wang, Yuechi Ma, Min-Hsiu Hsieh, Manhong Yung",
+        "title": "Quantum Speedup in Adaptive Boosting of Binary Classification",
+        "journal": "SCIENCE CHINA Physics, Mechanics & Astronomy",
+        "year": "19",
+        "volume": "64",
+        "number": "2",
+        "pages": "",
+        "doi": "10.1007/s11433-020-1638-5",
+        "url": "https://arxiv.org/abs/1902.00869",
+        "entryType": "article",
+        "citationKey": "Hsieh19Journal51"
+      }
     },
     {
       "id": "journals-52",
-      "contentHtml": "Hao-Chung Cheng, Eric P. Hanson, Nilanjana Datta, Min-Hsiu Hsieh. Non-Asymptotic Classical Data Compression with Quantum Side Information. IEEE Transactions on Information Theory, vol. 67, no. 2, pp. 902-930, (2021) [<a href=\"https://arxiv.org/abs/1803.07505\" target=\"_blank\" rel=\"noopener\">arXiv:1803.07505</a>] [<a href=\"https://doi.org/10.1109/TIT.2020.3038517\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Hao-Chung Cheng, Eric P. Hanson, Nilanjana Datta, Min-Hsiu Hsieh. Non-Asymptotic Classical Data Compression with Quantum Side Information. IEEE Transactions on Information Theory, vol. 67, no. 2, pp. 902-930, (2021) [<a href=\"https://arxiv.org/abs/1803.07505\" target=\"_blank\" rel=\"noopener\">arXiv:1803.07505</a>] [<a href=\"https://doi.org/10.1109/TIT.2020.3038517\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Hao-Chung Cheng, Eric P. Hanson, Nilanjana Datta, Min-Hsiu Hsieh",
+        "title": "Non-Asymptotic Classical Data Compression with Quantum Side Information",
+        "journal": "IEEE Transactions on Information Theory",
+        "year": "20",
+        "volume": "67",
+        "number": "2",
+        "pages": "902--930",
+        "doi": "10.1109/TIT.2020.3038517",
+        "url": "https://arxiv.org/abs/1803.07505",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal52"
+      }
     },
     {
       "id": "journals-53",
-      "contentHtml": "Madhav Krishnan Vijayan, Eric Chitambar, Min-Hsiu Hsieh. Simple bounds for one-shot pure-state distillation in general resource theories. Physical Review A 102, 052403 (2020) [<a href=\"https://arxiv.org/abs/1906.04959\" target=\"_blank\" rel=\"noopener\">arXiv:1906.04959</a>] [<a href=\"https://doi.org/10.1103/PhysRevA.102.052403\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Madhav Krishnan Vijayan, Eric Chitambar, Min-Hsiu Hsieh. Simple bounds for one-shot pure-state distillation in general resource theories. Physical Review A 102, 052403 (2020) [<a href=\"https://arxiv.org/abs/1906.04959\" target=\"_blank\" rel=\"noopener\">arXiv:1906.04959</a>] [<a href=\"https://doi.org/10.1103/PhysRevA.102.052403\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Madhav Krishnan Vijayan, Eric Chitambar, Min-Hsiu Hsieh",
+        "title": "Simple bounds for one-shot pure-state distillation in general resource theories",
+        "journal": "Physical Review A",
+        "year": "19",
+        "volume": "102",
+        "number": "",
+        "pages": "",
+        "doi": "10.1103/PhysRevA.102.052403",
+        "url": "https://arxiv.org/abs/1906.04959",
+        "entryType": "article",
+        "citationKey": "Hsieh19Journal53"
+      }
     },
     {
       "id": "journals-54",
-      "contentHtml": "Anurag Anshu, Min-Hsiu Hsieh and Rahul Jain. Noisy quantum state redistribution with promise and the Alpha-bit. IEEE Transactions on Information Theory, vol. 66, no. 12, pp. 7772-7786, (2020) [<a href=\"https://arxiv.org/abs/1803.03414\" target=\"_blank\" rel=\"noopener\">arXiv:1803.03414</a>] [<a href=\"https://doi.org/10.1109/TIT.2020.3021289\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Anurag Anshu, Min-Hsiu Hsieh and Rahul Jain. Noisy quantum state redistribution with promise and the Alpha-bit. IEEE Transactions on Information Theory, vol. 66, no. 12, pp. 7772-7786, (2020) [<a href=\"https://arxiv.org/abs/1803.03414\" target=\"_blank\" rel=\"noopener\">arXiv:1803.03414</a>] [<a href=\"https://doi.org/10.1109/TIT.2020.3021289\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Anurag Anshu, Min-Hsiu Hsieh and Rahul Jain",
+        "title": "Noisy quantum state redistribution with promise and the Alpha-bit",
+        "journal": "IEEE Transactions on Information Theory",
+        "year": "20",
+        "volume": "66",
+        "number": "12",
+        "pages": "7772--7786",
+        "doi": "10.1109/TIT.2020.3021289",
+        "url": "https://arxiv.org/abs/1803.03414",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal54"
+      }
     },
     {
       "id": "journals-55",
-      "contentHtml": "Farzin Salek, Min-Hsiu Hsieh, Javier R. Fonollosa. Single-Serving Quantum Broadcast Channel With Common, Individualized, and Confidential Messages. IEEE Transactions on Information Theory, vol. 66, no. 12, pp. 7752-7771, (2020) [<a href=\"https://arxiv.org/abs/1903.04463\" target=\"_blank\" rel=\"noopener\">arXiv:1903.04463</a>] [<a href=\"https://doi.org/10.1109/TIT.2020.3013098\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Farzin Salek, Min-Hsiu Hsieh, Javier R. Fonollosa. Single-Serving Quantum Broadcast Channel With Common, Individualized, and Confidential Messages. IEEE Transactions on Information Theory, vol. 66, no. 12, pp. 7752-7771, (2020) [<a href=\"https://arxiv.org/abs/1903.04463\" target=\"_blank\" rel=\"noopener\">arXiv:1903.04463</a>] [<a href=\"https://doi.org/10.1109/TIT.2020.3013098\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Farzin Salek, Min-Hsiu Hsieh, Javier R. Fonollosa",
+        "title": "Single-Serving Quantum Broadcast Channel With Common, Individualized, and Confidential Messages",
+        "journal": "IEEE Transactions on Information Theory",
+        "year": "19",
+        "volume": "66",
+        "number": "12",
+        "pages": "7752--7771",
+        "doi": "10.1109/TIT.2020.3013098",
+        "url": "https://arxiv.org/abs/1903.04463",
+        "entryType": "article",
+        "citationKey": "Hsieh19Journal55"
+      }
     },
     {
       "id": "journals-56",
-      "contentHtml": "Yuxuan Du, Min-Hsiu Hsieh, Tongliang Liu, Dacheng Tao. Quantum-inspired algorithm for general minimum conical hull problems. Physical Review Research 2, 033199 (2020) [<a href=\"https://arxiv.org/abs/1907.06814\" target=\"_blank\" rel=\"noopener\">arXiv:1907.06814</a>] [<a href=\"https://doi.org/10.1103/PhysRevResearch.2.033199\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Yuxuan Du, Min-Hsiu Hsieh, Tongliang Liu, Dacheng Tao. Quantum-inspired algorithm for general minimum conical hull problems. Physical Review Research 2, 033199 (2020) [<a href=\"https://arxiv.org/abs/1907.06814\" target=\"_blank\" rel=\"noopener\">arXiv:1907.06814</a>] [<a href=\"https://doi.org/10.1103/PhysRevResearch.2.033199\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Yuxuan Du, Min-Hsiu Hsieh, Tongliang Liu, Dacheng Tao",
+        "title": "Quantum-inspired algorithm for general minimum conical hull problems",
+        "journal": "Physical Review Research",
+        "year": "19",
+        "volume": "2",
+        "number": "",
+        "pages": "",
+        "doi": "10.1103/PhysRevResearch.2.033199",
+        "url": "https://arxiv.org/abs/1907.06814",
+        "entryType": "article",
+        "citationKey": "Hsieh19Journal56"
+      }
     },
     {
       "id": "journals-57",
-      "contentHtml": "Yuxuan Du, Min-Hsiu Hsieh, Tongliang Liu, Dacheng Tao. Expressive Power of Parametrized Quantum Circuits. Physical Review Research 2, 033125 (2020) [<a href=\"https://arxiv.org/abs/1810.11922\" target=\"_blank\" rel=\"noopener\">arXiv:1810.11922</a>] [<a href=\"https://doi.org/10.1103/PhysRevResearch.2.033125\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Yuxuan Du, Min-Hsiu Hsieh, Tongliang Liu, Dacheng Tao. Expressive Power of Parametrized Quantum Circuits. Physical Review Research 2, 033125 (2020) [<a href=\"https://arxiv.org/abs/1810.11922\" target=\"_blank\" rel=\"noopener\">arXiv:1810.11922</a>] [<a href=\"https://doi.org/10.1103/PhysRevResearch.2.033125\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Yuxuan Du, Min-Hsiu Hsieh, Tongliang Liu, Dacheng Tao",
+        "title": "Expressive Power of Parametrized Quantum Circuits",
+        "journal": "Physical Review Research",
+        "year": "19",
+        "volume": "2",
+        "number": "",
+        "pages": "",
+        "doi": "10.1103/PhysRevResearch.2.033125",
+        "url": "https://arxiv.org/abs/1810.11922",
+        "entryType": "article",
+        "citationKey": "Hsieh19Journal57"
+      }
     },
     {
       "id": "journals-58",
-      "contentHtml": "Farzin Salek, Anurag Anshu, Min-Hsiu Hsieh, Rahul Jain, Javier R. Fonollosa. One-shot Capacity bounds on the Simultaneous Transmission of Classical and Quantum Information. IEEE Transactions on Information Theory, vol. 66, no. 4, pp. 2141-2164 (2020) [<a href=\"https://arxiv.org/abs/1809.07104\" target=\"_blank\" rel=\"noopener\">arXiv:1809.07104</a>] [<a href=\"https://doi.org/10.1109/TIT.2019.2945800\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Farzin Salek, Anurag Anshu, Min-Hsiu Hsieh, Rahul Jain, Javier R. Fonollosa. One-shot Capacity bounds on the Simultaneous Transmission of Classical and Quantum Information. IEEE Transactions on Information Theory, vol. 66, no. 4, pp. 2141-2164 (2020) [<a href=\"https://arxiv.org/abs/1809.07104\" target=\"_blank\" rel=\"noopener\">arXiv:1809.07104</a>] [<a href=\"https://doi.org/10.1109/TIT.2019.2945800\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Farzin Salek, Anurag Anshu, Min-Hsiu Hsieh, Rahul Jain, Javier R. Fonollosa",
+        "title": "One-shot Capacity bounds on the Simultaneous Transmission of Classical and Quantum Information",
+        "journal": "IEEE Transactions on Information Theory",
+        "year": "20",
+        "volume": "66",
+        "number": "4",
+        "pages": "2141--2164",
+        "doi": "10.1109/TIT.2019.2945800",
+        "url": "https://arxiv.org/abs/1809.07104",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal58"
+      }
     },
     {
       "id": "journals-59",
-      "contentHtml": "Chao Zhang, Xianjie Gao, Min-Hsiu Hsieh, Hanyuan Hang, Dacheng Tao. Matrix Infinitely Divisible Series: Tail Inequalities and Their Applications. IEEE Transactions on Information Theory, vol. 66, no. 2, pp. 1099-1117 (2020) [<a href=\"https://arxiv.org/abs/1809.00781\" target=\"_blank\" rel=\"noopener\">arXiv:1809.00781</a>] [<a href=\"https://doi.org/10.1109/TIT.2019.2951759\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Chao Zhang, Xianjie Gao, Min-Hsiu Hsieh, Hanyuan Hang, Dacheng Tao. Matrix Infinitely Divisible Series: Tail Inequalities and Their Applications. IEEE Transactions on Information Theory, vol. 66, no. 2, pp. 1099-1117 (2020) [<a href=\"https://arxiv.org/abs/1809.00781\" target=\"_blank\" rel=\"noopener\">arXiv:1809.00781</a>] [<a href=\"https://doi.org/10.1109/TIT.2019.2951759\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Chao Zhang, Xianjie Gao, Min-Hsiu Hsieh, Hanyuan Hang, Dacheng Tao",
+        "title": "Matrix Infinitely Divisible Series: Tail Inequalities and Their Applications",
+        "journal": "IEEE Transactions on Information Theory",
+        "year": "20",
+        "volume": "66",
+        "number": "2",
+        "pages": "1099--1117",
+        "doi": "10.1109/TIT.2019.2951759",
+        "url": "https://arxiv.org/abs/1809.00781",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal59"
+      }
     },
     {
       "id": "journals-60",
-      "contentHtml": "Elton Yechao Zhu, Quntao Zhuang, Min-Hsiu Hsieh, Peter W. Shor. Superadditivity in trade-off capacities of quantum channels. IEEE Transactions on Information Theory, vol. 65, no. 6, pp. 3973-3989 (2019) [<a href=\"https://arxiv.org/abs/1708.04314\" target=\"_blank\" rel=\"noopener\">arXiv:1708.04314</a>] [<a href=\"https://doi.org/10.1109/TIT.2018.2889082\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Elton Yechao Zhu, Quntao Zhuang, Min-Hsiu Hsieh, Peter W. Shor. Superadditivity in trade-off capacities of quantum channels. IEEE Transactions on Information Theory, vol. 65, no. 6, pp. 3973-3989 (2019) [<a href=\"https://arxiv.org/abs/1708.04314\" target=\"_blank\" rel=\"noopener\">arXiv:1708.04314</a>] [<a href=\"https://doi.org/10.1109/TIT.2018.2889082\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Elton Yechao Zhu, Quntao Zhuang, Min-Hsiu Hsieh, Peter W. Shor",
+        "title": "Superadditivity in trade-off capacities of quantum channels",
+        "journal": "IEEE Transactions on Information Theory",
+        "year": "20",
+        "volume": "65",
+        "number": "6",
+        "pages": "3973--3989",
+        "doi": "10.1109/TIT.2018.2889082",
+        "url": "https://arxiv.org/abs/1708.04314",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal60"
+      }
     },
     {
       "id": "journals-61",
-      "contentHtml": "Hao-Chung Cheng, Min-Hsiu Hsieh, Marco Tomamichel. Quantum Sphere-Packing Bounds with Polynomial Prefactors. IEEE Transactions on Information Theory, vol. 65, no. 5, pp. 2872-2898 (2019) [<a href=\"https://arxiv.org/abs/1704.05703\" target=\"_blank\" rel=\"noopener\">arXiv:1704.05703</a>] [<a href=\"https://doi.org/10.1109/TIT.2019.2891347\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Hao-Chung Cheng, Min-Hsiu Hsieh, Marco Tomamichel. Quantum Sphere-Packing Bounds with Polynomial Prefactors. IEEE Transactions on Information Theory, vol. 65, no. 5, pp. 2872-2898 (2019) [<a href=\"https://arxiv.org/abs/1704.05703\" target=\"_blank\" rel=\"noopener\">arXiv:1704.05703</a>] [<a href=\"https://doi.org/10.1109/TIT.2019.2891347\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Hao-Chung Cheng, Min-Hsiu Hsieh, Marco Tomamichel",
+        "title": "Quantum Sphere-Packing Bounds with Polynomial Prefactors",
+        "journal": "IEEE Transactions on Information Theory",
+        "year": "20",
+        "volume": "65",
+        "number": "5",
+        "pages": "2872--2898",
+        "doi": "10.1109/TIT.2019.2891347",
+        "url": "https://arxiv.org/abs/1704.05703",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal61"
+      }
     },
     {
       "id": "journals-62",
-      "contentHtml": "Yu Luo, Yongming Li, Min-Hsiu Hsieh. Inequivalent Multipartite Coherence Classes and New Coherence Monotones. Physical Review A, vol. 99, p. 242306 (2019) [<a href=\"https://arxiv.org/abs/1807.06308\" target=\"_blank\" rel=\"noopener\">arXiv:1807.06308</a>] [<a href=\"https://doi.org/10.1103/PhysRevA.99.042306\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Yu Luo, Yongming Li, Min-Hsiu Hsieh. Inequivalent Multipartite Coherence Classes and New Coherence Monotones. Physical Review A, vol. 99, p. 242306 (2019) [<a href=\"https://arxiv.org/abs/1807.06308\" target=\"_blank\" rel=\"noopener\">arXiv:1807.06308</a>] [<a href=\"https://doi.org/10.1103/PhysRevA.99.042306\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Yu Luo, Yongming Li, Min-Hsiu Hsieh",
+        "title": "Inequivalent Multipartite Coherence Classes and New Coherence Monotones",
+        "journal": "Physical Review A",
+        "year": "20",
+        "volume": "99",
+        "number": "",
+        "pages": "",
+        "doi": "10.1103/PhysRevA.99.042306",
+        "url": "https://arxiv.org/abs/1807.06308",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal62"
+      }
     },
     {
       "id": "journals-63",
-      "contentHtml": "Hao-Chung Cheng, Min-Hsiu Hsieh. Matrix Poincaré, Φ-Sobolev inequalities, and quantum ensembles. Journal of Mathematical Physics 60, 032201 (2019) [<a href=\"https://arxiv.org/abs/1506.06801\" target=\"_blank\" rel=\"noopener\">arXiv:1506.06801</a>] [<a href=\"https://doi.org/10.1063/1.5035381\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Hao-Chung Cheng, Min-Hsiu Hsieh. Matrix Poincaré, Φ-Sobolev inequalities, and quantum ensembles. Journal of Mathematical Physics 60, 032201 (2019) [<a href=\"https://arxiv.org/abs/1506.06801\" target=\"_blank\" rel=\"noopener\">arXiv:1506.06801</a>] [<a href=\"https://doi.org/10.1063/1.5035381\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Hao-Chung Cheng, Min-Hsiu Hsieh",
+        "title": "Matrix Poincaré, Φ-Sobolev inequalities, and quantum ensembles",
+        "journal": "Journal of Mathematical Physics",
+        "year": "20",
+        "volume": "60",
+        "number": "",
+        "pages": "",
+        "doi": "10.1063/1.5035381",
+        "url": "https://arxiv.org/abs/1506.06801",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal63"
+      }
     },
     {
       "id": "journals-64",
-      "contentHtml": "Madhav Krishnan Vijayan, Eric Chitambar, Min-Hsiu Hsieh. One-shot assisted concentration of coherence. Journal of Physics A: Mathematical and Theoretical, Vol. 51, No. 41, p. 414001 (2018) [<a href=\"https://arxiv.org/abs/1804.06554\" target=\"_blank\" rel=\"noopener\">arXiv:1804.06554</a>] [<a href=\"https://doi.org/10.1088/1751-8121/aadc21\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Madhav Krishnan Vijayan, Eric Chitambar, Min-Hsiu Hsieh. One-shot assisted concentration of coherence. Journal of Physics A: Mathematical and Theoretical, Vol. 51, No. 41, p. 414001 (2018) [<a href=\"https://arxiv.org/abs/1804.06554\" target=\"_blank\" rel=\"noopener\">arXiv:1804.06554</a>] [<a href=\"https://doi.org/10.1088/1751-8121/aadc21\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Madhav Krishnan Vijayan, Eric Chitambar, Min-Hsiu Hsieh",
+        "title": "One-shot assisted concentration of coherence",
+        "journal": "Journal of Physics A: Mathematical and Theoretical",
+        "year": "20",
+        "volume": "51",
+        "number": "41",
+        "pages": "",
+        "doi": "10.1088/1751-8121/aadc21",
+        "url": "https://arxiv.org/abs/1804.06554",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal64"
+      }
     },
     {
       "id": "journals-65",
-      "contentHtml": "Anurag Anshu, Min-Hsiu Hsieh, Rahul Jain. Quantifying resource in catalytic resource theory. Physical Review Letters, vol. 121, p. 190504 (2018) [<a href=\"https://arxiv.org/abs/1708.00381\" target=\"_blank\" rel=\"noopener\">arXiv:1708.00381</a>] [<a href=\"https://doi.org/10.1103/PhysRevLett.121.190504\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Anurag Anshu, Min-Hsiu Hsieh, Rahul Jain. Quantifying resource in catalytic resource theory. Physical Review Letters, vol. 121, p. 190504 (2018) [<a href=\"https://arxiv.org/abs/1708.00381\" target=\"_blank\" rel=\"noopener\">arXiv:1708.00381</a>] [<a href=\"https://doi.org/10.1103/PhysRevLett.121.190504\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Anurag Anshu, Min-Hsiu Hsieh, Rahul Jain",
+        "title": "Quantifying resource in catalytic resource theory",
+        "journal": "Physical Review Letters",
+        "year": "20",
+        "volume": "121",
+        "number": "",
+        "pages": "",
+        "doi": "10.1103/PhysRevLett.121.190504",
+        "url": "https://arxiv.org/abs/1708.00381",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal65"
+      }
     },
     {
       "id": "journals-66",
-      "contentHtml": "Eric Chitambar, Benjamin Fortescue, Min-Hsiu Hsieh. The Conditional Common Information in Classical and Quantum Secret Key Distillation. IEEE Transactions on Information Theory, vol. 64, no. 11, pp. 7381-7394, Nov (2018) [<a href=\"https://arxiv.org/abs/1510.07344\" target=\"_blank\" rel=\"noopener\">arXiv:1510.07344</a>] [<a href=\"https://doi.org/10.1109/tit.2018.2851564\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Eric Chitambar, Benjamin Fortescue, Min-Hsiu Hsieh. The Conditional Common Information in Classical and Quantum Secret Key Distillation. IEEE Transactions on Information Theory, vol. 64, no. 11, pp. 7381-7394, Nov (2018) [<a href=\"https://arxiv.org/abs/1510.07344\" target=\"_blank\" rel=\"noopener\">arXiv:1510.07344</a>] [<a href=\"https://doi.org/10.1109/tit.2018.2851564\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Eric Chitambar, Benjamin Fortescue, Min-Hsiu Hsieh",
+        "title": "The Conditional Common Information in Classical and Quantum Secret Key Distillation",
+        "journal": "IEEE Transactions on Information Theory",
+        "year": "20",
+        "volume": "64",
+        "number": "11",
+        "pages": "7381--7394",
+        "doi": "10.1109/tit.2018.2851564",
+        "url": "https://arxiv.org/abs/1510.07344",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal66"
+      }
     },
     {
       "id": "journals-67",
-      "contentHtml": "Hao-Chung Cheng, Min-Hsiu Hsieh. Moderate Deviation Analysis for Classical-Quantum Channels and Quantum Hypothesis Testing. IEEE Transactions on Information Theory, vol. 64, no. 2, pp. 1385-1403 (2018) [<a href=\"https://arxiv.org/abs/1701.03195\" target=\"_blank\" rel=\"noopener\">arXiv:1701.03195</a>] [<a href=\"https://doi.org/10.1109/tit.2017.2781254\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Hao-Chung Cheng, Min-Hsiu Hsieh. Moderate Deviation Analysis for Classical-Quantum Channels and Quantum Hypothesis Testing. IEEE Transactions on Information Theory, vol. 64, no. 2, pp. 1385-1403 (2018) [<a href=\"https://arxiv.org/abs/1701.03195\" target=\"_blank\" rel=\"noopener\">arXiv:1701.03195</a>] [<a href=\"https://doi.org/10.1109/tit.2017.2781254\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Hao-Chung Cheng, Min-Hsiu Hsieh",
+        "title": "Moderate Deviation Analysis for Classical-Quantum Channels and Quantum Hypothesis Testing",
+        "journal": "IEEE Transactions on Information Theory",
+        "year": "20",
+        "volume": "64",
+        "number": "2",
+        "pages": "1385--1403",
+        "doi": "10.1109/tit.2017.2781254",
+        "url": "https://arxiv.org/abs/1701.03195",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal67"
+      }
     },
     {
       "id": "journals-68",
-      "contentHtml": "Eric Chitambar and Min-Hsiu Hsieh. Round Complexity in the Local Transformations of Quantum and Classical States. Nature Communications 8, no. 2086 (2017) [<a href=\"https://arxiv.org/abs/1610.01998\" target=\"_blank\" rel=\"noopener\">arXiv:1610.01998</a>] [<a href=\"https://doi.org/10.1038/s41467-017-01887-5\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Eric Chitambar and Min-Hsiu Hsieh. Round Complexity in the Local Transformations of Quantum and Classical States. Nature Communications 8, no. 2086 (2017) [<a href=\"https://arxiv.org/abs/1610.01998\" target=\"_blank\" rel=\"noopener\">arXiv:1610.01998</a>] [<a href=\"https://doi.org/10.1038/s41467-017-01887-5\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Eric Chitambar and Min-Hsiu Hsieh",
+        "title": "Round Complexity in the Local Transformations of Quantum and Classical States",
+        "journal": "Nature Communications 8, no 2086",
+        "year": "19",
+        "volume": "",
+        "number": "2086",
+        "pages": "",
+        "doi": "10.1038/s41467-017-01887-5",
+        "url": "https://arxiv.org/abs/1610.01998",
+        "entryType": "article",
+        "citationKey": "Hsieh19Journal68"
+      }
     },
     {
       "id": "journals-69",
-      "contentHtml": "Hao-Chung Cheng, Min-Hsiu Hsieh, and Marco Tomamichel. Exponential Decay of Matrix Φ-Entropies on Markov Semigroups with Applications to Dynamical Evolutions of Quantum Ensembles. Journal of Mathematical Physics, vol 58, no. 9, p. 092202 (2017) [<a href=\"https://arxiv.org/abs/1511.02627\" target=\"_blank\" rel=\"noopener\">arXiv:1511.02627</a>] [<a href=\"https://doi.org/10.1063/1.5000846\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Hao-Chung Cheng, Min-Hsiu Hsieh, and Marco Tomamichel. Exponential Decay of Matrix Φ-Entropies on Markov Semigroups with Applications to Dynamical Evolutions of Quantum Ensembles. Journal of Mathematical Physics, vol 58, no. 9, p. 092202 (2017) [<a href=\"https://arxiv.org/abs/1511.02627\" target=\"_blank\" rel=\"noopener\">arXiv:1511.02627</a>] [<a href=\"https://doi.org/10.1063/1.5000846\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Hao-Chung Cheng, Min-Hsiu Hsieh, and Marco Tomamichel",
+        "title": "Exponential Decay of Matrix Φ-Entropies on Markov Semigroups with Applications to Dynamical Evolutions of Quantum Ensembles",
+        "journal": "Journal of Mathematical Physics",
+        "year": "20",
+        "volume": "58",
+        "number": "9",
+        "pages": "",
+        "doi": "10.1063/1.5000846",
+        "url": "https://arxiv.org/abs/1511.02627",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal69"
+      }
     },
     {
       "id": "journals-70",
-      "contentHtml": "Jihao Fan, Yonghui Li, Min-Hsiu Hsieh, Hanwu Chen. On Quantum Tensor Product Codes. Quantum Information and Computation, vol. 17, no. 13&14, pp. 1105–1122 (2017) [<a href=\"https://arxiv.org/abs/1605.09598\" target=\"_blank\" rel=\"noopener\">arXiv:1605.09598</a>] [<a href=\"https://doi.org/10.26421/qic17.13-14-3\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Jihao Fan, Yonghui Li, Min-Hsiu Hsieh, Hanwu Chen. On Quantum Tensor Product Codes. Quantum Information and Computation, vol. 17, no. 13&14, pp. 1105–1122 (2017) [<a href=\"https://arxiv.org/abs/1605.09598\" target=\"_blank\" rel=\"noopener\">arXiv:1605.09598</a>] [<a href=\"https://doi.org/10.26421/qic17.13-14-3\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Jihao Fan, Yonghui Li, Min-Hsiu Hsieh, Hanwu Chen",
+        "title": "On Quantum Tensor Product Codes",
+        "journal": "Quantum Information and Computation",
+        "year": "20",
+        "volume": "17",
+        "number": "13",
+        "pages": "1105--1122",
+        "doi": "10.26421/qic17.13-14-3",
+        "url": "https://arxiv.org/abs/1605.09598",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal70"
+      }
     },
     {
       "id": "journals-71",
-      "contentHtml": "Hao-Chung Cheng, Min-Hsiu Hsieh. Concavity of the Auxiliary Function for Classical-Quantum Channels. IEEE Transactions on Information Theory, vol. 62, no. 10, pp. 5960–5965 (2016) [<a href=\"https://arxiv.org/abs/1602.03297\" target=\"_blank\" rel=\"noopener\">arXiv:1602.03297</a>] [<a href=\"https://doi.org/10.1109/TIT.2016.2598835\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Hao-Chung Cheng, Min-Hsiu Hsieh. Concavity of the Auxiliary Function for Classical-Quantum Channels. IEEE Transactions on Information Theory, vol. 62, no. 10, pp. 5960–5965 (2016) [<a href=\"https://arxiv.org/abs/1602.03297\" target=\"_blank\" rel=\"noopener\">arXiv:1602.03297</a>] [<a href=\"https://doi.org/10.1109/TIT.2016.2598835\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Hao-Chung Cheng, Min-Hsiu Hsieh",
+        "title": "Concavity of the Auxiliary Function for Classical-Quantum Channels",
+        "journal": "IEEE Transactions on Information Theory",
+        "year": "20",
+        "volume": "62",
+        "number": "10",
+        "pages": "5960--5965",
+        "doi": "10.1109/TIT.2016.2598835",
+        "url": "https://arxiv.org/abs/1602.03297",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal71"
+      }
     },
     {
       "id": "journals-72",
-      "contentHtml": "Hao-Chung Cheng, Min-Hsiu Hsieh. Characterizations of matrix and operator-valued Φ-entropies, and operator Efron–Stein inequalities. Proceedings of the Royal Society of London A: Mathematical, Physical and Engineering Sciences, vol. 472, no. 2187, p. 20150563 (2016) [<a href=\"https://arxiv.org/abs/1602.00233\" target=\"_blank\" rel=\"noopener\">arXiv:1602.00233</a>] [<a href=\"https://doi.org/10.1098/rspa.2015.0563\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Hao-Chung Cheng, Min-Hsiu Hsieh. Characterizations of matrix and operator-valued Φ-entropies, and operator Efron–Stein inequalities. Proceedings of the Royal Society of London A: Mathematical, Physical and Engineering Sciences, vol. 472, no. 2187, p. 20150563 (2016) [<a href=\"https://arxiv.org/abs/1602.00233\" target=\"_blank\" rel=\"noopener\">arXiv:1602.00233</a>] [<a href=\"https://doi.org/10.1098/rspa.2015.0563\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Hao-Chung Cheng, Min-Hsiu Hsieh",
+        "title": "Characterizations of matrix and operator-valued Φ-entropies, and operator Efron–Stein inequalities",
+        "journal": "Proceedings of the Royal Society of London A: Mathematical, Physical and Engineering Sciences",
+        "year": "20",
+        "volume": "472",
+        "number": "2187",
+        "pages": "",
+        "doi": "10.1098/rspa.2015.0563",
+        "url": "https://arxiv.org/abs/1602.00233",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal72"
+      }
     },
     {
       "id": "journals-73",
-      "contentHtml": "Hao-Chung Cheng, Min-Hsiu Hsieh, Ping-Cheng Yeh. The learnability of unknown quantum measurements. Quantum Information & Computation, vol. 16, no. 7&8, pp. 615–656 (2016) [<a href=\"https://arxiv.org/abs/1501.00559\" target=\"_blank\" rel=\"noopener\">arXiv:1501.00559</a>] [<a href=\"https://doi.org/10.26421/qic16.7-8-4\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Hao-Chung Cheng, Min-Hsiu Hsieh, Ping-Cheng Yeh. The learnability of unknown quantum measurements. Quantum Information & Computation, vol. 16, no. 7&8, pp. 615–656 (2016) [<a href=\"https://arxiv.org/abs/1501.00559\" target=\"_blank\" rel=\"noopener\">arXiv:1501.00559</a>] [<a href=\"https://doi.org/10.26421/qic16.7-8-4\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Hao-Chung Cheng, Min-Hsiu Hsieh, Ping-Cheng Yeh",
+        "title": "The learnability of unknown quantum measurements",
+        "journal": "Quantum Information & Computation",
+        "year": "20",
+        "volume": "16",
+        "number": "7",
+        "pages": "615--656",
+        "doi": "10.26421/qic16.7-8-4",
+        "url": "https://arxiv.org/abs/1501.00559",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal73"
+      }
     },
     {
       "id": "journals-74",
-      "contentHtml": "Eric Chitambar, Min-Hsiu Hsieh. Relating the Resource Theories of Entanglement and Quantum Coherence. Physical Review Letters, vol. 117, p. 020402 (2016) [<a href=\"https://arxiv.org/abs/1509.07458\" target=\"_blank\" rel=\"noopener\">arXiv:1509.07458</a>] [<a href=\"https://doi.org/10.1103/PhysRevLett.117.020402\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Eric Chitambar, Min-Hsiu Hsieh. Relating the Resource Theories of Entanglement and Quantum Coherence. Physical Review Letters, vol. 117, p. 020402 (2016) [<a href=\"https://arxiv.org/abs/1509.07458\" target=\"_blank\" rel=\"noopener\">arXiv:1509.07458</a>] [<a href=\"https://doi.org/10.1103/PhysRevLett.117.020402\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Eric Chitambar, Min-Hsiu Hsieh",
+        "title": "Relating the Resource Theories of Entanglement and Quantum Coherence",
+        "journal": "Physical Review Letters",
+        "year": "20",
+        "volume": "117",
+        "number": "",
+        "pages": "",
+        "doi": "10.1103/PhysRevLett.117.020402",
+        "url": "https://arxiv.org/abs/1509.07458",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal74"
+      }
     },
     {
       "id": "journals-75",
-      "contentHtml": "Eric Chitambar, Min-Hsiu Hsieh, Andreas Winter. The Private and Public Correlation Cost of Three Random Variables With Collaboration. IEEE Transactions on Information Theory, vol. 62, no. 4, pp. 2034–2043 (2016) [<a href=\"https://arxiv.org/abs/1411.0729\" target=\"_blank\" rel=\"noopener\">arXiv:1411.0729</a>] [<a href=\"https://doi.org/10.1109/TIT.2016.2530086\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Eric Chitambar, Min-Hsiu Hsieh, Andreas Winter. The Private and Public Correlation Cost of Three Random Variables With Collaboration. IEEE Transactions on Information Theory, vol. 62, no. 4, pp. 2034–2043 (2016) [<a href=\"https://arxiv.org/abs/1411.0729\" target=\"_blank\" rel=\"noopener\">arXiv:1411.0729</a>] [<a href=\"https://doi.org/10.1109/TIT.2016.2530086\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Eric Chitambar, Min-Hsiu Hsieh, Andreas Winter",
+        "title": "The Private and Public Correlation Cost of Three Random Variables With Collaboration",
+        "journal": "IEEE Transactions on Information Theory",
+        "year": "20",
+        "volume": "62",
+        "number": "4",
+        "pages": "2034--2043",
+        "doi": "10.1109/TIT.2016.2530086",
+        "url": "https://arxiv.org/abs/1411.0729",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal75"
+      }
     },
     {
       "id": "journals-76",
-      "contentHtml": "Nilanjana Datta, Min-Hsiu Hsieh, Jonathan Oppenheim. An upper bound on the second order asymptotic expansion for the quantum communication cost of state redistribution. Journal of Mathematical Physics, vol. 57, no. 5, p. 052203 (2016) [<a href=\"https://arxiv.org/abs/1409.4352\" target=\"_blank\" rel=\"noopener\">arXiv:1409.4352</a>] [<a href=\"https://doi.org/10.1063/1.4949571\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Nilanjana Datta, Min-Hsiu Hsieh, Jonathan Oppenheim. An upper bound on the second order asymptotic expansion for the quantum communication cost of state redistribution. Journal of Mathematical Physics, vol. 57, no. 5, p. 052203 (2016) [<a href=\"https://arxiv.org/abs/1409.4352\" target=\"_blank\" rel=\"noopener\">arXiv:1409.4352</a>] [<a href=\"https://doi.org/10.1063/1.4949571\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Nilanjana Datta, Min-Hsiu Hsieh, Jonathan Oppenheim",
+        "title": "An upper bound on the second order asymptotic expansion for the quantum communication cost of state redistribution",
+        "journal": "Journal of Mathematical Physics",
+        "year": "20",
+        "volume": "57",
+        "number": "5",
+        "pages": "",
+        "doi": "10.1063/1.4949571",
+        "url": "https://arxiv.org/abs/1409.4352",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal76"
+      }
     },
     {
       "id": "journals-77",
-      "contentHtml": "Min-Hsiu Hsieh, Shun Watanabe. Channel Simulation and Coded Source Compression. IEEE Transactions on Information Theory, vol. 62, no.11, pp. 6609–6619 (2016) [<a href=\"https://arxiv.org/abs/1511.06071\" target=\"_blank\" rel=\"noopener\">arXiv:1511.06071</a>] [<a href=\"https://doi.org/10.1109/TIT.2016.2597853\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Min-Hsiu Hsieh, Shun Watanabe. Channel Simulation and Coded Source Compression. IEEE Transactions on Information Theory, vol. 62, no.11, pp. 6609–6619 (2016) [<a href=\"https://arxiv.org/abs/1511.06071\" target=\"_blank\" rel=\"noopener\">arXiv:1511.06071</a>] [<a href=\"https://doi.org/10.1109/TIT.2016.2597853\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Min-Hsiu Hsieh, Shun Watanabe",
+        "title": "Channel Simulation and Coded Source Compression",
+        "journal": "IEEE Transactions on Information Theory",
+        "year": "20",
+        "volume": "62",
+        "number": "11",
+        "pages": "6609--6619",
+        "doi": "10.1109/TIT.2016.2597853",
+        "url": "https://arxiv.org/abs/1511.06071",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal77"
+      }
     },
     {
       "id": "journals-78",
-      "contentHtml": "Ching-Yi Lai, Min-Hsiu Hsieh, Francis Lu. On the MacWilliams Identity for Classical and Quantum Convolutional Codes. IEEE Transactions on Communications, vol. 64, no. 8, pp. 3148–3159 (2016) [<a href=\"https://arxiv.org/abs/1404.5012\" target=\"_blank\" rel=\"noopener\">arXiv:1404.5012</a>] [<a href=\"https://doi.org/10.1109/TCOMM.2016.2585641\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Ching-Yi Lai, Min-Hsiu Hsieh, Francis Lu. On the MacWilliams Identity for Classical and Quantum Convolutional Codes. IEEE Transactions on Communications, vol. 64, no. 8, pp. 3148–3159 (2016) [<a href=\"https://arxiv.org/abs/1404.5012\" target=\"_blank\" rel=\"noopener\">arXiv:1404.5012</a>] [<a href=\"https://doi.org/10.1109/TCOMM.2016.2585641\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Ching-Yi Lai, Min-Hsiu Hsieh, Francis Lu",
+        "title": "On the MacWilliams Identity for Classical and Quantum Convolutional Codes",
+        "journal": "IEEE Transactions on Communications",
+        "year": "20",
+        "volume": "64",
+        "number": "8",
+        "pages": "3148--3159",
+        "doi": "10.1109/TCOMM.2016.2585641",
+        "url": "https://arxiv.org/abs/1404.5012",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal78"
+      }
     },
     {
       "id": "journals-79",
-      "contentHtml": "Yi-Chan Lee, Jibing Liu, You-Ling Chuang, Min-Hsiu Hsieh, and Ray-Kuang Lee. Passive PT-symmetric couplers without complex optical potentials. Physical Review A, vol. 92, p. 053815 (2015) [<a href=\"https://arxiv.org/abs/1510.04761\" target=\"_blank\" rel=\"noopener\">arXiv:1510.04761</a>] [<a href=\"https://doi.org/10.1103/PhysRevA.92.053815\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Yi-Chan Lee, Jibing Liu, You-Ling Chuang, Min-Hsiu Hsieh, and Ray-Kuang Lee. Passive PT-symmetric couplers without complex optical potentials. Physical Review A, vol. 92, p. 053815 (2015) [<a href=\"https://arxiv.org/abs/1510.04761\" target=\"_blank\" rel=\"noopener\">arXiv:1510.04761</a>] [<a href=\"https://doi.org/10.1103/PhysRevA.92.053815\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Yi-Chan Lee, Jibing Liu, You-Ling Chuang, Min-Hsiu Hsieh, and Ray-Kuang Lee",
+        "title": "Passive PT-symmetric couplers without complex optical potentials",
+        "journal": "Physical Review A",
+        "year": "20",
+        "volume": "92",
+        "number": "",
+        "pages": "",
+        "doi": "10.1103/PhysRevA.92.053815",
+        "url": "https://arxiv.org/abs/1510.04761",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal79"
+      }
     },
     {
       "id": "journals-80",
-      "contentHtml": "Eric Chitambar, Ben Fortescue, and Min-Hsiu Hsieh. A classical analog to entanglement reversibility. Physical Review Letters, vol. 115, p. 090501 (2015) [<a href=\"https://arxiv.org/abs/1502.04433\" target=\"_blank\" rel=\"noopener\">arXiv:1502.04433</a>] [<a href=\"https://doi.org/10.1103/PhysRevLett.115.090501\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Eric Chitambar, Ben Fortescue, and Min-Hsiu Hsieh. A classical analog to entanglement reversibility. Physical Review Letters, vol. 115, p. 090501 (2015) [<a href=\"https://arxiv.org/abs/1502.04433\" target=\"_blank\" rel=\"noopener\">arXiv:1502.04433</a>] [<a href=\"https://doi.org/10.1103/PhysRevLett.115.090501\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Eric Chitambar, Ben Fortescue, and Min-Hsiu Hsieh",
+        "title": "A classical analog to entanglement reversibility",
+        "journal": "Physical Review Letters",
+        "year": "20",
+        "volume": "115",
+        "number": "",
+        "pages": "",
+        "doi": "10.1103/PhysRevLett.115.090501",
+        "url": "https://arxiv.org/abs/1502.04433",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal80"
+      }
     },
     {
       "id": "journals-81",
-      "contentHtml": "Todd Brun, Min-Hsiu Hsieh, and Chris Perry. Compatibility of state assignments and pooling of information. Physical Review A, vol. 92, p. 012107 (2015) [<a href=\"https://arxiv.org/abs/1310.5325\" target=\"_blank\" rel=\"noopener\">arXiv:1310.5325</a>] [<a href=\"https://doi.org/10.1103/physreva.92.012107\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Todd Brun, Min-Hsiu Hsieh, and Chris Perry. Compatibility of state assignments and pooling of information. Physical Review A, vol. 92, p. 012107 (2015) [<a href=\"https://arxiv.org/abs/1310.5325\" target=\"_blank\" rel=\"noopener\">arXiv:1310.5325</a>] [<a href=\"https://doi.org/10.1103/physreva.92.012107\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Todd Brun, Min-Hsiu Hsieh, and Chris Perry",
+        "title": "Compatibility of state assignments and pooling of information",
+        "journal": "Physical Review A",
+        "year": "20",
+        "volume": "92",
+        "number": "",
+        "pages": "",
+        "doi": "10.1103/physreva.92.012107",
+        "url": "https://arxiv.org/abs/1310.5325",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal81"
+      }
     },
     {
       "id": "journals-82",
-      "contentHtml": "Eric Chitambar and Min-Hsiu Hsieh. Asymptotic state discrimination and a strict hierarchy in distinguishability norms. Journal of Mathematical Physics, vol. 55, p. 112204 (2014) [<a href=\"https://arxiv.org/abs/1311.1536\" target=\"_blank\" rel=\"noopener\">arXiv:1311.1536</a>] [<a href=\"https://doi.org/10.1063/1.4902027\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Eric Chitambar and Min-Hsiu Hsieh. Asymptotic state discrimination and a strict hierarchy in distinguishability norms. Journal of Mathematical Physics, vol. 55, p. 112204 (2014) [<a href=\"https://arxiv.org/abs/1311.1536\" target=\"_blank\" rel=\"noopener\">arXiv:1311.1536</a>] [<a href=\"https://doi.org/10.1063/1.4902027\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Eric Chitambar and Min-Hsiu Hsieh",
+        "title": "Asymptotic state discrimination and a strict hierarchy in distinguishability norms",
+        "journal": "Journal of Mathematical Physics",
+        "year": "20",
+        "volume": "55",
+        "number": "",
+        "pages": "",
+        "doi": "10.1063/1.4902027",
+        "url": "https://arxiv.org/abs/1311.1536",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal82"
+      }
     },
     {
       "id": "journals-83",
-      "contentHtml": "Todd Brun, Igor Devetak, and Min-Hsiu Hsieh. Catalytic quantum error correction. IEEE Transactions on Information Theory, vol. 60, no. 6, pp. 3073–3089 (2014) [<a href=\"https://arxiv.org/abs/quant-ph/0608027\" target=\"_blank\" rel=\"noopener\">arXiv:quant-ph/0608027</a>] [<a href=\"https://doi.org/10.1109/tit.2014.2313559\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Todd Brun, Igor Devetak, and Min-Hsiu Hsieh. Catalytic quantum error correction. IEEE Transactions on Information Theory, vol. 60, no. 6, pp. 3073–3089 (2014) [<a href=\"https://arxiv.org/abs/quant-ph/0608027\" target=\"_blank\" rel=\"noopener\">arXiv:quant-ph/0608027</a>] [<a href=\"https://doi.org/10.1109/tit.2014.2313559\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Todd Brun, Igor Devetak, and Min-Hsiu Hsieh",
+        "title": "Catalytic quantum error correction",
+        "journal": "IEEE Transactions on Information Theory",
+        "year": "20",
+        "volume": "60",
+        "number": "6",
+        "pages": "3073--3089",
+        "doi": "10.1109/tit.2014.2313559",
+        "url": "https://arxiv.org/abs/quant-ph/0608027",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal83"
+      }
     },
     {
       "id": "journals-84",
-      "contentHtml": "Yi-Chan Lee, Min-Hsiu Hsieh, Steve Flammia, and Ray-Kuang Lee. Local PT symmetry violates the no-signaling principle. Physical Review Letters, vol. 112, p. 130404 (2014) [<a href=\"https://arxiv.org/abs/1312.3395\" target=\"_blank\" rel=\"noopener\">arXiv:1312.3395</a>] [<a href=\"https://doi.org/10.1103/physrevlett.112.130404\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Yi-Chan Lee, Min-Hsiu Hsieh, Steve Flammia, and Ray-Kuang Lee. Local PT symmetry violates the no-signaling principle. Physical Review Letters, vol. 112, p. 130404 (2014) [<a href=\"https://arxiv.org/abs/1312.3395\" target=\"_blank\" rel=\"noopener\">arXiv:1312.3395</a>] [<a href=\"https://doi.org/10.1103/physrevlett.112.130404\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Yi-Chan Lee, Min-Hsiu Hsieh, Steve Flammia, and Ray-Kuang Lee",
+        "title": "Local PT symmetry violates the no-signaling principle",
+        "journal": "Physical Review Letters",
+        "year": "20",
+        "volume": "112",
+        "number": "",
+        "pages": "",
+        "doi": "10.1103/physrevlett.112.130404",
+        "url": "https://arxiv.org/abs/1312.3395",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal84"
+      }
     },
     {
       "id": "journals-85",
-      "contentHtml": "Eric Chitambar, Runyao Duan, Min-Hsiu Hsieh. When Do Local Operations and Classical Communication Suffice for Two-Qubit State Discrimination?. IEEE Transactions on Information Theory 60(3): 1549-1561 (2014). [<a href=\"https://arxiv.org/abs/1308.1737\" target=\"_blank\" rel=\"noopener\">arXiv:1308.1737</a>] [<a href=\"https://doi.org/10.1109/TIT.2013.2295356\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Eric Chitambar, Runyao Duan, Min-Hsiu Hsieh. When Do Local Operations and Classical Communication Suffice for Two-Qubit State Discrimination?. IEEE Transactions on Information Theory 60(3): 1549-1561 (2014). [<a href=\"https://arxiv.org/abs/1308.1737\" target=\"_blank\" rel=\"noopener\">arXiv:1308.1737</a>] [<a href=\"https://doi.org/10.1109/TIT.2013.2295356\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Eric Chitambar, Runyao Duan, Min-Hsiu Hsieh",
+        "title": "When Do Local Operations and Classical Communication Suffice for Two-Qubit State Discrimination?",
+        "journal": "IEEE Transactions on Information Theory",
+        "year": "20",
+        "volume": "60",
+        "number": "3",
+        "pages": "1549--1561",
+        "doi": "10.1109/TIT.2013.2295356",
+        "url": "https://arxiv.org/abs/1308.1737",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal85"
+      }
     },
     {
       "id": "journals-86",
-      "contentHtml": "Mark Wilde, Min-Hsiu Hsieh, and Zunaira Baber. Entanglement-assisted quantum turbo codes. IEEE Transactions on Information Theory, vol. 60, no. 2, pp. 1203–1222 (2014) [<a href=\"https://arxiv.org/abs/1010.1256\" target=\"_blank\" rel=\"noopener\">arXiv:1010.1256</a>] [<a href=\"https://doi.org/10.1109/tit.2013.2292052\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Mark Wilde, Min-Hsiu Hsieh, and Zunaira Baber. Entanglement-assisted quantum turbo codes. IEEE Transactions on Information Theory, vol. 60, no. 2, pp. 1203–1222 (2014) [<a href=\"https://arxiv.org/abs/1010.1256\" target=\"_blank\" rel=\"noopener\">arXiv:1010.1256</a>] [<a href=\"https://doi.org/10.1109/tit.2013.2292052\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Mark Wilde, Min-Hsiu Hsieh, and Zunaira Baber",
+        "title": "Entanglement-assisted quantum turbo codes",
+        "journal": "IEEE Transactions on Information Theory",
+        "year": "20",
+        "volume": "60",
+        "number": "2",
+        "pages": "1203--1222",
+        "doi": "10.1109/tit.2013.2292052",
+        "url": "https://arxiv.org/abs/1010.1256",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal86"
+      }
     },
     {
       "id": "journals-87",
-      "contentHtml": "Nilanjana Datta, Milan Mosonyi, Min-Hsiu Hsieh, and Fernando G. S. L. Brandao. A smooth entropy approach to quantum hypothesis testing and the classical capacity of quantum channels. IEEE Transactions on Information Theory, vol. 59, no. 12, pp. 8014–8026 (2013) [<a href=\"https://arxiv.org/abs/1106.3089\" target=\"_blank\" rel=\"noopener\">arXiv:1106.3089</a>] [<a href=\"https://doi.org/10.1109/TIT.2013.2282160\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Nilanjana Datta, Milan Mosonyi, Min-Hsiu Hsieh, and Fernando G. S. L. Brandao. A smooth entropy approach to quantum hypothesis testing and the classical capacity of quantum channels. IEEE Transactions on Information Theory, vol. 59, no. 12, pp. 8014–8026 (2013) [<a href=\"https://arxiv.org/abs/1106.3089\" target=\"_blank\" rel=\"noopener\">arXiv:1106.3089</a>] [<a href=\"https://doi.org/10.1109/TIT.2013.2282160\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Nilanjana Datta, Milan Mosonyi, Min-Hsiu Hsieh, and Fernando G. S. L. Brandao",
+        "title": "A smooth entropy approach to quantum hypothesis testing and the classical capacity of quantum channels",
+        "journal": "IEEE Transactions on Information Theory",
+        "year": "20",
+        "volume": "59",
+        "number": "12",
+        "pages": "8014--8026",
+        "doi": "10.1109/TIT.2013.2282160",
+        "url": "https://arxiv.org/abs/1106.3089",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal87"
+      }
     },
     {
       "id": "journals-88",
-      "contentHtml": "Mark Wilde, Nilanjana Datta, Min-Hsiu Hsieh, and Andreas Winter. Quantum rate-distortion coding with auxiliary resources. IEEE Transactions on Information Theory, vol. 59, no. 10, pp. 6755–6773 (2013) [<a href=\"https://arxiv.org/abs/1212.5316\" target=\"_blank\" rel=\"noopener\">arXiv:1212.5316</a>] [<a href=\"https://doi.org/10.1109/tit.2013.2271772\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Mark Wilde, Nilanjana Datta, Min-Hsiu Hsieh, and Andreas Winter. Quantum rate-distortion coding with auxiliary resources. IEEE Transactions on Information Theory, vol. 59, no. 10, pp. 6755–6773 (2013) [<a href=\"https://arxiv.org/abs/1212.5316\" target=\"_blank\" rel=\"noopener\">arXiv:1212.5316</a>] [<a href=\"https://doi.org/10.1109/tit.2013.2271772\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Mark Wilde, Nilanjana Datta, Min-Hsiu Hsieh, and Andreas Winter",
+        "title": "Quantum rate-distortion coding with auxiliary resources",
+        "journal": "IEEE Transactions on Information Theory",
+        "year": "20",
+        "volume": "59",
+        "number": "10",
+        "pages": "6755--6773",
+        "doi": "10.1109/tit.2013.2271772",
+        "url": "https://arxiv.org/abs/1212.5316",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal88"
+      }
     },
     {
       "id": "journals-89",
-      "contentHtml": "Eric Chitambar and Min-Hsiu Hsieh. Revisiting the optimal detection of quantum information. Physical Review A, vol. 88, no. 2, p. 020302 (Rapid Communications) (2013) [<a href=\"https://arxiv.org/abs/1304.1555\" target=\"_blank\" rel=\"noopener\">arXiv:1304.1555</a>] [<a href=\"https://doi.org/10.1103/physreva.88.020302\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Eric Chitambar and Min-Hsiu Hsieh. Revisiting the optimal detection of quantum information. Physical Review A, vol. 88, no. 2, p. 020302 (Rapid Communications) (2013) [<a href=\"https://arxiv.org/abs/1304.1555\" target=\"_blank\" rel=\"noopener\">arXiv:1304.1555</a>] [<a href=\"https://doi.org/10.1103/physreva.88.020302\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Eric Chitambar and Min-Hsiu Hsieh",
+        "title": "Revisiting the optimal detection of quantum information",
+        "journal": "Physical Review A",
+        "year": "20",
+        "volume": "88",
+        "number": "2",
+        "pages": "",
+        "doi": "10.1103/physreva.88.020302",
+        "url": "https://arxiv.org/abs/1304.1555",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal89"
+      }
     },
     {
       "id": "journals-90",
-      "contentHtml": "Nilanjana Datta, Min-Hsiu Hsieh, Mark Wilde, and Andreas Winter. Quantum-to-classical rate distortion coding. Journal of Mathematical Physics, vol. 54, no. 4, p. 042201 (2013) [<a href=\"https://arxiv.org/abs/1210.6962\" target=\"_blank\" rel=\"noopener\">arXiv:1210.6962</a>] [<a href=\"https://doi.org/10.1063/1.4798396\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Nilanjana Datta, Min-Hsiu Hsieh, Mark Wilde, and Andreas Winter. Quantum-to-classical rate distortion coding. Journal of Mathematical Physics, vol. 54, no. 4, p. 042201 (2013) [<a href=\"https://arxiv.org/abs/1210.6962\" target=\"_blank\" rel=\"noopener\">arXiv:1210.6962</a>] [<a href=\"https://doi.org/10.1063/1.4798396\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Nilanjana Datta, Min-Hsiu Hsieh, Mark Wilde, and Andreas Winter",
+        "title": "Quantum-to-classical rate distortion coding",
+        "journal": "Journal of Mathematical Physics",
+        "year": "20",
+        "volume": "54",
+        "number": "4",
+        "pages": "",
+        "doi": "10.1063/1.4798396",
+        "url": "https://arxiv.org/abs/1210.6962",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal90"
+      }
     },
     {
       "id": "journals-91",
-      "contentHtml": "Nilanjana Datta and Min-Hsiu Hsieh. One-shot entanglement-assisted quantum and classical communication. IEEE Transactions on Information Theory, vol. 59, no. 3, pp. 1929–1939 (2013) [<a href=\"https://arxiv.org/abs/1105.3321\" target=\"_blank\" rel=\"noopener\">arXiv:1105.3321</a>] [<a href=\"https://doi.org/10.1109/tit.2012.2228737\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Nilanjana Datta and Min-Hsiu Hsieh. One-shot entanglement-assisted quantum and classical communication. IEEE Transactions on Information Theory, vol. 59, no. 3, pp. 1929–1939 (2013) [<a href=\"https://arxiv.org/abs/1105.3321\" target=\"_blank\" rel=\"noopener\">arXiv:1105.3321</a>] [<a href=\"https://doi.org/10.1109/tit.2012.2228737\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Nilanjana Datta and Min-Hsiu Hsieh",
+        "title": "One-shot entanglement-assisted quantum and classical communication",
+        "journal": "IEEE Transactions on Information Theory",
+        "year": "20",
+        "volume": "59",
+        "number": "3",
+        "pages": "1929--1939",
+        "doi": "10.1109/tit.2012.2228737",
+        "url": "https://arxiv.org/abs/1105.3321",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal91"
+      }
     },
     {
       "id": "journals-92",
-      "contentHtml": "Nilanjana Datta, Min-Hsiu Hsieh, and Mark Wilde. Quantum rate distortion, reverse Shannon theorems, and source-channel separation. IEEE Transactions on Information Theory, vol. 59, no. 1, pp. 615–630 (2013) [<a href=\"https://arxiv.org/abs/1108.4940\" target=\"_blank\" rel=\"noopener\">arXiv:1108.4940</a>] [<a href=\"https://doi.org/10.1109/tit.2012.2215575\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Nilanjana Datta, Min-Hsiu Hsieh, and Mark Wilde. Quantum rate distortion, reverse Shannon theorems, and source-channel separation. IEEE Transactions on Information Theory, vol. 59, no. 1, pp. 615–630 (2013) [<a href=\"https://arxiv.org/abs/1108.4940\" target=\"_blank\" rel=\"noopener\">arXiv:1108.4940</a>] [<a href=\"https://doi.org/10.1109/tit.2012.2215575\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Nilanjana Datta, Min-Hsiu Hsieh, and Mark Wilde",
+        "title": "Quantum rate distortion, reverse Shannon theorems, and source-channel separation",
+        "journal": "IEEE Transactions on Information Theory",
+        "year": "20",
+        "volume": "59",
+        "number": "1",
+        "pages": "615--630",
+        "doi": "10.1109/tit.2012.2215575",
+        "url": "https://arxiv.org/abs/1108.4940",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal92"
+      }
     },
     {
       "id": "journals-93",
-      "contentHtml": "Mark Wilde and Min-Hsiu Hsieh. Public and private resource trade-offs for a quantum channel. Quantum Information Processing, vol. 11, pp. 1465–1501 (2012) [<a href=\"https://arxiv.org/abs/1005.3818\" target=\"_blank\" rel=\"noopener\">arXiv:1005.3818</a>] [<a href=\"https://doi.org/10.1007/s11128-011-0317-z\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Mark Wilde and Min-Hsiu Hsieh. Public and private resource trade-offs for a quantum channel. Quantum Information Processing, vol. 11, pp. 1465–1501 (2012) [<a href=\"https://arxiv.org/abs/1005.3818\" target=\"_blank\" rel=\"noopener\">arXiv:1005.3818</a>] [<a href=\"https://doi.org/10.1007/s11128-011-0317-z\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Mark Wilde and Min-Hsiu Hsieh",
+        "title": "Public and private resource trade-offs for a quantum channel",
+        "journal": "Quantum Information Processing",
+        "year": "20",
+        "volume": "11",
+        "number": "",
+        "pages": "1465--1501",
+        "doi": "10.1007/s11128-011-0317-z",
+        "url": "https://arxiv.org/abs/1005.3818",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal93"
+      }
     },
     {
       "id": "journals-94",
-      "contentHtml": "Mark Wilde and Min-Hsiu Hsieh. The quantum dynamic capacity formula of a quantum channel. Quantum Information Processing, vol. 11, pp. 1431–1463 (2012) [<a href=\"https://arxiv.org/abs/1004.0458\" target=\"_blank\" rel=\"noopener\">arXiv:1004.0458</a>] [<a href=\"https://doi.org/10.1007/s11128-011-0310-6\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Mark Wilde and Min-Hsiu Hsieh. The quantum dynamic capacity formula of a quantum channel. Quantum Information Processing, vol. 11, pp. 1431–1463 (2012) [<a href=\"https://arxiv.org/abs/1004.0458\" target=\"_blank\" rel=\"noopener\">arXiv:1004.0458</a>] [<a href=\"https://doi.org/10.1007/s11128-011-0310-6\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Mark Wilde and Min-Hsiu Hsieh",
+        "title": "The quantum dynamic capacity formula of a quantum channel",
+        "journal": "Quantum Information Processing",
+        "year": "20",
+        "volume": "11",
+        "number": "",
+        "pages": "1431--1463",
+        "doi": "10.1007/s11128-011-0310-6",
+        "url": "https://arxiv.org/abs/1004.0458",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal94"
+      }
     },
     {
       "id": "journals-95",
-      "contentHtml": "Mark Wilde, Patrick Hayden, Francesco Buscemi, and Min-Hsiu Hsieh. The information-theoretic costs of simulating quantum measurements. Journal of Physics A: Mathematical and Theoretical, vol. 45, no. 45, p. 453001 (2012) [<a href=\"https://arxiv.org/abs/1206.4121\" target=\"_blank\" rel=\"noopener\">arXiv:1206.4121</a>] [<a href=\"https://doi.org/10.1088/1751-8113/45/45/453001\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Mark Wilde, Patrick Hayden, Francesco Buscemi, and Min-Hsiu Hsieh. The information-theoretic costs of simulating quantum measurements. Journal of Physics A: Mathematical and Theoretical, vol. 45, no. 45, p. 453001 (2012) [<a href=\"https://arxiv.org/abs/1206.4121\" target=\"_blank\" rel=\"noopener\">arXiv:1206.4121</a>] [<a href=\"https://doi.org/10.1088/1751-8113/45/45/453001\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Mark Wilde, Patrick Hayden, Francesco Buscemi, and Min-Hsiu Hsieh",
+        "title": "The information-theoretic costs of simulating quantum measurements",
+        "journal": "Journal of Physics A: Mathematical and Theoretical",
+        "year": "20",
+        "volume": "45",
+        "number": "45",
+        "pages": "",
+        "doi": "10.1088/1751-8113/45/45/453001",
+        "url": "https://arxiv.org/abs/1206.4121",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal95"
+      }
     },
     {
       "id": "journals-96",
-      "contentHtml": "Sheng-Mei Zhao, Yu Xiao, Yan Zhu, Xiu-Li Zhu, and Min-Hsiu Hsieh. New class of quantum codes constructed from cyclic difference set. International Journal of Quantum Information, vol. 10, no. 1, p. 1250015 (2012) [<a href=\"https://doi.org/10.1142/S0219749912500153\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Sheng-Mei Zhao, Yu Xiao, Yan Zhu, Xiu-Li Zhu, and Min-Hsiu Hsieh. New class of quantum codes constructed from cyclic difference set. International Journal of Quantum Information, vol. 10, no. 1, p. 1250015 (2012) [<a href=\"https://doi.org/10.1142/S0219749912500153\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Sheng-Mei Zhao, Yu Xiao, Yan Zhu, Xiu-Li Zhu, and Min-Hsiu Hsieh",
+        "title": "New class of quantum codes constructed from cyclic difference set",
+        "journal": "International Journal of Quantum Information",
+        "year": "20",
+        "volume": "10",
+        "number": "1",
+        "pages": "",
+        "doi": "10.1142/S0219749912500153",
+        "url": "https://doi.org/10.1142/S0219749912500153",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal96"
+      }
     },
     {
       "id": "journals-97",
-      "contentHtml": "Min-Hsiu Hsieh, Wen-Tai Yen, and Li-Yi Hsu. High performance entanglement-assisted quantum LDPC codes need little entanglement. IEEE Transactions on Information Theory, vol. 57, no. 3, pp. 1761–1769 (2011) [<a href=\"https://arxiv.org/abs/0906.5532\" target=\"_blank\" rel=\"noopener\">arXiv:0906.5532</a>] [<a href=\"https://doi.org/10.1109/tit.2011.2104590\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Min-Hsiu Hsieh, Wen-Tai Yen, and Li-Yi Hsu. High performance entanglement-assisted quantum LDPC codes need little entanglement. IEEE Transactions on Information Theory, vol. 57, no. 3, pp. 1761–1769 (2011) [<a href=\"https://arxiv.org/abs/0906.5532\" target=\"_blank\" rel=\"noopener\">arXiv:0906.5532</a>] [<a href=\"https://doi.org/10.1109/tit.2011.2104590\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Min-Hsiu Hsieh, Wen-Tai Yen, and Li-Yi Hsu",
+        "title": "High performance entanglement-assisted quantum LDPC codes need little entanglement",
+        "journal": "IEEE Transactions on Information Theory",
+        "year": "20",
+        "volume": "57",
+        "number": "3",
+        "pages": "1761--1769",
+        "doi": "10.1109/tit.2011.2104590",
+        "url": "https://arxiv.org/abs/0906.5532",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal97"
+      }
     },
     {
       "id": "journals-98",
-      "contentHtml": "Min-Hsiu Hsieh and François Le Gall. NP-hardness of decoding quantum error-correction codes. Physical Review A, vol. 83, no. 5, p. 052331 (2011) [<a href=\"https://arxiv.org/abs/1009.1319\" target=\"_blank\" rel=\"noopener\">arXiv:1009.1319</a>] [<a href=\"https://doi.org/10.1103/physreva.83.052331\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Min-Hsiu Hsieh and François Le Gall. NP-hardness of decoding quantum error-correction codes. Physical Review A, vol. 83, no. 5, p. 052331 (2011) [<a href=\"https://arxiv.org/abs/1009.1319\" target=\"_blank\" rel=\"noopener\">arXiv:1009.1319</a>] [<a href=\"https://doi.org/10.1103/physreva.83.052331\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Min-Hsiu Hsieh and François Le Gall",
+        "title": "NP-hardness of decoding quantum error-correction codes",
+        "journal": "Physical Review A",
+        "year": "20",
+        "volume": "83",
+        "number": "5",
+        "pages": "",
+        "doi": "10.1103/physreva.83.052331",
+        "url": "https://arxiv.org/abs/1009.1319",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal98"
+      }
     },
     {
       "id": "journals-99",
-      "contentHtml": "Nilanjana Datta and Min-Hsiu Hsieh. The apex of the family tree of protocols: Optimal rates and resource inequalities. New Journal of Physics, vol. 13, no. 9, p. 093042 (2011) [<a href=\"https://arxiv.org/abs/1103.1135\" target=\"_blank\" rel=\"noopener\">arXiv:1103.1135</a>] [<a href=\"https://doi.org/10.1088/1367-2630/13/9/093042\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Nilanjana Datta and Min-Hsiu Hsieh. The apex of the family tree of protocols: Optimal rates and resource inequalities. New Journal of Physics, vol. 13, no. 9, p. 093042 (2011) [<a href=\"https://arxiv.org/abs/1103.1135\" target=\"_blank\" rel=\"noopener\">arXiv:1103.1135</a>] [<a href=\"https://doi.org/10.1088/1367-2630/13/9/093042\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Nilanjana Datta and Min-Hsiu Hsieh",
+        "title": "The apex of the family tree of protocols: Optimal rates and resource inequalities",
+        "journal": "New Journal of Physics",
+        "year": "20",
+        "volume": "13",
+        "number": "9",
+        "pages": "",
+        "doi": "10.1088/1367-2630/13/9/093042",
+        "url": "https://arxiv.org/abs/1103.1135",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal99"
+      }
     },
     {
       "id": "journals-100",
-      "contentHtml": "Min-Hsiu Hsieh and Mark Wilde. Trading classical communication, quantum communication, and entanglement in quantum Shannon theory. IEEE Transactions on Information Theory, vol. 56, no. 9, pp. 4705–4730 (2010) [<a href=\"https://arxiv.org/abs/0901.3038\" target=\"_blank\" rel=\"noopener\">arXiv:0901.3038</a>] [<a href=\"https://doi.org/10.1109/tit.2010.2054532\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Min-Hsiu Hsieh and Mark Wilde. Trading classical communication, quantum communication, and entanglement in quantum Shannon theory. IEEE Transactions on Information Theory, vol. 56, no. 9, pp. 4705–4730 (2010) [<a href=\"https://arxiv.org/abs/0901.3038\" target=\"_blank\" rel=\"noopener\">arXiv:0901.3038</a>] [<a href=\"https://doi.org/10.1109/tit.2010.2054532\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Min-Hsiu Hsieh and Mark Wilde",
+        "title": "Trading classical communication, quantum communication, and entanglement in quantum Shannon theory",
+        "journal": "IEEE Transactions on Information Theory",
+        "year": "20",
+        "volume": "56",
+        "number": "9",
+        "pages": "4705--4730",
+        "doi": "10.1109/tit.2010.2054532",
+        "url": "https://arxiv.org/abs/0901.3038",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal100"
+      }
     },
     {
       "id": "journals-101",
-      "contentHtml": "Min-Hsiu Hsieh and Mark Wilde. Entanglement-assisted communication of classical and quantum Information. IEEE Transactions on Information Theory, vol. 56, no. 9, pp. 4682–4704 (2010) [<a href=\"https://arxiv.org/abs/0811.4227\" target=\"_blank\" rel=\"noopener\">arXiv:0811.4227</a>] [<a href=\"https://doi.org/10.1109/tit.2010.2053903\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Min-Hsiu Hsieh and Mark Wilde. Entanglement-assisted communication of classical and quantum Information. IEEE Transactions on Information Theory, vol. 56, no. 9, pp. 4682–4704 (2010) [<a href=\"https://arxiv.org/abs/0811.4227\" target=\"_blank\" rel=\"noopener\">arXiv:0811.4227</a>] [<a href=\"https://doi.org/10.1109/tit.2010.2053903\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Min-Hsiu Hsieh and Mark Wilde",
+        "title": "Entanglement-assisted communication of classical and quantum Information",
+        "journal": "IEEE Transactions on Information Theory",
+        "year": "20",
+        "volume": "56",
+        "number": "9",
+        "pages": "4682--4704",
+        "doi": "10.1109/tit.2010.2053903",
+        "url": "https://arxiv.org/abs/0811.4227",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal101"
+      }
     },
     {
       "id": "journals-102",
-      "contentHtml": "Min-Hsiu Hsieh, Wen-Tai Yen, and Li-Yi Hsu. Undetermined states: How to find them and their applications. The European Physical Journal D, vol. 61, no. 1, pp. 261–265 (2010) [<a href=\"https://arxiv.org/abs/0809.3081\" target=\"_blank\" rel=\"noopener\">arXiv:0809.3081</a>] [<a href=\"https://doi.org/10.1140/epjd/e2010-10374-9\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Min-Hsiu Hsieh, Wen-Tai Yen, and Li-Yi Hsu. Undetermined states: How to find them and their applications. The European Physical Journal D, vol. 61, no. 1, pp. 261–265 (2010) [<a href=\"https://arxiv.org/abs/0809.3081\" target=\"_blank\" rel=\"noopener\">arXiv:0809.3081</a>] [<a href=\"https://doi.org/10.1140/epjd/e2010-10374-9\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Min-Hsiu Hsieh, Wen-Tai Yen, and Li-Yi Hsu",
+        "title": "Undetermined states: How to find them and their applications",
+        "journal": "The European Physical Journal D",
+        "year": "20",
+        "volume": "61",
+        "number": "1",
+        "pages": "261--265",
+        "doi": "10.1140/epjd/e2010-10374-9",
+        "url": "https://arxiv.org/abs/0809.3081",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal102"
+      }
     },
     {
       "id": "journals-103",
-      "contentHtml": "Nilanjana Datta and Min-Hsiu Hsieh. Universal coding for transmission of private information. Journal of Mathematical Physics, vol. 51, no. 12, p. 122202 (2010) [<a href=\"https://arxiv.org/abs/1007.2629\" target=\"_blank\" rel=\"noopener\">arXiv:1007.2629</a>] [<a href=\"https://doi.org/10.1063/1.3521499\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Nilanjana Datta and Min-Hsiu Hsieh. Universal coding for transmission of private information. Journal of Mathematical Physics, vol. 51, no. 12, p. 122202 (2010) [<a href=\"https://arxiv.org/abs/1007.2629\" target=\"_blank\" rel=\"noopener\">arXiv:1007.2629</a>] [<a href=\"https://doi.org/10.1063/1.3521499\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Nilanjana Datta and Min-Hsiu Hsieh",
+        "title": "Universal coding for transmission of private information",
+        "journal": "Journal of Mathematical Physics",
+        "year": "20",
+        "volume": "51",
+        "number": "12",
+        "pages": "",
+        "doi": "10.1063/1.3521499",
+        "url": "https://arxiv.org/abs/1007.2629",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal103"
+      }
     },
     {
       "id": "journals-104",
-      "contentHtml": "Yi-Chang Shih, Min-Hsiu Hsieh, and Hung-Yu Wei. Multicasting homogeneous and heterogeneous quantum states in quantum networks. Nano Communication Networks, vol. 1, no. 4, pp. 273–282 (2010) [<a href=\"https://arxiv.org/abs/1011.2421\" target=\"_blank\" rel=\"noopener\">arXiv:1011.2421</a>] [<a href=\"https://doi.org/10.1016/j.nancom.2010.10.003\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Yi-Chang Shih, Min-Hsiu Hsieh, and Hung-Yu Wei. Multicasting homogeneous and heterogeneous quantum states in quantum networks. Nano Communication Networks, vol. 1, no. 4, pp. 273–282 (2010) [<a href=\"https://arxiv.org/abs/1011.2421\" target=\"_blank\" rel=\"noopener\">arXiv:1011.2421</a>] [<a href=\"https://doi.org/10.1016/j.nancom.2010.10.003\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Yi-Chang Shih, Min-Hsiu Hsieh, and Hung-Yu Wei",
+        "title": "Multicasting homogeneous and heterogeneous quantum states in quantum networks",
+        "journal": "Nano Communication Networks",
+        "year": "20",
+        "volume": "1",
+        "number": "4",
+        "pages": "273--282",
+        "doi": "10.1016/j.nancom.2010.10.003",
+        "url": "https://arxiv.org/abs/1011.2421",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal104"
+      }
     },
     {
       "id": "journals-105",
-      "contentHtml": "Min-Hsiu Hsieh and Mark Wilde. Public and private communication with a quantum channel and a secret key. Physical Review A, vol. 80, no. 2, p. 022306 (2009) [<a href=\"https://arxiv.org/abs/0903.3920\" target=\"_blank\" rel=\"noopener\">arXiv:0903.3920</a>] [<a href=\"https://doi.org/10.1103/physreva.80.022306\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Min-Hsiu Hsieh and Mark Wilde. Public and private communication with a quantum channel and a secret key. Physical Review A, vol. 80, no. 2, p. 022306 (2009) [<a href=\"https://arxiv.org/abs/0903.3920\" target=\"_blank\" rel=\"noopener\">arXiv:0903.3920</a>] [<a href=\"https://doi.org/10.1103/physreva.80.022306\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Min-Hsiu Hsieh and Mark Wilde",
+        "title": "Public and private communication with a quantum channel and a secret key",
+        "journal": "Physical Review A",
+        "year": "20",
+        "volume": "80",
+        "number": "2",
+        "pages": "",
+        "doi": "10.1103/physreva.80.022306",
+        "url": "https://arxiv.org/abs/0903.3920",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal105"
+      }
     },
     {
       "id": "journals-106",
-      "contentHtml": "Min-Hsiu Hsieh, Todd Brun, and Igor Devetak. Entanglement-assisted quantum quasicyclic low-density parity-check codes. Physical Review A, vol. 79, no. 3, p. 032340 (2009) [<a href=\"https://arxiv.org/abs/0803.0100\" target=\"_blank\" rel=\"noopener\">arXiv:0803.0100</a>] [<a href=\"https://doi.org/10.1103/physreva.79.032340\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Min-Hsiu Hsieh, Todd Brun, and Igor Devetak. Entanglement-assisted quantum quasicyclic low-density parity-check codes. Physical Review A, vol. 79, no. 3, p. 032340 (2009) [<a href=\"https://arxiv.org/abs/0803.0100\" target=\"_blank\" rel=\"noopener\">arXiv:0803.0100</a>] [<a href=\"https://doi.org/10.1103/physreva.79.032340\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Min-Hsiu Hsieh, Todd Brun, and Igor Devetak",
+        "title": "Entanglement-assisted quantum quasicyclic low-density parity-check codes",
+        "journal": "Physical Review A",
+        "year": "20",
+        "volume": "79",
+        "number": "3",
+        "pages": "",
+        "doi": "10.1103/physreva.79.032340",
+        "url": "https://arxiv.org/abs/0803.0100",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal106"
+      }
     },
     {
       "id": "journals-107",
-      "contentHtml": "Min-Hsiu Hsieh, Igor Devetak, and Andreas Winter. Entanglement-assisted capacity of quantum multiple-access channels. IEEE Transactions on Information Theory, vol. 54, no. 7, pp. 3078–3090 (2008) [<a href=\"https://arxiv.org/abs/quant-ph/0511228\" target=\"_blank\" rel=\"noopener\">arXiv:quant-ph/0511228</a>] [<a href=\"https://doi.org/10.1109/tit.2008.924726\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Min-Hsiu Hsieh, Igor Devetak, and Andreas Winter. Entanglement-assisted capacity of quantum multiple-access channels. IEEE Transactions on Information Theory, vol. 54, no. 7, pp. 3078–3090 (2008) [<a href=\"https://arxiv.org/abs/quant-ph/0511228\" target=\"_blank\" rel=\"noopener\">arXiv:quant-ph/0511228</a>] [<a href=\"https://doi.org/10.1109/tit.2008.924726\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Min-Hsiu Hsieh, Igor Devetak, and Andreas Winter",
+        "title": "Entanglement-assisted capacity of quantum multiple-access channels",
+        "journal": "IEEE Transactions on Information Theory",
+        "year": "20",
+        "volume": "54",
+        "number": "7",
+        "pages": "3078--3090",
+        "doi": "10.1109/tit.2008.924726",
+        "url": "https://arxiv.org/abs/quant-ph/0511228",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal107"
+      }
     },
     {
       "id": "journals-108",
-      "contentHtml": "Min-Hsiu Hsieh, Zhicheng Luo, and Todd Brun. Secret-key-assisted private classical communication capacity over quantum channels. Physical Review A, vol. 78, no. 4, p. 042306 (2008) [<a href=\"https://arxiv.org/abs/0806.3525\" target=\"_blank\" rel=\"noopener\">arXiv:0806.3525</a>] [<a href=\"https://doi.org/10.1103/physreva.78.042306\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Min-Hsiu Hsieh, Zhicheng Luo, and Todd Brun. Secret-key-assisted private classical communication capacity over quantum channels. Physical Review A, vol. 78, no. 4, p. 042306 (2008) [<a href=\"https://arxiv.org/abs/0806.3525\" target=\"_blank\" rel=\"noopener\">arXiv:0806.3525</a>] [<a href=\"https://doi.org/10.1103/physreva.78.042306\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Min-Hsiu Hsieh, Zhicheng Luo, and Todd Brun",
+        "title": "Secret-key-assisted private classical communication capacity over quantum channels",
+        "journal": "Physical Review A",
+        "year": "20",
+        "volume": "78",
+        "number": "4",
+        "pages": "",
+        "doi": "10.1103/physreva.78.042306",
+        "url": "https://arxiv.org/abs/0806.3525",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal108"
+      }
     },
     {
       "id": "journals-109",
-      "contentHtml": "Isaac Kremsky, Min-Hsiu Hsieh, and Todd Brun. Classical enhancement of quantum-error-correcting codes. Physical Review A, vol. 78, no. 1, p. 012341 (2008) [<a href=\"https://arxiv.org/abs/0802.2414\" target=\"_blank\" rel=\"noopener\">arXiv:0802.2414</a>] [<a href=\"https://doi.org/10.1103/physreva.78.012341\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Isaac Kremsky, Min-Hsiu Hsieh, and Todd Brun. Classical enhancement of quantum-error-correcting codes. Physical Review A, vol. 78, no. 1, p. 012341 (2008) [<a href=\"https://arxiv.org/abs/0802.2414\" target=\"_blank\" rel=\"noopener\">arXiv:0802.2414</a>] [<a href=\"https://doi.org/10.1103/physreva.78.012341\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Isaac Kremsky, Min-Hsiu Hsieh, and Todd Brun",
+        "title": "Classical enhancement of quantum-error-correcting codes",
+        "journal": "Physical Review A",
+        "year": "20",
+        "volume": "78",
+        "number": "1",
+        "pages": "",
+        "doi": "10.1103/physreva.78.012341",
+        "url": "https://arxiv.org/abs/0802.2414",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal109"
+      }
     },
     {
       "id": "journals-110",
-      "contentHtml": "Min-Hsiu Hsieh, Igor Devetak, and Todd Brun. General entanglement-assisted quantum error-correcting codes. Physical Review A, vol. 76, no. 6, p. 062313 (2007) [<a href=\"https://arxiv.org/abs/0708.2142\" target=\"_blank\" rel=\"noopener\">arXiv:0708.2142</a>] [<a href=\"https://doi.org/10.1109/isit.2007.4557160\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Min-Hsiu Hsieh, Igor Devetak, and Todd Brun. General entanglement-assisted quantum error-correcting codes. Physical Review A, vol. 76, no. 6, p. 062313 (2007) [<a href=\"https://arxiv.org/abs/0708.2142\" target=\"_blank\" rel=\"noopener\">arXiv:0708.2142</a>] [<a href=\"https://doi.org/10.1109/isit.2007.4557160\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Min-Hsiu Hsieh, Igor Devetak, and Todd Brun",
+        "title": "General entanglement-assisted quantum error-correcting codes",
+        "journal": "Physical Review A",
+        "year": "20",
+        "volume": "76",
+        "number": "6",
+        "pages": "",
+        "doi": "10.1109/isit.2007.4557160",
+        "url": "https://arxiv.org/abs/0708.2142",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal110"
+      }
     },
     {
       "id": "journals-111",
-      "contentHtml": "Todd Brun, Igor Devetak, and Min-Hsiu Hsieh. Correcting quantum errors with entanglement. Science, vol. 314, no. 5798, pp. 436–439 (2006) [<a href=\"https://arxiv.org/abs/quant-ph/0610092\" target=\"_blank\" rel=\"noopener\">arXiv:quant-ph/0610092</a>] [<a href=\"https://doi.org/10.1126/science.1131563\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Todd Brun, Igor Devetak, and Min-Hsiu Hsieh. Correcting quantum errors with entanglement. Science, vol. 314, no. 5798, pp. 436–439 (2006) [<a href=\"https://arxiv.org/abs/quant-ph/0610092\" target=\"_blank\" rel=\"noopener\">arXiv:quant-ph/0610092</a>] [<a href=\"https://doi.org/10.1126/science.1131563\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Todd Brun, Igor Devetak, and Min-Hsiu Hsieh",
+        "title": "Correcting quantum errors with entanglement",
+        "journal": "Science",
+        "year": "20",
+        "volume": "314",
+        "number": "5798",
+        "pages": "436--439",
+        "doi": "10.1126/science.1131563",
+        "url": "https://arxiv.org/abs/quant-ph/0610092",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal111"
+      }
     }
   ]
 }

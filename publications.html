@@ -1050,6 +1050,21 @@
                 return '';
             }
 
+            function buildBibtexArticleFields(article = {}, fallbackKey = 'HsiehYYYYJournal') {
+                const key = bibEscape(article.citationKey || fallbackKey) || fallbackKey;
+                const fields = [];
+                if (article.author) fields.push(`  author = {${bibEscape(article.author)}}`);
+                if (article.title) fields.push(`  title = {${bibEscape(article.title)}}`);
+                if (article.journal) fields.push(`  journal = {${bibEscape(article.journal)}}`);
+                if (article.year) fields.push(`  year = {${bibEscape(article.year)}}`);
+                if (article.volume) fields.push(`  volume = {${bibEscape(article.volume)}}`);
+                if (article.number) fields.push(`  number = {${bibEscape(article.number)}}`);
+                if (article.pages) fields.push(`  pages = {${bibEscape(article.pages)}}`);
+                if (article.doi) fields.push(`  doi = {${bibEscape(article.doi)}}`);
+                if (article.url) fields.push(`  url = {${bibEscape(article.url)}}`);
+                return `@article{${key},\n${fields.join(',\n')}\n}`;
+            }
+
             function buildBibtex(mode, item, key, extra = {}) {
                 const title = bibEscape(item.title);
                 const authors = bibEscape(item.authors);
@@ -1194,7 +1209,52 @@
                                 copyText(text, btn);
                             });
                         });
-                    } else if (mode === 'book-card' || mode === 'journal-card' || mode === 'conference-card' || mode === 'talk-card') {
+                    } else if (mode === 'journal-card') {
+                        list.innerHTML = items.map((item, i) => {
+                            const p = parseItem(item.contentHtml || '');
+                            const a = item.article || {};
+                            const titleText = cleanTitle(a.title || parseJournalHead(p.head || '').title || p.head || p.plain);
+                            const authorText = (a.author || parseJournalHead(p.head || '').authors || '').replace(/\s+and\s+/gi, ', ');
+
+                            const refParts = [];
+                            if (a.journal) refParts.push(a.journal);
+                            if (a.volume && a.number) refParts.push(`${a.volume}(${a.number})`);
+                            else if (a.volume) refParts.push(a.volume);
+                            else if (a.number) refParts.push(`(${a.number})`);
+                            if (a.pages) refParts.push(a.pages);
+                            if (a.year) refParts.push(`(${a.year})`);
+                            const refInfo = refParts.join(', ');
+
+                            const arxivLink = p.arxiv ? `<a href="${p.arxiv.href}" target="_blank" rel="noopener">arXiv</a>` : `<a class="disabled">arXiv</a>`;
+                            const doiHref = a.doi ? `https://doi.org/${a.doi}` : (p.doi ? p.doi.href : '');
+                            const doiLink = doiHref ? `<a href="${doiHref}" target="_blank" rel="noopener">DOI</a>` : `<a class="disabled">DOI</a>`;
+                            const plainEnc = encodeURIComponent(`${authorText}. ${titleText}. ${refInfo}.`);
+                            const bibEnc = encodeURIComponent(buildBibtexArticleFields(a, `Hsieh${a.year || 'YYYY'}Journal${i + 1}`));
+
+                            return `
+                              <li>
+                                <article class="pub-card">
+                                  <h4 class="pub-title" title="${esc(titleText)}">${esc(titleText)}</h4>
+                                  <p class="pub-authors">${esc(authorText).replace('Min-Hsiu Hsieh', '<span class="author-me">Min-Hsiu Hsieh</span>')}</p>
+                                  <div class="pub-links"><span style="color:#4b5563; margin-right:10px;">${esc(refInfo)}</span></div>
+                                  <div class="pub-actions">
+                                    <span>[${arxivLink}]</span>
+                                    <span>[${doiLink}]</span>
+                                    <span style="color:#9ca3af;">|</span>
+                                    <button type="button" data-copy="plain" data-copy-text="${plainEnc}">Copy citation (plain)</button>
+                                    <button type="button" data-copy="bib" data-copy-text="${bibEnc}">Copy Bibtex</button>
+                                  </div>
+                                </article>
+                              </li>`;
+                        }).join('');
+
+                        list.querySelectorAll('.pub-actions button').forEach((btn) => {
+                            btn.addEventListener('click', () => {
+                                const text = decodeURIComponent(btn.dataset.copyText || '');
+                                copyText(text, btn);
+                            });
+                        });
+                    } else if (mode === 'book-card' || mode === 'conference-card' || mode === 'talk-card') {
                         list.innerHTML = items.map((item, i) => {
                             const isTalk = mode === 'talk-card';
                             const p = isTalk ? { year: String(item.date || '').match(/(19|20)\d{2}/)?.[0] || '', arxiv: null, doi: null, head: '', plain: '' } : parseItem(item.contentHtml || '');
