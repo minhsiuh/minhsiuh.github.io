@@ -843,9 +843,13 @@
                 const temp = document.createElement('div');
                 temp.innerHTML = contentHtml;
                 const text = (temp.textContent || '').trim().replace(/\s+/g, ' ');
-                const parts = text.split('. ');
-                const authors = parts[0] || '';
-                const title = parts.length > 1 ? parts[1] : text;
+
+                const firstLinkIdx = text.indexOf('[');
+                const head = (firstLinkIdx > -1 ? text.slice(0, firstLinkIdx) : text).trim();
+                const splitIdx = head.lastIndexOf('. ');
+                const authors = splitIdx > -1 ? head.slice(0, splitIdx).trim() : head;
+                const title = splitIdx > -1 ? head.slice(splitIdx + 2).trim() : head;
+
                 const yearMatch = text.match(/(19|20)\d{2}/g);
                 const year = yearMatch ? yearMatch[yearMatch.length - 1] : 'N/A';
                 const links = [...temp.querySelectorAll('a')].map(a => ({ label: (a.textContent || '').trim(), href: a.getAttribute('href') || '#' }));
