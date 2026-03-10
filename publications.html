@@ -906,6 +906,8 @@
                 const s = String(refInfo || '');
                 const range = s.match(/pp?\.\s*([0-9]+)\s*[-–]\s*([0-9]+)/i) || s.match(/\b([0-9]+)\s*[-–]\s*([0-9]+)\b/);
                 if (range) return `${range[1]}--${range[2]}`;
+                const articleNum = s.match(/article\s*number\s*:?\s*([0-9]+)/i);
+                if (articleNum) return articleNum[1];
                 const single = s.match(/,\s*([0-9]+)\s*(?:\(|$)/);
                 return single ? single[1] : '';
             }
@@ -921,6 +923,18 @@
             function extractNumber(refInfo) {
                 const m = String(refInfo || '').match(/\bno\.?\s*([0-9]+)/i) || String(refInfo || '').match(/\bissue\s*:?\s*([0-9]+)/i);
                 return m ? m[1] : '';
+            }
+
+            function extractJournalName(refInfo) {
+                return String(refInfo || '')
+                  .replace(/\bvolume\b[\s:\-]*\d+.*$/i, '')
+                  .replace(/\bvol\.?\s*\d+.*$/i, '')
+                  .replace(/\barticle\s*number\b.*$/i, '')
+                  .replace(/\bno\.?\s*\d+.*$/i, '')
+                  .replace(/\bissue\s*:?\s*\d+.*$/i, '')
+                  .replace(/\(\s*(19|20)\d{2}\s*\)\s*$/i, '')
+                  .replace(/[;,]\s*$/,'')
+                  .trim();
             }
 
             function extractArxivId(arxivHref) {
@@ -964,7 +978,7 @@
                     return `@book{${key},\n${fields.join(',\n')}\n}`;
                 }
 
-                const journal = bibEscape(extra.refInfo || '');
+                const journal = bibEscape(extractJournalName(extra.refInfo || ''));
                 const volume = extractVolume(extra.refInfo);
                 const number = extractNumber(extra.refInfo);
                 const pages = extractPages(extra.refInfo);
