@@ -1248,7 +1248,7 @@
             ]);
 
             updateStats({ arxivCount, journalCount, confCount });
-            await updateJournalStatsTable();
+            // Journal table uses manual source-of-truth counts from the curated list.
             window.__pubCounts = { arxivCount, booksCount, journalCount, confCount, talksCount };
         });
     </script>
