@@ -4,19 +4,61 @@
   "items": [
     {
       "id": "talks-1",
-      "contentHtml": "Shi Jie Samuel Tan, Yifan Hong, Ting-Chun Lin, Michael J. Gullans, Min-Hsiu Hsieh. Single-Shot Universality in Quantum LDPC Codes via Code-Switching. Long Plenary Talk in QIP 2026."
+      "contentHtml": "Shi Jie Samuel Tan, Yifan Hong, Ting-Chun Lin, Michael J. Gullans, Min-Hsiu Hsieh. Single-Shot Universality in Quantum LDPC Codes via Code-Switching. Long Plenary Talk in QIP 2026.",
+      "title": "Single-Shot Universality in Quantum LDPC Codes via Code-Switching",
+      "authors": [
+        "Shi Jie Samuel Tan",
+        "Yifan Hong",
+        "Ting-Chun Lin",
+        "Michael J. Gullans",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "QIP 2026",
+      "date": "2026",
+      "location": "",
+      "type": "Long Plenary Talk"
     },
     {
       "id": "talks-2",
-      "contentHtml": "Takaya Matsuura, Masahito Hayashi, Min-Hsiu Hsieh. Universal classical-quantum channel resolvability and private channel coding. QIP 2026."
+      "contentHtml": "Takaya Matsuura, Masahito Hayashi, Min-Hsiu Hsieh. Universal classical-quantum channel resolvability and private channel coding. QIP 2026.",
+      "title": "Universal classical-quantum channel resolvability and private channel coding",
+      "authors": [
+        "Takaya Matsuura",
+        "Masahito Hayashi",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "QIP 2026",
+      "date": "2026",
+      "location": "",
+      "type": "Talk"
     },
     {
       "id": "talks-3",
-      "contentHtml": "Yuxuan Du, Min-Hsiu Hsieh, Dacheng Tao. Efficient Learning for Linear Properties of Bounded-Gate Quantum Circuits. QTML 2025."
+      "contentHtml": "Yuxuan Du, Min-Hsiu Hsieh, Dacheng Tao. Efficient Learning for Linear Properties of Bounded-Gate Quantum Circuits. QTML 2025.",
+      "title": "Efficient Learning for Linear Properties of Bounded-Gate Quantum Circuits",
+      "authors": [
+        "Yuxuan Du",
+        "Min-Hsiu Hsieh",
+        "Dacheng Tao"
+      ],
+      "venue": "QTML 2025",
+      "date": "2025",
+      "location": "",
+      "type": "Talk"
     },
     {
       "id": "talks-4",
-      "contentHtml": "Adam Wills, Min-Hsiu Hsieh, Hayata Yamasaki. Constant-Overhead Magic State Distillation. Long Plenary Talk and Best Student Paper, QIP 2025."
+      "contentHtml": "Adam Wills, Min-Hsiu Hsieh, Hayata Yamasaki. Constant-Overhead Magic State Distillation. Long Plenary Talk and Best Student Paper, QIP 2025.",
+      "title": "Constant-Overhead Magic State Distillation",
+      "authors": [
+        "Adam Wills",
+        "Min-Hsiu Hsieh",
+        "Hayata Yamasaki"
+      ],
+      "venue": "QIP 2025",
+      "date": "2025",
+      "location": "",
+      "type": "Long Plenary Talk; Best Student Paper"
     },
     {
       "id": "talks-5",
@@ -50,19 +92,60 @@
     },
     {
       "id": "talks-7",
-      "contentHtml": "Min-Hsiu Hsieh, Leandro Mendes, Michael de Oliveira and Sathyawageeswar Subramanian. Quantum Circuits surpass Biased Threshold Circuits in Constant-Depth. TQC 2024."
+      "contentHtml": "Min-Hsiu Hsieh, Leandro Mendes, Michael de Oliveira and Sathyawageeswar Subramanian. Quantum Circuits surpass Biased Threshold Circuits in Constant-Depth. TQC 2024.",
+      "title": "Quantum Circuits surpass Biased Threshold Circuits in Constant-Depth",
+      "authors": [
+        "Min-Hsiu Hsieh",
+        "Leandro Mendes",
+        "Michael de Oliveira",
+        "Sathyawageeswar Subramanian"
+      ],
+      "venue": "TQC 2024",
+      "date": "2024",
+      "location": "",
+      "type": "Talk"
     },
     {
       "id": "talks-8",
-      "contentHtml": "Adam Wills, Ting-Chun Lin, Min-Hsiu Hsieh. Tradeoff Constructions for Quantum Locally Testable Codes. TQC 2024."
+      "contentHtml": "Adam Wills, Ting-Chun Lin, Min-Hsiu Hsieh. Tradeoff Constructions for Quantum Locally Testable Codes. TQC 2024.",
+      "title": "Tradeoff Constructions for Quantum Locally Testable Codes",
+      "authors": [
+        "Adam Wills",
+        "Ting-Chun Lin",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "TQC 2024",
+      "date": "2024",
+      "location": "",
+      "type": "Talk"
     },
     {
       "id": "talks-9",
-      "contentHtml": "Adam Wills, Min-Hsiu Hsieh, Sergii Strelchuk. Efficient Algorithms for All Port-Based Teleportation Protocols. TQC 2024."
+      "contentHtml": "Adam Wills, Min-Hsiu Hsieh, Sergii Strelchuk. Efficient Algorithms for All Port-Based Teleportation Protocols. TQC 2024.",
+      "title": "Efficient Algorithms for All Port-Based Teleportation Protocols",
+      "authors": [
+        "Adam Wills",
+        "Min-Hsiu Hsieh",
+        "Sergii Strelchuk"
+      ],
+      "venue": "TQC 2024",
+      "date": "2024",
+      "location": "",
+      "type": "Talk"
     },
     {
       "id": "talks-10",
-      "contentHtml": "Ting-Chun Lin, Isaac H. Kim, Min-Hsiu Hsieh. An operator extension of weak monotonicity. QIP 2024 (Short Plenary), Taipei, Taiwan, 13-19/01/2024."
+      "contentHtml": "Ting-Chun Lin, Isaac H. Kim, Min-Hsiu Hsieh. An operator extension of weak monotonicity. QIP 2024 (Short Plenary), Taipei, Taiwan, 13-19/01/2024.",
+      "title": "An operator extension of weak monotonicity",
+      "authors": [
+        "Ting-Chun Lin",
+        "Isaac H. Kim",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "QIP 2024",
+      "date": "13-19/01/2024",
+      "location": "Taipei, Taiwan",
+      "type": "Short Plenary"
     },
     {
       "id": "talks-11",
