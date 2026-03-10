@@ -1196,23 +1196,37 @@
                         });
                     } else if (mode === 'book-card' || mode === 'journal-card' || mode === 'conference-card' || mode === 'talk-card') {
                         list.innerHTML = items.map((item, i) => {
-                            const p = parseItem(item.contentHtml || '');
-                            const j = parseJournalHead(p.head || '');
+                            const isTalk = mode === 'talk-card';
+                            const p = isTalk ? { year: String(item.date || '').match(/(19|20)\d{2}/)?.[0] || '', arxiv: null, doi: null, head: '', plain: '' } : parseItem(item.contentHtml || '');
+                            const j = isTalk ? { authors: '', title: '', refInfo: '' } : parseJournalHead(p.head || '');
                             const arxivLink = p.arxiv ? `<a href="${p.arxiv.href}" target="_blank" rel="noopener">arXiv</a>` : `<a class="disabled">arXiv</a>`;
                             const doiLink = p.doi ? `<a href="${p.doi.href}" target="_blank" rel="noopener">DOI</a>` : `<a class="disabled">DOI</a>`;
-                            const isTalk = mode === 'talk-card';
-                            const titleText = isTalk ? cleanTitle(item.title || j.title || p.head || p.plain) : cleanTitle(j.title || p.head || p.plain);
+                            const titleText = isTalk ? cleanTitle(item.title || '') : cleanTitle(j.title || p.head || p.plain);
                             const authorText = isTalk
-                              ? ((Array.isArray(item.authors) ? item.authors.join(', ') : (item.authors || '')).trim() || j.authors || '')
+                              ? (Array.isArray(item.authors) ? item.authors.join(', ') : (item.authors || '')).trim()
                               : (j.authors || '');
-                            const plainEnc = encodeURIComponent(plainCitationText(p));
-                            const bibSource = { title: titleText, authors: authorText, year: p.year };
                             const typeText = String(item.type || '').trim();
                             const isHighlightedType = /(long|short)\s*(talk|plenary)/i.test(typeText);
                             const talkBadge = (isTalk && isHighlightedType) ? `<span class="talk-type-badge">${esc(typeText)}</span>` : '';
                             const talkRefInfo = isTalk
                               ? [item.venue, item.location, item.date].filter(Boolean).join(', ')
                               : '';
+
+                            if (isTalk && (!titleText || !authorText || !talkRefInfo)) {
+                              console.warn('[talks] missing structured fields for', item.id || '(no-id)', {
+                                title: item.title,
+                                authors: item.authors,
+                                venue: item.venue,
+                                location: item.location,
+                                date: item.date,
+                                type: item.type
+                              });
+                            }
+
+                            const plainEnc = encodeURIComponent(isTalk
+                              ? `${authorText}. ${titleText}. ${talkRefInfo}.`
+                              : plainCitationText(p));
+                            const bibSource = { title: titleText, authors: authorText, year: p.year };
                             const isBook = mode === 'book-card';
                             const isConf = mode === 'conference-card';
                             const bibMode = isBook ? 'book' : (isConf ? 'conference' : 'journal');
