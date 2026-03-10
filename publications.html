@@ -868,26 +868,34 @@
                 const tbody = document.getElementById('journal-stats-body');
                 if (!tbody) return;
 
+                // Whitelist: keep only journals explicitly listed in the original table
+                const whitelist = [
+                    'IEEE Transactions on Information Theory',
+                    'Physical Review Letters',
+                    'PRX Quantum',
+                    'Nature Communications',
+                    'npj Quantum Information',
+                    'Physical Review A',
+                    'Physical Review Research'
+                ];
+
                 try {
                     const response = await fetch('data/publications.journals.json', { cache: 'no-store' });
                     if (!response.ok) throw new Error(`HTTP ${response.status}`);
                     const data = await response.json();
                     const items = Array.isArray(data.items) ? data.items : [];
-                    const counts = new Map();
+                    const counts = new Map(whitelist.map((name) => [name, 0]));
 
                     for (const item of items) {
                         const p = parseItem(item.contentHtml || '');
                         const j = parseJournalHead(p.head || '');
                         const journal = extractJournalName(j.refInfo || '');
-                        if (!journal) continue;
+                        if (!counts.has(journal)) continue;
                         counts.set(journal, (counts.get(journal) || 0) + 1);
                     }
 
-                    const rows = [...counts.entries()]
-                        .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
-
-                    tbody.innerHTML = rows
-                        .map(([name, count]) => `<tr><td>${esc(name)}</td><td class="count">${count}</td></tr>`)
+                    tbody.innerHTML = whitelist
+                        .map((name) => `<tr><td>${esc(name)}</td><td class="count">${counts.get(name) || 0}</td></tr>`)
                         .join('');
                 } catch (err) {
                     console.warn('[publications] Failed to compute journal stats table from data', err);
