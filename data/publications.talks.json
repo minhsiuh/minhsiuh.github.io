@@ -177,14 +177,14 @@
     },
     {
       "id": "talks-13",
-      "contentHtml": "Chien Hung Cho, Dominic W. Berry, Min-Hsiu Hsieh. Doubling the order of approximation via the randomized product formula. TQC 2023, Aveiro, Portugal, 24-28/07/2023.",
+      "contentHtml": "Chien Hung Cho, Dominic W. Berry, Min-Hsiu Hsieh. Doubling the order of approximation via the randomized product formula. The 18th Theory of Quantum Computation, Communication and Cryptography (TQC 2023), Aveiro, Portugal, 24-28/07/2023.",
       "title": "Doubling the order of approximation via the randomized product formula",
       "authors": [
         "Chien Hung Cho",
         "Dominic W. Berry",
         "Min-Hsiu Hsieh"
       ],
-      "venue": "TQC 2023",
+      "venue": "The 18th Theory of Quantum Computation, Communication and Cryptography (TQC 2023)",
       "date": "24-28/07/2023",
       "location": "Aveiro, Portugal",
       "type": "Talk"
