@@ -310,6 +310,22 @@
             margin-bottom: 0;
         }
 
+        #journals-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        #journals-list li {
+            padding: 0;
+            border-bottom: none;
+            max-width: 100%;
+            margin-bottom: 8px;
+        }
+
+        #journals-list li:last-child {
+            margin-bottom: 0;
+        }
+
         .pub-title {
             margin: 0 0 10px 0;
             font-size: 1.05rem;
@@ -857,7 +873,16 @@
                 const arxiv = links.find(l => /arxiv/i.test(l.label) || /arxiv\.org/i.test(l.href));
                 const code = links.find(l => /code|github|gitlab/i.test(`${l.label} ${l.href}`));
                 const slides = links.find(l => /slide|ppt|presentation/i.test(`${l.label} ${l.href}`));
-                return { title, authors, year, doi, arxiv, code, slides, plain: text };
+                return { title, authors, year, doi, arxiv, code, slides, plain: text, head };
+            }
+
+            function parseJournalHead(head) {
+                const protectedHead = head.replace(/\b([A-Z])\.\s/g, '$1§ ');
+                const parts = protectedHead.split('. ').map(s => s.replace(/§/g, '.').trim()).filter(Boolean);
+                const authors = parts[0] || '';
+                const title = parts[1] || '';
+                const refInfo = parts.slice(2).join('. ');
+                return { authors, title, refInfo };
             }
 
             function bibtex(item, key) {
@@ -912,6 +937,39 @@
                                 copyText(text, btn);
                             });
                         });
+                    } else if (mode === 'journal-card') {
+                        list.innerHTML = items.map((item, i) => {
+                            const p = parseItem(item.contentHtml || '');
+                            const j = parseJournalHead(p.head || '');
+                            const arxivLink = p.arxiv ? `<a href="${p.arxiv.href}" target="_blank" rel="noopener">arXiv</a>` : `<a class="disabled">arXiv</a>`;
+                            const doiLink = p.doi ? `<a href="${p.doi.href}" target="_blank" rel="noopener">DOI</a>` : `<a class="disabled">DOI</a>`;
+                            return `
+                              <li>
+                                <article class="pub-card">
+                                  <h4 class="pub-title" title="${j.title || p.title}">${j.title || p.title}</h4>
+                                  <p class="pub-authors">${(j.authors || p.authors).replace('Min-Hsiu Hsieh', '<span class="author-me">Min-Hsiu Hsieh</span>')}</p>
+                                  <div class="pub-links"><span style="color:#4b5563; margin-right:10px;">${j.refInfo || ''}</span></div>
+                                  <div class="pub-actions">
+                                    <span>[${arxivLink}]</span>
+                                    <span>[${doiLink}]</span>
+                                    <button type="button" data-copy="plain">Copy citation (plain)</button>
+                                    <button type="button" data-copy="bib">Copy Bibtex</button>
+                                  </div>
+                                  <template class="plain">${p.plain}</template>
+                                  <template class="bib">${bibtex(p, `journal_${i + 1}`)}</template>
+                                </article>
+                              </li>`;
+                        }).join('');
+
+                        list.querySelectorAll('.pub-actions button').forEach((btn) => {
+                            btn.addEventListener('click', () => {
+                                const card = btn.closest('.pub-card');
+                                const text = btn.dataset.copy === 'bib'
+                                  ? card.querySelector('.bib').textContent
+                                  : card.querySelector('.plain').textContent;
+                                copyText(text, btn);
+                            });
+                        });
                     } else {
                         list.innerHTML = items.map((item) => `<li>${item.contentHtml}</li>`).join('');
                     }
@@ -926,7 +984,7 @@
             const [arxivCount, booksCount, journalCount, confCount, talksCount] = await Promise.all([
                 renderListFromJson('arxiv-list', 'publications.arxiv.json', 'card'),
                 renderListFromJson('books-list', 'publications.books.json'),
-                renderListFromJson('journals-list', 'publications.journals.json'),
+                renderListFromJson('journals-list', 'publications.journals.json', 'journal-card'),
                 renderListFromJson('conferences-list', 'publications.conferences.json'),
                 renderListFromJson('talks-list', 'publications.talks.json')
             ]);
