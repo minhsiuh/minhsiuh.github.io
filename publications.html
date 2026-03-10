@@ -865,9 +865,6 @@
 
                 const firstLinkIdx = text.indexOf('[');
                 const head = (firstLinkIdx > -1 ? text.slice(0, firstLinkIdx) : text).trim();
-                const splitIdx = head.lastIndexOf('. ');
-                const authors = splitIdx > -1 ? head.slice(0, splitIdx).trim() : head;
-                const title = splitIdx > -1 ? head.slice(splitIdx + 2).trim() : head;
 
                 const yearMatch = text.match(/(19|20)\d{2}/g);
                 const year = yearMatch ? yearMatch[yearMatch.length - 1] : 'N/A';
@@ -876,13 +873,30 @@
                 const arxiv = links.find(l => /arxiv/i.test(l.label) || /arxiv\.org/i.test(l.href));
                 const code = links.find(l => /code|github|gitlab/i.test(`${l.label} ${l.href}`));
                 const slides = links.find(l => /slide|ppt|presentation/i.test(`${l.label} ${l.href}`));
-                return { title, authors, year, doi, arxiv, code, slides, plain: text, head };
+                return { year, doi, arxiv, code, slides, plain: text, head };
+            }
+
+            function normalizeAuthors(authors) {
+                return String(authors || '')
+                  .replace(/\s+and\s+/gi, ', ')
+                  .replace(/\s*,\s*/g, ', ')
+                  .trim();
             }
 
             function parseJournalHead(head) {
-                const protectedHead = head.replace(/\b([A-Z])\.\s/g, '$1§ ');
+                const raw = String(head || '').trim();
+                const quoted = raw.match(/^(.+?),\s*"([^"]+)"\s*,?\s*(.+)$/);
+                if (quoted) {
+                    return {
+                        authors: normalizeAuthors(quoted[1]),
+                        title: quoted[2].trim(),
+                        refInfo: quoted[3].trim()
+                    };
+                }
+
+                const protectedHead = raw.replace(/\b([A-Z])\.\s/g, '$1§ ');
                 const parts = protectedHead.split('. ').map(s => s.replace(/§/g, '.').trim()).filter(Boolean);
-                const authors = parts[0] || '';
+                const authors = normalizeAuthors(parts[0] || '');
                 const title = parts[1] || '';
                 const refInfo = parts.slice(2).join('. ');
                 return { authors, title, refInfo };
@@ -1053,15 +1067,18 @@
                     if (mode === 'card') {
                         list.innerHTML = items.map((item, i) => {
                             const p = parseItem(item.contentHtml || '');
+                            const s = parseJournalHead(p.head || '');
+                            const titleText = s.title || p.plain;
+                            const authorText = s.authors || '';
                             const arxivId = p.arxiv ? (p.arxiv.href.match(/arxiv\.org\/abs\/([^/?#]+)/)?.[1] || 'link') : null;
                             const arxivLink = p.arxiv ? `<a href="${p.arxiv.href}" target="_blank" rel="noopener">arXiv:${arxivId}</a>` : `<a class="disabled">arXiv</a>`;
                             const plainEnc = encodeURIComponent(p.plain);
-                            const bibEnc = encodeURIComponent(buildBibtex('arxiv', p, `Hsieh${p.year}Arxiv${i + 1}`, { arxivHref: p.arxiv ? p.arxiv.href : '' }));
+                            const bibEnc = encodeURIComponent(buildBibtex('arxiv', { title: titleText, authors: authorText, year: p.year }, `Hsieh${p.year}Arxiv${i + 1}`, { arxivHref: p.arxiv ? p.arxiv.href : '' }));
                             return `
                               <li>
                                 <article class="pub-card">
-                                  <h4 class="pub-title" title="${esc(p.title)}">${esc(p.title)}</h4>
-                                  <p class="pub-authors">${esc(p.authors).replace('Min-Hsiu Hsieh', '<span class="author-me">Min-Hsiu Hsieh</span>')}</p>
+                                  <h4 class="pub-title" title="${esc(titleText)}">${esc(titleText)}</h4>
+                                  <p class="pub-authors">${esc(authorText).replace('Min-Hsiu Hsieh', '<span class="author-me">Min-Hsiu Hsieh</span>')}</p>
                                   <div class="pub-links">${arxivLink}<span style="color:#6b7280; margin-left:4px;">(${esc(p.year)})</span></div>
                                   <div class="pub-actions">
                                     <button type="button" data-copy="plain" data-copy-text="${plainEnc}">Copy citation (plain)</button>
@@ -1085,8 +1102,8 @@
                             const arxivLink = p.arxiv ? `<a href="${p.arxiv.href}" target="_blank" rel="noopener">arXiv</a>` : `<a class="disabled">arXiv</a>`;
                             const doiLink = p.doi ? `<a href="${p.doi.href}" target="_blank" rel="noopener">DOI</a>` : `<a class="disabled">DOI</a>`;
                             const keyPrefix = mode === 'conference-card' ? 'conf' : 'journal';
-                            const titleText = j.title || p.title;
-                            const authorText = j.authors || p.authors;
+                            const titleText = j.title || p.head || p.plain;
+                            const authorText = j.authors || '';
                             const plainEnc = encodeURIComponent(p.plain);
                             const bibSource = { title: titleText, authors: authorText, year: p.year };
                             const bibMode = mode === 'conference-card' ? 'conference' : 'journal';
