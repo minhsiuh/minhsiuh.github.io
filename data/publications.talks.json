@@ -48,14 +48,14 @@
     },
     {
       "id": "talks-4",
-      "contentHtml": "Adam Wills, Min-Hsiu Hsieh, Hayata Yamasaki. Constant-Overhead Magic State Distillation. Long Plenary Talk and Best Student Paper, QIP 2025.",
+      "contentHtml": "Adam Wills, Min-Hsiu Hsieh, Hayata Yamasaki. Constant-Overhead Magic State Distillation. Long Plenary Talk and Best Student Paper, The 28th Conference on Quantum Information Processing (QIP 2025).",
       "title": "Constant-Overhead Magic State Distillation",
       "authors": [
         "Adam Wills",
         "Min-Hsiu Hsieh",
         "Hayata Yamasaki"
       ],
-      "venue": "QIP 2025",
+      "venue": "The 28th Conference on Quantum Information Processing (QIP 2025)",
       "date": "2025",
       "location": "",
       "type": "Long Plenary Talk; Best Student Paper"
