@@ -220,14 +220,14 @@
     },
     {
       "id": "talks-16",
-      "contentHtml": "Tom Gur, Min-Hsiu Hsieh, Sathyawageeswar Subramanian. Sublinear quantum algorithms for estimating von Neumann entropy. QIP 2022, Caltech, USA, 07-11/03/2022.",
+      "contentHtml": "Tom Gur, Min-Hsiu Hsieh, Sathyawageeswar Subramanian. Sublinear quantum algorithms for estimating von Neumann entropy. The 25th Annual Conference on Quantum Information Processing (QIP 2022), Caltech, USA, 07-11/03/2022.",
       "title": "Sublinear quantum algorithms for estimating von Neumann entropy",
       "authors": [
         "Tom Gur",
         "Min-Hsiu Hsieh",
         "Sathyawageeswar Subramanian"
       ],
-      "venue": "QIP 2022",
+      "venue": "The 25th Annual Conference on Quantum Information Processing (QIP 2022)",
       "date": "07-11/03/2022",
       "location": "Caltech, USA",
       "type": "Talk"
