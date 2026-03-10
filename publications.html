@@ -878,8 +878,10 @@
 
             function normalizeAuthors(authors) {
                 return String(authors || '')
-                  .replace(/\s+and\s+/gi, ', ')
+                  .replace(/\s*,?\s+and\s+/gi, ', ')
                   .replace(/\s*,\s*/g, ', ')
+                  .replace(/,\s*,+/g, ', ')
+                  .replace(/^,\s*|,\s*$/g, '')
                   .trim();
             }
 
