@@ -246,13 +246,13 @@
       "article": {
         "author": "Kehuan Linghu, Yang Qian, Ruixia Wang, Meng-Jun Hu, Zhiyuan Li, Xuegang Li, Huikai Xu, Jingning Zhang, Teng Ma, Peng Zhao, Dong E. Liu, Min-Hsiu Hsieh, Xingyao Wu, Yuxuan Du, Dacheng Tao, Yirong Jin, and Haifeng Yu",
         "title": "Quantum circuit architecture search on a superconducting processor",
-        "journal": "Entropy 2024",
+        "journal": "Entropy",
         "year": "2024",
         "volume": "26",
         "number": "12",
-        "pages": "",
+        "pages": "1025",
         "doi": "10.3390/e26121025",
-        "url": "https://arxiv.org/abs/2201.00934",
+        "url": "https://doi.org/10.3390/e26121025",
         "entryType": "article",
         "citationKey": "Hsieh20Journal15"
       }
@@ -421,7 +421,7 @@
         "volume": "131",
         "number": "",
         "pages": "140601",
-        "doi": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.131.140601",
+        "doi": "10.1103/PhysRevLett.131.140601",
         "url": "https://arxiv.org/abs/2301.01597",
         "entryType": "article",
         "citationKey": "Hsieh20Journal25"
@@ -438,7 +438,7 @@
         "volume": "108",
         "number": "",
         "pages": "012425",
-        "doi": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.108.012425",
+        "doi": "10.1103/PhysRevA.108.012425",
         "url": "https://arxiv.org/abs/2302.02509",
         "entryType": "article",
         "citationKey": "Hsieh20Journal26"
@@ -472,7 +472,7 @@
         "volume": "113",
         "number": "",
         "pages": "68",
-        "doi": "https://link.springer.com/article/10.1007/s11005-023-01688-6",
+        "doi": "10.1007/s11005-023-01688-6",
         "url": "https://arxiv.org/abs/2211.13372",
         "entryType": "article",
         "citationKey": "Hsieh20Journal28"
@@ -637,13 +637,13 @@
       "article": {
         "author": "Jihao Fan, Jun Li, Yongbin Zhou, Min-Hsiu Hsieh, H. Vincent Poor",
         "title": "Entanglement-assisted concatenated quantum codes",
-        "journal": "The Proceedings of the National Academy of Sciences (PNAS)",
+        "journal": "Proceedings of the National Academy of Sciences",
         "year": "2022",
         "volume": "119",
         "number": "24",
-        "pages": "",
+        "pages": "e2202235119",
         "doi": "10.1073/pnas.2202235119",
-        "url": "https://arxiv.org/abs/2202.08084",
+        "url": "https://doi.org/10.1073/pnas.2202235119",
         "entryType": "article",
         "citationKey": "Hsieh20Journal38"
       }
@@ -676,7 +676,7 @@
         "volume": "",
         "number": "",
         "pages": "501--544",
-        "doi": "https://link.springer.com/article/10.1007/s00220-022-04319-8",
+        "doi": "10.1007/s00220-022-04319-8",
         "url": "https://arxiv.org/abs/1811.04218",
         "entryType": "article",
         "citationKey": "Hsieh20Journal40"
@@ -710,7 +710,7 @@
         "volume": "2",
         "number": "",
         "pages": "040337",
-        "doi": "https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.2.040337",
+        "doi": "10.1103/PRXQuantum.2.040337",
         "url": "https://arxiv.org/abs/2007.12369",
         "entryType": "article",
         "citationKey": "Hsieh20Journal42"
@@ -744,7 +744,7 @@
         "volume": "16",
         "number": "",
         "pages": "024051",
-        "doi": "https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.16.024051",
+        "doi": "10.1103/PhysRevApplied.16.024051",
         "url": "https://arxiv.org/abs/2010.06201",
         "entryType": "article",
         "citationKey": "Hsieh20Journal44"
@@ -761,7 +761,7 @@
         "volume": "104",
         "number": "",
         "pages": "022428",
-        "doi": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.104.022428",
+        "doi": "10.1103/PhysRevA.104.022428",
         "url": "https://arxiv.org/abs/1908.05251",
         "entryType": "article",
         "citationKey": "Hsieh19Journal45"
@@ -858,13 +858,13 @@
       "article": {
         "author": "Ximing Wang, Yuechi Ma, Min-Hsiu Hsieh, Manhong Yung",
         "title": "Quantum Speedup in Adaptive Boosting of Binary Classification",
-        "journal": "SCIENCE CHINA Physics, Mechanics & Astronomy",
-        "year": "1902",
+        "journal": "Science China Physics, Mechanics &amp; Astronomy",
+        "year": "2021",
         "volume": "64",
         "number": "2",
-        "pages": "",
+        "pages": "220311",
         "doi": "10.1007/s11433-020-1638-5",
-        "url": "https://arxiv.org/abs/1902.00869",
+        "url": "https://doi.org/10.1007/s11433-020-1638-5",
         "entryType": "article",
         "citationKey": "Hsieh19Journal51"
       }
@@ -1083,9 +1083,9 @@
         "year": "2018",
         "volume": "51",
         "number": "41",
-        "pages": "",
+        "pages": "414001",
         "doi": "10.1088/1751-8121/aadc21",
-        "url": "https://arxiv.org/abs/1804.06554",
+        "url": "https://doi.org/10.1088/1751-8121/aadc21",
         "entryType": "article",
         "citationKey": "Hsieh20Journal64"
       }
@@ -1147,13 +1147,13 @@
       "article": {
         "author": "Eric Chitambar and Min-Hsiu Hsieh",
         "title": "Round Complexity in the Local Transformations of Quantum and Classical States",
-        "journal": "Nature Communications 8, no 2086",
-        "year": "1998",
-        "volume": "",
-        "number": "2086",
-        "pages": "",
+        "journal": "Nature Communications",
+        "year": "2017",
+        "volume": "8",
+        "number": "1",
+        "pages": "2086",
         "doi": "10.1038/s41467-017-01887-5",
-        "url": "https://arxiv.org/abs/1610.01998",
+        "url": "https://doi.org/10.1038/s41467-017-01887-5",
         "entryType": "article",
         "citationKey": "Hsieh19Journal68"
       }
@@ -1168,9 +1168,9 @@
         "year": "2017",
         "volume": "58",
         "number": "9",
-        "pages": "",
+        "pages": "092202",
         "doi": "10.1063/1.5000846",
-        "url": "https://arxiv.org/abs/1511.02627",
+        "url": "https://doi.org/10.1063/1.5000846",
         "entryType": "article",
         "citationKey": "Hsieh20Journal69"
       }
@@ -1215,13 +1215,13 @@
       "article": {
         "author": "Hao-Chung Cheng, Min-Hsiu Hsieh",
         "title": "Characterizations of matrix and operator-valued Φ-entropies, and operator Efron–Stein inequalities",
-        "journal": "Proceedings of the Royal Society of London A: Mathematical, Physical and Engineering Sciences",
+        "journal": "Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences",
         "year": "2016",
         "volume": "472",
         "number": "2187",
-        "pages": "",
+        "pages": "20150563",
         "doi": "10.1098/rspa.2015.0563",
-        "url": "https://arxiv.org/abs/1602.00233",
+        "url": "https://doi.org/10.1098/rspa.2015.0563",
         "entryType": "article",
         "citationKey": "Hsieh20Journal72"
       }
@@ -1287,9 +1287,9 @@
         "year": "2016",
         "volume": "57",
         "number": "5",
-        "pages": "",
+        "pages": "052203",
         "doi": "10.1063/1.4949571",
-        "url": "https://arxiv.org/abs/1409.4352",
+        "url": "https://doi.org/10.1063/1.4949571",
         "entryType": "article",
         "citationKey": "Hsieh20Journal76"
       }
@@ -1388,10 +1388,10 @@
         "journal": "Journal of Mathematical Physics",
         "year": "2014",
         "volume": "55",
-        "number": "",
-        "pages": "",
+        "number": "11",
+        "pages": "112204",
         "doi": "10.1063/1.4902027",
-        "url": "https://arxiv.org/abs/1311.1536",
+        "url": "https://doi.org/10.1063/1.4902027",
         "entryType": "article",
         "citationKey": "Hsieh20Journal82"
       }
@@ -1525,9 +1525,9 @@
         "year": "2013",
         "volume": "54",
         "number": "4",
-        "pages": "",
+        "pages": "042201",
         "doi": "10.1063/1.4798396",
-        "url": "https://arxiv.org/abs/1210.6962",
+        "url": "https://doi.org/10.1063/1.4798396",
         "entryType": "article",
         "citationKey": "Hsieh20Journal90"
       }
@@ -1610,9 +1610,9 @@
         "year": "2012",
         "volume": "45",
         "number": "45",
-        "pages": "",
+        "pages": "453001",
         "doi": "10.1088/1751-8113/45/45/453001",
-        "url": "https://arxiv.org/abs/1206.4121",
+        "url": "https://doi.org/10.1088/1751-8113/45/45/453001",
         "entryType": "article",
         "citationKey": "Hsieh20Journal95"
       }
@@ -1626,10 +1626,10 @@
         "journal": "International Journal of Quantum Information",
         "year": "2012",
         "volume": "10",
-        "number": "1",
-        "pages": "",
-        "doi": "10.1142/S0219749912500153",
-        "url": "https://doi.org/10.1142/S0219749912500153",
+        "number": "01",
+        "pages": "1250015",
+        "doi": "10.1142/s0219749912500153",
+        "url": "https://doi.org/10.1142/s0219749912500153",
         "entryType": "article",
         "citationKey": "Hsieh20Journal96"
       }
@@ -1678,9 +1678,9 @@
         "year": "2011",
         "volume": "13",
         "number": "9",
-        "pages": "",
+        "pages": "093042",
         "doi": "10.1088/1367-2630/13/9/093042",
-        "url": "https://arxiv.org/abs/1103.1135",
+        "url": "https://doi.org/10.1088/1367-2630/13/9/093042",
         "entryType": "article",
         "citationKey": "Hsieh20Journal99"
       }
@@ -1746,9 +1746,9 @@
         "year": "2010",
         "volume": "51",
         "number": "12",
-        "pages": "",
+        "pages": "122202",
         "doi": "10.1063/1.3521499",
-        "url": "https://arxiv.org/abs/1007.2629",
+        "url": "https://doi.org/10.1063/1.3521499",
         "entryType": "article",
         "citationKey": "Hsieh20Journal103"
       }
@@ -1865,9 +1865,9 @@
         "year": "2007",
         "volume": "76",
         "number": "6",
-        "pages": "",
-        "doi": "10.1109/isit.2007.4557160",
-        "url": "https://arxiv.org/abs/0708.2142",
+        "pages": "062313",
+        "doi": "10.1103/physreva.76.062313",
+        "url": "https://doi.org/10.1103/physreva.76.062313",
         "entryType": "article",
         "citationKey": "Hsieh20Journal110"
       }
