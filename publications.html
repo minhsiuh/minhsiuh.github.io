@@ -1000,8 +1000,14 @@
                   .replace(/\barticle\s*number\b.*$/i, '')
                   .replace(/\bno\.?\s*\d+.*$/i, '')
                   .replace(/\bissue\s*:?\s*\d+.*$/i, '')
+                  // patterns like: Journal Name 60(3): 1549-1561 (2014)
+                  .replace(/\s+\d+\s*\(\d+\)\s*:\s*\d+.*$/i, '')
+                  // patterns like: Journal Name 10, 120 (2024)
+                  .replace(/\s+\d+\s*,\s*\d+.*$/i, '')
+                  // patterns like: Journal Name 7, Article number: 74 (2021)
+                  .replace(/\s+\d+\s*,\s*Article\s+number.*$/i, '')
                   .replace(/\(\s*(19|20)\d{2}\s*\)\s*$/i, '')
-                  .replace(/[;,]\s*$/,'')
+                  .replace(/[;,:]\s*$/,'')
                   .trim();
             }
 
