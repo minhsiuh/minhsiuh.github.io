@@ -20,11 +20,33 @@
     },
     {
       "id": "talks-5",
-      "contentHtml": "Yu-Cheng Chen, R. Wu, M.-H. Cheng, Min-Hsiu Hsieh. Optimizing Quantum Chemical Simulations: Randomized Linear Encoding and Neural Network Decoding. AI4Quantum 2025, Oral Presentation."
+      "contentHtml": "Yu-Cheng Chen, R. Wu, M.-H. Cheng, Min-Hsiu Hsieh. Optimizing Quantum Chemical Simulations: Randomized Linear Encoding and Neural Network Decoding. AI4Quantum 2025, Oral Presentation.",
+      "title": "Optimizing Quantum Chemical Simulations: Randomized Linear Encoding and Neural Network Decoding",
+      "authors": [
+        "Yu-Cheng Chen",
+        "R. Wu",
+        "M.-H. Cheng",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "AI4Quantum 2025",
+      "date": "2025",
+      "location": "",
+      "type": "Oral Presentation"
     },
     {
       "id": "talks-6",
-      "contentHtml": "Yu-Cheng Chen, R. Wu, M.-H. Cheng, Min-Hsiu Hsieh. Lossy-QSCI: Qubit-Efficient Quantum Chemistry via Chemistry-Biased Random Linear Encoding. AQMCSE 2025, Oral Presentation."
+      "contentHtml": "Yu-Cheng Chen, R. Wu, M.-H. Cheng, Min-Hsiu Hsieh. Lossy-QSCI: Qubit-Efficient Quantum Chemistry via Chemistry-Biased Random Linear Encoding. AQMCSE 2025, Oral Presentation.",
+      "title": "Lossy-QSCI: Qubit-Efficient Quantum Chemistry via Chemistry-Biased Random Linear Encoding",
+      "authors": [
+        "Yu-Cheng Chen",
+        "R. Wu",
+        "M.-H. Cheng",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "AQMCSE 2025",
+      "date": "2025",
+      "location": "",
+      "type": "Oral Presentation"
     },
     {
       "id": "talks-7",
@@ -144,7 +166,17 @@
     },
     {
       "id": "talks-36",
-      "contentHtml": "Eric Chitambar, Runyao Duan, Min-Hsiu Hsieh. When do Local Operations and Classical Communication Suffice for Optimal Quantum State Discrimination?. 13th Asian Conference on Quantum Information Science (AQIS 2013), Chennai, India, 25–30/08/2013 (Long Talk)."
+      "contentHtml": "Eric Chitambar, Runyao Duan, Min-Hsiu Hsieh. When do Local Operations and Classical Communication Suffice for Optimal Quantum State Discrimination?. 13th Asian Conference on Quantum Information Science (AQIS 2013), Chennai, India, 25–30/08/2013 (Long Talk).",
+      "title": "When do Local Operations and Classical Communication Suffice for Optimal Quantum State Discrimination?",
+      "authors": [
+        "Eric Chitambar",
+        "Runyao Duan",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "13th Asian Conference on Quantum Information Science (AQIS 2013)",
+      "date": "25–30/08/2013",
+      "location": "Chennai, India",
+      "type": "Long Talk"
     },
     {
       "id": "talks-37",
@@ -164,7 +196,16 @@
     },
     {
       "id": "talks-41",
-      "contentHtml": "Mark M. Wilde, Min-Hsiu Hsieh. Superactive entanglement generation with a zero-capacity quantum channel and a non-distillable shared state. 9th Asian Conference on Quantum Information Science (AQIS 2009), Nanjing, China, 26–29/08/2009."
+      "contentHtml": "Mark M. Wilde, Min-Hsiu Hsieh. Superactive entanglement generation with a zero-capacity quantum channel and a non-distillable shared state. 9th Asian Conference on Quantum Information Science (AQIS 2009), Nanjing, China, 26–29/08/2009.",
+      "title": "Superactive entanglement generation with a zero-capacity quantum channel and a non-distillable shared state",
+      "authors": [
+        "Mark M. Wilde",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "9th Asian Conference on Quantum Information Science (AQIS 2009)",
+      "date": "26–29/08/2009",
+      "location": "Nanjing, China",
+      "type": "Talk"
     },
     {
       "id": "talks-42",
@@ -184,7 +225,17 @@
     },
     {
       "id": "talks-46",
-      "contentHtml": "Todd Brun, Igor Devetak, Min-Hsiu Hsieh. Entanglement-assisted quantum error correction. 6th Asian Conference on Quantum Information Science (AQIS 2006), University of Science and Technology of China, Beijing, China, 01–04/09/2006."
+      "contentHtml": "Todd Brun, Igor Devetak, Min-Hsiu Hsieh. Entanglement-assisted quantum error correction. 6th Asian Conference on Quantum Information Science (AQIS 2006), University of Science and Technology of China, Beijing, China, 01–04/09/2006.",
+      "title": "Entanglement-assisted quantum error correction",
+      "authors": [
+        "Todd Brun",
+        "Igor Devetak",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "6th Asian Conference on Quantum Information Science (AQIS 2006)",
+      "date": "01–04/09/2006",
+      "location": "University of Science and Technology of China, Beijing, China",
+      "type": "Talk"
     }
   ]
 }
