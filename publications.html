@@ -1200,14 +1200,19 @@
                             const j = parseJournalHead(p.head || '');
                             const arxivLink = p.arxiv ? `<a href="${p.arxiv.href}" target="_blank" rel="noopener">arXiv</a>` : `<a class="disabled">arXiv</a>`;
                             const doiLink = p.doi ? `<a href="${p.doi.href}" target="_blank" rel="noopener">DOI</a>` : `<a class="disabled">DOI</a>`;
-                                                        const titleText = cleanTitle(j.title || p.head || p.plain);
-                            const authorText = j.authors || '';
+                            const isTalk = mode === 'talk-card';
+                            const titleText = isTalk ? cleanTitle(item.title || j.title || p.head || p.plain) : cleanTitle(j.title || p.head || p.plain);
+                            const authorText = isTalk
+                              ? ((Array.isArray(item.authors) ? item.authors.join(', ') : (item.authors || '')).trim() || j.authors || '')
+                              : (j.authors || '');
                             const plainEnc = encodeURIComponent(plainCitationText(p));
                             const bibSource = { title: titleText, authors: authorText, year: p.year };
-                            const isTalk = mode === 'talk-card';
                             const typeText = String(item.type || '').trim();
                             const isLongType = /long\s*(talk|plenary)/i.test(typeText);
                             const talkBadge = (isTalk && isLongType) ? `<span class="talk-type-badge">${esc(typeText)}</span>` : '';
+                            const talkRefInfo = isTalk
+                              ? [item.venue, item.location, item.date].filter(Boolean).join(', ')
+                              : '';
                             const isBook = mode === 'book-card';
                             const isConf = mode === 'conference-card';
                             const bibMode = isBook ? 'book' : (isConf ? 'conference' : 'journal');
@@ -1215,7 +1220,7 @@
                               ? `Hsieh${p.year}Book${i + 1}`
                               : (isConf ? `Hsieh${p.year}Conf${i + 1}` : `Hsieh${p.year}Journal${i + 1}`);
                             const bibEnc = encodeURIComponent(buildBibtex(bibMode, bibSource, bibKey, {
-                              refInfo: j.refInfo || '',
+                              refInfo: isTalk ? talkRefInfo : (j.refInfo || ''),
                               doiHref: p.doi ? p.doi.href : '',
                               publisher: extractPublisher(j.refInfo || ''),
                               url: (p.doi && p.doi.href) ? p.doi.href : (p.arxiv && p.arxiv.href ? p.arxiv.href : '')
@@ -1225,7 +1230,7 @@
                                 <article class="pub-card">
                                   <h4 class="pub-title" title="${esc(titleText)}">${esc(titleText)}</h4>
                                   <p class="pub-authors">${esc(authorText).replace('Min-Hsiu Hsieh', '<span class="author-me">Min-Hsiu Hsieh</span>')}</p>
-                                  <div class="pub-links"><span style="color:#4b5563; margin-right:10px;">${esc(j.refInfo || '')}</span>${talkBadge}</div>
+                                  <div class="pub-links"><span style="color:#4b5563; margin-right:10px;">${esc(isTalk ? talkRefInfo : (j.refInfo || ''))}</span>${talkBadge}</div>
                                   ${isTalk ? '' : `<div class="pub-actions">
                                     <span>[${arxivLink}]</span>
                                     <span>[${doiLink}]</span>
