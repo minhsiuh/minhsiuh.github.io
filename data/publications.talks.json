@@ -92,7 +92,7 @@
     },
     {
       "id": "talks-7",
-      "contentHtml": "Min-Hsiu Hsieh, Leandro Mendes, Michael de Oliveira and Sathyawageeswar Subramanian. Quantum Circuits surpass Biased Threshold Circuits in Constant-Depth. TQC 2024.",
+      "contentHtml": "Min-Hsiu Hsieh, Leandro Mendes, Michael de Oliveira and Sathyawageeswar Subramanian. Quantum Circuits surpass Biased Threshold Circuits in Constant-Depth. The 18th Theory of Quantum Computation, Communication and Cryptography (TQC 2024).",
       "title": "Quantum Circuits surpass Biased Threshold Circuits in Constant-Depth",
       "authors": [
         "Min-Hsiu Hsieh",
@@ -100,35 +100,35 @@
         "Michael de Oliveira",
         "Sathyawageeswar Subramanian"
       ],
-      "venue": "TQC 2024",
+      "venue": "The 18th Theory of Quantum Computation, Communication and Cryptography (TQC 2024)",
       "date": "2024",
       "location": "",
       "type": "Talk"
     },
     {
       "id": "talks-8",
-      "contentHtml": "Adam Wills, Ting-Chun Lin, Min-Hsiu Hsieh. Tradeoff Constructions for Quantum Locally Testable Codes. TQC 2024.",
+      "contentHtml": "Adam Wills, Ting-Chun Lin, Min-Hsiu Hsieh. Tradeoff Constructions for Quantum Locally Testable Codes. The 18th Theory of Quantum Computation, Communication and Cryptography (TQC 2024).",
       "title": "Tradeoff Constructions for Quantum Locally Testable Codes",
       "authors": [
         "Adam Wills",
         "Ting-Chun Lin",
         "Min-Hsiu Hsieh"
       ],
-      "venue": "TQC 2024",
+      "venue": "The 18th Theory of Quantum Computation, Communication and Cryptography (TQC 2024)",
       "date": "2024",
       "location": "",
       "type": "Talk"
     },
     {
       "id": "talks-9",
-      "contentHtml": "Adam Wills, Min-Hsiu Hsieh, Sergii Strelchuk. Efficient Algorithms for All Port-Based Teleportation Protocols. TQC 2024.",
+      "contentHtml": "Adam Wills, Min-Hsiu Hsieh, Sergii Strelchuk. Efficient Algorithms for All Port-Based Teleportation Protocols. The 18th Theory of Quantum Computation, Communication and Cryptography (TQC 2024).",
       "title": "Efficient Algorithms for All Port-Based Teleportation Protocols",
       "authors": [
         "Adam Wills",
         "Min-Hsiu Hsieh",
         "Sergii Strelchuk"
       ],
-      "venue": "TQC 2024",
+      "venue": "The 18th Theory of Quantum Computation, Communication and Cryptography (TQC 2024)",
       "date": "2024",
       "location": "",
       "type": "Talk"
