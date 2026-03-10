@@ -310,19 +310,22 @@
             margin-bottom: 0;
         }
 
-        #journals-list {
+        #journals-list,
+        #conferences-list {
             list-style: none;
             padding-left: 0;
         }
 
-        #journals-list li {
+        #journals-list li,
+        #conferences-list li {
             padding: 0;
             border-bottom: none;
             max-width: 100%;
             margin-bottom: 8px;
         }
 
-        #journals-list li:last-child {
+        #journals-list li:last-child,
+        #conferences-list li:last-child {
             margin-bottom: 0;
         }
 
@@ -890,11 +893,39 @@
             }
 
             function copyText(text, btn) {
-                navigator.clipboard.writeText(text).then(() => {
+                const showCopied = () => {
                     const old = btn.textContent;
                     btn.textContent = 'Copied!';
                     setTimeout(() => (btn.textContent = old), 900);
-                }).catch(() => alert('Copy failed.'));
+                };
+
+                const fallbackCopy = () => {
+                    try {
+                        const ta = document.createElement('textarea');
+                        ta.value = text;
+                        ta.setAttribute('readonly', '');
+                        ta.style.position = 'fixed';
+                        ta.style.left = '-9999px';
+                        document.body.appendChild(ta);
+                        ta.select();
+                        ta.setSelectionRange(0, ta.value.length);
+                        const ok = document.execCommand('copy');
+                        document.body.removeChild(ta);
+                        if (ok) {
+                            showCopied();
+                        } else {
+                            window.prompt('Copy manually:', text);
+                        }
+                    } catch {
+                        window.prompt('Copy manually:', text);
+                    }
+                };
+
+                if (navigator.clipboard && window.isSecureContext) {
+                    navigator.clipboard.writeText(text).then(showCopied).catch(fallbackCopy);
+                } else {
+                    fallbackCopy();
+                }
             }
 
             async function renderListFromJson(listId, dataFile, mode = 'list') {
@@ -937,12 +968,13 @@
                                 copyText(text, btn);
                             });
                         });
-                    } else if (mode === 'journal-card') {
+                    } else if (mode === 'journal-card' || mode === 'conference-card') {
                         list.innerHTML = items.map((item, i) => {
                             const p = parseItem(item.contentHtml || '');
                             const j = parseJournalHead(p.head || '');
                             const arxivLink = p.arxiv ? `<a href="${p.arxiv.href}" target="_blank" rel="noopener">arXiv</a>` : `<a class="disabled">arXiv</a>`;
                             const doiLink = p.doi ? `<a href="${p.doi.href}" target="_blank" rel="noopener">DOI</a>` : `<a class="disabled">DOI</a>`;
+                            const keyPrefix = mode === 'conference-card' ? 'conf' : 'journal';
                             return `
                               <li>
                                 <article class="pub-card">
@@ -957,7 +989,7 @@
                                     <button type="button" data-copy="bib">Copy Bibtex</button>
                                   </div>
                                   <template class="plain">${p.plain}</template>
-                                  <template class="bib">${bibtex(p, `journal_${i + 1}`)}</template>
+                                  <template class="bib">${bibtex(p, `${keyPrefix}_${i + 1}`)}</template>
                                 </article>
                               </li>`;
                         }).join('');
@@ -986,7 +1018,7 @@
                 renderListFromJson('arxiv-list', 'publications.arxiv.json', 'card'),
                 renderListFromJson('books-list', 'publications.books.json'),
                 renderListFromJson('journals-list', 'publications.journals.json', 'journal-card'),
-                renderListFromJson('conferences-list', 'publications.conferences.json'),
+                renderListFromJson('conferences-list', 'publications.conferences.json', 'conference-card'),
                 renderListFromJson('talks-list', 'publications.talks.json')
             ]);
 
