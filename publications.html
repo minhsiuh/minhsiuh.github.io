@@ -955,6 +955,13 @@
                 }
 
                 if (mode === 'conference') {
+                    const doi = extractDoiValue(extra.doiHref);
+
+                    // curated high-fidelity BibTeX for known LIPIcs/TQC entry
+                    if (doi === '10.4230/LIPIcs.TQC.2024.8') {
+                        return `@inproceedings{${key},\n  author = {Chen, Kuo-Chin and Apers, Simon and Hsieh, Min-Hsiu},\n  title = {{(Quantum) Complexity of Testing Signed Graph Clusterability}},\n  booktitle = {19th Conference on the Theory of Quantum Computation, Communication and Cryptography (TQC 2024)},\n  pages = {8:1--8:16},\n  series = {Leibniz International Proceedings in Informatics (LIPIcs)},\n  ISBN = {978-3-95977-328-7},\n  ISSN = {1868-8969},\n  year = {2024},\n  volume = {310},\n  editor = {Magniez, Fr\\'\\{e}d\\'\\{e}ric and Grilo, Alex Bredariol},\n  publisher = {Schloss Dagstuhl -- Leibniz-Zentrum f\\"{u}r Informatik},\n  address = {Dagstuhl, Germany},\n  URL = {https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.TQC.2024.8},\n  URN = {urn:nbn:de:0030-drops-206786},\n  doi = {10.4230/LIPIcs.TQC.2024.8}\n}`;
+                    }
+
                     const booktitle = bibEscape(extra.refInfo || 'Proceedings');
                     const pages = extractPages(extra.refInfo);
                     const fields = [
@@ -964,6 +971,7 @@
                         `  year = {${year}}`
                     ];
                     if (pages) fields.push(`  pages = {${pages}}`);
+                    if (doi) fields.push(`  doi = {${doi}}`);
                     return `@inproceedings{${key},\n${fields.join(',\n')}\n}`;
                 }
 
