@@ -786,19 +786,19 @@
     },
     {
       "id": "journals-47",
-      "contentHtml": "Jihao Fan, Jun Li, Jianxin Wang, Zhihui Wei, Min-Hsiu Hsieh. Asymmetric Quantum Concatenated and Tensor Product Codes With Large Z-Distances. IEEE Transactions on Communications, Volume: 69, Issue: 6, pp: 3971-3983 (2021) [<a href=\"https://arxiv.org/abs/2012.00226\" target=\"_blank\" rel=\"noopener\">arXiv:2012.00226</a>] [<a href=\"https://doi.org/10.1109/TCOMM.2021.3064566\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "contentHtml": "Jihao Fan, Jun Li, Jianxin Wang, Zhihui Wei, Min-Hsiu Hsieh. Asymmetric Quantum Concatenated and Tensor Product Codes With Large Z-Distances. IEEE Transactions on Communications, vol. 69, no. 6, pp. 3971-3983 (2021) [<a href=\"https://arxiv.org/abs/2012.00226\" target=\"_blank\" rel=\"noopener\">arXiv:2012.00226</a>] [<a href=\"https://doi.org/10.1109/TCOMM.2021.3064566\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
       "article": {
         "author": "Jihao Fan, Jun Li, Jianxin Wang, Zhihui Wei, Min-Hsiu Hsieh",
         "title": "Asymmetric Quantum Concatenated and Tensor Product Codes With Large Z-Distances",
         "journal": "IEEE Transactions on Communications",
-        "year": "2012",
+        "year": "2021",
         "volume": "69",
         "number": "6",
         "pages": "3971--3983",
         "doi": "10.1109/TCOMM.2021.3064566",
-        "url": "https://arxiv.org/abs/2012.00226",
+        "url": "https://doi.org/10.1109/tcomm.2021.3064566",
         "entryType": "article",
-        "citationKey": "Hsieh20Journal47"
+        "citationKey": "Hsieh2021Journal47"
       }
     },
     {
