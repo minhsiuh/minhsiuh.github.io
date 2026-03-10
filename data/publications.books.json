@@ -1,0 +1,18 @@
+{
+  "section": "books",
+  "updatedAt": "2026-03-10T04:47:13.427Z",
+  "items": [
+    {
+      "id": "books-1",
+      "contentHtml": "Yuxuan Du, Xinbiao Wang, Naixu Guo, Zhan Yu, Yang Qian, Kaining Zhang, Min-Hsiu Hsieh, Patrick Rebentrost, Dacheng Tao. A Gentle Introduction to Quantum Machine Learning. Springer (ISBN-13: 978-9819512836), 2025 [<a href=\"https://arxiv.org/abs/2502.01146\" target=\"_blank\" rel=\"noopener\">arXiv:2502.01146</a>]. [<a href=\"https://www.amazon.com.au/Gentle-Introduction-Quantum-Machine-Learning/dp/9819512832\" target=\"_blank\" rel=\"noopener\">Amazon</a>]"
+    },
+    {
+      "id": "books-2",
+      "contentHtml": "Proceedings of the 16th Conference on the Theory of Quantum Computation, Communication and Cryptography (TQC 2021). July 5-8, 2021, Virtual Conference. Min-Hsiu Hsieh (Ed.) ISBN 978-3-95977-198-6, LIPICS Vol. 197. ISSN 1868-8969. [<a href=\"https://www.dagstuhl.de/dagpub/978-3-95977-198-6\" target=\"_blank\" rel=\"noopener\">Link</a>]"
+    },
+    {
+      "id": "books-3",
+      "contentHtml": "Todd Brun and Min-Hsiu Hsieh. Entanglement-assisted quantum error-correcting codes. Quantum Error Correction, in D. Lidar and T. Brun (eds.), Cambridge University Press (ISBN: 9780521897877), 2013. [<a href=\"https://arxiv.org/abs/1610.04013\" target=\"_blank\" rel=\"noopener\">arXiv:1610.04013</a>]"
+    }
+  ]
+}

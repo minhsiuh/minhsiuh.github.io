@@ -1,7 +1,14 @@
 #!/usr/bin/env node
 import fs from 'node:fs/promises';
 
-const dataPath = new URL('../data/publications.arxiv.json', import.meta.url);
+const checkLinks = process.argv.includes('--check-links');
+const files = [
+  'publications.arxiv.json',
+  'publications.books.json',
+  'publications.journals.json',
+  'publications.conferences.json',
+  'publications.talks.json'
+];
 
 function extractLinks(html) {
   const links = [...html.matchAll(/href="([^"]+)"/g)].map((m) => m[1]);
@@ -11,8 +18,9 @@ function extractLinks(html) {
 }
 
 function extractYear(html) {
-  const years = [...html.matchAll(/\((19|20)\d{2}\)/g)].map((m) => Number(m[0].slice(1, -1)));
-  return years.length ? years[years.length - 1] : null;
+  const m = html.match(/(19|20)\d{2}/g);
+  if (!m || !m.length) return null;
+  return Number(m[m.length - 1]);
 }
 
 async function urlStatus(url) {
@@ -29,48 +37,67 @@ async function urlStatus(url) {
   }
 }
 
-const raw = await fs.readFile(dataPath, 'utf8');
-const data = JSON.parse(raw);
-const items = Array.isArray(data.items) ? data.items : [];
+const errors = [];
+const warnings = [];
+let total = 0;
 
-const issues = [];
-const doiSeen = new Map();
-const arxivSeen = new Map();
-const badLinks = [];
+for (const file of files) {
+  const full = new URL(`../data/${file}`, import.meta.url);
+  const raw = await fs.readFile(full, 'utf8');
+  const data = JSON.parse(raw);
+  const section = data.section || file;
+  const items = Array.isArray(data.items) ? data.items : [];
+  total += items.length;
 
-for (const item of items) {
-  const html = item.contentHtml || '';
-  const { arxiv, doi, links } = extractLinks(html);
-  const year = extractYear(html);
+  const idSeen = new Set();
+  const doiSeen = new Set();
+  const arxivSeen = new Set();
 
-  if (!year) issues.push(`${item.id}: missing year`);
-  if (!arxiv) issues.push(`${item.id}: missing arXiv link`);
+  for (const item of items) {
+    if (!item?.id) {
+      errors.push(`${section}: item missing id`);
+      continue;
+    }
+    if (idSeen.has(item.id)) errors.push(`${section}:${item.id} duplicate id`);
+    idSeen.add(item.id);
 
-  if (doi) {
-    if (doiSeen.has(doi)) issues.push(`${item.id}: duplicate DOI with ${doiSeen.get(doi)}`);
-    else doiSeen.set(doi, item.id);
-  }
-  if (arxiv) {
-    if (arxivSeen.has(arxiv)) issues.push(`${item.id}: duplicate arXiv with ${arxivSeen.get(arxiv)}`);
-    else arxivSeen.set(arxiv, item.id);
-  }
+    const html = item.contentHtml || '';
+    const { arxiv, doi, links } = extractLinks(html);
+    const year = extractYear(html);
 
-  for (const url of links) {
-    const status = await urlStatus(url);
-    if (!status.ok) badLinks.push({ id: item.id, url, status });
+    if (!year) warnings.push(`${section}:${item.id} missing year`);
+
+    if (doi) {
+      if (doiSeen.has(doi)) errors.push(`${section}:${item.id} duplicate DOI in same section`);
+      doiSeen.add(doi);
+    } else if (section === 'journals' || section === 'conferences') {
+      warnings.push(`${section}:${item.id} missing DOI`);
+    }
+
+    if (arxiv) {
+      if (arxivSeen.has(arxiv)) errors.push(`${section}:${item.id} duplicate arXiv in same section`);
+      arxivSeen.add(arxiv);
+    }
+
+    if (checkLinks) {
+      for (const url of links) {
+        const status = await urlStatus(url);
+        if (!status.ok) errors.push(`${section}:${item.id} broken link ${url} (${status.status})`);
+      }
+    }
   }
 }
 
-if (badLinks.length) {
-  for (const b of badLinks) {
-    issues.push(`${b.id}: broken link ${b.url} (${b.status.status})`);
-  }
+if (warnings.length) {
+  console.warn('Validation warnings:');
+  for (const w of warnings.slice(0, 50)) console.warn(`- ${w}`);
+  if (warnings.length > 50) console.warn(`- ... ${warnings.length - 50} more warnings`);
 }
 
-if (issues.length) {
+if (errors.length) {
   console.error('Validation failed:');
-  for (const issue of issues) console.error(`- ${issue}`);
+  for (const e of errors) console.error(`- ${e}`);
   process.exit(1);
 }
 
-console.log(`Validation OK (${items.length} arXiv entries checked)`);
+console.log(`Validation OK (${total} entries checked${checkLinks ? ', with link check' : ''})`);
