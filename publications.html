@@ -286,6 +286,82 @@
             text-decoration: underline;
         }
 
+        /* Preview-style card (single block rollout) */
+        .pub-card {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 16px 18px;
+        }
+
+        #arxiv-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        #arxiv-list li {
+            padding: 0;
+            border-bottom: none;
+            max-width: 100%;
+            margin-bottom: 5px;
+        }
+
+        #arxiv-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .pub-title {
+            margin: 0 0 10px 0;
+            font-size: 1.05rem;
+            font-weight: 700;
+            white-space: normal;
+            overflow-wrap: anywhere;
+            line-height: 1.4;
+        }
+
+        .pub-authors {
+            margin: 0 0 10px 0;
+            color: #374151;
+            line-height: 1.45;
+        }
+
+        .author-me {
+            font-weight: 700;
+            text-decoration: underline;
+        }
+
+        .pub-meta {
+            margin: 0 0 10px;
+            color: #6b7280;
+            font-size: .95rem;
+        }
+
+        .pub-links a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        .pub-links a.disabled {
+            color: #9ca3af;
+            pointer-events: none;
+        }
+
+        .pub-actions {
+            margin-top: 10px;
+            display: flex;
+            gap: 8px;
+        }
+
+        .pub-actions button {
+            border: 1px solid var(--border-color);
+            background: #fff;
+            border-radius: 8px;
+            padding: 6px 10px;
+            cursor: pointer;
+        }
+
         /* Journal Stats Box */
         .journal-stats-box {
             background: var(--light-gray);
@@ -763,7 +839,36 @@
                 document.getElementById('total-count').textContent = arxivCount + journalCount + confCount;
             }
 
-            async function renderListFromJson(listId, dataFile) {
+            function parseItem(contentHtml) {
+                const temp = document.createElement('div');
+                temp.innerHTML = contentHtml;
+                const text = (temp.textContent || '').trim().replace(/\s+/g, ' ');
+                const parts = text.split('. ');
+                const authors = parts[0] || '';
+                const title = parts.length > 1 ? parts[1] : text;
+                const yearMatch = text.match(/(19|20)\d{2}/g);
+                const year = yearMatch ? yearMatch[yearMatch.length - 1] : 'N/A';
+                const links = [...temp.querySelectorAll('a')].map(a => ({ label: (a.textContent || '').trim(), href: a.getAttribute('href') || '#' }));
+                const doi = links.find(l => /doi/i.test(l.label) || /doi\.org/i.test(l.href));
+                const arxiv = links.find(l => /arxiv/i.test(l.label) || /arxiv\.org/i.test(l.href));
+                const code = links.find(l => /code|github|gitlab/i.test(`${l.label} ${l.href}`));
+                const slides = links.find(l => /slide|ppt|presentation/i.test(`${l.label} ${l.href}`));
+                return { title, authors, year, doi, arxiv, code, slides, plain: text };
+            }
+
+            function bibtex(item, key) {
+                return `@article{${key},\n  title={${item.title.replace(/[{}]/g,'')}},\n  author={${item.authors.replace(/[{}]/g,'')}},\n  year={${item.year}}\n}`;
+            }
+
+            function copyText(text, btn) {
+                navigator.clipboard.writeText(text).then(() => {
+                    const old = btn.textContent;
+                    btn.textContent = 'Copied!';
+                    setTimeout(() => (btn.textContent = old), 900);
+                }).catch(() => alert('Copy failed.'));
+            }
+
+            async function renderListFromJson(listId, dataFile, mode = 'list') {
                 const list = document.getElementById(listId);
                 if (!list) return 0;
 
@@ -772,16 +877,50 @@
                     if (!response.ok) throw new Error(`HTTP ${response.status}`);
                     const data = await response.json();
                     const items = Array.isArray(data.items) ? data.items : [];
-                    list.innerHTML = items.map((item) => `<li>${item.contentHtml}</li>`).join('');
+
+                    if (mode === 'card') {
+                        list.innerHTML = items.map((item, i) => {
+                            const p = parseItem(item.contentHtml || '');
+                            const arxivId = p.arxiv ? (p.arxiv.href.match(/arxiv\.org\/abs\/([^/?#]+)/)?.[1] || 'link') : null;
+                            const arxivLink = p.arxiv ? `<a href="${p.arxiv.href}" target="_blank" rel="noopener">arXiv:${arxivId}</a>` : `<a class="disabled">arXiv</a>`;
+                            return `
+                              <li>
+                                <article class="pub-card">
+                                  <h4 class="pub-title" title="${p.title}">${p.title}</h4>
+                                  <p class="pub-authors">${p.authors.replace('Min-Hsiu Hsieh', '<span class="author-me">Min-Hsiu Hsieh</span>')}</p>
+                                  <div class="pub-links">${arxivLink}<span style="color:#6b7280; margin-left:4px;">(${p.year})</span></div>
+                                  <div class="pub-actions">
+                                    <button type="button" data-copy="plain">Copy citation (plain)</button>
+                                    <button type="button" data-copy="bib">Copy BibTeX</button>
+                                  </div>
+                                  <template class="plain">${p.plain}</template>
+                                  <template class="bib">${bibtex(p, `arxiv_${i + 1}`)}</template>
+                                </article>
+                              </li>`;
+                        }).join('');
+
+                        list.querySelectorAll('.pub-actions button').forEach((btn) => {
+                            btn.addEventListener('click', () => {
+                                const card = btn.closest('.pub-card');
+                                const text = btn.dataset.copy === 'bib'
+                                  ? card.querySelector('.bib').textContent
+                                  : card.querySelector('.plain').textContent;
+                                copyText(text, btn);
+                            });
+                        });
+                    } else {
+                        list.innerHTML = items.map((item) => `<li>${item.contentHtml}</li>`).join('');
+                    }
+
                     return items.length;
                 } catch (err) {
                     console.warn(`[publications] Failed to load ${dataFile}`, err);
-                    return list.querySelectorAll('li').length;
+                    return 0;
                 }
             }
 
             const [arxivCount, booksCount, journalCount, confCount, talksCount] = await Promise.all([
-                renderListFromJson('arxiv-list', 'publications.arxiv.json'),
+                renderListFromJson('arxiv-list', 'publications.arxiv.json', 'card'),
                 renderListFromJson('books-list', 'publications.books.json'),
                 renderListFromJson('journals-list', 'publications.journals.json'),
                 renderListFromJson('conferences-list', 'publications.conferences.json'),
@@ -789,7 +928,6 @@
             ]);
 
             updateStats({ arxivCount, journalCount, confCount });
-
             window.__pubCounts = { arxivCount, booksCount, journalCount, confCount, talksCount };
         });
     </script>
