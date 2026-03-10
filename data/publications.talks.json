@@ -576,19 +576,57 @@
     },
     {
       "id": "talks-42",
-      "contentHtml": "Min-Hsiu Hsieh, Mark M. Wilde. Public and private communication with a quantum channel and a secret key. 6th Central European Quantum Information Processing Workshop (CEQIP 2009), Jindřichuv Hradec, Czech Republic, 01-04/06/2009."
+      "contentHtml": "Min-Hsiu Hsieh, Mark M. Wilde. Public and private communication with a quantum channel and a secret key. 6th Central European Quantum Information Processing Workshop (CEQIP 2009), Jindřichuv Hradec, Czech Republic, 01-04/06/2009.",
+      "title": "Public and private communication with a quantum channel and a secret key",
+      "authors": [
+        "Min-Hsiu Hsieh",
+        "Mark M. Wilde"
+      ],
+      "venue": "6th Central European Quantum Information Processing Workshop (CEQIP 2009)",
+      "date": "01-04/06/2009",
+      "location": "Jindřichuv Hradec, Czech Republic",
+      "type": "Talk"
     },
     {
       "id": "talks-43",
-      "contentHtml": "Min-Hsiu Hsieh, Mark M. Wilde. Optimal trading of classical communication, quantum communication, and entanglement in quantum Shannon theory. The 20th Quantum Information Technology Symposium (QIT20), Hiroshima University, Japan, 21–22/05/2009."
+      "contentHtml": "Min-Hsiu Hsieh, Mark M. Wilde. Optimal trading of classical communication, quantum communication, and entanglement in quantum Shannon theory. The 20th Quantum Information Technology Symposium (QIT20), Hiroshima University, Japan, 21–22/05/2009.",
+      "title": "Optimal trading of classical communication, quantum communication, and entanglement in quantum Shannon theory",
+      "authors": [
+        "Min-Hsiu Hsieh",
+        "Mark M. Wilde"
+      ],
+      "venue": "20th Quantum Information Technology Symposium (QIT20)",
+      "date": "21–22/05/2009",
+      "location": "Hiroshima University, Japan",
+      "type": "Talk"
     },
     {
       "id": "talks-44",
-      "contentHtml": "Min-Hsiu Hsieh, Zhicheng Luo, and Todd Brun. Secret Keys Assisted Private Classical Communication Capacity over Quantum Channels. (Long talk) The 8th Asian Conference on Quantum Information Science (AQIS 2008), KIAS, Seoul, Korea, 25–31/08/2008."
+      "contentHtml": "Min-Hsiu Hsieh, Zhicheng Luo, and Todd Brun. Secret Keys Assisted Private Classical Communication Capacity over Quantum Channels. (Long talk) The 8th Asian Conference on Quantum Information Science (AQIS 2008), KIAS, Seoul, Korea, 25–31/08/2008.",
+      "title": "Secret Keys Assisted Private Classical Communication Capacity over Quantum Channels",
+      "authors": [
+        "Min-Hsiu Hsieh",
+        "Zhicheng Luo",
+        "Todd Brun"
+      ],
+      "venue": "8th Asian Conference on Quantum Information Science (AQIS 2008)",
+      "date": "25–31/08/2008",
+      "location": "KIAS, Seoul, Korea",
+      "type": "Long Talk"
     },
     {
       "id": "talks-45",
-      "contentHtml": "Min-Hsiu Hsieh, Todd A. Brun, and Igor Devetak. Quantum Quasi-Cyclic Low-Density Parity-Check Codes. The 7th Asian Conference on Quantum Information Science (AQIS 2007), Kyoto University, Japan, 03–06/09/2007."
+      "contentHtml": "Min-Hsiu Hsieh, Todd A. Brun, and Igor Devetak. Quantum Quasi-Cyclic Low-Density Parity-Check Codes. The 7th Asian Conference on Quantum Information Science (AQIS 2007), Kyoto University, Japan, 03–06/09/2007.",
+      "title": "Quantum Quasi-Cyclic Low-Density Parity-Check Codes",
+      "authors": [
+        "Min-Hsiu Hsieh",
+        "Todd A. Brun",
+        "Igor Devetak"
+      ],
+      "venue": "7th Asian Conference on Quantum Information Science (AQIS 2007)",
+      "date": "03–06/09/2007",
+      "location": "Kyoto University, Japan",
+      "type": "Talk"
     },
     {
       "id": "talks-46",
