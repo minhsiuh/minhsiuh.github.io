@@ -4,7 +4,7 @@
   "items": [
     {
       "id": "books-1",
-      "contentHtml": "Yuxuan Du, Xinbiao Wang, Naixu Guo, Zhan Yu, Yang Qian, Kaining Zhang, Min-Hsiu Hsieh, Patrick Rebentrost, Dacheng Tao. A Gentle Introduction to Quantum Machine Learning. Springer (ISBN-13: 978-9819512836), 2025 [<a href=\"https://arxiv.org/abs/2502.01146\" target=\"_blank\" rel=\"noopener\">arXiv:2502.01146</a>]. [<a href=\"https://www.amazon.com.au/Gentle-Introduction-Quantum-Machine-Learning/dp/9819512832\" target=\"_blank\" rel=\"noopener\">Amazon</a>]"
+      "contentHtml": "Yuxuan Du, Xinbiao Wang, Naixu Guo, Zhan Yu, Yang Qian, Kaining Zhang, Min-Hsiu Hsieh, Patrick Rebentrost, Dacheng Tao. A Gentle Introduction to Quantum Machine Learning. Springer (ISBN-13: 978-9819512836), 2025 [<a href=\"https://arxiv.org/abs/2502.01146\" target=\"_blank\" rel=\"noopener\">arXiv:2502.01146</a>]. [<a href=\"https://doi.org/10.1007/978-981-95-1284-3\" target=\"_blank\" rel=\"noopener\">DOI</a>] [<a href=\"https://www.amazon.com.au/Gentle-Introduction-Quantum-Machine-Learning/dp/9819512832\" target=\"_blank\" rel=\"noopener\">Amazon</a>]"
     },
     {
       "id": "books-2",
