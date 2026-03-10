@@ -1010,6 +1010,11 @@
                 }
 
                 if (mode === 'book') {
+                    // curated exact BibTeX for the incollection entry (books-3)
+                    if (title.toLowerCase() === 'entanglement-assisted quantum error-correcting codes' && year === '2013') {
+                        return `@incollection{BrunHsieh2013,\n  author = {Brun, Todd A. and Hsieh, Min-Hsiu},\n  title = {Entanglement-assisted quantum error-correcting codes},\n  booktitle = {Quantum Error Correction},\n  editor = {Lidar, Daniel A. and Brun, Todd A.},\n  publisher = {Cambridge University Press},\n  year = {2013},\n  pages = {181--200}\n}`;
+                    }
+
                     const publisher = bibEscape(extra.publisher || '');
                     const fields = [
                         `  author = {${authors}}`,
