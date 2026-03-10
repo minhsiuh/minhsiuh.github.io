@@ -191,14 +191,14 @@
     },
     {
       "id": "talks-14",
-      "contentHtml": "Ting-Chun Lin, Isaac H. Kim, Min-Hsiu Hsieh. An operator extension of weak monotonicity. BIID 2023, Tübingen, Germany, 31/07-04/08/2023.",
+      "contentHtml": "Ting-Chun Lin, Isaac H. Kim, Min-Hsiu Hsieh. An operator extension of weak monotonicity. Beyond IID in Information Theory 11 (BIID 2023), Tübingen, Germany, 31/07-04/08/2023.",
       "title": "An operator extension of weak monotonicity",
       "authors": [
         "Ting-Chun Lin",
         "Isaac H. Kim",
         "Min-Hsiu Hsieh"
       ],
-      "venue": "BIID 2023",
+      "venue": "Beyond IID in Information Theory 11 (BIID 2023)",
       "date": "31/07-04/08/2023",
       "location": "Tübingen, Germany",
       "type": "Talk"
