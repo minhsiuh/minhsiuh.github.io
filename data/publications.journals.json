@@ -395,17 +395,17 @@
     },
     {
       "id": "journals-24",
-      "contentHtml": "Yu Shee, Tzu-Lan Yeh, Jen-Yueh Hsiao, Ann Yang, Yen-Chu Lin, Min-Hsiu Hsieh. Quantum Simulation of Preferred Tautomeric State Prediction. npj Quantum Information 9, Article number: 102 (2023) [<a href=\"https://arxiv.org/abs/2210.02977\" target=\"_blank\" rel=\"noopener\">arXiv:2210.02977</a>] [<a href=\"https://www.nature.com/articles/s41534-023-00767-9\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "contentHtml": "Yu Shee, Tzu-Lan Yeh, Jen-Yueh Hsiao, Ann Yang, Yen-Chu Lin, Min-Hsiu Hsieh. Quantum Simulation of Preferred Tautomeric State Prediction. npj Quantum Information 9, Article number: 102 (2023) [<a href=\"https://arxiv.org/abs/2210.02977\" target=\"_blank\" rel=\"noopener\">arXiv:2210.02977</a>] [<a href=\"https://doi.org/10.1038/s41534-023-00767-9\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
       "article": {
         "author": "Yu Shee, Tzu-Lan Yeh, Jen-Yueh Hsiao, Ann Yang, Yen-Chu Lin, Min-Hsiu Hsieh",
         "title": "Quantum Simulation of Preferred Tautomeric State Prediction",
         "journal": "npj Quantum Information",
         "year": "2023",
         "volume": "9",
-        "number": "",
+        "number": "1",
         "pages": "102",
-        "doi": "https://www.nature.com/articles/s41534-023-00767-9",
-        "url": "https://arxiv.org/abs/2210.02977",
+        "doi": "10.1038/s41534-023-00767-9",
+        "url": "https://doi.org/10.1038/s41534-023-00767-9",
         "entryType": "article",
         "citationKey": "Hsieh20Journal24"
       }
