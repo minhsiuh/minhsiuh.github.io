@@ -977,10 +977,11 @@
                             const arxivLink = p.arxiv ? `<a href="${p.arxiv.href}" target="_blank" rel="noopener">arXiv</a>` : `<a class="disabled">arXiv</a>`;
                             const doiLink = p.doi ? `<a href="${p.doi.href}" target="_blank" rel="noopener">DOI</a>` : `<a class="disabled">DOI</a>`;
                             const keyPrefix = mode === 'conference-card' ? 'conf' : 'journal';
-                            const plainEnc = encodeURIComponent(p.plain);
-                            const bibEnc = encodeURIComponent(bibtex(p, `${keyPrefix}_${i + 1}`));
                             const titleText = j.title || p.title;
                             const authorText = j.authors || p.authors;
+                            const plainEnc = encodeURIComponent(p.plain);
+                            const bibSource = { title: titleText, authors: authorText, year: p.year };
+                            const bibEnc = encodeURIComponent(bibtex(bibSource, `${keyPrefix}_${i + 1}`));
                             return `
                               <li>
                                 <article class="pub-card">
