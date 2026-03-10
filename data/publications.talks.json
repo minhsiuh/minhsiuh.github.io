@@ -399,13 +399,13 @@
     },
     {
       "id": "talks-29",
-      "contentHtml": "Eric Chitambar and Min-Hsiu Hsieh. Round Complexity in the Local Transformations of Quantum and Classical State. The 20th Annual Conference on Quantum Information Processing (QIP 2017), Seattle, USA, 14-20/01/2017.",
+      "contentHtml": "Eric Chitambar and Min-Hsiu Hsieh. Round Complexity in the Local Transformations of Quantum and Classical State. The The 20th Annual Conference on Quantum Information Processing (QIP 2017), Seattle, USA, 14-20/01/2017.",
       "title": "Round Complexity in the Local Transformations of Quantum and Classical State",
       "authors": [
         "Eric Chitambar",
         "Min-Hsiu Hsieh"
       ],
-      "venue": "20th Annual Conference on Quantum Information Processing (QIP 2017)",
+      "venue": "The 20th Annual Conference on Quantum Information Processing (QIP 2017)",
       "date": "14-20/01/2017",
       "location": "Seattle, USA",
       "type": "Talk"
