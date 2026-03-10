@@ -386,13 +386,13 @@
     },
     {
       "id": "talks-28",
-      "contentHtml": "Eric Chitambar and Min-Hsiu Hsieh. Round Complexity in the Local Transformations of Quantum and Classical States. The 14th Central European Quantum Information Processing Workshop (CEQIP 2017), Smolenice, Slovakia, 31/05-03/06/2017.",
+      "contentHtml": "Eric Chitambar and Min-Hsiu Hsieh. Round Complexity in the Local Transformations of Quantum and Classical States. The The 14th Central European Quantum Information Processing Workshop (CEQIP 2017), Smolenice, Slovakia, 31/05-03/06/2017.",
       "title": "Round Complexity in the Local Transformations of Quantum and Classical States",
       "authors": [
         "Eric Chitambar",
         "Min-Hsiu Hsieh"
       ],
-      "venue": "14th Central European Quantum Information Processing Workshop (CEQIP 2017)",
+      "venue": "The 14th Central European Quantum Information Processing Workshop (CEQIP 2017)",
       "date": "31/05-03/06/2017",
       "location": "Smolenice, Slovakia",
       "type": "Talk"
