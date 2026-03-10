@@ -425,23 +425,72 @@
     },
     {
       "id": "talks-31",
-      "contentHtml": "Hao-Chung Cheng, Min-Hsiu Hsieh and Marco Tomamichel. Characterizing the long-term behavior of a quantum ensemble. The 16th Asian Conference on Quantum Information Science (AQIS 2016), Taipei, Taiwan, 28/08-02/09/2017."
+      "contentHtml": "Hao-Chung Cheng, Min-Hsiu Hsieh and Marco Tomamichel. Characterizing the long-term behavior of a quantum ensemble. The 16th Asian Conference on Quantum Information Science (AQIS 2016), Taipei, Taiwan, 28/08-02/09/2017.",
+      "title": "Characterizing the long-term behavior of a quantum ensemble",
+      "authors": [
+        "Hao-Chung Cheng",
+        "Min-Hsiu Hsieh",
+        "Marco Tomamichel"
+      ],
+      "venue": "16th Asian Conference on Quantum Information Science (AQIS 2016)",
+      "date": "28/08-02/09/2017",
+      "location": "Taipei, Taiwan",
+      "type": "Talk"
     },
     {
       "id": "talks-32",
-      "contentHtml": "Hao-Chung Cheng and Min-Hsiu Hsieh. On the Concavity of Auxiliary Function in Classical-Quantum Channels. The 16th Asian Conference on Quantum Information Science (AQIS 2016), Taipei, Taiwan, 28/08-02/09/2017."
+      "contentHtml": "Hao-Chung Cheng and Min-Hsiu Hsieh. On the Concavity of Auxiliary Function in Classical-Quantum Channels. The 16th Asian Conference on Quantum Information Science (AQIS 2016), Taipei, Taiwan, 28/08-02/09/2017.",
+      "title": "On the Concavity of Auxiliary Function in Classical-Quantum Channels",
+      "authors": [
+        "Hao-Chung Cheng",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "16th Asian Conference on Quantum Information Science (AQIS 2016)",
+      "date": "28/08-02/09/2017",
+      "location": "Taipei, Taiwan",
+      "type": "Talk"
     },
     {
       "id": "talks-33",
-      "contentHtml": "Eric Chitambar, Ben Fortescue and Min-Hsiu Hsieh. Quantum Versus Classical Advantages in Secret Key Distillation (and Their Links to Quantum Entanglement). Arctic Crypt 2016 (ArcticCrypt 2016), Longyearbyen, Svalbard, Norway, 17-22/07/2016."
+      "contentHtml": "Eric Chitambar, Ben Fortescue and Min-Hsiu Hsieh. Quantum Versus Classical Advantages in Secret Key Distillation (and Their Links to Quantum Entanglement). Arctic Crypt 2016 (ArcticCrypt 2016), Longyearbyen, Svalbard, Norway, 17-22/07/2016.",
+      "title": "Quantum Versus Classical Advantages in Secret Key Distillation (and Their Links to Quantum Entanglement)",
+      "authors": [
+        "Eric Chitambar",
+        "Ben Fortescue",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "Arctic Crypt 2016 (ArcticCrypt 2016)",
+      "date": "17-22/07/2016",
+      "location": "Longyearbyen, Svalbard, Norway",
+      "type": "Talk"
     },
     {
       "id": "talks-34",
-      "contentHtml": "Hao-Chung Cheng and Min-Hsiu Hsieh. New Characterizations of Matrix Φ-Entropies, Poincare and Sobolev Inequalities, and applications to quantum information. The 15th Asian Conference on Quantum Information Science (AQIS 2015), Seoul, Korea, 24-28/08/2015."
+      "contentHtml": "Hao-Chung Cheng and Min-Hsiu Hsieh. New Characterizations of Matrix Φ-Entropies, Poincare and Sobolev Inequalities, and applications to quantum information. The 15th Asian Conference on Quantum Information Science (AQIS 2015), Seoul, Korea, 24-28/08/2015.",
+      "title": "New Characterizations of Matrix Φ-Entropies, Poincare and Sobolev Inequalities, and applications to quantum information",
+      "authors": [
+        "Hao-Chung Cheng",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "15th Asian Conference on Quantum Information Science (AQIS 2015)",
+      "date": "24-28/08/2015",
+      "location": "Seoul, Korea",
+      "type": "Talk"
     },
     {
       "id": "talks-35",
-      "contentHtml": "Yi-Chan Lee, Min-Hsiu Hsieh, Steve Flammia, and Ray-Kuang Lee. Local PT Symmetry Violates the No-Signaling Principle. The 14th Asian Conference on Quantum Information Science (AQIS 2014), Kyoto University, Japan, 20–24/08/2014."
+      "contentHtml": "Yi-Chan Lee, Min-Hsiu Hsieh, Steve Flammia, and Ray-Kuang Lee. Local PT Symmetry Violates the No-Signaling Principle. The 14th Asian Conference on Quantum Information Science (AQIS 2014), Kyoto University, Japan, 20–24/08/2014.",
+      "title": "Local PT Symmetry Violates the No-Signaling Principle",
+      "authors": [
+        "Yi-Chan Lee",
+        "Min-Hsiu Hsieh",
+        "Steve Flammia",
+        "Ray-Kuang Lee"
+      ],
+      "venue": "14th Asian Conference on Quantum Information Science (AQIS 2014)",
+      "date": "20–24/08/2014",
+      "location": "Kyoto University, Japan",
+      "type": "Talk"
     },
     {
       "id": "talks-36",
@@ -459,19 +508,58 @@
     },
     {
       "id": "talks-37",
-      "contentHtml": "Nilanjana Datta, Min-Hsiu Hsieh and Mark Wilde. Quantum rate distortion, reverse Shannon theorems, and source-channel separation. The 14th workshop on Quantum Information Processing (QIP 2012), Montreal, Canada, 12–16/12/2011."
+      "contentHtml": "Nilanjana Datta, Min-Hsiu Hsieh and Mark Wilde. Quantum rate distortion, reverse Shannon theorems, and source-channel separation. The 14th workshop on Quantum Information Processing (QIP 2012), Montreal, Canada, 12–16/12/2011.",
+      "title": "Quantum rate distortion, reverse Shannon theorems, and source-channel separation",
+      "authors": [
+        "Nilanjana Datta",
+        "Min-Hsiu Hsieh",
+        "Mark Wilde"
+      ],
+      "venue": "14th workshop on Quantum Information Processing (QIP 2012)",
+      "date": "12–16/12/2011",
+      "location": "Montreal, Canada",
+      "type": "Talk"
     },
     {
       "id": "talks-38",
-      "contentHtml": "Mark Wilde and Min-Hsiu Hsieh. Trading Resources in Quantum Communication. (Long talk) The 10th Asian Conference on Quantum Information Science (AQIS 2010), Tokyo, Japan, 27–31/08/2010."
+      "contentHtml": "Mark Wilde and Min-Hsiu Hsieh. Trading Resources in Quantum Communication. (Long talk) The 10th Asian Conference on Quantum Information Science (AQIS 2010), Tokyo, Japan, 27–31/08/2010.",
+      "title": "Trading Resources in Quantum Communication",
+      "authors": [
+        "Mark Wilde",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "10th Asian Conference on Quantum Information Science (AQIS 2010)",
+      "date": "27–31/08/2010",
+      "location": "Tokyo, Japan",
+      "type": "Long Talk"
     },
     {
       "id": "talks-39",
-      "contentHtml": "Kai Yuen Cheong, Min-Hsiu Hsieh and Takeshi Koshiba. A Weak Quantum Oblivious Transfer. The 10th Asian Conference on Quantum Information Science (AQIS 2010), Tokyo, Japan, 27–31/08/2010."
+      "contentHtml": "Kai Yuen Cheong, Min-Hsiu Hsieh and Takeshi Koshiba. A Weak Quantum Oblivious Transfer. The 10th Asian Conference on Quantum Information Science (AQIS 2010), Tokyo, Japan, 27–31/08/2010.",
+      "title": "A Weak Quantum Oblivious Transfer",
+      "authors": [
+        "Kai Yuen Cheong",
+        "Min-Hsiu Hsieh",
+        "Takeshi Koshiba"
+      ],
+      "venue": "10th Asian Conference on Quantum Information Science (AQIS 2010)",
+      "date": "27–31/08/2010",
+      "location": "Tokyo, Japan",
+      "type": "Talk"
     },
     {
       "id": "talks-40",
-      "contentHtml": "Min-Hsiu Hsieh, Wen-Tai Yen, Li-Yi Hsu. Performance of Entanglement-assisted Quantum LDPC Codes Constructed From Finite Geometries. The 21st Quantum Information Technology Symposium (QIT21), The University of Electro-Communications, Japan, 04–05/11/2009."
+      "contentHtml": "Min-Hsiu Hsieh, Wen-Tai Yen, Li-Yi Hsu. Performance of Entanglement-assisted Quantum LDPC Codes Constructed From Finite Geometries. The 21st Quantum Information Technology Symposium (QIT21), The University of Electro-Communications, Japan, 04–05/11/2009.",
+      "title": "Performance of Entanglement-assisted Quantum LDPC Codes Constructed From Finite Geometries",
+      "authors": [
+        "Min-Hsiu Hsieh",
+        "Wen-Tai Yen",
+        "Li-Yi Hsu"
+      ],
+      "venue": "21st Quantum Information Technology Symposium (QIT21)",
+      "date": "04–05/11/2009",
+      "location": "The University of Electro-Communications, Japan",
+      "type": "Talk"
     },
     {
       "id": "talks-41",
