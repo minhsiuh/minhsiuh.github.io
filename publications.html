@@ -892,8 +892,24 @@
                 return String(s || '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
             }
 
-            function bibtex(item, key) {
-                return `@article{${key},\n  title={${item.title.replace(/[{}]/g,'')}},\n  author={${item.authors.replace(/[{}]/g,'')}},\n  year={${item.year}}\n}`;
+            function bibtex(item, key, opts = {}) {
+                const type = opts.type || 'article';
+                const title = (item.title || '').replace(/[{}]/g, '');
+                const authors = (item.authors || '').replace(/[{}]/g, '');
+                const year = item.year || 'N/A';
+                const fields = [
+                    `  title={${title}}`,
+                    `  author={${authors}}`,
+                    `  year={${year}}`
+                ];
+
+                if (opts.refInfo) {
+                    if (type === 'inproceedings') fields.push(`  booktitle={${opts.refInfo.replace(/[{}]/g, '')}}`);
+                    else fields.push(`  journal={${opts.refInfo.replace(/[{}]/g, '')}}`);
+                }
+                if (opts.url) fields.push(`  url={${opts.url}}`);
+
+                return `@${type}{${key},\n${fields.join(',\n')}\n}`;
             }
 
             function copyText(text, btn) {
@@ -948,7 +964,7 @@
                             const arxivId = p.arxiv ? (p.arxiv.href.match(/arxiv\.org\/abs\/([^/?#]+)/)?.[1] || 'link') : null;
                             const arxivLink = p.arxiv ? `<a href="${p.arxiv.href}" target="_blank" rel="noopener">arXiv:${arxivId}</a>` : `<a class="disabled">arXiv</a>`;
                             const plainEnc = encodeURIComponent(p.plain);
-                            const bibEnc = encodeURIComponent(bibtex(p, `arxiv_${i + 1}`));
+                            const bibEnc = encodeURIComponent(bibtex(p, `arxiv_${i + 1}`, { type: 'article', refInfo: 'arXiv preprint', url: p.arxiv ? p.arxiv.href : '' }));
                             return `
                               <li>
                                 <article class="pub-card">
@@ -981,7 +997,9 @@
                             const authorText = j.authors || p.authors;
                             const plainEnc = encodeURIComponent(p.plain);
                             const bibSource = { title: titleText, authors: authorText, year: p.year };
-                            const bibEnc = encodeURIComponent(bibtex(bibSource, `${keyPrefix}_${i + 1}`));
+                            const bibUrl = (p.doi && p.doi.href) ? p.doi.href : (p.arxiv && p.arxiv.href ? p.arxiv.href : '');
+                            const bibType = mode === 'conference-card' ? 'inproceedings' : 'article';
+                            const bibEnc = encodeURIComponent(bibtex(bibSource, `${keyPrefix}_${i + 1}`, { type: bibType, refInfo: j.refInfo || '', url: bibUrl }));
                             return `
                               <li>
                                 <article class="pub-card">
