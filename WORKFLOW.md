@@ -135,4 +135,20 @@ git push origin main
 
 ---
 
-_最後更新：2026-03-10_
+## 9) publications.html 長期維護規範（必遵守）
+
+1. Publications 各區塊資料以 JSON 結構化欄位為主，不以句子解析為主：
+   - journals -> `article`（對齊 `@article` 欄位）
+   - conferences -> `inproceedings`（對齊 `@inproceedings` 欄位）
+   - books -> `book`（對齊 `@book/@incollection/@proceedings` 欄位）
+   - talks -> `title/authors/venue/date/location/type`
+2. 一旦某區塊完成結構化渲染，不可回退到 `contentHtml` 解析邏輯。
+3. `Copy citation (plain)` 不得包含 `[arXiv]` / `[DOI]` token。
+4. `Copy Bibtex` 必須從結構化欄位生成；缺資料欄位時留空，不可臆測。
+5. 重大清洗前先建立備份：`backups/publications.*.<YYYY-MM-DD>.json`。
+6. 會議論文排序固定為年份遞減（newest first）。
+7. 期刊統計表若使用人工維護清單，該清單視為 source-of-truth，未經明確要求不可自動覆寫。
+
+---
+
+_最後更新：2026-03-11_
