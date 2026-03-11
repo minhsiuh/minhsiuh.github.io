@@ -675,6 +675,30 @@
       }
     },
     {
+      "id": "conferences-28",
+      "contentHtml": "Hao-Chung Cheng and Min-Hsiu Hsieh. Moderate Deviations for Quantum Hypothesis Testing and a Martingale Inequality. 2017 IEEE International Symposium on Information Theory (ISIT 2017), Aachen, 2017, pp. 1978-1982. [<a href=\"https://ieeexplore.ieee.org/abstract/document/8006875/\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "inproceedings": {
+        "entryType": "inproceedings",
+        "citationKey": "Hsieh1982Conf28",
+        "author": "Hao-Chung Cheng, Min-Hsiu Hsieh",
+        "title": "Moderate Deviations for Quantum Hypothesis Testing and a Martingale Inequality",
+        "booktitle": "IEEE International Symposium on Information Theory (ISIT 2017)",
+        "year": "2017",
+        "pages": "1978--1982",
+        "doi": "",
+        "url": "https://ieeexplore.ieee.org/abstract/document/8006875/",
+        "editor": "",
+        "series": "",
+        "volume": "",
+        "publisher": "",
+        "address": "",
+        "isbn": "",
+        "issn": "",
+        "urn": "",
+        "note": ""
+      }
+    },
+    {
       "id": "conferences-27",
       "contentHtml": "Hao-Chung Cheng, Min-Hsiu Hsieh, and Marco Tomamichel. Sphere-Packing Bound for Symmetric Classical-Quantum Channels. 2017 IEEE International Symposium on Information Theory (ISIT 2017), Aachen, 2017, pp. 286-290. [<a href=\"https://doi.org/10.1109/ISIT.2017.8006535\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
       "inproceedings": {
@@ -975,30 +999,6 @@
         "pages": "7--11",
         "doi": "",
         "url": "",
-        "editor": "",
-        "series": "",
-        "volume": "",
-        "publisher": "",
-        "address": "",
-        "isbn": "",
-        "issn": "",
-        "urn": "",
-        "note": ""
-      }
-    },
-    {
-      "id": "conferences-28",
-      "contentHtml": "Hao-Chung Cheng and Min-Hsiu Hsieh. Moderate Deviations for Quantum Hypothesis Testing and a Martingale Inequality. 2017 IEEE International Symposium on Information Theory (ISIT 2017), Aachen, 2017, pp. 1978-1982. [<a href=\"https://ieeexplore.ieee.org/abstract/document/8006875/\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
-      "inproceedings": {
-        "entryType": "inproceedings",
-        "citationKey": "Hsieh1982Conf28",
-        "author": "Hao-Chung Cheng, Min-Hsiu Hsieh",
-        "title": "Moderate Deviations for Quantum Hypothesis Testing and a Martingale Inequality",
-        "booktitle": "IEEE International Symposium on Information Theory (ISIT 1982)",
-        "year": "1982",
-        "pages": "1978--1982",
-        "doi": "",
-        "url": "https://ieeexplore.ieee.org/abstract/document/8006875/",
         "editor": "",
         "series": "",
         "volume": "",
