@@ -292,7 +292,7 @@
     },
     {
       "id": "conferences-13",
-      "contentHtml": "Ian George, Min-Hsiu Hsieh, Eric Chitambar. One-Shot Bounds on State Generation using Correlated Resources and Local Encoders. 2023 IEEE International Symposium on Information Theory (ISIT), Taipei, Taiwan, 2023, pp. 96--101. [<a href=\"https://doi.org/10.1109/ISIT54713.2023.10206997\" target=\"_blank\" rel=\"noopener\">doi</a>] [<a href=\"https://arxiv.org/abs/2301.04301\" target=\"_blank\" rel=\"noopener\">arXiv:2301.04301</a>].",
+      "contentHtml": "Ian George, Min-Hsiu Hsieh, Eric Chitambar. One-Shot Bounds on State Generation using Correlated Resources and Local Encoders. 2023 IEEE International Symposium on Information Theory (ISIT 2023), Taipei, Taiwan, 2023, pp. 96--101. [<a href=\"https://doi.org/10.1109/ISIT54713.2023.10206997\" target=\"_blank\" rel=\"noopener\">doi</a>] [<a href=\"https://arxiv.org/abs/2301.04301\" target=\"_blank\" rel=\"noopener\">arXiv:2301.04301</a>].",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2023Conf13",
@@ -388,7 +388,7 @@
     },
     {
       "id": "conferences-17",
-      "contentHtml": "Ting-Chun Lin, Min-Hsiu Hsieh. c3-Locally Testable Codes from Lossless Expanders. 2022 IEEE International Symposium on Information Theory (ISIT), pp. 1175-1180 (2022). [<a href=\"https://doi.org/10.1109/ISIT50566.2022.9834679\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "contentHtml": "Ting-Chun Lin, Min-Hsiu Hsieh. c3-Locally Testable Codes from Lossless Expanders. 2022 IEEE International Symposium on Information Theory (ISIT 2022), pp. 1175-1180 (2022). [<a href=\"https://doi.org/10.1109/ISIT50566.2022.9834679\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2022Conf17",
@@ -412,7 +412,7 @@
     },
     {
       "id": "conferences-18",
-      "contentHtml": "H. Shi, M. -H. Hsieh, S. Guha, Z. Zhang and Q. Zhuang, \"Entanglement-assisted multiple-access channels: capacity regions and protocol designs,\" 2021 IEEE International Symposium on Information Theory (ISIT), 2021, pp. 408-413. [<a href=\"https://doi.org/10.1109/isit45174.2021.9518082\" target=\"_blank\" rel=\"noopener\">doi</a>]",
+      "contentHtml": "H. Shi, M. -H. Hsieh, S. Guha, Z. Zhang and Q. Zhuang, \"Entanglement-assisted multiple-access channels: capacity regions and protocol designs,\" 2021 IEEE International Symposium on Information Theory (ISIT 2021), 2021, pp. 408-413. [<a href=\"https://doi.org/10.1109/isit45174.2021.9518082\" target=\"_blank\" rel=\"noopener\">doi</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2021Conf18",
@@ -436,7 +436,7 @@
     },
     {
       "id": "conferences-19",
-      "contentHtml": "Eyuri Wakakuwa, Yoshifumi Nakata, Min-Hsiu Hsieh. One-Shot Trade-Off Bounds for State Redistribution of Classical-Quantum Sources. 2020 IEEE International Symposium on Information Theory (ISIT), Los Angeles, 2020, pp. 1864-1869. [<a href=\"https://doi.org/10.1109/ISIT44484.2020.9174423\" target=\"_blank\" rel=\"noopener\">doi</a>]",
+      "contentHtml": "Eyuri Wakakuwa, Yoshifumi Nakata, Min-Hsiu Hsieh. One-Shot Trade-Off Bounds for State Redistribution of Classical-Quantum Sources. 2020 IEEE International Symposium on Information Theory (ISIT 2020), Los Angeles, 2020, pp. 1864-1869. [<a href=\"https://doi.org/10.1109/ISIT44484.2020.9174423\" target=\"_blank\" rel=\"noopener\">doi</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2020Conf19",
@@ -460,7 +460,7 @@
     },
     {
       "id": "conferences-20",
-      "contentHtml": "Farzin Salek Shishavan, Min-Hsiu Hsieh, Javier R. Fonollosa. Publicness, Privacy and Confidentiality in the Single-Serving Quantum Broadcast Channel. 2019 IEEE International Symposium on Information Theory (ISIT), Paris, 2019, pp. 1712-1716. [<a href=\"https://doi.org/10.1109/ISIT.2019.8849633\" target=\"_blank\" rel=\"noopener\">doi</a>]",
+      "contentHtml": "Farzin Salek Shishavan, Min-Hsiu Hsieh, Javier R. Fonollosa. Publicness, Privacy and Confidentiality in the Single-Serving Quantum Broadcast Channel. 2019 IEEE International Symposium on Information Theory (ISIT 2019), Paris, 2019, pp. 1712-1716. [<a href=\"https://doi.org/10.1109/ISIT.2019.8849633\" target=\"_blank\" rel=\"noopener\">doi</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2019Conf20",
@@ -484,7 +484,7 @@
     },
     {
       "id": "conferences-21",
-      "contentHtml": "Hao-Chung Cheng, Li Gao, Min-Hsiu Hsieh. Properties of Scaled Noncommutative Rényi and Augustin Information. 2019 IEEE International Symposium on Information Theory (ISIT), Paris, 2019, pp. 2219-2223. [<a href=\"https://doi.org/10.1109/ISIT.2019.8849281\" target=\"_blank\" rel=\"noopener\">doi</a>]",
+      "contentHtml": "Hao-Chung Cheng, Li Gao, Min-Hsiu Hsieh. Properties of Scaled Noncommutative Rényi and Augustin Information. 2019 IEEE International Symposium on Information Theory (ISIT 2019), Paris, 2019, pp. 2219-2223. [<a href=\"https://doi.org/10.1109/ISIT.2019.8849281\" target=\"_blank\" rel=\"noopener\">doi</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2019Conf21",
@@ -508,7 +508,7 @@
     },
     {
       "id": "conferences-22",
-      "contentHtml": "Hao-Chung Cheng, Eric Hanson, Nilanjana Datta, Min-Hsiu Hsieh. Duality between source coding with quantum side information and c-q channel coding. 2019 IEEE International Symposium on Information Theory (ISIT), Paris, 2019, pp. 1142-1146. [<a href=\"https://doi.org/10.1109/ISIT.2019.8849457\" target=\"_blank\" rel=\"noopener\">doi</a>]",
+      "contentHtml": "Hao-Chung Cheng, Eric Hanson, Nilanjana Datta, Min-Hsiu Hsieh. Duality between source coding with quantum side information and c-q channel coding. 2019 IEEE International Symposium on Information Theory (ISIT 2019), Paris, 2019, pp. 1142-1146. [<a href=\"https://doi.org/10.1109/ISIT.2019.8849457\" target=\"_blank\" rel=\"noopener\">doi</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2019Conf22",
@@ -532,7 +532,7 @@
     },
     {
       "id": "conferences-23",
-      "contentHtml": "Jihao Fan, Min-Hsiu Hsieh, Hanwu Chen, Younghui Li, He Chen. Construction and Performance of Quantum Burst Error Correction Codes for Correlated Errors. 2018 IEEE International Symposium on Information Theory (ISIT), Vail, 2018, pp. 2336-2340. [<a href=\"https://doi.org/10.1109/ISIT.2018.8437493\" target=\"_blank\" rel=\"noopener\">doi</a>]",
+      "contentHtml": "Jihao Fan, Min-Hsiu Hsieh, Hanwu Chen, Younghui Li, He Chen. Construction and Performance of Quantum Burst Error Correction Codes for Correlated Errors. 2018 IEEE International Symposium on Information Theory (ISIT 2018), Vail, 2018, pp. 2336-2340. [<a href=\"https://doi.org/10.1109/ISIT.2018.8437493\" target=\"_blank\" rel=\"noopener\">doi</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2018Conf23",
@@ -556,7 +556,7 @@
     },
     {
       "id": "conferences-24",
-      "contentHtml": "Hao-Chung Cheng, Eric P. Hanson, Nilanjana Datta, Min-Hsiu Hsieh. Error Exponents and Strong Converse Exponents for Classical Data Compression with Quantum Side Information. 2018 IEEE International Symposium on Information Theory (ISIT), Vail, 2018, pp. 2162-2166. [<a href=\"https://doi.org/10.1109/TIT.2020.3038517\" target=\"_blank\" rel=\"noopener\">doi</a>]",
+      "contentHtml": "Hao-Chung Cheng, Eric P. Hanson, Nilanjana Datta, Min-Hsiu Hsieh. Error Exponents and Strong Converse Exponents for Classical Data Compression with Quantum Side Information. 2018 IEEE International Symposium on Information Theory (ISIT 2018), Vail, 2018, pp. 2162-2166. [<a href=\"https://doi.org/10.1109/TIT.2020.3038517\" target=\"_blank\" rel=\"noopener\">doi</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2018Conf24",
@@ -580,7 +580,7 @@
     },
     {
       "id": "conferences-25",
-      "contentHtml": "Farzin Salek Shishavan, Anurag Anshu, Min-Hsiu Hsieh, Rahul Jain, Javier R. Fonollosa. One-shot Capacity Bounds on the Simultaneous Transmission of Public and Private Information over Quantum Channels. 2018 IEEE International Symposium on Information Theory (ISIT), Vail, 2018, pp. 296-300. [<a href=\"https://doi.org/10.1109/ISIT.2018.8437856\" target=\"_blank\" rel=\"noopener\">doi</a>]",
+      "contentHtml": "Farzin Salek Shishavan, Anurag Anshu, Min-Hsiu Hsieh, Rahul Jain, Javier R. Fonollosa. One-shot Capacity Bounds on the Simultaneous Transmission of Public and Private Information over Quantum Channels. 2018 IEEE International Symposium on Information Theory (ISIT 2018), Vail, 2018, pp. 296-300. [<a href=\"https://doi.org/10.1109/ISIT.2018.8437856\" target=\"_blank\" rel=\"noopener\">doi</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2018Conf25",
@@ -604,7 +604,7 @@
     },
     {
       "id": "conferences-26",
-      "contentHtml": "Elton Yechao Zhu, Quntao Zhuang, Min-Hsiu Hsieh, Peter W. Shor. Superadditivity in trade-off capacities of quantum channels. 2018 IEEE International Symposium on Information Theory (ISIT), Vail, 2018, pp. 251-255. [<a href=\"https://doi.org/10.1109/ISIT.2018.8437934\" target=\"_blank\" rel=\"noopener\">doi</a>]",
+      "contentHtml": "Elton Yechao Zhu, Quntao Zhuang, Min-Hsiu Hsieh, Peter W. Shor. Superadditivity in trade-off capacities of quantum channels. 2018 IEEE International Symposium on Information Theory (ISIT 2018), Vail, 2018, pp. 251-255. [<a href=\"https://doi.org/10.1109/ISIT.2018.8437934\" target=\"_blank\" rel=\"noopener\">doi</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2018Conf26",
@@ -628,7 +628,7 @@
     },
     {
       "id": "conferences-27",
-      "contentHtml": "Hao-Chung Cheng, Min-Hsiu Hsieh, and Marco Tomamichel. Sphere-Packing Bound for Symmetric Classical-Quantum Channels. 2017 IEEE International Symposium on Information Theory (ISIT), Aachen, 2017, pp. 286-290. [<a href=\"https://doi.org/10.1109/ISIT.2017.8006535\" target=\"_blank\" rel=\"noopener\">doi</a>]",
+      "contentHtml": "Hao-Chung Cheng, Min-Hsiu Hsieh, and Marco Tomamichel. Sphere-Packing Bound for Symmetric Classical-Quantum Channels. 2017 IEEE International Symposium on Information Theory (ISIT 2017), Aachen, 2017, pp. 286-290. [<a href=\"https://doi.org/10.1109/ISIT.2017.8006535\" target=\"_blank\" rel=\"noopener\">doi</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2017Conf27",
@@ -652,7 +652,7 @@
     },
     {
       "id": "conferences-28",
-      "contentHtml": "Hao-Chung Cheng and Min-Hsiu Hsieh. Moderate Deviations for Quantum Hypothesis Testing and a Martingale Inequality. 2017 IEEE International Symposium on Information Theory (ISIT), Aachen, 2017, pp. 1978-1982. [<a href=\"https://ieeexplore.ieee.org/abstract/document/8006875/\" target=\"_blank\" rel=\"noopener\">doi</a>]",
+      "contentHtml": "Hao-Chung Cheng and Min-Hsiu Hsieh. Moderate Deviations for Quantum Hypothesis Testing and a Martingale Inequality. 2017 IEEE International Symposium on Information Theory (ISIT 2017), Aachen, 2017, pp. 1978-1982. [<a href=\"https://ieeexplore.ieee.org/abstract/document/8006875/\" target=\"_blank\" rel=\"noopener\">doi</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh1982Conf28",
@@ -676,7 +676,7 @@
     },
     {
       "id": "conferences-29",
-      "contentHtml": "Hao-Chung Cheng and Min-Hsiu Hsieh. Moderate Deviations for Classical-Quantum Channels. 2017 IEEE International Symposium on Information Theory (ISIT), Aachen, 2017, pp. 296-300. [<a href=\"https://ieeexplore.ieee.org/document/8006537/\" target=\"_blank\" rel=\"noopener\">doi</a>]",
+      "contentHtml": "Hao-Chung Cheng and Min-Hsiu Hsieh. Moderate Deviations for Classical-Quantum Channels. 2017 IEEE International Symposium on Information Theory (ISIT 2017), Aachen, 2017, pp. 296-300. [<a href=\"https://ieeexplore.ieee.org/document/8006537/\" target=\"_blank\" rel=\"noopener\">doi</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2017Conf29",
