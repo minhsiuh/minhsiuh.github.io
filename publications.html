@@ -1213,7 +1213,7 @@
                               <li>
                                 <article class="pub-card">
                                   <h4 class="pub-title" title="${esc(titleText)}">${esc(titleText)}</h4>
-                                  <p class="pub-authors">${esc(authorText).replace('Min-Hsiu Hsieh', '<span class="author-me">Min-Hsiu Hsieh</span>')}</p>
+                                  <p class="pub-authors">${esc(authorText).replace('Min-Hsiu Hsieh', '<span class="author-me">Min-Hsiu Hsieh</span>').replace('Hsieh, Min-Hsiu', '<span class="author-me">Hsieh, Min-Hsiu</span>')}</p>
                                   <div class="pub-links">${arxivLink}<span style="color:#6b7280; margin-left:4px;">(${esc(p.year)})</span></div>
                                   <div class="pub-actions">
                                     <button type="button" data-copy="plain" data-copy-text="${plainEnc}">Copy citation (plain)</button>
@@ -1264,7 +1264,7 @@
                               <li>
                                 <article class="pub-card">
                                   <h4 class="pub-title" title="${esc(titleText)}">${esc(titleText)}</h4>
-                                  <p class="pub-authors">${esc(authorText).replace('Min-Hsiu Hsieh', '<span class="author-me">Min-Hsiu Hsieh</span>')}</p>
+                                  <p class="pub-authors">${esc(authorText).replace('Min-Hsiu Hsieh', '<span class="author-me">Min-Hsiu Hsieh</span>').replace('Hsieh, Min-Hsiu', '<span class="author-me">Hsieh, Min-Hsiu</span>')}</p>
                                   <div class="pub-links"><span style="color:#4b5563; margin-right:10px;">${esc(refInfo)}</span></div>
                                   <div class="pub-actions">
                                     <span>[${arxivLink}]</span>
@@ -1354,7 +1354,7 @@
                               <li>
                                 <article class="pub-card">
                                   <h4 class="pub-title" title="${esc(titleText)}">${esc(titleText)}</h4>
-                                  <p class="pub-authors">${esc(authorText).replace('Min-Hsiu Hsieh', '<span class="author-me">Min-Hsiu Hsieh</span>')}</p>
+                                  <p class="pub-authors">${esc(authorText).replace('Min-Hsiu Hsieh', '<span class="author-me">Min-Hsiu Hsieh</span>').replace('Hsieh, Min-Hsiu', '<span class="author-me">Hsieh, Min-Hsiu</span>')}</p>
                                   <div class="pub-links"><span style="color:#4b5563; margin-right:10px;">${esc(isTalk ? talkRefInfo : (isBook ? bookRefInfo : (j.refInfo || '')))}</span>${talkBadge}</div>
                                   ${isTalk ? '' : `<div class="pub-actions">
                                     <span>[${arxivLink}]</span>
