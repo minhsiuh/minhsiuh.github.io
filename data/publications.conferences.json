@@ -985,6 +985,30 @@
         "urn": "",
         "note": ""
       }
+    },
+    {
+      "id": "conferences-42",
+      "contentHtml": "Ching-Yi Lai, Min-Hsiu Hsieh, Hsiao-feng Lu. A complete MacWilliams theorem for convolutional codes. 2014 IEEE Information Theory Workshop (ITW 2014) (2014), pp. 157--161. [<a href=\"https://doi.org/10.1109/ITW.2014.6970812\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "inproceedings": {
+        "entryType": "inproceedings",
+        "citationKey": "Hsieh2014Conf42",
+        "author": "Ching-Yi Lai, Min-Hsiu Hsieh, Hsiao-feng Lu",
+        "title": "A complete MacWilliams theorem for convolutional codes",
+        "booktitle": "2014 IEEE Information Theory Workshop (ITW 2014)",
+        "year": "2014",
+        "pages": "157--161",
+        "doi": "10.1109/ITW.2014.6970812",
+        "url": "https://doi.org/10.1109/itw.2014.6970812",
+        "editor": "",
+        "series": "",
+        "volume": "",
+        "publisher": "IEEE",
+        "address": "",
+        "isbn": "",
+        "issn": "",
+        "urn": "",
+        "note": ""
+      }
     }
   ]
 }
