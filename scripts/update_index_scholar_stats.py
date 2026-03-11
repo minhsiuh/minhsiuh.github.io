@@ -6,6 +6,7 @@ from pathlib import Path
 
 SCHOLAR_URL = "https://scholar.google.com/citations?user=UXx1jNYAAAAJ&hl=en"
 INDEX_PATH = Path(__file__).resolve().parents[1] / "index.html"
+STATE_PATH = Path(__file__).resolve().parents[1] / "data" / "scholar-stats-state.json"
 
 
 def fetch_stats():
@@ -50,6 +51,23 @@ def update_index(stats):
 
 
 if __name__ == "__main__":
+    today = datetime.now().strftime("%Y-%m-%d")
+
+    if STATE_PATH.exists():
+        try:
+            import json
+            state = json.loads(STATE_PATH.read_text(encoding="utf-8"))
+            if state.get("lastUpdated") == today:
+                print(f"Skip: already updated today ({today})")
+                raise SystemExit(0)
+        except Exception:
+            pass
+
     stats = fetch_stats()
     update_index(stats)
+
+    import json
+    STATE_PATH.parent.mkdir(parents=True, exist_ok=True)
+    STATE_PATH.write_text(json.dumps({"lastUpdated": today, "stats": stats}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
     print(f"Updated index.html with citations={stats['citations']}, h={stats['hindex']}, i10={stats['i10']}")
