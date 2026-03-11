@@ -412,7 +412,7 @@
     },
     {
       "id": "conferences-18",
-      "contentHtml": "H. Shi, M. -H. Hsieh, S. Guha, Z. Zhang and Q. Zhuang, \"Entanglement-assisted multiple-access channels: capacity regions and protocol designs,\" 2021 IEEE International Symposium on Information Theory (ISIT 2021), 2021, pp. 408-413. [<a href=\"https://doi.org/10.1109/isit45174.2021.9518082\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
+      "contentHtml": "H. Shi, M. -H. Hsieh, S. Guha, Z. Zhang, Q. Zhuang. Shi, M. -H. Hsieh, S. Guha, Z. Zhang and Q. Zhuang, \"Entanglement-assisted multiple-access channels: capacity regions and protocol designs,\" 2021 IEEE International Symposium on Information Theory (ISIT 2021), 2021, pp. 408-413. [<a href=\"https://doi.org/10.1109/isit45174.2021.9518082\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2021Conf18",
