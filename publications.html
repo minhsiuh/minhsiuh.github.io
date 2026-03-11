@@ -1300,7 +1300,9 @@
                               : (isBook ? cleanTitle(b.title || p.head || p.plain) : cleanTitle(j.title || p.head || p.plain));
                             const authorText = isTalk
                               ? (Array.isArray(item.authors) ? item.authors.join(', ') : (item.authors || '')).trim()
-                              : (isBook ? String(b.author || '').replace(/\s+and\s+/gi, ', ') : (j.authors || ''));
+                              : (isBook
+                                  ? String(b.author || (b.editor ? `${b.editor} (Ed.)` : '')).replace(/\s+and\s+/gi, ', ')
+                                  : (j.authors || ''));
                             const typeText = String(item.type || '').trim();
                             const isHighlightedType = /(long|short)\s*(talk|plenary)/i.test(typeText);
                             const talkBadge = (isTalk && isHighlightedType) ? `<span class="talk-type-badge">${esc(typeText)}</span>` : '';
@@ -1309,7 +1311,6 @@
                               : '';
                             const bookRefParts = [];
                             if (b.booktitle) bookRefParts.push(`In ${b.booktitle}`);
-                            if (b.editor) bookRefParts.push(`ed. ${b.editor}`);
                             if (b.series) bookRefParts.push(b.series);
                             if (b.volume) bookRefParts.push(`vol. ${b.volume}`);
                             if (b.publisher) bookRefParts.push(b.publisher);
