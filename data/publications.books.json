@@ -44,10 +44,10 @@
       "book": {
         "entryType": "incollection",
         "citationKey": "BrunHsieh2013",
-        "author": "Brun, Todd A. and Hsieh, Min-Hsiu",
+        "author": "Todd A. Brun and Min-Hsiu Hsieh",
         "title": "Entanglement-assisted quantum error-correcting codes",
         "booktitle": "Quantum Error Correction",
-        "editor": "Lidar, Daniel A. and Brun, Todd A.",
+        "editor": "Daniel A. Lidar and Todd A. Brun",
         "publisher": "Cambridge University Press",
         "year": "2013",
         "pages": "181--200",
