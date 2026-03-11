@@ -4,15 +4,57 @@
   "items": [
     {
       "id": "books-1",
-      "contentHtml": "Yuxuan Du, Xinbiao Wang, Naixu Guo, Zhan Yu, Yang Qian, Kaining Zhang, Min-Hsiu Hsieh, Patrick Rebentrost, Dacheng Tao. A Gentle Introduction to Quantum Machine Learning. Springer (ISBN-13: 978-9819512836), 2025 [<a href=\"https://arxiv.org/abs/2502.01146\" target=\"_blank\" rel=\"noopener\">arXiv:2502.01146</a>]. [<a href=\"https://doi.org/10.1007/978-981-95-1284-3\" target=\"_blank\" rel=\"noopener\">DOI</a>] [<a href=\"https://www.amazon.com.au/Gentle-Introduction-Quantum-Machine-Learning/dp/9819512832\" target=\"_blank\" rel=\"noopener\">Amazon</a>]"
+      "contentHtml": "Yuxuan Du, Xinbiao Wang, Naixu Guo, Zhan Yu, Yang Qian, Kaining Zhang, Min-Hsiu Hsieh, Patrick Rebentrost, Dacheng Tao. A Gentle Introduction to Quantum Machine Learning. Springer (ISBN-13: 978-9819512836), 2025 [<a href=\"https://arxiv.org/abs/2502.01146\" target=\"_blank\" rel=\"noopener\">arXiv:2502.01146</a>]. [<a href=\"https://doi.org/10.1007/978-981-95-1284-3\" target=\"_blank\" rel=\"noopener\">DOI</a>] [<a href=\"https://www.amazon.com.au/Gentle-Introduction-Quantum-Machine-Learning/dp/9819512832\" target=\"_blank\" rel=\"noopener\">Amazon</a>]",
+      "book": {
+        "entryType": "book",
+        "citationKey": "Du2025GentleQML",
+        "author": "Yuxuan Du and Xinbiao Wang and Naixu Guo and Zhan Yu and Yang Qian and Kaining Zhang and Min-Hsiu Hsieh and Patrick Rebentrost and Dacheng Tao",
+        "title": "A Gentle Introduction to Quantum Machine Learning",
+        "publisher": "Springer",
+        "year": "2025",
+        "isbn": "978-9819512836",
+        "doi": "10.1007/978-981-95-1284-3",
+        "url": "https://doi.org/10.1007/978-981-95-1284-3",
+        "note": ""
+      }
     },
     {
       "id": "books-2",
-      "contentHtml": "M.-H. Hsieh (Ed.). 16th Conference on the Theory of Quantum Computation, Communication and Cryptography (TQC 2021). Leibniz International Proceedings in Informatics (LIPIcs), vol. 197, Schloss Dagstuhl--Leibniz-Zentrum für Informatik, Dagstuhl, Germany (2021), ISBN 978-1-7138-3256-0. [<a href=\"https://drops.dagstuhl.de/storage/00lipics/lipics-vol197-tqc2021/LIPIcs.TQC.2021.0/LIPIcs.TQC.2021.0.pdf\" target=\"_blank\" rel=\"noopener\">DOI</a>] [<a href=\"https://drops.dagstuhl.de/storage/00lipics/lipics-vol197-tqc2021/LIPIcs.TQC.2021.0/LIPIcs.TQC.2021.0.pdf\" target=\"_blank\" rel=\"noopener\">PDF</a>]."
+      "contentHtml": "M.-H. Hsieh (Ed.). 16th Conference on the Theory of Quantum Computation, Communication and Cryptography (TQC 2021). Leibniz International Proceedings in Informatics (LIPIcs), vol. 197, Schloss Dagstuhl--Leibniz-Zentrum für Informatik, Dagstuhl, Germany (2021), ISBN 978-1-7138-3256-0. [<a href=\"https://drops.dagstuhl.de/storage/00lipics/lipics-vol197-tqc2021/LIPIcs.TQC.2021.0/LIPIcs.TQC.2021.0.pdf\" target=\"_blank\" rel=\"noopener\">DOI</a>] [<a href=\"https://drops.dagstuhl.de/storage/00lipics/lipics-vol197-tqc2021/LIPIcs.TQC.2021.0/LIPIcs.TQC.2021.0.pdf\" target=\"_blank\" rel=\"noopener\">PDF</a>].",
+      "book": {
+        "entryType": "proceedings",
+        "citationKey": "TQC2021",
+        "editor": "Hsieh, M.-H.",
+        "title": "16th Conference on the Theory of Quantum Computation, Communication and Cryptography (TQC 2021)",
+        "booktitle": "TQC 2021",
+        "series": "Leibniz International Proceedings in Informatics",
+        "volume": "197",
+        "publisher": "Schloss Dagstuhl--Leibniz-Zentrum für Informatik",
+        "address": "Dagstuhl, Germany",
+        "year": "2021",
+        "isbn": "978-1-7138-3256-0",
+        "doi": "10.4230/LIPIcs.TQC.2021",
+        "url": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol197-tqc2021/LIPIcs.TQC.2021.0/LIPIcs.TQC.2021.0.pdf",
+        "note": ""
+      }
     },
     {
       "id": "books-3",
-      "contentHtml": "Todd A. Brun, Min-Hsiu Hsieh. Entanglement-assisted quantum error-correcting codes. In: Quantum Error Correction, edited by Daniel A. Lidar and Todd A. Brun, Cambridge University Press, pp. 181-200 (2013). [<a href=\"https://doi.org/10.1017/CBO9781139034807\" target=\"_blank\" rel=\"noopener\">DOI</a>]."
+      "contentHtml": "Todd A. Brun, Min-Hsiu Hsieh. Entanglement-assisted quantum error-correcting codes. In: Quantum Error Correction, edited by Daniel A. Lidar and Todd A. Brun, Cambridge University Press, pp. 181-200 (2013). [<a href=\"https://doi.org/10.1017/CBO9781139034807\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "book": {
+        "entryType": "incollection",
+        "citationKey": "BrunHsieh2013",
+        "author": "Brun, Todd A. and Hsieh, Min-Hsiu",
+        "title": "Entanglement-assisted quantum error-correcting codes",
+        "booktitle": "Quantum Error Correction",
+        "editor": "Lidar, Daniel A. and Brun, Todd A.",
+        "publisher": "Cambridge University Press",
+        "year": "2013",
+        "pages": "181--200",
+        "doi": "10.1017/CBO9781139034807",
+        "url": "https://doi.org/10.1017/CBO9781139034807",
+        "note": ""
+      }
     }
   ]
 }

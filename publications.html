@@ -1065,6 +1065,27 @@
                 return `@article{${key},\n${fields.join(',\n')}\n}`;
             }
 
+            function buildBibtexBookFields(book = {}, fallbackKey = 'HsiehYYYYBook') {
+                const entryType = bibEscape(book.entryType || 'book') || 'book';
+                const key = bibEscape(book.citationKey || fallbackKey) || fallbackKey;
+                const fields = [];
+                if (book.author) fields.push(`  author = {${bibEscape(book.author)}}`);
+                if (book.editor) fields.push(`  editor = {${bibEscape(book.editor)}}`);
+                if (book.title) fields.push(`  title = {${bibEscape(book.title)}}`);
+                if (book.booktitle) fields.push(`  booktitle = {${bibEscape(book.booktitle)}}`);
+                if (book.series) fields.push(`  series = {${bibEscape(book.series)}}`);
+                if (book.volume) fields.push(`  volume = {${bibEscape(book.volume)}}`);
+                if (book.publisher) fields.push(`  publisher = {${bibEscape(book.publisher)}}`);
+                if (book.address) fields.push(`  address = {${bibEscape(book.address)}}`);
+                if (book.year) fields.push(`  year = {${bibEscape(book.year)}}`);
+                if (book.pages) fields.push(`  pages = {${bibEscape(book.pages)}}`);
+                if (book.isbn) fields.push(`  isbn = {${bibEscape(book.isbn)}}`);
+                if (book.doi) fields.push(`  doi = {${bibEscape(book.doi)}}`);
+                if (book.url) fields.push(`  url = {${bibEscape(book.url)}}`);
+                if (book.note) fields.push(`  note = {${bibEscape(book.note)}}`);
+                return `@${entryType}{${key},\n${fields.join(',\n')}\n}`;
+            }
+
             function buildBibtex(mode, item, key, extra = {}) {
                 const title = bibEscape(item.title);
                 const authors = bibEscape(item.authors);
@@ -1265,20 +1286,38 @@
                     } else if (mode === 'book-card' || mode === 'conference-card' || mode === 'talk-card') {
                         list.innerHTML = items.map((item, i) => {
                             const isTalk = mode === 'talk-card';
-                            const p = isTalk ? { year: String(item.date || '').match(/(19|20)\d{2}/)?.[0] || '', arxiv: null, doi: null, head: '', plain: '' } : parseItem(item.contentHtml || '');
-                            const j = isTalk ? { authors: '', title: '', refInfo: '' } : parseJournalHead(p.head || '');
+                            const isBook = mode === 'book-card';
+                            const b = isBook ? (item.book || {}) : {};
+                            const p = isTalk
+                              ? { year: String(item.date || '').match(/(19|20)\d{2}/)?.[0] || '', arxiv: null, doi: null, head: '', plain: '' }
+                              : parseItem(item.contentHtml || '');
+                            const j = (isTalk || isBook) ? { authors: '', title: '', refInfo: '' } : parseJournalHead(p.head || '');
                             const arxivLink = p.arxiv ? `<a href="${p.arxiv.href}" target="_blank" rel="noopener">arXiv</a>` : `<a class="disabled">arXiv</a>`;
-                            const doiLink = p.doi ? `<a href="${p.doi.href}" target="_blank" rel="noopener">DOI</a>` : `<a class="disabled">DOI</a>`;
-                            const titleText = isTalk ? cleanTitle(item.title || '') : cleanTitle(j.title || p.head || p.plain);
+                            const doiHref = isBook ? (b.doi ? `https://doi.org/${b.doi}` : '') : (p.doi ? p.doi.href : '');
+                            const doiLink = doiHref ? `<a href="${doiHref}" target="_blank" rel="noopener">DOI</a>` : `<a class="disabled">DOI</a>`;
+                            const titleText = isTalk
+                              ? cleanTitle(item.title || '')
+                              : (isBook ? cleanTitle(b.title || p.head || p.plain) : cleanTitle(j.title || p.head || p.plain));
                             const authorText = isTalk
                               ? (Array.isArray(item.authors) ? item.authors.join(', ') : (item.authors || '')).trim()
-                              : (j.authors || '');
+                              : (isBook ? String(b.author || '').replace(/\s+and\s+/gi, ', ') : (j.authors || ''));
                             const typeText = String(item.type || '').trim();
                             const isHighlightedType = /(long|short)\s*(talk|plenary)/i.test(typeText);
                             const talkBadge = (isTalk && isHighlightedType) ? `<span class="talk-type-badge">${esc(typeText)}</span>` : '';
                             const talkRefInfo = isTalk
                               ? [item.venue, item.location, item.date].filter(Boolean).join(', ')
                               : '';
+                            const bookRefParts = [];
+                            if (b.booktitle) bookRefParts.push(`In ${b.booktitle}`);
+                            if (b.editor) bookRefParts.push(`ed. ${b.editor}`);
+                            if (b.series) bookRefParts.push(b.series);
+                            if (b.volume) bookRefParts.push(`vol. ${b.volume}`);
+                            if (b.publisher) bookRefParts.push(b.publisher);
+                            if (b.address) bookRefParts.push(b.address);
+                            if (b.pages) bookRefParts.push(/^\d+--\d+$/.test(String(b.pages)) ? `pp. ${b.pages}` : b.pages);
+                            if (b.year) bookRefParts.push(`(${b.year})`);
+                            if (b.isbn) bookRefParts.push(`ISBN ${b.isbn}`);
+                            const bookRefInfo = isBook ? bookRefParts.join(', ') : '';
 
                             if (isTalk && (!titleText || !authorText || !talkRefInfo)) {
                               console.warn('[talks] missing structured fields for', item.id || '(no-id)', {
@@ -1291,28 +1330,31 @@
                               });
                             }
 
-                            const plainEnc = encodeURIComponent(isTalk
-                              ? `${authorText}. ${titleText}. ${talkRefInfo}.`
-                              : plainCitationText(p));
+                            const plainEnc = encodeURIComponent(
+                              isTalk
+                                ? `${authorText}. ${titleText}. ${talkRefInfo}.`
+                                : (isBook ? `${authorText}, "${titleText}," ${bookRefInfo}.` : plainCitationText(p))
+                            );
                             const bibSource = { title: titleText, authors: authorText, year: p.year };
-                            const isBook = mode === 'book-card';
                             const isConf = mode === 'conference-card';
                             const bibMode = isBook ? 'book' : (isConf ? 'conference' : 'journal');
                             const bibKey = isBook
-                              ? `Hsieh${p.year}Book${i + 1}`
+                              ? `Hsieh${b.year || 'YYYY'}Book${i + 1}`
                               : (isConf ? `Hsieh${p.year}Conf${i + 1}` : `Hsieh${p.year}Journal${i + 1}`);
-                            const bibEnc = encodeURIComponent(buildBibtex(bibMode, bibSource, bibKey, {
-                              refInfo: isTalk ? talkRefInfo : (j.refInfo || ''),
-                              doiHref: p.doi ? p.doi.href : '',
-                              publisher: extractPublisher(j.refInfo || ''),
-                              url: (p.doi && p.doi.href) ? p.doi.href : (p.arxiv && p.arxiv.href ? p.arxiv.href : '')
-                            }));
+                            const bibEnc = isBook
+                              ? encodeURIComponent(buildBibtexBookFields(b, bibKey))
+                              : encodeURIComponent(buildBibtex(bibMode, bibSource, bibKey, {
+                                  refInfo: isTalk ? talkRefInfo : (j.refInfo || ''),
+                                  doiHref: p.doi ? p.doi.href : '',
+                                  publisher: extractPublisher(j.refInfo || ''),
+                                  url: (p.doi && p.doi.href) ? p.doi.href : (p.arxiv && p.arxiv.href ? p.arxiv.href : '')
+                                }));
                             return `
                               <li>
                                 <article class="pub-card">
                                   <h4 class="pub-title" title="${esc(titleText)}">${esc(titleText)}</h4>
                                   <p class="pub-authors">${esc(authorText).replace('Min-Hsiu Hsieh', '<span class="author-me">Min-Hsiu Hsieh</span>')}</p>
-                                  <div class="pub-links"><span style="color:#4b5563; margin-right:10px;">${esc(isTalk ? talkRefInfo : (j.refInfo || ''))}</span>${talkBadge}</div>
+                                  <div class="pub-links"><span style="color:#4b5563; margin-right:10px;">${esc(isTalk ? talkRefInfo : (isBook ? bookRefInfo : (j.refInfo || '')))}</span>${talkBadge}</div>
                                   ${isTalk ? '' : `<div class="pub-actions">
                                     <span>[${arxivLink}]</span>
                                     <span>[${doiLink}]</span>
