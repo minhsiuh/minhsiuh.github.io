@@ -1,0 +1,646 @@
+{
+  "section": "talks",
+  "updatedAt": "2026-03-10T04:47:13.432Z",
+  "items": [
+    {
+      "id": "talks-1",
+      "contentHtml": "Shi Jie Samuel Tan, Yifan Hong, Ting-Chun Lin, Michael J. Gullans, Min-Hsiu Hsieh. Single-Shot Universality in Quantum LDPC Codes via Code-Switching. Long Plenary Talk in The 29th Conference on Quantum Information Processing (QIP 2026).",
+      "title": "Single-Shot Universality in Quantum LDPC Codes via Code-Switching",
+      "authors": [
+        "Shi Jie Samuel Tan",
+        "Yifan Hong",
+        "Ting-Chun Lin",
+        "Michael J. Gullans",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "The 29th Conference on Quantum Information Processing (QIP 2026)",
+      "date": "26-30/01/2026",
+      "location": "Riga, Latvia",
+      "type": "Short Plenary Talk"
+    },
+    {
+      "id": "talks-2",
+      "contentHtml": "Takaya Matsuura, Masahito Hayashi, Min-Hsiu Hsieh. Universal classical-quantum channel resolvability and private channel coding. The 29th Conference on Quantum Information Processing (QIP 2026).",
+      "title": "Universal classical-quantum channel resolvability and private channel coding",
+      "authors": [
+        "Takaya Matsuura",
+        "Masahito Hayashi",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "The 29th Conference on Quantum Information Processing (QIP 2026)",
+      "date": "26-30/01/2026",
+      "location": "Riga, Latvia",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-3",
+      "contentHtml": "Yuxuan Du, Min-Hsiu Hsieh, Dacheng Tao. Efficient Learning for Linear Properties of Bounded-Gate Quantum Circuits. The 9th International Conference on Quantum Techniques in Machine Learning (QTML 2025).",
+      "title": "Efficient Learning for Linear Properties of Bounded-Gate Quantum Circuits",
+      "authors": [
+        "Yuxuan Du",
+        "Min-Hsiu Hsieh",
+        "Dacheng Tao"
+      ],
+      "venue": "The 9th International Conference on Quantum Techniques in Machine Learning (QTML 2025)",
+      "date": "16-21/11/2025",
+      "location": "Singapore",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-4",
+      "contentHtml": "Adam Wills, Min-Hsiu Hsieh, Hayata Yamasaki. Constant-Overhead Magic State Distillation. Long Plenary Talk and Best Student Paper, The 28th Conference on Quantum Information Processing (QIP 2025).",
+      "title": "Constant-Overhead Magic State Distillation",
+      "authors": [
+        "Adam Wills",
+        "Min-Hsiu Hsieh",
+        "Hayata Yamasaki"
+      ],
+      "venue": "The 28th Conference on Quantum Information Processing (QIP 2025)",
+      "date": "22-28/02/2025",
+      "location": "Raleigh, NC, USA",
+      "type": "Long Plenary Talk; Best Student Paper"
+    },
+    {
+      "id": "talks-5",
+      "contentHtml": "Yu-Cheng Chen, R. Wu, M.-H. Cheng, Min-Hsiu Hsieh. Optimizing Quantum Chemical Simulations: Randomized Linear Encoding and Neural Network Decoding. AI4Quantum 2025, Oral Presentation.",
+      "title": "Optimizing Quantum Chemical Simulations: Randomized Linear Encoding and Neural Network Decoding",
+      "authors": [
+        "Yu-Cheng Chen",
+        "R. Wu",
+        "M.-H. Cheng",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "AI4Quantum 2025",
+      "date": "2025",
+      "location": "",
+      "type": "Oral Presentation"
+    },
+    {
+      "id": "talks-6",
+      "contentHtml": "Yu-Cheng Chen, R. Wu, M.-H. Cheng, Min-Hsiu Hsieh. Lossy-QSCI: Qubit-Efficient Quantum Chemistry via Chemistry-Biased Random Linear Encoding. AQMCSE 2025, Oral Presentation.",
+      "title": "Lossy-QSCI: Qubit-Efficient Quantum Chemistry via Chemistry-Biased Random Linear Encoding",
+      "authors": [
+        "Yu-Cheng Chen",
+        "R. Wu",
+        "M.-H. Cheng",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "AQMCSE 2025",
+      "date": "2025",
+      "location": "",
+      "type": "Oral Presentation"
+    },
+    {
+      "id": "talks-7",
+      "contentHtml": "Min-Hsiu Hsieh, Leandro Mendes, Michael de Oliveira and Sathyawageeswar Subramanian. Quantum Circuits surpass Biased Threshold Circuits in Constant-Depth. The 18th Theory of Quantum Computation, Communication and Cryptography (TQC 2024).",
+      "title": "Quantum Circuits surpass Biased Threshold Circuits in Constant-Depth",
+      "authors": [
+        "Min-Hsiu Hsieh",
+        "Leandro Mendes",
+        "Michael de Oliveira",
+        "Sathyawageeswar Subramanian"
+      ],
+      "venue": "The 18th Theory of Quantum Computation, Communication and Cryptography (TQC 2024)",
+      "date": "9-13/09/2024",
+      "location": "Okinawa, Japan",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-8",
+      "contentHtml": "Adam Wills, Ting-Chun Lin, Min-Hsiu Hsieh. Tradeoff Constructions for Quantum Locally Testable Codes. The 18th Theory of Quantum Computation, Communication and Cryptography (TQC 2024).",
+      "title": "Tradeoff Constructions for Quantum Locally Testable Codes",
+      "authors": [
+        "Adam Wills",
+        "Ting-Chun Lin",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "The 18th Theory of Quantum Computation, Communication and Cryptography (TQC 2024)",
+      "date": "9-13/09/2024",
+      "location": "Okinawa, Japan",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-9",
+      "contentHtml": "Adam Wills, Min-Hsiu Hsieh, Sergii Strelchuk. Efficient Algorithms for All Port-Based Teleportation Protocols. The 18th Theory of Quantum Computation, Communication and Cryptography (TQC 2024).",
+      "title": "Efficient Algorithms for All Port-Based Teleportation Protocols",
+      "authors": [
+        "Adam Wills",
+        "Min-Hsiu Hsieh",
+        "Sergii Strelchuk"
+      ],
+      "venue": "The 18th Theory of Quantum Computation, Communication and Cryptography (TQC 2024)",
+      "date": "9-13/09/2024",
+      "location": "Okinawa, Japan",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-10",
+      "contentHtml": "Ting-Chun Lin, Isaac H. Kim, Min-Hsiu Hsieh. An operator extension of weak monotonicity. The 27th Conference on Quantum Information Processing (QIP 2024) (Short Plenary), Taipei, Taiwan, 13-19/01/2024.",
+      "title": "An operator extension of weak monotonicity",
+      "authors": [
+        "Ting-Chun Lin",
+        "Isaac H. Kim",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "The 27th Conference on Quantum Information Processing (QIP 2024)",
+      "date": "13-19/01/2024",
+      "location": "Taipei, Taiwan",
+      "type": "Short Plenary Talk"
+    },
+    {
+      "id": "talks-11",
+      "contentHtml": "Ting-Chun Lin, Adam Wills, Min-Hsiu Hsieh. Geometrically Local Quantum and Classical Codes from Subdivision. The 27th Conference on Quantum Information Processing (QIP 2024), Taipei, Taiwan, 13-19/01/2024.",
+      "title": "Geometrically Local Quantum and Classical Codes from Subdivision",
+      "authors": [
+        "Ting-Chun Lin",
+        "Adam Wills",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "The 27th Conference on Quantum Information Processing (QIP 2024)",
+      "date": "13-19/01/2024",
+      "location": "Taipei, Taiwan",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-12",
+      "contentHtml": "Adam Wills, Ting-Chun Lin, Min-Hsiu Hsieh. General Distance Balancing for Quantum Locally Testable Codes. The 23rd Asian Conference on Quantum Information Science (AQIS 2023).",
+      "title": "General Distance Balancing for Quantum Locally Testable Codes",
+      "authors": [
+        "Adam Wills",
+        "Ting-Chun Lin",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "The 23rd Asian Conference on Quantum Information Science (AQIS 2023)",
+      "date": "28/08-01/09/2023",
+      "location": "Seoul, Korea",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-13",
+      "contentHtml": "Chien Hung Cho, Dominic W. Berry, Min-Hsiu Hsieh. Doubling the order of approximation via the randomized product formula. The 18th Theory of Quantum Computation, Communication and Cryptography (TQC 2023), Aveiro, Portugal, 24-28/07/2023.",
+      "title": "Doubling the order of approximation via the randomized product formula",
+      "authors": [
+        "Chien Hung Cho",
+        "Dominic W. Berry",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "The 18th Theory of Quantum Computation, Communication and Cryptography (TQC 2023)",
+      "date": "24-28/07/2023",
+      "location": "Aveiro, Portugal",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-14",
+      "contentHtml": "Ting-Chun Lin, Isaac H. Kim, Min-Hsiu Hsieh. An operator extension of weak monotonicity. Beyond IID in Information Theory 11 (BIID 2023), Tübingen, Germany, 31/07-04/08/2023.",
+      "title": "An operator extension of weak monotonicity",
+      "authors": [
+        "Ting-Chun Lin",
+        "Isaac H. Kim",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "Beyond IID in Information Theory 11 (BIID 2023)",
+      "date": "31/07-04/08/2023",
+      "location": "Tübingen, Germany",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-15",
+      "contentHtml": "Irit Dinur, Min-Hsiu Hsieh, Ting-Chun Lin, Thomas Vidick. Good Quantum LDPC Codes with Linear Time Decoders. The 26th Conference on Quantum Information Processing (QIP 2023), Ghent, Belgium, 04-10/02/2023.",
+      "title": "Good Quantum LDPC Codes with Linear Time Decoders",
+      "authors": [
+        "Irit Dinur",
+        "Min-Hsiu Hsieh",
+        "Ting-Chun Lin",
+        "Thomas Vidick"
+      ],
+      "venue": "The 26th Conference on Quantum Information Processing (QIP 2023)",
+      "date": "04-10/02/2023",
+      "location": "Ghent, Belgium",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-16",
+      "contentHtml": "Tom Gur, Min-Hsiu Hsieh, Sathyawageeswar Subramanian. Sublinear quantum algorithms for estimating von Neumann entropy. The 25th Annual Conference on Quantum Information Processing (QIP 2022), Caltech, USA, 07-11/03/2022.",
+      "title": "Sublinear quantum algorithms for estimating von Neumann entropy",
+      "authors": [
+        "Tom Gur",
+        "Min-Hsiu Hsieh",
+        "Sathyawageeswar Subramanian"
+      ],
+      "venue": "The 25th Annual Conference on Quantum Information Processing (QIP 2022)",
+      "date": "07-11/03/2022",
+      "location": "Caltech, USA",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-17",
+      "contentHtml": "Pedro Figueroa-Romero, Kavan Modi, Thomas M. Stace, Min-Hsiu Hsieh. Randomized benchmarking for non-Markovian noise. BIID'9 (Online).",
+      "title": "Randomized benchmarking for non-Markovian noise",
+      "authors": [
+        "Pedro Figueroa-Romero",
+        "Kavan Modi",
+        "Thomas M. Stace",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "Beyond IID in Information Theory 9 (BIID 2021)",
+      "date": "",
+      "location": "Online",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-18",
+      "contentHtml": "Sathyawageeswar Subramanian and Min-Hsiu Hsieh. Quantum algorithm for estimating α-Renyi entropies of density matrices in an oracular setting. The The 19th Asian Conference on Quantum Information Science (AQIS 2019), Seoul, Korea, 19-23/08/2019.",
+      "title": "Quantum algorithm for estimating α-Renyi entropies of density matrices in an oracular setting",
+      "authors": [
+        "Sathyawageeswar Subramanian",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "The 19th Asian Conference on Quantum Information Science (AQIS 2019)",
+      "date": "19-23/08/2019",
+      "location": "Seoul, Korea",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-19",
+      "contentHtml": "Yuxuan Du, Min-Hsiu Hsieh and Dacheng Tao. Efficient Online Quantum Generative Adversarial Learning Algorithms with Applications. The The 19th Asian Conference on Quantum Information Science (AQIS 2019), Seoul, Korea, 19-23/08/2019.",
+      "title": "Efficient Online Quantum Generative Adversarial Learning Algorithms with Applications",
+      "authors": [
+        "Yuxuan Du",
+        "Min-Hsiu Hsieh",
+        "Dacheng Tao"
+      ],
+      "venue": "The 19th Asian Conference on Quantum Information Science (AQIS 2019)",
+      "date": "19-23/08/2019",
+      "location": "Seoul, Korea",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-20",
+      "contentHtml": "Madhav Krishnan Vijayan, Eric Chitambar, Min-Hsiu Hsieh. One-shot concentration of resource in a general resource theory. The Beyond IID in Information Theory 7 (BIID 2019), Sydney, Australia, 1-5/07/2019.",
+      "title": "One-shot concentration of resource in a general resource theory",
+      "authors": [
+        "Madhav Krishnan Vijayan",
+        "Eric Chitambar",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "Beyond IID in Information Theory 7 (BIID 2019)",
+      "date": "1-5/07/2019",
+      "location": "Sydney, Australia",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-21",
+      "contentHtml": "Hao-Chung Cheng, Gao Li, Min-Hsiu Hsieh. Properties of Scaled Noncommutative Renyi and Augustin Information. The Beyond IID in Information Theory 7 (BIID 2019), Sydney, Australia, 1-5/07/2019.",
+      "title": "Properties of Scaled Noncommutative Renyi and Augustin Information",
+      "authors": [
+        "Hao-Chung Cheng",
+        "Gao Li",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "Beyond IID in Information Theory 7 (BIID 2019)",
+      "date": "1-5/07/2019",
+      "location": "Sydney, Australia",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-22",
+      "contentHtml": "Hao-Chung Cheng, Min-Hsiu Hsieh and Marco Tomamichel. Moderate Deviation Analysis and Sphere-Packing Bounds for Classical-Quantum Channels. The The 21th Annual Conference on Quantum Information Processing (QIP 2018), Delft, Netherland, 13-19/01/2018.",
+      "title": "Moderate Deviation Analysis and Sphere-Packing Bounds for Classical-Quantum Channels",
+      "authors": [
+        "Hao-Chung Cheng",
+        "Min-Hsiu Hsieh",
+        "Marco Tomamichel"
+      ],
+      "venue": "The 21th Annual Conference on Quantum Information Processing (QIP 2018)",
+      "date": "13-19/01/2018",
+      "location": "Delft, Netherlands",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-23",
+      "contentHtml": "Anurag Anshu, Min-Hsiu Hsieh and Rahul Jain. Quantifying resources in general resource theory with catalysts. The The 21th Annual Conference on Quantum Information Processing (QIP 2018), Delft, Netherland, 13-19/01/2018.",
+      "title": "Quantifying resources in general resource theory with catalysts",
+      "authors": [
+        "Anurag Anshu",
+        "Min-Hsiu Hsieh",
+        "Rahul Jain"
+      ],
+      "venue": "The 21th Annual Conference on Quantum Information Processing (QIP 2018)",
+      "date": "13-19/01/2018",
+      "location": "Delft, Netherlands",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-24",
+      "contentHtml": "Anurag Anshu, Min-Hsiu Hsieh and Rahul Jain. Quantifying resources in general resource theory with catalysts. Nanyang Quantum 2017: Workshop on Quantum Resources and Correlations beyond Entanglement, Singapore, 11-13/12/2017.",
+      "title": "Quantifying resources in general resource theory with catalysts",
+      "authors": [
+        "Anurag Anshu",
+        "Min-Hsiu Hsieh",
+        "Rahul Jain"
+      ],
+      "venue": "Nanyang Quantum 2017: Workshop on Quantum Resources and Correlations beyond Entanglement",
+      "date": "11-13/12/2017",
+      "location": "Singapore",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-25",
+      "contentHtml": "Hao-Chung Cheng, Min-Hsiu Hsieh and Marco Tomamichel. Quantum Sphere-Packing Bounds with Polynomial Prefactors. The The 1The 7th Asian Conference on Quantum Information Science (AQIS 2017), CQT, Singapore, 4-8/09/2017.",
+      "title": "Quantum Sphere-Packing Bounds with Polynomial Prefactors",
+      "authors": [
+        "Hao-Chung Cheng",
+        "Min-Hsiu Hsieh",
+        "Marco Tomamichel"
+      ],
+      "venue": "The 1The 7th Asian Conference on Quantum Information Science (AQIS 2017)",
+      "date": "4-8/09/2017",
+      "location": "CQT, Singapore",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-26",
+      "contentHtml": "Hao-Chung Cheng and Min-Hsiu Hsieh. Moderate Deviations for Classical-Quantum Channels. The The 1The 7th Asian Conference on Quantum Information Science (AQIS 2017), CQT, Singapore, 4-8/09/2017.",
+      "title": "Moderate Deviations for Classical-Quantum Channels",
+      "authors": [
+        "Hao-Chung Cheng",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "The 1The 7th Asian Conference on Quantum Information Science (AQIS 2017)",
+      "date": "4-8/09/2017",
+      "location": "CQT, Singapore",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-27",
+      "contentHtml": "Hao-Chung Cheng and Min-Hsiu Hsieh. Moderate Deviation Analysis for Classical-Quantum Channels and Quantum Hypothesis Testing. The 2017 Conference on the Theory of Quantum Computation, Communication and Cryptography (TQC 2017), Paris, France, 14-16/06/2017.",
+      "title": "Moderate Deviation Analysis for Classical-Quantum Channels and Quantum Hypothesis Testing",
+      "authors": [
+        "Hao-Chung Cheng",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "Conference on the Theory of Quantum Computation, Communication and Cryptography (TQC 2017)",
+      "date": "14-16/06/2017",
+      "location": "Paris, France",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-28",
+      "contentHtml": "Eric Chitambar and Min-Hsiu Hsieh. Round Complexity in the Local Transformations of Quantum and Classical States. The The 14th Central European Quantum Information Processing Workshop (CEQIP 2017), Smolenice, Slovakia, 31/05-03/06/2017.",
+      "title": "Round Complexity in the Local Transformations of Quantum and Classical States",
+      "authors": [
+        "Eric Chitambar",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "The 14th Central European Quantum Information Processing Workshop (CEQIP 2017)",
+      "date": "31/05-03/06/2017",
+      "location": "Smolenice, Slovakia",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-29",
+      "contentHtml": "Eric Chitambar and Min-Hsiu Hsieh. Round Complexity in the Local Transformations of Quantum and Classical State. The The 20th Annual Conference on Quantum Information Processing (QIP 2017), Seattle, USA, 14-20/01/2017.",
+      "title": "Round Complexity in the Local Transformations of Quantum and Classical State",
+      "authors": [
+        "Eric Chitambar",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "The 20th Annual Conference on Quantum Information Processing (QIP 2017)",
+      "date": "14-20/01/2017",
+      "location": "Seattle, USA",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-30",
+      "contentHtml": "Eric Chitambar and Min-Hsiu Hsieh. Relating the Resource Theories of Entanglement and Quantum Coherence. The The 16th Asian Conference on Quantum Information Science (AQIS 2016), Taipei, Taiwan, 28/08-02/09/2017.",
+      "title": "Relating the Resource Theories of Entanglement and Quantum Coherence",
+      "authors": [
+        "Eric Chitambar",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "The 16th Asian Conference on Quantum Information Science (AQIS 2016)",
+      "date": "28/08-02/09/2017",
+      "location": "Taipei, Taiwan",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-31",
+      "contentHtml": "Hao-Chung Cheng, Min-Hsiu Hsieh and Marco Tomamichel. Characterizing the long-term behavior of a quantum ensemble. The The 16th Asian Conference on Quantum Information Science (AQIS 2016), Taipei, Taiwan, 28/08-02/09/2017.",
+      "title": "Characterizing the long-term behavior of a quantum ensemble",
+      "authors": [
+        "Hao-Chung Cheng",
+        "Min-Hsiu Hsieh",
+        "Marco Tomamichel"
+      ],
+      "venue": "The 16th Asian Conference on Quantum Information Science (AQIS 2016)",
+      "date": "28/08-02/09/2017",
+      "location": "Taipei, Taiwan",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-32",
+      "contentHtml": "Hao-Chung Cheng and Min-Hsiu Hsieh. On the Concavity of Auxiliary Function in Classical-Quantum Channels. The The 16th Asian Conference on Quantum Information Science (AQIS 2016), Taipei, Taiwan, 28/08-02/09/2017.",
+      "title": "On the Concavity of Auxiliary Function in Classical-Quantum Channels",
+      "authors": [
+        "Hao-Chung Cheng",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "The 16th Asian Conference on Quantum Information Science (AQIS 2016)",
+      "date": "28/08-02/09/2017",
+      "location": "Taipei, Taiwan",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-33",
+      "contentHtml": "Eric Chitambar, Ben Fortescue and Min-Hsiu Hsieh. Quantum Versus Classical Advantages in Secret Key Distillation (and Their Links to Quantum Entanglement). Arctic Crypt 2016 (ArcticCrypt 2016), Longyearbyen, Svalbard, Norway, 17-22/07/2016.",
+      "title": "Quantum Versus Classical Advantages in Secret Key Distillation (and Their Links to Quantum Entanglement)",
+      "authors": [
+        "Eric Chitambar",
+        "Ben Fortescue",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "Arctic Crypt 2016 (ArcticCrypt 2016)",
+      "date": "17-22/07/2016",
+      "location": "Longyearbyen, Svalbard, Norway",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-34",
+      "contentHtml": "Hao-Chung Cheng and Min-Hsiu Hsieh. New Characterizations of Matrix Φ-Entropies, Poincare and Sobolev Inequalities, and applications to quantum information. The The 15th Asian Conference on Quantum Information Science (AQIS 2015), Seoul, Korea, 24-28/08/2015.",
+      "title": "New Characterizations of Matrix Φ-Entropies, Poincare and Sobolev Inequalities, and applications to quantum information",
+      "authors": [
+        "Hao-Chung Cheng",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "The 15th Asian Conference on Quantum Information Science (AQIS 2015)",
+      "date": "24-28/08/2015",
+      "location": "Seoul, Korea",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-35",
+      "contentHtml": "Yi-Chan Lee, Min-Hsiu Hsieh, Steve Flammia, and Ray-Kuang Lee. Local PT Symmetry Violates the No-Signaling Principle. The The 14th Asian Conference on Quantum Information Science (AQIS 2014), Kyoto University, Japan, 20–24/08/2014.",
+      "title": "Local PT Symmetry Violates the No-Signaling Principle",
+      "authors": [
+        "Yi-Chan Lee",
+        "Min-Hsiu Hsieh",
+        "Steve Flammia",
+        "Ray-Kuang Lee"
+      ],
+      "venue": "The 14th Asian Conference on Quantum Information Science (AQIS 2014)",
+      "date": "20–24/08/2014",
+      "location": "Kyoto University, Japan",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-36",
+      "contentHtml": "Eric Chitambar, Runyao Duan, Min-Hsiu Hsieh. When do Local Operations and Classical Communication Suffice for Optimal Quantum State Discrimination?. The 13th Asian Conference on Quantum Information Science (AQIS 2013), Chennai, India, 25–30/08/2013 .",
+      "title": "When do Local Operations and Classical Communication Suffice for Optimal Quantum State Discrimination?",
+      "authors": [
+        "Eric Chitambar",
+        "Runyao Duan",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "The 13th Asian Conference on Quantum Information Science (AQIS 2013)",
+      "date": "25–30/08/2013",
+      "location": "Chennai, India",
+      "type": "Long Talk"
+    },
+    {
+      "id": "talks-37",
+      "contentHtml": "Nilanjana Datta, Min-Hsiu Hsieh and Mark Wilde. Quantum rate distortion, reverse Shannon theorems, and source-channel separation. The The 14th workshop on Quantum Information Processing (QIP 2012), Montreal, Canada, 12–16/12/2011.",
+      "title": "Quantum rate distortion, reverse Shannon theorems, and source-channel separation",
+      "authors": [
+        "Nilanjana Datta",
+        "Min-Hsiu Hsieh",
+        "Mark Wilde"
+      ],
+      "venue": "The 14th workshop on Quantum Information Processing (QIP 2012)",
+      "date": "12–16/12/2011",
+      "location": "Montreal, Canada",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-38",
+      "contentHtml": "Mark Wilde and Min-Hsiu Hsieh. Trading Resources in Quantum Communication. The The 10th Asian Conference on Quantum Information Science (AQIS 2010), Tokyo, Japan, 27–31/08/2010.",
+      "title": "Trading Resources in Quantum Communication",
+      "authors": [
+        "Mark Wilde",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "The 10th Asian Conference on Quantum Information Science (AQIS 2010)",
+      "date": "27–31/08/2010",
+      "location": "Tokyo, Japan",
+      "type": "Long Talk"
+    },
+    {
+      "id": "talks-39",
+      "contentHtml": "Kai Yuen Cheong, Min-Hsiu Hsieh and Takeshi Koshiba. A Weak Quantum Oblivious Transfer. The The 10th Asian Conference on Quantum Information Science (AQIS 2010), Tokyo, Japan, 27–31/08/2010.",
+      "title": "A Weak Quantum Oblivious Transfer",
+      "authors": [
+        "Kai Yuen Cheong",
+        "Min-Hsiu Hsieh",
+        "Takeshi Koshiba"
+      ],
+      "venue": "The 10th Asian Conference on Quantum Information Science (AQIS 2010)",
+      "date": "27–31/08/2010",
+      "location": "Tokyo, Japan",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-40",
+      "contentHtml": "Min-Hsiu Hsieh, Wen-Tai Yen, Li-Yi Hsu. Performance of Entanglement-assisted Quantum LDPC Codes Constructed From Finite Geometries. The The 21st Quantum Information Technology Symposium (QIT21), The University of Electro-Communications, Japan, 04–05/11/2009.",
+      "title": "Performance of Entanglement-assisted Quantum LDPC Codes Constructed From Finite Geometries",
+      "authors": [
+        "Min-Hsiu Hsieh",
+        "Wen-Tai Yen",
+        "Li-Yi Hsu"
+      ],
+      "venue": "The 21st Quantum Information Technology Symposium (QIT21)",
+      "date": "04–05/11/2009",
+      "location": "The University of Electro-Communications, Japan",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-41",
+      "contentHtml": "Mark M. Wilde, Min-Hsiu Hsieh. Superactive entanglement generation with a zero-capacity quantum channel and a non-distillable shared state. The 9th Asian Conference on Quantum Information Science (AQIS 2009), Nanjing, China, 26–29/08/2009.",
+      "title": "Superactive entanglement generation with a zero-capacity quantum channel and a non-distillable shared state",
+      "authors": [
+        "Mark M. Wilde",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "The 9th Asian Conference on Quantum Information Science (AQIS 2009)",
+      "date": "26–29/08/2009",
+      "location": "Nanjing, China",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-42",
+      "contentHtml": "Min-Hsiu Hsieh, Mark M. Wilde. Public and private communication with a quantum channel and a secret key. The 6th Central European Quantum Information Processing Workshop (CEQIP 2009), Jindřichuv Hradec, Czech Republic, 01-04/06/2009.",
+      "title": "Public and private communication with a quantum channel and a secret key",
+      "authors": [
+        "Min-Hsiu Hsieh",
+        "Mark M. Wilde"
+      ],
+      "venue": "The 6th Central European Quantum Information Processing Workshop (CEQIP 2009)",
+      "date": "01-04/06/2009",
+      "location": "Jindřichuv Hradec, Czech Republic",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-43",
+      "contentHtml": "Min-Hsiu Hsieh, Mark M. Wilde. Optimal trading of classical communication, quantum communication, and entanglement in quantum Shannon theory. The The 20th Quantum Information Technology Symposium (QIT20), Hiroshima University, Japan, 21–22/05/2009.",
+      "title": "Optimal trading of classical communication, quantum communication, and entanglement in quantum Shannon theory",
+      "authors": [
+        "Min-Hsiu Hsieh",
+        "Mark M. Wilde"
+      ],
+      "venue": "The 20th Quantum Information Technology Symposium (QIT20)",
+      "date": "21–22/05/2009",
+      "location": "Hiroshima University, Japan",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-44",
+      "contentHtml": "Min-Hsiu Hsieh, Zhicheng Luo, and Todd Brun. Secret Keys Assisted Private Classical Communication Capacity over Quantum Channels. The The 8th Asian Conference on Quantum Information Science (AQIS 2008), KIAS, Seoul, Korea, 25–31/08/2008.",
+      "title": "Secret Keys Assisted Private Classical Communication Capacity over Quantum Channels",
+      "authors": [
+        "Min-Hsiu Hsieh",
+        "Zhicheng Luo",
+        "Todd Brun"
+      ],
+      "venue": "The 8th Asian Conference on Quantum Information Science (AQIS 2008)",
+      "date": "25–31/08/2008",
+      "location": "KIAS, Seoul, Korea",
+      "type": "Long Talk"
+    },
+    {
+      "id": "talks-45",
+      "contentHtml": "Min-Hsiu Hsieh, Todd A. Brun, and Igor Devetak. Quantum Quasi-Cyclic Low-Density Parity-Check Codes. The The 7th Asian Conference on Quantum Information Science (AQIS 2007), Kyoto University, Japan, 03–06/09/2007.",
+      "title": "Quantum Quasi-Cyclic Low-Density Parity-Check Codes",
+      "authors": [
+        "Min-Hsiu Hsieh",
+        "Todd A. Brun",
+        "Igor Devetak"
+      ],
+      "venue": "The 7th Asian Conference on Quantum Information Science (AQIS 2007)",
+      "date": "03–06/09/2007",
+      "location": "Kyoto University, Japan",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-46",
+      "contentHtml": "Todd Brun, Igor Devetak, Min-Hsiu Hsieh. Entanglement-assisted quantum error correction. The 6th Asian Conference on Quantum Information Science (AQIS 2006), University of Science and Technology of China, Beijing, China, 01–04/09/2006.",
+      "title": "Entanglement-assisted quantum error correction",
+      "authors": [
+        "Todd Brun",
+        "Igor Devetak",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "The 6th Asian Conference on Quantum Information Science (AQIS 2006)",
+      "date": "01–04/09/2006",
+      "location": "University of Science and Technology of China, Beijing, China",
+      "type": "Talk"
+    }
+  ]
+}
