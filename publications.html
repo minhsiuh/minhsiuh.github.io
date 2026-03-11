@@ -869,6 +869,32 @@
     </footer>
 
     <script>
+        /*
+         * Publications page architecture (2026-03)
+         * ----------------------------------------
+         * Data source of truth:
+         *   - data/publications.arxiv.json
+         *   - data/publications.books.json
+         *   - data/publications.journals.json
+         *   - data/publications.conferences.json
+         *   - data/publications.talks.json
+         *
+         * Rendering modes:
+         *   - card            : arXiv (legacy contentHtml + structured fallback)
+         *   - book-card       : books (structured `book` fields, BibTeX-aligned)
+         *   - journal-card    : journals (structured `article` fields, BibTeX-aligned)
+         *   - conference-card : conferences (currently mixed; moving to structured `inproceedings`)
+         *   - talk-card       : talks (structured fields only; no contentHtml parsing)
+         *
+         * Copy behavior:
+         *   - Copy citation (plain): no bracket link tokens like [arXiv]/[DOI]
+         *   - Copy Bibtex: generated from typed structured fields when available
+         *
+         * IMPORTANT:
+         *   - For talks, do NOT re-introduce contentHtml parsing into UI rows.
+         *   - For journals/books, prefer structured fields (`article`/`book`) over sentence parsing.
+         *   - If a field is unknown, leave blank (never fabricate metadata).
+         */
         document.addEventListener('DOMContentLoaded', async function() {
             function updateStats({ arxivCount, journalCount, confCount }) {
                 document.getElementById('arxiv-count').textContent = arxivCount;
