@@ -38,14 +38,14 @@
     },
     {
       "id": "journals-3",
-      "contentHtml": "Xingjian Li, Ting-Chun Lin, Adam Wills, Min-Hsiu Hsieh. Almost optimal geometrically local quantum LDPC codes in any dimension. Nature Communications, Volume: 17, Issue: 1, 2389 (2026) [<a href=\"https://arxiv.org/abs/2408.01769\" target=\"_blank\" rel=\"noopener\">arXiv:2408.01769</a>] [<a href=\"https://doi.org/10.1038/s41467-026-69031-w\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "contentHtml": "Xingjian Li, Ting-Chun Lin, Adam Wills, Min-Hsiu Hsieh. Almost optimal geometrically local quantum LDPC codes in any dimension. Nature Communications, Volume: 17, 2389 (2026) [<a href=\"https://arxiv.org/abs/2408.01769\" target=\"_blank\" rel=\"noopener\">arXiv:2408.01769</a>] [<a href=\"https://doi.org/10.1038/s41467-026-69031-w\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
       "article": {
         "author": "Xingjian Li, Ting-Chun Lin, Adam Wills, Min-Hsiu Hsieh",
         "title": "Almost optimal geometrically local quantum LDPC codes in any dimension",
         "journal": "Nature Communications",
         "year": "2026",
         "volume": "17",
-        "number": "1",
+        "number": "",
         "pages": "2389",
         "doi": "10.1038/s41467-026-69031-w",
         "url": "https://doi.org/10.1038/s41467-026-69031-w",
