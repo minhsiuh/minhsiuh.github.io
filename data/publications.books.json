@@ -19,6 +19,25 @@
       }
     },
     {
+      "id": "books-4",
+      "contentHtml": "Jun Qi, Min-Hsiu Hsieh. Federated quantum natural gradient descent for quantum federated learning. In: Federated Learning, edited by Lam M. Nguyen, Trong Nghia Hoang, and Pin-Yu Chen, Academic Press, 2024, pp. 329--341. [<a href=\"https://doi.org/10.1016/B978-0-44-319037-7.00028-4\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "book": {
+        "entryType": "incollection",
+        "citationKey": "Qi2024FQNGD",
+        "author": "Jun Qi and Min-Hsiu Hsieh",
+        "title": "Federated quantum natural gradient descent for quantum federated learning",
+        "booktitle": "Federated Learning",
+        "editor": "Lam M. Nguyen and Trong Nghia Hoang and Pin-Yu Chen",
+        "publisher": "Academic Press",
+        "year": "2024",
+        "pages": "329--341",
+        "isbn": "978-0-443-19037-7",
+        "doi": "10.1016/B978-0-44-319037-7.00028-4",
+        "url": "https://www.sciencedirect.com/science/article/pii/B9780443190377000284",
+        "keywords": "Quantum computing, Variational quantum circuit, Quantum federated learning, Federated quantum natural gradient descent"
+      }
+    },
+    {
       "id": "books-2",
       "contentHtml": "M.-H. Hsieh (Ed.). 16th Conference on the Theory of Quantum Computation, Communication and Cryptography (TQC 2021). Leibniz International Proceedings in Informatics (LIPIcs), vol. 197, Schloss Dagstuhl--Leibniz-Zentrum für Informatik, Dagstuhl, Germany (2021), ISBN 978-1-7138-3256-0. [<a href=\"https://drops.dagstuhl.de/storage/00lipics/lipics-vol197-tqc2021/LIPIcs.TQC.2021.0/LIPIcs.TQC.2021.0.pdf\" target=\"_blank\" rel=\"noopener\">DOI</a>] [<a href=\"https://drops.dagstuhl.de/storage/00lipics/lipics-vol197-tqc2021/LIPIcs.TQC.2021.0/LIPIcs.TQC.2021.0.pdf\" target=\"_blank\" rel=\"noopener\">PDF</a>].",
       "book": {
