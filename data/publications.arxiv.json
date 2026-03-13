@@ -7,20 +7,24 @@
       "contentHtml": "Adam Wills, Ting-Chun Lin, Rachel Yun Zhang, Min-Hsiu Hsieh. Linear-Time Encodable and Decodable Quantum Error-Correcting Codes. [<a href=\"https://arxiv.org/abs/2603.04543\" target=\"_blank\" rel=\"noopener\">arXiv:2603.04543</a>] (2026)."
     },
     {
+      "id": "arxiv-34",
+      "contentHtml": "Jun Qi, Chao-Han Huck Yang, Pin-Yu Chen, Javier Tejedor, Ling Li, Min-Hsiu Hsieh. Continual Quantum Architecture Search with Tensor-Train Encoding: Theory and Applications to Signal Processing. [<a href=\"https://arxiv.org/abs/2601.06392\" target=\"_blank\" rel=\"noopener\">arXiv:2601.06392</a>]"
+    },
+    {
       "id": "arxiv-2",
       "contentHtml": "Min-Hsiu Hsieh, Xingjian Li, Ting-Chun Lin. Simplified Quantum Weight Reduction with Optimal Bounds. [<a href=\"https://arxiv.org/abs/2510.09601\" target=\"_blank\" rel=\"noopener\">arXiv:2510.09601</a>] (2025)."
     },
     {
-      "id": "arxiv-3",
-      "contentHtml": "Chun-Tse Li, Tzen Ong, Chih-Yun Lin, Yu-Cheng Chen, Hsin Lin, Min-Hsiu Hsieh. Quantum Algorithm for Low Energy Effective Hamiltonian and Quasi-Degenerate Eigenvalue Problem. [<a href=\"https://arxiv.org/abs/2510.08088\" target=\"_blank\" rel=\"noopener\">arXiv:2510.08088</a>] (2025)."
+      "id": "arxiv-5",
+      "contentHtml": "Shi Jie Samuel Tan, Yifan Hong, Ting-Chun Lin, Michael J. Gullans, Min-Hsiu Hsieh. Single-Shot Universality in Quantum LDPC Codes via Code-Switching. [<a href=\"https://arxiv.org/abs/2510.08552\" target=\"_blank\" rel=\"noopener\">arXiv:2510.08552</a>] (2025)."
     },
     {
       "id": "arxiv-4",
       "contentHtml": "Kosuke Matsui, Jun-Yi Wu, Hayata Yamasaki, Min-Hsiu Hsieh, Mio Murao. Characterizing Space-Constrained Implementability of Quantum Instruments via Signaling Conditions. [<a href=\"https://arxiv.org/abs/2510.08313\" target=\"_blank\" rel=\"noopener\">arXiv:2510.08313</a>] (2025)."
     },
     {
-      "id": "arxiv-5",
-      "contentHtml": "Shi Jie Samuel Tan, Yifan Hong, Ting-Chun Lin, Michael J. Gullans, Min-Hsiu Hsieh. Single-Shot Universality in Quantum LDPC Codes via Code-Switching. [<a href=\"https://arxiv.org/abs/2510.08552\" target=\"_blank\" rel=\"noopener\">arXiv:2510.08552</a>] (2025)."
+      "id": "arxiv-3",
+      "contentHtml": "Chun-Tse Li, Tzen Ong, Chih-Yun Lin, Yu-Cheng Chen, Hsin Lin, Min-Hsiu Hsieh. Quantum Algorithm for Low Energy Effective Hamiltonian and Quasi-Degenerate Eigenvalue Problem. [<a href=\"https://arxiv.org/abs/2510.08088\" target=\"_blank\" rel=\"noopener\">arXiv:2510.08088</a>] (2025)."
     },
     {
       "id": "arxiv-6",
@@ -107,12 +111,12 @@
       "contentHtml": "Kaining Zhang, Min-Hsiu Hsieh, Liu Liu, Dacheng Tao. Toward Trainability of Deep Quantum Neural Networks. [<a href=\"https://arxiv.org/abs/2011.06258\" target=\"_blank\" rel=\"noopener\">arXiv:2112.15002</a>] (2022)."
     },
     {
-      "id": "arxiv-27",
-      "contentHtml": "Tom Gur, Min-Hsiu Hsieh, Sathyawageeswar Subramanian. Sublinear quantum algorithms for estimating von Neumann entropy. [<a href=\"https://arxiv.org/abs/2111.11139\" target=\"_blank\" rel=\"noopener\">arXiv:2111.11139</a>] (2021)."
-    },
-    {
       "id": "arxiv-28",
       "contentHtml": "Tanmay Singal, Min-Hsiu Hsieh. Approximate 3-designs and partial decomposition of the Clifford group representation using transvections. [<a href=\"https://arxiv.org/abs/2111.13678\" target=\"_blank\" rel=\"noopener\">arXiv:2111.13678</a>] (2021)."
+    },
+    {
+      "id": "arxiv-27",
+      "contentHtml": "Tom Gur, Min-Hsiu Hsieh, Sathyawageeswar Subramanian. Sublinear quantum algorithms for estimating von Neumann entropy. [<a href=\"https://arxiv.org/abs/2111.11139\" target=\"_blank\" rel=\"noopener\">arXiv:2111.11139</a>] (2021)."
     },
     {
       "id": "arxiv-29",
