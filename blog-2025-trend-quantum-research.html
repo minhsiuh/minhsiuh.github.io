@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2025 Trend in Quantum Research - Min-Hsiu Hsieh</title>
+  <style>
+    :root {
+      --primary-color: #2c3e50;
+      --secondary-color: #3498db;
+      --accent: #e67e22;
+      --text-color: #333;
+      --muted: #5f6b76;
+      --light-bg: #f8f9fa;
+      --panel: #ffffff;
+      --border-color: #e9ecef;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.7;
+      color: var(--text-color);
+      margin: 0;
+      background: var(--light-bg);
+    }
+    .container { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+    header {
+      background: linear-gradient(135deg, var(--primary-color), #34495e);
+      color: white;
+      padding: 54px 0 28px;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 10px; font-size: clamp(2rem, 4vw, 3.2rem); }
+    header p { margin: 0 auto; max-width: 760px; opacity: .92; }
+    nav {
+      background: white;
+      border-bottom: 1px solid var(--border-color);
+      position: sticky; top: 0; z-index: 100;
+    }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 32px; justify-content: center; flex-wrap: wrap; }
+    nav a { display: block; padding: 16px 0; text-decoration: none; color: var(--primary-color); font-weight: 500; }
+    nav a.active, nav a:hover { color: var(--secondary-color); }
+    main { padding: 42px 0 60px; }
+    .article { display: grid; gap: 24px; }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border-color);
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+    .lede { font-size: 1.08rem; color: var(--muted); }
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .metric {
+      background: #fdfdfd;
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 18px;
+    }
+    .metric .label { color: var(--muted); font-size: .85rem; margin-bottom: 6px; }
+    .metric .value { font-size: 1.8rem; font-weight: 700; color: var(--primary-color); }
+    h2 { margin-top: 0; color: var(--primary-color); }
+    h3 { color: var(--primary-color); margin-bottom: 10px; }
+    table { width: 100%; border-collapse: collapse; font-size: .96rem; }
+    th, td { padding: 10px 12px; border-bottom: 1px solid var(--border-color); text-align: left; }
+    th { background: #f7f9fb; }
+    .figure { text-align: center; }
+    .figure img { max-width: 100%; height: auto; border-radius: 14px; border: 1px solid var(--border-color); background: white; }
+    .caption { margin-top: 10px; color: var(--muted); font-size: .92rem; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+    .list-tight li { margin: 6px 0; }
+    .backlink { margin-bottom: 12px; display: inline-block; color: var(--secondary-color); text-decoration: none; }
+    @media (max-width: 900px) {
+      .meta-grid, .two-col { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      .meta-grid, .two-col { grid-template-columns: 1fr; }
+      .panel { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>2025 Trend in Quantum Research</h1>
+      <p>A structured overview of hot topics, keyword heat, and influential researchers in 2025 quantum research based on SciRate quant-ph papers with high scite attention.</p>
+    </div>
+  </header>
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div class="container article">
+      <a class="backlink" href="blog.html">← Back to Blog</a>
+
+      <section class="panel">
+        <p class="lede">This article reorganizes the original dashboard into a website-style narrative article. The dataset is based on <strong>SciRate quant-ph papers published in 2025</strong>, filtered to papers with <strong>scite ≥ 30</strong>, and then grouped into topic layers to estimate both topical coverage and weighted heat.</p>
+      </section>
+
+      <section class="panel">
+        <h2>Dataset Snapshot</h2>
+        <div class="meta-grid">
+          <div class="metric"><div class="label">arXiv quant-ph papers (2025)</div><div class="value">15,990</div></div>
+          <div class="metric"><div class="label">Covered hot papers</div><div class="value">835</div></div>
+          <div class="metric"><div class="label">Total keyword occurrences</div><div class="value">3,974</div></div>
+          <div class="metric"><div class="label">Total weighted heat</div><div class="value">10,519</div></div>
+          <div class="metric"><div class="label">Hot-paper share</div><div class="value">5.2%</div></div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Key Takeaways</h2>
+        <ul class="list-tight">
+          <li><strong>Quantum Error Correction & Fault-Tolerant Quantum Computing</strong> is the dominant area by a large margin, with 316 papers and the highest weighted heat.</li>
+          <li><strong>Quantum Information Theory</strong> and <strong>Many-Body / Condensed Matter / Open Quantum Systems</strong> remain major pillars, indicating strong breadth beyond hardware-centric narratives.</li>
+          <li><strong>Quantum Algorithms & Complexity Theory</strong> is broad in paper count, but its internal heat is concentrated in quantum advantage and algorithmic foundations.</li>
+          <li><strong>Quantum Machine Learning</strong> is active, but still substantially smaller than QEC, information theory, and many-body directions in this high-attention subset.</li>
+          <li>The researcher ranking is driven by repeated presence in high-attention papers rather than by a single blockbuster result.</li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h2>Top-Level Topic Heat</h2>
+        <table>
+          <thead>
+            <tr><th>Rank</th><th>Topic</th><th>Papers</th><th>Occurrences</th><th>Heat</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Quantum Error Correction & Fault-Tolerant Quantum Computing</td><td>316</td><td>1692</td><td>3900.22</td></tr>
+            <tr><td>2</td><td>Quantum Information Theory</td><td>180</td><td>811</td><td>1637.58</td></tr>
+            <tr><td>3</td><td>Many-Body, Condensed Matter & Open Quantum Systems</td><td>133</td><td>534</td><td>1423.46</td></tr>
+            <tr><td>4</td><td>Quantum Algorithms & Complexity Theory</td><td>221</td><td>469</td><td>1368.55</td></tr>
+            <tr><td>5</td><td>Others</td><td>138</td><td>45</td><td>683.76</td></tr>
+            <tr><td>6</td><td>Quantum Machine Learning</td><td>92</td><td>138</td><td>492.44</td></tr>
+            <tr><td>7</td><td>Quantum Systems & Characterization</td><td>85</td><td>165</td><td>466.16</td></tr>
+            <tr><td>8</td><td>Quantum Simulation</td><td>59</td><td>80</td><td>310.67</td></tr>
+            <tr><td>9</td><td>Quantum Communication & Cryptography</td><td>18</td><td>67</td><td>159.55</td></tr>
+            <tr><td>10</td><td>Quantum Sensing & Metrology</td><td>15</td><td>18</td><td>76.91</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="panel figure">
+        <h2>Topic Share Overview</h2>
+        <img src="assets/blog/2025-trend-quantum-research/top_level_share_pie.png" alt="Top-level topic share pie chart for 2025 quantum research">
+        <div class="caption">Top-level share of weighted topic heat across the 2025 hot-paper subset.</div>
+      </section>
+
+      <section class="panel two-col">
+        <div>
+          <h2>Where the Heat Is Concentrated</h2>
+          <h3>1) QEC & Fault Tolerance</h3>
+          <p>This area clearly dominates the map. Within it, <strong>Quantum Error Correction</strong> and <strong>Fault-Tolerant Quantum Computing</strong> are both large, with especially strong visibility for decoding, thresholds, surface codes, logical qubits, quantum LDPC codes, and fault-tolerant gates.</p>
+          <h3>2) Quantum Information Theory</h3>
+          <p>The most visible sub-areas are <strong>Entanglement & Resource Theory</strong>, <strong>Quantum States & Discrimination</strong>, and <strong>Quantum Channels & Capacities</strong>, showing that foundational theory remains a major pillar of the field.</p>
+          <h3>3) Algorithms & Complexity</h3>
+          <p>This cluster is broad but internally uneven. The strongest signal comes from <strong>Quantum Advantage</strong>, while other algorithmic areas such as QAOA and variational algorithms contribute less heat in this filtered set.</p>
+        </div>
+        <div>
+          <h2>Secondary but Still Active Areas</h2>
+          <h3>4) Many-Body / Condensed Matter / Open Systems</h3>
+          <p>This cluster is substantial, especially in many-body and condensed matter topics, with open-system and thermodynamics work forming a significant secondary layer.</p>
+          <h3>5) Quantum Machine Learning</h3>
+          <p>QML appears meaningfully, but not at the same scale as QEC or information theory. The largest internal theme is <strong>Quantum Data Encoding</strong>, with smaller contributions from generative models and variational QML.</p>
+          <h3>6) Systems & Characterization</h3>
+          <p>Benchmarking, tomography, architecture, and calibration form a coherent applied cluster, reflecting the continued importance of device characterization and experimental validation.</p>
+        </div>
+      </section>
+
+      <section class="panel figure">
+        <h2>Topic Tree Overview</h2>
+        <img src="assets/blog/2025-trend-quantum-research/topic_tree_overview.svg" alt="Topic tree overview for 2025 quantum research">
+        <div class="caption">Hierarchical topic structure showing top-level categories and how heat propagates into subtopics.</div>
+      </section>
+
+      <section class="panel">
+        <h2>High-Heat Keywords</h2>
+        <table>
+          <thead>
+            <tr><th>Rank</th><th>Keyword</th><th>Papers</th><th>Occurrences</th><th>Heat</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>quantum error correction</td><td>273</td><td>1205</td><td>2409.90</td></tr>
+            <tr><td>2</td><td>fault tolerant quantum computing</td><td>194</td><td>487</td><td>1490.31</td></tr>
+            <tr><td>3</td><td>quantum machine learning</td><td>92</td><td>138</td><td>492.44</td></tr>
+            <tr><td>4</td><td>surface code</td><td>83</td><td>167</td><td>422.89</td></tr>
+            <tr><td>5</td><td>quantum advantage</td><td>69</td><td>121</td><td>351.32</td></tr>
+            <tr><td>6</td><td>logical qubit</td><td>63</td><td>109</td><td>321.57</td></tr>
+            <tr><td>7</td><td>quantum simulation</td><td>59</td><td>80</td><td>310.67</td></tr>
+            <tr><td>8</td><td>quantum ldpc codes</td><td>53</td><td>139</td><td>273.61</td></tr>
+            <tr><td>9</td><td>quantum complexity theory</td><td>52</td><td>76</td><td>261.75</td></tr>
+            <tr><td>10</td><td>magic state distillation</td><td>35</td><td>63</td><td>181.78</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="panel figure">
+        <h2>Keyword Word Cloud</h2>
+        <img src="assets/blog/2025-trend-quantum-research/keyword_wordcloud.png" alt="Keyword word cloud for 2025 quantum research">
+        <div class="caption">The dominant keywords are heavily concentrated around QEC, fault tolerance, surface codes, logical qubits, and quantum advantage.</div>
+      </section>
+
+      <section class="panel">
+        <h2>Top Researchers in the Hot-Paper Set</h2>
+        <p>The ranking below follows the original report logic: total paper-level scite counts across coauthored hot papers, with tie-breakers from paper count, weighted heat, and author name.</p>
+        <table>
+          <thead>
+            <tr><th>Rank</th><th>Author</th><th>Papers</th><th>Total Scite</th><th>Weighted Heat</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Jens Eisert</td><td>27</td><td>2148</td><td>141.59</td></tr>
+            <tr><td>2</td><td>Hsin-Yuan Huang</td><td>13</td><td>1786</td><td>76.02</td></tr>
+            <tr><td>3</td><td>John Preskill</td><td>10</td><td>1258</td><td>56.92</td></tr>
+            <tr><td>4</td><td>Ryan Babbush</td><td>11</td><td>1135</td><td>60.70</td></tr>
+            <tr><td>5</td><td>Michael J. Gullans</td><td>13</td><td>1041</td><td>68.54</td></tr>
+            <tr><td>6</td><td>Mikhail D. Lukin</td><td>13</td><td>1029</td><td>69.17</td></tr>
+            <tr><td>7</td><td>Zoë Holmes</td><td>10</td><td>1006</td><td>54.53</td></tr>
+            <tr><td>8</td><td>John Wright</td><td>9</td><td>1003</td><td>50.15</td></tr>
+            <tr><td>9</td><td>David Hayes</td><td>10</td><td>937</td><td>53.65</td></tr>
+            <tr><td>10</td><td>Craig Gidney</td><td>7</td><td>887</td><td>39.62</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="panel">
+        <h2>Interpretation</h2>
+        <p>The 2025 hot-paper landscape is not evenly distributed. The strongest concentration is clearly around <strong>error correction, fault tolerance, and scalable architectures</strong>, indicating that the field is investing heavily in the path from theoretical possibility to robust implementation.</p>
+        <p>At the same time, <strong>quantum information theory</strong>, <strong>many-body physics</strong>, and <strong>algorithmic complexity</strong> remain foundational. This suggests that the field’s center of gravity is not purely engineering-driven; instead, it is a layered ecosystem where foundational theory, physical modeling, and practical fault tolerance all reinforce one another.</p>
+        <p>Meanwhile, <strong>quantum machine learning</strong> is active but still secondary in this high-attention slice. In other words, QML is part of the conversation, but not yet the main engine of the field when one looks specifically at highly visible 2025 papers.</p>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
