@@ -430,6 +430,45 @@
     }
     nav.site-nav a.active, nav.site-nav a:hover { color: var(--accent); }
 
+
+    /* Restore site header/nav styling on blog article */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    header {
+      background: linear-gradient(135deg, #2c3e50, #34495e);
+      color: white;
+      padding: 40px 0 24px;
+      text-align: center;
+    }
+    header h1 { margin: 0; font-size: 3rem; line-height: 1.1; color: white; }
+    .chinese-name { font-size: 1.2rem; margin: 8px 0; opacity: 0.9; }
+    .title { font-size: 1.1rem; opacity: 0.95; }
+    nav {
+      background: white;
+      border-bottom: 1px solid rgba(31,42,46,0.12);
+      position: sticky;
+      top: 0;
+      z-index: 300;
+      backdrop-filter: blur(10px);
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 32px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav li { list-style: none; }
+    nav a {
+      display: block;
+      padding: 16px 0;
+      text-decoration: none;
+      color: #2c3e50;
+      font-weight: 500;
+    }
+    nav a.active, nav a:hover { color: #3498db; }
+
   </style>
 </head>
 <body>
