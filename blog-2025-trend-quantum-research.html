@@ -1,97 +1,440 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>2025 Trend in Quantum Research - Min-Hsiu Hsieh</title>
   <style>
     :root {
-      --primary-color: #2c3e50;
-      --secondary-color: #3498db;
-      --accent: #e67e22;
-      --text-color: #333;
-      --muted: #5f6b76;
-      --light-bg: #f8f9fa;
-      --panel: #ffffff;
-      --border-color: #e9ecef;
+      --bg: #f5f1e8;
+      --panel: rgba(255,255,255,0.78);
+      --ink: #1f2a2e;
+      --muted: #58646a;
+      --line: rgba(31,42,46,0.12);
+      --accent: #cb5c2a;
+      --accent-2: #157a6e;
+      --accent-3: #d8a31a;
+      --shadow: 0 22px 70px rgba(61, 42, 21, 0.12);
+      --radius: 24px;
     }
     * { box-sizing: border-box; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      line-height: 1.7;
-      color: var(--text-color);
       margin: 0;
-      background: var(--light-bg);
+      font-family: "Avenir Next", "PingFang TC", "Noto Sans TC", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(203,92,42,0.18), transparent 32%),
+        radial-gradient(circle at top right, rgba(21,122,110,0.16), transparent 28%),
+        linear-gradient(180deg, #f8f4ec 0%, #f1eadf 100%);
+      min-height: 100vh;
     }
-    .container { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
-    header {
-      background: linear-gradient(135deg, var(--primary-color), #34495e);
-      color: white;
-      padding: 54px 0 28px;
-      text-align: center;
+    .shell {
+      width: min(1380px, calc(100vw - 40px));
+      margin: 24px auto 40px;
+      display: grid;
+      gap: 18px;
     }
-    header h1 { margin: 0 0 10px; font-size: clamp(2rem, 4vw, 3.2rem); }
-    header p { margin: 0 auto; max-width: 760px; opacity: .92; }
-    nav {
-      background: white;
-      border-bottom: 1px solid var(--border-color);
-      position: sticky; top: 0; z-index: 100;
+    .hero {
+      background: linear-gradient(135deg, rgba(31,42,46,0.96), rgba(38,58,64,0.92));
+      color: #fff9ef;
+      border-radius: 32px;
+      padding: 28px 30px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
     }
-    nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 32px; justify-content: center; flex-wrap: wrap; }
-    nav a { display: block; padding: 16px 0; text-decoration: none; color: var(--primary-color); font-weight: 500; }
-    nav a.active, nav a:hover { color: var(--secondary-color); }
-    main { padding: 42px 0 60px; }
-    .article { display: grid; gap: 24px; }
-    .panel {
-      background: var(--panel);
-      border: 1px solid var(--border-color);
-      border-radius: 18px;
-      padding: 28px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -60px -80px auto;
+      width: 240px;
+      height: 240px;
+      background: radial-gradient(circle, rgba(216,163,26,0.32), transparent 68%);
+      pointer-events: none;
     }
-    .lede { font-size: 1.08rem; color: var(--muted); }
-    .meta-grid {
+    .eyebrow {
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      font-size: 12px;
+      color: rgba(255,249,239,0.7);
+      margin-bottom: 10px;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(28px, 4vw, 52px);
+      line-height: 1;
+    }
+    .hero p {
+      margin: 0;
+      max-width: 840px;
+      color: rgba(255,249,239,0.82);
+      line-height: 1.55;
+      font-size: 15px;
+    }
+    .metrics {
       display: grid;
       grid-template-columns: repeat(5, minmax(0, 1fr));
       gap: 14px;
     }
-    .metric {
-      background: #fdfdfd;
-      border: 1px solid var(--border-color);
-      border-radius: 14px;
-      padding: 18px;
+    .card {
+      background: var(--panel);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.32);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
     }
-    .metric .label { color: var(--muted); font-size: .85rem; margin-bottom: 6px; }
-    .metric .value { font-size: 1.8rem; font-weight: 700; color: var(--primary-color); }
-    h2 { margin-top: 0; color: var(--primary-color); }
-    h3 { color: var(--primary-color); margin-bottom: 10px; }
-    table { width: 100%; border-collapse: collapse; font-size: .96rem; }
-    th, td { padding: 10px 12px; border-bottom: 1px solid var(--border-color); text-align: left; }
-    th { background: #f7f9fb; }
-    .figure { text-align: center; }
-    .figure img { max-width: 100%; height: auto; border-radius: 14px; border: 1px solid var(--border-color); background: white; }
-    .caption { margin-top: 10px; color: var(--muted); font-size: .92rem; }
-    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
-    .list-tight li { margin: 6px 0; }
-    .backlink { margin-bottom: 12px; display: inline-block; color: var(--secondary-color); text-decoration: none; }
-    @media (max-width: 900px) {
-      .meta-grid, .two-col { grid-template-columns: 1fr 1fr; }
+    .metric {
+      padding: 20px 22px;
+    }
+    .metric .label {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+    .metric .value {
+      font-size: clamp(28px, 3vw, 42px);
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .metric .sub {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .layout {
+      display: grid;
+      grid-template-columns: 1.35fr .95fr;
+      gap: 18px;
+    }
+    .media-layout {
+      display: grid;
+      grid-template-columns: 1.45fr .8fr;
+      gap: 18px;
+      align-items: start;
+    }
+    .panel {
+      padding: 22px;
+      height: 100%;
+    }
+    .panel h2 {
+      margin: 0 0 6px;
+      font-size: 26px;
+    }
+    .panel .desc {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .bar-list {
+      display: grid;
+      gap: 12px;
+    }
+    .bar-row {
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.72);
+      border: 1px solid var(--line);
+    }
+    .bar-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: baseline;
+      margin-bottom: 8px;
+    }
+    .bar-title {
+      font-size: 15px;
+      font-weight: 700;
+    }
+    .bar-meta {
+      font-size: 12px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    .bar-track {
+      height: 12px;
+      border-radius: 999px;
+      background: rgba(31,42,46,0.08);
+      overflow: hidden;
+    }
+    .bar-fill {
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-3));
+    }
+    .pie-panel {
+      display: grid;
+      gap: 22px;
+      justify-items: center;
+    }
+    .pie-wrap {
+      width: min(100%, 360px);
+      aspect-ratio: 1;
+      position: relative;
+      display: grid;
+      place-items: center;
+    }
+    .pie-svg {
+      width: 100%;
+      height: 100%;
+      transform: rotate(-90deg);
+    }
+    .pie-center {
+      position: absolute;
+      width: 44%;
+      aspect-ratio: 1;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.95);
+      border: 1px solid var(--line);
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 12px;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.6);
+    }
+    .pie-center strong {
+      display: block;
+      font-size: 18px;
+      line-height: 1.1;
+    }
+    .pie-center span {
+      display: block;
+      margin-top: 4px;
+      font-size: 11px;
+      color: var(--muted);
+      line-height: 1.3;
+    }
+    .pie-legend {
+      width: 100%;
+      display: grid;
+      gap: 8px;
+    }
+    .pie-legend-row {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 8px;
+      align-items: center;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .pie-swatch {
+      width: 12px;
+      height: 12px;
+      border-radius: 999px;
+    }
+    .pie-label {
+      color: var(--ink);
+      font-weight: 600;
+      line-height: 1.3;
+    }
+    .tree-controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .chip {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.8);
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 9px 14px;
+      cursor: pointer;
+      font-size: 13px;
+      transition: .18s ease;
+    }
+    .chip.active {
+      background: var(--accent);
+      color: white;
+      border-color: transparent;
+    }
+    .tree-wrap {
+      display: grid;
+      gap: 18px;
+    }
+    .tree-root-card {
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: rgba(255,255,255,0.82);
+      padding: 18px 20px;
+      border-left: 6px solid var(--accent);
+    }
+    .tree-root-card .tree-card-name {
+      font-size: 18px;
+    }
+    .tree-section {
+      display: grid;
+      gap: 10px;
+    }
+    .tree-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .tree-card {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255,255,255,0.76);
+      padding: 14px 14px 12px;
+      min-height: 134px;
+      display: grid;
+      align-content: start;
+      gap: 8px;
+      border-top: 4px solid var(--accent-3);
+    }
+    .tree-card.level-2 {
+      border-top-color: var(--accent-2);
+      background: rgba(248, 251, 250, 0.9);
+    }
+    .tree-card.level-3 {
+      background: rgba(255,255,255,0.78);
+    }
+    .tree-card-name {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.3;
+    }
+    .tree-card-name small {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 500;
+    }
+    .tree-card-stats {
+      display: grid;
+      gap: 4px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .tree-card-stats strong {
+      color: var(--ink);
+    }
+    .tree-children-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      padding-left: 12px;
+    }
+    .keyword-panel {
+      display: grid;
+      gap: 10px;
+    }
+    .keyword-side .keyword-panel {
+      max-height: 520px;
+      overflow: auto;
+      padding-right: 4px;
+    }
+    .keyword-row {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.76);
+      border-radius: 16px;
+      padding: 10px 12px;
+    }
+    .keyword-row .k {
+      font-weight: 700;
+      font-size: 13px;
+    }
+    .keyword-row .v {
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.4;
+      margin-top: 3px;
+    }
+    .footer {
+      color: var(--muted);
+      font-size: 12px;
+      text-align: right;
+      padding: 0 4px;
+    }
+    .author-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      overflow: hidden;
+      border-radius: 18px;
+    }
+    .author-table-wrap {
+      max-height: 560px;
+      overflow: auto;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.72);
+    }
+    .author-table th,
+    .author-table td {
+      text-align: left;
+      padding: 12px 10px;
+      border-bottom: 1px solid rgba(31,42,46,0.08);
+      vertical-align: top;
+    }
+    .author-table th {
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+    .author-table tr:last-child td {
+      border-bottom: none;
+    }
+    .author-table td strong {
+      display: block;
+      font-size: 14px;
+    }
+    .wordcloud-frame {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.86);
+      border-radius: 22px;
+      padding: 14px;
+      overflow: hidden;
+    }
+    .wordcloud-frame img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      background: #fff;
+    }
+    @media (max-width: 1040px) {
+      .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .layout { grid-template-columns: 1fr; }
+      .media-layout { grid-template-columns: 1fr; }
     }
     @media (max-width: 640px) {
-      .meta-grid, .two-col { grid-template-columns: 1fr; }
-      .panel { padding: 20px; }
+      .shell { width: min(100vw - 20px, 1380px); margin-top: 10px; }
+      .hero { padding: 22px 20px; border-radius: 24px; }
+      .panel { padding: 18px; }
+      .metrics { grid-template-columns: 1fr; }
+      .tree-grid { grid-template-columns: 1fr; }
+      .tree-children-grid { grid-template-columns: 1fr; padding-left: 0; }
     }
+  
+    nav.site-nav {
+      background: rgba(255,255,255,0.92);
+      border-bottom: 1px solid rgba(31,42,46,0.12);
+      position: sticky;
+      top: 0;
+      z-index: 300;
+      backdrop-filter: blur(10px);
+    }
+    nav.site-nav .nav-inner {
+      width: min(1380px, calc(100vw - 40px));
+      margin: 0 auto;
+    }
+    nav.site-nav ul {
+      list-style: none; margin: 0; padding: 0; display: flex; gap: 32px; justify-content: center; flex-wrap: wrap;
+    }
+    nav.site-nav a {
+      display: block; padding: 16px 0; text-decoration: none; color: var(--ink); font-weight: 600;
+    }
+    nav.site-nav a.active, nav.site-nav a:hover { color: var(--accent); }
+
   </style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>2025 Trend in Quantum Research</h1>
-      <p>A structured overview of hot topics, keyword heat, and influential researchers in 2025 quantum research based on SciRate quant-ph papers with high scite attention.</p>
-    </div>
-  </header>
-  <nav>
-    <div class="container">
+  <nav class="site-nav">
+    <div class="nav-inner">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -101,146 +444,367 @@
       </ul>
     </div>
   </nav>
-  <main>
-    <div class="container article">
-      <a class="backlink" href="blog.html">← Back to Blog</a>
 
-      <section class="panel">
-        <p class="lede">This article reorganizes the original dashboard into a website-style narrative article. The dataset is based on <strong>SciRate quant-ph papers published in 2025</strong>, filtered to papers with <strong>scite ≥ 30</strong>, and then grouped into topic layers to estimate both topical coverage and weighted heat.</p>
-      </section>
+  <div class="shell">
+    <section class="hero">
+      <div class="eyebrow"><a href="blog.html" style="color:rgba(255,249,239,0.82); text-decoration:none;">← Back to Blog</a></div>
+      <div class="eyebrow">2025 SciRate Quant-Ph Hot Papers</div>
+      <h1>2025 Trend in Quantum Research</h1>
+      <p>
+        This article presents the 2025 quantum research dashboard in the original report layout, summarizing hot-topic structure, weighted heat, and researcher visibility from SciRate quant-ph papers with scite >= 30.
+      </p>
+    </section>
 
-      <section class="panel">
-        <h2>Dataset Snapshot</h2>
-        <div class="meta-grid">
-          <div class="metric"><div class="label">arXiv quant-ph papers (2025)</div><div class="value">15,990</div></div>
-          <div class="metric"><div class="label">Covered hot papers</div><div class="value">835</div></div>
-          <div class="metric"><div class="label">Total keyword occurrences</div><div class="value">3,974</div></div>
-          <div class="metric"><div class="label">Total weighted heat</div><div class="value">10,519</div></div>
-          <div class="metric"><div class="label">Hot-paper share</div><div class="value">5.2%</div></div>
-        </div>
-      </section>
+    <section class="metrics" id="metrics"></section>
 
-      <section class="panel">
-        <h2>Key Takeaways</h2>
-        <ul class="list-tight">
-          <li><strong>Quantum Error Correction & Fault-Tolerant Quantum Computing</strong> is the dominant area by a large margin, with 316 papers and the highest weighted heat.</li>
-          <li><strong>Quantum Information Theory</strong> and <strong>Many-Body / Condensed Matter / Open Quantum Systems</strong> remain major pillars, indicating strong breadth beyond hardware-centric narratives.</li>
-          <li><strong>Quantum Algorithms & Complexity Theory</strong> is broad in paper count, but its internal heat is concentrated in quantum advantage and algorithmic foundations.</li>
-          <li><strong>Quantum Machine Learning</strong> is active, but still substantially smaller than QEC, information theory, and many-body directions in this high-attention subset.</li>
-          <li>The researcher ranking is driven by repeated presence in high-attention papers rather than by a single blockbuster result.</li>
-        </ul>
-      </section>
-
-      <section class="panel">
+    <section class="layout">
+      <div class="card panel">
         <h2>Top-Level Topic Heat</h2>
-        <table>
-          <thead>
-            <tr><th>Rank</th><th>Topic</th><th>Papers</th><th>Occurrences</th><th>Heat</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>1</td><td>Quantum Error Correction & Fault-Tolerant Quantum Computing</td><td>316</td><td>1692</td><td>3900.22</td></tr>
-            <tr><td>2</td><td>Quantum Information Theory</td><td>180</td><td>811</td><td>1637.58</td></tr>
-            <tr><td>3</td><td>Many-Body, Condensed Matter & Open Quantum Systems</td><td>133</td><td>534</td><td>1423.46</td></tr>
-            <tr><td>4</td><td>Quantum Algorithms & Complexity Theory</td><td>221</td><td>469</td><td>1368.55</td></tr>
-            <tr><td>5</td><td>Others</td><td>138</td><td>45</td><td>683.76</td></tr>
-            <tr><td>6</td><td>Quantum Machine Learning</td><td>92</td><td>138</td><td>492.44</td></tr>
-            <tr><td>7</td><td>Quantum Systems & Characterization</td><td>85</td><td>165</td><td>466.16</td></tr>
-            <tr><td>8</td><td>Quantum Simulation</td><td>59</td><td>80</td><td>310.67</td></tr>
-            <tr><td>9</td><td>Quantum Communication & Cryptography</td><td>18</td><td>67</td><td>159.55</td></tr>
-            <tr><td>10</td><td>Quantum Sensing & Metrology</td><td>15</td><td>18</td><td>76.91</td></tr>
-          </tbody>
-        </table>
-      </section>
+        <p class="desc">Ranked by `weighted_heat` to compare the relative prominence of major 2025 topics in the hot-paper set.</p>
+        <div class="bar-list" id="topLevelBars"></div>
+      </div>
 
-      <section class="panel figure">
-        <h2>Topic Share Overview</h2>
-        <img src="assets/blog/2025-trend-quantum-research/top_level_share_pie.svg" alt="Top-level topic share pie chart for 2025 quantum research">
-        <div class="caption">Top-level share of weighted topic heat across the 2025 hot-paper subset.</div>
-      </section>
-
-      <section class="panel two-col">
-        <div>
-          <h2>Where the Heat Is Concentrated</h2>
-          <h3>1) QEC & Fault Tolerance</h3>
-          <p>This area clearly dominates the map. Within it, <strong>Quantum Error Correction</strong> and <strong>Fault-Tolerant Quantum Computing</strong> are both large, with especially strong visibility for decoding, thresholds, surface codes, logical qubits, quantum LDPC codes, and fault-tolerant gates.</p>
-          <h3>2) Quantum Information Theory</h3>
-          <p>The most visible sub-areas are <strong>Entanglement & Resource Theory</strong>, <strong>Quantum States & Discrimination</strong>, and <strong>Quantum Channels & Capacities</strong>, showing that foundational theory remains a major pillar of the field.</p>
-          <h3>3) Algorithms & Complexity</h3>
-          <p>This cluster is broad but internally uneven. The strongest signal comes from <strong>Quantum Advantage</strong>, while other algorithmic areas such as QAOA and variational algorithms contribute less heat in this filtered set.</p>
+      <div class="card panel">
+        <h2>Top-Level Share</h2>
+        <p class="desc">A pie view of how each top-level topic contributes to the overall weighted heat.</p>
+        <div class="pie-panel">
+          <div class="pie-wrap" id="topLevelPie"></div>
+          <div class="pie-legend" id="topLevelPieLegend"></div>
         </div>
-        <div>
-          <h2>Secondary but Still Active Areas</h2>
-          <h3>4) Many-Body / Condensed Matter / Open Systems</h3>
-          <p>This cluster is substantial, especially in many-body and condensed matter topics, with open-system and thermodynamics work forming a significant secondary layer.</p>
-          <h3>5) Quantum Machine Learning</h3>
-          <p>QML appears meaningfully, but not at the same scale as QEC or information theory. The largest internal theme is <strong>Quantum Data Encoding</strong>, with smaller contributions from generative models and variational QML.</p>
-          <h3>6) Systems & Characterization</h3>
-          <p>Benchmarking, tomography, architecture, and calibration form a coherent applied cluster, reflecting the continued importance of device characterization and experimental validation.</p>
+      </div>
+    </section>
+
+    <section class="card panel">
+      <h2>Topic Tree Explorer</h2>
+      <p class="desc">Switch across top-level themes. Both second-level and third-level nodes are shown as cards so papers, occurrences, and heat can be compared more directly.</p>
+      <div class="tree-controls" id="treeControls"></div>
+      <div class="tree-wrap" id="treeWrap"></div>
+    </section>
+
+    <section class="media-layout">
+      <div class="card panel">
+        <h2>Circle Word Cloud</h2>
+        <p class="desc">The final keyword cloud uses the `circle` layout and a packed word cloud engine to present the overall contour of hot topics at a glance.</p>
+        <div class="wordcloud-frame">
+          <img id="wordcloudImage" alt="Circle keyword word cloud" />
         </div>
-      </section>
+      </div>
 
-      <section class="panel figure">
-        <h2>Topic Tree Overview</h2>
-        <img src="assets/blog/2025-trend-quantum-research/topic_tree_overview.svg" alt="Topic tree overview for 2025 quantum research">
-        <div class="caption">Hierarchical topic structure showing top-level categories and how heat propagates into subtopics.</div>
-      </section>
+      <div class="card panel keyword-side">
+        <h2>High-Quality Keywords</h2>
+        <p class="desc">A compact shortlist of representative phrases retained under the current quality rules.</p>
+        <div class="keyword-panel" id="keywordPanel"></div>
+      </div>
+    </section>
 
-      <section class="panel">
-        <h2>High-Heat Keywords</h2>
-        <table>
-          <thead>
-            <tr><th>Rank</th><th>Keyword</th><th>Papers</th><th>Occurrences</th><th>Heat</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>1</td><td>quantum error correction</td><td>273</td><td>1205</td><td>2409.90</td></tr>
-            <tr><td>2</td><td>fault tolerant quantum computing</td><td>194</td><td>487</td><td>1490.31</td></tr>
-            <tr><td>3</td><td>quantum machine learning</td><td>92</td><td>138</td><td>492.44</td></tr>
-            <tr><td>4</td><td>surface code</td><td>83</td><td>167</td><td>422.89</td></tr>
-            <tr><td>5</td><td>quantum advantage</td><td>69</td><td>121</td><td>351.32</td></tr>
-            <tr><td>6</td><td>logical qubit</td><td>63</td><td>109</td><td>321.57</td></tr>
-            <tr><td>7</td><td>quantum simulation</td><td>59</td><td>80</td><td>310.67</td></tr>
-            <tr><td>8</td><td>quantum ldpc codes</td><td>53</td><td>139</td><td>273.61</td></tr>
-            <tr><td>9</td><td>quantum complexity theory</td><td>52</td><td>76</td><td>261.75</td></tr>
-            <tr><td>10</td><td>magic state distillation</td><td>35</td><td>63</td><td>181.78</td></tr>
-          </tbody>
-        </table>
-      </section>
+    <section class="card panel">
+      <h2>Researcher Ranking</h2>
+      <p class="desc">Top researchers ranked by `total_scite`. The card keeps a fixed height and scrolls internally while showing the top 100 authors.</p>
+      <div id="authorTable"></div>
+    </section>
 
-      <section class="panel figure">
-        <h2>Keyword Word Cloud</h2>
-        <img src="assets/blog/2025-trend-quantum-research/keyword_wordcloud.png" alt="Keyword word cloud for 2025 quantum research">
-        <div class="caption">The dominant keywords are heavily concentrated around QEC, fault tolerance, surface codes, logical qubits, and quantum advantage.</div>
-      </section>
+    <div class="footer">Standalone dashboard generated from local CSV files.</div>
+  </div>
 
-      <section class="panel">
-        <h2>Top Researchers in the Hot-Paper Set</h2>
-        <p>The ranking below follows the original report logic: total paper-level scite counts across coauthored hot papers, with tie-breakers from paper count, weighted heat, and author name.</p>
-        <table>
-          <thead>
-            <tr><th>Rank</th><th>Author</th><th>Papers</th><th>Total Scite</th><th>Weighted Heat</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>1</td><td>Jens Eisert</td><td>27</td><td>2148</td><td>141.59</td></tr>
-            <tr><td>2</td><td>Hsin-Yuan Huang</td><td>13</td><td>1786</td><td>76.02</td></tr>
-            <tr><td>3</td><td>John Preskill</td><td>10</td><td>1258</td><td>56.92</td></tr>
-            <tr><td>4</td><td>Ryan Babbush</td><td>11</td><td>1135</td><td>60.70</td></tr>
-            <tr><td>5</td><td>Michael J. Gullans</td><td>13</td><td>1041</td><td>68.54</td></tr>
-            <tr><td>6</td><td>Mikhail D. Lukin</td><td>13</td><td>1029</td><td>69.17</td></tr>
-            <tr><td>7</td><td>Zoë Holmes</td><td>10</td><td>1006</td><td>54.53</td></tr>
-            <tr><td>8</td><td>John Wright</td><td>9</td><td>1003</td><td>50.15</td></tr>
-            <tr><td>9</td><td>David Hayes</td><td>10</td><td>937</td><td>53.65</td></tr>
-            <tr><td>10</td><td>Craig Gidney</td><td>7</td><td>887</td><td>39.62</td></tr>
-          </tbody>
-        </table>
-      </section>
+  <script>
+    const topicRows = [{"level": 0, "topic_zh": "量子計算", "topic_en": "Quantum Computing", "paper_count": 835, "occurrence_count": 3974, "weighted_heat": 10519.2978, "example_title": "Understanding Quantum Information and Computation"}, {"level": 1, "topic_zh": "量子錯誤校正與容錯量子計算", "topic_en": "Quantum Error Correction & Fault-Tolerant Quantum Computing", "paper_count": 316, "occurrence_count": 1692, "weighted_heat": 3900.2156, "example_title": "Understanding Quantum Information and Computation"}, {"level": 2, "topic_zh": "量子錯誤校正", "topic_en": "Quantum Error Correction", "paper_count": 273, "occurrence_count": 1205, "weighted_heat": 2409.9014, "example_title": "Understanding Quantum Information and Computation"}, {"level": 3, "topic_zh": "表面碼", "topic_en": "Surface Code", "paper_count": 83, "occurrence_count": 167, "weighted_heat": 422.8856, "example_title": "How to factor 2048 bit RSA integers with less than a million noisy qubits"}, {"level": 3, "topic_zh": "量子 LDPC 碼", "topic_en": "Quantum LDPC Codes", "paper_count": 53, "occurrence_count": 139, "weighted_heat": 273.6083, "example_title": "Computing Efficiently in QLDPC Codes"}, {"level": 3, "topic_zh": "邏輯量子位元", "topic_en": "Logical Qubit", "paper_count": 63, "occurrence_count": 109, "weighted_heat": 321.5672, "example_title": "How to factor 2048 bit RSA integers with less than a million noisy qubits"}, {"level": 3, "topic_zh": "解碼器與錯誤閾值", "topic_en": "Decoding & Threshold", "paper_count": 95, "occurrence_count": 345, "weighted_heat": 482.7329, "example_title": "Colour Codes Reach Surface Code Performance using Vibe Decoding"}, {"level": 2, "topic_zh": "容錯量子計算", "topic_en": "Fault-Tolerant Quantum Computing", "paper_count": 194, "occurrence_count": 487, "weighted_heat": 1490.3142, "example_title": "Understanding Quantum Information and Computation"}, {"level": 3, "topic_zh": "容錯閘操作", "topic_en": "Fault-Tolerant Gates", "paper_count": 72, "occurrence_count": 151, "weighted_heat": 373.0947, "example_title": "Multi-qubit Toffoli with exponentially fewer T gates"}, {"level": 3, "topic_zh": "魔術態蒸餾", "topic_en": "Magic State Distillation", "paper_count": 35, "occurrence_count": 63, "weighted_heat": 181.7798, "example_title": "How to factor 2048 bit RSA integers with less than a million noisy qubits"}, {"level": 3, "topic_zh": "格狀手術／碼變形", "topic_en": "Lattice Surgery / Code Deformation", "paper_count": 21, "occurrence_count": 44, "weighted_heat": 108.5445, "example_title": "Computing Efficiently in QLDPC Codes"}, {"level": 3, "topic_zh": "容錯架構與資源估算", "topic_en": "FT Architecture & Resource Estimation", "paper_count": 52, "occurrence_count": 87, "weighted_heat": 264.1278, "example_title": "Myths around quantum computation before full fault tolerance: What no-go theorems rule out and what they don't"}, {"level": 1, "topic_zh": "量子演算法與計算理論", "topic_en": "Quantum Algorithms & Complexity Theory", "paper_count": 221, "occurrence_count": 469, "weighted_heat": 1368.5477, "example_title": "Understanding Quantum Information and Computation"}, {"level": 2, "topic_zh": "量子演算法", "topic_en": "Quantum Algorithms", "paper_count": 191, "occurrence_count": 393, "weighted_heat": 1106.8019, "example_title": "Understanding Quantum Information and Computation"}, {"level": 3, "topic_zh": "量子傅立葉轉換", "topic_en": "Quantum Fourier Transform", "paper_count": 8, "occurrence_count": 17, "weighted_heat": 41.3411, "example_title": "Catalytic $z$-rotations in constant $T$-depth"}, {"level": 3, "topic_zh": "量子近似優化演算法", "topic_en": "QAOA", "paper_count": 6, "occurrence_count": 27, "weighted_heat": 29.7525, "example_title": "Decoded Quantum Interferometry Requires Structure"}, {"level": 3, "topic_zh": "變分量子演算法", "topic_en": "Variational Quantum Algorithms", "paper_count": 3, "occurrence_count": 3, "weighted_heat": 16.8402, "example_title": "Myths around quantum computation before full fault tolerance: What no-go theorems rule out and what they don't"}, {"level": 3, "topic_zh": "量子優勢", "topic_en": "Quantum Advantage", "paper_count": 69, "occurrence_count": 121, "weighted_heat": 351.3242, "example_title": "Mind the gaps: The fraught road to quantum advantage"}, {"level": 2, "topic_zh": "量子複雜性理論", "topic_en": "Quantum Complexity Theory", "paper_count": 52, "occurrence_count": 76, "weighted_heat": 261.7458, "example_title": "Optimal learning of quantum channels in diamond distance"}, {"level": 3, "topic_zh": "通訊複雜度", "topic_en": "Communication Complexity", "paper_count": 2, "occurrence_count": 6, "weighted_heat": 9.8602, "example_title": "Magic and communication complexity"}, {"level": 1, "topic_zh": "量子模擬", "topic_en": "Quantum Simulation", "paper_count": 59, "occurrence_count": 80, "weighted_heat": 310.6685, "example_title": "Mind the gaps: The fraught road to quantum advantage"}, {"level": 2, "topic_zh": "類比量子模擬", "topic_en": "Analog Quantum Simulation", "paper_count": 3, "occurrence_count": 3, "weighted_heat": 16.2641, "example_title": "Quantum Glassiness From Efficient Learning"}, {"level": 2, "topic_zh": "數位量子模擬", "topic_en": "Digital Quantum Simulation", "paper_count": 2, "occurrence_count": 4, "weighted_heat": 10.5858, "example_title": "Programmable digital quantum simulation of 2D Fermi-Hubbard dynamics using 72 superconducting qubits"}, {"level": 2, "topic_zh": "多體量子系統模擬", "topic_en": "Many-Body Quantum Simulation", "paper_count": 13, "occurrence_count": 16, "weighted_heat": 65.2877, "example_title": "Random unitaries that conserve energy"}, {"level": 1, "topic_zh": "量子系統與表徵", "topic_en": "Quantum Systems & Characterization", "paper_count": 85, "occurrence_count": 165, "weighted_heat": 466.1616, "example_title": "Programmable digital quantum simulation of 2D Fermi-Hubbard dynamics using 72 superconducting qubits"}, {"level": 2, "topic_zh": "量子系統架構", "topic_en": "Quantum Architecture", "paper_count": 16, "occurrence_count": 16, "weighted_heat": 78.4383, "example_title": "Programmable digital quantum simulation of 2D Fermi-Hubbard dynamics using 72 superconducting qubits"}, {"level": 2, "topic_zh": "量子層析", "topic_en": "Quantum Tomography", "paper_count": 21, "occurrence_count": 59, "weighted_heat": 106.6834, "example_title": "Mixed state tomography reduces to pure state tomography"}, {"level": 2, "topic_zh": "基準測試與表徵", "topic_en": "Benchmarking & Characterization", "paper_count": 52, "occurrence_count": 84, "weighted_heat": 256.3167, "example_title": "A complete theory of the Clifford commutant"}, {"level": 2, "topic_zh": "噪聲分析與校準", "topic_en": "Noise Analysis & Calibration", "paper_count": 5, "occurrence_count": 6, "weighted_heat": 24.7232, "example_title": "Reinforcement Learning Control of Quantum Error Correction"}, {"level": 1, "topic_zh": "量子機器學習", "topic_en": "Quantum Machine Learning", "paper_count": 92, "occurrence_count": 138, "weighted_heat": 492.4375, "example_title": "Amplitude amplification and estimation require inverses"}, {"level": 2, "topic_zh": "量子資料編碼", "topic_en": "Quantum Data Encoding", "paper_count": 51, "occurrence_count": 67, "weighted_heat": 259.1759, "example_title": "Helios: A 98-qubit trapped-ion quantum computer"}, {"level": 2, "topic_zh": "變分量子機器學習", "topic_en": "Variational Quantum Machine Learning", "paper_count": 4, "occurrence_count": 5, "weighted_heat": 19.5644, "example_title": "A Solovay-Kitaev theorem for quantum signal processing"}, {"level": 2, "topic_zh": "量子增強學習與生成模型", "topic_en": "Quantum-Enhanced Learning & Generative Models", "paper_count": 7, "occurrence_count": 12, "weighted_heat": 33.5018, "example_title": "Quantum Fisher information matrices from Rényi relative entropies"}, {"level": 1, "topic_zh": "量子感測與量子計量學", "topic_en": "Quantum Sensing & Metrology", "paper_count": 15, "occurrence_count": 18, "weighted_heat": 76.9147, "example_title": "Mixed state tomography reduces to pure state tomography"}, {"level": 2, "topic_zh": "量子計量學", "topic_en": "Quantum Metrology", "paper_count": 14, "occurrence_count": 17, "weighted_heat": 72.3883, "example_title": "Mixed state tomography reduces to pure state tomography"}, {"level": 2, "topic_zh": "精密測量與參數估計", "topic_en": "Precision Measurement & Parameter Estimation", "paper_count": 1, "occurrence_count": 1, "weighted_heat": 4.5264, "example_title": "Criteria for unbiased estimation: applications to noise-agnostic sensing and learnability of quantum channel"}, {"level": 1, "topic_zh": "量子資訊理論", "topic_en": "Quantum Information Theory", "paper_count": 180, "occurrence_count": 811, "weighted_heat": 1637.5769, "example_title": "Mixed state tomography reduces to pure state tomography"}, {"level": 2, "topic_zh": "量子通道與容量", "topic_en": "Quantum Channels & Capacities", "paper_count": 33, "occurrence_count": 80, "weighted_heat": 162.26, "example_title": "Understanding Quantum Information and Computation"}, {"level": 2, "topic_zh": "糾纏與資源理論", "topic_en": "Entanglement & Resource Theory", "paper_count": 105, "occurrence_count": 271, "weighted_heat": 520.1942, "example_title": "Mixed state tomography reduces to pure state tomography"}, {"level": 2, "topic_zh": "量子態與可區分性", "topic_en": "Quantum States & Discrimination", "paper_count": 36, "occurrence_count": 63, "weighted_heat": 180.8899, "example_title": "Mixed state tomography reduces to pure state tomography"}, {"level": 1, "topic_zh": "量子通訊與量子密碼", "topic_en": "Quantum Communication & Cryptography", "paper_count": 18, "occurrence_count": 67, "weighted_heat": 159.5506, "example_title": "Random Unitaries in Constant (Quantum) Time"}, {"level": 2, "topic_zh": "量子金鑰分發", "topic_en": "Quantum Key Distribution", "paper_count": 2, "occurrence_count": 2, "weighted_heat": 9.2471, "example_title": "Absolutely Maximal Entanglement in Continuous Variables"}, {"level": 2, "topic_zh": "量子網路與中繼器", "topic_en": "Quantum Networks & Repeaters", "paper_count": 4, "occurrence_count": 7, "weighted_heat": 21.4171, "example_title": "Constant Overhead Entanglement Distillation via Scrambling"}, {"level": 2, "topic_zh": "量子密碼", "topic_en": "Quantum Cryptography", "paper_count": 9, "occurrence_count": 19, "weighted_heat": 44.5799, "example_title": "Random Unitaries in Constant (Quantum) Time"}, {"level": 1, "topic_zh": "量子多體、凝態與開放系統", "topic_en": "Many-Body, Condensed Matter & Open Quantum Systems", "paper_count": 133, "occurrence_count": 534, "weighted_heat": 1423.4646, "example_title": "Grover's algorithm is an approximation of imaginary-time evolution"}, {"level": 2, "topic_zh": "多體與凝態主題", "topic_en": "Many-Body & Condensed Matter", "paper_count": 106, "occurrence_count": 181, "weighted_heat": 532.6674, "example_title": "Fermionic dynamics on a trapped-ion quantum computer beyond exact classical simulation"}, {"level": 2, "topic_zh": "開放量子系統與耗散", "topic_en": "Open Quantum Systems & Dissipation", "paper_count": 23, "occurrence_count": 51, "weighted_heat": 113.3729, "example_title": "Dissipative Preparation of Many-Body Quantum States: Towards Practical Quantum Advantage"}, {"level": 2, "topic_zh": "量子熱力學與動力學", "topic_en": "Quantum Thermodynamics & Dynamics", "paper_count": 22, "occurrence_count": 38, "weighted_heat": 110.7697, "example_title": "Grover's algorithm is an approximation of imaginary-time evolution"}, {"level": 1, "topic_zh": "其他熱門主題", "topic_en": "Others", "paper_count": 138, "occurrence_count": 45, "weighted_heat": 683.7601, "example_title": "Few Single-Qubit Measurements Suffice to Certify Any Quantum State"}, {"level": 2, "topic_zh": "高斯態", "topic_en": "Gaussian States", "paper_count": 3, "occurrence_count": 7, "weighted_heat": 14.907, "example_title": "Higher moment theory and learnability of bosonic states"}, {"level": 2, "topic_zh": "玻色子系統", "topic_en": "Bosonic Systems", "paper_count": 6, "occurrence_count": 37, "weighted_heat": 31.0, "example_title": "Separating QMA from QCMA with a classical oracle"}, {"level": 2, "topic_zh": "連續變量量子資訊", "topic_en": "Continuous-Variable Systems", "paper_count": 1, "occurrence_count": 1, "weighted_heat": 4.5553, "example_title": "Trading modes against energy"}];
+    const keywordRows = [{"keyword": "quantum error correction", "paper_mentions": "211", "document_frequency": "151", "weighted_score": "1062.1891", "variants": "error correcting code, error correction, quantum error correcting, quantum error correcting codes", "example_title": "Understanding Quantum Information and Computation"}, {"keyword": "surface code", "paper_mentions": "122", "document_frequency": "83", "weighted_score": "620.6494", "variants": "surface codes", "example_title": "How to factor 2048 bit RSA integers with less than a million noisy qubits"}, {"keyword": "quantum advantage", "paper_mentions": "78", "document_frequency": "78", "weighted_score": "397.1987", "variants": "", "example_title": "Mind the gaps: The fraught road to quantum advantage"}, {"keyword": "logical qubit", "paper_mentions": "111", "document_frequency": "63", "weighted_score": "568.0676", "variants": "logical qubits", "example_title": "How to factor 2048 bit RSA integers with less than a million noisy qubits"}, {"keyword": "fault tolerant quantum computing", "paper_mentions": "52", "document_frequency": "48", "weighted_score": "267.3946", "variants": "fault tolerant quantum computation, fault tolerance", "example_title": "Myths around quantum computation before full fault tolerance: What no-go theorems rule out and what they don't"}, {"keyword": "quantum ldpc codes", "paper_mentions": "34", "document_frequency": "34", "weighted_score": "173.3701", "variants": "qldpc codes, qldpc code", "example_title": "Computing Efficiently in QLDPC Codes"}, {"keyword": "quantum machine learning", "paper_mentions": "21", "document_frequency": "21", "weighted_score": "104.2319", "variants": "quantum learning", "example_title": "Learning to erase quantum states: thermodynamic implications of quantum learning theory"}, {"keyword": "magic state distillation", "paper_mentions": "19", "document_frequency": "19", "weighted_score": "100.3318", "variants": "magic states", "example_title": "How to factor 2048 bit RSA integers with less than a million noisy qubits"}, {"keyword": "quantum metrology", "paper_mentions": "11", "document_frequency": "11", "weighted_score": "55.9589", "variants": "", "example_title": "Mixed state tomography reduces to pure state tomography"}, {"keyword": "quantum complexity theory", "paper_mentions": "10", "document_frequency": "10", "weighted_score": "49.4146", "variants": "computational complexity, quantum complexity", "example_title": "Random Unitaries in Constant (Quantum) Time"}, {"keyword": "quantum state tomography", "paper_mentions": "9", "document_frequency": "9", "weighted_score": "45.9897", "variants": "", "example_title": "Optimal learning of quantum channels in diamond distance"}, {"keyword": "quantum simulation", "paper_mentions": "7", "document_frequency": "7", "weighted_score": "36.2342", "variants": "", "example_title": "Programmable digital quantum simulation of 2D Fermi-Hubbard dynamics using 72 superconducting qubits"}, {"keyword": "quantum fourier transform", "paper_mentions": "6", "document_frequency": "6", "weighted_score": "31.5377", "variants": "", "example_title": "Catalytic $z$-rotations in constant $T$-depth"}, {"keyword": "quantum approximate optimization", "paper_mentions": "6", "document_frequency": "5", "weighted_score": "29.2190", "variants": "quantum approximate optimization algorithm", "example_title": "Threshold for Fault-tolerant Quantum Advantage with the Quantum Approximate Optimization Algorithm"}];
+    const authorRows = [{"rank": "1", "author": "Jens Eisert", "paper_count": "27", "total_scite": "2148", "weighted_heat": "141.5893", "top_scite": "236", "top_paper": "Mind the gaps: The fraught road to quantum advantage"}, {"rank": "2", "author": "Hsin-Yuan Huang", "paper_count": "13", "total_scite": "1786", "weighted_heat": "76.0195", "top_scite": "234", "top_paper": "The vast world of quantum advantage"}, {"rank": "3", "author": "John Preskill", "paper_count": "10", "total_scite": "1258", "weighted_heat": "56.9234", "top_scite": "236", "top_paper": "Mind the gaps: The fraught road to quantum advantage"}, {"rank": "4", "author": "Ryan Babbush", "paper_count": "11", "total_scite": "1135", "weighted_heat": "60.7032", "top_scite": "186", "top_paper": "Magic state cultivation on a superconducting quantum processor"}, {"rank": "5", "author": "Michael J. Gullans", "paper_count": "13", "total_scite": "1041", "weighted_heat": "68.5385", "top_scite": "214", "top_paper": "Peaked quantum advantage using error correction"}, {"rank": "6", "author": "Mikhail D. Lukin", "paper_count": "13", "total_scite": "1029", "weighted_heat": "69.1671", "top_scite": "130", "top_paper": "Architectural mechanisms of a universal fault-tolerant quantum computer"}, {"rank": "7", "author": "Zoë Holmes", "paper_count": "10", "total_scite": "1006", "weighted_heat": "54.5327", "top_scite": "230", "top_paper": "Myths around quantum computation before full fault tolerance: What no-go theorems rule out and what they don't"}, {"rank": "8", "author": "John Wright", "paper_count": "9", "total_scite": "1003", "weighted_heat": "50.1509", "top_scite": "216", "top_paper": "Mixed state tomography reduces to pure state tomography"}, {"rank": "9", "author": "David Hayes", "paper_count": "10", "total_scite": "937", "weighted_heat": "53.6499", "top_scite": "204", "top_paper": "Demonstrating an unconditional separation between quantum and classical information resources"}, {"rank": "10", "author": "Craig Gidney", "paper_count": "7", "total_scite": "887", "weighted_heat": "39.6214", "top_scite": "269", "top_paper": "How to factor 2048 bit RSA integers with less than a million noisy qubits"}, {"rank": "11", "author": "Jarrod R. McClean", "paper_count": "6", "total_scite": "874", "weighted_heat": "35.1143", "top_scite": "234", "top_paper": "The vast world of quantum advantage"}, {"rank": "12", "author": "Lennart Bittel", "paper_count": "8", "total_scite": "848", "weighted_heat": "44.4681", "top_scite": "215", "top_paper": "A complete theory of the Clifford commutant"}, {"rank": "13", "author": "Lorenzo Leone", "paper_count": "8", "total_scite": "838", "weighted_heat": "44.3151", "top_scite": "215", "top_paper": "A complete theory of the Clifford commutant"}, {"rank": "14", "author": "Thomas Schuster", "paper_count": "7", "total_scite": "795", "weighted_heat": "39.9211", "top_scite": "172", "top_paper": "Unitary designs in nearly optimal depth"}, {"rank": "15", "author": "Fernando G. S. L. Brandão", "paper_count": "6", "total_scite": "788", "weighted_heat": "34.8121", "top_scite": "230", "top_paper": "Myths around quantum computation before full fault tolerance: What no-go theorems rule out and what they don't"}, {"rank": "16", "author": "Ewin Tang", "paper_count": "6", "total_scite": "786", "weighted_heat": "34.5649", "top_scite": "216", "top_paper": "Mixed state tomography reduces to pure state tomography"}, {"rank": "17", "author": "Brian Neyenhuis", "paper_count": "9", "total_scite": "740", "weighted_heat": "46.7918", "top_scite": "204", "top_paper": "Demonstrating an unconditional separation between quantum and classical information resources"}, {"rank": "18", "author": "Antonio A. Mele", "paper_count": "7", "total_scite": "739", "weighted_heat": "38.9453", "top_scite": "215", "top_paper": "A complete theory of the Clifford commutant"}, {"rank": "19", "author": "Zhiyang He", "paper_count": "9", "total_scite": "720", "weighted_heat": "48.1320", "top_scite": "113", "top_paper": "Composable Quantum Fault-Tolerance"}, {"rank": "20", "author": "Soumik Ghosh", "paper_count": "7", "total_scite": "675", "weighted_heat": "37.9758", "top_scite": "214", "top_paper": "Peaked quantum advantage using error correction"}, {"rank": "21", "author": "Francesco Anna Mele", "paper_count": "9", "total_scite": "671", "weighted_heat": "47.2670", "top_scite": "140", "top_paper": "Random purification channel made simple"}, {"rank": "22", "author": "Bill Fefferman", "paper_count": "5", "total_scite": "666", "weighted_heat": "29.1218", "top_scite": "214", "top_paper": "Peaked quantum advantage using error correction"}, {"rank": "23", "author": "Noah Shutty", "paper_count": "6", "total_scite": "653", "weighted_heat": "33.9621", "top_scite": "186", "top_paper": "Magic state cultivation on a superconducting quantum processor"}, {"rank": "24", "author": "Sergio Boixo", "paper_count": "5", "total_scite": "640", "weighted_heat": "29.1081", "top_scite": "186", "top_paper": "Magic state cultivation on a superconducting quantum processor"}, {"rank": "25", "author": "Dolev Bluvstein", "paper_count": "7", "total_scite": "639", "weighted_heat": "38.2813", "top_scite": "130", "top_paper": "Architectural mechanisms of a universal fault-tolerant quantum computer"}, {"rank": "26", "author": "Michael Foss-Feig", "paper_count": "8", "total_scite": "628", "weighted_heat": "41.3902", "top_scite": "187", "top_paper": "Helios: A 98-qubit trapped-ion quantum computer"}, {"rank": "27", "author": "Dominic J. Williamson", "paper_count": "7", "total_scite": "626", "weighted_heat": "38.2031", "top_scite": "124", "top_paper": "Universal fault tolerant quantum computation in 2D without getting tied in knots"}, {"rank": "28", "author": "Liang Jiang", "paper_count": "10", "total_scite": "625", "weighted_heat": "50.5076", "top_scite": "140", "top_paper": "Classical simulation of noisy random circuits from exponential decay of correlation"}, {"rank": "29", "author": "Matthew DeCross", "paper_count": "6", "total_scite": "621", "weighted_heat": "32.6932", "top_scite": "204", "top_paper": "Demonstrating an unconditional separation between quantum and classical information resources"}, {"rank": "30", "author": "Hengyun Zhou", "paper_count": "7", "total_scite": "618", "weighted_heat": "38.0816", "top_scite": "130", "top_paper": "Architectural mechanisms of a universal fault-tolerant quantum computer"}, {"rank": "31", "author": "Robbie King", "paper_count": "6", "total_scite": "609", "weighted_heat": "33.3109", "top_scite": "155", "top_paper": "The Grand Challenge of Quantum Applications"}, {"rank": "32", "author": "Toby Cubitt", "paper_count": "5", "total_scite": "592", "weighted_heat": "28.0344", "top_scite": "230", "top_paper": "Myths around quantum computation before full fault tolerance: What no-go theorems rule out and what they don't"}, {"rank": "33", "author": "Thiago Bergamaschi", "paper_count": "6", "total_scite": "591", "weighted_heat": "33.1376", "top_scite": "138", "top_paper": "Fast Mixing of Quantum Spin Chains at All Temperatures"}, {"rank": "34", "author": "Guang Hao Low", "paper_count": "7", "total_scite": "585", "weighted_heat": "37.3309", "top_scite": "155", "top_paper": "The Grand Challenge of Quantum Applications"}, {"rank": "35", "author": "Soonwon Choi", "paper_count": "6", "total_scite": "585", "weighted_heat": "32.3173", "top_scite": "234", "top_paper": "The vast world of quantum advantage"}, {"rank": "36", "author": "Zi-Wen Liu", "paper_count": "8", "total_scite": "575", "weighted_heat": "42.0154", "top_scite": "102", "top_paper": "No Universal Purification in Quantum Mechanics"}, {"rank": "37", "author": "Lin Lin", "paper_count": "7", "total_scite": "574", "weighted_heat": "37.0398", "top_scite": "119", "top_paper": "Dissipative Preparation of Many-Body Quantum States: Towards Practical Quantum Advantage"}, {"rank": "38", "author": "Keisuke Fujii", "paper_count": "9", "total_scite": "572", "weighted_heat": "45.9741", "top_scite": "109", "top_paper": "Out-of-Time-Order Correlator Spectroscopy"}, {"rank": "39", "author": "Omar Fawzi", "paper_count": "10", "total_scite": "570", "weighted_heat": "49.8613", "top_scite": "114", "top_paper": "Fault-tolerant quantum computation with constant overhead for general noise"}, {"rank": "40", "author": "Karl Mayer", "paper_count": "4", "total_scite": "569", "weighted_heat": "23.4147", "top_scite": "204", "top_paper": "Demonstrating an unconditional separation between quantum and classical information resources"}, {"rank": "41", "author": "Tanuj Khattar", "paper_count": "5", "total_scite": "568", "weighted_heat": "28.0307", "top_scite": "186", "top_paper": "Magic state cultivation on a superconducting quantum processor"}, {"rank": "42", "author": "Freek Witteveen", "paper_count": "9", "total_scite": "565", "weighted_heat": "45.7248", "top_scite": "104", "top_paper": "Randomized truncation of quantum states"}, {"rank": "43", "author": "Zhenyu Cai", "paper_count": "6", "total_scite": "555", "weighted_heat": "31.8339", "top_scite": "230", "top_paper": "Myths around quantum computation before full fault tolerance: What no-go theorems rule out and what they don't"}, {"rank": "44", "author": "Oscar Higgott", "paper_count": "6", "total_scite": "553", "weighted_heat": "32.4744", "top_scite": "186", "top_paper": "Magic state cultivation on a superconducting quantum processor"}, {"rank": "45", "author": "Hartmut Neven", "paper_count": "4", "total_scite": "538", "weighted_heat": "23.4485", "top_scite": "186", "top_paper": "Magic state cultivation on a superconducting quantum processor"}, {"rank": "46", "author": "Aleksander Kubica", "paper_count": "8", "total_scite": "533", "weighted_heat": "41.5085", "top_scite": "97", "top_paper": "Fast correlated decoding of transversal logical algorithms"}, {"rank": "47", "author": "Madelyn Cain", "paper_count": "6", "total_scite": "524", "weighted_heat": "32.5277", "top_scite": "130", "top_paper": "Architectural mechanisms of a universal fault-tolerant quantum computer"}, {"rank": "48", "author": "Chi-Fang Chen", "paper_count": "5", "total_scite": "524", "weighted_heat": "28.0846", "top_scite": "142", "top_paper": "Catalytic Tomography of Ground States"}, {"rank": "49", "author": "Salvatore F. E. Oliviero", "paper_count": "4", "total_scite": "519", "weighted_heat": "23.1514", "top_scite": "215", "top_paper": "A complete theory of the Clifford commutant"}, {"rank": "50", "author": "Theodore J. Yoder", "paper_count": "5", "total_scite": "507", "weighted_heat": "28.1300", "top_scite": "108", "top_paper": "Extractors: QLDPC Architectures for Efficient Pauli-Based Computation"}, {"rank": "51", "author": "Cameron Foltz", "paper_count": "8", "total_scite": "502", "weighted_heat": "39.7449", "top_scite": "187", "top_paper": "Helios: A 98-qubit trapped-ion quantum computer"}, {"rank": "52", "author": "Manuel S. Rudolph", "paper_count": "7", "total_scite": "498", "weighted_heat": "36.3327", "top_scite": "119", "top_paper": "Simulating quantum circuits with arbitrary local noise using Pauli Propagation"}, {"rank": "53", "author": "Marcin Kalinowski", "paper_count": "5", "total_scite": "498", "weighted_heat": "27.7478", "top_scite": "130", "top_paper": "Architectural mechanisms of a universal fault-tolerant quantum computer"}, {"rank": "54", "author": "Joschka Roffe", "paper_count": "5", "total_scite": "495", "weighted_heat": "27.6985", "top_scite": "144", "top_paper": "Computing Efficiently in QLDPC Codes"}, {"rank": "55", "author": "Scott Aaronson", "paper_count": "4", "total_scite": "489", "weighted_heat": "22.7104", "top_scite": "204", "top_paper": "Demonstrating an unconditional separation between quantum and classical information resources"}, {"rank": "56", "author": "Nishad Maskara", "paper_count": "6", "total_scite": "485", "weighted_heat": "31.8590", "top_scite": "130", "top_paper": "Architectural mechanisms of a universal fault-tolerant quantum computer"}, {"rank": "57", "author": "Mark Webster", "paper_count": "5", "total_scite": "482", "weighted_heat": "27.6009", "top_scite": "140", "top_paper": "Colour Codes Reach Surface Code Performance using Vibe Decoding"}, {"rank": "58", "author": "Jonas Haferkamp", "paper_count": "5", "total_scite": "481", "weighted_heat": "27.7134", "top_scite": "150", "top_paper": "Separating QMA from QCMA with a classical oracle"}, {"rank": "59", "author": "Robin Blume-Kohout", "paper_count": "6", "total_scite": "476", "weighted_heat": "31.1321", "top_scite": "187", "top_paper": "Helios: A 98-qubit trapped-ion quantum computer"}, {"rank": "60", "author": "William J. Huggins", "paper_count": "4", "total_scite": "474", "weighted_heat": "22.4769", "top_scite": "186", "top_paper": "Magic state cultivation on a superconducting quantum processor"}, {"rank": "61", "author": "Joan M. Dreiling", "paper_count": "7", "total_scite": "471", "weighted_heat": "35.2792", "top_scite": "187", "top_paper": "Helios: A 98-qubit trapped-ion quantum computer"}, {"rank": "62", "author": "Michael Mills", "paper_count": "7", "total_scite": "471", "weighted_heat": "35.2792", "top_scite": "187", "top_paper": "Helios: A 98-qubit trapped-ion quantum computer"}, {"rank": "63", "author": "Mark M. Wilde", "paper_count": "10", "total_scite": "468", "weighted_heat": "48.0346", "top_scite": "84", "top_paper": "Query complexities of quantum channel discrimination and estimation: A unified approach"}, {"rank": "64", "author": "M. Cerezo", "paper_count": "7", "total_scite": "467", "weighted_heat": "36.0393", "top_scite": "119", "top_paper": "Simulating quantum circuits with arbitrary local noise using Pauli Propagation"}, {"rank": "65", "author": "Zhenhuan Liu", "paper_count": "6", "total_scite": "458", "weighted_heat": "31.8147", "top_scite": "102", "top_paper": "No Universal Purification in Quantum Mechanics"}, {"rank": "66", "author": "Andi Gu", "paper_count": "5", "total_scite": "454", "weighted_heat": "27.4323", "top_scite": "130", "top_paper": "Architectural mechanisms of a universal fault-tolerant quantum computer"}, {"rank": "67", "author": "Ludovico Lami", "paper_count": "9", "total_scite": "451", "weighted_heat": "43.2834", "top_scite": "140", "top_paper": "Random purification channel made simple"}, {"rank": "68", "author": "Michael Broughton", "paper_count": "3", "total_scite": "446", "weighted_heat": "17.9159", "top_scite": "186", "top_paper": "Magic state cultivation on a superconducting quantum processor"}, {"rank": "69", "author": "Rolando D. Somma", "paper_count": "5", "total_scite": "430", "weighted_heat": "27.2680", "top_scite": "109", "top_paper": "Quantum algorithm for linear matrix equations"}, {"rank": "70", "author": "Alexey V. Gorshkov", "paper_count": "8", "total_scite": "427", "weighted_heat": "38.7204", "top_scite": "116", "top_paper": "Low-depth fermion routing without ancillas"}, {"rank": "71", "author": "Dan E. Browne", "paper_count": "6", "total_scite": "425", "weighted_heat": "31.5285", "top_scite": "97", "top_paper": "Sequences of Bivariate Bicycle Codes from Covering Graphs"}, {"rank": "72", "author": "Ulysse Chabaud", "paper_count": "7", "total_scite": "424", "weighted_heat": "35.5800", "top_scite": "88", "top_paper": "Can effective descriptions of bosonic systems be considered complete?"}, {"rank": "73", "author": "Adam Zalcman", "paper_count": "4", "total_scite": "421", "weighted_heat": "22.1766", "top_scite": "186", "top_paper": "Magic state cultivation on a superconducting quantum processor"}, {"rank": "74", "author": "Amira Abbas", "paper_count": "4", "total_scite": "420", "weighted_heat": "22.0688", "top_scite": "186", "top_paper": "Magic state cultivation on a superconducting quantum processor"}, {"rank": "75", "author": "Dan Gresh", "paper_count": "4", "total_scite": "419", "weighted_heat": "21.8158", "top_scite": "204", "top_paper": "Demonstrating an unconditional separation between quantum and classical information resources"}, {"rank": "76", "author": "Changhun Oh", "paper_count": "6", "total_scite": "417", "weighted_heat": "30.6487", "top_scite": "140", "top_paper": "Classical simulation of noisy random circuits from exponential decay of correlation"}, {"rank": "77", "author": "Henry Yuen", "paper_count": "5", "total_scite": "413", "weighted_heat": "26.8989", "top_scite": "130", "top_paper": "Random Unitaries in Constant (Quantum) Time"}, {"rank": "78", "author": "Paul K. Faehrmann", "paper_count": "4", "total_scite": "412", "weighted_heat": "22.4017", "top_scite": "146", "top_paper": "Fermionic dynamics on a trapped-ion quantum computer beyond exact classical simulation"}, {"rank": "79", "author": "Laura Cui", "paper_count": "3", "total_scite": "410", "weighted_heat": "17.7258", "top_scite": "172", "top_paper": "Unitary designs in nearly optimal depth"}, {"rank": "80", "author": "Zoltán Zimborás", "paper_count": "4", "total_scite": "409", "weighted_heat": "21.5114", "top_scite": "230", "top_paper": "Myths around quantum computation before full fault tolerance: What no-go theorems rule out and what they don't"}, {"rank": "81", "author": "J. Ignacio Cirac", "paper_count": "9", "total_scite": "403", "weighted_heat": "43.1902", "top_scite": "65", "top_paper": "Parent Lindbladians for Matrix Product Density Operators"}, {"rank": "82", "author": "Susanne F. Yelin", "paper_count": "6", "total_scite": "399", "weighted_heat": "30.6993", "top_scite": "130", "top_paper": "Architectural mechanisms of a universal fault-tolerant quantum computer"}, {"rank": "83", "author": "Isaac H. Kim", "paper_count": "5", "total_scite": "399", "weighted_heat": "26.2974", "top_scite": "147", "top_paper": "Catalytic $z$-rotations in constant $T$-depth"}, {"rank": "84", "author": "Andrew M. Childs", "paper_count": "6", "total_scite": "398", "weighted_heat": "29.7156", "top_scite": "157", "top_paper": "Future of Quantum Computing"}, {"rank": "85", "author": "Salvatore Mandrà", "paper_count": "3", "total_scite": "398", "weighted_heat": "17.5697", "top_scite": "186", "top_paper": "Magic state cultivation on a superconducting quantum processor"}, {"rank": "86", "author": "András Gilyén", "paper_count": "3", "total_scite": "398", "weighted_heat": "17.3227", "top_scite": "230", "top_paper": "Myths around quantum computation before full fault tolerance: What no-go theorems rule out and what they don't"}, {"rank": "87", "author": "John P. Gaebler", "paper_count": "6", "total_scite": "397", "weighted_heat": "29.9617", "top_scite": "187", "top_paper": "Helios: A 98-qubit trapped-ion quantum computer"}, {"rank": "88", "author": "Kostyantyn Kechedzhi", "paper_count": "3", "total_scite": "393", "weighted_heat": "17.5256", "top_scite": "186", "top_paper": "Magic state cultivation on a superconducting quantum processor"}, {"rank": "89", "author": "Alistair R. Milne", "paper_count": "6", "total_scite": "391", "weighted_heat": "29.7898", "top_scite": "187", "top_paper": "Helios: A 98-qubit trapped-ion quantum computer"}, {"rank": "90", "author": "Dripto M. Debroy", "paper_count": "5", "total_scite": "390", "weighted_heat": "25.6214", "top_scite": "186", "top_paper": "Magic state cultivation on a superconducting quantum processor"}, {"rank": "91", "author": "Alexandra A. Geim", "paper_count": "4", "total_scite": "386", "weighted_heat": "22.0204", "top_scite": "130", "top_paper": "Architectural mechanisms of a universal fault-tolerant quantum computer"}, {"rank": "92", "author": "James D. Watson", "paper_count": "3", "total_scite": "386", "weighted_heat": "17.4605", "top_scite": "186", "top_paper": "Magic state cultivation on a superconducting quantum processor"}, {"rank": "93", "author": "Ryan O'Donnell", "paper_count": "5", "total_scite": "385", "weighted_heat": "25.9085", "top_scite": "174", "top_paper": "Few Single-Qubit Measurements Suffice to Certify Any Quantum State"}, {"rank": "94", "author": "Qian Xu", "paper_count": "5", "total_scite": "383", "weighted_heat": "26.5006", "top_scite": "112", "top_paper": "Batched high-rate logical operations for quantum LDPC codes"}, {"rank": "95", "author": "Qi Ye", "paper_count": "4", "total_scite": "383", "weighted_heat": "22.2454", "top_scite": "119", "top_paper": "Demonstration of low-overhead quantum error correction codes"}, {"rank": "96", "author": "Alexander Cowtan", "paper_count": "4", "total_scite": "383", "weighted_heat": "22.2430", "top_scite": "108", "top_paper": "Extractors: QLDPC Architectures for Efficient Pauli-Based Computation"}, {"rank": "97", "author": "Filippo Girardi", "paper_count": "6", "total_scite": "381", "weighted_heat": "30.0846", "top_scite": "140", "top_paper": "Random purification channel made simple"}, {"rank": "98", "author": "Stephen D. Bartlett", "paper_count": "5", "total_scite": "379", "weighted_heat": "26.5784", "top_scite": "112", "top_paper": "Efficient Post-Selection for General Quantum LDPC Codes"}, {"rank": "99", "author": "Xinyu Tan", "paper_count": "4", "total_scite": "377", "weighted_heat": "21.9318", "top_scite": "151", "top_paper": "Unitary synthesis with fewer T gates"}, {"rank": "100", "author": "Aram W. Harrow", "paper_count": "4", "total_scite": "377", "weighted_heat": "21.6557", "top_scite": "157", "top_paper": "Future of Quantum Computing"}];
+    const wordcloudImage = "variants/wordcloud_circle.png";
 
-      <section class="panel">
-        <h2>Interpretation</h2>
-        <p>The 2025 hot-paper landscape is not evenly distributed. The strongest concentration is clearly around <strong>error correction, fault tolerance, and scalable architectures</strong>, indicating that the field is investing heavily in the path from theoretical possibility to robust implementation.</p>
-        <p>At the same time, <strong>quantum information theory</strong>, <strong>many-body physics</strong>, and <strong>algorithmic complexity</strong> remain foundational. This suggests that the field’s center of gravity is not purely engineering-driven; instead, it is a layered ecosystem where foundational theory, physical modeling, and practical fault tolerance all reinforce one another.</p>
-        <p>Meanwhile, <strong>quantum machine learning</strong> is active but still secondary in this high-attention slice. In other words, QML is part of the conversation, but not yet the main engine of the field when one looks specifically at highly visible 2025 papers.</p>
-      </section>
-    </div>
-  </main>
+    const root = topicRows.find(r => r.level === 0);
+    const level1 = topicRows.filter(r => r.level === 1).sort((a, b) => b.weighted_heat - a.weighted_heat);
+    const maxHeat = Math.max(...level1.map(r => r.weighted_heat));
+    const totalArxiv2025 = 15990;
+    const hotPaperShare = ((root.paper_count / totalArxiv2025) * 100).toFixed(1);
+    function normLabel(value) {
+      return String(value || "")
+        .toLowerCase()
+        .replace(/&/g, "and")
+        .replace(/[^a-z0-9]+/g, " ")
+        .trim();
+    }
+    const topicLookup = new Map(
+      topicRows
+        .filter(r => r.level > 0)
+        .map(r => [normLabel(r.topic_en), r])
+    );
+    const treeMap = new Map();
+    topicRows.forEach((row, index) => {
+      treeMap.set(index, row);
+    });
+
+    function formatHeat(value) {
+      return value.toFixed(1);
+    }
+
+    function renderMetrics() {
+      const metrics = [
+        { label: "2025 arXiv quant-ph", value: totalArxiv2025.toLocaleString(), sub: "Total papers submitted in 2025" },
+        { label: "Covered Papers", value: root.paper_count, sub: "SciRate | scite >= 30" },
+        { label: "Total Occurrences", value: root.occurrence_count, sub: "Pattern matches across title + abstract" },
+        { label: "Total Weighted Heat", value: formatHeat(root.weighted_heat), sub: "Summed as 1 + log(1 + scite_count)" },
+        { label: "Hot-Paper Share", value: `${hotPaperShare}%`, sub: "Share of all 2025 arXiv quant-ph papers" },
+      ];
+      document.getElementById("metrics").innerHTML = metrics.map(m => `
+        <div class="card metric">
+          <div class="label">${m.label}</div>
+          <div class="value">${m.value}</div>
+          <div class="sub">${m.sub}</div>
+        </div>
+      `).join("");
+    }
+
+    function renderBars() {
+      document.getElementById("topLevelBars").innerHTML = level1.map(row => {
+        const width = Math.max(6, (row.weighted_heat / maxHeat) * 100);
+        return `
+          <div class="bar-row">
+            <div class="bar-head">
+              <div class="bar-title">${row.topic_en}</div>
+              <div class="bar-meta">heat ${formatHeat(row.weighted_heat)} · papers ${row.paper_count}</div>
+            </div>
+            <div class="bar-track"><div class="bar-fill" style="width:${width}%"></div></div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function piePalette(index) {
+      const colors = [
+        "#cb5c2a", "#d9822b", "#d8a31a", "#157a6e", "#2b8c7b",
+        "#356fa6", "#4c5fb3", "#7c5fb8", "#b35f8f", "#8d6e63"
+      ];
+      return colors[index % colors.length];
+    }
+
+    function renderPie() {
+      const radius = 46;
+      const circumference = 2 * Math.PI * radius;
+      let offset = 0;
+      const slices = level1.map((row, index) => {
+        const fraction = row.weighted_heat / root.weighted_heat;
+        const length = circumference * fraction;
+        const dashoffset = -offset;
+        offset += length;
+        return {
+          color: piePalette(index),
+          dasharray: `${length} ${circumference - length}`,
+          dashoffset,
+          label: row.topic_en,
+          value: row.weighted_heat,
+          share: fraction * 100,
+        };
+      });
+
+      document.getElementById("topLevelPie").innerHTML = `
+        <svg class="pie-svg" viewBox="0 0 120 120" aria-label="Top-level topic heat share pie chart">
+          <circle cx="60" cy="60" r="${radius}" fill="none" stroke="rgba(31,42,46,0.08)" stroke-width="22"></circle>
+          ${slices.map(slice => `
+            <circle
+              cx="60"
+              cy="60"
+              r="${radius}"
+              fill="none"
+              stroke="${slice.color}"
+              stroke-width="22"
+              stroke-linecap="butt"
+              stroke-dasharray="${slice.dasharray}"
+              stroke-dashoffset="${slice.dashoffset}"
+            ></circle>
+          `).join("")}
+        </svg>
+        <div class="pie-center">
+          <div>
+            <strong>${level1.length}</strong>
+            <span>top-level topics</span>
+          </div>
+        </div>
+      `;
+
+      document.getElementById("topLevelPieLegend").innerHTML = slices.map((slice, index) => `
+        <div class="pie-legend-row">
+          <span class="pie-swatch" style="background:${slice.color}"></span>
+          <span class="pie-label">${index + 1}. ${slice.label}</span>
+          <span>${slice.share.toFixed(1)}%</span>
+        </div>
+      `).join("");
+    }
+
+    function renderKeywords() {
+      const rows = [...keywordRows]
+        .map(row => {
+          const topic = topicLookup.get(normLabel(row.keyword));
+          return {
+            ...row,
+            topic,
+            sortPaperCount: topic ? Number(topic.paper_count) : Number(row.document_frequency || 0),
+          };
+        })
+        .sort((a, b) => b.sortPaperCount - a.sortPaperCount)
+        .slice(0, 10);
+      document.getElementById("keywordPanel").innerHTML = rows.map((row, i) => {
+        const topic = topicLookup.get(normLabel(row.keyword));
+        const statsLine = topic
+          ? `papers=${topic.paper_count} · occurrences=${topic.occurrence_count} · heat=${Number(topic.weighted_heat).toFixed(1)}`
+          : `doc_frequency=${row.document_frequency} · mentions=${row.paper_mentions} · weighted_heat=${Number(row.weighted_score).toFixed(1)}`;
+        return `
+          <div class="keyword-row">
+            <div class="k">${i + 1}. ${row.keyword}</div>
+            <div class="v">${statsLine}</div>
+            ${row.variants ? `<div class="v">variants: ${row.variants}</div>` : ""}
+          </div>
+        `;
+      }).join("");
+    }
+
+    function renderAuthors() {
+      const rows = authorRows.slice(0, 100);
+      document.getElementById("authorTable").innerHTML = `
+        <div class="author-table-wrap">
+          <table class="author-table">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Author</th>
+                <th>Papers</th>
+                <th>Total Scite</th>
+                <th>Weighted Heat</th>
+                <th>Top Paper</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${rows.map(row => `
+                <tr>
+                  <td>${row.rank}</td>
+                  <td><strong>${row.author}</strong></td>
+                  <td>${row.paper_count}</td>
+                  <td>${row.total_scite}</td>
+                  <td>${Number(row.weighted_heat).toFixed(1)}</td>
+                  <td>${row.top_paper}</td>
+                </tr>
+              `).join("")}
+            </tbody>
+          </table>
+        </div>
+      `;
+    }
+
+    function getBranch(level1Name) {
+      const rows = [];
+      let capture = false;
+      for (const row of topicRows) {
+        if (row.level === 1) capture = row.topic_en === level1Name;
+        if (capture) rows.push(row);
+        if (capture && row.level === 1 && row.topic_en !== level1Name) break;
+      }
+      if (rows.length && rows[0].topic_en !== level1Name) rows.shift();
+      return rows.filter((row, idx) => idx === 0 || row.level > 1);
+    }
+
+    function renderTreeControls(activeName) {
+      document.getElementById("treeControls").innerHTML = level1.map(row => `
+        <button class="chip ${row.topic_en === activeName ? "active" : ""}" data-topic="${row.topic_en}">
+          ${row.topic_en}
+        </button>
+      `).join("");
+      document.querySelectorAll(".chip").forEach(btn => {
+        btn.addEventListener("click", () => {
+          renderTreeControls(btn.dataset.topic);
+          renderTree(btn.dataset.topic);
+        });
+      });
+    }
+
+    function renderTree(activeName) {
+      const branch = getBranch(activeName);
+      const root = branch[0];
+      const sectionsData = [];
+      let currentParent = null;
+      branch.slice(1).forEach(row => {
+        if (row.level === 2) {
+          currentParent = { parent: row, children: [] };
+          sectionsData.push(currentParent);
+        } else if (row.level === 3 && currentParent) {
+          currentParent.children.push(row);
+        }
+      });
+      const sortedSectionsData = [...sectionsData].sort((a, b) => b.parent.paper_count - a.parent.paper_count);
+      const sections = sortedSectionsData.map(section => {
+        const parent = section.parent;
+        const children = [...section.children].sort((a, b) => b.paper_count - a.paper_count);
+        if (!children.length) {
+          return "";
+        }
+        return `
+          <div class="tree-section">
+            <div class="tree-grid">
+              <div class="tree-card level-${parent.level}">
+                <div class="tree-card-name">${parent.topic_en}</div>
+                <div class="tree-card-stats">
+                  <div>papers <strong>${parent.paper_count}</strong></div>
+                  <div>occurrences <strong>${parent.occurrence_count}</strong></div>
+                  <div>heat <strong>${formatHeat(parent.weighted_heat)}</strong></div>
+                </div>
+              </div>
+            </div>
+            ${children.length ? `
+              <div class="tree-children-grid">
+                ${children.map(child => `
+                  <div class="tree-card level-${child.level}">
+                    <div class="tree-card-name">${child.topic_en}</div>
+                    <div class="tree-card-stats">
+                      <div>papers <strong>${child.paper_count}</strong></div>
+                      <div>occurrences <strong>${child.occurrence_count}</strong></div>
+                      <div>heat <strong>${formatHeat(child.weighted_heat)}</strong></div>
+                    </div>
+                  </div>
+                `).join("")}
+              </div>
+            ` : ``}
+          </div>
+        `;
+      });
+      const parentOnlySorted = sortedSectionsData
+        .filter(section => !section.children.length)
+        .map(section => section.parent)
+        .sort((a, b) => b.paper_count - a.paper_count)
+        .map(parent => `
+          <div class="tree-card level-${parent.level}">
+            <div class="tree-card-name">${parent.topic_en}</div>
+            <div class="tree-card-stats">
+              <div>papers <strong>${parent.paper_count}</strong></div>
+              <div>occurrences <strong>${parent.occurrence_count}</strong></div>
+              <div>heat <strong>${formatHeat(parent.weighted_heat)}</strong></div>
+            </div>
+          </div>
+        `);
+      document.getElementById("treeWrap").innerHTML = `
+        <div class="tree-root-card">
+          <div class="tree-card-name">${root.topic_en}</div>
+          <div class="tree-card-stats">
+            <div>papers <strong>${root.paper_count}</strong></div>
+            <div>occurrences <strong>${root.occurrence_count}</strong></div>
+            <div>heat <strong>${formatHeat(root.weighted_heat)}</strong></div>
+          </div>
+        </div>
+        ${parentOnlySorted.length ? `
+          <div class="tree-grid">
+            ${parentOnlySorted.join("")}
+          </div>
+        ` : ""}
+        ${sections.join("")}
+      `;
+    }
+
+    renderMetrics();
+    renderBars();
+    renderPie();
+    renderKeywords();
+    renderAuthors();
+    renderTreeControls(level1[0].topic_en);
+    renderTree(level1[0].topic_en);
+    document.getElementById("wordcloudImage").src = wordcloudImage;
+  </script>
 </body>
 </html>
