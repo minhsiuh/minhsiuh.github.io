@@ -1,13 +1,561 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="2025 Trend in Quantum Research article by Min-Hsiu Hsieh.">
+    <link rel="canonical" href="https://minhsiuh.github.io/blog-2025-trend-quantum-research.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="2025 Trend in Quantum Research - Min-Hsiu Hsieh">
+    <meta property="og:description" content="2025 Trend in Quantum Research article by Min-Hsiu Hsieh.">
+    <meta property="og:url" content="https://minhsiuh.github.io/blog-2025-trend-quantum-research.html">
+    <meta property="og:image" content="https://minhsiuh.github.io/profile.jpg">
+    <meta property="og:site_name" content="Min-Hsiu Hsieh Research">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="2025 Trend in Quantum Research - Min-Hsiu Hsieh">
+    <meta name="twitter:description" content="2025 Trend in Quantum Research article by Min-Hsiu Hsieh.">
+    <meta name="twitter:image" content="https://minhsiuh.github.io/profile.jpg">
+    <meta name="twitter:site" content="@quantum_minhsiu">
+    <meta name="author" content="Min-Hsiu Hsieh">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#2c3e50">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "Min-Hsiu Hsieh Research",
+          "url": "https://minhsiuh.github.io/"
+        },
+        {
+          "@type": "Person",
+          "name": "Min-Hsiu Hsieh",
+          "alternateName": "謝明修",
+          "url": "https://minhsiuh.github.io/about.html",
+          "image": "https://minhsiuh.github.io/profile.jpg",
+          "jobTitle": "Director, Hon Hai Quantum Computing Research Center",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Hon Hai Quantum Computing Research Center"
+          },
+          "sameAs": [
+            "https://scholar.google.com/citations?user=UXx1jNYAAAAJ",
+            "https://orcid.org/0000-0002-3396-8427",
+            "https://github.com/minhsiuh",
+            "https://www.linkedin.com/in/min-hsiu-hsieh-6199b0/",
+            "https://x.com/quantum_minhsiu",
+            "https://www.minhsiu.com"
+          ]
+        }
+      ]
+    }
+    </script>
     <title>2025 Trend in Quantum Research - Min-Hsiu Hsieh</title>
-  <style>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=4">
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png?v=4">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=4">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --bg-color: #fff;
+            --light-gray: #f8f9fa;
+            --border-color: #e9ecef;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background: var(--bg-color);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        header .chinese-name {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        header .title {
+            font-size: 1.1rem;
+            opacity: 0.85;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--light-gray);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Sections */
+        section {
+            padding: 50px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        /* About Me Layout */
+        .about-content {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+
+        .about-image {
+            flex: 0 0 300px;
+        }
+
+        .about-image > img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+        }
+
+        .about-social-wrap {
+            margin-top: 18px;
+        }
+
+        .about-social-title {
+            text-align: center;
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #4b6175;
+            margin-bottom: 10px;
+        }
+
+        .about-social {
+            display: flex;
+            justify-content: space-between;
+            gap: 14px;
+            margin-top: 0;
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .about-social-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .about-social a {
+            display: inline-flex;
+            width: 56px;
+            height: 56px;
+            border-radius: 12px;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+            background: #fff;
+            border: 1px solid #d8e0e8;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+        }
+
+        .about-social a:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+            border-color: #b9cadb;
+        }
+
+        .about-social img {
+            width: 45px;
+            height: 45px;
+            display: block;
+        }
+
+        .about-social-label {
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: #4b6175;
+            line-height: 1;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text p {
+            text-align: left;
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .about-image {
+                flex: none;
+            }
+
+            .about-image > img {
+                width: 250px;
+                height: 250px;
+            }
+
+            .about-social {
+                width: 250px;
+                gap: 6px;
+            }
+
+            .about-text {
+                text-align: left;
+            }
+        }
+
+        h1, h2, h3, h4 {
+            font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+            letter-spacing: 0.01em;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            margin: 20px 0 10px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* News List */
+        .news-list {
+            list-style: none;
+        }
+
+        .news-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .news-list li:last-child {
+            border-bottom: none;
+        }
+
+        .news-date {
+            font-weight: 600;
+            font-size: 1rem;
+            line-height: 1.4;
+            font-variant-numeric: tabular-nums;
+            color: #e67e22;
+            margin-right: 10px;
+        }
+
+        .news-date::before {
+            content: "📅 ";
+            font-size: 0.95em;
+            margin-right: 2px;
+        }
+
+        .news-list a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .news-list a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .news-list a:hover {
+            text-decoration: underline;
+        }
+
+        .arxiv-link {
+            white-space: nowrap;
+        }
+
+        /* Committee List */
+        .committee-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .committee-list li {
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .committee-list li:before {
+            content: "•";
+            color: var(--accent-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Citations Stats Box */
+        .citations-stats-box {
+            background: #f8f9fc;
+            padding: 50px 30px;
+            border-radius: 0;
+            margin: 0 0 50px 0;
+        }
+
+        .citations-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .citation-stat-item {
+            text-align: center;
+        }
+
+        .citation-stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #3498db;
+            line-height: 1.1;
+        }
+
+        .citation-stat-label {
+            font-size: 1rem;
+            color: #666;
+            margin-top: 10px;
+            font-weight: 400;
+        }
+
+        @media (max-width: 768px) {
+            .citations-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .citation-stat-number {
+                font-size: 2.5rem;
+            }
+        }
+
+        /* Contact */
+        .contact-info {
+            background: var(--light-gray);
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-color);
+            color: white;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            background: #2980b9;
+            padding: 30px 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 50px;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .footer-item .social-links {
+            margin-top: 10px;
+        }
+
+        .footer-item a:hover {
+            opacity: 0.8;
+        }
+
+        .footer-item a:hover .footer-icon {
+            background: #e67e22;
+            transform: scale(1.05);
+        }
+
+        .footer-icon-link {
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .footer-icon {
+            width: 50px;
+            height: 50px;
+            background: #e67e22;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .footer-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
+        }
+
+        .footer-text h4 {
+            margin: 0 0 5px 0;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .footer-text p {
+            margin: 0;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            width: 32px;
+            height: 32px;
+            background: white;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+        }
+
+        .social-links a:hover {
+            background: #e67e22;
+        }
+
+        .social-links svg {
+            width: 18px;
+            height: 18px;
+            fill: #2980b9;
+        }
+
+        footer .copyright {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            header .chinese-name {
+                font-size: 1.2rem;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    
+        /* Blog article dashboard layout */
+
     :root {
       --bg: #f5f1e8;
       --panel: rgba(255,255,255,0.78);
@@ -19,17 +567,6 @@
       --accent-3: #d8a31a;
       --shadow: 0 22px 70px rgba(61, 42, 21, 0.12);
       --radius: 24px;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      color: var(--ink);
-      background:
-        radial-gradient(circle at top left, rgba(203,92,42,0.18), transparent 32%),
-        radial-gradient(circle at top right, rgba(21,122,110,0.16), transparent 28%),
-        linear-gradient(180deg, #f8f4ec 0%, #f1eadf 100%);
-      min-height: 100vh;
     }
     .shell {
       width: min(1380px, calc(100vw - 40px));
@@ -61,11 +598,6 @@
       font-size: 12px;
       color: rgba(255,249,239,0.7);
       margin-bottom: 10px;
-    }
-    h1 {
-      margin: 0 0 10px;
-      font-size: clamp(28px, 4vw, 52px);
-      line-height: 1;
     }
     .hero p {
       margin: 0;
@@ -413,36 +945,13 @@
       .tree-children-grid { grid-template-columns: 1fr; padding-left: 0; }
     }
   
-    nav.site-nav {
-            background: var(--light-gray);
-            border-bottom: 1px solid var(--border-color);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
+    nav.site-
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            padding: 15px 0;
-            margin: 0;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: var(--primary-color);
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-
-        nav a.active, nav a:hover { color: var(--accent-color); }
-
-  </style>
+  
+    </style>
 </head>
 <body>
-  <header>
+<header>
         <div class="container">
             <h1>Min-Hsiu Hsieh</h1>
             <div class="chinese-name">謝明修</div>
@@ -450,7 +959,7 @@
         </div>
     </header>
 
-    <nav>
+<nav>
         <div class="container">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -462,7 +971,7 @@
         </div>
     </nav>
 
-  <div class="shell">
+<div class="shell">
     <section class="hero">
       <div class="eyebrow"><a href="blog.html" style="color:rgba(255,249,239,0.82); text-decoration:none;">← Back to Blog</a></div>
       <div class="eyebrow">2025 SciRate Quant-Ph Hot Papers</div>
@@ -823,5 +1332,6 @@
     renderTree(level1[0].topic_en);
     document.getElementById("wordcloudImage").src = wordcloudImage;
   </script>
+
 </body>
 </html>
