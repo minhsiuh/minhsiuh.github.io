@@ -1260,6 +1260,16 @@
                             });
                         });
                     } else if (mode === 'journal-card') {
+                        // Sort journals by year descending (newest first)
+                        const getYear = (item) => {
+                            const a = item.article || {};
+                            if (a.year) return parseInt(a.year, 10);
+                            const p = parseItem(item.contentHtml || '');
+                            const m = String(p.year || '').match(/(19|20)\d{2}/);
+                            return m ? parseInt(m[0], 10) : 0;
+                        };
+                        items.sort((a, b) => getYear(b) - getYear(a));
+
                         list.innerHTML = items.map((item, i) => {
                             const p = parseItem(item.contentHtml || '');
                             const a = item.article || {};
