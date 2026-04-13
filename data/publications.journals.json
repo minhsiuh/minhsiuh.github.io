@@ -21,17 +21,17 @@
     },
     {
       "id": "journals-2",
-      "contentHtml": "Mengzhen Ren, Yu-Cheng Chen, Ching-Jui Lai, Min-Hsiu Hsieh, Alice Hu. Hybrid Quantum-Classical Clustering for Preparing a Prior Distribution of Eigenspectrum. npj Quantum Information (2026) [<a href=\"https://arxiv.org/abs/2407.00450\" target=\"_blank\" rel=\"noopener\">arXiv:2407.00450</a>] [<a href=\"https://doi.org/10.1038/s41534-026-01194-2\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "contentHtml": "Mengzhen Ren, Yu-Cheng Chen, Ching-Jui Lai, Min-Hsiu Hsieh, Alice Hu. Hybrid quantum-classical clustering for preparing a prior distribution of eigenspectrum. npj Quantum Information 12, 56 (2026) [<a href=\"https://arxiv.org/abs/2407.00450\" target=\"_blank\" rel=\"noopener\">arXiv:2407.00450</a>] [<a href=\"https://doi.org/10.1038/s41534-026-01194-2\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
       "article": {
         "author": "Mengzhen Ren, Yu-Cheng Chen, Ching-Jui Lai, Min-Hsiu Hsieh, Alice Hu",
         "title": "Hybrid Quantum-Classical Clustering for Preparing a Prior Distribution of Eigenspectrum",
         "journal": "npj Quantum Information",
         "year": "2026",
-        "volume": "",
+        "volume": "12",
         "number": "",
-        "pages": "",
+        "pages": "56",
         "doi": "10.1038/s41534-026-01194-2",
-        "url": "https://arxiv.org/abs/2407.00450",
+        "url": "https://doi.org/10.1038/s41534-026-01194-2",
         "entryType": "article",
         "citationKey": "Hsieh20Journal2"
       }
