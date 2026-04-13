@@ -1234,8 +1234,9 @@
                             const authorText = s.authors || '';
                             const arxivId = p.arxiv ? (p.arxiv.href.match(/arxiv\.org\/abs\/([^/?#]+)/)?.[1] || 'link') : null;
                             const arxivLink = p.arxiv ? `<a href="${p.arxiv.href}" target="_blank" rel="noopener">arXiv:${arxivId}</a>` : `<a class="disabled">arXiv</a>`;
-                            const arxivSuffix = arxivId && arxivId !== 'link' ? ` arXiv:${arxivId}` : '';
-                            const plainEnc = encodeURIComponent(`${plainCitationText(p)}${arxivSuffix}.`);
+                            const arxivPart = arxivId && arxivId !== 'link' ? ` arXiv:${arxivId}` : '';
+                            const yearPart = p.year ? ` (${p.year})` : '';
+                            const plainEnc = encodeURIComponent(`${authorText}. ${titleText}.${arxivPart}${yearPart}.`);
                             const bibEnc = encodeURIComponent(buildBibtex('arxiv', { title: titleText, authors: authorText, year: p.year }, `Hsieh${p.year}Arxiv${i + 1}`, { arxivHref: p.arxiv ? p.arxiv.href : '' }));
                             return `
                               <li>
