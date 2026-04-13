@@ -20,6 +20,23 @@
       }
     },
     {
+      "id": "journals-4",
+      "contentHtml": "Jun Qi, Chao-Han Yang, Pin-Yu Chen, Min-Hsiu Hsieh. TensorHyper-VQC: a tensor-train-guided hypernetwork for robust and scalable variational quantum computing. npj Quantum Information (2026) [<a href=\"https://arxiv.org/abs/2508.01116\" target=\"_blank\" rel=\"noopener\">arXiv:2508.01116</a>] [<a href=\"https://doi.org/10.1038/s41534-025-01157-z\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Jun Qi, Chao-Han Yang, Pin-Yu Chen, Min-Hsiu Hsieh",
+        "title": "TensorHyper-VQC: a tensor-train-guided hypernetwork for robust and scalable variational quantum computing",
+        "journal": "npj Quantum Information",
+        "year": "2026",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "doi": "10.1038/s41534-025-01157-z",
+        "url": "https://arxiv.org/abs/2508.01116",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal4"
+      }
+    },
+    {
       "id": "journals-1",
       "contentHtml": "Jihao Fan, Min-Hsiu Hsieh. Characterizing the Burst Error Correction Ability of Quantum Cyclic Codes. IEEE Transactions on Information Theory, vol. 72, no. 4, pp. 2319-2329 (2026) [<a href=\"https://arxiv.org/abs/2501.04310\" target=\"_blank\" rel=\"noopener\">arXiv:2501.04310</a>] [<a href=\"https://doi.org/10.1109/TIT.2026.3659999\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
       "article": {
@@ -68,23 +85,6 @@
         "url": "https://doi.org/10.1038/s41467-026-69031-w",
         "entryType": "article",
         "citationKey": "Hsieh2026Journal3"
-      }
-    },
-    {
-      "id": "journals-4",
-      "contentHtml": "Jun Qi, Chao-Han Yang, Pin-Yu Chen, Min-Hsiu Hsieh. TensorHyper-VQC: a tensor-train-guided hypernetwork for robust and scalable variational quantum computing. npj Quantum Information (2026) [<a href=\"https://arxiv.org/abs/2508.01116\" target=\"_blank\" rel=\"noopener\">arXiv:2508.01116</a>] [<a href=\"https://doi.org/10.1038/s41534-025-01157-z\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
-      "article": {
-        "author": "Jun Qi, Chao-Han Yang, Pin-Yu Chen, Min-Hsiu Hsieh",
-        "title": "TensorHyper-VQC: a tensor-train-guided hypernetwork for robust and scalable variational quantum computing",
-        "journal": "npj Quantum Information",
-        "year": "2026",
-        "volume": "",
-        "number": "",
-        "pages": "",
-        "doi": "10.1038/s41534-025-01157-z",
-        "url": "https://arxiv.org/abs/2508.01116",
-        "entryType": "article",
-        "citationKey": "Hsieh20Journal4"
       }
     },
     {
