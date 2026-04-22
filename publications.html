@@ -1323,6 +1323,16 @@
                             });
                         });
                     } else if (mode === 'book-card' || mode === 'conference-card' || mode === 'talk-card') {
+                        // Sort conferences by year descending (newest first)
+                        if (mode === 'conference-card') {
+                            const getConfYear = (item) => {
+                                const c = item.inproceedings || {};
+                                if (c.year) return parseInt(c.year, 10);
+                                return 0;
+                            };
+                            items.sort((a, b) => getConfYear(b) - getConfYear(a));
+                        }
+
                         list.innerHTML = items.map((item, i) => {
                             const isTalk = mode === 'talk-card';
                             const isBook = mode === 'book-card';
