@@ -1343,7 +1343,11 @@
                               ? { year: String(item.date || '').match(/(19|20)\d{2}/)?.[0] || '', arxiv: null, doi: null, head: '', plain: '' }
                               : ((isBook || isConf) ? { year: '', arxiv: null, doi: null, head: '', plain: '' } : parseItem(item.contentHtml || ''));
                             const j = (isTalk || isBook || isConf) ? { authors: '', title: '', refInfo: '' } : parseJournalHead(p.head || '');
-                            const arxivLink = p.arxiv ? `<a href="${p.arxiv.href}" target="_blank" rel="noopener">arXiv</a>` : `<a class="disabled">arXiv</a>`;
+                            // For conferences, check inproceedings.arxiv or inproceedings.url for arXiv link
+                            const arxivHref = isConf
+                              ? (c.arxiv ? `https://arxiv.org/abs/${c.arxiv}` : (c.url && c.url.includes('arxiv') ? c.url : ''))
+                              : (p.arxiv ? p.arxiv.href : '');
+                            const arxivLink = arxivHref ? `<a href="${arxivHref}" target="_blank" rel="noopener">arXiv</a>` : `<a class="disabled">arXiv</a>`;
                             const doiHref = isBook
                               ? (b.doi ? `https://doi.org/${b.doi}` : '')
                               : (isConf ? (c.doi ? `https://doi.org/${c.doi}` : (c.url || '')) : (p.doi ? p.doi.href : ''));
