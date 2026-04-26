@@ -1383,7 +1383,7 @@
                             if (c.series) confRefParts.push(c.series);
                             if (c.volume) confRefParts.push(`vol. ${c.volume}`);
                             if (c.pages) confRefParts.push(/^\d+--\d+$/.test(String(c.pages)) ? `pp. ${c.pages}` : c.pages);
-                            if (c.year) confRefParts.push(`(${c.year})`);
+                            if (c.year) confRefParts.push(`${c.year}`);
                             const confRefInfo = isConf ? confRefParts.join(', ') : '';
 
                             if (isTalk && (!titleText || !authorText || !talkRefInfo)) {
