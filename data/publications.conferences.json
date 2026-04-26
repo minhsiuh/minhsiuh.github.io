@@ -270,13 +270,13 @@
     },
     {
       "id": "conferences-10",
-      "contentHtml": "Chen-Yu Liu, Hsin-Yu Wang, Pei-Yen Liao, Ching-Jui Lai, Min-Hsiu Hsieh. Implementation of Trained Factorization Machine Recommendation System on Quantum Annealer. 2024 International Joint Conference on Neural Networks (IJCNN), Yokohama, Japan, 2024, pp. 1-8. [<a href=\"https://doi.org/10.1109/IJCNN60899.2024.10650298\" target=\"_blank\" rel=\"noopener\">DOI</a>] [<a href=\"https://arxiv.org/abs/2210.12953\" target=\"_blank\" rel=\"noopener\">arXiv:2210.12953</a>].",
+      "contentHtml": "Chen-Yu Liu, Hsin-Yu Wang, Pei-Yen Liao, Ching-Jui Lai, Min-Hsiu Hsieh. Implementation of Trained Factorization Machine Recommendation System on Quantum Annealer. 2024 International Joint Conference on Neural Networks (IJCNN), Yokohama, Japan, pp. 1-8 (2024) [<a href=\"https://arxiv.org/abs/2409.01306\" target=\"_blank\" rel=\"noopener\">arXiv:2409.01306</a>] [<a href=\"https://doi.org/10.1109/IJCNN60899.2024.10650642\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2024Conf10",
         "author": "Chen-Yu Liu, Hsin-Yu Wang, Pei-Yen Liao, Ching-Jui Lai, Min-Hsiu Hsieh",
         "title": "Implementation of Trained Factorization Machine Recommendation System on Quantum Annealer",
-        "booktitle": "2024 International Joint Conference on Neural Networks (IJCNN), Yokohama, Japan, 2024",
+        "booktitle": "2024 International Joint Conference on Neural Networks (IJCNN)",
         "year": "2024",
         "pages": "1--8",
         "doi": "10.1109/IJCNN60899.2024.10650298",
