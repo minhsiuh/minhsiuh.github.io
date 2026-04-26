@@ -294,13 +294,13 @@
     },
     {
       "id": "conferences-14",
-      "contentHtml": "Irit Dinur, Min-Hsiu Hsieh, Ting-Chun Lin, Thomas Vidick. Good Quantum LDPC Codes with Linear Time Decoders. Proceedings of the 55th Annual ACM Symposium on Theory of Computing (STOC 23), Pages 905–918 (2023). [<a href=\"https://doi.org/10.1145/3564246.3585101\" target=\"_blank\" rel=\"noopener\">DOI</a>] [<a href=\"https://arxiv.org/abs/2206.07750\" target=\"_blank\" rel=\"noopener\">arXiv:2206.07750</a>].",
+      "contentHtml": "Irit Dinur, Min-Hsiu Hsieh, Ting-Chun Lin, Thomas Vidick. Good Quantum LDPC Codes with Linear Time Decoders. Proceedings of the 55th Annual ACM Symposium on Theory of Computing (STOC 23), pp. 905-918 (2023) [<a href=\"https://arxiv.org/abs/2210.15340\" target=\"_blank\" rel=\"noopener\">arXiv:2210.15340</a>] [<a href=\"https://doi.org/10.1145/3564246.3585112\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2023Conf14",
         "author": "Irit Dinur, Min-Hsiu Hsieh, Ting-Chun Lin, Thomas Vidick",
         "title": "Good Quantum LDPC Codes with Linear Time Decoders",
-        "booktitle": "Proceedings of the 55th Annual ACM Symposium on Theory of Computing (STOC 23), Pages 905–918 (2023).",
+        "booktitle": "Proceedings of the 55th Annual ACM Symposium on Theory of Computing (STOC 23)",
         "year": "2023",
         "pages": "905--918",
         "doi": "10.1145/3564246.3585101",
