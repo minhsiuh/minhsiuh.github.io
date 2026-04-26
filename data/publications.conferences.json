@@ -102,7 +102,7 @@
     },
     {
       "id": "conferences-4",
-      "contentHtml": "Chen-Yu Liu, Chao-Han Huck Yang, Hsi-Sheng Goan, Min-Hsiu Hsieh. A Quantum Circuit-Based Compression Perspective for Parameter-Efficient Learning. The Thirteenth International Conference on Learning Representations (ICLR 2025). [<a href=\"https://arxiv.org/abs/2410.09846\" target=\"_blank\" rel=\"noopener\">arXiv:2410.09846</a>] [<a href=\"https://openreview.net/forum?id=bB0OKNpznp\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "contentHtml": "Chen-Yu Liu, Chao-Han Huck Yang, Hsi-Sheng Goan, Min-Hsiu Hsieh. A Quantum Circuit-Based Compression Perspective for Parameter-Efficient Learning. 2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2025), p. 21571 (2025) [<a href=\"https://arxiv.org/abs/2409.11307\" target=\"_blank\" rel=\"noopener\">arXiv:2409.11307</a>] [<a href=\"https://doi.org/10.1109/ICASSP49660.2025.11134988\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2025Conf4",
@@ -110,7 +110,7 @@
         "title": "A Quantum Circuit-Based Compression Perspective for Parameter-Efficient Learning",
         "booktitle": "The Thirteenth International Conference on Learning Representations (ICLR 2025).",
         "year": "2025",
-        "pages": "",
+        "pages": "21571",
         "doi": "",
         "url": "https://arxiv.org/abs/2410.09846",
         "editor": "",
