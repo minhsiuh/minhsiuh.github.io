@@ -3,6 +3,31 @@
   "updatedAt": "2026-03-10T04:47:13.432Z",
   "items": [
     {
+      "id": "conferences-43",
+      "contentHtml": "Jun Qi, Chao-Han Huck Yang, Pin-Yu Chen, Min-Hsiu Hsieh. Pre-training Tensor-Train Networks Facilitates Machine Learning with Variational Quantum Circuits. ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing, pp. 1836-1840 (2026) [<a href=\"https://doi.org/10.1109/ICASSP55912.2026.11461253\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "inproceedings": {
+        "entryType": "inproceedings",
+        "citationKey": "Hsieh2026Conf43",
+        "author": "Jun Qi, Chao-Han Huck Yang, Pin-Yu Chen, Min-Hsiu Hsieh",
+        "title": "Pre-training Tensor-Train Networks Facilitates Machine Learning with Variational Quantum Circuits",
+        "booktitle": "ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+        "year": "2026",
+        "pages": "1836--1840",
+        "doi": "10.1109/ICASSP55912.2026.11461253",
+        "url": "https://doi.org/10.1109/ICASSP55912.2026.11461253",
+        "volume": "",
+        "number": "",
+        "publisher": "IEEE",
+        "address": "",
+        "series": "",
+        "editor": "",
+        "isbn": "",
+        "issn": "",
+        "urn": "",
+        "note": ""
+      }
+    },
+    {
       "id": "conferences-1",
       "contentHtml": "Kaining Zhang, Xinbiao Wang, Yuxuan Du, Min-Hsiu Hsieh, Dacheng Tao. AQER: a scalable and efficient data loader for digital quantum computers. Fourteenth International Conference on Learning Representations (ICLR 2026). [<a href=\"https://arxiv.org/abs/2602.02165\" target=\"_blank\" rel=\"noopener\">arXiv:2602.02165</a>].",
       "inproceedings": {
@@ -21,6 +46,30 @@
         "publisher": "",
         "address": "",
         "isbn": "",
+        "issn": "",
+        "urn": "",
+        "note": ""
+      }
+    },
+    {
+      "id": "conferences-2",
+      "contentHtml": "Wei-Jia Huang, Christophe Chareton, Yu-Fang Chen, Kai-Min Chung, Min-Hsiu Hsieh, Alfons Laarman, Jingyi Mei. Equivalence Checking of Quantum Circuits via Path-Sum and Weighted Model Counting. Tools and Algorithms for the Construction and Analysis of Systems (TACAS 2026), pp. 419-439 (2026) [<a href=\"https://doi.org/10.1007/978-3-032-22749-2_21\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "inproceedings": {
+        "entryType": "inproceedings",
+        "citationKey": "Hsieh2025Conf2",
+        "author": "Wei-Jia Huang, Christophe Chareton, Yu-Fang Chen, Kai-Min Chung, Min-Hsiu Hsieh, Alfons Laarman, Jingyi Mei",
+        "title": "Equivalence Checking of Quantum Circuits via Path-Sum and Weighted Model Counting",
+        "booktitle": "Tools and Algorithms for the Construction and Analysis of Systems (TACAS 2026)",
+        "year": "2026",
+        "pages": "419--439",
+        "doi": "10.1007/978-3-032-22749-2_21",
+        "url": "",
+        "editor": "",
+        "series": "",
+        "volume": "",
+        "publisher": "Springer Nature Switzerland",
+        "address": "Cham",
+        "isbn": "978-3-032-22749-2",
         "issn": "",
         "urn": "",
         "note": ""
@@ -93,30 +142,6 @@
         "publisher": "",
         "address": "",
         "isbn": "",
-        "issn": "",
-        "urn": "",
-        "note": ""
-      }
-    },
-    {
-      "id": "conferences-2",
-      "contentHtml": "Wei-Jia Huang, Christophe Chareton, Yu-Fang Chen, Kai-Min Chung, Min-Hsiu Hsieh, Alfons Laarman, Jingyi Mei. Equivalence Checking of Quantum Circuits via Path-Sum and Weighted Model Counting. Tools and Algorithms for the Construction and Analysis of Systems (TACAS 2026), pp. 419-439 (2026) [<a href=\"https://doi.org/10.1007/978-3-032-22749-2_21\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
-      "inproceedings": {
-        "entryType": "inproceedings",
-        "citationKey": "Hsieh2025Conf2",
-        "author": "Wei-Jia Huang, Christophe Chareton, Yu-Fang Chen, Kai-Min Chung, Min-Hsiu Hsieh, Alfons Laarman, Jingyi Mei",
-        "title": "Equivalence Checking of Quantum Circuits via Path-Sum and Weighted Model Counting",
-        "booktitle": "Tools and Algorithms for the Construction and Analysis of Systems (TACAS 2026)",
-        "year": "2026",
-        "pages": "419--439",
-        "doi": "10.1007/978-3-032-22749-2_21",
-        "url": "",
-        "editor": "",
-        "series": "",
-        "volume": "",
-        "publisher": "Springer Nature Switzerland",
-        "address": "Cham",
-        "isbn": "978-3-032-22749-2",
         "issn": "",
         "urn": "",
         "note": ""
