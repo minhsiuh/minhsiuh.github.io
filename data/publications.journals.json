@@ -3,6 +3,24 @@
   "updatedAt": "2026-03-10T04:47:13.432Z",
   "items": [
     {
+      "id": "journals-113",
+      "contentHtml": "Kaining Zhang, Min-Hsiu Hsieh, Dacheng Tao. Deep Variational Quantum Circuits with Barren-Plateau-Free Architectures. Artificial Intelligence Science and Engineering, vol. 2, no. 1, pp. 66-84 (2026) [<a href=\"https://doi.org/10.23919/AISE.2026.000005\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "entryType": "article",
+        "citationKey": "Hsieh2026Journal113",
+        "author": "Kaining Zhang, Min-Hsiu Hsieh, Dacheng Tao",
+        "title": "Deep Variational Quantum Circuits with Barren-Plateau-Free Architectures",
+        "journal": "Artificial Intelligence Science and Engineering",
+        "year": "2026",
+        "volume": "2",
+        "number": "1",
+        "pages": "66--84",
+        "doi": "10.23919/AISE.2026.000005",
+        "url": "https://doi.org/10.23919/AISE.2026.000005",
+        "keywords": "Quantum circuit, Quantum communication, Protocols, variational quantum algorithms, quantum machine learning, barren plateaus"
+      }
+    },
+    {
       "id": "journals-112",
       "contentHtml": "Calvin Ku, Yu-Cheng Chen, Alice Hu, Min-Hsiu Hsieh. Optimizing quantum chemistry simulations with a hybrid quantization scheme. Communications Physics (2026) [<a href=\"https://arxiv.org/abs/2507.04253\" target=\"_blank\" rel=\"noopener\">arXiv:2507.04253</a>] [<a href=\"https://doi.org/10.1038/s42005-026-02577-9\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
       "article": {
@@ -88,23 +106,6 @@
       }
     },
     {
-      "id": "journals-5",
-      "contentHtml": "Ian George, Min-Hsiu Hsieh, Eric Chitambar. One-Shot Distributed Source Simulation: As Quantum as It Can Get. IEEE Transactions on Information Theory, vol. 71, no. 12, pp. 9251-9284, Dec. 2025 [<a href=\"https://arxiv.org/abs/2301.04301\" target=\"_blank\" rel=\"noopener\">arXiv:2301.04301</a>] [<a href=\"https://doi.org/10.1109/TIT.2025.3624812\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
-      "article": {
-        "author": "Ian George, Min-Hsiu Hsieh, Eric Chitambar",
-        "title": "One-Shot Distributed Source Simulation: As Quantum as It Can Get",
-        "journal": "IEEE Transactions on Information Theory",
-        "year": "2025",
-        "volume": "71",
-        "number": "12",
-        "pages": "9251--9284",
-        "doi": "10.1109/TIT.2025.3624812",
-        "url": "https://arxiv.org/abs/2301.04301",
-        "entryType": "article",
-        "citationKey": "Hsieh20Journal5"
-      }
-    },
-    {
       "id": "journals-6",
       "contentHtml": "Yu-cheng Chen, Ronin Wu, M. H. Cheng, Min-Hsiu Hsieh. Neural network assisted fermionic compression encoding: A lossy quantum-selected configuration interaction framework for resource-efficient ground-state simulations. Physical Review Research 8, 013128 (2026) [<a href=\"https://arxiv.org/abs/2505.17846\" target=\"_blank\" rel=\"noopener\">arXiv:2505.17846</a>] [<a href=\"https://doi.org/10.1103/9x8b-4j41\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
       "article": {
@@ -119,6 +120,23 @@
         "url": "https://arxiv.org/abs/2505.17846",
         "entryType": "article",
         "citationKey": "Hsieh20Journal6"
+      }
+    },
+    {
+      "id": "journals-5",
+      "contentHtml": "Ian George, Min-Hsiu Hsieh, Eric Chitambar. One-Shot Distributed Source Simulation: As Quantum as It Can Get. IEEE Transactions on Information Theory, vol. 71, no. 12, pp. 9251-9284, Dec. 2025 [<a href=\"https://arxiv.org/abs/2301.04301\" target=\"_blank\" rel=\"noopener\">arXiv:2301.04301</a>] [<a href=\"https://doi.org/10.1109/TIT.2025.3624812\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Ian George, Min-Hsiu Hsieh, Eric Chitambar",
+        "title": "One-Shot Distributed Source Simulation: As Quantum as It Can Get",
+        "journal": "IEEE Transactions on Information Theory",
+        "year": "2025",
+        "volume": "71",
+        "number": "12",
+        "pages": "9251--9284",
+        "doi": "10.1109/TIT.2025.3624812",
+        "url": "https://arxiv.org/abs/2301.04301",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal5"
       }
     },
     {
@@ -1703,6 +1721,23 @@
       }
     },
     {
+      "id": "journals-102",
+      "contentHtml": "Min-Hsiu Hsieh, Wen-Tai Yen, and Li-Yi Hsu. Undetermined states: How to find them and their applications. The European Physical Journal D, vol. 61, no. 1, pp. 261–265 (2010) [<a href=\"https://arxiv.org/abs/0809.3081\" target=\"_blank\" rel=\"noopener\">arXiv:0809.3081</a>] [<a href=\"https://doi.org/10.1140/epjd/e2010-10374-9\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "article": {
+        "author": "Min-Hsiu Hsieh, Wen-Tai Yen, and Li-Yi Hsu",
+        "title": "Undetermined states: How to find them and their applications",
+        "journal": "The European Physical Journal D",
+        "year": "2011",
+        "volume": "61",
+        "number": "1",
+        "pages": "261--265",
+        "doi": "10.1140/epjd/e2010-10374-9",
+        "url": "https://arxiv.org/abs/0809.3081",
+        "entryType": "article",
+        "citationKey": "Hsieh20Journal102"
+      }
+    },
+    {
       "id": "journals-100",
       "contentHtml": "Min-Hsiu Hsieh and Mark Wilde. Trading classical communication, quantum communication, and entanglement in quantum Shannon theory. IEEE Transactions on Information Theory, vol. 56, no. 9, pp. 4705–4730 (2010) [<a href=\"https://arxiv.org/abs/0901.3038\" target=\"_blank\" rel=\"noopener\">arXiv:0901.3038</a>] [<a href=\"https://doi.org/10.1109/tit.2010.2054532\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
       "article": {
@@ -1734,23 +1769,6 @@
         "url": "https://arxiv.org/abs/0811.4227",
         "entryType": "article",
         "citationKey": "Hsieh20Journal101"
-      }
-    },
-    {
-      "id": "journals-102",
-      "contentHtml": "Min-Hsiu Hsieh, Wen-Tai Yen, and Li-Yi Hsu. Undetermined states: How to find them and their applications. The European Physical Journal D, vol. 61, no. 1, pp. 261–265 (2010) [<a href=\"https://arxiv.org/abs/0809.3081\" target=\"_blank\" rel=\"noopener\">arXiv:0809.3081</a>] [<a href=\"https://doi.org/10.1140/epjd/e2010-10374-9\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
-      "article": {
-        "author": "Min-Hsiu Hsieh, Wen-Tai Yen, and Li-Yi Hsu",
-        "title": "Undetermined states: How to find them and their applications",
-        "journal": "The European Physical Journal D",
-        "year": "2011",
-        "volume": "61",
-        "number": "1",
-        "pages": "261--265",
-        "doi": "10.1140/epjd/e2010-10374-9",
-        "url": "https://arxiv.org/abs/0809.3081",
-        "entryType": "article",
-        "citationKey": "Hsieh20Journal102"
       }
     },
     {
