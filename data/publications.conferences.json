@@ -54,7 +54,7 @@
     },
     {
       "id": "conferences-2",
-      "contentHtml": "Wei-Jia Huang, Christophe Chareton, Yu-Fang Chen, Kai-Min Chung, Min-Hsiu Hsieh, Alfons Laarman, Jingyi Mei. Equivalence Checking of Quantum Circuits via Path-Sum and Weighted Model Counting. Tools and Algorithms for the Construction and Analysis of Systems (TACAS 2026), pp. 419-439 (2026) [<a href=\"https://doi.org/10.1007/978-3-032-22749-2_21\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "contentHtml": "Wei-Jia Huang, Christophe Chareton, Yu-Fang Chen, Kai-Min Chung, Min-Hsiu Hsieh, Alfons Laarman, Jingyi Mei. Equivalence Checking of Quantum Circuits via Path-Sum and Weighted Model Counting. Tools and Algorithms for the Construction and Analysis of Systems (TACAS 2026), pp. 419-439 (2026) [<a href=\"https://arxiv.org/abs/2604.24504\" target=\"_blank\" rel=\"noopener\">arXiv:2604.24504</a>] [<a href=\"https://doi.org/10.1007/978-3-032-22749-2_21\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2025Conf2",
@@ -64,7 +64,7 @@
         "year": "2026",
         "pages": "419--439",
         "doi": "10.1007/978-3-032-22749-2_21",
-        "url": "",
+        "url": "https://arxiv.org/abs/2604.24504",
         "editor": "",
         "series": "",
         "volume": "",
@@ -73,7 +73,8 @@
         "isbn": "978-3-032-22749-2",
         "issn": "",
         "urn": "",
-        "note": ""
+        "note": "",
+        "arxiv": "2604.24504"
       }
     },
     {
