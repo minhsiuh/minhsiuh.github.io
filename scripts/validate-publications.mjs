@@ -68,7 +68,8 @@ let total = 0;
 const allowedDuplicateArxiv = new Set([
   // One arXiv preprint covers multiple conference proceedings entries.
   'https://arxiv.org/abs/1701.03195',
-  'https://arxiv.org/abs/1404.5012'
+  'https://arxiv.org/abs/1404.5012',
+  'https://arxiv.org/abs/1610.04013'
 ]);
 
 for (const file of files) {

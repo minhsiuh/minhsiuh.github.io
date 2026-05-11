@@ -978,7 +978,7 @@
     },
     {
       "id": "conferences-39",
-      "contentHtml": "Igor Devetak, Todd A. Brun, Min-Hsiu Hsieh. Entanglement-Assisted Quantum Error-Correcting Codes. In: New Trends in Mathematical Physics, Springer Netherlands, Dordrecht, pp. 161-172 (2009). [<a href=\"https://doi.org/10.1007/978-90-481-2810-5_14\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "contentHtml": "Igor Devetak, Todd A. Brun, Min-Hsiu Hsieh. Entanglement-Assisted Quantum Error-Correcting Codes. In: New Trends in Mathematical Physics, Springer Netherlands, Dordrecht, pp. 161-172 (2009). [<a href=\"https://arxiv.org/abs/1610.04013\" target=\"_blank\" rel=\"noopener\">arXiv:1610.04013</a>] [<a href=\"https://doi.org/10.1007/978-90-481-2810-5_14\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2009Conf39",
@@ -997,7 +997,8 @@
         "isbn": "",
         "issn": "",
         "urn": "",
-        "note": ""
+        "note": "",
+        "arxiv": "1610.04013"
       }
     },
     {
@@ -1052,7 +1053,7 @@
     },
     {
       "id": "conferences-41",
-      "contentHtml": "Igor Devetak, Todd Brun, Min-Hsiu Hsieh. Entanglement-assisted quantum error-correcting codes. The International Congress on Mathematical Physics (ICMP 2006), Rio de Janeiro, Brazil, August 7-11, 2006.",
+      "contentHtml": "Igor Devetak, Todd Brun, Min-Hsiu Hsieh. Entanglement-assisted quantum error-correcting codes. The International Congress on Mathematical Physics (ICMP 2006), Rio de Janeiro, Brazil, August 7-11, 2006. [<a href=\"https://arxiv.org/abs/1610.04013\" target=\"_blank\" rel=\"noopener\">arXiv:1610.04013</a>].",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2006Conf41",
@@ -1071,7 +1072,8 @@
         "isbn": "",
         "issn": "",
         "urn": "",
-        "note": ""
+        "note": "",
+        "arxiv": "1610.04013"
       }
     }
   ]
