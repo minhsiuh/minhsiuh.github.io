@@ -65,6 +65,11 @@ async function urlStatus(url) {
 const errors = [];
 const warnings = [];
 let total = 0;
+const allowedDuplicateArxiv = new Set([
+  // One arXiv preprint covers multiple conference proceedings entries.
+  'https://arxiv.org/abs/1701.03195',
+  'https://arxiv.org/abs/1404.5012'
+]);
 
 for (const file of files) {
   const full = new URL(`../data/${file}`, import.meta.url);
@@ -101,7 +106,9 @@ for (const file of files) {
     }
 
     if (arxiv) {
-      if (arxivSeen.has(arxiv)) errors.push(`${section}:${item.id} duplicate arXiv in same section`);
+      if (arxivSeen.has(arxiv) && !allowedDuplicateArxiv.has(arxiv)) {
+        errors.push(`${section}:${item.id} duplicate arXiv in same section`);
+      }
       arxivSeen.add(arxiv);
     }
 

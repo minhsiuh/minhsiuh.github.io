@@ -479,7 +479,7 @@
     },
     {
       "id": "conferences-19",
-      "contentHtml": "Eyuri Wakakuwa, Yoshifumi Nakata, Min-Hsiu Hsieh. One-Shot Trade-Off Bounds for State Redistribution of Classical-Quantum Sources. 2020 IEEE International Symposium on Information Theory (ISIT 2020), Los Angeles, 2020, pp. 1864-1869. [<a href=\"https://doi.org/10.1109/ISIT44484.2020.9174423\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
+      "contentHtml": "Eyuri Wakakuwa, Yoshifumi Nakata, Min-Hsiu Hsieh. One-Shot Trade-Off Bounds for State Redistribution of Classical-Quantum Sources. 2020 IEEE International Symposium on Information Theory (ISIT 2020), Los Angeles, 2020, pp. 1864-1869. [<a href=\"https://arxiv.org/abs/2006.12059\" target=\"_blank\" rel=\"noopener\">arXiv:2006.12059</a>] [<a href=\"https://doi.org/10.1109/ISIT44484.2020.9174423\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2020Conf19",
@@ -498,12 +498,13 @@
         "isbn": "",
         "issn": "",
         "urn": "",
-        "note": ""
+        "note": "",
+        "arxiv": "2006.12059"
       }
     },
     {
       "id": "conferences-22",
-      "contentHtml": "Hao-Chung Cheng, Eric Hanson, Nilanjana Datta, Min-Hsiu Hsieh. Duality between source coding with quantum side information and c-q channel coding. 2019 IEEE International Symposium on Information Theory (ISIT 2019), Paris, 2019, pp. 1142-1146. [<a href=\"https://doi.org/10.1109/ISIT.2019.8849457\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
+      "contentHtml": "Hao-Chung Cheng, Eric Hanson, Nilanjana Datta, Min-Hsiu Hsieh. Duality between source coding with quantum side information and c-q channel coding. 2019 IEEE International Symposium on Information Theory (ISIT 2019), Paris, 2019, pp. 1142-1146. [<a href=\"https://arxiv.org/abs/1809.11143\" target=\"_blank\" rel=\"noopener\">arXiv:1809.11143</a>] [<a href=\"https://doi.org/10.1109/ISIT.2019.8849457\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2019Conf22",
@@ -522,12 +523,13 @@
         "isbn": "",
         "issn": "",
         "urn": "",
-        "note": ""
+        "note": "",
+        "arxiv": "1809.11143"
       }
     },
     {
       "id": "conferences-21",
-      "contentHtml": "Hao-Chung Cheng, Li Gao, Min-Hsiu Hsieh. Properties of Scaled Noncommutative Rényi and Augustin Information. 2019 IEEE International Symposium on Information Theory (ISIT 2019), Paris, 2019, pp. 2219-2223. [<a href=\"https://doi.org/10.1109/ISIT.2019.8849281\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
+      "contentHtml": "Hao-Chung Cheng, Li Gao, Min-Hsiu Hsieh. Properties of Scaled Noncommutative Rényi and Augustin Information. 2019 IEEE International Symposium on Information Theory (ISIT 2019), Paris, 2019, pp. 2219-2223. [<a href=\"https://arxiv.org/abs/1811.04218\" target=\"_blank\" rel=\"noopener\">arXiv:1811.04218</a>] [<a href=\"https://doi.org/10.1109/ISIT.2019.8849281\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2019Conf21",
@@ -546,12 +548,13 @@
         "isbn": "",
         "issn": "",
         "urn": "",
-        "note": ""
+        "note": "",
+        "arxiv": "1811.04218"
       }
     },
     {
       "id": "conferences-20",
-      "contentHtml": "Farzin Salek Shishavan, Min-Hsiu Hsieh, Javier R. Fonollosa. Publicness, Privacy and Confidentiality in the Single-Serving Quantum Broadcast Channel. 2019 IEEE International Symposium on Information Theory (ISIT 2019), Paris, 2019, pp. 1712-1716. [<a href=\"https://doi.org/10.1109/ISIT.2019.8849633\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
+      "contentHtml": "Farzin Salek Shishavan, Min-Hsiu Hsieh, Javier R. Fonollosa. Publicness, Privacy and Confidentiality in the Single-Serving Quantum Broadcast Channel. 2019 IEEE International Symposium on Information Theory (ISIT 2019), Paris, 2019, pp. 1712-1716. [<a href=\"https://arxiv.org/abs/1903.04463\" target=\"_blank\" rel=\"noopener\">arXiv:1903.04463</a>] [<a href=\"https://doi.org/10.1109/ISIT.2019.8849633\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2019Conf20",
@@ -570,12 +573,13 @@
         "isbn": "",
         "issn": "",
         "urn": "",
-        "note": ""
+        "note": "",
+        "arxiv": "1903.04463"
       }
     },
     {
       "id": "conferences-26",
-      "contentHtml": "Elton Yechao Zhu, Quntao Zhuang, Min-Hsiu Hsieh, Peter W. Shor. Superadditivity in trade-off capacities of quantum channels. 2018 IEEE International Symposium on Information Theory (ISIT 2018), Vail, 2018, pp. 251-255. [<a href=\"https://doi.org/10.1109/ISIT.2018.8437934\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
+      "contentHtml": "Elton Yechao Zhu, Quntao Zhuang, Min-Hsiu Hsieh, Peter W. Shor. Superadditivity in trade-off capacities of quantum channels. 2018 IEEE International Symposium on Information Theory (ISIT 2018), Vail, 2018, pp. 251-255. [<a href=\"https://arxiv.org/abs/1708.04314\" target=\"_blank\" rel=\"noopener\">arXiv:1708.04314</a>] [<a href=\"https://doi.org/10.1109/ISIT.2018.8437934\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2018Conf26",
@@ -594,12 +598,13 @@
         "isbn": "",
         "issn": "",
         "urn": "",
-        "note": ""
+        "note": "",
+        "arxiv": "1708.04314"
       }
     },
     {
       "id": "conferences-25",
-      "contentHtml": "Farzin Salek Shishavan, Anurag Anshu, Min-Hsiu Hsieh, Rahul Jain, Javier R. Fonollosa. One-shot Capacity Bounds on the Simultaneous Transmission of Public and Private Information over Quantum Channels. 2018 IEEE International Symposium on Information Theory (ISIT 2018), Vail, 2018, pp. 296-300. [<a href=\"https://doi.org/10.1109/ISIT.2018.8437856\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
+      "contentHtml": "Farzin Salek Shishavan, Anurag Anshu, Min-Hsiu Hsieh, Rahul Jain, Javier R. Fonollosa. One-shot Capacity Bounds on the Simultaneous Transmission of Public and Private Information over Quantum Channels. 2018 IEEE International Symposium on Information Theory (ISIT 2018), Vail, 2018, pp. 296-300. [<a href=\"https://arxiv.org/abs/1809.07104\" target=\"_blank\" rel=\"noopener\">arXiv:1809.07104</a>] [<a href=\"https://doi.org/10.1109/ISIT.2018.8437856\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2018Conf25",
@@ -618,12 +623,13 @@
         "isbn": "",
         "issn": "",
         "urn": "",
-        "note": ""
+        "note": "",
+        "arxiv": "1809.07104"
       }
     },
     {
       "id": "conferences-24",
-      "contentHtml": "Hao-Chung Cheng, Eric P. Hanson, Nilanjana Datta, Min-Hsiu Hsieh. Error Exponents and Strong Converse Exponents for Classical Data Compression with Quantum Side Information. 2018 IEEE International Symposium on Information Theory (ISIT 2018), Vail, 2018, pp. 2162-2166. [<a href=\"https://doi.org/10.1109/TIT.2020.3038517\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
+      "contentHtml": "Hao-Chung Cheng, Eric P. Hanson, Nilanjana Datta, Min-Hsiu Hsieh. Error Exponents and Strong Converse Exponents for Classical Data Compression with Quantum Side Information. 2018 IEEE International Symposium on Information Theory (ISIT 2018), Vail, 2018, pp. 2162-2166. [<a href=\"https://arxiv.org/abs/1803.07505\" target=\"_blank\" rel=\"noopener\">arXiv:1803.07505</a>] [<a href=\"https://doi.org/10.1109/TIT.2020.3038517\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2018Conf24",
@@ -642,12 +648,13 @@
         "isbn": "",
         "issn": "",
         "urn": "",
-        "note": ""
+        "note": "",
+        "arxiv": "1803.07505"
       }
     },
     {
       "id": "conferences-23",
-      "contentHtml": "Jihao Fan, Min-Hsiu Hsieh, Hanwu Chen, Younghui Li, He Chen. Construction and Performance of Quantum Burst Error Correction Codes for Correlated Errors. 2018 IEEE International Symposium on Information Theory (ISIT 2018), Vail, 2018, pp. 2336-2340. [<a href=\"https://doi.org/10.1109/ISIT.2018.8437493\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
+      "contentHtml": "Jihao Fan, Min-Hsiu Hsieh, Hanwu Chen, Younghui Li, He Chen. Construction and Performance of Quantum Burst Error Correction Codes for Correlated Errors. 2018 IEEE International Symposium on Information Theory (ISIT 2018), Vail, 2018, pp. 2336-2340. [<a href=\"https://arxiv.org/abs/1801.03861\" target=\"_blank\" rel=\"noopener\">arXiv:1801.03861</a>] [<a href=\"https://doi.org/10.1109/ISIT.2018.8437493\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2018Conf23",
@@ -666,12 +673,13 @@
         "isbn": "",
         "issn": "",
         "urn": "",
-        "note": ""
+        "note": "",
+        "arxiv": "1801.03861"
       }
     },
     {
       "id": "conferences-30",
-      "contentHtml": "Hao-Chung Cheng, Min-Hsiu Hsieh, and Marco Tomamichel. Sphere-Packing Bound for Classical-Quantum Channels. 2017 IEEE Information Theory Workshop (ITW), Kaohsiung, 2017, pp. 479-483. [<a href=\"https://ieeexplore.ieee.org/document/8278039/\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
+      "contentHtml": "Hao-Chung Cheng, Min-Hsiu Hsieh, and Marco Tomamichel. Sphere-Packing Bound for Classical-Quantum Channels. 2017 IEEE Information Theory Workshop (ITW), Kaohsiung, 2017, pp. 479-483. [<a href=\"https://arxiv.org/abs/1704.05703\" target=\"_blank\" rel=\"noopener\">arXiv:1704.05703</a>] [<a href=\"https://ieeexplore.ieee.org/document/8278039/\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2017Conf30",
@@ -690,12 +698,13 @@
         "isbn": "",
         "issn": "",
         "urn": "",
-        "note": ""
+        "note": "",
+        "arxiv": "1704.05703"
       }
     },
     {
       "id": "conferences-29",
-      "contentHtml": "Hao-Chung Cheng and Min-Hsiu Hsieh. Moderate Deviations for Classical-Quantum Channels. 2017 IEEE International Symposium on Information Theory (ISIT 2017), Aachen, 2017, pp. 296-300. [<a href=\"https://ieeexplore.ieee.org/document/8006537/\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
+      "contentHtml": "Hao-Chung Cheng and Min-Hsiu Hsieh. Moderate Deviations for Classical-Quantum Channels. 2017 IEEE International Symposium on Information Theory (ISIT 2017), Aachen, 2017, pp. 296-300. [<a href=\"https://arxiv.org/abs/1701.03195\" target=\"_blank\" rel=\"noopener\">arXiv:1701.03195</a>] [<a href=\"https://ieeexplore.ieee.org/document/8006537/\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2017Conf29",
@@ -714,12 +723,13 @@
         "isbn": "",
         "issn": "",
         "urn": "",
-        "note": ""
+        "note": "",
+        "arxiv": "1701.03195"
       }
     },
     {
       "id": "conferences-28",
-      "contentHtml": "Hao-Chung Cheng and Min-Hsiu Hsieh. Moderate Deviations for Quantum Hypothesis Testing and a Martingale Inequality. 2017 IEEE International Symposium on Information Theory (ISIT 2017), Aachen, 2017, pp. 1978-1982. [<a href=\"https://ieeexplore.ieee.org/abstract/document/8006875/\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "contentHtml": "Hao-Chung Cheng and Min-Hsiu Hsieh. Moderate Deviations for Quantum Hypothesis Testing and a Martingale Inequality. 2017 IEEE International Symposium on Information Theory (ISIT 2017), Aachen, 2017, pp. 1978-1982. [<a href=\"https://arxiv.org/abs/1701.03195\" target=\"_blank\" rel=\"noopener\">arXiv:1701.03195</a>] [<a href=\"https://ieeexplore.ieee.org/abstract/document/8006875/\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh1982Conf28",
@@ -738,12 +748,13 @@
         "isbn": "",
         "issn": "",
         "urn": "",
-        "note": ""
+        "note": "",
+        "arxiv": "1701.03195"
       }
     },
     {
       "id": "conferences-27",
-      "contentHtml": "Hao-Chung Cheng, Min-Hsiu Hsieh, and Marco Tomamichel. Sphere-Packing Bound for Symmetric Classical-Quantum Channels. 2017 IEEE International Symposium on Information Theory (ISIT 2017), Aachen, 2017, pp. 286-290. [<a href=\"https://doi.org/10.1109/ISIT.2017.8006535\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
+      "contentHtml": "Hao-Chung Cheng, Min-Hsiu Hsieh, and Marco Tomamichel. Sphere-Packing Bound for Symmetric Classical-Quantum Channels. 2017 IEEE International Symposium on Information Theory (ISIT 2017), Aachen, 2017, pp. 286-290. [<a href=\"https://arxiv.org/abs/1701.02957\" target=\"_blank\" rel=\"noopener\">arXiv:1701.02957</a>] [<a href=\"https://doi.org/10.1109/ISIT.2017.8006535\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2017Conf27",
@@ -762,12 +773,13 @@
         "isbn": "",
         "issn": "",
         "urn": "",
-        "note": ""
+        "note": "",
+        "arxiv": "1701.02957"
       }
     },
     {
       "id": "conferences-33",
-      "contentHtml": "Min-Hsiu Hsieh and Shun Watanabe. Source compression with a quantum helper. 2015 IEEE International Symposium on Information Theory (ISIT 2015), 2015, Hong Kong, June 14-19 2015, pp. 2762-2766 (2015). [<a href=\"https://doi.org/10.1109/ISIT.2015.7282959\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
+      "contentHtml": "Min-Hsiu Hsieh and Shun Watanabe. Source compression with a quantum helper. 2015 IEEE International Symposium on Information Theory (ISIT 2015), 2015, Hong Kong, June 14-19 2015, pp. 2762-2766 (2015). [<a href=\"https://arxiv.org/abs/1501.04366\" target=\"_blank\" rel=\"noopener\">arXiv:1501.04366</a>] [<a href=\"https://doi.org/10.1109/ISIT.2015.7282959\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2015Conf33",
@@ -786,12 +798,13 @@
         "isbn": "",
         "issn": "",
         "urn": "",
-        "note": ""
+        "note": "",
+        "arxiv": "1501.04366"
       }
     },
     {
       "id": "conferences-32",
-      "contentHtml": "Min-Hsiu Hsieh, and Shun Watanabe. Fully quantum source compression with a quantum helper. Proceedings of the 2015 IEEE Information Theory Workshop (ITW 2015), Jeju, Korea, 11-15 Oct. 2015, pp. 307-311 (2015). [<a href=\"https://doi.org/10.1109/ITWF.2015.7360785\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
+      "contentHtml": "Min-Hsiu Hsieh, and Shun Watanabe. Fully quantum source compression with a quantum helper. Proceedings of the 2015 IEEE Information Theory Workshop (ITW 2015), Jeju, Korea, 11-15 Oct. 2015, pp. 307-311 (2015). [<a href=\"https://arxiv.org/abs/1504.05227\" target=\"_blank\" rel=\"noopener\">arXiv:1504.05227</a>] [<a href=\"https://doi.org/10.1109/ITWF.2015.7360785\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2015Conf32",
@@ -810,12 +823,13 @@
         "isbn": "",
         "issn": "",
         "urn": "",
-        "note": ""
+        "note": "",
+        "arxiv": "1504.05227"
       }
     },
     {
       "id": "conferences-31",
-      "contentHtml": "Eric Chitambar, Ben Fortescue, and Min-Hsiu Hsieh. Distributions attaining secret key at a rate of the conditional mutual information. Advances in Cryptology - CRYPTO 2015 - 35th Annual Cryptology Conference, Santa Barbara, CA, USA, pp. 443-462, (2015). [<a href=\"https://doi.org/10.1007/978-3-662-48000-7_22\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
+      "contentHtml": "Eric Chitambar, Ben Fortescue, and Min-Hsiu Hsieh. Distributions attaining secret key at a rate of the conditional mutual information. Advances in Cryptology - CRYPTO 2015 - 35th Annual Cryptology Conference, Santa Barbara, CA, USA, pp. 443-462, (2015). [<a href=\"https://arxiv.org/abs/1502.04430\" target=\"_blank\" rel=\"noopener\">arXiv:1502.04430</a>] [<a href=\"https://doi.org/10.1007/978-3-662-48000-7_22\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2015Conf31",
@@ -834,12 +848,13 @@
         "isbn": "",
         "issn": "",
         "urn": "",
-        "note": ""
+        "note": "",
+        "arxiv": "1502.04430"
       }
     },
     {
       "id": "conferences-42",
-      "contentHtml": "Ching-Yi Lai, Min-Hsiu Hsieh, Hsiao-feng Lu. A complete MacWilliams theorem for convolutional codes. 2014 IEEE Information Theory Workshop (ITW 2014) (2014), pp. 157--161. [<a href=\"https://doi.org/10.1109/ITW.2014.6970812\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "contentHtml": "Ching-Yi Lai, Min-Hsiu Hsieh, Hsiao-feng Lu. A complete MacWilliams theorem for convolutional codes. 2014 IEEE Information Theory Workshop (ITW 2014) (2014), pp. 157--161. [<a href=\"https://arxiv.org/abs/1404.5012\" target=\"_blank\" rel=\"noopener\">arXiv:1404.5012</a>] [<a href=\"https://doi.org/10.1109/ITW.2014.6970812\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2014Conf42",
@@ -858,12 +873,13 @@
         "isbn": "",
         "issn": "",
         "urn": "",
-        "note": ""
+        "note": "",
+        "arxiv": "1404.5012"
       }
     },
     {
       "id": "conferences-34",
-      "contentHtml": "Ching-Yi Lai, Min-Hsiu Hsieh. The MacWilliams identity for quantum convolutional codes. 2014 IEEE International Symposium on Information Theory (ISIT 2014), Honolulu, HI, June 29-July 4 2014, pp. 911–915 (2014). [<a href=\"https://doi.org/10.1109/ISIT.2014.6875072\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
+      "contentHtml": "Ching-Yi Lai, Min-Hsiu Hsieh. The MacWilliams identity for quantum convolutional codes. 2014 IEEE International Symposium on Information Theory (ISIT 2014), Honolulu, HI, June 29-July 4 2014, pp. 911–915 (2014). [<a href=\"https://arxiv.org/abs/1404.5012\" target=\"_blank\" rel=\"noopener\">arXiv:1404.5012</a>] [<a href=\"https://doi.org/10.1109/ISIT.2014.6875072\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2014Conf34",
@@ -882,12 +898,13 @@
         "isbn": "",
         "issn": "",
         "urn": "",
-        "note": ""
+        "note": "",
+        "arxiv": "1404.5012"
       }
     },
     {
       "id": "conferences-36",
-      "contentHtml": "Yuichiro Fujiwara and Min-Hsiu Hsieh. Adaptively correcting quantum errors with entanglement. 2011 IEEE International Symposium on Information Theory (ISIT 2011), Saint Petersburg, Russia, July 31–August 5 2011, pp. 279–283 (2011). [<a href=\"https://doi.org/10.1109/ISIT.2011.6033867\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
+      "contentHtml": "Yuichiro Fujiwara and Min-Hsiu Hsieh. Adaptively correcting quantum errors with entanglement. 2011 IEEE International Symposium on Information Theory (ISIT 2011), Saint Petersburg, Russia, July 31–August 5 2011, pp. 279–283 (2011). [<a href=\"https://arxiv.org/abs/1104.5004\" target=\"_blank\" rel=\"noopener\">arXiv:1104.5004</a>] [<a href=\"https://doi.org/10.1109/ISIT.2011.6033867\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2011Conf36",
@@ -906,7 +923,8 @@
         "isbn": "",
         "issn": "",
         "urn": "",
-        "note": ""
+        "note": "",
+        "arxiv": "1104.5004"
       }
     },
     {
@@ -935,7 +953,7 @@
     },
     {
       "id": "conferences-37",
-      "contentHtml": "Mark Wilde and Min-Hsiu Hsieh. Entanglement generation with a quantum channel and a shared state. 2010 IEEE International Symposium on Information Theory (ISIT 2010), Austin, Texas, June 13–18 2010, pp. 2713–2717 (2010). [<a href=\"https://doi.org/10.1109/ISIT.2010.5513664\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
+      "contentHtml": "Mark Wilde and Min-Hsiu Hsieh. Entanglement generation with a quantum channel and a shared state. 2010 IEEE International Symposium on Information Theory (ISIT 2010), Austin, Texas, June 13–18 2010, pp. 2713–2717 (2010). [<a href=\"https://arxiv.org/abs/0904.1175\" target=\"_blank\" rel=\"noopener\">arXiv:0904.1175</a>] [<a href=\"https://doi.org/10.1109/ISIT.2010.5513664\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2010Conf37",
@@ -954,7 +972,8 @@
         "isbn": "",
         "issn": "",
         "urn": "",
-        "note": ""
+        "note": "",
+        "arxiv": "0904.1175"
       }
     },
     {
@@ -983,7 +1002,7 @@
     },
     {
       "id": "conferences-38",
-      "contentHtml": "Min-Hsiu Hsieh and Mark M. Wilde. Optimal Trading of Classical Communication, Quantum Communication, and Entanglement. In: Childs, A., Mosca, M. (eds) Theory of Quantum Computation, Communication, and Cryptography. TQC 2009. Lecture Notes in Computer Science, vol 5906. Springer, Berlin, Heidelberg. [<a href=\"https://doi.org/10.1007/978-3-642-10698-9_13\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
+      "contentHtml": "Min-Hsiu Hsieh and Mark M. Wilde. Optimal Trading of Classical Communication, Quantum Communication, and Entanglement. In: Childs, A., Mosca, M. (eds) Theory of Quantum Computation, Communication, and Cryptography. TQC 2009. Lecture Notes in Computer Science, vol 5906. Springer, Berlin, Heidelberg. [<a href=\"https://arxiv.org/abs/0901.3038\" target=\"_blank\" rel=\"noopener\">arXiv:0901.3038</a>] [<a href=\"https://doi.org/10.1007/978-3-642-10698-9_13\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2009Conf38",
@@ -1002,12 +1021,13 @@
         "isbn": "",
         "issn": "",
         "urn": "",
-        "note": ""
+        "note": "",
+        "arxiv": "0901.3038"
       }
     },
     {
       "id": "conferences-40",
-      "contentHtml": "Todd Brun, Igor Devetak, and Min-Hsiu Hsieh. General entanglement-assisted quantum error-correcting codes. 2007 IEEE International Symposium on Information Theory (ISIT 2007), Nice, France, June 24–29 2007, pp. 2101–2105 (2007). [<a href=\"https://doi.org/10.1109/ISIT.2007.4557482\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
+      "contentHtml": "Todd Brun, Igor Devetak, and Min-Hsiu Hsieh. General entanglement-assisted quantum error-correcting codes. 2007 IEEE International Symposium on Information Theory (ISIT 2007), Nice, France, June 24–29 2007, pp. 2101–2105 (2007). [<a href=\"https://arxiv.org/abs/0708.2142\" target=\"_blank\" rel=\"noopener\">arXiv:0708.2142</a>] [<a href=\"https://doi.org/10.1109/ISIT.2007.4557482\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2007Conf40",
@@ -1026,7 +1046,8 @@
         "isbn": "",
         "issn": "",
         "urn": "",
-        "note": ""
+        "note": "",
+        "arxiv": "0708.2142"
       }
     },
     {
