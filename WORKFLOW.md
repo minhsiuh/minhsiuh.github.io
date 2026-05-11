@@ -151,4 +151,41 @@ git push origin main
 
 ---
 
-_最後更新：2026-03-11_
+## 10) Publication card bug-fix protocol（必遵守）
+
+使用者指出 publication card 有缺漏或錯誤時，不可只修單一截圖項目後回報「都好了」。必須直接完成以下流程：
+
+1. 先定位使用者看到的 card 類型與資料來源：
+   - conference card → `data/publications.conferences.json` / `inproceedings`
+   - journal card → `data/publications.journals.json` / `article`
+   - book card → `data/publications.books.json` / `book`
+2. 用 `id + title` 精準定位，不用畫面順序猜。
+3. 若補 arXiv/DOI：
+   - 同步更新 `contentHtml`
+   - 同步更新 structured field（例如 `inproceedings.arxiv`、`article.doi`）
+   - 順序固定 `[arXiv] [DOI]`
+4. 若使用者說「這一類都檢查」或問題明顯是系統性缺漏，必須跑全區塊 audit：
+   - 列出該 section 總筆數
+   - 列出缺少 arXiv/DOI 的 item IDs
+   - 修能確認的，不能確認的保留 unresolved list
+5. 查找 arXiv 的優先順序：
+   - repo 內既有 JSON / journals / research-topic pages
+   - arXiv exact title / metadata
+   - DOI publisher / OpenReview / IEEE page
+   - 不確定就不要硬補，列為 unresolved
+6. 若同一 arXiv 對應多筆 conference records，必須明確確認並在 `scripts/validate-publications.mjs` allowlist 註記；不可關閉 duplicate check。
+7. 完成後必跑：
+
+```bash
+node scripts/validate-publications.mjs
+```
+
+並跑一次針對該區塊的 remaining-missing audit。回報要包含：
+- 修了哪些 IDs
+- 還找不到哪些 IDs
+- validator 結果
+- commit SHA / push 狀態（若已部署）
+
+---
+
+_最後更新：2026-05-11_
