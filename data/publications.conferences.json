@@ -379,7 +379,7 @@
     },
     {
       "id": "conferences-17",
-      "contentHtml": "Ting-Chun Lin, Min-Hsiu Hsieh. c3-Locally Testable Codes from Lossless Expanders. 2022 IEEE International Symposium on Information Theory (ISIT 2022), pp. 1175-1180 (2022). [<a href=\"https://doi.org/10.1109/ISIT50566.2022.9834679\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "contentHtml": "Ting-Chun Lin, Min-Hsiu Hsieh. c3-Locally Testable Codes from Lossless Expanders. 2022 IEEE International Symposium on Information Theory (ISIT 2022), pp. 1175-1180 (2022). [<a href=\"https://arxiv.org/abs/2201.11369\" target=\"_blank\" rel=\"noopener\">arXiv:2201.11369</a>] [<a href=\"https://doi.org/10.1109/ISIT50566.2022.9834679\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2022Conf17",
@@ -398,12 +398,13 @@
         "isbn": "",
         "issn": "",
         "urn": "",
-        "note": ""
+        "note": "",
+        "arxiv": "2201.11369"
       }
     },
     {
       "id": "conferences-16",
-      "contentHtml": "Tian-Fu Chen, Jie-Hong R. Jiang, Min-Hsiu Hsieh. Partial Equivalence Checking of Quantum Circuits. Proceedings of the International Conference on Quantum Computing and Engineering (QCE), 2022, pp. 594-604. [<a href=\"https://doi.org/10.1109/QCE53715.2022.00082\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
+      "contentHtml": "Tian-Fu Chen, Jie-Hong R. Jiang, Min-Hsiu Hsieh. Partial Equivalence Checking of Quantum Circuits. Proceedings of the International Conference on Quantum Computing and Engineering (QCE), 2022, pp. 594-604. [<a href=\"https://arxiv.org/abs/2208.07564\" target=\"_blank\" rel=\"noopener\">arXiv:2208.07564</a>] [<a href=\"https://doi.org/10.1109/QCE53715.2022.00082\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2022Conf16",
@@ -422,12 +423,13 @@
         "isbn": "",
         "issn": "",
         "urn": "",
-        "note": ""
+        "note": "",
+        "arxiv": "2208.07564"
       }
     },
     {
       "id": "conferences-15",
-      "contentHtml": "Kaining Zhang, Liu Liu, Min-Hsiu Hsieh, Dacheng Tao. Escaping from the Barren Plateau via Gaussian Initializations in Deep Variational Quantum Circuits. Advances in Neural Information Processing Systems (NeurIPS 2022). [<a href=\"https://openreview.net/forum?id=jXgbJdQ2YIy\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "contentHtml": "Kaining Zhang, Liu Liu, Min-Hsiu Hsieh, Dacheng Tao. Escaping from the Barren Plateau via Gaussian Initializations in Deep Variational Quantum Circuits. Advances in Neural Information Processing Systems (NeurIPS 2022). [<a href=\"https://arxiv.org/abs/2203.09376\" target=\"_blank\" rel=\"noopener\">arXiv:2203.09376</a>] [<a href=\"https://openreview.net/forum?id=jXgbJdQ2YIy\" target=\"_blank\" rel=\"noopener\">OpenReview</a>].",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2022Conf15",
@@ -446,17 +448,18 @@
         "isbn": "",
         "issn": "",
         "urn": "",
-        "note": ""
+        "note": "",
+        "arxiv": "2203.09376"
       }
     },
     {
       "id": "conferences-18",
-      "contentHtml": "Haowei Shi, Min-Hsiu Hsieh, Saikat Guha, Zheshen Zhang, Quntao Zhuang. Shi, M. -H. Hsieh, S. Guha, Z. Zhang, Q. Zhuang. Shi, M. -H. Hsieh, S. Guha, Z. Zhang and Q. Zhuang, \"Entanglement-assisted multiple-access channels: capacity regions and protocol designs,\" 2021 IEEE International Symposium on Information Theory (ISIT 2021), 2021, pp. 408-413. [<a href=\"https://doi.org/10.1109/isit45174.2021.9518082\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
+      "contentHtml": "Haowei Shi, Min-Hsiu Hsieh, Saikat Guha, Zheshen Zhang, Quntao Zhuang. Entanglement-assisted multiple-access channels: capacity regions and protocol designs. 2021 IEEE International Symposium on Information Theory (ISIT 2021), 2021, pp. 408-413. [<a href=\"https://arxiv.org/abs/2101.12173\" target=\"_blank\" rel=\"noopener\">arXiv:2101.12173</a>] [<a href=\"https://doi.org/10.1109/isit45174.2021.9518082\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2021Conf18",
         "author": "Haowei Shi, Min-Hsiu Hsieh, Saikat Guha, Zheshen Zhang, Quntao Zhuang",
-        "title": "Entanglement-assisted multiple-access channels: capacity regions and protocol designs,",
+        "title": "Entanglement-assisted multiple-access channels: capacity regions and protocol designs",
         "booktitle": "IEEE International Symposium on Information Theory (ISIT 2021)",
         "year": "2021",
         "pages": "408--413",
@@ -470,7 +473,8 @@
         "isbn": "",
         "issn": "",
         "urn": "",
-        "note": ""
+        "note": "",
+        "arxiv": "2101.12173"
       }
     },
     {
