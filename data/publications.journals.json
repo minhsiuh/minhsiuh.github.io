@@ -2001,7 +2001,7 @@
     },
     {
       "id": "journals-110",
-      "contentHtml": "Min-Hsiu Hsieh, Igor Devetak, and Todd Brun. General entanglement-assisted quantum error-correcting codes. Physical Review A, vol. 76, no. 6, p. 062313 (2007) [<a href=\"https://arxiv.org/abs/0708.2142\" target=\"_blank\" rel=\"noopener\">arXiv:0708.2142</a>] [<a href=\"https://doi.org/10.1109/isit.2007.4557160\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
+      "contentHtml": "Min-Hsiu Hsieh, Igor Devetak, and Todd Brun. General entanglement-assisted quantum error-correcting codes. Physical Review A, vol. 76, no. 6, p. 062313 (2007) [<a href=\"https://arxiv.org/abs/0708.2142\" target=\"_blank\" rel=\"noopener\">arXiv:0708.2142</a>] [<a href=\"https://doi.org/10.1103/PhysRevA.76.062313\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
       "article": {
         "author": "Min-Hsiu Hsieh, Igor Devetak, and Todd Brun",
         "title": "General entanglement-assisted quantum error-correcting codes",
@@ -2010,8 +2010,8 @@
         "volume": "76",
         "number": "",
         "pages": "062313",
-        "doi": "10.1103/physreva.76.062313",
-        "url": "https://doi.org/10.1103/physreva.76.062313",
+        "doi": "10.1103/PhysRevA.76.062313",
+        "url": "https://doi.org/10.1103/PhysRevA.76.062313",
         "entryType": "article",
         "citationKey": "Hsieh20Journal110",
         "arxiv": "0708.2142"
