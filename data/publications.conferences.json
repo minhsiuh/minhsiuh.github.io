@@ -929,7 +929,7 @@
     },
     {
       "id": "conferences-35",
-      "contentHtml": "Mark Wilde and Min-Hsiu Hsieh. Entanglement boosts quantum turbo codes. 2011 IEEE International Symposium on Information Theory (ISIT 2011), Saint Petersburg, Russia, July 31–August 5 2011, pp. 445–449 (2011). [<a href=\"https://doi.org/10.1109/ISIT.2011.6034277\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
+      "contentHtml": "Mark Wilde and Min-Hsiu Hsieh. Entanglement boosts quantum turbo codes. 2011 IEEE International Symposium on Information Theory (ISIT 2011), Saint Petersburg, Russia, July 31–August 5 2011, pp. 445–449 (2011). [<a href=\"https://arxiv.org/abs/1010.1256\" target=\"_blank\" rel=\"noopener\">arXiv:1010.1256</a>] [<a href=\"https://doi.org/10.1109/ISIT.2011.6034277\" target=\"_blank\" rel=\"noopener\">DOI</a>]",
       "inproceedings": {
         "entryType": "inproceedings",
         "citationKey": "Hsieh2011Conf35",
@@ -948,7 +948,8 @@
         "isbn": "",
         "issn": "",
         "urn": "",
-        "note": ""
+        "note": "",
+        "arxiv": "1010.1256"
       }
     },
     {
