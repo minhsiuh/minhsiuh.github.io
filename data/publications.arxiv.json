@@ -1,6 +1,6 @@
 {
   "section": "arxiv",
-  "updatedAt": "2026-03-10T04:23:07.904Z",
+  "updatedAt": "2026-05-29T10:45:00.000Z",
   "items": [
     {
       "id": "arxiv-37",
@@ -25,6 +25,10 @@
     {
       "id": "arxiv-2",
       "contentHtml": "Min-Hsiu Hsieh, Xingjian Li, Ting-Chun Lin. Simplified Quantum Weight Reduction with Optimal Bounds. [<a href=\"https://arxiv.org/abs/2510.09601\" target=\"_blank\" rel=\"noopener\">arXiv:2510.09601</a>] (2025)."
+    },
+    {
+      "id": "arxiv-38",
+      "contentHtml": "Bruno Cavalar, Eli Goldin, Matthew Gray, Taiga Hiroka, Min-Hsiu Hsieh, Tomoyuki Morimae. Cryptographic Conditions for Efficient Testing of Distributions and Quantum States. [<a href=\"https://arxiv.org/abs/2510.05028\" target=\"_blank\" rel=\"noopener\">arXiv:2510.05028</a>] (2025)."
     },
     {
       "id": "arxiv-5",
