@@ -422,6 +422,53 @@
             font-weight: 600;
         }
 
+        .stats-subtitle {
+            color: #5f6f80;
+            font-size: 0.92rem;
+            margin-top: 6px;
+        }
+
+        .journal-chart {
+            display: grid;
+            gap: 14px;
+        }
+
+        .journal-bar-row {
+            display: grid;
+            grid-template-columns: minmax(210px, 0.95fr) minmax(220px, 1.4fr) 48px;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .journal-bar-name {
+            color: var(--primary-color);
+            font-size: 0.94rem;
+            font-weight: 700;
+            line-height: 1.35;
+        }
+
+        .journal-bar-track {
+            height: 12px;
+            border-radius: 999px;
+            background: #e8eff6;
+            overflow: hidden;
+        }
+
+        .journal-bar-fill {
+            display: block;
+            height: 100%;
+            min-width: 8px;
+            border-radius: inherit;
+            background: linear-gradient(90deg, rgba(52, 152, 219, 0.55), rgba(52, 152, 219, 0.95));
+        }
+
+        .journal-bar-count {
+            color: var(--accent-color);
+            font-size: 1.05rem;
+            font-weight: 800;
+            text-align: right;
+        }
+
         .stats-table {
             width: 100%;
             border-collapse: collapse;
@@ -456,6 +503,19 @@
         @media (max-width: 768px) {
             .journal-stats-box {
                 padding: 20px;
+            }
+
+            .journal-bar-row {
+                grid-template-columns: 1fr 46px;
+                gap: 7px 12px;
+            }
+
+            .journal-bar-name {
+                grid-column: 1 / -1;
+            }
+
+            .journal-bar-count {
+                font-size: 1rem;
             }
 
             .stats-table td {
@@ -729,39 +789,45 @@
             <div class="journal-stats-box">
                 <div class="stats-header">
                     <h4>Journal Publications</h4>
+                    <div class="stats-subtitle">Selected venues ranked by publication count.</div>
                 </div>
-                <table class="stats-table">
-                    <tbody id="journal-stats-body">
-                        <tr>
-                            <td>IEEE Transactions on Information Theory</td>
-                            <td class="count">29</td>
-                        </tr>
-                        <tr>
-                            <td>Physical Review Letters</td>
-                            <td class="count">8</td>
-                        </tr>
-                        <tr>
-                            <td>PRX Quantum</td>
-                            <td class="count">3</td>
-                        </tr>
-                        <tr>
-                            <td>Nature Communications</td>
-                            <td class="count">4</td>
-                        </tr>
-                        <tr>
-                            <td>npj Quantum Information</td>
-                            <td class="count">7</td>
-                        </tr>
-                        <tr>
-                            <td>Physical Review A</td>
-                            <td class="count">14</td>
-                        </tr>
-                        <tr>
-                            <td>Physical Review Research</td>
-                            <td class="count">7</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="journal-chart" id="journal-stats-body" aria-label="Journal publication counts bar chart">
+                    <div class="journal-bar-row">
+                        <div class="journal-bar-name">IEEE Transactions on Information Theory</div>
+                        <div class="journal-bar-track"><span class="journal-bar-fill" style="width: 100%;"></span></div>
+                        <div class="journal-bar-count">29</div>
+                    </div>
+                    <div class="journal-bar-row">
+                        <div class="journal-bar-name">Physical Review A</div>
+                        <div class="journal-bar-track"><span class="journal-bar-fill" style="width: 48%;"></span></div>
+                        <div class="journal-bar-count">14</div>
+                    </div>
+                    <div class="journal-bar-row">
+                        <div class="journal-bar-name">Physical Review Letters</div>
+                        <div class="journal-bar-track"><span class="journal-bar-fill" style="width: 28%;"></span></div>
+                        <div class="journal-bar-count">8</div>
+                    </div>
+                    <div class="journal-bar-row">
+                        <div class="journal-bar-name">npj Quantum Information</div>
+                        <div class="journal-bar-track"><span class="journal-bar-fill" style="width: 24%;"></span></div>
+                        <div class="journal-bar-count">7</div>
+                    </div>
+                    <div class="journal-bar-row">
+                        <div class="journal-bar-name">Physical Review Research</div>
+                        <div class="journal-bar-track"><span class="journal-bar-fill" style="width: 24%;"></span></div>
+                        <div class="journal-bar-count">7</div>
+                    </div>
+                    <div class="journal-bar-row">
+                        <div class="journal-bar-name">Nature Communications</div>
+                        <div class="journal-bar-track"><span class="journal-bar-fill" style="width: 14%;"></span></div>
+                        <div class="journal-bar-count">4</div>
+                    </div>
+                    <div class="journal-bar-row">
+                        <div class="journal-bar-name">PRX Quantum</div>
+                        <div class="journal-bar-track"><span class="journal-bar-fill" style="width: 10%;"></span></div>
+                        <div class="journal-bar-count">3</div>
+                    </div>
+                </div>
             </div>
 
             <div class="journal-stats-box">
@@ -905,8 +971,8 @@
             }
 
             async function updateJournalStatsTable() {
-                const tbody = document.getElementById('journal-stats-body');
-                if (!tbody) return;
+                const chart = document.getElementById('journal-stats-body');
+                if (!chart) return;
 
                 // Whitelist: keep only journals explicitly listed in the original table
                 const whitelist = [
@@ -947,11 +1013,22 @@
                         counts.set(journal, (counts.get(journal) || 0) + 1);
                     }
 
-                    tbody.innerHTML = whitelist
-                        .map((name) => `<tr><td>${esc(name)}</td><td class="count">${counts.get(name) || 0}</td></tr>`)
+                    const sortedCounts = Array.from(counts.entries())
+                        .sort((a, b) => b[1] - a[1] || whitelist.indexOf(a[0]) - whitelist.indexOf(b[0]));
+                    const maxCount = Math.max(...sortedCounts.map(([, count]) => count), 1);
+
+                    chart.innerHTML = sortedCounts
+                        .map(([name, count]) => {
+                            const width = count > 0 ? Math.max((count / maxCount) * 100, 4) : 0;
+                            return `<div class="journal-bar-row">
+                                <div class="journal-bar-name">${esc(name)}</div>
+                                <div class="journal-bar-track"><span class="journal-bar-fill" style="width: ${width.toFixed(1)}%;"></span></div>
+                                <div class="journal-bar-count">${count}</div>
+                            </div>`;
+                        })
                         .join('');
                 } catch (err) {
-                    console.warn('[publications] Failed to compute journal stats table from data', err);
+                    console.warn('[publications] Failed to compute journal stats chart from data', err);
                 }
             }
 
