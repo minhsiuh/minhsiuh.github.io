@@ -425,11 +425,14 @@
         .category-card {
             background: white;
             border: 1px solid var(--border-color);
+            border-left: 3px solid var(--accent-color);
             border-radius: 8px;
-            padding: 24px;
+            padding: 26px 28px;
             transition: border-color 0.2s ease, box-shadow 0.2s ease;
             position: relative;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
         }
 
         .category-card:hover {
@@ -450,23 +453,24 @@
         .category-card.software::before,
         .category-card.applications::before,
         .category-card.others::before {
-            background: var(--accent-color);
+            background: transparent;
         }
 
         .category-label {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            min-width: 42px;
-            height: 42px;
-            padding: 0 14px;
-            border: 1px solid #d8e4ef;
-            border-radius: 8px;
+            width: fit-content;
+            min-width: 0;
+            height: auto;
+            padding: 0;
+            border: none;
+            border-radius: 0;
             color: var(--accent-color);
             font-size: 0.8rem;
             font-weight: 800;
             letter-spacing: 0.08em;
-            margin-bottom: 18px;
+            margin-bottom: 14px;
             text-transform: uppercase;
         }
 
@@ -487,23 +491,26 @@
         .category-topics {
             list-style: none;
             padding: 0;
-            margin-bottom: 20px;
+            margin-bottom: 22px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
         }
 
         .category-topics li {
-            padding: 4px 0;
+            padding: 0;
             color: #555;
             font-size: 0.9rem;
         }
 
         .category-topics li a {
-            display: block;
+            display: inline-flex;
             text-decoration: none;
             color: #555;
             background: #f8fafc;
             border: 1px solid #e6edf5;
-            border-radius: 6px;
-            padding: 8px 10px;
+            border-radius: 999px;
+            padding: 5px 10px;
             transition: all 0.2s ease;
         }
 
@@ -526,6 +533,7 @@
             font-weight: 600;
             font-size: 0.95rem;
             transition: gap 0.2s;
+            margin-top: auto;
         }
 
         .category-link:hover {
