@@ -592,7 +592,7 @@
         }
 
         .research-plot {
-            min-height: 640px;
+            min-height: 720px;
             position: relative;
             overflow: hidden;
             border: 1px solid var(--border-color);
@@ -614,15 +614,13 @@
             pointer-events: none;
         }
 
-        .plot-orbit {
+        .plot-cycle-line {
             fill: none;
             stroke: var(--accent-color);
             stroke-linecap: round;
-        }
-
-        .plot-orbit {
-            stroke-width: 1.4;
-            stroke-opacity: 0.25;
+            stroke-linejoin: round;
+            stroke-width: 2.2;
+            stroke-opacity: 0.48;
         }
 
         .plot-core,
@@ -668,22 +666,22 @@
 
         .plot-node.foundations {
             left: 28px;
-            top: 34px;
+            top: 26px;
         }
 
         .plot-node.hardware {
-            right: 32px;
-            top: 38px;
+            right: 28px;
+            top: 26px;
         }
 
         .plot-node.software {
-            right: 72px;
-            bottom: 40px;
+            right: 52px;
+            bottom: 26px;
         }
 
         .plot-node.applications {
-            left: 72px;
-            bottom: 40px;
+            left: 52px;
+            bottom: 26px;
         }
 
         .plot-index {
@@ -1053,8 +1051,16 @@
             </div>
 
             <div class="research-plot" aria-label="Research area network plot">
-                <svg class="plot-lines" viewBox="0 0 1000 560" preserveAspectRatio="none" aria-hidden="true">
-                    <path class="plot-orbit" d="M170 118 C330 12 690 12 830 118 C970 222 930 424 800 460 C650 535 350 535 200 460 C60 398 35 220 170 118" />
+                <svg class="plot-lines" viewBox="0 0 1000 720" preserveAspectRatio="none" aria-hidden="true">
+                    <defs>
+                        <marker id="plot-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+                            <path d="M1 1 L9 5 L1 9 Z" fill="#5ea4d6" fill-opacity="0.75" />
+                        </marker>
+                    </defs>
+                    <path class="plot-cycle-line" marker-end="url(#plot-arrow)" d="M300 118 C420 42 580 42 700 118" />
+                    <path class="plot-cycle-line" marker-end="url(#plot-arrow)" d="M875 258 C955 318 950 370 890 410" />
+                    <path class="plot-cycle-line" marker-end="url(#plot-arrow)" d="M700 602 C580 680 420 680 300 602" />
+                    <path class="plot-cycle-line" marker-end="url(#plot-arrow)" d="M125 478 C45 405 45 330 125 258" />
                 </svg>
                 <div class="plot-core">
                     <h3>Reliable quantum systems</h3>
