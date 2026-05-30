@@ -172,7 +172,131 @@
         }
 
         .research-hero {
-            padding: 54px 0 42px;
+            padding: 34px 0 42px;
+        }
+
+        .quantum-visual {
+            position: relative;
+            min-height: 270px;
+            margin-bottom: 38px;
+            border: 1px solid #1f3850;
+            border-radius: 8px;
+            overflow: hidden;
+            background:
+                linear-gradient(90deg, rgba(255, 255, 255, 0.055) 1px, transparent 1px),
+                linear-gradient(0deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+                linear-gradient(128deg, transparent 0%, transparent 58%, rgba(49, 189, 161, 0.18) 58%, rgba(49, 189, 161, 0.18) 61%, transparent 61%),
+                linear-gradient(34deg, transparent 0%, transparent 32%, rgba(242, 184, 75, 0.12) 32%, rgba(242, 184, 75, 0.12) 34%, transparent 34%),
+                linear-gradient(135deg, #0d1826 0%, #172a3f 52%, #102231 100%);
+            background-size: 44px 44px, 44px 44px, auto, auto, auto;
+            box-shadow: 0 18px 42px rgba(31, 45, 61, 0.18);
+        }
+
+        .quantum-visual::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(115deg, transparent 0%, rgba(255, 255, 255, 0.10) 46%, transparent 54%),
+                linear-gradient(0deg, rgba(10, 24, 38, 0.12), rgba(10, 24, 38, 0.42));
+            transform: translateX(-55%);
+            animation: visual-scan 9s linear infinite;
+        }
+
+        .quantum-visual svg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .quantum-visual .line {
+            fill: none;
+            stroke-linecap: round;
+            stroke-width: 2;
+        }
+
+        .quantum-visual .line-cyan {
+            stroke: #46c7f4;
+        }
+
+        .quantum-visual .line-green {
+            stroke: #31bfa1;
+        }
+
+        .quantum-visual .line-gold {
+            stroke: #f2b84b;
+        }
+
+        .quantum-visual .data-line {
+            stroke-dasharray: 8 14;
+            animation: data-flow 4.5s linear infinite;
+        }
+
+        .quantum-visual .node {
+            fill: #f8fbff;
+            stroke-width: 3;
+        }
+
+        .quantum-visual .node-cyan {
+            stroke: #46c7f4;
+        }
+
+        .quantum-visual .node-green {
+            stroke: #31bfa1;
+        }
+
+        .quantum-visual .node-gold {
+            stroke: #f2b84b;
+        }
+
+        .quantum-visual .core {
+            fill: rgba(255, 255, 255, 0.08);
+            stroke: rgba(255, 255, 255, 0.32);
+            stroke-width: 1.5;
+        }
+
+        .quantum-visual .pulse {
+            transform-origin: center;
+            animation: node-pulse 2.8s ease-in-out infinite;
+        }
+
+        .quantum-visual .chip {
+            fill: rgba(8, 19, 31, 0.72);
+            stroke: rgba(255, 255, 255, 0.28);
+            stroke-width: 1.5;
+        }
+
+        .quantum-visual text {
+            fill: rgba(248, 251, 255, 0.86);
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+        }
+
+        @keyframes visual-scan {
+            0% {
+                transform: translateX(-55%);
+            }
+            100% {
+                transform: translateX(55%);
+            }
+        }
+
+        @keyframes data-flow {
+            to {
+                stroke-dashoffset: -44;
+            }
+        }
+
+        @keyframes node-pulse {
+            0%, 100% {
+                opacity: 0.72;
+            }
+            50% {
+                opacity: 1;
+            }
         }
 
         .research-hero-grid {
@@ -705,6 +829,15 @@
                 font-size: 2.25rem;
             }
 
+            .quantum-visual {
+                min-height: 190px;
+                margin-bottom: 26px;
+            }
+
+            .quantum-visual text {
+                font-size: 11px;
+            }
+
             .stack-layer {
                 grid-template-columns: 1fr;
                 gap: 2px;
@@ -717,6 +850,14 @@
 
             .topic-column:first-child {
                 border-top: none;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .quantum-visual::before,
+            .quantum-visual .data-line,
+            .quantum-visual .pulse {
+                animation: none;
             }
         }
     </style>
@@ -744,6 +885,35 @@
 
     <main class="research-main">
         <section class="research-hero" id="research">
+            <div class="quantum-visual" aria-label="Quantum research network visual" role="img">
+                <svg viewBox="0 0 1120 270" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+                    <path class="line line-cyan data-line" d="M72 194 C196 96 315 96 438 161 S696 224 842 114 S1032 72 1080 114"/>
+                    <path class="line line-green data-line" d="M80 68 C220 144 318 206 462 116 S738 56 890 173 S1030 216 1084 188"/>
+                    <path class="line line-gold" d="M190 226 L322 174 L462 190 L610 116 L760 143 L924 74"/>
+                    <path class="line line-cyan" d="M252 58 L376 104 L506 76 L644 151 L786 88 L968 148"/>
+
+                    <rect class="chip" x="454" y="56" width="210" height="128" rx="14"/>
+                    <path class="line line-green" d="M484 88 H632 M484 116 H632 M484 144 H632"/>
+                    <path class="line line-cyan" d="M508 72 V168 M556 72 V168 M606 72 V168"/>
+                    <circle class="core pulse" cx="558" cy="121" r="30"/>
+                    <circle class="node node-cyan pulse" cx="558" cy="121" r="9"/>
+
+                    <circle class="node node-cyan pulse" cx="138" cy="150" r="10"/>
+                    <circle class="node node-green pulse" cx="252" cy="58" r="8"/>
+                    <circle class="node node-gold pulse" cx="322" cy="174" r="9"/>
+                    <circle class="node node-green pulse" cx="438" cy="161" r="8"/>
+                    <circle class="node node-cyan pulse" cx="644" cy="151" r="10"/>
+                    <circle class="node node-gold pulse" cx="760" cy="143" r="8"/>
+                    <circle class="node node-green pulse" cx="842" cy="114" r="10"/>
+                    <circle class="node node-cyan pulse" cx="968" cy="148" r="9"/>
+
+                    <text x="92" y="58">QEC</text>
+                    <text x="214" y="235">CODES</text>
+                    <text x="466" y="220">QML</text>
+                    <text x="714" y="62">SIM</text>
+                    <text x="934" y="220">INFO</text>
+                </svg>
+            </div>
             <div class="research-hero-grid">
                 <div>
                     <div class="section-kicker">Research vision</div>
