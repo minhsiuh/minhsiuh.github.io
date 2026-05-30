@@ -592,7 +592,7 @@
         }
 
         .research-plot {
-            min-height: 720px;
+            min-height: 620px;
             position: relative;
             overflow: hidden;
             border: 1px solid var(--border-color);
@@ -636,10 +636,12 @@
         .plot-core {
             left: 50%;
             top: 50%;
-            width: 232px;
-            padding: 20px;
+            width: 300px;
+            min-height: 122px;
+            padding: 22px 28px;
             text-align: center;
             transform: translate(-50%, -50%);
+            border-radius: 999px;
             background:
                 radial-gradient(circle at 50% 0%, rgba(94, 164, 214, 0.28), transparent 58%),
                 #2c3e50;
@@ -653,13 +655,13 @@
 
         .plot-core h3 {
             color: #fff;
-            font-size: 1.16rem;
-            margin-bottom: 8px;
+            font-size: 1.14rem;
+            margin-bottom: 6px;
         }
 
         .plot-core p {
             color: rgba(255, 255, 255, 0.78);
-            font-size: 0.84rem;
+            font-size: 0.82rem;
             line-height: 1.55;
             margin: 0;
             text-align: center;
@@ -671,23 +673,23 @@
         }
 
         .plot-node.foundations {
-            left: 28px;
-            top: 26px;
+            left: 42px;
+            top: 34px;
         }
 
         .plot-node.hardware {
-            right: 28px;
-            top: 26px;
+            right: 42px;
+            top: 34px;
         }
 
         .plot-node.software {
-            right: 52px;
-            bottom: 26px;
+            right: 70px;
+            bottom: 34px;
         }
 
         .plot-node.applications {
-            left: 52px;
-            bottom: 26px;
+            left: 70px;
+            bottom: 34px;
         }
 
         .plot-index {
@@ -1057,16 +1059,16 @@
             </div>
 
             <div class="research-plot" aria-label="Research area network plot">
-                <svg class="plot-lines" viewBox="0 0 1000 720" preserveAspectRatio="none" aria-hidden="true">
+                <svg class="plot-lines" viewBox="0 0 1000 620" preserveAspectRatio="none" aria-hidden="true">
                     <defs>
                         <marker id="plot-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
                             <path d="M1 1 L9 5 L1 9 Z" fill="#5ea4d6" fill-opacity="0.75" />
                         </marker>
                     </defs>
-                    <path class="plot-cycle-line" marker-end="url(#plot-arrow)" d="M315 108 C430 72 570 72 685 108" />
-                    <path class="plot-cycle-line" marker-end="url(#plot-arrow)" d="M865 305 C930 345 930 375 865 415" />
-                    <path class="plot-cycle-line" marker-end="url(#plot-arrow)" d="M685 612 C570 648 430 648 315 612" />
-                    <path class="plot-cycle-line" marker-end="url(#plot-arrow)" d="M135 415 C70 375 70 345 135 305" />
+                    <path class="plot-cycle-line" marker-end="url(#plot-arrow)" d="M320 112 C430 78 570 78 680 112" />
+                    <path class="plot-cycle-line" marker-end="url(#plot-arrow)" d="M852 272 C908 306 908 334 852 368" />
+                    <path class="plot-cycle-line" marker-end="url(#plot-arrow)" d="M680 508 C570 542 430 542 320 508" />
+                    <path class="plot-cycle-line" marker-end="url(#plot-arrow)" d="M148 368 C92 334 92 306 148 272" />
                 </svg>
                 <div class="plot-core">
                     <h3>Reliable quantum systems</h3>
