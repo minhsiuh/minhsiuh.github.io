@@ -1,0 +1,2239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:wght@600;700&amp;display=swap" rel="stylesheet">
+    <meta name="description" content="Older news archive for Min-Hsiu Hsieh, including research, talks, service, and publication updates from 2020 to 2025.">
+    <link rel="canonical" href="https://minhsiuh.github.io/older-news.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Older News - Min-Hsiu Hsieh">
+    <meta property="og:description" content="Older news archive for Min-Hsiu Hsieh, including research, talks, service, and publication updates from 2020 to 2025.">
+    <meta property="og:url" content="https://minhsiuh.github.io/older-news.html">
+    <meta property="og:image" content="https://minhsiuh.github.io/profile.jpg">
+    <meta property="og:site_name" content="Min-Hsiu Hsieh Research">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Older News - Min-Hsiu Hsieh">
+    <meta name="twitter:description" content="Older news archive for Min-Hsiu Hsieh, including research, talks, service, and publication updates from 2020 to 2025.">
+    <meta name="twitter:image" content="https://minhsiuh.github.io/profile.jpg">
+    <meta name="twitter:site" content="@quantum_minhsiu">
+    <meta name="author" content="Min-Hsiu Hsieh">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#2c3e50">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "Min-Hsiu Hsieh Research",
+          "url": "https://minhsiuh.github.io/"
+        },
+        {
+          "@type": "Person",
+          "name": "Min-Hsiu Hsieh",
+          "alternateName": "謝明修",
+          "url": "https://minhsiuh.github.io/about.html",
+          "image": "https://minhsiuh.github.io/profile.jpg",
+          "jobTitle": "Director, Hon Hai Quantum Computing Research Center",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Hon Hai Quantum Computing Research Center"
+          },
+          "sameAs": [
+            "https://scholar.google.com/citations?user=UXx1jNYAAAAJ",
+            "https://orcid.org/0000-0002-3396-8427",
+            "https://github.com/minhsiuh",
+            "https://www.linkedin.com/in/min-hsiu-hsieh-6199b0/",
+            "https://x.com/quantum_minhsiu",
+            "https://www.minhsiu.com"
+          ]
+        }
+      ]
+    }
+    </script>
+    <title>Older News - Min-Hsiu Hsieh</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=4">
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png?v=4">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=4">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --bg-color: #fff;
+            --light-gray: #f8f9fa;
+            --border-color: #e9ecef;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background: var(--bg-color);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        header .chinese-name {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        header .title {
+            font-size: 1.1rem;
+            opacity: 0.85;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--light-gray);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Sections */
+        section {
+            padding: 50px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        /* About Me Layout */
+        .about-content {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+
+        .about-image {
+            flex: 0 0 300px;
+        }
+
+        .about-image > img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+        }
+
+        .about-social-wrap {
+            margin-top: 18px;
+        }
+
+        .about-social-title {
+            text-align: center;
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #4b6175;
+            margin-bottom: 10px;
+        }
+
+        .about-social {
+            display: flex;
+            justify-content: space-between;
+            gap: 14px;
+            margin-top: 0;
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .about-social-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .about-social a {
+            display: inline-flex;
+            width: 56px;
+            height: 56px;
+            border-radius: 12px;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+            background: #fff;
+            border: 1px solid #d8e0e8;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+        }
+
+        .about-social a:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+            border-color: #b9cadb;
+        }
+
+        .about-social svg {
+            width: 45px;
+            height: 45px;
+            display: block;
+        }
+
+        .about-social-label {
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: #4b6175;
+            line-height: 1;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text p {
+            text-align: left;
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .about-image {
+                flex: none;
+            }
+
+            .about-image > img {
+                width: 250px;
+                height: 250px;
+            }
+
+            .about-social {
+                width: 250px;
+                gap: 6px;
+            }
+
+            .about-text {
+                text-align: left;
+            }
+        }
+
+        h1, h2, h3, h4 {
+            font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+            letter-spacing: 0.01em;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            margin: 20px 0 10px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* News List */
+        .news-list {
+            list-style: none;
+        }
+
+        .news-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .news-list li:last-child {
+            border-bottom: none;
+        }
+
+        .news-date {
+            font-weight: 600;
+            font-size: 1rem;
+            line-height: 1.4;
+            font-variant-numeric: tabular-nums;
+            color: #e67e22;
+            margin-right: 10px;
+        }
+
+        .news-date::before {
+            content: "📅 ";
+            font-size: 0.95em;
+            margin-right: 2px;
+        }
+
+        .news-list a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .news-list a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .news-list a:hover {
+            text-decoration: underline;
+        }
+
+        .archive-link-row {
+            margin-top: 24px;
+            text-align: right;
+        }
+
+        .archive-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--accent-color);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .archive-link:hover {
+            text-decoration: underline;
+        }
+
+        .arxiv-link {
+            white-space: nowrap;
+        }
+
+        /* Committee List */
+        .committee-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .committee-list li {
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .committee-list li:before {
+            content: "•";
+            color: var(--accent-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Citations Stats Box */
+        .citations-stats-box {
+            background: #f8f9fc;
+            padding: 50px 30px;
+            border-radius: 0;
+            margin: 0 0 50px 0;
+        }
+
+        .citations-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .citation-stat-item {
+            text-align: center;
+        }
+
+        .citation-stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #3498db;
+            line-height: 1.1;
+        }
+
+        .citation-stat-label {
+            font-size: 1rem;
+            color: #666;
+            margin-top: 10px;
+            font-weight: 400;
+        }
+
+        @media (max-width: 768px) {
+            .citations-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .citation-stat-number {
+                font-size: 2.5rem;
+            }
+        }
+
+        /* Contact */
+        .contact-info {
+            background: var(--light-gray);
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-color);
+            color: white;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            background: #2980b9;
+            padding: 30px 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 50px;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .footer-item .social-links {
+            margin-top: 10px;
+        }
+
+        .footer-item a:hover {
+            opacity: 0.8;
+        }
+
+        .footer-item a:hover .footer-icon {
+            background: #e67e22;
+            transform: scale(1.05);
+        }
+
+        .footer-icon-link {
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .footer-icon {
+            width: 50px;
+            height: 50px;
+            background: #e67e22;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .footer-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
+        }
+
+        .footer-text h4 {
+            margin: 0 0 5px 0;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .footer-text p {
+            margin: 0;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            width: 32px;
+            height: 32px;
+            background: white;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+        }
+
+        .social-links a:hover {
+            background: #e67e22;
+        }
+
+        .social-links svg {
+            width: 18px;
+            height: 18px;
+            fill: #2980b9;
+        }
+
+        footer .copyright {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            header .chinese-name {
+                font-size: 1.2rem;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Min-Hsiu Hsieh</h1>
+            <div class="chinese-name">謝明修</div>
+            <div class="title">Director, Hon Hai (Foxconn) Quantum Computing Research Center</div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="older-news">
+            <h2>Older News</h2>
+            <div class="archive-link-row" style="text-align: left; margin-bottom: 18px;">
+                <a class="archive-link" href="index.html#news">&larr; Back to Latest News</a>
+            </div>
+            <h3 id="news-2025">2025</h3>
+            <ul class="news-list">
+                <li>
+                    <span class="news-date">22/12/2025:</span>
+                    Paper accepted in TACAS 2026.
+                </li>
+                <li>
+                    <span class="news-date">22/12/2025:</span>
+                    Attend "Theory Day in Taiwan" @ Academia Sinica. [<a href="https://theoryday.github.io" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">20/12/2025:</span>
+                    Join the IEEE SiPS 2026 Technical Program Committee.
+                </li>
+                <li>
+                    <span class="news-date">19/12/2025:</span>
+                    Invited talk @ Quantum Theory Day, Tsinghua University, Beijing.
+                </li>
+                <li>
+                    <span class="news-date">18/12/2025:</span>
+                    [<a href="https://arxiv.org/abs/2408.01769" target="_blank" rel="noopener">arXiv:2408.01769</a>] &amp; [<a href="https://arxiv.org/abs/2309.16104" target="_blank" rel="noopener">arXiv:2309.16104</a>] accepted in Nature Communications.
+                </li>
+                <li>
+                    <span class="news-date">16-19/12/2025:</span>
+                    Visit CS Dept @ Tsinghua University, Beijing.
+                </li>
+                <li>
+                    <span class="news-date">15/12/2025:</span>
+                    Deliver invited seminar @ 《臺灣 &times; 全球科技人才大鏈結》論壇
+                </li>
+                <li>
+                    <span class="news-date">11/12/2025:</span>
+                    Join QSim 2026 Program Committee.
+                </li>
+                <li>
+                    <span class="news-date">11/12/2025:</span>
+                    Deliver industry talk @ GLOBECOM2025. [<a href="https://globecom2025.ieee-globecom.org/program/industry-presentation#IP-37%C2%A0Advancing%20Quantum%20Science:%20Research%20Focus%20and%20Outcomes%20at%20the%20Hon%20Hai%20Research%20Institute" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">08-14/12/2025:</span>
+                    Attend IEEE GlobeCom 2025 @ Taipei
+                </li>
+                <li>
+                    <span class="news-date">28/11/2025:</span>
+                    [<a href="https://arxiv.org/abs/2508.01116v2" target="_blank" rel="noopener">arXiv:2508.01116</a>] accepted in npj Quantum Information.
+                </li>
+                <li>
+                    <span class="news-date">16-19/11/2025:</span>
+                    Attend QTML 2025 @ Singapore.
+                </li>
+                <li>
+                    <span class="news-date">08/11/2025:</span>
+                    [<a href="https://arxiv.org/abs/2510.08552" target="_blank" rel="noopener">arXiv:2510.08552</a>] accepted as a long plenary talk in QIP 2026.
+                </li>
+                <li>
+                    <span class="news-date">08/11/2025:</span>
+                    [<a href="https://arxiv.org/abs/2510.02883" target="_blank" rel="noopener">arXiv:2510.02883</a>] accepted in QIP 2026.
+                </li>
+                <li>
+                    <span class="news-date">28/10/2025:</span>
+                    Panelist @ ITRI Taiwan's Quantum Report Launch. [<a href="https://www.cw.com.tw/article/5137654" target="_blank" rel="noopener">website</a>]
+                </li>
+                <li>
+                    <span class="news-date">18/10/2025:</span>
+                    Paper accepted in IEEE Transactions on Information Theory. [<a href="https://arxiv.org/abs/2301.04301" target="_blank" rel="noopener">arXiv:2301.04301</a>]
+                </li>
+                <li>
+                    <span class="news-date">17/10/2025:</span>
+                    Invited Distinguished Lecture Series @ Academia Sinica.
+                </li>
+                <li>
+                    <span class="news-date">13/10/2025:</span>
+                    Invited talk at PhQIP @ Taipei, Taiwan. [<a href="https://sites.google.com/view/tw-nl-phqip2025" target="_blank" rel="noopener">Website</a>]
+                </li>
+                <li>
+                    <span class="news-date">13-15/10/2025:</span>
+                    TW-NL Symposium on on Photonics-enabled Quantum Information Processing (PhQIP) @ Taipei, Taiwan. [<a href="https://sites.google.com/view/tw-nl-phqip2025" target="_blank" rel="noopener">Website</a>]
+                </li>
+                <li>
+                    <span class="news-date">10/10/2025:</span>
+                    New Paper on arXiv: Simplified Quantum Weight Reduction with Optimal Bounds. [<a href="https://arxiv.org/abs/2510.09601" target="_blank" rel="noopener">arXiv:2510.09601</a>]
+                </li>
+                <li>
+                    <span class="news-date">09/10/2025:</span>
+                    New Paper on arXiv: Quantum Algorithm for Low Energy Effective Hamiltonian and Quasi-Degenerate Eigenvalue Problem. [<a href="https://arxiv.org/abs/2510.08088" target="_blank" rel="noopener">arXiv:2510.08088</a>]
+                </li>
+                <li>
+                    <span class="news-date">09/10/2025:</span>
+                    New Paper on arXiv: Characterizing Space-Constrained Implementability of Quantum Instruments via Signaling Conditions. [<a href="https://arxiv.org/abs/2510.08313" target="_blank" rel="noopener">arXiv:2510.08313</a>]
+                </li>
+                <li>
+                    <span class="news-date">09/10/2025:</span>
+                    New Paper on arXiv: Single-Shot Universality in Quantum LDPC Codes via Code-Switching. [<a href="https://arxiv.org/abs/2510.08552" target="_blank" rel="noopener">arXiv:2510.08552</a>]
+                </li>
+                <li>
+                    <span class="news-date">03/10/2025:</span>
+                    New Paper on arXiv: Universal classical-quantum channel resolvability and private channel coding. [<a href="https://arxiv.org/abs/2510.02883" target="_blank" rel="noopener">arXiv:2510.02883</a>]
+                </li>
+                <li>
+                    <span class="news-date">02/10/2025:</span>
+                    New Paper on arXiv: Benchmarking Quantum Simulation Methods. [<a href="https://arxiv.org/abs/2510.01710" target="_blank" rel="noopener">arXiv:2510.01710</a>]
+                </li>
+                <li>
+                    <span class="news-date">15-20/09/2025:</span>
+                    Attend TQC 2025@Bangalore, India.
+                </li>
+                <li>
+                    <span class="news-date">15/09/2025:</span>
+                    [<a href="https://arxiv.org/abs/2505.17846" target="_blank" rel="noopener">arXiv:2505.17846</a>] accepted in APS PR Research.
+                </li>
+                <li>
+                    <span class="news-date">05/09/2025:</span>
+                    QAI Review Paper on arXiv: Artificial intelligence for representing and characterizing quantum systems. [<a href="https://arxiv.org/abs/2509.04923" target="_blank" rel="noopener">arXiv:2509.04923</a>]
+                </li>
+                <li>
+                    <span class="news-date">25/08/2025:</span>
+                    [<a href="https://arxiv.org/abs/2408.12199" target="_blank" rel="noopener">arXiv:2408.12199</a>] accepted in QTML 2025.
+                </li>
+                <li>
+                    <span class="news-date">16/08/2025:</span>
+                    Paper accepted in QUEST-IS'25.
+                </li>
+                <li>
+                    <span class="news-date">15/08/2025:</span>
+                    [<a href="https://arxiv.org/abs/2309.09370" target="_blank" rel="noopener">arXiv:2309.09370</a>] accepted in APS PR research.
+                </li>
+                <li>
+                    <span class="news-date">12/08/2025:</span>
+                    Special session at ICASSP 2026 "Quantum Machine Learning Algorithms and Applications on NISQ Devices" approved.
+                </li>
+                <li>
+                    <span class="news-date">08/08/2025:</span>
+                    Our submission to AQIS "410: Characterizing Conditions for Qubit Usage Reduction in Quantum Instruments via Weak Signaling" won best student poster award (3rd rank).
+                </li>
+                <li>
+                    <span class="news-date">05/08/2025:</span>
+                    Special Issue Proposal "Emerging Quantum Trends: From Theoretical Foundation to Signal Processing", led by Prof Masahito Hayashi, accepted by IEEE IEEE Journal on Selected Topics in Signal Processing. [<a href="https://signalprocessingsociety.org/events/ieee-jstsp-special-issue-theoretical-frontiers-quantum-information-processing" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">04-05/08/2025:</span>
+                    Attend AQIS @ HKU. [<a href="http://aqis-conf.org/2025/" target="_blank" rel="noopener">website</a>]
+                </li>
+                <li>
+                    <span class="news-date">04/08/2025:</span>
+                    Invited seminar @ Hong Kong Baptist University.
+                </li>
+                <li>
+                    <span class="news-date">02/08/2025:</span>
+                    Invited talk @ AQIS2025 Satellite Workshop on Next-Generation Quantum Computing. [<a href="https://acnmkkbyptcs.feishu.cn/docx/FlcMdML8dory7VxkCcFcWfz3nqb" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">01/08/2025:</span>
+                    New Paper on arXiv: TensoMeta-VQC: A Tensor-Train-Guided Meta-Learning Framework for Robust and Scalable Variational Quantum Computing. [<a href="https://arxiv.org/abs/2508.01116" target="_blank" rel="noopener">arXiv:2508.01116</a>]
+                </li>
+                <li>
+                    <span class="news-date">22/07/2025:</span>
+                    [<a href="https://arxiv.org/abs/2405.11304" target="_blank" rel="noopener">arXiv:2405.11304</a>] accepted in Quantum Machine Intelligence.
+                </li>
+                <li>
+                    <span class="news-date">10/07/2025:</span>
+                    New Paper on arXiv: A Neural-Guided Variational Quantum Algorithm for Efficient Sign Structure Learning in Hybrid Architectures. [<a href="https://arxiv.org/abs/2507.07555" target="_blank" rel="noopener">arXiv:2507.07555</a>]
+                </li>
+                <li>
+                    <span class="news-date">09/07/2025:</span>
+                    Join TPC of ISIT 2026. [<a href="https://2026.ieee-isit.org/" target="_blank" rel="noopener">website</a>]
+                </li>
+                <li>
+                    <span class="news-date">09/07/2025:</span>
+                    [<a href="https://arxiv.org/abs/2312.01402" target="_blank" rel="noopener">arXiv:2312.01402</a>] accepted in Bayesian Analysis.
+                </li>
+                <li>
+                    <span class="news-date">07-09/07/2025:</span>
+                    Visit City University of Hong Kong @ Hong Kong.
+                </li>
+                <li>
+                    <span class="news-date">07/07/2025:</span>
+                    New Paper on arXiv: Optimizing Quantum Chemistry Simulations with a Hybrid Quantization Scheme. [<a href="https://arxiv.org/abs/2507.04253" target="_blank" rel="noopener">arXiv:2507.04253</a>]
+                </li>
+                <li>
+                    <span class="news-date">02/07/2025:</span>
+                    New Paper on arXiv: Hardness of Quantum Distribution Learning and Quantum Cryptography. [<a href="https://arxiv.org/abs/2507.01292" target="_blank" rel="noopener">arXiv:2507.01292</a>]
+                </li>
+                <li>
+                    <span class="news-date">27/06/2025:</span>
+                    Invited talk @ Quantum Information Dynamics and Non-Equilibrium Physics 2025, Seoul, South Korea. [<a href="http://events.kias.re.kr/h/QID2025/" target="_blank" rel="noopener">website</a>]
+                </li>
+                <li>
+                    <span class="news-date">24/06/2025:</span>
+                    [<a href="https://arxiv.org/abs/2411.02928" target="_blank" rel="noopener">arXiv:2411.02928</a>] published: Phys. Rev. Research 7, 023300. [<a href="https://journals.aps.org/prresearch/abstract/10.1103/sxdx-qbcz" target="_blank" rel="noopener">link</a>]
+                </li>
+                <li>
+                    <span class="news-date">24-26/06/2025:</span>
+                    Attend Quantum Korea @ Seoul, South Korea. [<a href="https://quantum-korea.kr/en/main" target="_blank" rel="noopener">website</a>]
+                </li>
+                <li>
+                    <span class="news-date">23-27/06/2025:</span>
+                    Attend "Quantum Information Dynamics and Non-Equilibrium Physics 2025" @ Seoul, South Korea. [<a href="http://events.kias.re.kr/h/QID2025/" target="_blank" rel="noopener">website</a>]
+                </li>
+                <li>
+                    <span class="news-date">17/06/2025:</span>
+                    [<a href="https://arxiv.org/abs/2505.17846" target="_blank" rel="noopener">arXiv:2505.17846</a>] accepted in the 1st International Conference on Applied Quantum Methods in Computational Science and Engineering (AQMCSE). [<a href="https://aqmcse.com" target="_blank" rel="noopener">website</a>]
+                </li>
+                <li>
+                    <span class="news-date">12/06/2025:</span>
+                    New paper on arXiv: VQC-MLPNet: An Unconventional Hybrid Quantum-Classical Architecture for Scalable and Robust Quantum Machine Learning. [<a href="https://arxiv.org/abs/2506.10275" target="_blank" rel="noopener">arXiv:2506.10275</a>]
+                </li>
+                <li>
+                    <span class="news-date">21/05/2025:</span>
+                    [<a href="https://arxiv.org/abs/2408.07764" target="_blank" rel="noopener">arXiv:2408.07764</a>] accepted in Nature Physics.
+                </li>
+                <li>
+                    <span class="news-date">13/05/2025:</span>
+                    [<a href="https://arxiv.org/abs/2408.07764" target="_blank" rel="noopener">arXiv:2408.07764</a>] accepted in QEC 2025.
+                </li>
+                <li>
+                    <span class="news-date">07/05/2025:</span>
+                    Join the TPC of SiPS2025 (The 38th IEEE Workshop on Signal Processing Systems).
+                </li>
+                <li>
+                    <span class="news-date">01/05/2025:</span>
+                    [<a href="https://arxiv.org/abs/2411.09121" target="_blank" rel="noopener">arXiv:2411.09121</a>] published in TACAS 2025 conference proceedings. [<a href="https://doi.org/10.1007/978-3-031-90660-2_5" target="_blank" rel="noopener">doi</a>]
+                </li>
+                <li>
+                    <span class="news-date">04-08/05/2025:</span>
+                    Join the SelectUSA quantum delegation @ Boston, New York.
+                </li>
+                <li>
+                    <span class="news-date">30/04/2025:</span>
+                    Invited seminar @ NTU, SG.
+                </li>
+                <li>
+                    <span class="news-date">29/04-03/05/2025:</span>
+                    Visit CS dept @ NTU, SG.
+                </li>
+                <li>
+                    <span class="news-date">24-28/04/2025:</span>
+                    Attend ICLR 2025 @ Singapore.
+                </li>
+                <li>
+                    <span class="news-date">22/04/2025:</span>
+                    [<a href="https://arxiv.org/abs/2408.12199" target="_blank" rel="noopener">arXiv:2408.12199</a>] published: "Nature Communications volume 16, Article number: 3790 (2025) ". [<a href="https://www.nature.com/articles/s41467-025-59198-z?utm_source=rct_congratemailt&amp;utm_medium=email&amp;utm_campaign=oa_20250423&amp;utm_content=10.1038/s41467-025-59198-z" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">18/04/2025:</span>
+                    Invited talk @ YITP LGEO workshop.
+                </li>
+                <li>
+                    <span class="news-date">14-18/04/2025:</span>
+                    Attend YITP LGEQ Workshop 2025 @ Kyoto University [<a href="https://sites.google.com/view/2025-yitp-logical-gates/home" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">15/04/2025:</span>
+                    [<a href="https://arxiv.org/abs/2408.12199" target="_blank" rel="noopener">arXiv:2408.12199</a>] accepted in Nature Communications.
+                </li>
+                <li>
+                    <span class="news-date">15/04/2025:</span>
+                    [<a href="https://arxiv.org/abs/2408.16378" target="_blank" rel="noopener">arXiv:2408.16378</a>] published: "Nature Communications volume 16, Article number: 3559 (2025)". [<a href="https://rdcu.be/ehK01" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">13/04/2025:</span>
+                    Attend TAQCIT annual meeting @ Taipei.
+                </li>
+                <li>
+                    <span class="news-date">11/04/2025:</span>
+                    Invited seminar @ Center of Advanced Quantum Computing (CAQC) at Tamkang University
+                </li>
+                <li>
+                    <span class="news-date">09/04/2025:</span>
+                    Invited speaker @ 2025 International Conference on Quantum &amp; AI Technologies in Biomedical Science [<a href="https://www.lsrpc.org/news-detail/98/" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">25/03/2025:</span>
+                    [<a href="https://arxiv.org/abs/2505.17846" target="_blank" rel="noopener">arXiv:2505.17846</a>] presented in AI4Quantum. [<a href="https://sciencecluster.dk/event/conference-ai4quantum/" target="_blank" rel="noopener">website</a>]
+                </li>
+                <li>
+                    <span class="news-date">03/03/2025:</span>
+                    Invited seminar @ Duke Quantum Center.
+                </li>
+                <li>
+                    <span class="news-date">01-05/03/2025:</span>
+                    Visit Duke Quantum Center @ Duke University, NC.
+                </li>
+                <li>
+                    <span class="news-date">28/02/2025:</span>
+                    [<a href="https://arxiv.org/abs/2408.16378" target="_blank" rel="noopener">arXiv:2408.16378</a>] accepted in Nature Communications.
+                </li>
+                <li>
+                    <span class="news-date">24/02/2025:</span>
+                    Join the PC for AQIS 2025. [<a href="http://aqis-conf.org/2025/" target="_blank" rel="noopener">website</a>]
+                </li>
+                <li>
+                    <span class="news-date">24-28/02/2025:</span>
+                    Attend QIP 2025 @ Raleigh Convention Center, NC.
+                </li>
+                <li>
+                    <span class="news-date">18/02/2025:</span>
+                    Join the international Scientific Committee of QUEST-IS 2025. [<a href="https://conference-questis.org/" target="_blank" rel="noopener">website</a>]
+                </li>
+                <li>
+                    <span class="news-date">03/02/2025:</span>
+                    New paper on arXiv: Quantum Machine Learning: A Hands-on Tutorial for Machine Learning Practitioners and Researchers. [<a href="https://arxiv.org/abs/2502.01146" target="_blank" rel="noopener">arXiv:2502.01146</a>]
+                </li>
+                <li>
+                    <span class="news-date">23/01/2025:</span>
+                    [<a href="https://arxiv.org/abs/2410.09846" target="_blank" rel="noopener">arXiv:2410.09846</a>] accepted to ICLR 2025.
+                </li>
+                <li>
+                    <span class="news-date">19/01/2025:</span>
+                    Join the technical program committee for IEEE Globecom 2025 SAC - QCIT.
+                </li>
+                <li>
+                    <span class="news-date">18/01/2025:</span>
+                    Join the Technical Program Committee (TPC) for the 2025 IEEE Information Theory Workshop (ITW).
+                </li>
+                <li>
+                    <span class="news-date">17/01/2025:</span>
+                    New paper on arXiv: Resource-Efficient Compilation of Distributed Quantum Circuits for Solving Large-Scale Wireless Communication Network Problems. [<a href="https://arxiv.org/abs/2501.10242" target="_blank" rel="noopener">arXiv:2501.10242</a>]
+                </li>
+                <li>
+                    <span class="news-date">12/01/2025:</span>
+                    Join the PC for QEC25. [<a href="https://qec25.yalepages.org" target="_blank" rel="noopener">Website</a>]
+                </li>
+                <li>
+                    <span class="news-date">08/01/2025:</span>
+                    New paper on arXiv: Characterizing the Burst Error Correction Ability of Quantum Cyclic Codes. [<a href="https://arxiv.org/abs/2501.04310" target="_blank" rel="noopener">arXiv:2501.04310</a>]
+                </li>
+                <li>
+                    <span class="news-date">05-17/01/2025:</span>
+                    Visit YITP @ Kyoto University, Japan.
+                </li>
+            </ul>
+
+            <h3 id="news-2024">2024</h3>
+            <ul class="news-list">
+                <li>
+                    <span class="news-date">17/12/2024:</span>
+                    Invited seminar @ CS Dept, Tsinghua University, Beijing.
+                </li>
+                <li>
+                    <span class="news-date">16-20/12/2024:</span>
+                    Visit CS Dept, Tsinghua University, Beijing.
+                </li>
+                <li>
+                    <span class="news-date">07/12/2024:</span>
+                    [<a href="https://arxiv.org/abs/2408.07764" target="_blank" rel="noopener">arXiv:2408.07764</a>] accepted as a long plenary talk in QIP.
+                </li>
+                <li>
+                    <span class="news-date">25-29/11/2024:</span>
+                    Attend QTML 2024 in Melbourne. [<a href="https://indico.qtml2024.org/event/1/" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">19/11/2024:</span>
+                    Join Program Committee for the 7th International Conference on Quantum Error Correction (QEC25).
+                </li>
+                <li>
+                    <span class="news-date">05/11/2024:</span>
+                    New paper on arXiv: Proposals for 3D self-correcting quantum memory. [<a href="https://arxiv.org/abs/2411.03115" target="_blank" rel="noopener">arXiv:2411.03115</a>]
+                </li>
+                <li>
+                    <span class="news-date">05/11/2024:</span>
+                    New paper on arXiv: Almost Linear Decoder for Optimal Geometrically Local Quantum Codes. [<a href="https://arxiv.org/abs/2411.02928" target="_blank" rel="noopener">arXiv:2411.02928</a>].
+                </li>
+                <li>
+                    <span class="news-date">04-08/11/2024:</span>
+                    Attend SpinQubit6 @ Sydney. [<a href="https://sq6.au" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">17/10/2024:</span>
+                    Panelist @ FUTEX FORUM. [<a href="https://www.futuretech.org.tw/futuretech/index.php?action=frm_reg2024_1&amp;web_lang=en-us" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">17/10/2024:</span>
+                    Invited speaker for Alain Aspect Event @ Taipei First Girl High School, Taipei. [<a href="https://www.fg.tp.edu.tw/sticky_glory/%E3%80%90%E6%96%B0%E8%81%9E%E7%A8%BF%E3%80%91%E8%AB%BE%E8%B2%9D%E7%88%BE%E7%89%A9%E7%90%86%E7%8D%8E%E5%BE%97%E4%B8%BBalain-aspect%E8%A6%AA%E8%87%A8%E5%8C%97%E4%B8%80%E5%A5%B3%E8%88%87%E9%9D%92/" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">17/10/2024:</span>
+                    [<a href="https://arxiv.org/abs/2309.05541" target="_blank" rel="noopener">arXiv:2309.05541</a>] accepted in npj Quantum Information.
+                </li>
+                <li>
+                    <span class="news-date">08-09/10/2024:</span>
+                    HHTD 2024, Taipei, Taiwan.
+                </li>
+                <li>
+                    <span class="news-date">25/09/2024:</span>
+                    Invited talk @ 60th Allerton Conference at Urbana, Illinois. [<a href="https://easychair.org/smart-program/2024Allerton/2024-09-25.html" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">25-27/09/2024:</span>
+                    Attending Allerton Conference at Urbana, Illinois.
+                </li>
+                <li>
+                    <span class="news-date">23/09/2024:</span>
+                    Visit PME University of Chicago.
+                </li>
+                <li>
+                    <span class="news-date">09-13/09/2024:</span>
+                    Attending TQC 2024 @ OIST, Japan.
+                </li>
+                <li>
+                    <span class="news-date">29/08/2024:</span>
+                    New paper on arXiv: Unconditionally separating noisy 𝖰𝖭𝖢^0 from bounded polynomial threshold circuits of constant depth. [<a href="https://arxiv.org/abs/2408.16378" target="_blank" rel="noopener">arXiv:2408.16378</a>]
+                </li>
+                <li>
+                    <span class="news-date">28/08/2024:</span>
+                    Join AQIS Steering Committee.
+                </li>
+                <li>
+                    <span class="news-date">27/08/2024:</span>
+                    [<a href="https://arxiv.org/abs/2311.12012" target="_blank" rel="noopener">arXiv:2311.12012</a>] accepted in PRX-Quantum.
+                </li>
+                <li>
+                    <span class="news-date">26-30/08/2024:</span>
+                    Attending AQIS 2024 [<a href="http://aqis-conf.org/2024/" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">22/08/2024:</span>
+                    New paper on arXiv: Efficient Learning for Linear Properties of Bounded-Gate Quantum Circuits. [<a href="https://arxiv.org/abs/2408.12199" target="_blank" rel="noopener">arXiv:2408.12199</a>]
+                </li>
+                <li>
+                    <span class="news-date">19/08/2024:</span>
+                    New paper on arXiv: The curse of random quantum data. [<a href="https://arxiv.org/abs/2408.09937" target="_blank" rel="noopener">arXiv:2408.09937</a>]
+                </li>
+                <li>
+                    <span class="news-date">19/08/2024:</span>
+                    [<a href="https://arxiv.org/abs/2311.03713" target="_blank" rel="noopener">arXiv:2311.03713</a>] accepted in PRL.
+                </li>
+                <li>
+                    <span class="news-date">16/06/2024:</span>
+                    New paper on arXiv: Constant-Overhead Magic State Distillation. [<a href="https://arxiv.org/abs/2408.07764" target="_blank" rel="noopener">arXiv:2408.07764</a>]
+                </li>
+                <li>
+                    <span class="news-date">16/08/2024:</span>
+                    Invited Talk @ Bridging Quantum Information and Mathematical Physics" Symposium
+                </li>
+                <li>
+                    <span class="news-date">14-16/08/2024:</span>
+                    Attend "Bridging Quantum Information and Mathematical Physics" Symposium @ the University of Cambridge [<a href="https://felixleditzky.info/bqm/#program" target="_blank" rel="noopener">Link</a>].
+                </li>
+                <li>
+                    <span class="news-date">13/08/2024:</span>
+                    Invited seminar @ CS dept, University of Cambridge [<a href="https://www.cst.cam.ac.uk/seminars/list/217456" target="_blank" rel="noopener">Link</a>].
+                </li>
+                <li>
+                    <span class="news-date">03/08/2024:</span>
+                    New paper on arXiv: Transform Arbitrary Good Quantum LDPC Codes into Good Geometrically Local Codes in Any Dimension. [<a href="https://arxiv.org/abs/2408.01769" target="_blank" rel="noopener">arXiv:2408.01769</a>]
+                </li>
+                <li>
+                    <span class="news-date">31/07/2024:</span>
+                    Invited seminar @ 歐美量子產業發展分享座談會, Taipei.
+                </li>
+                <li>
+                    <span class="news-date">24/07/2024:</span>
+                    Invited seminar @ Lisbon university.
+                </li>
+                <li>
+                    <span class="news-date">16/07/2024:</span>
+                    Talk at QPL 2024 @ Buenos Aires, Argentina.
+                </li>
+                <li>
+                    <span class="news-date">15-19/07/2024:</span>
+                    QPL 2024 @ Buenos Aires, Argentina.
+                </li>
+                <li>
+                    <span class="news-date">11/07/2024:</span>
+                    Invited seminar @ Macquarie University, AU.
+                </li>
+                <li>
+                    <span class="news-date">10/07/2024:</span>
+                    Invited seminar @ UTS, AU.
+                </li>
+                <li>
+                    <span class="news-date">08-12/07/2024:</span>
+                    Visit UTS and Macquarie Uni, NSW, Australia.
+                </li>
+                <li>
+                    <span class="news-date">05/07/2024:</span>
+                    Join QIP 2025 PC.
+                </li>
+                <li>
+                    <span class="news-date">29/06/2024:</span>
+                    New paper on arXiv: Hybrid Quantum-Classical Clustering for Preparing a Prior Distribution of Eigenspectrum. [<a href="https://arxiv.org/abs/2407.00450" target="_blank" rel="noopener">arXiv:2407.00450</a>]
+                </li>
+                <li>
+                    <span class="news-date">28/06/2024:</span>
+                    [<a href="https://arxiv.org/abs/2305.00689" target="_blank" rel="noopener">arXiv:2305.00689</a>] accepted in npj Quantum Information.
+                </li>
+                <li>
+                    <span class="news-date">27-28/06/2024:</span>
+                    Science Advisory Meeting @ Quobly, France.
+                </li>
+                <li>
+                    <span class="news-date">12/06/2024:</span>
+                    Invited seminar @ HKU.
+                </li>
+                <li>
+                    <span class="news-date">20/05/2024:</span>
+                    Join AQIS 2024 PC.
+                </li>
+                <li>
+                    <span class="news-date">18/05/2024:</span>
+                    New paper on arXiv: Quantum-Train: Rethinking Hybrid Quantum-Classical Machine Learning in the Model Compression Perspective. [<a href="https://arxiv.org/abs/2405.11304" target="_blank" rel="noopener">arXiv:2405.11304</a>]
+                </li>
+                <li>
+                    <span class="news-date">12/05/2024:</span>
+                    New paper on arXiv: Oracle Separation between Noisy Quantum Polynomial Time and the Polynomial Hierarchy. [<a href="https://arxiv.org/abs/2405.07137" target="_blank" rel="noopener">arXiv:2405.07137</a>]
+                </li>
+                <li>
+                    <span class="news-date">10/05/2024:</span>
+                    Invited seminar @ NTHU/EE.
+                </li>
+                <li>
+                    <span class="news-date">09/05/2024:</span>
+                    [<a href="https://arxiv.org/abs/2103.17047" target="_blank" rel="noopener">arXiv:2103.17047</a>] accepted in Quantum Machine Intelligence.
+                </li>
+                <li>
+                    <span class="news-date">07/05/2024:</span>
+                    Invited speaker at The 11th Taiwan-Finland Business Forum. [<a href="https://www.teema.org.tw/download/doc/芬蘭議程0326[20240328].pdf" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">29/04/2024:</span>
+                    New Paper on arXiv: Equivalence Checking of Parameterised Quantum Circuits. [<a href="https://arxiv.org/abs/2404.18456" target="_blank" rel="noopener">arXiv:2404.18456</a>]
+                </li>
+                <li>
+                    <span class="news-date">23/04/2024:</span>
+                    New Paper on arXiv: Quantum Walks on Simplicial Complexes and Harmonic Homology: Application to Topological Data Analysis with Superpolynomial Speedups. [<a href="https://arxiv.org/abs/2404.15407" target="_blank" rel="noopener">arXiv:2404.15407</a>]
+                </li>
+                <li>
+                    <span class="news-date">23/04/2024:</span>
+                    [<a href="https://arxiv.org/abs/2210.11281" target="_blank" rel="noopener">arXiv:2210.11281</a>] accepted in Physical Review A.
+                </li>
+                <li>
+                    <span class="news-date">17/04/2024:</span>
+                    Invited talk @ 2024 QFort Workshop.
+                </li>
+                <li>
+                    <span class="news-date">16/04/2024:</span>
+                    [<a href="https://arxiv.org/abs/2210.04717" target="_blank" rel="noopener">arXiv:2210.04717</a>] accepted in Physical Review Letters.
+                </li>
+                <li>
+                    <span class="news-date">15-17/04/2024:</span>
+                    Attend 2024 QFort Workshop @ NCKU [<a href="https://qfort.ncku.edu.tw/events/182" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">14/04/2024:</span>
+                    [<a href="https://arxiv.org/abs/2311.12012" target="_blank" rel="noopener">arXiv:2311.12012</a>] [<a href="https://arxiv.org/abs/2305.00689" target="_blank" rel="noopener">arXiv:2305.00689</a>] accepted in TQC 2024 Conference Track.
+                </li>
+                <li>
+                    <span class="news-date">14/04/2024:</span>
+                    [<a href="https://arxiv.org/abs/2311.10480" target="_blank" rel="noopener">arXiv:2311.10480</a>] accepted in TQC 2024 Proceedings Track.
+                </li>
+                <li>
+                    <span class="news-date">04/04/2024:</span>
+                    [<a href="https://arxiv.org/abs/2305.04704" target="_blank" rel="noopener">arXiv:2305.04704</a>] accepted in Quantum Science and Technology
+                </li>
+                <li>
+                    <span class="news-date">18/03/2024:</span>
+                    Invited talk @ 2024 YITP Quantum Error Correction Workshop [<a href="https://sites.google.com/view/2024yitpqecworkshop/home" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">18-29/03/2024:</span>
+                    Attend 2024 YITP Quantum Error Correction Workshop @ Kyoto
+                </li>
+                <li>
+                    <span class="news-date">16/03/2024:</span>
+                    [<a href="https://arxiv.org/abs/2210.12953" target="_blank" rel="noopener">arXiv:2210.12953</a>] accepted in IJCNN 2024.
+                </li>
+                <li>
+                    <span class="news-date">04-08/03/2024:</span>
+                    Attend BIRS workshop "Fundamental Limitations to Quantum Computation" @ Banff [<a href="http://www.birs.ca/events/2024/5-day-workshops/24w5259" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">28/02/2024:</span>
+                    [<a href="https://arxiv.org/abs/2306.08353" target="_blank" rel="noopener">arXiv:2306.08353</a>] accepted in IEEE Transactions on Communications.
+                </li>
+                <li>
+                    <span class="news-date">15/02/2024:</span>
+                    Join IEEE SiPS 2024 TPC.
+                </li>
+                <li>
+                    <span class="news-date">29/01/2024:</span>
+                    New paper on arXiv: Degradability of Modified Landau-Streater Type Low-Noise Quantum Channels in High Dimensions. [<a href="https://arxiv.org/abs/2401.16312" target="_blank" rel="noopener">arXiv:2401.16312</a>]
+                </li>
+                <li>
+                    <span class="news-date">29/01/2024:</span>
+                    Invited seminar @ Feng Chia University.
+                </li>
+                <li>
+                    <span class="news-date">23/01/2024:</span>
+                    Quantum Technology Seminar with BTQ @ AmCham Taiwan [Cancelled].
+                </li>
+                <li>
+                    <span class="news-date">17/01/2024:</span>
+                    [<a href="https://arxiv.org/abs/2201.11383" target="_blank" rel="noopener">arXiv:2201.11383</a>] accepted in ICC 2024.
+                </li>
+                <li>
+                    <span class="news-date">16/01/2024:</span>
+                    New paper on arXiv: Incorporating Zero-Probability Constraints to Device-Independent Randomness Expansion. [<a href="https://arxiv.org/abs/2401.08452" target="_blank" rel="noopener">arXiv:2401.08452</a>]
+                </li>
+                <li>
+                    <span class="news-date">15/01/2024:</span>
+                    Join the scientific advisory Board of <a href="https://www.quobly.io" target="_blank" rel="noopener">Quobly</a>.
+                </li>
+                <li>
+                    <span class="news-date">13-19/01/2024:</span>
+                    Local Organizer Chair of QIP 2024 in Taipei. [<a href="https://qip2024.tw/site/page.aspx?pid=901&amp;sid=1522&amp;lang=en" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">01/01/2024:</span>
+                    Join IEEE Signal Processing Society's Applied Signal Processing Systems Technical Committee.
+                </li>
+            </ul>
+
+            <h3 id="news-2023">2023</h3>
+            <ul class="news-list">
+                <li>
+                    <span class="news-date">11-12/12/2023:</span>
+                    Attend Quantum Resources 2023 conference, Singapore. [<a href="https://2023.quantumresources.science" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">08/12/2023:</span>
+                    Invited industrial speaker at Quantum Industry Day at NTU 2023, Singapore. [<a href="https://www.ntu.edu.sg/ias/news-events/events/detail/2023/12/08/default-calendar/quantum-industry-day-at-ntu-2023" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">05/12/2023:</span>
+                    Will join IEEE Signal Processing Society's Applied Signal Processing Systems Technical Committee on Jan 01, 2024.
+                </li>
+                <li>
+                    <span class="news-date">03/12/2023:</span>
+                    New paper on arXiv. More Quantum Speedups for Multiproposal MCMC. [<a href="https://arxiv.org/abs/2312.01402" target="_blank" rel="noopener">arXiv:2312.01402</a>]
+                </li>
+                <li>
+                    <span class="news-date">30/11/2023:</span>
+                    New paper on arXiv. A Gell-Mann &amp; Low Theorem Perspective on Quantum Computing: New Paradigm for Designing Quantum Algorithm. [<a href="https://arxiv.org/abs/2311.18271" target="_blank" rel="noopener">arXiv:2311.18271</a>]
+                </li>
+                <li>
+                    <span class="news-date">24/11/2023:</span>
+                    Invited talk at YITP Japan.
+                </li>
+                <li>
+                    <span class="news-date">22/11-01/12/2023:</span>
+                    Visit YITP in Kyoto University.
+                </li>
+                <li>
+                    <span class="news-date">21/11/2023:</span>
+                    Invited talk at QI2023 satellite workshop in Osaka.
+                </li>
+                <li>
+                    <span class="news-date">20-21/11/2023:</span>
+                    Attend QI2023 satellite workshop in Osaka university. [<a href="https://qi2023satellite.github.io/program.html" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">20/11/2023:</span>
+                    New paper on arXiv: Efficient Algorithms for All Port-Based Teleportation Protocols. [<a href="https://arxiv.org/abs/2311.12012" target="_blank" rel="noopener">arXiv:2311.12012</a>]
+                </li>
+                <li>
+                    <span class="news-date">17/11/2023:</span>
+                    New paper on arXiv. (Quantum) complexity of testing signed graph clusterability. [<a href="https://arxiv.org/abs/2311.10480" target="_blank" rel="noopener">arXiv:2311.10480</a>]
+                </li>
+                <li>
+                    <span class="news-date">16/11/2023:</span>
+                    Two papers accepted in QIP 2024: [<a href="https://arxiv.org/abs/2309.16104" target="_blank" rel="noopener">arXiv:2309.16104</a>] &amp; [<a href="https://arxiv.org/abs/2211.13372" target="_blank" rel="noopener">arXiv:2211.13372</a>].
+                </li>
+                <li>
+                    <span class="news-date">14/11/2023:</span>
+                    Join the ISIT 2024 TPC.
+                </li>
+                <li>
+                    <span class="news-date">07/11/2023:</span>
+                    New paper on arXiv: Multimodal deep representation learning for quantum cross-platform verification. [<a href="https://arxiv.org/abs/2311.03713" target="_blank" rel="noopener">arXiv:2311.03713</a>]
+                </li>
+                <li>
+                    <span class="news-date">01/11/2023:</span>
+                    ARC/DP240103324 ($522,390) granted: (CI) Prof Dacheng Tao &amp; (PI) Dr Min-Hsiu Hsieh.
+                </li>
+                <li>
+                    <span class="news-date">27/10/2023:</span>
+                    Invited talk @ ETPC/NSTC workshop.
+                </li>
+                <li>
+                    <span class="news-date">20/10/2023:</span>
+                    CQSE seminar at NTU. [<a href="https://cqse.ntu.edu.tw/upload/seminars/s_20231013111919_0.pdf" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">18/10/2023:</span>
+                    Hon Hai Tech Day (HHTD) 2023.
+                </li>
+                <li>
+                    <span class="news-date">28/09/2023:</span>
+                    New Paper on arXiv. Geometrically Local Quantum and Classical Codes from Subdivision. [<a href="https://arxiv.org/abs/2309.16104" target="_blank" rel="noopener">arXiv:2309.16104</a>]
+                </li>
+                <li>
+                    <span class="news-date">22/09/2023:</span>
+                    Visit Niels Bohr Institute, Denmark.
+                </li>
+                <li>
+                    <span class="news-date">21/09/2023:</span>
+                    Visit DTU and NKT Photonics, Denmark.
+                </li>
+                <li>
+                    <span class="news-date">19/09/2023:</span>
+                    Presentation at Business Finland Event @ Helsinki.
+                </li>
+                <li>
+                    <span class="news-date">19/09/2023:</span>
+                    Visit Bluefors in Finland.
+                </li>
+                <li>
+                    <span class="news-date">18/09/2023:</span>
+                    Visit IQM, CSC and VTT in Finland.
+                </li>
+                <li>
+                    <span class="news-date">17/09/2023:</span>
+                    New Paper on arXiv. Unleashing Quantum Simulation Advantages: Hamiltonian Subspace Encoding for Resource Efficient Quantum Simulations. [<a href="https://arxiv.org/abs/2309.09370" target="_blank" rel="noopener">arXiv:2309.09370</a>]
+                </li>
+                <li>
+                    <span class="news-date">11/09/2023:</span>
+                    New Paper on arXiv. Tradeoff Constructions for Quantum Locally Testable Codes. [<a href="https://arxiv.org/abs/2309.05541" target="_blank" rel="noopener">arXiv:2309.05541</a>]
+                </li>
+                <li>
+                    <span class="news-date">09/09/2023:</span>
+                    [<a href="https://arxiv.org/abs/2210.02977" target="_blank" rel="noopener">arXiv:2210.02977</a>] accepted in npj Quantum Information.
+                </li>
+                <li>
+                    <span class="news-date">06/09/2023:</span>
+                    Keynote speaker for the SEMICON TAIWAN - quantum forum. [<a href="https://www.semicontaiwan.org/en/Quantum_Taiwan_Forum" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">17/08/2023:</span>
+                    [<a href="https://arxiv.org/abs/2301.01597" target="_blank" rel="noopener">arXiv:2301.01597</a>] accepted in Physical Review Letters [<a href="https://apc01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fjournals.aps.org%2Fprl%2Faccepted%2F5e079Yf0N231a48300a02ad38d4551e3fab1d4acd&amp;data=05%7C01%7Cmin-hsiu.hsieh%40foxconn.com%7Cc0edd0d066c9482a25f508db9f84e80e%7C1608350e92d5431a8ea2bd2f76141620%7C0%7C0%7C638279165439626414%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=%2FZDcERP2paGEqKDncn0MwdiXFAECPBldnBdHcQHQfHI%3D&amp;reserved=0" target="_blank" rel="noopener">link</a>].
+                </li>
+                <li>
+                    <span class="news-date">15/08/2023:</span>
+                    [<a href="https://arxiv.org/abs/2301.01597" target="_blank" rel="noopener">arXiv:2301.01597</a>] accepted as long talk in QTML 2023.
+                </li>
+                <li>
+                    <span class="news-date">15/08/2023:</span>
+                    Serve as Associate Editor for Springer Nature Quantum Information Processing (QINP) journal on Sep 01 2023.
+                </li>
+                <li>
+                    <span class="news-date">11/08/2023:</span>
+                    Qiskit Hackathon Taiwan 2023 - "Enterprise Special Award" Sponsor.
+                </li>
+                <li>
+                    <span class="news-date">07/08/2023:</span>
+                    Invited seminar @ IQM Germany.
+                </li>
+                <li>
+                    <span class="news-date">01/08/2023:</span>
+                    New paper on arXiv. Decision Diagrams for Symbolic Verification of Quantum Circuits. [<a href="https://arxiv.org/abs/2308.00440" target="_blank" rel="noopener">arXiv:2308.00440</a>]
+                </li>
+                <li>
+                    <span class="news-date">31/07-04/08/2023:</span>
+                    Beyond iid conference in Tubingen, Germany.
+                </li>
+                <li>
+                    <span class="news-date">27/07/2023:</span>
+                    Special Session Proposal to ICASSP 2024 approved.
+                </li>
+                <li>
+                    <span class="news-date">24-28/07/2023:</span>
+                    TQC 2023 in Aveiro, Portugal.
+                </li>
+                <li>
+                    <span class="news-date">20/07/2023:</span>
+                    Invited seminar @ Institute for Interdisciplinary Information Sciences, Tsinghua University.
+                </li>
+                <li>
+                    <span class="news-date">20/07/2023:</span>
+                    Invited seminar @ Institute of Computing Technology, the Chinese Academy of Sciences.
+                </li>
+                <li>
+                    <span class="news-date">17/07/2023:</span>
+                    One day workshop @ City University of Hong Kong
+                </li>
+                <li>
+                    <span class="news-date">11/07/2023:</span>
+                    New result accepted in IEEE International Conference on Quantum Computing and Engineering (QCE23).
+                </li>
+                <li>
+                    <span class="news-date">11/07/2023:</span>
+                    [<a href="https://arxiv.org/abs/2302.02509" target="_blank" rel="noopener">arXiv:2302.02509</a>] accepted in Physical Review A.
+                </li>
+                <li>
+                    <span class="news-date">07/07/2023:</span>
+                    Invited talk @ 2023 Workshop on Quantum Science and Technology (QST) [<a href="https://phys.ncts.ntu.edu.tw/act/actnews/2023-55465442/home" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">01/07/2023:</span>
+                    [<a href="https://arxiv.org/abs/2305.00689" target="_blank" rel="noopener">arXiv:2305.00689</a>] accepted in AQIS 2023.
+                </li>
+                <li>
+                    <span class="news-date">30/06/2023:</span>
+                    Kick-off Meeting of the NL-TW Consortium in Photonics Quantum Computing.
+                </li>
+                <li>
+                    <span class="news-date">26/06/2023:</span>
+                    Invited talk @ ICSSUR 2023 [<a href="https://icssur2023.info" target="_blank" rel="noopener">Link</a>].
+                </li>
+                <li>
+                    <span class="news-date">21/06/2023:</span>
+                    Invited talk @ Workshop on Entanglement Assisted Communication Networks [<a href="https://6g-life.de/workshop-on-entanglement-assisted-communication-networks-2023/" target="_blank" rel="noopener">Link</a>].
+                </li>
+                <li>
+                    <span class="news-date">19-23/06/2023:</span>
+                    Local organizer of Workshop on Entanglement Assisted Communication Networks [<a href="https://6g-life.de/workshop-on-entanglement-assisted-communication-networks-2023/" target="_blank" rel="noopener">Link</a>].
+                </li>
+                <li>
+                    <span class="news-date">12/06/2023:</span>
+                    [<a href="https://arxiv.org/abs/2209.01449" target="_blank" rel="noopener">arXiv:2209.01449</a>] accepted in Quantum.
+                </li>
+                <li>
+                    <span class="news-date">08/06/2023:</span>
+                    Organisor of the special session "Quantum Machine Learning Algorithms and Applications on NISQ Devices" at ICASSP 2023. [<a href="https://2023.ieeeicassp.org/detailed-sessions-schedule/" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">31/05/2023:</span>
+                    Invited Keynote @ International Quantum Technologies &amp; Business Forum. [<a href="http://www.pida.org.tw/main/seminar_show/2023050004" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">23/05/2023:</span>
+                    Seminar at CQT/NUS, Singapore.
+                </li>
+                <li>
+                    <span class="news-date">22/05/2023:</span>
+                    PAP Seminar at NTU, Singapore.
+                </li>
+                <li>
+                    <span class="news-date">21-27/05/2023:</span>
+                    Visit NUS/NTU in Singapare.
+                </li>
+                <li>
+                    <span class="news-date">20/05/2023:</span>
+                    Invited talk at TWSIAM 2023.
+                </li>
+                <li>
+                    <span class="news-date">18/05/2023:</span>
+                    TPC member for 2023 IEEE Global Communications Conference: Selected Areas in Communications: Quantum Communications and Computing.
+                </li>
+                <li>
+                    <span class="news-date">09/05/2023:</span>
+                    [<a href="https://arxiv.org/abs/2211.13372" target="_blank" rel="noopener">arXiv:2211.13372</a>] accepted in Letters in Mathematical Physics Special Issue.
+                </li>
+                <li>
+                    <span class="news-date">08/05/2023:</span>
+                    New Paper on arXiv. Operational Markovianization in Randomized Benchmarking. [<a href="https://arxiv.org/abs/2305.04704" target="_blank" rel="noopener">arXiv:2305.04704</a>]
+                </li>
+                <li>
+                    <span class="news-date">04/05/2023:</span>
+                    New Paper on arXiv. Capacity Bounds for Vertically-Drifted First Arrival Position Channels under a Second-Moment Constraint. [<a href="https://arxiv.org/abs/2305.02706" target="_blank" rel="noopener">arXiv:2305.02706</a>]
+                </li>
+                <li>
+                    <span class="news-date">01/05/2023:</span>
+                    New Paper on arXiv. General Distance Balancing for Quantum Locally Testable Codes. [<a href="https://arxiv.org/abs/2305.00689" target="_blank" rel="noopener">arXiv:2305.00689</a>]
+                </li>
+                <li>
+                    <span class="news-date">27/04/2023:</span>
+                    [<a href="https://arxiv.org/abs/2210.16823" target="_blank" rel="noopener">arXiv:2210.16823</a>] accepted in Journal of Chemical Information and Modeling (JCIM).
+                </li>
+                <li>
+                    <span class="news-date">26/04/2023:</span>
+                    [<a href="https://arxiv.org/abs/2206.03066" target="_blank" rel="noopener">arXiv:2206.03066</a>] accepted in Transactions on Pattern Analysis and Machine Intelligence (TPAMI).
+                </li>
+                <li>
+                    <span class="news-date">15/04/2023:</span>
+                    [<a href="https://arxiv.org/abs/2301.04301" target="_blank" rel="noopener">arXiv:2301.04301</a>] accepted in ISIT 2023.
+                </li>
+                <li>
+                    <span class="news-date">15/04/2023:</span>
+                    [<a href="https://arxiv.org/abs/2211.13372" target="_blank" rel="noopener">arXiv:2211.13372</a>] accepted in BIID 2023.
+                </li>
+                <li>
+                    <span class="news-date">04/04/2023:</span>
+                    [<a href="https://arxiv.org/abs/2210.11281" target="_blank" rel="noopener">arXiv:2210.11281</a>] accepted in TQC 2023.
+                </li>
+                <li>
+                    <span class="news-date">01/04/2023:</span>
+                    Invited to speak at ICSSUR, 2023. [<a href="https://icssur2023.info/icssur-2023/invited-speakers/" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">20/03/2023:</span>
+                    Seminar at NTUEE.
+                </li>
+                <li>
+                    <span class="news-date">07/03/2023:</span>
+                    Result presented at 2023 APS March Meeting. [<a href="https://meetings.aps.org/Meeting/MAR23/Session/F72.2" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">18/02/2023:</span>
+                    Lead Guest Editor of IEEE Wireless Communication Magazine for the topic "Quantum Communications, Quantum Internet, and Applications". [<a href="https://www.comsoc.org/publications/magazines/ieee-wireless-communications/cfp/quantum-communications-quantum-internet-and" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">13/02/2023:</span>
+                    Seminar at QuSoft, Netherlands.
+                </li>
+                <li>
+                    <span class="news-date">12-15/02/2023:</span>
+                    Visit QuSoft, Netherlands.
+                </li>
+                <li>
+                    <span class="news-date">08/02/2023:</span>
+                    Visit imec Leuven.
+                </li>
+                <li>
+                    <span class="news-date">06/02/2023:</span>
+                    New paper on arXiv. Approximate reconstructability of quantum states and noisy quantum secret sharing schemes. [<a href="https://arxiv.org/abs/2302.02509" target="_blank" rel="noopener">arXiv:2302.02509</a>]
+                </li>
+                <li>
+                    <span class="news-date">06/02/2023:</span>
+                    [<a href="https://arxiv.org/abs/2206.07750" target="_blank" rel="noopener">arXiv:2206.07750</a>] accepted in STOC 2023.
+                </li>
+                <li>
+                    <span class="news-date">06/02/2023:</span>
+                    QIP session chair.
+                </li>
+                <li>
+                    <span class="news-date">04-10/02/2023:</span>
+                    Attend QIP 2023 at Ghent.
+                </li>
+                <li>
+                    <span class="news-date">27/01/2023:</span>
+                    Visit USyd.
+                </li>
+                <li>
+                    <span class="news-date">25/01/2024:</span>
+                    Visit Quantum Brilliance.
+                </li>
+                <li>
+                    <span class="news-date">24/01/2023:</span>
+                    Interviewed by Peter Rhode on Terminally Quantum podcast series.
+                </li>
+                <li>
+                    <span class="news-date">24/01/2023:</span>
+                    Seminar at UTS Centre for Quantum Software and Information.
+                </li>
+                <li>
+                    <span class="news-date">24/01/2023:</span>
+                    Visit Diraq.
+                </li>
+                <li>
+                    <span class="news-date">22/01/2023:</span>
+                    Visit Science &amp; Technology Division, TECO in Australia.
+                </li>
+                <li>
+                    <span class="news-date">20/01/2023:</span>
+                    Seminar at Macquarie Centre for Quantum Engineering, Macquarie University.
+                </li>
+                <li>
+                    <span class="news-date">20/01/2023:</span>
+                    Visit Cicada Innovations &amp; S3B.
+                </li>
+                <li>
+                    <span class="news-date">18/01/2023:</span>
+                    Visit Office of the NSW Chief Scientist &amp; Engineer (OCSE).
+                </li>
+                <li>
+                    <span class="news-date">17/01/2023:</span>
+                    Visit SQA and the Quantum Terminal.
+                </li>
+                <li>
+                    <span class="news-date">16/01/2023:</span>
+                    Visit CQC2T and SQC.
+                </li>
+                <li>
+                    <span class="news-date">13-28/01/2023:</span>
+                    Visit UTS.
+                </li>
+                <li>
+                    <span class="news-date">11/01/2023:</span>
+                    New paper on arXiv. One-Shot Distributed Source Simulation: As Quantum as it Can Get. [<a href="https://arxiv.org/abs/2301.04301" target="_blank" rel="noopener">arXiv:2301.04301</a>]
+                </li>
+                <li>
+                    <span class="news-date">09/01/2023:</span>
+                    Paper published: npj Quantum Information volume 9, Article number: 4 (2023). [<a href="https://www.nature.com/articles/s41534-022-00672-7" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">01/01/2023:</span>
+                    Paper published: IEEE Transactions on Information Theory, vol. 69, no. 1, pp. 262-272, Jan. 2023. [<a href="https://doi.org/10.1109/TIT.2022.3201239" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">29/12/2022:</span>
+                    New paper on arXiv. Demystify Problem-Dependent Power of Quantum Neural Networks on Multi-Class Classification. [<a href="https://arxiv.org/abs/2301.01597" target="_blank" rel="noopener">arXiv:2301.01597</a>]
+                </li>
+            </ul>
+
+            <h3 id="news-2022">2022</h3>
+            <ul class="news-list">
+                <li>
+                    <span class="news-date">07/12/2022:</span>
+                    [<a href="https://arxiv.org/abs/2206.04804" target="_blank" rel="noopener">arXiv:2206.04804</a>] accepted in npj Quantum Information.
+                </li>
+                <li>
+                    <span class="news-date">24/11/2022:</span>
+                    [<a href="https://arxiv.org/abs/2206.07750" target="_blank" rel="noopener">arXiv:2206.07750</a>] Paper accepted to QIP.
+                </li>
+                <li>
+                    <span class="news-date">24/11/2022:</span>
+                    New paper on arXiv. [<a href="https://arxiv.org/abs/2211.13372" target="_blank" rel="noopener">arXiv:2211.13372</a>]
+                </li>
+                <li>
+                    <span class="news-date">16/11/2022:</span>
+                    [<a href="https://arxiv.org/abs/2202.11338" target="_blank" rel="noopener">arXiv:2202.11338</a>] accepted in Quantum Journal.
+                </li>
+                <li>
+                    <span class="news-date">11/11/2022:</span>
+                    Seminar @ TPMSO. [<a href="https://tpmso.org/tpmso/index.php/2022/10/17/5489/" target="_blank" rel="noopener">link</a>]
+                </li>
+                <li>
+                    <span class="news-date">08/11/2022:</span>
+                    Colloquium @ Math Dept., NTNU
+                </li>
+                <li>
+                    <span class="news-date">30/10/2022:</span>
+                    New paper on arXiv. [<a href="https://arxiv.org/abs/2210.16823" target="_blank" rel="noopener">arXiv:2210.16823</a>]
+                </li>
+                <li>
+                    <span class="news-date">24/10/2022:</span>
+                    New paper on arXiv. [<a href="https://arxiv.org/abs/2210.12953" target="_blank" rel="noopener">arXiv:2210.12953</a>]
+                </li>
+                <li>
+                    <span class="news-date">20/10/2022:</span>
+                    New paper on arXiv. [<a href="https://arxiv.org/abs/2210.11281" target="_blank" rel="noopener">arXiv:2210.11281</a>]
+                </li>
+                <li>
+                    <span class="news-date">18/10/2022:</span>
+                    Hon Hai (Foxconn) Tech Day.
+                </li>
+                <li>
+                    <span class="news-date">12/10/2022:</span>
+                    Panel Discussion @ TIPO
+                </li>
+                <li>
+                    <span class="news-date">10/10/2022:</span>
+                    New paper on arXiv. [<a href="https://arxiv.org/abs/2210.04717" target="_blank" rel="noopener">arXiv:2210.04717</a>]
+                </li>
+                <li>
+                    <span class="news-date">06/10/2022:</span>
+                    New paper on arXiv. [<a href="https://arxiv.org/abs/2210.02977" target="_blank" rel="noopener">arXiv:2210.02977</a>]
+                </li>
+                <li>
+                    <span class="news-date">30/09/2022:</span>
+                    Seminar @ NTHU, Taiwan.
+                </li>
+                <li>
+                    <span class="news-date">15/09/2022:</span>
+                    [<a href="https://arxiv.org/abs/2203.09376" target="_blank" rel="noopener">arXiv:2203.09376</a>] accepted in NeurIPS 2022.
+                </li>
+                <li>
+                    <span class="news-date">03/09/2022:</span>
+                    New paper on arXiv. [<a href="https://arxiv.org/abs/2209.01449" target="_blank" rel="noopener">arXiv:2209.01449</a>]
+                </li>
+                <li>
+                    <span class="news-date">31/08/2022:</span>
+                    Join ISIT 2023 TPC
+                </li>
+                <li>
+                    <span class="news-date">27/08/2022:</span>
+                    Invited talk @ 2022 Workshop on Quantum Science and Technology (QST) [<a href="https://phys.ncts.ntu.edu.tw/en/act/actnews/2022%20Workshop%20on%20Quantum%20Science%20and%20Technology%20(QST)-54470110/home/introduction" target="_blank" rel="noopener">link</a>]
+                </li>
+                <li>
+                    <span class="news-date">16/08/2022:</span>
+                    "Partial Equivalence Checking of Quantum Circuits" posted on arXiv: [<a href="https://arxiv.org/abs/2208.07564" target="_blank" rel="noopener">arXiv:2208.07564</a>].
+                </li>
+                <li>
+                    <span class="news-date">11/08/2022:</span>
+                    [<a href="https://arxiv.org/abs/2107.05174" target="_blank" rel="noopener">arXiv:2107.05174</a>] accepted in IEEE Transactions on Information Theory.
+                </li>
+                <li>
+                    <span class="news-date">10/08/2022:</span>
+                    Summer School 2022 by IEEE Communications Society Taipei Chapter/Tainan Chapter、IEEE Information Theory Society Taipei Chapter.
+                </li>
+                <li>
+                    <span class="news-date">23/07/2022:</span>
+                    Organizer of Quantum Computation Session in TWSIAM 2022 Annual Meeting. [<a href="https://sites.google.com/view/twsiam2022" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">18/07/2020:</span>
+                    PME special seminar @ University of Chicago
+                </li>
+                <li>
+                    <span class="news-date">11/07/2022:</span>
+                    Session chair (QECC) for TQC 2022.
+                </li>
+                <li>
+                    <span class="news-date">07/07/2022:</span>
+                    IBM Q Hackathon with HQAN Judges Panel (Illinois, US).
+                </li>
+                <li>
+                    <span class="news-date">04/07/2022:</span>
+                    New paper on arXiv. [<a href="https://arxiv.org/abs/2207.01542" target="_blank" rel="noopener">arXiv:2207.01542</a>]
+                </li>
+                <li>
+                    <span class="news-date">29/06/2022:</span>
+                    "Partial Equivalence Checking of Quantum Circuits" accepted for the technical program of 2022 IEEE International Conference on Quantum Computing and Engineering (QCE22).
+                </li>
+                <li>
+                    <span class="news-date">28/06/2022:</span>
+                    Join the PC of QIP 2023.
+                </li>
+                <li>
+                    <span class="news-date">25/06/2022:</span>
+                    New result: "Partial Equivalence Checking of Quantum Circuits" accepted as a regular presentation at IWLS2022.
+                </li>
+                <li>
+                    <span class="news-date">15/06/2022:</span>
+                    New paper on arXiv. [<a href="https://arxiv.org/abs/2206.07750" target="_blank" rel="noopener">arXiv:2206.07750</a>]
+                </li>
+                <li>
+                    <span class="news-date">10/06/2022:</span>
+                    [<a href="https://arxiv.org/abs/2202.08084" target="_blank" rel="noopener">arXiv:2202.08084</a>] now published in PNAS -> [<a href="https://www.pnas.org/doi/10.1073/pnas.2202235119" target="_blank" rel="noopener">Link</a>].
+                </li>
+                <li>
+                    <span class="news-date">08/06/2022:</span>
+                    New paper on arXiv. [<a href="https://arxiv.org/abs/2206.04804" target="_blank" rel="noopener">arXiv:2206.04804</a>]
+                </li>
+                <li>
+                    <span class="news-date">07/06/2022:</span>
+                    Review paper on arXiv. [<a href="https://arxiv.org/abs/2206.03066" target="_blank" rel="noopener">arXiv:2206.03066</a>]
+                </li>
+                <li>
+                    <span class="news-date">01/06/2022:</span>
+                    [<a href="https://arxiv.org/abs/2111.11139" target="_blank" rel="noopener">arXiv:2111.11139</a>] as contributed talk @ The 7th Highlights of Algorithms (HALG 2022) conference [<a href="https://www.lse.ac.uk/HALG-2022/programme/Programme" target="_blank" rel="noopener">Link</a>].
+                </li>
+                <li>
+                    <span class="news-date">30/05/2022:</span>
+                    [<a href="https://arxiv.org/abs/2006.12059" target="_blank" rel="noopener">arXiv:2006.12059</a>] published in Quantum Journal.
+                </li>
+                <li>
+                    <span class="news-date">28/05/2022:</span>
+                    [<a href="https://arxiv.org/abs/1809.11143" target="_blank" rel="noopener">arXiv:1809.11143</a>] accepted in IEEE TIT.
+                </li>
+                <li>
+                    <span class="news-date">02/05/2022:</span>
+                    Invited seminar @ NCCU [<a href="https://phys.nccu.edu.tw/PageDoc/Detail?fid=4262&amp;id=15973" target="_blank" rel="noopener">Link</a>].
+                </li>
+                <li>
+                    <span class="news-date">30/04/2022:</span>
+                    New paper submitted to IEEE QCE 2022.
+                </li>
+                <li>
+                    <span class="news-date">23/04/2022:</span>
+                    [<a href="https://arxiv.org/abs/2201.11369" target="_blank" rel="noopener">arXiv:2201.11369</a>] accepted in IEEE ISIT 2022.
+                </li>
+                <li>
+                    <span class="news-date">21/04/2022:</span>
+                    [<a href="https://arxiv.org/abs/2010.10217" target="_blank" rel="noopener">arXiv:2010.10217</a>] accepted in npj Quantum Information.
+                </li>
+                <li>
+                    <span class="news-date">20/04/2022:</span>
+                    [<a href="https://arxiv.org/abs/2202.08084" target="_blank" rel="noopener">arXiv:2202.08084</a>] accepted in PNAS.
+                </li>
+                <li>
+                    <span class="news-date">08/04/2022:</span>
+                    Invited seminar @ NTUEE
+                </li>
+                <li>
+                    <span class="news-date">07/04/2022:</span>
+                    Invited talk @ Quantum Computing Forum [<a href="https://sites.google.com/view/asus-ntu-quantum-computing/議程" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">01/04/2022:</span>
+                    Invited seminar @ NCHU, Taichung, Taiwan.
+                </li>
+                <li>
+                    <span class="news-date">27/03/2022:</span>
+                    New paper on arXiv. [<a href="https://arxiv.org/abs/2203.14348" target="_blank" rel="noopener">arXiv:2203.14348</a>]
+                </li>
+                <li>
+                    <span class="news-date">23/03/2022:</span>
+                    Invited seminar @ NTHU, Hsin-Chu, Taiwan.
+                </li>
+                <li>
+                    <span class="news-date">22/03/2022:</span>
+                    Honorary appointment with QSI/UTS.
+                </li>
+                <li>
+                    <span class="news-date">19/03/2022:</span>
+                    [<a href="https://arxiv.org/abs/2007.11921" target="_blank" rel="noopener">arXiv:2007.11921</a>] accepted in IEEE TIT.
+                </li>
+                <li>
+                    <span class="news-date">17/03/2022:</span>
+                    New paper on arXiv. [<a href="https://arxiv.org/abs/2203.09376" target="_blank" rel="noopener">arXiv:2203.09376</a>]
+                </li>
+                <li>
+                    <span class="news-date">15/03/2022:</span>
+                    [<a href="https://arxiv.org/abs/2203.07749" target="_blank" rel="noopener">arXiv:2203.07749</a>] published in PRL [<a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.128.110501" target="_blank" rel="noopener">Link</a>].
+                </li>
+                <li>
+                    <span class="news-date">07/03/2022:</span>
+                    New paper on arXiv. [<a href="https://arxiv.org/abs/2203.03581" target="_blank" rel="noopener">arXiv:2203.03581</a>]
+                </li>
+                <li>
+                    <span class="news-date">25/02/2022:</span>
+                    New paper on arXiv. [<a href="https://arxiv.org/abs/2202.11920" target="_blank" rel="noopener">arXiv:2202.11920</a>]
+                </li>
+                <li>
+                    <span class="news-date">24/02/2022:</span>
+                    Invited talk @ Quantum Machine Learning Workshop, Phanous QuOne Lab, Iran [<a href="https://drive.google.com/file/d/1Uzez2Hc413jpfN77DL_TcUKQjFq2Xy8n/view?usp=sharing" target="_blank" rel="noopener">link</a>]
+                </li>
+                <li>
+                    <span class="news-date">23/02/2022:</span>
+                    Invited seminar @ NTUEE, Taipei, Taiwan.
+                </li>
+                <li>
+                    <span class="news-date">23/02/2022:</span>
+                    New paper on arXiv. [<a href="https://arxiv.org/abs/2202.11338" target="_blank" rel="noopener">arXiv:2202.11338</a>]
+                </li>
+                <li>
+                    <span class="news-date">11/02/2022:</span>
+                    Paper accepted in PRL.
+                </li>
+                <li>
+                    <span class="news-date">27/01/2022:</span>
+                    Two papers on arXiv. [<a href="https://arxiv.org/abs/2201.11369" target="_blank" rel="noopener">arXiv:2201.11369</a>] [<a href="https://arxiv.org/abs/2201.11383" target="_blank" rel="noopener">arXiv:2201.11383</a>].
+                </li>
+                <li>
+                    <span class="news-date">25/01/2022:</span>
+                    Invited talk @ 2022 Annual Meeting of the Physical Society of Taiwan [<a href="https://tps2022.conf.tw/site/page.aspx?pid=901&amp;sid=1396&amp;lang=en" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">13/01/2022:</span>
+                    New paper on arXiv. [<a href="https://arxiv.org/abs/2201.04476" target="_blank" rel="noopener">arXiv:2201.04476</a>]
+                </li>
+                <li>
+                    <span class="news-date">04/01/2022:</span>
+                    New paper on arXiv. [<a href="https://arxiv.org/abs/2201.00934" target="_blank" rel="noopener">arXiv:2201.00934</a>]
+                </li>
+                <li>
+                    <span class="news-date">04/01/2022:</span>
+                    [<a href="https://arxiv.org/abs/1811.04218" target="_blank" rel="noopener">arXiv:1811.04218</a>] accepted in Communications in Mathematical Physics.
+                </li>
+                <li>
+                    <span class="news-date">04/01/2022:</span>
+                    Interviewed by GASE of Ministry of Science and Technology (MOST). [<a href="https://gase.most.ntu.edu.tw/articles/97?locale=zh-TW" target="_blank" rel="noopener">link</a>]
+                </li>
+                <li>
+                    <span class="news-date">03/01/2022:</span>
+                    New paper on arXiv. [<a href="https://arxiv.org/abs/2112.15002" target="_blank" rel="noopener">arXiv:2112.15002</a>]
+                </li>
+            </ul>
+
+            <h3 id="news-2021">2021</h3>
+            <ul class="news-list">
+                <li>
+                    <span class="news-date">25/12/2021:</span>
+                    Invited seminar @TAQCIT. [<a href="https://www.accupass.com/event/2111190244521157199393?fbclid=IwAR3pml9T0Vc_lnM3T9UIIzK5DZj9fs5kZEll7RqFo4zmS2V0SWIBmFYvmDo" target="_blank" rel="noopener">link</a>]
+                </li>
+                <li>
+                    <span class="news-date">24/12/2021:</span>
+                    2021 Hon Hai Research Institute Paper Award [<a href="https://arxiv.org/abs/2107.05403" target="_blank" rel="noopener">arXiv:2107.05403</a>]: 2nd place.
+                </li>
+                <li>
+                    <span class="news-date">21/12/2021:</span>
+                    Invited talk @ 3rd Denmark-Taiwan Innovation Cooperation Conference.
+                </li>
+                <li>
+                    <span class="news-date">17/12/2021:</span>
+                    Paper accepted in QIP 2022 [<a href="https://arxiv.org/abs/2111.11139" target="_blank" rel="noopener">arXiv:2111.11139</a>].
+                </li>
+                <li>
+                    <span class="news-date">17/12/2021:</span>
+                    Invited seminar @ NTU CS department.
+                </li>
+                <li>
+                    <span class="news-date">13/12/2021:</span>
+                    Paper published in PRX-Quantum [<a href="https://arxiv.org/abs/2107.05403" target="_blank" rel="noopener">arXiv:2107.05403</a>]. [<a href="https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.2.040351" target="_blank" rel="noopener">link</a>]
+                </li>
+                <li>
+                    <span class="news-date">12/12/2021:</span>
+                    Local organizer of Hon Hai NExT Forum: Quantum Computing. [<a href="https://forum.hh-ri.com/20211212/" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">29/11/2021:</span>
+                    New paper on arXiv: [<a href="https://arxiv.org/abs/2111.13678" target="_blank" rel="noopener">arXiv:2111.13678</a>]
+                </li>
+                <li>
+                    <span class="news-date">23/11/2021:</span>
+                    New paper on arXiv: [<a href="https://arxiv.org/abs/2111.11139" target="_blank" rel="noopener">arXiv:2111.11139</a>]
+                </li>
+                <li>
+                    <span class="news-date">17/11/2021:</span>
+                    Paper published in PRX-Quantum [<a href="https://arxiv.org/abs/2007.12369" target="_blank" rel="noopener">arXiv:2007.12369</a>] [<a href="https://journals.aps.org/prxquantum/pdf/10.1103/PRXQuantum.2.040337" target="_blank" rel="noopener">paper</a>].
+                </li>
+                <li>
+                    <span class="news-date">09/11/2021:</span>
+                    Invited seminar @ NTNU, Taiwan.
+                </li>
+                <li>
+                    <span class="news-date">05/11/2021:</span>
+                    Paper accepted in PRX-Quantum [<a href="https://arxiv.org/abs/2107.05403" target="_blank" rel="noopener">arXiv:2107.05403].</a>
+                </li>
+                <li>
+                    <span class="news-date">19/10/2021:</span>
+                    Paper accepted in PRX-Quantum [<a href="https://arxiv.org/abs/2007.12369" target="_blank" rel="noopener">arXiv:2007.12369</a>].
+                </li>
+                <li>
+                    <span class="news-date">30/09/2021:</span>
+                    Paper accepted in Physical Review Research [<a href="https://arxiv.org/abs/2004.06421" target="_blank" rel="noopener">arXiv:2004.06421].</a>
+                </li>
+                <li>
+                    <span class="news-date">29/09/2021:</span>
+                    Invited Seminar @ TIPO, Ministry of Economic Affairs.
+                </li>
+                <li>
+                    <span class="news-date">27/09/2021:</span>
+                    Opening for BIID'9 conference.
+                </li>
+                <li>
+                    <span class="news-date">06/09/2021:</span>
+                    Special Session on "Quantum Machine Learning for Speech and Language Processing" approved in ICASSP 2022, Singapore.
+                </li>
+                <li>
+                    <span class="news-date">03/09/2021:</span>
+                    Invited talk @ AQIS 2021.
+                </li>
+                <li>
+                    <span class="news-date">01/09/2021:</span>
+                    Paper [<a href="https://arxiv.org/abs/2107.05403" target="_blank" rel="noopener">arXiv:2107.05403</a>] accepted in BIID'9 [<a href="http://cc.ee.ntu.edu.tw/~beyondiid9/Main%20Program.html" target="_blank" rel="noopener">Link</a>].
+                </li>
+                <li>
+                    <span class="news-date">24/08/2021:</span>
+                    Invited talk @ 2021 workshop on QST [<a href="http://www.ncts.ncku.edu.tw/phys/qis/210629/index.php" target="_blank" rel="noopener">link</a>]
+                </li>
+                <li>
+                    <span class="news-date">23/08/2021:</span>
+                    Join TPC of IEEE ICC'22 - SAC-07 QCC Track
+                </li>
+                <li>
+                    <span class="news-date">21/08/2021:</span>
+                    Invited talk @ IJCAI 2021 conference [<a href="https://huckiyang.github.io/quantum-ml-main/" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">07/08/2021:</span>
+                    Paper accepted in Physical Review Applied: [<a href="https://arxiv.org/abs/2010.06201" target="_blank" rel="noopener">arXiv:2010.06201</a>].
+                </li>
+                <li>
+                    <span class="news-date">07/08/2021:</span>
+                    Keynote speaker at 2021 TWSIAM Annual Meeting. [<a href="https://math.nuk.edu.tw/var/file/18/1018/img/729/688561276.pdf" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">02/08/2021:</span>
+                    Join the Steering Committee of TQC.
+                </li>
+                <li>
+                    <span class="news-date">12/07/2021:</span>
+                    New paper on arXiv: [<a href="https://arxiv.org/abs/2107.05403" target="_blank" rel="noopener">arXiv:2107.05403</a>]
+                </li>
+                <li>
+                    <span class="news-date">12/07/2021:</span>
+                    New paper on arXiv: [<a href="https://arxiv.org/abs/2107.05174" target="_blank" rel="noopener">arXiv:2107.05174</a>].
+                </li>
+                <li>
+                    <span class="news-date">05-08/07/2021:</span>
+                    TQC 2021 Conference [<a href="https://tqc2021.lu.lv" target="_blank" rel="noopener">link</a>]. The PC report used in the business meeting [<a href="https://www.minhsiu.com/_files/ugd/c07123_d4efd0f24e8a4b9086abe350ced13a69.pdf" target="_blank" rel="noopener">file</a>].
+                </li>
+                <li>
+                    <span class="news-date">30/06/2021:</span>
+                    Paper accepted in Physical Review A [<a href="https://arxiv.org/abs/1908.05251" target="_blank" rel="noopener">arXiv:1908.05251</a>].
+                </li>
+                <li>
+                    <span class="news-date">21/06/2021:</span>
+                    paper [<a href="https://arxiv.org/abs/2012.00226" target="_blank" rel="noopener">arXiv:2012.00226</a>] published in IEEE Transactions on Communications, vol. 69, no. 6, pp: 3971-3983 (2021).
+                </li>
+                <li>
+                    <span class="news-date">16/06/2021:</span>
+                    Paper accepted in Quantum [<a href="https://arxiv.org/abs/1912.11049" target="_blank" rel="noopener">arXiv:1912.11049</a>].
+                </li>
+                <li>
+                    <span class="news-date">29/05/2021:</span>
+                    Invited speaker @ Academic and Industrial Quantum Computer Co-Op Seminar ( <a href="https://drive.google.com/file/d/1bIeOKBCEep91qOWPn7DYsfnjd-05uwUN/view" target="_blank" rel="noopener">CAPA</a> )
+                </li>
+                <li>
+                    <span class="news-date">27/05/2021:</span>
+                    Paper published in Physical Review Research [<a href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.3.023153" target="_blank" rel="noopener">link</a>]
+                </li>
+                <li>
+                    <span class="news-date">27/05/2021:</span>
+                    Invited Seminar @ National Sun Yat-sen University, Taiwan.
+                </li>
+                <li>
+                    <span class="news-date">19/05/2021:</span>
+                    paper published in npj Quantum Information [<a href="https://www.nature.com/articles/s41534-021-00412-3" target="_blank" rel="noopener">link</a>]
+                </li>
+                <li>
+                    <span class="news-date">03/05/2021:</span>
+                    Invitation to IJCAI 2021 Quantum Neural Network tutorial Session
+                </li>
+                <li>
+                    <span class="news-date">26/04/2021:</span>
+                    Life Experience Sharing Seminar @ NTUGICE
+                </li>
+                <li>
+                    <span class="news-date">21/04/2021:</span>
+                    Invited Seminar @ Chunghwa Telecom Labs.
+                </li>
+                <li>
+                    <span class="news-date">19/04/2021:</span>
+                    Paper accepted in Physical Review Research [<a href="https://arxiv.org/abs/2003.09416" target="_blank" rel="noopener">arXiv:2003.09416].</a>
+                </li>
+                <li>
+                    <span class="news-date">14/04/2021:</span>
+                    Paper accepted in npj Quantum Information (Springer Nature): [<a href="https://arxiv.org/abs/2101.12173" target="_blank" rel="noopener">arXiv:2101.12173</a>].
+                </li>
+                <li>
+                    <span class="news-date">13/04/2021:</span>
+                    Invited Seminar @ Academia Sinica.
+                </li>
+                <li>
+                    <span class="news-date">09/04/2021:</span>
+                    Invited Tutorial @ USF Quantum Communications and Cryptography Workshop [<a href="https://www.usf.edu/engineering/ee/documents/quantum-workshop-04092021.pdf" target="_blank" rel="noopener">Website</a>]
+                </li>
+                <li>
+                    <span class="news-date">07/04/2021:</span>
+                    Online Seminar @ Exeter University, UK.
+                </li>
+                <li>
+                    <span class="news-date">02/04/2021:</span>
+                    Join the Steering Committee of QIP.
+                </li>
+                <li>
+                    <span class="news-date">31/03/2021:</span>
+                    New paper on arXiv: [<a href="https://arxiv.org/abs/2103.17047" target="_blank" rel="noopener">arXiv:2103.17047</a>].
+                </li>
+                <li>
+                    <span class="news-date">12/03/2021:</span>
+                    Local Organizing Chair of QIP 2023 @ Taipei.
+                </li>
+                <li>
+                    <span class="news-date">10/03/2021:</span>
+                    Invited Seminar @ National Yang Ming Chiao Tung University.
+                </li>
+                <li>
+                    <span class="news-date">05/03/2021:</span>
+                    Invited Seminar @ National Taiwan University.
+                </li>
+                <li>
+                    <span class="news-date">05/03/2021:</span>
+                    Invited talk at Machine Learning for Quantum 2021. [<a href="https://mlq2021.org/" target="_blank" rel="noopener">Website</a>]
+                </li>
+                <li>
+                    <span class="news-date">02/03/2021:</span>
+                    Paper accepted in IEEE Transactions on Communications: [<a href="https://arxiv.org/abs/2012.00226" target="_blank" rel="noopener">arXiv:2012.00226</a>]
+                </li>
+                <li>
+                    <span class="news-date">24/02/2021:</span>
+                    Invited Seminar @ National Chung Cheng University.
+                </li>
+                <li>
+                    <span class="news-date">23/02/2021:</span>
+                    Invited Seminar @ National Central University. [<a href="https://www.phy.ncu.edu.tw/news/colloquium20210223-challenges-and-opportunities-of-quantum-machine-learning/" target="_blank" rel="noopener">Link</a>]
+                </li>
+                <li>
+                    <span class="news-date">22/02/2021:</span>
+                    Invited Seminar @ Qfort, NCKU.
+                </li>
+                <li>
+                    <span class="news-date">04/01/2021:</span>
+                    Became the Director of Hon Hai (Foxconn) Quantum Computing Center. [<a href="https://www.honhai.com/en-us/institute" target="_blank" rel="noopener">Website</a>]
+                </li>
+            </ul>
+
+            <h3 id="news-2020">2020</h3>
+            <ul class="news-list">
+                <li>
+                    <span class="news-date">7-9/12/2020:</span>
+                    [E] AQIS 2020 Local Organizing Chair. [<a href="http://aqis-conf.org/2020/" target="_blank" rel="noopener">Website</a>]
+                </li>
+                <li>
+                    <span class="news-date">18/11/2020:</span>
+                    [R] Invited seminar at 陝西師範大學。
+                </li>
+                <li>
+                    <span class="news-date">12/11/2020:</span>
+                    [R] New paper released [<a href="https://arxiv.org/abs/2011.06258" target="_blank" rel="noopener">arXiv:2011.06258</a>]. Title: Toward Trainability of Quantum Neural Networks.
+                </li>
+                <li>
+                    <span class="news-date">04/11/2020:</span>
+                    [R] Paper accepted in SCIENCE CHINA Physics, Mechanics &amp; Astronomy. Title: Quantum Speedup in Adaptive Boosting of Binary Classification.
+                </li>
+                <li>
+                    <span class="news-date">28 /10/2020:</span>
+                    [R] Paper accepted in IEEE Transactions on Information Theory. Title: Non-Asymptotic Classical Data Compression with Quantum Side Information.
+                </li>
+                <li>
+                    <span class="news-date">21/10/2020:</span>
+                    [R] New paper released [<a href="https://arxiv.org/abs/2010.10217" target="_blank" rel="noopener">arXiv:2010.10217</a>]. Title: Quantum circuit architecture search: error mitigation and trainability enhancement for variational quantum solvers.
+                </li>
+                <li>
+                    <span class="news-date">14/10/2020:</span>
+                    [R] Paper accepted in Physical Review A. Title: Simple bounds for one-shot pure-state distillation in general resource theories.
+                </li>
+                <li>
+                    <span class="news-date">13/10/2020:</span>
+                    [R] New paper released [<a href="https://arxiv.org/abs/2010.06201" target="_blank" rel="noopener">arXiv:2010.06201</a>]. (First Experiment Paper). Title: Experimental Quantum Generative Adversarial Networks for Image Generation.
+                </li>
+                <li>
+                    <span class="news-date">25/09/2020:</span>
+                    [E] Program committee of "Beyond IID in Information Theory 8" ( <a href="https://sites.google.com/view/beyondiid8/" target="_blank" rel="noopener">website</a> ).
+                </li>
+                <li>
+                    <span class="news-date">09/09/2020:</span>
+                    [E] Accept invitation to TQC 2021 Program Committee chair.
+                </li>
+                <li>
+                    <span class="news-date">22/08/2020:</span>
+                    [R] Paper accepted in IEEE Transactions on Information Theory. Title: Noisy quantum state redistribution with promise and the Alpha-bit.
+                </li>
+                <li>
+                    <span class="news-date">27/07/2020:</span>
+                    [R] New paper released [<a href="https://arxiv.org/abs/2007.12369" target="_blank" rel="noopener">arXiv:2007.12369</a>]. Title: "On the learnability of quantum neural networks".
+                </li>
+                <li>
+                    <span class="news-date">27/07/2020:</span>
+                    [T] Subject coordinator and lecturer for 41076: Methods in Quantum Computing
+                </li>
+                <li>
+                    <span class="news-date">24/07/2020:</span>
+                    [R] New paper released [<a href="https://arxiv.org/abs/2007.11921" target="_blank" rel="noopener">arXiv:2007.11921</a>]. Title: "Quantum differentially private sparse regression learning".
+                </li>
+                <li>
+                    <span class="news-date">16/07/2020:</span>
+                    [R] Paper accepted in IEEE Transactions on Information Theory. Title: Single-Serving Quantum Broadcast Channel with Common, Individualized and Confidential messages.
+                </li>
+                <li>
+                    <span class="news-date">16/07/2020:</span>
+                    [R] Paper accepted in Physical Review Research. Title: A Quantum-inspired Algorithm for General Minimum Conical Hull Problems.
+                </li>
+                <li>
+                    <span class="news-date">15/07/2020:</span>
+                    [E] Joined UTS panel for SQA PhD Experience Program Orientation.
+                </li>
+                <li>
+                    <span class="news-date">08/07/2020:</span>
+                    [R] Invitation to speak at "<a href="https://quantumresources.science/" target="_blank" rel="noopener">Quantum resources</a>: from mathematical foundations to operational characterisation". 
+                </li>
+                <li>
+                    <span class="news-date">23/06/2020:</span>
+                    [R] TPC member of IEEE GLOBECOM 2020 Workshop on Quantum Communications and Information Technology [<a href="https://qcit.committees.comsoc.org/" target="_blank" rel="noopener">Call for Paper</a>]
+                </li>
+                <li>
+                    <span class="news-date">23/06/2020:</span>
+                    [R] New paper released [<a href="https://arxiv.org/abs/2006.12059" target="_blank" rel="noopener">arXiv:2006.12059</a>]. "One-Shot Trade-Off Bounds for State Redistribution of Classical-Quantum Sources," with Eyuri Wakakuwa and Yoshifumi Nakata.
+                </li>
+                <li>
+                    <span class="news-date">09/06/2020:</span>
+                    [E] TQC 2020 Session chair (and PC member) <a href="http://tqc2020.lu.lv/program/schedule/" target="_blank" rel="noopener">Program</a>
+                </li>
+                <li>
+                    <span class="news-date">05/06/2020:</span>
+                    [E] Interview Dr Charles Bennett for the IEEE ISIT 2020 event "Meet the Shannon Lecturer" with David Sutter. Video available here [<a href="https://2020.ieee-isit-virtual.org/session/meet-shannon-lecturer" target="_blank" rel="noopener">link</a>]
+                </li>
+                <li>
+                    <span class="news-date">18/05/2020:</span>
+                    [R] Paper accepted in Physical Review Research. "The Expressive Power of Parameterized Quantum Circuits," with Yuxuan Du, Tongliang Liu, and Dacheng Tao
+                </li>
+                <li>
+                    <span class="news-date">16/04/2020:</span>
+                    [E] Joined SQA PhD Experience Program Working Group.
+                </li>
+                <li>
+                    <span class="news-date">14/04/2020:</span>
+                    [R] New paper released [<a href="https://arxiv.org/abs/2004.06421" target="_blank" rel="noopener">arXiv:2004.06421</a>] "Efficient State Read-out for Quantum Machine Learning Algorithms," with Kaining Zhang, Liu Liu, and Dacheng Tao.
+                </li>
+                <li>
+                    <span class="news-date">01/04/2020:</span>
+                    [R] Paper accepted in ISIT 2020. "One-Shot Trade-Off Bounds for State Redistribution of Classical-Quantum Sources," with Eyuri Wakakuwa and Yoshifumi Nakata.
+                </li>
+                <li>
+                    <span class="news-date">20/03/2020:</span>
+                    [R] New paper released [<a href="https://arxiv.org/abs/2003.09416" target="_blank" rel="noopener">arXiv:2003.09416</a>]. "Quantum noise protects quantum classifiers against adversaries," with Yuxuan Du, Tongliang Liu, Dacheng Tao, Nana Liu.
+                </li>
+                <li>
+                    <span class="news-date">10/03/2020:</span>
+                    [T] Subject coordinator and lecturer for 41095&amp;41096 (Fall 2020)
+                </li>
+                <li>
+                    <span class="news-date">02/03/2020:</span>
+                    [R] TPC member of 2020 IEEE Information Theory Workshop (ITW)
+                </li>
+                <li>
+                    <span class="news-date">02/03/2020:</span>
+                    [R] Seminar at University of Queensland, invited by Dr. Mary Jacquiline Romero
+                </li>
+                <li>
+                    <span class="news-date">06-10/01/2020:</span>
+                    [E] Invited to visit Peng Cheng Laboratory, Shenzhen, China.
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-item">
+                    <a href="mailto:min-hsiu.hsieh@foxconn.com" class="footer-icon-link" title="Email: min-hsiu.hsieh@foxconn.com">
+                        <div class="footer-icon">
+                            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="footer-item">
+                    <div class="footer-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/min-hsiu-hsieh-6199b0/" target="_blank" rel="noopener" title="LinkedIn">
+                            <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                        </a>
+<a href="https://x.com/quantum_minhsiu" target="_blank" rel="noopener" title="Twitter">
+                            <svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                        </a>
+                        <a href="https://scholar.google.com/citations?user=UXx1jNYAAAAJ" target="_blank" rel="noopener" title="Google Scholar">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-item">
+                    <a href="https://maps.app.goo.gl/jwDW2MSc6T7pYtRYA" target="_blank" rel="noopener" class="footer-icon-link" title="Address: No.32, Jihu Rd., Neihu Dist., Taipei City 114699, Taiwan">
+                        <div class="footer-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2026 Min-Hsiu Hsieh. All rights reserved.</p>
+                <p>Powered by <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
