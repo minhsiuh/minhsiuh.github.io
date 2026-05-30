@@ -82,6 +82,10 @@
             background: var(--bg-color);
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         .container {
             max-width: 900px;
             margin: 0 auto;
@@ -359,6 +363,65 @@
             white-space: nowrap;
         }
 
+        .archive-page {
+            max-width: 1120px;
+            display: grid;
+            grid-template-columns: 150px minmax(0, 1fr);
+            gap: 36px;
+            align-items: start;
+        }
+
+        .year-sidebar {
+            position: sticky;
+            top: 64px;
+            padding-top: 50px;
+        }
+
+        .year-sidebar-title {
+            margin-bottom: 10px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #6b7c8f;
+        }
+
+        .year-sidebar-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            border-left: 1px solid var(--border-color);
+        }
+
+        .year-sidebar-nav a {
+            display: block;
+            padding: 7px 12px;
+            border-left: 3px solid transparent;
+            color: var(--primary-color);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .year-sidebar-nav a:hover,
+        .year-sidebar-nav a:focus {
+            border-left-color: var(--accent-color);
+            color: var(--accent-color);
+            outline: none;
+        }
+
+        .archive-content {
+            min-width: 0;
+        }
+
+        .archive-content h3 {
+            scroll-margin-top: 82px;
+            margin-top: 34px;
+        }
+
+        .archive-content h3:first-of-type {
+            margin-top: 18px;
+        }
+
         /* Committee List */
         .committee-list {
             list-style: none;
@@ -570,6 +633,48 @@
             h2 {
                 font-size: 1.5rem;
             }
+
+            .archive-page {
+                display: block;
+            }
+
+            .year-sidebar {
+                position: sticky;
+                top: 0;
+                z-index: 50;
+                margin: 0 -20px 18px;
+                padding: 10px 20px;
+                background: var(--bg-color);
+                border-bottom: 1px solid var(--border-color);
+                overflow-x: auto;
+            }
+
+            .year-sidebar-title {
+                display: none;
+            }
+
+            .year-sidebar-nav {
+                flex-direction: row;
+                gap: 8px;
+                border-left: none;
+                min-width: max-content;
+            }
+
+            .year-sidebar-nav a {
+                padding: 6px 10px;
+                border: 1px solid var(--border-color);
+                border-radius: 8px;
+                background: var(--light-gray);
+            }
+
+            .year-sidebar-nav a:hover,
+            .year-sidebar-nav a:focus {
+                border-color: var(--accent-color);
+            }
+
+            .archive-content h3 {
+                scroll-margin-top: 78px;
+            }
         }
     </style>
 </head>
@@ -594,8 +699,20 @@
         </div>
     </nav>
 
-    <main class="container">
-        <section id="older-news">
+    <main class="container archive-page">
+        <aside class="year-sidebar" aria-label="Older news by year">
+            <div class="year-sidebar-title">Years</div>
+            <nav class="year-sidebar-nav">
+                <a href="#news-2025">2025</a>
+                <a href="#news-2024">2024</a>
+                <a href="#news-2023">2023</a>
+                <a href="#news-2022">2022</a>
+                <a href="#news-2021">2021</a>
+                <a href="#news-2020">2020</a>
+            </nav>
+        </aside>
+
+        <section id="older-news" class="archive-content">
             <h2>Older News</h2>
             <div class="archive-link-row" style="text-align: left; margin-bottom: 18px;">
                 <a class="archive-link" href="index.html#news">&larr; Back to Latest News</a>
