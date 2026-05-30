@@ -457,15 +457,17 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            width: 42px;
+            min-width: 42px;
             height: 42px;
+            padding: 0 14px;
             border: 1px solid #d8e4ef;
             border-radius: 8px;
             color: var(--accent-color);
             font-size: 0.8rem;
             font-weight: 800;
-            letter-spacing: 0.03em;
+            letter-spacing: 0.08em;
             margin-bottom: 18px;
+            text-transform: uppercase;
         }
 
         .category-card h3 {
@@ -1112,7 +1114,7 @@
 
             <div class="category-grid">
                 <div class="category-card hardware" id="hardware">
-                    <div class="category-label">HW</div>
+                    <div class="category-label">Implements</div>
                     <h3>Hardware Enabling Technology</h3>
                     <p>Building the physical and architectural foundation for reliable, scalable quantum computation through error correction, benchmarking, and system-aware design.</p>
                     <ul class="category-topics">
@@ -1127,7 +1129,7 @@
                 </div>
 
                 <div class="category-card software" id="software">
-                    <div class="category-label">SW</div>
+                    <div class="category-label">Computes</div>
                     <h3>Software with Enhanced Advantage</h3>
                     <p>Developing algorithms, quantum learning protocols, and verification tools that turn quantum resources into measurable computational advantages.</p>
                     <ul class="category-topics">
@@ -1143,7 +1145,7 @@
                 </div>
 
                 <div class="category-card applications" id="applications">
-                    <div class="category-label">APP</div>
+                    <div class="category-label">Deploys</div>
                     <h3>Real-World Applications</h3>
                     <p>Translating quantum capabilities into practical workflows for simulation, sensing, communication, and domain problems where structure matters.</p>
                     <ul class="category-topics">
@@ -1158,7 +1160,7 @@
                 </div>
 
                 <div class="category-card others" id="others">
-                    <div class="category-label">TH</div>
+                    <div class="category-label">Defines</div>
                     <h3>Foundations & Theory</h3>
                     <p>Exploring the fundamental limits, information-theoretic principles, and physical structures that make quantum information processing possible.</p>
                     <ul class="category-topics">
