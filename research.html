@@ -592,7 +592,7 @@
         }
 
         .research-plot {
-            min-height: 720px;
+            min-height: 640px;
             position: relative;
             overflow: hidden;
             border: 1px solid var(--border-color);
@@ -684,12 +684,12 @@
         }
 
         .plot-node.software {
-            left: 72px;
+            right: 72px;
             bottom: 40px;
         }
 
         .plot-node.applications {
-            right: 72px;
+            left: 72px;
             bottom: 40px;
         }
 
@@ -707,28 +707,21 @@
             margin-bottom: 10px;
         }
 
+        .plot-role {
+            color: var(--accent-color);
+            font-size: 0.82rem;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
         .plot-node p {
             color: #536170;
             font-size: 0.9rem;
             line-height: 1.55;
-            margin-bottom: 14px;
+            margin-bottom: 0;
             text-align: left;
-        }
-
-        .plot-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 7px;
-        }
-
-        .plot-tags span {
-            border: 1px solid #dfe7ef;
-            border-radius: 999px;
-            color: #425366;
-            font-size: 0.74rem;
-            font-weight: 700;
-            padding: 5px 8px;
-            background: #f8fafc;
         }
 
         .plot-feedback {
@@ -1090,7 +1083,7 @@
                 <div class="section-kicker">Research map</div>
                 <h2>How the topics connect</h2>
                 <p>
-                    The four research areas form a feedback loop: foundations clarify limits, hardware turns constraints into reliable systems, software makes those systems useful, and applications reveal the next questions to study.
+                    The four research areas form a cycle: foundations define limits, hardware implements reliable systems, software computes under constraints, and applications feed new questions back.
                 </p>
             </div>
 
@@ -1109,47 +1102,31 @@
                 <article class="plot-node foundations">
                     <div class="plot-index">01</div>
                     <h3>Foundations & Theory</h3>
-                    <p>Defines information limits, resource requirements, and the questions that make quantum advantage precise.</p>
-                    <div class="plot-tags" aria-label="Foundations and theory topics">
-                        <span>Quantum Shannon theory</span>
-                        <span>Complexity</span>
-                        <span>Resource tradeoffs</span>
-                    </div>
+                    <div class="plot-role">Defines</div>
+                    <p>Establishes limits, resource tradeoffs, and information-theoretic questions that guide the program.</p>
                 </article>
                 <article class="plot-node hardware">
                     <div class="plot-index">02</div>
                     <h3>Hardware Enabling Technology</h3>
-                    <p>Turns theoretical constraints into reliable architectures, protected computation, and measurable system behavior.</p>
-                    <div class="plot-tags" aria-label="Hardware enabling technology topics">
-                        <span>Error correction</span>
-                        <span>Architecture</span>
-                        <span>Benchmarking</span>
-                    </div>
+                    <div class="plot-role">Implements</div>
+                    <p>Turns those limits into architectures, error-correcting structures, and benchmarks for reliable quantum computation.</p>
                 </article>
                 <article class="plot-node software">
                     <div class="plot-index">03</div>
                     <h3>Software with Enhanced Advantage</h3>
-                    <p>Builds algorithms, learning protocols, and verification tools that work under realistic system constraints.</p>
-                    <div class="plot-tags" aria-label="Software with enhanced advantage topics">
-                        <span>Algorithms</span>
-                        <span>QML</span>
-                        <span>Verification</span>
-                    </div>
+                    <div class="plot-role">Computes</div>
+                    <p>Builds algorithms, learning protocols, and verification tools that operate under realistic system constraints.</p>
                 </article>
                 <article class="plot-node applications">
                     <div class="plot-index">04</div>
                     <h3>Real-World Applications</h3>
-                    <p>Reveals useful workflows, practical bottlenecks, and the constraints that should feed back into theory.</p>
-                    <div class="plot-tags" aria-label="Real-world applications topics">
-                        <span>Simulation</span>
-                        <span>Communication</span>
-                        <span>Metrology</span>
-                    </div>
+                    <div class="plot-role">Applications</div>
+                    <p>Uses domain workflows to test what is useful, expose bottlenecks, and send new constraints back into the program.</p>
                 </article>
             </div>
             <div class="plot-feedback">
                 <strong>Feedback loop</strong>
-                <span>Applications expose new bottlenecks, which become sharper theoretical questions and better system requirements.</span>
+                <span>Applications expose bottlenecks that become sharper theoretical questions and better system requirements.</span>
             </div>
         </section>
 
