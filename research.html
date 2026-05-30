@@ -724,28 +724,6 @@
             text-align: left;
         }
 
-        .plot-feedback {
-            margin-top: 16px;
-            border: 1px solid #cfe1f2;
-            border-radius: 8px;
-            background: #f6fbff;
-            color: #425366;
-            display: flex;
-            gap: 14px;
-            align-items: center;
-            padding: 12px 15px;
-            font-size: 0.9rem;
-            line-height: 1.5;
-        }
-
-        .plot-feedback strong {
-            color: var(--accent-color);
-            font-size: 0.78rem;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            white-space: nowrap;
-        }
-
         .output-list {
             display: grid;
             gap: 12px;
@@ -978,8 +956,7 @@
             }
 
             .plot-core,
-            .plot-node,
-            .plot-feedback {
+            .plot-node {
                 position: relative;
                 inset: auto;
                 width: auto;
@@ -994,11 +971,6 @@
                 text-align: left;
             }
 
-            .plot-feedback {
-                align-items: flex-start;
-                flex-direction: column;
-                gap: 6px;
-            }
         }
 
         @media (prefers-reduced-motion: reduce) {
@@ -1123,10 +1095,6 @@
                     <div class="plot-role">Applications</div>
                     <p>Uses domain workflows to test what is useful, expose bottlenecks, and send new constraints back into the program.</p>
                 </article>
-            </div>
-            <div class="plot-feedback">
-                <strong>Feedback loop</strong>
-                <span>Applications expose bottlenecks that become sharper theoretical questions and better system requirements.</span>
             </div>
         </section>
 
