@@ -6,16 +6,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Research overview of Min-Hsiu Hsieh, including quantum error correction, quantum machine learning, and information theory.">
+    <meta name="description" content="Research overview of Min-Hsiu Hsieh, spanning quantum error correction, quantum machine learning, quantum information theory, simulation, and applications.">
     <link rel="canonical" href="https://minhsiuh.github.io/research.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Research - Min-Hsiu Hsieh (謝明修)">
-    <meta property="og:description" content="Research overview of Min-Hsiu Hsieh, including quantum error correction, quantum machine learning, and information theory.">
+    <meta property="og:description" content="Research overview of Min-Hsiu Hsieh, spanning quantum error correction, quantum machine learning, quantum information theory, simulation, and applications.">
     <meta property="og:url" content="https://minhsiuh.github.io/research.html">
     <meta property="og:image" content="https://minhsiuh.github.io/profile.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Research - Min-Hsiu Hsieh (謝明修)">
-    <meta name="twitter:description" content="Research overview of Min-Hsiu Hsieh, including quantum error correction, quantum machine learning, and information theory.">
+    <meta name="twitter:description" content="Research overview of Min-Hsiu Hsieh, spanning quantum error correction, quantum machine learning, quantum information theory, simulation, and applications.">
     <meta name="twitter:image" content="https://minhsiuh.github.io/profile.jpg">
     <title>Research - Min-Hsiu Hsieh (謝明修)</title>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=4">
@@ -111,14 +111,14 @@
 
         /* Main content */
         .research-main {
-            max-width: 980px;
+            max-width: 1120px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
         /* Sections */
         section {
-            padding: 40px 0;
+            padding: 44px 0;
             border-bottom: 1px solid var(--border-color);
         }
 
@@ -132,18 +132,15 @@
         }
 
         h2 {
-            font-size: 1.8rem;
+            font-size: 1.9rem;
             color: var(--primary-color);
-            margin-bottom: 25px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid var(--accent-color);
-            display: inline-block;
+            margin-bottom: 18px;
         }
 
         h3 {
-            font-size: 1.3rem;
+            font-size: 1.25rem;
             color: var(--primary-color);
-            margin: 25px 0 15px;
+            margin: 0 0 12px;
             font-weight: 600;
         }
 
@@ -152,53 +149,180 @@
             text-align: justify;
         }
 
-        /* Research Vision Box */
-        .vision-box {
-            background: #f8fafc;
-            color: var(--text-color);
-            padding: 32px;
-            border-radius: 12px;
-            margin-bottom: 40px;
-            border: 1px solid #dbe7f3;
-            border-left: 6px solid var(--accent-color);
-            box-shadow: 0 6px 18px rgba(31, 45, 61, 0.06);
+        .section-kicker {
+            color: var(--accent-color);
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            margin-bottom: 8px;
+            text-transform: uppercase;
         }
 
-        .vision-box h2 {
-            color: #1f2d3d;
-            border-bottom-color: #cfe0f2;
-            margin-bottom: 16px;
+        .section-header {
+            max-width: 780px;
+            margin-bottom: 26px;
         }
 
-        .vision-box p {
+        .section-header p {
+            color: #536170;
+            font-size: 1rem;
+            line-height: 1.75;
+            margin: 0;
             text-align: left;
-            font-size: 1.05rem;
-            line-height: 1.8;
+        }
+
+        .research-hero {
+            padding: 54px 0 42px;
+        }
+
+        .research-hero-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+            gap: 34px;
+            align-items: end;
+        }
+
+        .research-hero h2 {
+            font-size: 3rem;
+            line-height: 1.06;
+            margin-bottom: 18px;
+        }
+
+        .research-hero p {
             color: #4b5563;
+            font-size: 1.08rem;
+            line-height: 1.82;
             margin-bottom: 0;
+            text-align: left;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 24px;
+        }
+
+        .primary-link,
+        .secondary-link {
+            display: inline-flex;
+            align-items: center;
+            min-height: 42px;
+            padding: 9px 14px;
+            border-radius: 8px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .primary-link {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .secondary-link {
+            border: 1px solid #cfd9e3;
+            color: var(--primary-color);
+            background: white;
+        }
+
+        .primary-link:hover,
+        .secondary-link:hover {
+            opacity: 0.88;
+        }
+
+        .focus-panel {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background: #f8fafc;
+            padding: 22px;
+        }
+
+        .focus-panel-title {
+            color: #6b7c8f;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            margin-bottom: 14px;
+            text-transform: uppercase;
+        }
+
+        .focus-list {
+            display: grid;
+            gap: 12px;
+        }
+
+        .focus-item {
+            border-top: 1px solid #dfe7ef;
+            padding-top: 12px;
+        }
+
+        .focus-item:first-child {
+            border-top: none;
+            padding-top: 0;
+        }
+
+        .focus-item strong {
+            display: block;
+            color: var(--primary-color);
+            font-size: 0.96rem;
+            margin-bottom: 3px;
+        }
+
+        .focus-item span {
+            color: #627181;
+            font-size: 0.9rem;
+        }
+
+        .research-stack {
+            display: grid;
+            gap: 8px;
+            margin-top: 18px;
+        }
+
+        .stack-layer {
+            display: grid;
+            grid-template-columns: 86px minmax(0, 1fr);
+            gap: 12px;
+            align-items: center;
+            padding: 10px 12px;
+            border: 1px solid #dfe7ef;
+            border-radius: 8px;
+            background: white;
+        }
+
+        .stack-layer span:first-child {
+            color: var(--accent-color);
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        .stack-layer span:last-child {
+            color: #34495e;
+            font-size: 0.92rem;
+            font-weight: 600;
         }
 
         /* Category Cards */
         .category-grid {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 25px;
-            margin-top: 30px;
+            gap: 18px;
         }
 
         .category-card {
             background: white;
             border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 30px;
-            transition: all 0.3s ease;
+            border-radius: 8px;
+            padding: 24px;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
             position: relative;
             overflow: hidden;
         }
 
         .category-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 24px rgba(31, 45, 61, 0.08);
             border-color: var(--accent-color);
         }
 
@@ -211,30 +335,31 @@
             height: 4px;
         }
 
-        .category-card.hardware::before {
-            background: linear-gradient(90deg, #3498db, #2980b9);
-        }
-
-        .category-card.software::before {
-            background: linear-gradient(90deg, #9b59b6, #8e44ad);
-        }
-
-        .category-card.applications::before {
-            background: linear-gradient(90deg, #27ae60, #229954);
-        }
-
+        .category-card.hardware::before,
+        .category-card.software::before,
+        .category-card.applications::before,
         .category-card.others::before {
-            background: linear-gradient(90deg, #95a5a6, #7f8c8d);
+            background: var(--accent-color);
         }
 
-        .category-icon {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
+        .category-label {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            border: 1px solid #d8e4ef;
+            border-radius: 8px;
+            color: var(--accent-color);
+            font-size: 0.8rem;
+            font-weight: 800;
+            letter-spacing: 0.03em;
+            margin-bottom: 18px;
         }
 
         .category-card h3 {
-            font-size: 1.3rem;
-            margin: 0 0 12px 0;
+            font-size: 1.28rem;
+            margin: 0 0 10px 0;
             color: var(--primary-color);
         }
 
@@ -243,7 +368,7 @@
             font-size: 0.95rem;
             line-height: 1.6;
             text-align: left;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
         }
 
         .category-topics {
@@ -264,7 +389,7 @@
             color: #555;
             background: #f8fafc;
             border: 1px solid #e6edf5;
-            border-radius: 8px;
+            border-radius: 6px;
             padding: 8px 10px;
             transition: all 0.2s ease;
         }
@@ -300,31 +425,141 @@
             fill: currentColor;
         }
 
-        /* Stats */
-        .research-stats {
-            background: var(--light-gray);
-            padding: 30px;
-            border-radius: 12px;
-            margin: 30px 0;
+        .highlight-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 16px;
         }
 
-        .stat-item {
-            text-align: center;
+        .highlight-card {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            min-height: 230px;
+            padding: 20px;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
-        .stat-number {
-            font-size: 2.5rem;
+        .highlight-card:hover {
+            border-color: var(--accent-color);
+            box-shadow: 0 10px 24px rgba(31, 45, 61, 0.08);
+        }
+
+        .highlight-tag,
+        .output-meta {
+            color: #6b7c8f;
+            font-size: 0.78rem;
             font-weight: 700;
-            color: var(--accent-color);
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
         }
 
-        .stat-label {
-            font-size: 0.9rem;
-            color: #666;
-            margin-top: 5px;
+        .highlight-card h3 {
+            margin-top: 12px;
+            font-size: 1.16rem;
+            line-height: 1.35;
+        }
+
+        .highlight-card p {
+            color: #586676;
+            font-size: 0.94rem;
+            line-height: 1.65;
+            margin: 10px 0 18px;
+            text-align: left;
+        }
+
+        .text-link {
+            color: var(--accent-color);
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .text-link:hover {
+            text-decoration: underline;
+        }
+
+        .topic-matrix {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .topic-column {
+            min-height: 250px;
+            padding: 20px;
+            border-left: 1px solid var(--border-color);
+            background: #fff;
+        }
+
+        .topic-column:first-child {
+            border-left: none;
+        }
+
+        .topic-column h3 {
+            margin-bottom: 14px;
+        }
+
+        .topic-column ul {
+            list-style: none;
+        }
+
+        .topic-column li {
+            border-top: 1px solid #edf1f5;
+            padding: 10px 0;
+            color: #536170;
+            font-size: 0.94rem;
+        }
+
+        .topic-column li:first-child {
+            border-top: none;
+            padding-top: 0;
+        }
+
+        .output-list {
+            display: grid;
+            gap: 12px;
+        }
+
+        .output-item {
+            display: grid;
+            grid-template-columns: 145px minmax(0, 1fr);
+            gap: 18px;
+            padding: 18px 0;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .output-item:first-child {
+            border-top: none;
+            padding-top: 0;
+        }
+
+        .output-title {
+            color: var(--primary-color);
+            font-weight: 700;
+            line-height: 1.45;
+            margin-bottom: 5px;
+        }
+
+        .output-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 8px;
+        }
+
+        .output-links a {
+            color: var(--accent-color);
+            font-size: 0.92rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .output-links a:hover {
+            text-decoration: underline;
         }
 
         /* Footer */
@@ -458,6 +693,31 @@
             .category-grid {
                 grid-template-columns: 1fr;
             }
+
+            .research-hero-grid,
+            .highlight-grid,
+            .topic-matrix,
+            .output-item {
+                grid-template-columns: 1fr;
+            }
+
+            .research-hero h2 {
+                font-size: 2.25rem;
+            }
+
+            .stack-layer {
+                grid-template-columns: 1fr;
+                gap: 2px;
+            }
+
+            .topic-column {
+                border-left: none;
+                border-top: 1px solid var(--border-color);
+            }
+
+            .topic-column:first-child {
+                border-top: none;
+            }
         }
     </style>
 </head>
@@ -483,82 +743,262 @@
     </nav>
 
     <main class="research-main">
-            <section id="research">
-                <div class="vision-box" id="vision">
-                    <h2>Research Vision</h2>
+        <section class="research-hero" id="research">
+            <div class="research-hero-grid">
+                <div>
+                    <div class="section-kicker">Research vision</div>
+                    <h2>Building reliable quantum computation from theory to useful systems</h2>
                     <p>
-                        My research vision is to make quantum computing reliable, scalable, and practically impactful. I pursue this through three tightly connected pillars: (1) fault-tolerant architectures and quantum error correction, (2) advantage-oriented algorithms and quantum machine learning, and (3) application-driven workflows for simulation, communication, and metrology. By integrating theory, software, and hardware considerations, our goal is to close the gap between formal quantum advantage and deployable quantum systems.
+                        My research connects quantum information theory, fault-tolerant architectures, quantum algorithms, and application-driven workflows. The goal is to close the gap between formal quantum advantage and deployable quantum systems that are reliable, scalable, and scientifically useful.
                     </p>
-                </div>
-
-                <h3 style="margin-top: 30px;">Research Categories</h3>
-                
-                <div class="category-grid">
-                    <!-- Hardware Enabling Technology -->
-                    <div class="category-card hardware" id="hardware">
-                        <div class="category-icon">🛠️</div>
-                        <h3>Hardware Enabling Technology</h3>
-                        <p>Building the physical and architectural foundation for reliable, scalable quantum computation through error correction and robust characterization.</p>
-                        <ul class="category-topics">
-                            <li><a href="research-qec.html">Quantum Error Correction</a></li>
-                            <li><a href="research_rb.html">Randomized Benchmarking</a></li>
-                            <li><a href="research-arch.html">Quantum Architecture</a></li>
-                        </ul>
-                        <a href="research-hardware.html" class="category-link">
-                            Explore this area
-                            <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
-                        </a>
-                    </div>
-
-                    <!-- Software with Enhanced Advantage -->
-                    <div class="category-card software" id="software">
-                        <div class="category-icon">💎</div>
-                        <h3>Software with Enhanced Advantage</h3>
-                        <p>Developing quantum algorithms, machine learning protocols, and verification tools that unlock computational advantages over classical methods.</p>
-                        <ul class="category-topics">
-                            <li><a href="research-qml.html">Quantum Machine Learning</a></li>
-                            <li><a href="research-algo.html">Quantum Algorithms</a></li>
-                            <li><a href="research-complexity.html">Quantum Complexity Theory</a></li>
-                            <li><a href="research-verification.html">Circuit Verification</a></li>
-                        </ul>
-                        <a href="research-software.html" class="category-link">
-                            Explore this area
-                            <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
-                        </a>
-                    </div>
-
-                    <!-- Real-World Applications -->
-                    <div class="category-card applications" id="applications">
-                        <div class="category-icon">🌐</div>
-                        <h3>Real-World Applications</h3>
-                        <p>Translating quantum computing capabilities into practical solutions for simulation, sensing, and communication challenges.</p>
-                        <ul class="category-topics">
-                            <li><a href="research-simulation.html">Quantum Simulation</a></li>
-                            <li><a href="research-metrology.html">Quantum Metrology</a></li>
-                            <li><a href="research-communication.html">Quantum Communication</a></li>
-                        </ul>
-                        <a href="research-applications.html" class="category-link">
-                            Explore this area
-                            <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
-                        </a>
-                    </div>
-
-                    <!-- Foundations & Theory -->
-                    <div class="category-card others" id="others">
-                        <div class="category-icon">🔬</div>
-                        <h3>Foundations & Theory</h3>
-                        <p>Exploring the fundamental limits and physical principles underlying quantum information processing and communication.</p>
-                        <ul class="category-topics">
-                            <li><a href="research-shannon.html">Quantum Shannon Theory</a></li>
-                            <li><a href="research-physics.html">Physics Foundations</a></li>
-                        </ul>
-                        <a href="research-others.html" class="category-link">
-                            Explore this area
-                            <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
-                        </a>
+                    <div class="hero-actions">
+                        <a class="primary-link" href="publications.html">View Publications</a>
+                        <a class="secondary-link" href="#research-categories">Explore Research Areas</a>
                     </div>
                 </div>
-            </section>
+                <aside class="focus-panel" aria-label="Research focus">
+                    <div class="focus-panel-title">Current focus</div>
+                    <div class="focus-list">
+                        <div class="focus-item">
+                            <strong>Fault tolerance</strong>
+                            <span>Quantum LDPC codes, decoding, and architecture-aware protection.</span>
+                        </div>
+                        <div class="focus-item">
+                            <strong>Advantage-oriented software</strong>
+                            <span>Algorithms, learning protocols, verification, and trainable quantum models.</span>
+                        </div>
+                        <div class="focus-item">
+                            <strong>Useful applications</strong>
+                            <span>Simulation, communication, metrology, and hybrid quantum-classical workflows.</span>
+                        </div>
+                    </div>
+                    <div class="research-stack" aria-label="Research stack">
+                        <div class="stack-layer"><span>Theory</span><span>Information limits and resource tradeoffs</span></div>
+                        <div class="stack-layer"><span>Codes</span><span>Fault tolerance and scalable protection</span></div>
+                        <div class="stack-layer"><span>Software</span><span>Algorithms, learning, and verification</span></div>
+                        <div class="stack-layer"><span>Use</span><span>Simulation, sensing, and communication</span></div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section id="research-categories">
+            <div class="section-header">
+                <div class="section-kicker">Research categories</div>
+                <h2>Four connected research areas</h2>
+                <p>
+                    These areas organize the group's work from enabling hardware-level reliability to software advantage, real-world workflows, and the mathematical foundations underneath them.
+                </p>
+            </div>
+
+            <div class="category-grid">
+                <div class="category-card hardware" id="hardware">
+                    <div class="category-label">HW</div>
+                    <h3>Hardware Enabling Technology</h3>
+                    <p>Building the physical and architectural foundation for reliable, scalable quantum computation through error correction, benchmarking, and system-aware design.</p>
+                    <ul class="category-topics">
+                        <li><a href="research-qec.html">Quantum Error Correction</a></li>
+                        <li><a href="research_rb.html">Randomized Benchmarking</a></li>
+                        <li><a href="research-arch.html">Quantum Architecture</a></li>
+                    </ul>
+                    <a href="research-hardware.html" class="category-link">
+                        Explore this area
+                        <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                    </a>
+                </div>
+
+                <div class="category-card software" id="software">
+                    <div class="category-label">SW</div>
+                    <h3>Software with Enhanced Advantage</h3>
+                    <p>Developing algorithms, quantum learning protocols, and verification tools that turn quantum resources into measurable computational advantages.</p>
+                    <ul class="category-topics">
+                        <li><a href="research-qml.html">Quantum Machine Learning</a></li>
+                        <li><a href="research-algo.html">Quantum Algorithms</a></li>
+                        <li><a href="research-complexity.html">Quantum Complexity Theory</a></li>
+                        <li><a href="research-verification.html">Circuit Verification</a></li>
+                    </ul>
+                    <a href="research-software.html" class="category-link">
+                        Explore this area
+                        <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                    </a>
+                </div>
+
+                <div class="category-card applications" id="applications">
+                    <div class="category-label">APP</div>
+                    <h3>Real-World Applications</h3>
+                    <p>Translating quantum capabilities into practical workflows for simulation, sensing, communication, and domain problems where structure matters.</p>
+                    <ul class="category-topics">
+                        <li><a href="research-simulation.html">Quantum Simulation</a></li>
+                        <li><a href="research-metrology.html">Quantum Metrology</a></li>
+                        <li><a href="research-communication.html">Quantum Communication</a></li>
+                    </ul>
+                    <a href="research-applications.html" class="category-link">
+                        Explore this area
+                        <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                    </a>
+                </div>
+
+                <div class="category-card others" id="others">
+                    <div class="category-label">TH</div>
+                    <h3>Foundations & Theory</h3>
+                    <p>Exploring the fundamental limits, information-theoretic principles, and physical structures that make quantum information processing possible.</p>
+                    <ul class="category-topics">
+                        <li><a href="research-shannon.html">Quantum Shannon Theory</a></li>
+                        <li><a href="research-physics.html">Physics Foundations</a></li>
+                    </ul>
+                    <a href="research-others.html" class="category-link">
+                        Explore this area
+                        <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured-research">
+            <div class="section-header">
+                <div class="section-kicker">Featured research</div>
+                <h2>Selected directions and recent breakthroughs</h2>
+                <p>
+                    A few representative threads show how the work moves between rigorous theory, algorithms, and practical quantum systems.
+                </p>
+            </div>
+
+            <div class="highlight-grid">
+                <article class="highlight-card">
+                    <div>
+                        <div class="highlight-tag">Quantum error correction</div>
+                        <h3>Linear-time encodable and decodable quantum codes</h3>
+                        <p>Designing quantum error-correcting codes that bring efficient encoding and decoding closer to fault-tolerant architectures.</p>
+                    </div>
+                    <a class="text-link" href="https://arxiv.org/abs/2603.04543" target="_blank" rel="noopener">Read arXiv</a>
+                </article>
+
+                <article class="highlight-card">
+                    <div>
+                        <div class="highlight-tag">Quantum LDPC codes</div>
+                        <h3>Geometrically local quantum codes in any dimension</h3>
+                        <p>Connecting code constructions with locality constraints that matter for scalable physical implementations.</p>
+                    </div>
+                    <a class="text-link" href="https://arxiv.org/abs/2408.01769" target="_blank" rel="noopener">Read arXiv</a>
+                </article>
+
+                <article class="highlight-card">
+                    <div>
+                        <div class="highlight-tag">AI for quantum systems</div>
+                        <h3>Representing and characterizing quantum systems with AI</h3>
+                        <p>Using modern AI tools to model, represent, and understand quantum states and processes at useful scales.</p>
+                    </div>
+                    <a class="text-link" href="https://arxiv.org/abs/2509.04923" target="_blank" rel="noopener">Read arXiv</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="research-map">
+            <div class="section-header">
+                <div class="section-kicker">Research map</div>
+                <h2>How the topics connect</h2>
+                <p>
+                    The program is intentionally cross-layer: theory informs algorithms, algorithms shape systems, and applications reveal the constraints that matter.
+                </p>
+            </div>
+
+            <div class="topic-matrix">
+                <div class="topic-column">
+                    <h3>Theory</h3>
+                    <ul>
+                        <li>Quantum Shannon theory</li>
+                        <li>Complexity and lower bounds</li>
+                        <li>Resource tradeoffs</li>
+                    </ul>
+                </div>
+                <div class="topic-column">
+                    <h3>Algorithms</h3>
+                    <ul>
+                        <li>Quantum machine learning</li>
+                        <li>Quantum simulation</li>
+                        <li>Optimization and learning protocols</li>
+                    </ul>
+                </div>
+                <div class="topic-column">
+                    <h3>Systems</h3>
+                    <ul>
+                        <li>Quantum error correction</li>
+                        <li>Architecture and compilation</li>
+                        <li>Benchmarking and verification</li>
+                    </ul>
+                </div>
+                <div class="topic-column">
+                    <h3>Applications</h3>
+                    <ul>
+                        <li>Communication and networking</li>
+                        <li>Metrology and sensing</li>
+                        <li>Scientific computing workflows</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="recent-outputs">
+            <div class="section-header">
+                <div class="section-kicker">Recent outputs</div>
+                <h2>Recent and representative publications</h2>
+                <p>
+                    A compact entry point into the publication record, with emphasis on active themes across fault tolerance, learning, and quantum information.
+                </p>
+            </div>
+
+            <div class="output-list">
+                <article class="output-item">
+                    <div class="output-meta">2026 / Preprint</div>
+                    <div>
+                        <div class="output-title">Linear-Time Encodable and Decodable Quantum Error-Correcting Codes</div>
+                        <div class="output-links">
+                            <a href="https://arxiv.org/abs/2603.04543" target="_blank" rel="noopener">arXiv</a>
+                            <a href="research-qec.html">QEC area</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="output-item">
+                    <div class="output-meta">2026 / Nature Reviews Physics</div>
+                    <div>
+                        <div class="output-title">Artificial intelligence for representing and characterizing quantum systems</div>
+                        <div class="output-links">
+                            <a href="https://arxiv.org/abs/2509.04923" target="_blank" rel="noopener">arXiv</a>
+                            <a href="research-qml.html">QML area</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="output-item">
+                    <div class="output-meta">2025 / Nature Communications</div>
+                    <div>
+                        <div class="output-title">Almost Optimal Geometrically Local Quantum LDPC Codes in any Dimension</div>
+                        <div class="output-links">
+                            <a href="https://arxiv.org/abs/2408.01769" target="_blank" rel="noopener">arXiv</a>
+                            <a href="research-qec.html">QEC area</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="output-item">
+                    <div class="output-meta">2025 / Quantum Machine Intelligence</div>
+                    <div>
+                        <div class="output-title">Quantum-Train: rethinking hybrid quantum-classical machine learning in the model compression perspective</div>
+                        <div class="output-links">
+                            <a href="https://arxiv.org/abs/2405.11304" target="_blank" rel="noopener">arXiv</a>
+                            <a href="research-qml.html">QML area</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="output-item">
+                    <div class="output-meta">Full list</div>
+                    <div>
+                        <div class="output-title">Browse journals, conferences, talks, books, and arXiv preprints.</div>
+                        <div class="output-links">
+                            <a href="publications.html">All publications</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
 
     <footer>
