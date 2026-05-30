@@ -591,43 +591,106 @@
             text-decoration: underline;
         }
 
-        .topic-matrix {
+        .research-flow {
             display: grid;
             grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 18px;
+            align-items: stretch;
+            position: relative;
+        }
+
+        .flow-step {
+            min-height: 260px;
+            padding: 22px;
             border: 1px solid var(--border-color);
             border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .topic-column {
-            min-height: 250px;
-            padding: 20px;
-            border-left: 1px solid var(--border-color);
             background: #fff;
+            position: relative;
+            box-shadow: 0 8px 24px rgba(44, 62, 80, 0.05);
         }
 
-        .topic-column:first-child {
-            border-left: none;
+        .flow-step:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            top: 44px;
+            right: -20px;
+            width: 20px;
+            height: 2px;
+            background: var(--accent-color);
+            opacity: 0.65;
+            z-index: 2;
         }
 
-        .topic-column h3 {
-            margin-bottom: 14px;
+        .flow-step:not(:last-child)::before {
+            content: "";
+            position: absolute;
+            top: 39px;
+            right: -24px;
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+            border-left: 8px solid var(--accent-color);
+            opacity: 0.65;
+            z-index: 3;
         }
 
-        .topic-column ul {
-            list-style: none;
+        .flow-index {
+            color: var(--accent-color);
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
         }
 
-        .topic-column li {
-            border-top: 1px solid #edf1f5;
-            padding: 10px 0;
+        .flow-step h3 {
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+        }
+
+        .flow-step p {
             color: #536170;
-            font-size: 0.94rem;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 16px;
+            text-align: left;
         }
 
-        .topic-column li:first-child {
-            border-top: none;
-            padding-top: 0;
+        .flow-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .flow-tags span {
+            border: 1px solid #dfe7ef;
+            border-radius: 999px;
+            color: #425366;
+            font-size: 0.78rem;
+            font-weight: 700;
+            padding: 6px 9px;
+            background: #f8fafc;
+        }
+
+        .feedback-note {
+            margin-top: 16px;
+            border: 1px solid #cfe1f2;
+            border-radius: 8px;
+            background: #f6fbff;
+            color: #425366;
+            display: flex;
+            gap: 14px;
+            align-items: center;
+            padding: 14px 16px;
+            font-size: 0.94rem;
+            line-height: 1.5;
+        }
+
+        .feedback-note strong {
+            color: var(--accent-color);
+            font-size: 0.78rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            white-space: nowrap;
         }
 
         .output-list {
@@ -807,7 +870,7 @@
 
             .research-hero-grid,
             .highlight-grid,
-            .topic-matrix,
+            .research-flow,
             .output-item {
                 grid-template-columns: 1fr;
             }
@@ -851,13 +914,34 @@
                 gap: 2px;
             }
 
-            .topic-column {
-                border-left: none;
-                border-top: 1px solid var(--border-color);
+            .flow-step {
+                min-height: 0;
             }
 
-            .topic-column:first-child {
-                border-top: none;
+            .flow-step:not(:last-child)::after {
+                top: auto;
+                right: auto;
+                left: 30px;
+                bottom: -18px;
+                width: 2px;
+                height: 18px;
+            }
+
+            .flow-step:not(:last-child)::before {
+                top: auto;
+                right: auto;
+                left: 25px;
+                bottom: -25px;
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent;
+                border-top: 8px solid var(--accent-color);
+                border-bottom: none;
+            }
+
+            .feedback-note {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 6px;
             }
         }
 
@@ -947,39 +1031,51 @@
                 </p>
             </div>
 
-            <div class="topic-matrix">
-                <div class="topic-column">
+            <div class="research-flow" aria-label="Research area feedback loop">
+                <article class="flow-step">
+                    <div class="flow-index">01</div>
                     <h3>Foundations & Theory</h3>
-                    <ul>
-                        <li>Quantum Shannon theory</li>
-                        <li>Complexity and lower bounds</li>
-                        <li>Resource tradeoffs</li>
-                    </ul>
-                </div>
-                <div class="topic-column">
+                    <p>Defines information limits, resource requirements, and the questions that make quantum advantage precise.</p>
+                    <div class="flow-tags" aria-label="Foundations and theory topics">
+                        <span>Quantum Shannon theory</span>
+                        <span>Complexity</span>
+                        <span>Resource tradeoffs</span>
+                    </div>
+                </article>
+                <article class="flow-step">
+                    <div class="flow-index">02</div>
                     <h3>Hardware Enabling Technology</h3>
-                    <ul>
-                        <li>Quantum error correction</li>
-                        <li>Architecture and compilation</li>
-                        <li>Benchmarking and verification</li>
-                    </ul>
-                </div>
-                <div class="topic-column">
+                    <p>Turns theoretical constraints into reliable architectures, protected computation, and measurable system behavior.</p>
+                    <div class="flow-tags" aria-label="Hardware enabling technology topics">
+                        <span>Error correction</span>
+                        <span>Architecture</span>
+                        <span>Benchmarking</span>
+                    </div>
+                </article>
+                <article class="flow-step">
+                    <div class="flow-index">03</div>
                     <h3>Software with Enhanced Advantage</h3>
-                    <ul>
-                        <li>Quantum algorithms</li>
-                        <li>Quantum machine learning</li>
-                        <li>Verification and learning protocols</li>
-                    </ul>
-                </div>
-                <div class="topic-column">
+                    <p>Builds algorithms, learning protocols, and verification tools that work under realistic system constraints.</p>
+                    <div class="flow-tags" aria-label="Software with enhanced advantage topics">
+                        <span>Algorithms</span>
+                        <span>QML</span>
+                        <span>Verification</span>
+                    </div>
+                </article>
+                <article class="flow-step">
+                    <div class="flow-index">04</div>
                     <h3>Real-World Applications</h3>
-                    <ul>
-                        <li>Quantum simulation workflows</li>
-                        <li>Communication and networking</li>
-                        <li>Metrology and sensing</li>
-                    </ul>
-                </div>
+                    <p>Reveals useful workflows, practical bottlenecks, and the constraints that should feed back into theory.</p>
+                    <div class="flow-tags" aria-label="Real-world applications topics">
+                        <span>Simulation</span>
+                        <span>Communication</span>
+                        <span>Metrology</span>
+                    </div>
+                </article>
+            </div>
+            <div class="feedback-note">
+                <strong>Feedback loop</strong>
+                <span>Applications expose new bottlenecks, which become sharper theoretical questions and better system requirements.</span>
             </div>
         </section>
 
