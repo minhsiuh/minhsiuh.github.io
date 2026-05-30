@@ -172,24 +172,21 @@
         }
 
         .research-hero {
-            padding: 34px 0 42px;
+            padding: 0 0 42px;
         }
 
         .quantum-visual {
             position: relative;
-            min-height: 270px;
-            margin-bottom: 38px;
-            border: 1px solid #1f3850;
-            border-radius: 8px;
+            width: 100vw;
+            min-height: 390px;
+            margin-left: calc(50% - 50vw);
+            margin-bottom: 42px;
             overflow: hidden;
             background:
-                linear-gradient(90deg, rgba(255, 255, 255, 0.055) 1px, transparent 1px),
-                linear-gradient(0deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
-                linear-gradient(128deg, transparent 0%, transparent 58%, rgba(49, 189, 161, 0.18) 58%, rgba(49, 189, 161, 0.18) 61%, transparent 61%),
-                linear-gradient(34deg, transparent 0%, transparent 32%, rgba(242, 184, 75, 0.12) 32%, rgba(242, 184, 75, 0.12) 34%, transparent 34%),
-                linear-gradient(135deg, #0d1826 0%, #172a3f 52%, #102231 100%);
-            background-size: 44px 44px, 44px 44px, auto, auto, auto;
-            box-shadow: 0 18px 42px rgba(31, 45, 61, 0.18);
+                linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+                linear-gradient(0deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+                linear-gradient(135deg, #07111d 0%, #102134 48%, #081726 100%);
+            background-size: 52px 52px, 52px 52px, auto;
         }
 
         .quantum-visual::before {
@@ -197,105 +194,95 @@
             position: absolute;
             inset: 0;
             background:
-                linear-gradient(115deg, transparent 0%, rgba(255, 255, 255, 0.10) 46%, transparent 54%),
-                linear-gradient(0deg, rgba(10, 24, 38, 0.12), rgba(10, 24, 38, 0.42));
-            transform: translateX(-55%);
+                linear-gradient(115deg, transparent 0%, rgba(70, 199, 244, 0.12) 45%, transparent 53%),
+                linear-gradient(0deg, rgba(7, 17, 29, 0.18), rgba(7, 17, 29, 0.40));
+            opacity: 0.9;
+            transform: translateX(-62%);
             animation: visual-scan 9s linear infinite;
+            pointer-events: none;
         }
 
-        .quantum-visual svg {
+        .quantum-visual::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(90deg, rgba(7, 17, 29, 0.84) 0%, rgba(7, 17, 29, 0.20) 36%, rgba(7, 17, 29, 0.10) 68%, rgba(7, 17, 29, 0.66) 100%);
+            pointer-events: none;
+        }
+
+        .quantum-visual canvas {
             position: absolute;
             inset: 0;
             width: 100%;
             height: 100%;
+            display: block;
         }
 
-        .quantum-visual .line {
-            fill: none;
-            stroke-linecap: round;
-            stroke-width: 2;
+        .quantum-visual-inner {
+            position: relative;
+            z-index: 2;
+            max-width: 1120px;
+            min-height: 390px;
+            margin: 0 auto;
+            padding: 34px 20px;
+            display: flex;
+            align-items: flex-end;
+            pointer-events: none;
         }
 
-        .quantum-visual .line-cyan {
-            stroke: #46c7f4;
+        .quantum-fallback {
+            width: min(430px, 100%);
+            color: #f8fbff;
         }
 
-        .quantum-visual .line-green {
-            stroke: #31bfa1;
+        .quantum-visual.visual-ready .quantum-fallback {
+            opacity: 0.96;
         }
 
-        .quantum-visual .line-gold {
-            stroke: #f2b84b;
+        .quantum-scene-kicker {
+            color: #46c7f4;
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            margin-bottom: 12px;
+            text-transform: uppercase;
         }
 
-        .quantum-visual .data-line {
-            stroke-dasharray: 8 14;
-            animation: data-flow 4.5s linear infinite;
-        }
-
-        .quantum-visual .node {
-            fill: #f8fbff;
-            stroke-width: 3;
-        }
-
-        .quantum-visual .node-cyan {
-            stroke: #46c7f4;
-        }
-
-        .quantum-visual .node-green {
-            stroke: #31bfa1;
-        }
-
-        .quantum-visual .node-gold {
-            stroke: #f2b84b;
-        }
-
-        .quantum-visual .core {
-            fill: rgba(255, 255, 255, 0.08);
-            stroke: rgba(255, 255, 255, 0.32);
-            stroke-width: 1.5;
-        }
-
-        .quantum-visual .pulse {
-            transform-origin: center;
-            animation: node-pulse 2.8s ease-in-out infinite;
-        }
-
-        .quantum-visual .chip {
-            fill: rgba(8, 19, 31, 0.72);
-            stroke: rgba(255, 255, 255, 0.28);
-            stroke-width: 1.5;
-        }
-
-        .quantum-visual text {
-            fill: rgba(248, 251, 255, 0.86);
-            font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            font-size: 13px;
+        .quantum-scene-title {
+            max-width: 360px;
+            color: #f8fbff;
+            font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+            font-size: 1.5rem;
             font-weight: 700;
-            letter-spacing: 0.08em;
+            line-height: 1.18;
+            margin-bottom: 18px;
+        }
+
+        .quantum-layer-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 8px;
+        }
+
+        .quantum-layer-list span {
+            border: 1px solid rgba(70, 199, 244, 0.26);
+            background: rgba(8, 21, 34, 0.72);
+            color: rgba(248, 251, 255, 0.88);
+            border-radius: 6px;
+            padding: 7px 9px;
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
         }
 
         @keyframes visual-scan {
             0% {
-                transform: translateX(-55%);
+                transform: translateX(-62%);
             }
             100% {
-                transform: translateX(55%);
-            }
-        }
-
-        @keyframes data-flow {
-            to {
-                stroke-dashoffset: -44;
-            }
-        }
-
-        @keyframes node-pulse {
-            0%, 100% {
-                opacity: 0.72;
-            }
-            50% {
-                opacity: 1;
+                transform: translateX(62%);
             }
         }
 
@@ -303,7 +290,7 @@
             display: grid;
             grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
             gap: 34px;
-            align-items: end;
+            align-items: start;
         }
 
         .research-hero h2 {
@@ -830,12 +817,33 @@
             }
 
             .quantum-visual {
-                min-height: 190px;
+                min-height: 260px;
                 margin-bottom: 26px;
             }
 
-            .quantum-visual text {
-                font-size: 11px;
+            .quantum-visual-inner {
+                min-height: 260px;
+                padding: 22px 20px;
+            }
+
+            .quantum-fallback {
+                width: 100%;
+            }
+
+            .quantum-scene-title {
+                max-width: 320px;
+                font-size: 1.2rem;
+            }
+
+            .quantum-layer-list {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+                gap: 6px;
+            }
+
+            .quantum-layer-list span {
+                padding: 6px;
+                font-size: 0.68rem;
+                text-align: center;
             }
 
             .stack-layer {
@@ -854,9 +862,7 @@
         }
 
         @media (prefers-reduced-motion: reduce) {
-            .quantum-visual::before,
-            .quantum-visual .data-line,
-            .quantum-visual .pulse {
+            .quantum-visual::before {
                 animation: none;
             }
         }
@@ -885,34 +891,20 @@
 
     <main class="research-main">
         <section class="research-hero" id="research">
-            <div class="quantum-visual" aria-label="Quantum research network visual" role="img">
-                <svg viewBox="0 0 1120 270" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-                    <path class="line line-cyan data-line" d="M72 194 C196 96 315 96 438 161 S696 224 842 114 S1032 72 1080 114"/>
-                    <path class="line line-green data-line" d="M80 68 C220 144 318 206 462 116 S738 56 890 173 S1030 216 1084 188"/>
-                    <path class="line line-gold" d="M190 226 L322 174 L462 190 L610 116 L760 143 L924 74"/>
-                    <path class="line line-cyan" d="M252 58 L376 104 L506 76 L644 151 L786 88 L968 148"/>
-
-                    <rect class="chip" x="454" y="56" width="210" height="128" rx="14"/>
-                    <path class="line line-green" d="M484 88 H632 M484 116 H632 M484 144 H632"/>
-                    <path class="line line-cyan" d="M508 72 V168 M556 72 V168 M606 72 V168"/>
-                    <circle class="core pulse" cx="558" cy="121" r="30"/>
-                    <circle class="node node-cyan pulse" cx="558" cy="121" r="9"/>
-
-                    <circle class="node node-cyan pulse" cx="138" cy="150" r="10"/>
-                    <circle class="node node-green pulse" cx="252" cy="58" r="8"/>
-                    <circle class="node node-gold pulse" cx="322" cy="174" r="9"/>
-                    <circle class="node node-green pulse" cx="438" cy="161" r="8"/>
-                    <circle class="node node-cyan pulse" cx="644" cy="151" r="10"/>
-                    <circle class="node node-gold pulse" cx="760" cy="143" r="8"/>
-                    <circle class="node node-green pulse" cx="842" cy="114" r="10"/>
-                    <circle class="node node-cyan pulse" cx="968" cy="148" r="9"/>
-
-                    <text x="92" y="58">QEC</text>
-                    <text x="214" y="235">CODES</text>
-                    <text x="466" y="220">QML</text>
-                    <text x="714" y="62">SIM</text>
-                    <text x="934" y="220">INFO</text>
-                </svg>
+            <div class="quantum-visual" aria-label="3D quantum research stack visual" role="img">
+                <canvas id="quantumHeroCanvas"></canvas>
+                <div class="quantum-visual-inner">
+                    <div class="quantum-fallback">
+                        <div class="quantum-scene-kicker">Quantum research stack</div>
+                        <div class="quantum-scene-title">Theory, codes, software, and applications connected through a quantum processor.</div>
+                        <div class="quantum-layer-list" aria-hidden="true">
+                            <span>Theory</span>
+                            <span>Codes</span>
+                            <span>Software</span>
+                            <span>Applications</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="research-hero-grid">
                 <div>
@@ -1216,6 +1208,247 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <script type="module">
+        import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.184.0/build/three.module.js";
+
+        const canvas = document.getElementById("quantumHeroCanvas");
+        const visual = document.querySelector(".quantum-visual");
+        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        if (canvas && visual) {
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(38, 1, 0.1, 100);
+            const renderer = new THREE.WebGLRenderer({
+                canvas,
+                antialias: true,
+                alpha: true,
+                powerPreference: "high-performance"
+            });
+            renderer.setClearColor(0x000000, 0);
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+
+            const root = new THREE.Group();
+            scene.add(root);
+
+            const cyan = 0x46c7f4;
+            const teal = 0x31bfa1;
+            const amber = 0xf2b84b;
+            const graphite = 0x0b1622;
+
+            scene.add(new THREE.AmbientLight(0x9fb9d4, 0.62));
+            const keyLight = new THREE.DirectionalLight(0xffffff, 1.5);
+            keyLight.position.set(3, 5, 6);
+            scene.add(keyLight);
+            const cyanLight = new THREE.PointLight(cyan, 2.6, 9);
+            cyanLight.position.set(-2.4, 1.8, 2.4);
+            scene.add(cyanLight);
+            const amberLight = new THREE.PointLight(amber, 1.2, 8);
+            amberLight.position.set(2.6, 1.4, -2.2);
+            scene.add(amberLight);
+
+            const chipMaterial = new THREE.MeshStandardMaterial({
+                color: graphite,
+                metalness: 0.72,
+                roughness: 0.34
+            });
+            const chip = new THREE.Mesh(new THREE.BoxGeometry(4.6, 0.18, 2.25), chipMaterial);
+            chip.position.y = -0.14;
+            root.add(chip);
+
+            const edgeLines = new THREE.LineSegments(
+                new THREE.EdgesGeometry(chip.geometry),
+                new THREE.LineBasicMaterial({ color: 0x6fb9d8, transparent: true, opacity: 0.38 })
+            );
+            chip.add(edgeLines);
+
+            const traceMaterial = new THREE.LineBasicMaterial({ color: cyan, transparent: true, opacity: 0.68 });
+            const traceGoldMaterial = new THREE.LineBasicMaterial({ color: amber, transparent: true, opacity: 0.46 });
+            const addTrace = (points, material = traceMaterial) => {
+                const geometry = new THREE.BufferGeometry().setFromPoints(points.map(p => new THREE.Vector3(p[0], p[1], p[2])));
+                const line = new THREE.Line(geometry, material);
+                root.add(line);
+                return line;
+            };
+            const traceY = -0.035;
+            addTrace([[-1.85, traceY, -0.72], [-0.8, traceY, -0.72], [-0.8, traceY, 0.56], [0.35, traceY, 0.56], [0.35, traceY, 0.96]]);
+            addTrace([[-1.7, traceY, 0.82], [-0.35, traceY, 0.82], [-0.35, traceY, -0.28], [1.65, traceY, -0.28]], traceGoldMaterial);
+            addTrace([[1.9, traceY, 0.72], [0.72, traceY, 0.72], [0.72, traceY, -0.82], [-1.25, traceY, -0.82]]);
+
+            const layerMaterial = new THREE.MeshPhysicalMaterial({
+                color: 0xbfefff,
+                metalness: 0,
+                roughness: 0.08,
+                transmission: 0.35,
+                transparent: true,
+                opacity: 0.26,
+                side: THREE.DoubleSide
+            });
+            const layerEdgeMaterial = new THREE.LineBasicMaterial({ color: cyan, transparent: true, opacity: 0.46 });
+            const layers = [];
+            const labels = ["Theory", "Codes", "Software", "Applications"];
+
+            const makeLabel = (text) => {
+                const labelCanvas = document.createElement("canvas");
+                labelCanvas.width = 512;
+                labelCanvas.height = 128;
+                const ctx = labelCanvas.getContext("2d");
+                ctx.clearRect(0, 0, labelCanvas.width, labelCanvas.height);
+                ctx.font = "700 44px Inter, Arial, sans-serif";
+                ctx.fillStyle = "rgba(248,251,255,0.92)";
+                ctx.textAlign = "center";
+                ctx.textBaseline = "middle";
+                ctx.fillText(text.toUpperCase(), 256, 64);
+                const texture = new THREE.CanvasTexture(labelCanvas);
+                texture.anisotropy = 4;
+                const material = new THREE.SpriteMaterial({ map: texture, transparent: true, opacity: 0.86 });
+                const sprite = new THREE.Sprite(material);
+                sprite.scale.set(1.8, 0.45, 1);
+                return sprite;
+            };
+
+            labels.forEach((label, index) => {
+                const group = new THREE.Group();
+                group.position.y = 0.5 + index * 0.42;
+                group.position.z = -0.14 + index * 0.06;
+                const slab = new THREE.Mesh(new THREE.BoxGeometry(3.55, 0.035, 1.55), layerMaterial.clone());
+                const edges = new THREE.LineSegments(new THREE.EdgesGeometry(slab.geometry), layerEdgeMaterial.clone());
+                const text = makeLabel(label);
+                text.position.set(0, 0.07, 0.02);
+                group.add(slab, edges, text);
+                layers.push(group);
+                root.add(group);
+
+                if (!reduceMotion && window.gsap) {
+                    window.gsap.to(group.position, {
+                        y: group.position.y + 0.07,
+                        duration: 2.6 + index * 0.28,
+                        repeat: -1,
+                        yoyo: true,
+                        ease: "sine.inOut"
+                    });
+                    window.gsap.to(group.rotation, {
+                        z: index % 2 ? 0.025 : -0.025,
+                        duration: 3.4 + index * 0.32,
+                        repeat: -1,
+                        yoyo: true,
+                        ease: "sine.inOut"
+                    });
+                }
+            });
+
+            const nodeMaterial = new THREE.MeshStandardMaterial({
+                color: 0xf8fbff,
+                emissive: teal,
+                emissiveIntensity: 0.7,
+                roughness: 0.25
+            });
+            const pulseMaterial = new THREE.MeshStandardMaterial({
+                color: amber,
+                emissive: amber,
+                emissiveIntensity: 1.25,
+                roughness: 0.2
+            });
+            const nodeGeometry = new THREE.SphereGeometry(0.055, 18, 18);
+            const pulseGeometry = new THREE.SphereGeometry(0.05, 18, 18);
+            const pulses = [];
+            const connectorMaterial = new THREE.LineBasicMaterial({ color: teal, transparent: true, opacity: 0.58 });
+
+            const connectorPoints = [
+                [-1.38, 0.08, 0.42],
+                [-1.04, 0.58, 0.22],
+                [-0.45, 1.0, 0.12],
+                [0.32, 1.42, -0.06],
+                [1.15, 1.82, -0.24]
+            ];
+            addTrace(connectorPoints, connectorMaterial);
+
+            connectorPoints.forEach((point, index) => {
+                const node = new THREE.Mesh(nodeGeometry, nodeMaterial.clone());
+                node.position.set(point[0], point[1], point[2]);
+                node.material.emissiveIntensity = 0.55 + index * 0.14;
+                root.add(node);
+            });
+
+            for (let i = 0; i < 4; i += 1) {
+                const pulse = new THREE.Mesh(pulseGeometry, pulseMaterial.clone());
+                pulse.userData.offset = i / 4;
+                root.add(pulse);
+                pulses.push(pulse);
+            }
+
+            const grid = new THREE.GridHelper(9, 18, 0x25455f, 0x1c3448);
+            grid.position.y = -0.32;
+            grid.material.transparent = true;
+            grid.material.opacity = 0.34;
+            root.add(grid);
+
+            root.rotation.x = -0.12;
+            root.rotation.y = -0.42;
+
+            const pointer = { x: 0, y: 0 };
+            visual.addEventListener("pointermove", (event) => {
+                const rect = visual.getBoundingClientRect();
+                pointer.x = ((event.clientX - rect.left) / rect.width - 0.5) * 0.18;
+                pointer.y = ((event.clientY - rect.top) / rect.height - 0.5) * 0.12;
+            });
+
+            const resizeScene = () => {
+                const width = visual.clientWidth;
+                const height = visual.clientHeight;
+                renderer.setSize(width, height, false);
+                camera.aspect = width / height;
+                camera.position.set(width < 760 ? 0.1 : 0.45, width < 760 ? 2.5 : 2.85, width < 760 ? 6.9 : 6.25);
+                camera.lookAt(0.1, 0.75, 0);
+                camera.updateProjectionMatrix();
+            };
+            window.addEventListener("resize", resizeScene);
+            resizeScene();
+
+            const clock = new THREE.Clock();
+            const movePulse = (pulse, t) => {
+                const progress = (t * 0.16 + pulse.userData.offset) % 1;
+                const scaled = progress * (connectorPoints.length - 1);
+                const idx = Math.floor(scaled);
+                const mix = scaled - idx;
+                const a = connectorPoints[idx];
+                const b = connectorPoints[Math.min(idx + 1, connectorPoints.length - 1)];
+                pulse.position.set(
+                    THREE.MathUtils.lerp(a[0], b[0], mix),
+                    THREE.MathUtils.lerp(a[1], b[1], mix),
+                    THREE.MathUtils.lerp(a[2], b[2], mix)
+                );
+                pulse.material.opacity = 0.8;
+            };
+
+            const render = () => {
+                const t = clock.getElapsedTime();
+                if (!reduceMotion) {
+                    root.rotation.y += ((-0.42 + pointer.x) - root.rotation.y) * 0.035;
+                    root.rotation.x += ((-0.12 + pointer.y) - root.rotation.x) * 0.035;
+                    chip.rotation.y = Math.sin(t * 0.35) * 0.02;
+                    pulses.forEach(pulse => movePulse(pulse, t));
+                } else {
+                    pulses.forEach(pulse => movePulse(pulse, 0.8));
+                }
+                renderer.render(scene, camera);
+                window.requestAnimationFrame(render);
+            };
+
+            visual.classList.add("visual-ready");
+            if (window.gsap && !reduceMotion) {
+                window.gsap.from(".quantum-fallback > *", {
+                    y: 14,
+                    opacity: 0,
+                    duration: 0.7,
+                    stagger: 0.08,
+                    ease: "power2.out"
+                });
+            }
+            render();
+        }
+    </script>
 
     <script>
         // Smooth scrolling for anchor links
