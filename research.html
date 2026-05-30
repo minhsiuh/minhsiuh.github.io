@@ -591,87 +591,147 @@
             text-decoration: underline;
         }
 
-        .research-flow {
-            display: grid;
-            grid-template-columns: repeat(4, minmax(0, 1fr));
-            gap: 18px;
-            align-items: stretch;
+        .research-plot {
+            min-height: 720px;
             position: relative;
-        }
-
-        .flow-step {
-            min-height: 260px;
-            padding: 22px;
+            overflow: hidden;
             border: 1px solid var(--border-color);
             border-radius: 8px;
-            background: #fff;
-            position: relative;
+            background:
+                linear-gradient(90deg, rgba(94, 164, 214, 0.08) 1px, transparent 1px),
+                linear-gradient(0deg, rgba(94, 164, 214, 0.08) 1px, transparent 1px),
+                radial-gradient(circle at 50% 45%, rgba(94, 164, 214, 0.18), transparent 34%),
+                #fff;
+            background-size: 44px 44px, 44px 44px, auto, auto;
+        }
+
+        .plot-lines {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .plot-link,
+        .plot-orbit {
+            fill: none;
+            stroke: var(--accent-color);
+            stroke-linecap: round;
+        }
+
+        .plot-link {
+            stroke-width: 2.2;
+            stroke-opacity: 0.5;
+            stroke-dasharray: 8 10;
+        }
+
+        .plot-orbit {
+            stroke-width: 1.4;
+            stroke-opacity: 0.25;
+        }
+
+        .plot-core,
+        .plot-node {
+            position: absolute;
+            z-index: 2;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.94);
             box-shadow: 0 8px 24px rgba(44, 62, 80, 0.05);
         }
 
-        .flow-step:not(:last-child)::after {
-            content: "";
-            position: absolute;
-            top: 44px;
-            right: -20px;
-            width: 20px;
-            height: 2px;
-            background: var(--accent-color);
-            opacity: 0.65;
-            z-index: 2;
+        .plot-core {
+            left: 50%;
+            top: 50%;
+            width: 260px;
+            padding: 22px;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            background: #2c3e50;
+            color: #fff;
+            border-color: rgba(255, 255, 255, 0.22);
         }
 
-        .flow-step:not(:last-child)::before {
-            content: "";
-            position: absolute;
-            top: 39px;
-            right: -24px;
-            border-top: 6px solid transparent;
-            border-bottom: 6px solid transparent;
-            border-left: 8px solid var(--accent-color);
-            opacity: 0.65;
-            z-index: 3;
+        .plot-core h3 {
+            color: #fff;
+            font-size: 1.28rem;
+            margin-bottom: 8px;
         }
 
-        .flow-index {
+        .plot-core p {
+            color: rgba(255, 255, 255, 0.78);
+            font-size: 0.9rem;
+            line-height: 1.55;
+            margin: 0;
+            text-align: center;
+        }
+
+        .plot-node {
+            width: 260px;
+            padding: 18px;
+        }
+
+        .plot-node.foundations {
+            left: 28px;
+            top: 34px;
+        }
+
+        .plot-node.hardware {
+            right: 32px;
+            top: 38px;
+        }
+
+        .plot-node.software {
+            left: 72px;
+            bottom: 40px;
+        }
+
+        .plot-node.applications {
+            right: 72px;
+            bottom: 40px;
+        }
+
+        .plot-index {
             color: var(--accent-color);
             font-size: 0.78rem;
             font-weight: 800;
             letter-spacing: 0.12em;
             text-transform: uppercase;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
 
-        .flow-step h3 {
-            font-size: 1.2rem;
-            margin-bottom: 12px;
+        .plot-node h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
         }
 
-        .flow-step p {
+        .plot-node p {
             color: #536170;
-            font-size: 0.95rem;
-            line-height: 1.6;
-            margin-bottom: 16px;
+            font-size: 0.9rem;
+            line-height: 1.55;
+            margin-bottom: 14px;
             text-align: left;
         }
 
-        .flow-tags {
+        .plot-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
+            gap: 7px;
         }
 
-        .flow-tags span {
+        .plot-tags span {
             border: 1px solid #dfe7ef;
             border-radius: 999px;
             color: #425366;
-            font-size: 0.78rem;
+            font-size: 0.74rem;
             font-weight: 700;
-            padding: 6px 9px;
+            padding: 5px 8px;
             background: #f8fafc;
         }
 
-        .feedback-note {
+        .plot-feedback {
             margin-top: 16px;
             border: 1px solid #cfe1f2;
             border-radius: 8px;
@@ -680,12 +740,12 @@
             display: flex;
             gap: 14px;
             align-items: center;
-            padding: 14px 16px;
-            font-size: 0.94rem;
+            padding: 12px 15px;
+            font-size: 0.9rem;
             line-height: 1.5;
         }
 
-        .feedback-note strong {
+        .plot-feedback strong {
             color: var(--accent-color);
             font-size: 0.78rem;
             letter-spacing: 0.12em;
@@ -870,7 +930,6 @@
 
             .research-hero-grid,
             .highlight-grid,
-            .research-flow,
             .output-item {
                 grid-template-columns: 1fr;
             }
@@ -914,31 +973,35 @@
                 gap: 2px;
             }
 
-            .flow-step {
+            .research-plot {
+                display: grid;
+                gap: 14px;
                 min-height: 0;
+                padding: 18px;
             }
 
-            .flow-step:not(:last-child)::after {
-                top: auto;
-                right: auto;
-                left: 30px;
-                bottom: -18px;
-                width: 2px;
-                height: 18px;
+            .plot-lines {
+                display: none;
             }
 
-            .flow-step:not(:last-child)::before {
-                top: auto;
-                right: auto;
-                left: 25px;
-                bottom: -25px;
-                border-left: 6px solid transparent;
-                border-right: 6px solid transparent;
-                border-top: 8px solid var(--accent-color);
-                border-bottom: none;
+            .plot-core,
+            .plot-node,
+            .plot-feedback {
+                position: relative;
+                inset: auto;
+                width: auto;
+                transform: none;
             }
 
-            .feedback-note {
+            .plot-core {
+                order: -1;
+            }
+
+            .plot-core p {
+                text-align: left;
+            }
+
+            .plot-feedback {
                 align-items: flex-start;
                 flex-direction: column;
                 gap: 6px;
@@ -1031,49 +1094,60 @@
                 </p>
             </div>
 
-            <div class="research-flow" aria-label="Research area feedback loop">
-                <article class="flow-step">
-                    <div class="flow-index">01</div>
+            <div class="research-plot" aria-label="Research area network plot">
+                <svg class="plot-lines" viewBox="0 0 1000 560" preserveAspectRatio="none" aria-hidden="true">
+                    <path class="plot-orbit" d="M170 118 C330 12 690 12 830 118 C970 222 930 424 800 460 C650 535 350 535 200 460 C60 398 35 220 170 118" />
+                    <path class="plot-link" d="M500 270 C390 190 305 122 160 120" />
+                    <path class="plot-link" d="M500 270 C610 190 705 122 840 120" />
+                    <path class="plot-link" d="M500 270 C395 352 305 425 190 430" />
+                    <path class="plot-link" d="M500 270 C610 352 705 425 810 430" />
+                </svg>
+                <div class="plot-core">
+                    <h3>Reliable quantum systems</h3>
+                    <p>A shared target connects theory, hardware, software, and applications.</p>
+                </div>
+                <article class="plot-node foundations">
+                    <div class="plot-index">01</div>
                     <h3>Foundations & Theory</h3>
                     <p>Defines information limits, resource requirements, and the questions that make quantum advantage precise.</p>
-                    <div class="flow-tags" aria-label="Foundations and theory topics">
+                    <div class="plot-tags" aria-label="Foundations and theory topics">
                         <span>Quantum Shannon theory</span>
                         <span>Complexity</span>
                         <span>Resource tradeoffs</span>
                     </div>
                 </article>
-                <article class="flow-step">
-                    <div class="flow-index">02</div>
+                <article class="plot-node hardware">
+                    <div class="plot-index">02</div>
                     <h3>Hardware Enabling Technology</h3>
                     <p>Turns theoretical constraints into reliable architectures, protected computation, and measurable system behavior.</p>
-                    <div class="flow-tags" aria-label="Hardware enabling technology topics">
+                    <div class="plot-tags" aria-label="Hardware enabling technology topics">
                         <span>Error correction</span>
                         <span>Architecture</span>
                         <span>Benchmarking</span>
                     </div>
                 </article>
-                <article class="flow-step">
-                    <div class="flow-index">03</div>
+                <article class="plot-node software">
+                    <div class="plot-index">03</div>
                     <h3>Software with Enhanced Advantage</h3>
                     <p>Builds algorithms, learning protocols, and verification tools that work under realistic system constraints.</p>
-                    <div class="flow-tags" aria-label="Software with enhanced advantage topics">
+                    <div class="plot-tags" aria-label="Software with enhanced advantage topics">
                         <span>Algorithms</span>
                         <span>QML</span>
                         <span>Verification</span>
                     </div>
                 </article>
-                <article class="flow-step">
-                    <div class="flow-index">04</div>
+                <article class="plot-node applications">
+                    <div class="plot-index">04</div>
                     <h3>Real-World Applications</h3>
                     <p>Reveals useful workflows, practical bottlenecks, and the constraints that should feed back into theory.</p>
-                    <div class="flow-tags" aria-label="Real-world applications topics">
+                    <div class="plot-tags" aria-label="Real-world applications topics">
                         <span>Simulation</span>
                         <span>Communication</span>
                         <span>Metrology</span>
                     </div>
                 </article>
             </div>
-            <div class="feedback-note">
+            <div class="plot-feedback">
                 <strong>Feedback loop</strong>
                 <span>Applications expose new bottlenecks, which become sharper theoretical questions and better system requirements.</span>
             </div>
