@@ -433,6 +433,19 @@
             gap: 14px;
         }
 
+        .chart-group-label {
+            color: #6b7c8f;
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            margin-top: 4px;
+            text-transform: uppercase;
+        }
+
+        .chart-group-label:first-child {
+            margin-top: 0;
+        }
+
         .journal-bar-row {
             display: grid;
             grid-template-columns: minmax(210px, 0.95fr) minmax(220px, 1.4fr) 48px;
@@ -833,39 +846,48 @@
             <div class="journal-stats-box">
                 <div class="stats-header">
                     <h4>Conference Publications & Talks</h4>
+                    <div class="stats-subtitle">Talk venues and proceedings are ranked within separate groups.</div>
                 </div>
-                <table class="stats-table">
-                    <tbody>
-                        <tr>
-                            <td>QIP (talks)</td>
-                            <td class="count">11</td>
-                        </tr>
-                        <tr>
-                            <td>TQC (talks)</td>
-                            <td class="count">8</td>
-                        </tr>
-                        <tr>
-                            <td>ISIT</td>
-                            <td class="count">20</td>
-                        </tr>
-                        <tr>
-                            <td>STOC</td>
-                            <td class="count">1</td>
-                        </tr>
-                        <tr>
-                            <td>ICLR</td>
-                            <td class="count">2</td>
-                        </tr>
-                        <tr>
-                            <td>NeurIPS</td>
-                            <td class="count">1</td>
-                        </tr>
-                        <tr>
-                            <td>Crypto</td>
-                            <td class="count">1</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="journal-chart" aria-label="Conference publication and talk counts bar chart">
+                    <div class="chart-group-label">Talks</div>
+                    <div class="journal-bar-row">
+                        <div class="journal-bar-name">QIP</div>
+                        <div class="journal-bar-track"><span class="journal-bar-fill" style="width: 55%;"></span></div>
+                        <div class="journal-bar-count">11</div>
+                    </div>
+                    <div class="journal-bar-row">
+                        <div class="journal-bar-name">TQC</div>
+                        <div class="journal-bar-track"><span class="journal-bar-fill" style="width: 40%;"></span></div>
+                        <div class="journal-bar-count">8</div>
+                    </div>
+
+                    <div class="chart-group-label">Proceedings</div>
+                    <div class="journal-bar-row">
+                        <div class="journal-bar-name">ISIT</div>
+                        <div class="journal-bar-track"><span class="journal-bar-fill" style="width: 100%;"></span></div>
+                        <div class="journal-bar-count">20</div>
+                    </div>
+                    <div class="journal-bar-row">
+                        <div class="journal-bar-name">ICLR</div>
+                        <div class="journal-bar-track"><span class="journal-bar-fill" style="width: 10%;"></span></div>
+                        <div class="journal-bar-count">2</div>
+                    </div>
+                    <div class="journal-bar-row">
+                        <div class="journal-bar-name">STOC</div>
+                        <div class="journal-bar-track"><span class="journal-bar-fill" style="width: 5%;"></span></div>
+                        <div class="journal-bar-count">1</div>
+                    </div>
+                    <div class="journal-bar-row">
+                        <div class="journal-bar-name">NeurIPS</div>
+                        <div class="journal-bar-track"><span class="journal-bar-fill" style="width: 5%;"></span></div>
+                        <div class="journal-bar-count">1</div>
+                    </div>
+                    <div class="journal-bar-row">
+                        <div class="journal-bar-name">Crypto</div>
+                        <div class="journal-bar-track"><span class="journal-bar-fill" style="width: 5%;"></span></div>
+                        <div class="journal-bar-count">1</div>
+                    </div>
+                </div>
             </div>
 
             <p style="margin-bottom: 20px;"><em>Note: Prior to 2018, the order of authors is generally alphabetical. From 2018, I adopted engineering convention: being a group leader, I put myself to the last in the author list.</em></p>
