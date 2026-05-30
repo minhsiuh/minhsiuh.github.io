@@ -636,24 +636,30 @@
         .plot-core {
             left: 50%;
             top: 50%;
-            width: 260px;
-            padding: 22px;
+            width: 232px;
+            padding: 20px;
             text-align: center;
             transform: translate(-50%, -50%);
-            background: #2c3e50;
+            background:
+                radial-gradient(circle at 50% 0%, rgba(94, 164, 214, 0.28), transparent 58%),
+                #2c3e50;
             color: #fff;
-            border-color: rgba(255, 255, 255, 0.22);
+            border-color: rgba(180, 219, 244, 0.5);
+            box-shadow:
+                inset 0 0 0 1px rgba(255, 255, 255, 0.08),
+                0 0 0 7px rgba(94, 164, 214, 0.08),
+                0 20px 46px rgba(44, 62, 80, 0.22);
         }
 
         .plot-core h3 {
             color: #fff;
-            font-size: 1.28rem;
+            font-size: 1.16rem;
             margin-bottom: 8px;
         }
 
         .plot-core p {
             color: rgba(255, 255, 255, 0.78);
-            font-size: 0.9rem;
+            font-size: 0.84rem;
             line-height: 1.55;
             margin: 0;
             text-align: center;
@@ -1064,7 +1070,7 @@
                 </svg>
                 <div class="plot-core">
                     <h3>Reliable quantum systems</h3>
-                    <p>A shared target connects theory, hardware, software, and applications.</p>
+                    <p>The shared target of the cycle.</p>
                 </div>
                 <article class="plot-node foundations">
                     <div class="plot-index">01</div>
