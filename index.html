@@ -477,9 +477,28 @@
             text-decoration: underline;
         }
 
+        .footer-label-link {
+            gap: 8px;
+            font-weight: 600;
+        }
+
+        .footer-label-link:hover {
+            text-decoration: none;
+        }
+
+        .footer-label-link:hover .footer-link-icon,
+        .footer-social-link:hover {
+            background: rgba(255, 255, 255, 0.18);
+            border-color: rgba(255, 255, 255, 0.48);
+            transform: translateY(-1px);
+        }
+
+        .footer-link-icon,
         .footer-social-link {
             width: 28px;
             height: 28px;
+            display: inline-flex;
+            align-items: center;
             justify-content: center;
             gap: 0;
             border: 1px solid rgba(255, 255, 255, 0.28);
@@ -489,15 +508,12 @@
         }
 
         .footer-social-link:hover {
-            background: rgba(255, 255, 255, 0.18);
-            border-color: rgba(255, 255, 255, 0.48);
             text-decoration: none;
-            transform: translateY(-1px);
         }
 
         .footer-contact-line svg {
-            width: 16px;
-            height: 16px;
+            width: 15px;
+            height: 15px;
             fill: white;
         }
 
@@ -797,8 +813,10 @@
     <footer>
         <div class="footer-content">
             <div class="footer-contact-line" aria-label="Contact and profile links">
-                <a href="mailto:min-hsiu.hsieh@foxconn.com">
-                    <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                <a class="footer-label-link" href="mailto:min-hsiu.hsieh@foxconn.com">
+                    <span class="footer-link-icon" aria-hidden="true">
+                        <svg viewBox="0 0 512 512"><path d="M48 64h416c26.5 0 48 21.5 48 48v288c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48zm0 48v40.8l208 122.4 208-122.4V112H48zm416 96.5L268.2 323.7c-7.5 4.4-16.9 4.4-24.4 0L48 208.5V400h416V208.5z"/></svg>
+                    </span>
                     Email
                 </a>
                 <span class="footer-separator">/</span>
@@ -812,8 +830,10 @@
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
                 </a>
                 <span class="footer-separator">/</span>
-                <a href="https://maps.app.goo.gl/jwDW2MSc6T7pYtRYA" target="_blank" rel="noopener">
-                    <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <a class="footer-label-link" href="https://maps.app.goo.gl/jwDW2MSc6T7pYtRYA" target="_blank" rel="noopener">
+                    <span class="footer-link-icon" aria-hidden="true">
+                        <svg viewBox="0 0 384 512"><path d="M192 0C86 0 0 86 0 192c0 77.4 27 99 172.3 309.7 9.5 13.7 29.9 13.7 39.4 0C357 291 384 269.4 384 192 384 86 298 0 192 0zm0 272c-44.2 0-80-35.8-80-80s35.8-80 80-80 80 35.8 80 80-35.8 80-80 80z"/></svg>
+                    </span>
                     Taipei City
                 </a>
             </div>
