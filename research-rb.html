@@ -69,7 +69,111 @@
     .side-nav a { color:#365a77; text-decoration:none; }
     .related-topics a { display:block; color:#2f7bbd; text-decoration:none; margin-bottom:6px; }
     @media (max-width:1000px){ .topic-wrapper{grid-template-columns:1fr;} .side-nav{position:relative; top:auto;} .collab-stats{grid-template-columns:repeat(2,1fr);} }
-  </style>
+        /* Footer */
+        footer {
+            background: var(--primary-color, #2c3e50);
+            color: white;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            background: #2b7fb4;
+            padding: 24px 0;
+        }
+
+        .footer-contact-line {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 10px 22px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 20px;
+            color: rgba(255, 255, 255, 0.72);
+            font-size: 0.94rem;
+        }
+
+        .footer-contact-line a {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: white;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .footer-contact-line a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-label-link {
+            gap: 8px;
+            font-weight: 600;
+        }
+
+        .footer-label-link:hover {
+            text-decoration: none;
+        }
+
+        .footer-label-link:hover .footer-link-icon,
+        .footer-social-link:hover {
+            background: white;
+            box-shadow: 0 4px 12px rgba(31, 60, 82, 0.18);
+            transform: translateY(-1px);
+        }
+
+        .footer-link-icon,
+        .footer-social-link {
+            width: 28px;
+            height: 28px;
+            margin: 0 2px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0;
+            border: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.94);
+            transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+        }
+
+        .footer-social-link:hover {
+            text-decoration: none;
+        }
+
+        .footer-contact-line svg {
+            width: 15px;
+            height: 15px;
+            fill: #2b7fb4;
+        }
+
+        .footer-separator {
+            width: 1px;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.32);
+        }
+
+        footer .copyright {
+            background: var(--primary-color, #2c3e50);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .footer-contact-line {
+                justify-content: flex-start;
+            }
+        }
+
+
+    </style>
 </head>
 <body>
   <header><div class="container"><h1>Min-Hsiu Hsieh</h1><div class="chinese-name">謝明修</div></div></header>
@@ -185,5 +289,41 @@
       }
     });
   </script>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-contact-line" aria-label="Contact and profile links">
+                <a class="footer-label-link" href="mailto:min-hsiu.hsieh@foxconn.com">
+                    <span class="footer-link-icon" aria-hidden="true">
+                        <svg viewBox="0 0 512 512"><path d="M48 64h416c26.5 0 48 21.5 48 48v288c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48zm0 48v40.8l208 122.4 208-122.4V112H48zm416 96.5L268.2 323.7c-7.5 4.4-16.9 4.4-24.4 0L48 208.5V400h416V208.5z"/></svg>
+                    </span>
+                    Email
+                </a>
+                <span class="footer-separator" aria-hidden="true"></span>
+                <a class="footer-social-link" href="https://www.linkedin.com/in/min-hsiu-hsieh-6199b0/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+                    <svg viewBox="0 0 448 512" aria-hidden="true"><path d="M100.28 448H7.4V148.9h92.88V448zM53.79 108.1C24.09 108.1 0 83.5 0 53.8 0 24.1 24.09 0 53.79 0s53.79 24.1 53.79 53.8c0 29.7-24.09 54.3-53.79 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>
+                </a>
+                <a class="footer-social-link" href="https://x.com/quantum_minhsiu" target="_blank" rel="noopener" aria-label="X" title="X">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg>
+                </a>
+                <a class="footer-social-link" href="https://scholar.google.com/citations?user=UXx1jNYAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+                </a>
+                <span class="footer-separator" aria-hidden="true"></span>
+                <a class="footer-label-link" href="https://maps.app.goo.gl/jwDW2MSc6T7pYtRYA" target="_blank" rel="noopener">
+                    <span class="footer-link-icon" aria-hidden="true">
+                        <svg viewBox="0 0 384 512"><path d="M192 0C86 0 0 86 0 192c0 77.4 27 99 172.3 309.7 9.5 13.7 29.9 13.7 39.4 0C357 291 384 269.4 384 192 384 86 298 0 192 0zm0 272c-44.2 0-80-35.8-80-80s35.8-80 80-80 80 35.8 80 80-35.8 80-80 80z"/></svg>
+                    </span>
+                    Taipei City
+                </a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2026 Min-Hsiu Hsieh. All rights reserved.</p>
+                <p>Powered by <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
