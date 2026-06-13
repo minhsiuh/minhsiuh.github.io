@@ -1,7 +1,25 @@
 {
   "section": "journals",
-  "updatedAt": "2026-03-10T04:47:13.432Z",
+  "updatedAt": "2026-06-13T09:14:00.000Z",
   "items": [
+    {
+      "id": "journals-114",
+      "contentHtml": "Ryu Hayakawa, Kuo-Chin Chen, Min-Hsiu Hsieh. Quantum Walks on Simplicial Complexes and Harmonic Homology: Application to Topological Data Analysis with Superpolynomial Speedups. Quantum, accepted 08-06-2026 [<a href=\"https://arxiv.org/abs/2404.15407\" target=\"_blank\" rel=\"noopener\">arXiv:2404.15407</a>].",
+      "article": {
+        "entryType": "article",
+        "citationKey": "Hsieh2026Journal114",
+        "author": "Ryu Hayakawa, Kuo-Chin Chen, Min-Hsiu Hsieh",
+        "title": "Quantum Walks on Simplicial Complexes and Harmonic Homology: Application to Topological Data Analysis with Superpolynomial Speedups",
+        "journal": "Quantum",
+        "year": "2026",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "doi": "",
+        "url": "https://arxiv.org/abs/2404.15407",
+        "arxiv": "2404.15407"
+      }
+    },
     {
       "id": "journals-113",
       "contentHtml": "Kaining Zhang, Min-Hsiu Hsieh, Dacheng Tao. Deep Variational Quantum Circuits with Barren-Plateau-Free Architectures. Artificial Intelligence Science and Engineering, vol. 2, no. 1, pp. 66-84 (2026) [<a href=\"https://doi.org/10.23919/AISE.2026.000005\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
