@@ -1,22 +1,27 @@
 {
   "section": "journals",
-  "updatedAt": "2026-06-13T09:14:00.000Z",
+  "updatedAt": "2026-06-16T03:09:00.000Z",
   "items": [
     {
       "id": "journals-114",
-      "contentHtml": "Ryu Hayakawa, Kuo-Chin Chen, Min-Hsiu Hsieh. Quantum Walks on Simplicial Complexes and Harmonic Homology: Application to Topological Data Analysis with Superpolynomial Speedups. Quantum, accepted 08-06-2026 [<a href=\"https://arxiv.org/abs/2404.15407\" target=\"_blank\" rel=\"noopener\">arXiv:2404.15407</a>].",
+      "contentHtml": "Ryu Hayakawa, Kuo-Chin Chen, Min-Hsiu Hsieh. Quantum Walks on Simplicial Complexes and Harmonic Homology: Application to Topological Data Analysis with Superpolynomial Speedups. Quantum 10, 2138 (2026) [<a href=\"https://arxiv.org/abs/2404.15407\" target=\"_blank\" rel=\"noopener\">arXiv:2404.15407</a>] [<a href=\"https://doi.org/10.22331/q-2026-06-15-2138\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
       "article": {
         "entryType": "article",
-        "citationKey": "Hsieh2026Journal114",
+        "citationKey": "Hayakawa2026quantumwalks",
         "author": "Ryu Hayakawa, Kuo-Chin Chen, Min-Hsiu Hsieh",
+        "bibtexAuthor": "Hayakawa, Ryu and Chen, Kuo-Chin and Hsieh, Min-Hsiu",
         "title": "Quantum Walks on Simplicial Complexes and Harmonic Homology: Application to Topological Data Analysis with Superpolynomial Speedups",
+        "bibtexTitle": "Quantum {W}alks on {S}implicial {C}omplexes and {H}armonic {H}omology: {A}pplication to {T}opological {D}ata {A}nalysis with {S}uperpolynomial {S}peedups",
         "journal": "Quantum",
         "year": "2026",
-        "volume": "",
+        "volume": "10",
         "number": "",
-        "pages": "",
-        "doi": "",
-        "url": "https://arxiv.org/abs/2404.15407",
+        "pages": "2138",
+        "doi": "10.22331/q-2026-06-15-2138",
+        "url": "https://doi.org/10.22331/q-2026-06-15-2138",
+        "issn": "2521-327X",
+        "publisher": "Verein zur Förderung des Open Access Publizierens in den Quantenwissenschaften",
+        "month": "jun",
         "arxiv": "2404.15407"
       }
     },

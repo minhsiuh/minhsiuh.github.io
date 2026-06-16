@@ -1165,13 +1165,18 @@
             function buildBibtexArticleFields(article = {}, fallbackKey = 'HsiehYYYYJournal') {
                 const key = bibEscape(article.citationKey || fallbackKey) || fallbackKey;
                 const fields = [];
-                if (article.author) fields.push(`  author = {${bibEscape(article.author)}}`);
-                if (article.title) fields.push(`  title = {${bibEscape(article.title)}}`);
+                const author = article.bibtexAuthor || article.author;
+                const title = article.bibtexTitle || article.title;
+                if (author) fields.push(`  author = {${bibEscape(author)}}`);
+                if (title) fields.push(`  title = {${bibEscape(title)}}`);
                 if (article.journal) fields.push(`  journal = {${bibEscape(article.journal)}}`);
+                if (article.issn) fields.push(`  issn = {${bibEscape(article.issn)}}`);
+                if (article.publisher) fields.push(`  publisher = {${bibEscape(article.publisher)}}`);
                 if (article.year) fields.push(`  year = {${bibEscape(article.year)}}`);
                 if (article.volume) fields.push(`  volume = {${bibEscape(article.volume)}}`);
                 if (article.number) fields.push(`  number = {${bibEscape(article.number)}}`);
                 if (article.pages) fields.push(`  pages = {${bibEscape(article.pages)}}`);
+                if (article.month) fields.push(`  month = {${bibEscape(article.month)}}`);
                 if (article.doi) fields.push(`  doi = {${bibEscape(article.doi)}}`);
                 if (article.url) fields.push(`  url = {${bibEscape(article.url)}}`);
                 return `@article{${key},\n${fields.join(',\n')}\n}`;
