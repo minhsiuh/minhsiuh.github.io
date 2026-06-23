@@ -26,10 +26,10 @@
     {
       "paperId": "P003",
       "group": "🔧 Simulation Algorithms",
-      "title": "Benchmarking Quantum Simulation Methods",
-      "year": 2025,
+      "title": "Benchmarking quantum simulation of chemical Hamiltonians using the sorted-list encoding",
+      "year": 2026,
       "citations": null,
-      "venue": "arXiv preprint arXiv:2510.01710, 2025",
+      "venue": "Physical Review Research (accepted, 2026)",
       "doi": null,
       "arxiv": "https://arxiv.org/abs/2510.01710"
     },

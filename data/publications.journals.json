@@ -1,7 +1,25 @@
 {
   "section": "journals",
-  "updatedAt": "2026-06-16T03:09:00.000Z",
+  "updatedAt": "2026-06-23T02:00:00.000Z",
   "items": [
+    {
+      "id": "journals-115",
+      "contentHtml": "Calvin Ku, Yu-Cheng Chen, Alice Hu, Min-Hsiu Hsieh. Benchmarking quantum simulation of chemical Hamiltonians using the sorted-list encoding. Physical Review Research (accepted, 2026) [<a href=\"https://arxiv.org/abs/2510.01710\" target=\"_blank\" rel=\"noopener\">arXiv:2510.01710</a>].",
+      "article": {
+        "entryType": "article",
+        "citationKey": "Ku2026benchmarking",
+        "author": "Calvin Ku, Yu-Cheng Chen, Alice Hu, Min-Hsiu Hsieh",
+        "title": "Benchmarking quantum simulation of chemical Hamiltonians using the sorted-list encoding",
+        "journal": "Physical Review Research",
+        "year": "2026",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "doi": "",
+        "url": "https://arxiv.org/abs/2510.01710",
+        "arxiv": "2510.01710"
+      }
+    },
     {
       "id": "journals-114",
       "contentHtml": "Ryu Hayakawa, Kuo-Chin Chen, Min-Hsiu Hsieh. Quantum Walks on Simplicial Complexes and Harmonic Homology: Application to Topological Data Analysis with Superpolynomial Speedups. Quantum 10, 2138 (2026) [<a href=\"https://arxiv.org/abs/2404.15407\" target=\"_blank\" rel=\"noopener\">arXiv:2404.15407</a>] [<a href=\"https://doi.org/10.22331/q-2026-06-15-2138\" target=\"_blank\" rel=\"noopener\">DOI</a>].",

@@ -40,9 +40,9 @@
       "group": "🔧 Simulation Algorithms",
       "publications": [
         {
-          "title": "Benchmarking Quantum Simulation Methods",
+          "title": "Benchmarking quantum simulation of chemical Hamiltonians using the sorted-list encoding",
           "authors": "Calvin Ku, Yu-Cheng Chen, Alice Hu, Min-Hsiu Hsieh",
-          "venue": "arXiv preprint arXiv:2510.01710, 2025",
+          "venue": "Physical Review Research (accepted, 2026)",
           "links": [
             {
               "label": "arXiv",
