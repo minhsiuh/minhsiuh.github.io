@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1114 502" width="1114" height="502" role="img" aria-label="Filtration value diagram with brain networks and decreasing components curve">
+  <defs>
+    <linearGradient id="brainGrad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f2f2ec"/>
+      <stop offset="0.55" stop-color="#d8d8d0"/>
+      <stop offset="1" stop-color="#b8b9b2"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#777" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#070707"/>
+    </marker>
+    <style>
+      .axis-label{font-family: Arial, Helvetica, sans-serif; fill:#333; font-size:44px; font-weight:500;}
+      .tick{stroke:#b9aeb4; stroke-width:2;}
+      .dash{stroke:#333; stroke-width:4; stroke-dasharray:15 9; stroke-linecap:round;}
+      .curve{fill:none; stroke:#0646ff; stroke-width:6; stroke-linecap:round;}
+      .point{fill:#e9e9e9; stroke:#111; stroke-width:4;}
+      .mag{stroke:#e02bf2; stroke-width:4.2; stroke-linecap:round; opacity:.82; fill:none;}
+      .node{fill:#06466c; stroke:#e8f0f0; stroke-width:1;}
+      .fold{fill:none; stroke:#a9aaa4; stroke-width:3.2; opacity:.55; stroke-linecap:round;}
+    </style>
+    <g id="brain">
+      <path d="M18,76 C20,45 45,22 82,18 C110,2 155,9 184,34 C214,31 244,46 260,72 C275,95 270,127 249,142 C226,159 196,155 170,147 C151,174 111,180 84,159 C55,162 25,147 15,120 C9,105 8,88 18,76 Z" fill="url(#brainGrad)" stroke="#a7aaa8" stroke-width="3" filter="url(#softShadow)"/>
+      <path class="fold" d="M53,59 C80,39 118,47 139,69 C163,90 205,78 230,105"/>
+      <path class="fold" d="M48,94 C83,88 110,106 136,126 C159,142 199,128 226,138"/>
+      <path class="fold" d="M95,31 C83,62 88,91 111,116 C125,132 125,151 113,166"/>
+      <path class="fold" d="M155,34 C169,58 166,88 151,111 C142,126 148,145 165,153"/>
+      <path class="fold" d="M210,49 C197,75 199,102 222,126"/>
+    </g>
+  </defs>
+
+  <rect width="1114" height="502" fill="#f3d3df"/>
+  <rect x="0" y="0" width="1114" height="9" fill="#df9cb5" opacity=".8"/>
+
+  <!-- Brain 1 -->
+  <g transform="translate(34 29) scale(0.82)">
+    <use href="#brain"/>
+    <g>
+      <circle class="node" cx="55" cy="68" r="4"/><circle class="node" cx="91" cy="39" r="4"/><circle class="node" cx="123" cy="50" r="4"/>
+      <circle class="node" cx="163" cy="72" r="4"/><circle class="node" cx="211" cy="91" r="4"/><circle class="node" cx="232" cy="119" r="4"/>
+      <circle class="node" cx="80" cy="119" r="4"/><circle class="node" cx="119" cy="144" r="4"/><circle class="node" cx="169" cy="132" r="4"/>
+      <circle class="node" cx="198" cy="46" r="4"/><circle class="node" cx="141" cy="95" r="4"/><circle class="node" cx="42" cy="105" r="4"/>
+      <circle class="node" cx="101" cy="83" r="4"/><circle class="node" cx="190" cy="109" r="4"/>
+    </g>
+  </g>
+
+  <!-- Brain 2 -->
+  <g transform="translate(315 29) scale(0.82)">
+    <use href="#brain"/>
+    <path class="mag" d="M55,68 L91,39 L123,50 L163,72 L211,91"/>
+    <path class="mag" d="M80,119 L119,144 L169,132 L232,119"/>
+    <path class="mag" d="M101,83 L141,95 L190,109"/>
+    <path class="mag" d="M123,50 L119,144 M163,72 L169,132 M91,39 L55,68"/>
+    <circle class="node" cx="55" cy="68" r="4"/><circle class="node" cx="91" cy="39" r="4"/><circle class="node" cx="123" cy="50" r="4"/>
+    <circle class="node" cx="163" cy="72" r="4"/><circle class="node" cx="211" cy="91" r="4"/><circle class="node" cx="232" cy="119" r="4"/>
+    <circle class="node" cx="80" cy="119" r="4"/><circle class="node" cx="119" cy="144" r="4"/><circle class="node" cx="169" cy="132" r="4"/>
+    <circle class="node" cx="198" cy="46" r="4"/><circle class="node" cx="141" cy="95" r="4"/><circle class="node" cx="42" cy="105" r="4"/>
+  </g>
+
+  <!-- Brain 3 -->
+  <g transform="translate(605 29) scale(0.82)">
+    <use href="#brain"/>
+    <path class="mag" d="M43,105 L55,68 L91,39 L123,50 L163,72 L211,91 L232,119"/>
+    <path class="mag" d="M55,68 L141,95 L232,119 M91,39 L169,132 M123,50 L80,119 M163,72 L119,144"/>
+    <path class="mag" d="M80,119 L119,144 L169,132 L232,119 M101,83 L190,109 M198,46 L211,91"/>
+    <path class="mag" d="M91,39 L190,109 M42,105 L119,144 M123,50 L198,46"/>
+    <circle class="node" cx="55" cy="68" r="4"/><circle class="node" cx="91" cy="39" r="4"/><circle class="node" cx="123" cy="50" r="4"/>
+    <circle class="node" cx="163" cy="72" r="4"/><circle class="node" cx="211" cy="91" r="4"/><circle class="node" cx="232" cy="119" r="4"/>
+    <circle class="node" cx="80" cy="119" r="4"/><circle class="node" cx="119" cy="144" r="4"/><circle class="node" cx="169" cy="132" r="4"/>
+    <circle class="node" cx="198" cy="46" r="4"/><circle class="node" cx="141" cy="95" r="4"/><circle class="node" cx="42" cy="105" r="4"/>
+  </g>
+
+  <!-- Brain 4 -->
+  <g transform="translate(888 29) scale(0.82)">
+    <use href="#brain"/>
+    <path class="mag" d="M38,93 L55,68 L91,39 L123,50 L163,72 L211,91 L236,122"/>
+    <path class="mag" d="M43,105 L101,83 L141,95 L190,109 L232,119"/>
+    <path class="mag" d="M80,119 L119,144 L169,132 L232,119 M42,105 L119,144 M55,68 L169,132"/>
+    <path class="mag" d="M91,39 L211,91 M123,50 L232,119 M163,72 L80,119 M198,46 L55,68"/>
+    <path class="mag" d="M101,83 L198,46 M42,105 L232,119 M80,119 L211,91 M119,144 L190,109"/>
+    <path class="mag" d="M55,68 L119,144 M91,39 L141,95 M123,50 L190,109 M163,72 L232,119"/>
+    <circle class="node" cx="55" cy="68" r="4"/><circle class="node" cx="91" cy="39" r="4"/><circle class="node" cx="123" cy="50" r="4"/>
+    <circle class="node" cx="163" cy="72" r="4"/><circle class="node" cx="211" cy="91" r="4"/><circle class="node" cx="232" cy="119" r="4"/>
+    <circle class="node" cx="80" cy="119" r="4"/><circle class="node" cx="119" cy="144" r="4"/><circle class="node" cx="169" cy="132" r="4"/>
+    <circle class="node" cx="198" cy="46" r="4"/><circle class="node" cx="141" cy="95" r="4"/><circle class="node" cx="42" cy="105" r="4"/>
+  </g>
+
+  <!-- y axis small tick guide -->
+  <g opacity="0.7">
+    <line class="tick" x1="101" y1="218" x2="101" y2="389"/>
+    <line class="tick" x1="98" y1="218" x2="108" y2="218"/><line class="tick" x1="98" y1="247" x2="108" y2="247"/>
+    <line class="tick" x1="98" y1="277" x2="108" y2="277"/><line class="tick" x1="98" y1="307" x2="108" y2="307"/>
+    <line class="tick" x1="98" y1="337" x2="108" y2="337"/><line class="tick" x1="98" y1="367" x2="108" y2="367"/>
+  </g>
+
+  <!-- filtration curve and reference lines -->
+  <path class="curve" d="M126,222 C225,222 315,222 406,262 C496,302 573,354 690,362 C782,369 876,390 978,388"/>
+  <line class="dash" x1="126" y1="190" x2="126" y2="221"/>
+  <line class="dash" x1="407" y1="190" x2="407" y2="263"/>
+  <line class="dash" x1="690" y1="190" x2="690" y2="363"/>
+  <line class="dash" x1="979" y1="190" x2="979" y2="388"/>
+
+  <circle class="point" cx="126" cy="222" r="10"/>
+  <circle class="point" cx="407" cy="263" r="10"/>
+  <circle class="point" cx="690" cy="363" r="10"/>
+  <circle class="point" cx="979" cy="388" r="10"/>
+
+  <!-- x axis with ticks and arrow -->
+  <line x1="130" y1="427" x2="964" y2="427" stroke="#070707" stroke-width="8" marker-end="url(#arrow)"/>
+  <g opacity="0.35" stroke="#777" stroke-width="2">
+    <line x1="267" y1="404" x2="267" y2="413"/>
+    <line x1="409" y1="404" x2="409" y2="413"/>
+    <line x1="550" y1="404" x2="550" y2="413"/>
+    <line x1="690" y1="404" x2="690" y2="413"/>
+    <line x1="831" y1="404" x2="831" y2="413"/>
+  </g>
+
+  <text class="axis-label" x="418" y="477">Filtration value</text>
+  <text class="axis-label" x="70" y="418" transform="rotate(-90 70 418)">Components</text>
+</svg>
