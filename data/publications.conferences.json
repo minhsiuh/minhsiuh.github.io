@@ -1,7 +1,57 @@
 {
   "section": "conferences",
-  "updatedAt": "2026-03-10T04:47:13.432Z",
+  "updatedAt": "2026-07-09T00:15:00.000Z",
   "items": [
+    {
+      "id": "conferences-44",
+      "contentHtml": "Min-Hsiu Hsieh, Michael de Oliveira, Sathyawageeswar Subramanian, Xingjian Zhang. Worst-case depth hierarchy for shallow quantum circuits. 67th Annual IEEE Symposium on Foundations of Computer Science (FOCS 2026) (2026). [<a href=\"https://arxiv.org/abs/2606.16425\" target=\"_blank\" rel=\"noopener\">arXiv:2606.16425</a>].",
+      "inproceedings": {
+        "entryType": "inproceedings",
+        "citationKey": "Hsieh2026Conf44",
+        "author": "Min-Hsiu Hsieh, Michael de Oliveira, Sathyawageeswar Subramanian, Xingjian Zhang",
+        "title": "Worst-case depth hierarchy for shallow quantum circuits",
+        "booktitle": "67th Annual IEEE Symposium on Foundations of Computer Science (FOCS 2026)",
+        "year": "2026",
+        "pages": "",
+        "doi": "",
+        "url": "https://arxiv.org/abs/2606.16425",
+        "editor": "",
+        "series": "",
+        "volume": "",
+        "publisher": "IEEE",
+        "address": "",
+        "isbn": "",
+        "issn": "",
+        "urn": "",
+        "note": "",
+        "arxiv": "2606.16425"
+      }
+    },
+    {
+      "id": "conferences-45",
+      "contentHtml": "Adam Wills, Ting-Chun Lin, Rachel Yun Zhang, Min-Hsiu Hsieh. Linear-Time Encodable and Decodable Quantum Error-Correcting Codes. 67th Annual IEEE Symposium on Foundations of Computer Science (FOCS 2026) (2026). [<a href=\"https://arxiv.org/abs/2603.04543\" target=\"_blank\" rel=\"noopener\">arXiv:2603.04543</a>].",
+      "inproceedings": {
+        "entryType": "inproceedings",
+        "citationKey": "Hsieh2026Conf45",
+        "author": "Adam Wills, Ting-Chun Lin, Rachel Yun Zhang, Min-Hsiu Hsieh",
+        "title": "Linear-Time Encodable and Decodable Quantum Error-Correcting Codes",
+        "booktitle": "67th Annual IEEE Symposium on Foundations of Computer Science (FOCS 2026)",
+        "year": "2026",
+        "pages": "",
+        "doi": "",
+        "url": "https://arxiv.org/abs/2603.04543",
+        "editor": "",
+        "series": "",
+        "volume": "",
+        "publisher": "IEEE",
+        "address": "",
+        "isbn": "",
+        "issn": "",
+        "urn": "",
+        "note": "",
+        "arxiv": "2603.04543"
+      }
+    },
     {
       "id": "conferences-43",
       "contentHtml": "Jun Qi, Chao-Han Huck Yang, Pin-Yu Chen, Min-Hsiu Hsieh. Pre-training Tensor-Train Networks Facilitates Machine Learning with Variational Quantum Circuits. ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing, pp. 1836-1840 (2026) [<a href=\"https://arxiv.org/abs/2306.03741\" target=\"_blank\" rel=\"noopener\">arXiv:2306.03741</a>] [<a href=\"https://doi.org/10.1109/ICASSP55912.2026.11461253\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
