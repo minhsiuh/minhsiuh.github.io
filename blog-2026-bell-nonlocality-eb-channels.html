@@ -210,6 +210,10 @@
   #hint{position:fixed;bottom:3vh;right:3vw;z-index:30;font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;opacity:.4;mix-blend-mode:difference;color:#aaa}
   body.low-power #hint{opacity:.72;color:var(--paper);mix-blend-mode:normal}
   body.light-bg.low-power #hint{color:var(--ink)}
+  .site-back{position:fixed;top:18px;left:18px;z-index:40;width:38px;height:38px;display:grid;place-items:center;border:1px solid rgba(var(--paper-rgb),.42);color:var(--paper);background:rgba(var(--ink-rgb),.48);font-family:var(--sans-zh);font-size:22px;line-height:1;text-decoration:none;backdrop-filter:blur(8px);transition:transform .18s ease,background .18s ease,border-color .18s ease}
+  .site-back:hover,.site-back:focus-visible{transform:translateX(-2px);background:rgba(var(--ink-rgb),.82);border-color:rgba(var(--paper-rgb),.75);outline:none}
+  body.light-bg .site-back{color:var(--ink);background:rgba(var(--paper-rgb),.72);border-color:rgba(var(--ink-rgb),.3)}
+  body.light-bg .site-back:hover,body.light-bg .site-back:focus-visible{background:rgba(var(--paper-rgb),.96);border-color:rgba(var(--ink-rgb),.62)}
 
   /* ============================================================
      ============ LAYOUTS API · 面向 agent 的类（v2）============
@@ -726,6 +730,7 @@
 
 <canvas id="bg-dark" class="bg"></canvas>
 <canvas id="bg-light" class="bg"></canvas>
+<a class="site-back" href="blog.html" aria-label="Back to blog" title="Back to blog">←</a>
 <div id="hint">← → Slides · B Static · ESC Index</div>
 
 <div id="deck">
