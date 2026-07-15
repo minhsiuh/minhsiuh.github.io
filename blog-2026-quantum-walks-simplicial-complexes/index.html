@@ -200,9 +200,7 @@
                 page-break-after: auto;
             }
 
-            .deck-controls,
-            .edit-hotzone,
-            .edit-toggle {
+            .deck-controls {
                 display: none !important;
             }
         }
@@ -4093,8 +4091,8 @@
         }
 
         /* ===========================================
-           DECK CHROME AND INLINE EDITING
-           Progress indicator, slide counter, and edit mode.
+           DECK CHROME
+           Progress indicator and slide counter.
            =========================================== */
         .progress-shell {
             position: fixed;
@@ -4131,73 +4129,6 @@
             color: rgba(244, 247, 251, 0.48);
             font-family: var(--font-mono);
             font-size: 13px;
-        }
-
-        .edit-hotzone {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 90px;
-            height: 90px;
-            z-index: 10000;
-            cursor: pointer;
-        }
-
-        .edit-toggle {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            width: 46px;
-            height: 46px;
-            border: 1px solid rgba(98, 243, 213, 0.42);
-            border-radius: 50%;
-            background: rgba(8, 11, 20, 0.92);
-            color: var(--cyan);
-            font-family: var(--font-mono);
-            z-index: 10001;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.25s ease, transform 0.25s ease;
-        }
-
-        .edit-toggle.show,
-        .edit-toggle.active {
-            opacity: 1;
-            pointer-events: auto;
-        }
-
-        .edit-toggle.active {
-            transform: scale(1.05);
-            background: rgba(98, 243, 213, 0.18);
-        }
-
-        .editing [data-editable="true"] {
-            outline: 1px dashed rgba(98, 243, 213, 0.65);
-            outline-offset: 4px;
-            cursor: text;
-        }
-
-        .edit-toast {
-            position: fixed;
-            top: 22px;
-            left: 84px;
-            z-index: 10001;
-            color: var(--ink);
-            background: rgba(8, 11, 20, 0.92);
-            border: 1px solid rgba(98, 243, 213, 0.34);
-            border-radius: 8px;
-            padding: 12px 16px;
-            font-family: var(--font-mono);
-            font-size: 13px;
-            opacity: 0;
-            transform: translateY(-6px);
-            pointer-events: none;
-            transition: opacity 0.25s ease, transform 0.25s ease;
-        }
-
-        .edit-toast.show {
-            opacity: 1;
-            transform: translateY(0);
         }
 
         /* ===========================================
@@ -4465,13 +4396,6 @@
         body.editorial-deck .gate-cost-stack .base,
         body.editorial-deck .gate-cost-stack .times {
             color: var(--ink);
-        }
-
-        body.editorial-deck .edit-toggle,
-        body.editorial-deck .edit-toast {
-            background: rgba(255, 250, 238, 0.96);
-            color: var(--ink);
-            border-color: rgba(0, 143, 149, 0.38);
         }
 
         body.editorial-deck .filtration-panel {
@@ -5049,8 +4973,8 @@
                 <div class="slide-inner hero-title">
                     <div>
                         <div class="topline reveal-left"><a class="eyebrow eyebrow-link" href="https://quantum-journal.org/papers/q-2026-06-15-2138/" target="_blank" rel="noopener">Quantum 10, 2138 (2026)</a><span class="rule"></span></div>
-                        <h1 class="cover-title reveal delay-1" data-editable="true"><span class="nowrap">How quantum walks</span><br><span class="nowrap">see high-dimensional</span><br><span class="nowrap">structure</span></h1>
-                        <p class="lead reveal delay-2" data-editable="true" style="margin-top:34px;">Quantum Walks on Simplicial Complexes and Harmonic Homology: Application to Topological Data Analysis with Superpolynomial Speedups</p>
+                        <h1 class="cover-title reveal delay-1"><span class="nowrap">How quantum walks</span><br><span class="nowrap">see high-dimensional</span><br><span class="nowrap">structure</span></h1>
+                        <p class="lead reveal delay-2" style="margin-top:34px;">Quantum Walks on Simplicial Complexes and Harmonic Homology: Application to Topological Data Analysis with Superpolynomial Speedups</p>
                     </div>
                     <div class="author-showcase reveal-scale delay-2">
                         <div class="author-kicker">Authors</div>
@@ -5079,11 +5003,11 @@
                 <div class="slide-number">02 / 21</div>
                 <div class="slide-inner">
                     <div class="topline reveal-left"><span class="eyebrow">Problem</span><span class="rule"></span></div>
-                    <h2 class="reveal delay-1" data-editable="true">Graphs only capture pairwise interactions. The real shape of data is often higher-order.</h2>
+                    <h2 class="reveal delay-1">Graphs only capture pairwise interactions. The real shape of data is often higher-order.</h2>
                     <div class="two-col-compact" style="height:574px;margin-top:42px;">
                         <div class="panel problem-card reveal delay-2">
                             <div class="panel-title">Pairwise graph</div>
-                            <p class="problem-copy" data-editable="true">Graphs represent observed pairwise links: which vertices are connected by selected edges.</p>
+                            <p class="problem-copy">Graphs represent observed pairwise links: which vertices are connected by selected edges.</p>
                             <svg class="science-figure problem-figure" viewBox="0 0 640 360" role="img" aria-label="Pairwise graph view">
                                 <line class="fig-edge" x1="70" y1="132" x2="245" y2="90"/>
                                 <line class="fig-edge" x1="245" y1="90" x2="388" y2="142"/>
@@ -5105,7 +5029,7 @@
                         </div>
                         <div class="panel strong problem-card reveal delay-3">
                             <div class="panel-title">Higher-dimensional object</div>
-                            <p class="problem-copy" data-editable="true">Some correlations involve many points at once; representing them may require a higher-dimensional object.</p>
+                            <p class="problem-copy">Some correlations involve many points at once; representing them may require a higher-dimensional object.</p>
                             <svg class="science-figure problem-figure" viewBox="0 0 640 360" role="img" aria-label="Klein bottle topology illustration" data-klein-bottle>
                                 <g id="kleinParametricMesh"></g>
                             </svg>
@@ -5118,10 +5042,10 @@
                 <div class="slide-number">03 / 21</div>
                 <div class="slide-inner">
                     <div class="topline reveal-left"><span class="eyebrow">Filtration</span><span class="rule"></span></div>
-                    <h2 class="reveal delay-1" data-editable="true">A filtration is a standard way to identify high-dimensional structure hidden in data.</h2>
+                    <h2 class="reveal delay-1">A filtration is a standard way to identify high-dimensional structure hidden in data.</h2>
                     <div class="panel strong filtration-panel reveal delay-2" style="margin-top:44px;">
                         <div class="panel-title">From scale to structure</div>
-                        <p data-editable="true">Instead of choosing one graph, grow a radius parameter. As scale increases, pairwise links, cycles, and filled higher-dimensional objects appear in a nested sequence.</p>
+                        <p>Instead of choosing one graph, grow a radius parameter. As scale increases, pairwise links, cycles, and filled higher-dimensional objects appear in a nested sequence.</p>
                         <div class="paper-mount">
                         <svg class="filtration-figure" viewBox="0 0 1500 462" role="img" aria-label="Filtration from point cloud to simplicial complexes">
                             <defs>
@@ -5236,7 +5160,7 @@
                 <div class="slide-number">04 / 21</div>
                 <div class="slide-inner">
                     <div class="topline reveal-left"><span class="eyebrow">Concrete example</span><span class="rule"></span></div>
-                    <h2 class="brain-slide-title reveal delay-1" data-editable="true">Brain connectivity as a filtration example.</h2>
+                    <h2 class="brain-slide-title reveal delay-1">Brain connectivity as a filtration example.</h2>
                     <div class="brain-example">
                         <div class="panel brain-map-panel reveal delay-2">
                             <div class="panel-title">Brain connectivity study</div>
@@ -5244,15 +5168,15 @@
                                 <div class="brain-bridge-row">
                                     <div class="brain-bridge-step">
                                         <div class="step-label">Data</div>
-                                        <p data-editable="true">Brain regions become nodes; measured connectivity gives weighted links.</p>
+                                        <p>Brain regions become nodes; measured connectivity gives weighted links.</p>
                                     </div>
                                     <div class="brain-bridge-step">
                                         <div class="step-label">Filtration</div>
-                                        <p data-editable="true">Thresholds turn one weighted network into a nested sequence of complexes.</p>
+                                        <p>Thresholds turn one weighted network into a nested sequence of complexes.</p>
                                     </div>
                                     <div class="brain-bridge-step">
                                         <div class="step-label">Signal</div>
-                                        <p data-editable="true">Cliques, loops, and higher-order holes become topological signatures, and these neuronal structures can be important for brain functionality.</p>
+                                        <p>Cliques, loops, and higher-order holes become topological signatures, and these neuronal structures can be important for brain functionality.</p>
                                     </div>
                                 </div>
                                 <img class="brain-figure" src="assets/filtration_brain_tda.svg" alt="Filtration value diagram with brain networks and decreasing components curve">
@@ -5266,12 +5190,12 @@
                 <div class="slide-number">05 / 21</div>
                 <div class="slide-inner">
                     <div class="topline reveal-left"><span class="eyebrow">Topological Data Analysis</span><span class="rule"></span></div>
-                    <h2 class="reveal delay-1" data-editable="true">TDA asks what survives as scale changes.</h2>
+                    <h2 class="reveal delay-1">TDA asks what survives as scale changes.</h2>
                     <div class="tda-bridge">
                         <div class="panel tda-step reveal delay-2">
                             <div class="metric-label">01</div>
-                            <h3 data-editable="true">Start with a filtration</h3>
-                            <p data-editable="true">A filtration gives a nested sequence of complexes across radius or threshold.</p>
+                            <h3>Start with a filtration</h3>
+                            <p>A filtration gives a nested sequence of complexes across radius or threshold.</p>
                             <svg class="tda-visual tda-chain" viewBox="0 0 460 166" role="img" aria-label="Nested complexes across scale">
                                 <text x="24" y="32">r1</text>
                                 <text x="210" y="32">r2</text>
@@ -5301,8 +5225,8 @@
                         </div>
                         <div class="panel strong tda-step reveal delay-3">
                             <div class="metric-label">02</div>
-                            <h3 data-editable="true">Track birth and death</h3>
-                            <p data-editable="true">Components, cycles, voids, and higher-order holes appear, merge, fill, or disappear.</p>
+                            <h3>Track birth and death</h3>
+                            <p>Components, cycles, voids, and higher-order holes appear, merge, fill, or disappear.</p>
                             <svg class="tda-visual tda-barcode" viewBox="0 0 500 166" role="img" aria-label="Persistence intervals">
                                 <line class="tda-axis" x1="44" y1="128" x2="462" y2="128"/>
                                 <text x="36" y="150">scale</text>
@@ -5315,8 +5239,8 @@
                         </div>
                         <div class="panel tda-step reveal delay-4">
                             <div class="metric-label">03</div>
-                            <h3 data-editable="true">Return descriptors</h3>
-                            <p data-editable="true">Long-lived features become compact signatures of high-dimensional structure.</p>
+                            <h3>Return descriptors</h3>
+                            <p>Long-lived features become compact signatures of high-dimensional structure.</p>
                             <svg class="tda-visual tda-diagram" viewBox="0 0 460 166" role="img" aria-label="Persistence diagram descriptors">
                                 <line class="tda-axis" x1="62" y1="130" x2="410" y2="130"/>
                                 <line class="tda-axis" x1="62" y1="130" x2="62" y2="28"/>
@@ -5332,7 +5256,7 @@
                     </div>
                     <div class="tda-goal reveal delay-5">
                         <div class="panel-title">TDA goal</div>
-                        <p data-editable="true">Separate stable high-dimensional signal from scale-specific noise.</p>
+                        <p>Separate stable high-dimensional signal from scale-specific noise.</p>
                     </div>
                 </div>
             </section>
@@ -5341,37 +5265,37 @@
                 <div class="slide-number">06 / 21</div>
                 <div class="slide-inner notation-bridge-layout">
                     <div class="topline reveal-left"><span class="eyebrow">Vocabulary bridge</span><span class="rule"></span></div>
-                    <h2 class="reveal delay-1 notation-bridge-title" data-editable="true">Notation bridge: from X<sub>k</sub> to β<sub>k</sub>.</h2>
+                    <h2 class="reveal delay-1 notation-bridge-title">Notation bridge: from X<sub>k</sub> to β<sub>k</sub>.</h2>
                     <div class="notation-stage reveal delay-2">
                         <div class="notation-flow reveal delay-3">
                             <div class="relation-term">
-                                <div class="term-symbol" data-editable="true">X<sub>k</sub></div>
+                                <div class="term-symbol">X<sub>k</sub></div>
                                 <div class="term-label">k-simplices</div>
-                                <p class="term-copy" data-editable="true">the set of all k-simplices</p>
+                                <p class="term-copy">the set of all k-simplices</p>
                             </div>
                             <div class="relation-arrow" aria-hidden="true">&rarr;</div>
                             <div class="relation-term dual">
-                                <div class="term-symbol long" data-editable="true">C<sub>k</sub>, &part;<sub>k</sub></div>
+                                <div class="term-symbol long">C<sub>k</sub>, &part;<sub>k</sub></div>
                                 <div class="term-label">chains / boundary map</div>
-                                <p class="term-copy" data-editable="true"><span>C<sub>k</sub> = span(X<sub>k</sub>)</span><span>&part;<sub>k</sub>: C<sub>k</sub> → C<sub>k-1</sub></span></p>
+                                <p class="term-copy"><span>C<sub>k</sub> = span(X<sub>k</sub>)</span><span>&part;<sub>k</sub>: C<sub>k</sub> → C<sub>k-1</sub></span></p>
                             </div>
                             <div class="relation-arrow" aria-hidden="true">&rarr;</div>
                             <div class="relation-term dual">
-                                <div class="term-symbol" data-editable="true">Z<sub>k</sub>, B<sub>k</sub></div>
+                                <div class="term-symbol">Z<sub>k</sub>, B<sub>k</sub></div>
                                 <div class="term-label">cycles / boundaries</div>
-                                <p class="term-copy" data-editable="true"><span>Z<sub>k</sub> = ker &part;<sub>k</sub></span><span>B<sub>k</sub> = im &part;<sub>k+1</sub></span></p>
+                                <p class="term-copy"><span>Z<sub>k</sub> = ker &part;<sub>k</sub></span><span>B<sub>k</sub> = im &part;<sub>k+1</sub></span></p>
                             </div>
                             <div class="relation-arrow" aria-hidden="true">&rarr;</div>
                             <div class="relation-term">
-                                <div class="term-symbol" data-editable="true">H<sub>k</sub></div>
+                                <div class="term-symbol">H<sub>k</sub></div>
                                 <div class="term-label">homology</div>
-                                <p class="term-copy" data-editable="true">the quotient group Z<sub>k</sub>/B<sub>k</sub></p>
+                                <p class="term-copy">the quotient group Z<sub>k</sub>/B<sub>k</sub></p>
                             </div>
                             <div class="relation-arrow" aria-hidden="true">&rarr;</div>
                             <div class="relation-term betti">
-                                <div class="term-symbol" data-editable="true">β<sub>k</sub></div>
+                                <div class="term-symbol">β<sub>k</sub></div>
                                 <div class="term-label">Betti number</div>
-                                <p class="term-copy" data-editable="true">rank of H<sub>k</sub></p>
+                                <p class="term-copy">rank of H<sub>k</sub></p>
                             </div>
                         </div>
                     </div>
@@ -5382,30 +5306,30 @@
                 <div class="slide-number">07 / 21</div>
                 <div class="slide-inner">
                     <div class="topline reveal-left"><span class="eyebrow">Classical bottleneck</span><span class="rule"></span></div>
-                    <h2 class="reveal delay-1" data-editable="true">Why the main targets of TDA are hard classically.</h2>
+                    <h2 class="reveal delay-1">Why the main targets of TDA are hard classically.</h2>
                     <div class="three-col" style="margin-top:36px;">
                         <div class="panel target-card reveal delay-3" style="min-height:360px;">
-                            <div class="metric" data-editable="true">β<sub>k</sub>/|X<sub>k</sub>|</div>
+                            <div class="metric">β<sub>k</sub>/|X<sub>k</sub>|</div>
                             <div class="metric-label">Normalized Betti</div>
                             <div class="role-block">
-                                <p class="small role-line" data-editable="true"><span class="role-tag">Role</span>Estimate the normalized k-dimensional hole count on a comparable scale.</p>
-                                <p class="small role-line" style="margin-top:14px;color:var(--muted);" data-editable="true"><span class="role-tag">Classical bottleneck</span>Inverse-polynomial normalized Betti estimation is <span class="amber">DQC1-hard</span> for general simplicial complexes.</p>
+                                <p class="small role-line"><span class="role-tag">Role</span>Estimate the normalized k-dimensional hole count on a comparable scale.</p>
+                                <p class="small role-line" style="margin-top:14px;color:var(--muted);"><span class="role-tag">Classical bottleneck</span>Inverse-polynomial normalized Betti estimation is <span class="amber">DQC1-hard</span> for general simplicial complexes.</p>
                             </div>
                         </div>
                         <div class="panel target-card reveal delay-4" style="min-height:360px;">
-                            <div class="metric" data-editable="true"><span class="math-script">β<span class="scripts"><sup>i,j</sup><sub>k</sub></span></span>/|X<sub>k</sub>|</div>
+                            <div class="metric"><span class="math-script">β<span class="scripts"><sup>i,j</sup><sub>k</sub></span></span>/|X<sub>k</sub>|</div>
                             <div class="metric-label">Persistent Betti</div>
                             <div class="role-block">
-                                <p class="small role-line" data-editable="true"><span class="role-tag">Role</span>Estimate the robust features that persist across filtration level i to level j.</p>
-                                <p class="small role-line" style="margin-top:14px;color:var(--muted);" data-editable="true"><span class="role-tag">Classical bottleneck</span>No known efficient inverse-polynomial estimator.</p>
+                                <p class="small role-line"><span class="role-tag">Role</span>Estimate the robust features that persist across filtration level i to level j.</p>
+                                <p class="small role-line" style="margin-top:14px;color:var(--muted);"><span class="role-tag">Classical bottleneck</span>No known efficient inverse-polynomial estimator.</p>
                             </div>
                         </div>
                         <div class="panel target-card reveal delay-5" style="min-height:360px;">
-                            <div class="metric" data-editable="true">H<sub>k</sub>(X(G))≠0?</div>
+                            <div class="metric">H<sub>k</sub>(X(G))≠0?</div>
                             <div class="metric-label">Promise clique homology</div>
                             <div class="role-block">
-                                <p class="small role-line" data-editable="true"><span class="role-tag">Role</span>Turn a graph problem into asking whether the clique complex has nontrivial H<sub>k</sub>.</p>
-                                <p class="small role-line" style="margin-top:14px;color:var(--muted);" data-editable="true"><span class="role-tag">Classical bottleneck</span>The promise clique homology problem is <span class="amber">QMA<sub>1</sub>-complete</span>.</p>
+                                <p class="small role-line"><span class="role-tag">Role</span>Turn a graph problem into asking whether the clique complex has nontrivial H<sub>k</sub>.</p>
+                                <p class="small role-line" style="margin-top:14px;color:var(--muted);"><span class="role-tag">Classical bottleneck</span>The promise clique homology problem is <span class="amber">QMA<sub>1</sub>-complete</span>.</p>
                             </div>
                         </div>
                     </div>
@@ -5416,33 +5340,33 @@
                 <div class="slide-number">08 / 21</div>
                 <div class="slide-inner">
                     <div class="topline reveal-left"><span class="eyebrow">Main results</span><span class="rule"></span></div>
-                    <h2 class="reveal delay-1" data-editable="true">Quantum gate-count bounds.</h2>
+                    <h2 class="reveal delay-1">Quantum gate-count bounds.</h2>
                     <div class="result-map">
                         <div class="panel result-node reveal delay-3">
-                            <div class="metric" data-editable="true">β<sub>k</sub>/|X<sub>k</sub>|</div>
+                            <div class="metric">β<sub>k</sub>/|X<sub>k</sub>|</div>
                             <div class="metric-label">Normalized Betti</div>
                             <div class="result-facts">
-                                <div class="result-fact" data-editable="true"><span class="fact-label">Accuracy</span><span>additive error ±ε</span></div>
-                                <div class="result-fact gate-cost" data-editable="true"><span class="fact-label">Gate cost</span><span class="gate-cost-stack"><span class="base">O(n<sup>3</sup> log(1/ε))</span><span class="times">×</span><span class="penalty">1/λ<sub>k</sub></span></span></div>
-                                <div class="result-fact promise" data-editable="true"><span class="fact-label">Gap</span><span>λ<sub>k</sub> ∈ Ω(1/poly(n))</span></div>
+                                <div class="result-fact"><span class="fact-label">Accuracy</span><span>additive error ±ε</span></div>
+                                <div class="result-fact gate-cost"><span class="fact-label">Gate cost</span><span class="gate-cost-stack"><span class="base">O(n<sup>3</sup> log(1/ε))</span><span class="times">×</span><span class="penalty">1/λ<sub>k</sub></span></span></div>
+                                <div class="result-fact promise"><span class="fact-label">Gap</span><span>λ<sub>k</sub> ∈ Ω(1/poly(n))</span></div>
                             </div>
                         </div>
                         <div class="panel result-node reveal delay-4">
-                            <div class="metric" data-editable="true"><span class="math-script">β<span class="scripts"><sup>i,j</sup><sub>k</sub></span></span>/|X<sub>k</sub>|</div>
+                            <div class="metric"><span class="math-script">β<span class="scripts"><sup>i,j</sup><sub>k</sub></span></span>/|X<sub>k</sub>|</div>
                             <div class="metric-label">Persistent Betti</div>
                             <div class="result-facts">
-                                <div class="result-fact" data-editable="true"><span class="fact-label">Accuracy</span><span>additive error ±ε</span></div>
-                                <div class="result-fact gate-cost" data-editable="true"><span class="fact-label">Gate cost</span><span class="gate-cost-stack"><span class="base">Õ(n<sup>3</sup> log(1/ε))</span><span class="times">×</span><span class="penalty">(1/λ<sup>i,down</sup> + 1/λ<sup>j,up</sup>)</span></span></div>
-                                <div class="result-fact promise" data-editable="true"><span class="fact-label">Gap</span><span>λ<sup>i,down</sup>, λ<sup>j,up</sup> ∈ Ω(1/poly(n))</span></div>
+                                <div class="result-fact"><span class="fact-label">Accuracy</span><span>additive error ±ε</span></div>
+                                <div class="result-fact gate-cost"><span class="fact-label">Gate cost</span><span class="gate-cost-stack"><span class="base">Õ(n<sup>3</sup> log(1/ε))</span><span class="times">×</span><span class="penalty">(1/λ<sup>i,down</sup> + 1/λ<sup>j,up</sup>)</span></span></div>
+                                <div class="result-fact promise"><span class="fact-label">Gap</span><span>λ<sup>i,down</sup>, λ<sup>j,up</sup> ∈ Ω(1/poly(n))</span></div>
                             </div>
                         </div>
                         <div class="panel result-node reveal delay-5">
-                            <div class="metric" data-editable="true">H<sub>k</sub>(X(G))≠0?</div>
+                            <div class="metric">H<sub>k</sub>(X(G))≠0?</div>
                             <div class="metric-label">Promise clique homology</div>
                             <div class="result-facts">
-                                <div class="result-fact" data-editable="true"><span class="fact-label">Decision</span><span>YES ≥ 1 − O(ε); NO ≤ O(ε)</span></div>
-                                <div class="result-fact gate-cost" data-editable="true"><span class="fact-label">Gate cost</span><span class="gate-cost-stack"><span class="base">O(n<sup>3</sup> log(1/ε))</span><span class="times">×</span><span class="penalty">1/g(n)</span></span></div>
-                                <div class="result-fact promise" data-editable="true"><span class="fact-label">Gap</span><span>g(n) ≥ 1/poly(n)</span></div>
+                                <div class="result-fact"><span class="fact-label">Decision</span><span>YES ≥ 1 − O(ε); NO ≤ O(ε)</span></div>
+                                <div class="result-fact gate-cost"><span class="fact-label">Gate cost</span><span class="gate-cost-stack"><span class="base">O(n<sup>3</sup> log(1/ε))</span><span class="times">×</span><span class="penalty">1/g(n)</span></span></div>
+                                <div class="result-fact promise"><span class="fact-label">Gap</span><span>g(n) ≥ 1/poly(n)</span></div>
                             </div>
                         </div>
                     </div>
@@ -5453,34 +5377,34 @@
                 <div class="slide-number">09 / 21</div>
                 <div class="slide-inner">
                     <div class="topline reveal-left"><span class="eyebrow">Technical contribution</span><span class="rule"></span></div>
-                    <h2 class="reveal delay-1" data-editable="true">Implementation costs behind the main gate bounds.</h2>
-                    <p class="lead reveal delay-2" style="margin-top:18px;max-width:1320px;" data-editable="true">All three bounds use the same projector-building pattern.</p>
+                    <h2 class="reveal delay-1">Implementation costs behind the main gate bounds.</h2>
+                    <p class="lead reveal delay-2" style="margin-top:18px;max-width:1320px;">All three bounds use the same projector-building pattern.</p>
                     <div class="result-map">
                         <div class="panel result-node reveal delay-3">
-                            <div class="metric" data-editable="true">U<sup>up</sup>, U<sup>down</sup>, U<sup>h</sup></div>
+                            <div class="metric">U<sup>up</sup>, U<sup>down</sup>, U<sup>h</sup></div>
                             <div class="metric-label">Walk unitaries</div>
                             <div class="result-facts">
-                                <div class="result-fact" data-editable="true"><span class="fact-label">Role</span><span>Build the walk unitaries from graph adjacency.</span></div>
-                                <div class="result-fact gate-cost" data-editable="true"><span class="fact-label">Gate cost</span><span class="gate-cost-stack"><span class="base">Õ(n<sup>2</sup> log(1/ε))</span></span></div>
-                                <div class="result-fact promise" data-editable="true"><span class="fact-label">Result</span><span>Theorem 4 gives an efficient implementation of the walk primitives.</span></div>
+                                <div class="result-fact"><span class="fact-label">Role</span><span>Build the walk unitaries from graph adjacency.</span></div>
+                                <div class="result-fact gate-cost"><span class="fact-label">Gate cost</span><span class="gate-cost-stack"><span class="base">Õ(n<sup>2</sup> log(1/ε))</span></span></div>
+                                <div class="result-fact promise"><span class="fact-label">Result</span><span>Theorem 4 gives an efficient implementation of the walk primitives.</span></div>
                             </div>
                         </div>
                         <div class="panel result-node reveal delay-4">
-                            <div class="metric" data-editable="true">Δ → Π</div>
+                            <div class="metric">Δ → Π</div>
                             <div class="metric-label">Laplacian + QSVT</div>
                             <div class="result-facts">
-                                <div class="result-fact" data-editable="true"><span class="fact-label">Role</span><span>Encode the Laplacian and turn it into a projector.</span></div>
-                                <div class="result-fact gate-cost" data-editable="true"><span class="fact-label">Walk-unitary uses</span><span class="gate-cost-stack"><span class="base">O(K log(1/ε))</span><span class="times">×</span><span class="penalty">1/λ<sub>k</sub></span></span></div>
-                                <div class="result-fact promise" data-editable="true"><span class="fact-label">Output</span><span>K is the walk normalization factor; the projector depends on the application.</span></div>
+                                <div class="result-fact"><span class="fact-label">Role</span><span>Encode the Laplacian and turn it into a projector.</span></div>
+                                <div class="result-fact gate-cost"><span class="fact-label">Walk-unitary uses</span><span class="gate-cost-stack"><span class="base">O(K log(1/ε))</span><span class="times">×</span><span class="penalty">1/λ<sub>k</sub></span></span></div>
+                                <div class="result-fact promise"><span class="fact-label">Output</span><span>K is the walk normalization factor; the projector depends on the application.</span></div>
                             </div>
                         </div>
                         <div class="panel result-node reveal delay-5">
-                            <div class="metric" data-editable="true">apply Π</div>
+                            <div class="metric">apply Π</div>
                             <div class="metric-label">Application readout</div>
                             <div class="result-facts">
-                                <div class="result-fact" data-editable="true"><span class="fact-label">Role</span><span>Attach the target-specific readout to the projector.</span></div>
-                                <div class="result-fact gate-cost" data-editable="true"><span class="fact-label">Gate cost</span><span class="gate-cost-stack"><span class="base">O(n<sup>3</sup> log(1/ε))</span><span class="times">×</span><span class="penalty">1/λ<sub>k</sub></span></span></div>
-                                <div class="result-fact promise" data-editable="true"><span class="fact-label">Bridge</span><span>This is the reusable gate-count scale behind the application bounds.</span></div>
+                                <div class="result-fact"><span class="fact-label">Role</span><span>Attach the target-specific readout to the projector.</span></div>
+                                <div class="result-fact gate-cost"><span class="fact-label">Gate cost</span><span class="gate-cost-stack"><span class="base">O(n<sup>3</sup> log(1/ε))</span><span class="times">×</span><span class="penalty">1/λ<sub>k</sub></span></span></div>
+                                <div class="result-fact promise"><span class="fact-label">Bridge</span><span>This is the reusable gate-count scale behind the application bounds.</span></div>
                             </div>
                         </div>
                     </div>
@@ -5491,16 +5415,16 @@
                 <div class="slide-number">10 / 21</div>
                 <div class="slide-inner">
                     <div class="topline reveal-left"><span class="eyebrow">Applications</span><span class="rule"></span></div>
-                    <h2 class="reveal delay-1" data-editable="true">High-dimensional Dirichlet: from boundary data to harmonic extension.</h2>
-                    <p class="lead reveal delay-2" style="margin-top:18px;max-width:1320px;" data-editable="true">Given boundary values on a simplicial boundary, solve for a compatible interior signal with harmonic dynamics.</p>
+                    <h2 class="reveal delay-1">High-dimensional Dirichlet: from boundary data to harmonic extension.</h2>
+                    <p class="lead reveal delay-2" style="margin-top:18px;max-width:1320px;">Given boundary values on a simplicial boundary, solve for a compatible interior signal with harmonic dynamics.</p>
                     <div class="application-showcase single-application dirichlet-triptych">
                         <div class="panel result-node dirichlet-side-card reveal delay-3">
-                            <div class="metric" data-editable="true">f<sub>∂</sub> ↦ u</div>
+                            <div class="metric">f<sub>∂</sub> ↦ u</div>
                             <div class="metric-label">Boundary-value problem</div>
                             <div class="result-facts">
-                                <div class="result-fact" data-editable="true"><span class="fact-label">Task</span><span>Solve Δ<sub>k</sub>u = 0 with fixed boundary data.</span></div>
-                                <div class="result-fact" data-editable="true"><span class="fact-label">Input</span><span>Boundary values f<sub>∂</sub> on boundary k-simplices.</span></div>
-                                <div class="result-fact promise" data-editable="true"><span class="fact-label">Goal</span><span>Produce an interior signal u that is harmonic with the prescribed boundary data.</span></div>
+                                <div class="result-fact"><span class="fact-label">Task</span><span>Solve Δ<sub>k</sub>u = 0 with fixed boundary data.</span></div>
+                                <div class="result-fact"><span class="fact-label">Input</span><span>Boundary values f<sub>∂</sub> on boundary k-simplices.</span></div>
+                                <div class="result-fact promise"><span class="fact-label">Goal</span><span>Produce an interior signal u that is harmonic with the prescribed boundary data.</span></div>
                             </div>
                         </div>
                         <div class="dirichlet-figure-panel reveal delay-4">
@@ -5509,12 +5433,12 @@
                             </div>
                         </div>
                         <div class="panel result-node dirichlet-side-card reveal delay-5">
-                            <div class="metric" data-editable="true">Proj(ker Δ<sub>k</sub>)</div>
+                            <div class="metric">Proj(ker Δ<sub>k</sub>)</div>
                             <div class="metric-label">Article result</div>
                             <div class="result-facts">
-                                <div class="result-fact" data-editable="true"><span class="fact-label">Role</span><span>Build the harmonic projector with the walk unitary and QSVT.</span></div>
-                                <div class="result-fact gate-cost" data-editable="true"><span class="fact-label">Gate cost</span><span class="gate-cost-stack"><span class="base">O(n<sup>3</sup> log(1/ε))</span><span class="times">×</span><span class="penalty">1/λ<sub>k</sub></span></span></div>
-                                <div class="result-fact promise" data-editable="true"><span class="fact-label">Gap</span><span>Need λ<sub>k</sub> ∈ Ω(1/poly(n)).</span></div>
+                                <div class="result-fact"><span class="fact-label">Role</span><span>Build the harmonic projector with the walk unitary and QSVT.</span></div>
+                                <div class="result-fact gate-cost"><span class="fact-label">Gate cost</span><span class="gate-cost-stack"><span class="base">O(n<sup>3</sup> log(1/ε))</span><span class="times">×</span><span class="penalty">1/λ<sub>k</sub></span></span></div>
+                                <div class="result-fact promise"><span class="fact-label">Gap</span><span>Need λ<sub>k</sub> ∈ Ω(1/poly(n)).</span></div>
                             </div>
                         </div>
                     </div>
@@ -5525,30 +5449,30 @@
                 <div class="slide-number">11 / 21</div>
                 <div class="slide-inner">
                     <div class="topline reveal-left"><span class="eyebrow">Positioning</span><span class="rule"></span></div>
-                    <h2 class="reveal delay-1" data-editable="true">This is not merely another QTDA algorithm; it connects quantum walks to Hodge topology.</h2>
+                    <h2 class="reveal delay-1">This is not merely another QTDA algorithm; it connects quantum walks to Hodge topology.</h2>
                     <div class="comparison reveal delay-2">
                         <div class="compare-col">
-                            <h3 data-editable="true">Classical picture</h3>
+                            <h3>Classical picture</h3>
                             <ul class="clean">
-                                <li data-editable="true">Recent classical work has built a genuine high-dimensional walk theory: up/down walks, Hodge Laplacians, and expander-style spectral analysis on simplicial complexes.</li>
-                                <li data-editable="true">These tools already describe mixing, geometry, and topology beyond ordinary graph random walks.</li>
-                                <li data-editable="true">So the real opening is not inventing high-dimensional structure from scratch, but carrying this mature picture into a quantum setting.</li>
+                                <li>Recent classical work has built a genuine high-dimensional walk theory: up/down walks, Hodge Laplacians, and expander-style spectral analysis on simplicial complexes.</li>
+                                <li>These tools already describe mixing, geometry, and topology beyond ordinary graph random walks.</li>
+                                <li>So the real opening is not inventing high-dimensional structure from scratch, but carrying this mature picture into a quantum setting.</li>
                             </ul>
                         </div>
                         <div class="compare-col">
-                            <h3 data-editable="true">Earlier quantum picture</h3>
+                            <h3>Earlier quantum picture</h3>
                             <ul class="clean">
-                                <li data-editable="true">Earlier quantum TDA often focused on matrix-access models, generic linear-algebra speedups, or oracle-based routines.</li>
-                                <li data-editable="true">Quantum walks on simplicial complexes existed, but their relation to harmonic homology was not yet the main message.</li>
-                                <li data-editable="true">The link from graph adjacency all the way to TDA-ready homology readout was still missing.</li>
+                                <li>Earlier quantum TDA often focused on matrix-access models, generic linear-algebra speedups, or oracle-based routines.</li>
+                                <li>Quantum walks on simplicial complexes existed, but their relation to harmonic homology was not yet the main message.</li>
+                                <li>The link from graph adjacency all the way to TDA-ready homology readout was still missing.</li>
                             </ul>
                         </div>
                         <div class="compare-col">
-                            <h3 data-editable="true">This paper</h3>
+                            <h3>This paper</h3>
                             <ul class="clean">
-                                <li data-editable="true">Gives a rigorous relation between quantum walks and homology.</li>
-                                <li data-editable="true">Encodes the combinatorial Laplacian through orientation interference.</li>
-                                <li data-editable="true">Provides an efficient construction for clique complexes from graph adjacency.</li>
+                                <li>Gives a rigorous relation between quantum walks and homology.</li>
+                                <li>Encodes the combinatorial Laplacian through orientation interference.</li>
+                                <li>Provides an efficient construction for clique complexes from graph adjacency.</li>
                             </ul>
                         </div>
                     </div>
@@ -5561,13 +5485,13 @@
                     <div class="topline reveal-left"><span class="eyebrow">Open directions</span><span class="rule"></span></div>
                     <div class="open-directions-layout" style="display:grid; grid-template-columns:1.12fr 0.88fr; gap:28px; align-items:start; margin-top:6px;">
                         <div class="open-directions-copy" style="padding-top:12px;">
-                            <h2 class="reveal delay-1" data-editable="true" style="max-width:720px;">The most interesting next step is not just faster algorithms, but a richer language for how walks see topology.</h2>
+                            <h2 class="reveal delay-1" style="max-width:720px;">The most interesting next step is not just faster algorithms, but a richer language for how walks see topology.</h2>
                         </div>
                         <div class="open-directions-stack reveal delay-2" style="display:grid; grid-template-columns:1fr; gap:14px; margin-top:0;">
-                            <div class="app-card" style="min-height:0; padding:18px 22px 16px;"><h3 data-editable="true" style="margin-bottom:8px; font-size:28px; line-height:1.04;">Persistent Laplacian</h3><p data-editable="true" style="font-size:18px; line-height:1.18;">Can we directly construct a quantum walk that projects onto persistent harmonic homology, rather than combining multiple projectors?</p></div>
-                            <div class="app-card" style="min-height:0; padding:18px 22px 16px;"><h3 data-editable="true" style="margin-bottom:8px; font-size:28px; line-height:1.04;">Beyond QSVT</h3><p data-editable="true" style="font-size:18px; line-height:1.18;">Can quantum walk dynamics reveal low-energy or harmonic information without relying on QSVT?</p></div>
-                            <div class="app-card" style="min-height:0; padding:18px 22px 16px;"><h3 data-editable="true" style="margin-bottom:8px; font-size:28px; line-height:1.04;">High-dimensional expanders</h3><p data-editable="true" style="font-size:18px; line-height:1.18;">Can the random-walk theory of high-dimensional expanders acquire a quantum counterpart?</p></div>
-                            <div class="app-card" style="min-height:0; padding:18px 22px 16px;"><h3 data-editable="true" style="margin-bottom:8px; font-size:28px; line-height:1.04;">Practical regimes</h3><p data-editable="true" style="font-size:18px; line-height:1.18;">Which data families have efficient sampling, a reasonable gap, and a large enough normalized Betti signal?</p></div>
+                            <div class="app-card" style="min-height:0; padding:18px 22px 16px;"><h3 style="margin-bottom:8px; font-size:28px; line-height:1.04;">Persistent Laplacian</h3><p style="font-size:18px; line-height:1.18;">Can we directly construct a quantum walk that projects onto persistent harmonic homology, rather than combining multiple projectors?</p></div>
+                            <div class="app-card" style="min-height:0; padding:18px 22px 16px;"><h3 style="margin-bottom:8px; font-size:28px; line-height:1.04;">Beyond QSVT</h3><p style="font-size:18px; line-height:1.18;">Can quantum walk dynamics reveal low-energy or harmonic information without relying on QSVT?</p></div>
+                            <div class="app-card" style="min-height:0; padding:18px 22px 16px;"><h3 style="margin-bottom:8px; font-size:28px; line-height:1.04;">High-dimensional expanders</h3><p style="font-size:18px; line-height:1.18;">Can the random-walk theory of high-dimensional expanders acquire a quantum counterpart?</p></div>
+                            <div class="app-card" style="min-height:0; padding:18px 22px 16px;"><h3 style="margin-bottom:8px; font-size:28px; line-height:1.04;">Practical regimes</h3><p style="font-size:18px; line-height:1.18;">Which data families have efficient sampling, a reasonable gap, and a large enough normalized Betti signal?</p></div>
                         </div>
                     </div>
                 </div>
@@ -5577,20 +5501,20 @@
                 <div class="slide-number">13 / 21</div>
                 <div class="slide-inner">
                     <div class="topline reveal-left"><span class="eyebrow">Takeaway</span><span class="rule"></span></div>
-                    <h2 class="reveal delay-1" data-editable="true">Takeaway: one shared quantum pipeline turns hard TDA targets into explicit gate bounds.</h2>
+                    <h2 class="reveal delay-1">Takeaway: one shared quantum pipeline turns hard TDA targets into explicit gate bounds.</h2>
                     <div class="closing-stack">
                         <div class="panel summary-card reveal delay-2">
                             <div class="panel-title">Classical bottleneck</div>
-                            <p data-editable="true">The three main TDA targets are already classically difficult: <span class="accent">DQC1-hard</span>, no known efficient inverse-polynomial estimator, and <span class="accent">QMA<sub>1</sub>-complete</span>.</p>
+                            <p>The three main TDA targets are already classically difficult: <span class="accent">DQC1-hard</span>, no known efficient inverse-polynomial estimator, and <span class="accent">QMA<sub>1</sub>-complete</span>.</p>
                         </div>
                         <div class="panel summary-card reveal delay-3">
                             <div class="panel-title">Main results</div>
-                            <p data-editable="true">The paper gives explicit quantum gate-count bounds for all three targets, with additive accuracy and the expected inverse-gap penalties.</p>
+                            <p>The paper gives explicit quantum gate-count bounds for all three targets, with additive accuracy and the expected inverse-gap penalties.</p>
                         </div>
                         <div class="panel summary-card reveal delay-3">
                             <div class="panel-title">Technical bridge</div>
-                            <p data-editable="true">All three bounds come from one reusable pipeline.</p>
-                            <div class="flow-line" data-editable="true">walk unitaries → Laplacian encodings → QSVT projectors → target readout</div>
+                            <p>All three bounds come from one reusable pipeline.</p>
+                            <div class="flow-line">walk unitaries → Laplacian encodings → QSVT projectors → target readout</div>
                         </div>
                     </div>
                 </div>
@@ -5600,9 +5524,9 @@
                 <div class="slide-number">14 / 21</div>
                 <div class="slide-inner technical-divider">
                     <div class="topline reveal-left"><span class="eyebrow">Technical details</span><span class="rule"></span></div>
-                    <h2 class="reveal delay-1" data-editable="true">The proof route is a five-step pipeline that the next slides unpack one by one.</h2>
+                    <h2 class="reveal delay-1">The proof route is a five-step pipeline that the next slides unpack one by one.</h2>
                     <div class="divider-panel reveal delay-2">
-                        <div class="pipeline" data-editable="true">
+                        <div class="pipeline">
                             <div class="pipe-step">
                                 <div class="num">STEP 1</div>
                                 <h3>Define walk states with orientation</h3>
@@ -5647,13 +5571,13 @@
                 <div class="slide-number">15 / 21</div>
                 <div class="slide-inner">
                     <div class="topline reveal-left"><span class="eyebrow">Technical move</span><span class="rule"></span></div>
-                    <h2 class="reveal delay-1" data-editable="true">Step 1: one geometric simplex becomes two orientation states.</h2>
+                    <h2 class="reveal delay-1">Step 1: one geometric simplex becomes two orientation states.</h2>
                     <div class="orientation-pair orientation-only reveal delay-2">
                         <div class="orientation-card">
                             <div class="orientation-label">state representation</div>
-                            <div class="orientation-state" data-editable="true">|σ,q⟩ = |x<sub>σ</sub>⟩ ⊗ |q⟩</div>
+                            <div class="orientation-state">|σ,q⟩ = |x<sub>σ</sub>⟩ ⊗ |q⟩</div>
                             <div class="orientation-effect-row">
-                                <div class="orientation-effect" data-editable="true"><strong>Effect: the walk no longer sees only adjacency.</strong><span>It also carries whether a transition preserves or reverses orientation.</span></div>
+                                <div class="orientation-effect"><strong>Effect: the walk no longer sees only adjacency.</strong><span>It also carries whether a transition preserves or reverses orientation.</span></div>
                             </div>
                             <div class="orientation-comparison">
                                 <div class="orientation-mini">
@@ -5675,7 +5599,7 @@
                                         </g>
                                         <text x="150" y="116" text-anchor="middle" fill="rgba(0,143,149,0.24)" font-family="JetBrains Mono, monospace" font-size="24">+</text>
                                     </svg>
-                                    <div class="orientation-bit" data-editable="true">q = + : positive orientation</div>
+                                    <div class="orientation-bit">q = + : positive orientation</div>
                                 </div>
                                 <div class="orientation-mini">
                                     <div class="orientation-label" style="color:var(--red);">negative</div>
@@ -5696,7 +5620,7 @@
                                         </g>
                                         <text x="150" y="116" text-anchor="middle" fill="rgba(184,50,66,0.22)" font-family="JetBrains Mono, monospace" font-size="24">−</text>
                                     </svg>
-                                    <div class="orientation-bit negative" data-editable="true">q = − : reversed orientation</div>
+                                    <div class="orientation-bit negative">q = − : reversed orientation</div>
                                 </div>
                             </div>
                             <div class="card-source"><span class="source-label">Source</span>Setup §1.2, §3.2</div>
@@ -5709,7 +5633,7 @@
                 <div class="slide-number">16 / 21</div>
                 <div class="slide-inner">
                     <div class="topline reveal-left"><span class="eyebrow">Three walks</span><span class="rule"></span></div>
-                    <h2 class="reveal delay-1" data-editable="true">Step 2: build walks whose transition matrices encode the Laplacian pieces.</h2>
+                    <h2 class="reveal delay-1">Step 2: build walks whose transition matrices encode the Laplacian pieces.</h2>
                     <div class="figure2-horizontal reveal delay-2">
                         <div class="figure2-panel">
                             <div class="figure2-panel-head">
@@ -5719,7 +5643,7 @@
                             <div class="figure2-panel-image">
                                 <img src="sources/assets/figure2-up-dark.png" alt="Up random walk panel from Figure 2">
                             </div>
-                            <p data-editable="true">Move through a shared coface; this is the walk primitive for the up-Laplacian.</p>
+                            <p>Move through a shared coface; this is the walk primitive for the up-Laplacian.</p>
                             <div class="walk-notation"><span>shared (k+1)-coface</span><span>target: Δ<sub>k</sub><sup>up</sup></span></div>
                             <div class="card-source"><span class="source-label">Source</span>Definition 2 (§3.2)</div>
                         </div>
@@ -5731,7 +5655,7 @@
                             <div class="figure2-panel-image">
                                 <img src="sources/assets/figure2-down-dark.png" alt="Down random walk panel from Figure 2">
                             </div>
-                            <p data-editable="true">Move through a shared lower face; this is the walk primitive for the down-Laplacian.</p>
+                            <p>Move through a shared lower face; this is the walk primitive for the down-Laplacian.</p>
                             <div class="walk-notation"><span>shared (k−1)-face</span><span>target: Δ<sub>k</sub><sup>down</sup></span></div>
                             <div class="card-source"><span class="source-label">Source</span>Definition 3 (§3.2)</div>
                         </div>
@@ -5743,7 +5667,7 @@
                             <div class="figure2-panel-image">
                                 <img src="sources/assets/figure2-harmonic-dark.png" alt="Harmonic random walk panel from Figure 2">
                             </div>
-                            <p data-editable="true">The harmonic walk encodes the full Δ<sub>k</sub> used for kernel projection.</p>
+                            <p>The harmonic walk encodes the full Δ<sub>k</sub> used for kernel projection.</p>
                             <div class="walk-notation"><span>full Laplacian</span><span>target: ℋ<sub>k</sub> = ker Δ<sub>k</sub></span></div>
                             <div class="card-source"><span class="source-label">Source</span>Definition 4 (§3.2)</div>
                         </div>
@@ -5755,7 +5679,7 @@
                 <div class="slide-number">17 / 21</div>
                 <div class="slide-inner">
                     <div class="topline reveal-left"><span class="eyebrow">Algorithmic pipeline</span><span class="rule"></span></div>
-                    <h2 class="reveal delay-1" data-editable="true">Step 3: turn U<sup>up</sup>, U<sup>down</sup>, and U<sup>h</sup> into Laplacian encodings.</h2>
+                    <h2 class="reveal delay-1">Step 3: turn U<sup>up</sup>, U<sup>down</sup>, and U<sup>h</sup> into Laplacian encodings.</h2>
                     <div class="mechanism-layout reveal delay-2">
                         <div class="mechanism-overview">
                             <img src="sources/assets/orientation-zh-interference-imagegen.png" alt="Orientation branches pass through Z then H to produce signed Laplacian-like matrix elements">
@@ -5763,8 +5687,8 @@
                         <div class="pipeline mechanism-rail">
                             <div class="pipe-step">
                                 <div class="num">INPUT</div>
-                                <h3 data-editable="true">Projected walk encodings</h3>
-                                <p data-editable="true">Start from walk unitaries that encode Markov transition matrices.</p>
+                                <h3>Projected walk encodings</h3>
+                                <p>Start from walk unitaries that encode Markov transition matrices.</p>
                                 <div class="mechanism-formula">
                                     <span class="mechanism-chip">U<sup>up</sup> → P<sup>up</sup></span>
                                     <span class="mechanism-chip">U<sup>down</sup> → P<sup>down</sup></span>
@@ -5774,8 +5698,8 @@
                             </div>
                             <div class="pipe-step">
                                 <div class="num">INTERFERENCE</div>
-                                <h3 data-editable="true">Z marks; H interferes</h3>
-                                <p data-editable="true">In HZ, Z acts first on the orientation qubit; H mixes the signed branches.</p>
+                                <h3>Z marks; H interferes</h3>
+                                <p>In HZ, Z acts first on the orientation qubit; H mixes the signed branches.</p>
                                 <div class="mechanism-formula">
                                     <span class="mechanism-chip">Z: |−⟩ → −|−⟩</span>
                                     <span class="mechanism-chip">H: interfere ±</span>
@@ -5784,8 +5708,8 @@
                             </div>
                             <div class="pipe-step">
                                 <div class="num">OUTPUT</div>
-                                <h3 data-editable="true">Laplacian encodings</h3>
-                                <p data-editable="true">The signed transition rule becomes the encoded combinatorial Laplacian.</p>
+                                <h3>Laplacian encodings</h3>
+                                <p>The signed transition rule becomes the encoded combinatorial Laplacian.</p>
                                 <div class="mechanism-formula">
                                     <span class="mechanism-chip">Δ<sub>k</sub><sup>up</sup></span>
                                     <span class="mechanism-chip">Δ<sub>k</sub><sup>down</sup></span>
@@ -5802,14 +5726,14 @@
                 <div class="slide-number">18 / 21</div>
                 <div class="slide-inner">
                     <div class="topline reveal-left"><span class="eyebrow">Efficient construction</span><span class="rule"></span></div>
-                    <h2 class="reveal delay-1" data-editable="true">Step 4: use QSVT on the encoded Laplacian to build the harmonic projector.</h2>
+                    <h2 class="reveal delay-1">Step 4: use QSVT on the encoded Laplacian to build the harmonic projector.</h2>
                     <div class="qsvt-board reveal delay-2">
                         <div class="qsvt-layout">
                             <div class="qsvt-flow">
                                 <div class="qsvt-node">
                                     <div class="qsvt-label">step input</div>
-                                    <div class="qsvt-symbol" data-editable="true">Δ<sub>k</sub></div>
-                                    <p class="qsvt-copy" data-editable="true">Start with the encoded combinatorial Laplacian from Step 3.</p>
+                                    <div class="qsvt-symbol">Δ<sub>k</sub></div>
+                                    <p class="qsvt-copy">Start with the encoded combinatorial Laplacian from Step 3.</p>
                                     <div class="qsvt-mini">
                                         <span>Δ<sub>k</sub><sup>up</sup></span>
                                         <span>Δ<sub>k</sub><sup>down</sup></span>
@@ -5818,8 +5742,8 @@
                                 </div>
                                 <div class="qsvt-node">
                                     <div class="qsvt-label">QSVT filter</div>
-                                    <div class="qsvt-symbol" data-editable="true">p(Δ<sub>k</sub>)</div>
-                                    <p class="qsvt-copy" data-editable="true">Use a polynomial filter for the zero eigenspace.</p>
+                                    <div class="qsvt-symbol">p(Δ<sub>k</sub>)</div>
+                                    <p class="qsvt-copy">Use a polynomial filter for the zero eigenspace.</p>
                                     <div class="qsvt-mini">
                                         <span>p(0) ≈ 1</span>
                                         <span>p(x ≥ λ<sub>k</sub>) ≈ 0</span>
@@ -5828,16 +5752,16 @@
                                 </div>
                                 <div class="qsvt-node">
                                     <div class="qsvt-label">implementation cost</div>
-                                    <div class="qsvt-symbol" data-editable="true">O(log(1/ε)) / λ<sub>k</sub></div>
-                                    <p class="qsvt-copy" data-editable="true">Calls to the encoded walk unitary.</p>
+                                    <div class="qsvt-symbol">O(log(1/ε)) / λ<sub>k</sub></div>
+                                    <p class="qsvt-copy">Calls to the encoded walk unitary.</p>
                                     <div class="card-source"><span class="source-label">Source</span>Theorem 3</div>
                                 </div>
                             </div>
                             <div class="qsvt-result">
                                 <div class="projector-outcome">
                                     <div class="qsvt-label">step 4 result</div>
-                                    <div class="qsvt-symbol" data-editable="true">Proj(ℋ<sub>k</sub>)</div>
-                                    <p class="qsvt-copy" data-editable="true">A shared harmonic projector primitive, before any application-specific readout.</p>
+                                    <div class="qsvt-symbol">Proj(ℋ<sub>k</sub>)</div>
+                                    <p class="qsvt-copy">A shared harmonic projector primitive, before any application-specific readout.</p>
                                     <div class="qsvt-mini">
                                         <span>ℋ<sub>k</sub> = ker Δ<sub>k</sub></span>
                                         <span>zero modes</span>
@@ -5862,13 +5786,13 @@
                 <div class="slide-number">19 / 21</div>
                 <div class="slide-inner">
                     <div class="topline reveal-left"><span class="eyebrow">Target readout</span><span class="rule"></span></div>
-                    <h2 class="reveal delay-1" data-editable="true">Step 5: attach the application-specific readout.</h2>
+                    <h2 class="reveal delay-1">Step 5: attach the application-specific readout.</h2>
                     <div class="conditions reveal delay-2">
-                        <div class="condition"><p data-editable="true"><span class="accent">Normalized Betti</span><strong>β<sub>k</sub> / |X<sub>k</sub>|</strong><span class="readout-row"><span class="readout-label">Projector readout</span><span class="readout-value">estimate Tr(Proj(ℋ<sub>k</sub>)) / |X<sub>k</sub>|</span></span><span class="readout-row"><span class="readout-label">Extra ingredient</span><span class="readout-value">uniform k-simplex sampling</span></span></p><div class="card-source"><span class="source-label">Source</span>Theorem 5</div></div>
-                        <div class="condition"><p data-editable="true"><span class="accent">Persistent Betti</span><strong>β<sub>k</sub><sup>i,j</sup> / |X<sub>k</sub><sup>i</sup>|</strong><span class="readout-row"><span class="readout-label">Projector readout</span><span class="readout-value">combine Proj(Z<sub>k</sub><sup>i</sup>) with Proj(B<sub>k</sub><sup>j</sup>)</span></span><span class="readout-row"><span class="readout-label">Filtration role</span><span class="readout-value">cycles born by i, boundaries by j</span></span></p><div class="card-source"><span class="source-label">Source</span>Theorem 6</div></div>
-                        <div class="condition"><p data-editable="true"><span class="accent">Promise clique homology</span><strong>H<sub>k</sub>(X(G)) = 0 ?</strong><span class="readout-row"><span class="readout-label">Projector readout</span><span class="readout-value">test whether Proj(ker Δ<sub>k</sub>) has support</span></span><span class="readout-row"><span class="readout-label">Output</span><span class="readout-value">YES/NO under the promise gap</span></span></p><div class="card-source"><span class="source-label">Source</span>Theorem 7</div></div>
+                        <div class="condition"><p><span class="accent">Normalized Betti</span><strong>β<sub>k</sub> / |X<sub>k</sub>|</strong><span class="readout-row"><span class="readout-label">Projector readout</span><span class="readout-value">estimate Tr(Proj(ℋ<sub>k</sub>)) / |X<sub>k</sub>|</span></span><span class="readout-row"><span class="readout-label">Extra ingredient</span><span class="readout-value">uniform k-simplex sampling</span></span></p><div class="card-source"><span class="source-label">Source</span>Theorem 5</div></div>
+                        <div class="condition"><p><span class="accent">Persistent Betti</span><strong>β<sub>k</sub><sup>i,j</sup> / |X<sub>k</sub><sup>i</sup>|</strong><span class="readout-row"><span class="readout-label">Projector readout</span><span class="readout-value">combine Proj(Z<sub>k</sub><sup>i</sup>) with Proj(B<sub>k</sub><sup>j</sup>)</span></span><span class="readout-row"><span class="readout-label">Filtration role</span><span class="readout-value">cycles born by i, boundaries by j</span></span></p><div class="card-source"><span class="source-label">Source</span>Theorem 6</div></div>
+                        <div class="condition"><p><span class="accent">Promise clique homology</span><strong>H<sub>k</sub>(X(G)) = 0 ?</strong><span class="readout-row"><span class="readout-label">Projector readout</span><span class="readout-value">test whether Proj(ker Δ<sub>k</sub>) has support</span></span><span class="readout-row"><span class="readout-label">Output</span><span class="readout-value">YES/NO under the promise gap</span></span></p><div class="card-source"><span class="source-label">Source</span>Theorem 7</div></div>
                     </div>
-                    <p class="speedup-note reveal delay-3" data-editable="true"><span class="amber">Same machinery</span> QSVT builds the needed projectors; each target chooses a different readout.</p>
+                    <p class="speedup-note reveal delay-3"><span class="amber">Same machinery</span> QSVT builds the needed projectors; each target chooses a different readout.</p>
                 </div>
             </section>
 
@@ -5876,13 +5800,13 @@
                 <div class="slide-number">20 / 21</div>
                 <div class="slide-inner">
                     <div class="topline reveal-left"><span class="eyebrow">Assumption map</span><span class="rule"></span></div>
-                    <h2 class="reveal delay-1" data-editable="true">What assumptions attach to the three results?</h2>
+                    <h2 class="reveal delay-1">What assumptions attach to the three results?</h2>
                     <div class="conditions reveal delay-2">
-                        <div class="condition"><p data-editable="true"><span class="accent">Normalized Betti</span><strong>λ<sub>k</sub> + X<sub>k</sub> access</strong><span class="condition-line">gap for projector</span><span class="condition-line">uniform simplex sampling for readout</span></p></div>
-                        <div class="condition"><p data-editable="true"><span class="accent">Persistent Betti</span><strong>λ<sup>i,down</sup>, λ<sup>j,up</sup> + X<sub>k</sub><sup>i</sup> access</strong><span class="condition-line">two gap terms</span><span class="condition-line">uniform sampling at filtration level i</span></p></div>
-                        <div class="condition"><p data-editable="true"><span class="accent">Promise clique homology</span><strong>NO-case gap g(n)</strong><span class="condition-line">λ<sub>min</sub>(Δ<sub>k</sub>) ≥ g(n)</span></p></div>
+                        <div class="condition"><p><span class="accent">Normalized Betti</span><strong>λ<sub>k</sub> + X<sub>k</sub> access</strong><span class="condition-line">gap for projector</span><span class="condition-line">uniform simplex sampling for readout</span></p></div>
+                        <div class="condition"><p><span class="accent">Persistent Betti</span><strong>λ<sup>i,down</sup>, λ<sup>j,up</sup> + X<sub>k</sub><sup>i</sup> access</strong><span class="condition-line">two gap terms</span><span class="condition-line">uniform sampling at filtration level i</span></p></div>
+                        <div class="condition"><p><span class="accent">Promise clique homology</span><strong>NO-case gap g(n)</strong><span class="condition-line">λ<sub>min</sub>(Δ<sub>k</sub>) ≥ g(n)</span></p></div>
                     </div>
-                    <p class="speedup-note reveal delay-3" data-editable="true"><span class="amber">Key point</span> gap terms drive projector cost; simplex sampling enters only the Betti readout.</p>
+                    <p class="speedup-note reveal delay-3"><span class="amber">Key point</span> gap terms drive projector cost; simplex sampling enters only the Betti readout.</p>
                 </div>
             </section>
 
@@ -5891,9 +5815,9 @@
                 <div class="slide-inner">
                     <div class="thanks-card reveal">
                         <div class="topline reveal-left"><span class="eyebrow">KYOTO UNIVERSITY X FOXCONN RESEARCH</span><span class="rule"></span></div>
-                        <h2 class="reveal delay-1" data-editable="true">Thank you!</h2>
-                        <p class="thanks-subtitle reveal delay-2" data-editable="true">Source: Quantum 10, 2138 (2026).</p>
-                        <div class="questions reveal delay-3" data-editable="true">QUESTIONS?</div>
+                        <h2 class="reveal delay-1">Thank you!</h2>
+                        <p class="thanks-subtitle reveal delay-2">Source: Quantum 10, 2138 (2026).</p>
+                        <div class="questions reveal delay-3">QUESTIONS?</div>
                     </div>
                 </div>
             </section>
@@ -5903,10 +5827,6 @@
     <div class="nav-hint">← / → / Space / Swipe</div>
     <div class="deck-counter" id="deckCounter">01 / 21</div>
     <div class="progress-shell"><div class="progress-bar" id="progressBar"></div></div>
-    <div class="edit-hotzone" aria-hidden="true"></div>
-    <button class="edit-toggle" id="editToggle" title="Edit mode (E)" aria-label="Toggle edit mode">E</button>
-    <div class="edit-toast" id="editToast">Edit mode on. Click text to edit. Ctrl+S saves locally.</div>
-
     <script>
         /* ===========================================
            SLIDE PRESENTATION CONTROLLER
@@ -5942,8 +5862,6 @@
 
             setupKeyboardNav() {
                 document.addEventListener('keydown', (event) => {
-                    const editable = event.target && event.target.getAttribute('contenteditable') === 'true';
-                    if (editable) return;
                     if (['ArrowRight', ' ', 'PageDown'].includes(event.key)) {
                         event.preventDefault();
                         this.next();
@@ -5999,98 +5917,6 @@
 
             next() { this.showSlide(this.currentSlide + 1); }
             prev() { this.showSlide(this.currentSlide - 1); }
-        }
-
-        /* ===========================================
-           INLINE TEXT EDITOR
-           Enables browser-side copy tweaks and local saves.
-           =========================================== */
-        class InlineEditor {
-            constructor() {
-                this.isActive = false;
-                this.toggleButton = document.getElementById('editToggle');
-                this.toast = document.getElementById('editToast');
-                this.editables = Array.from(document.querySelectorAll('[data-editable="true"]'));
-                this.storageKey = 'quantum-walk-html-ppt-editorial-edits-v1';
-                this.load();
-                this.setup();
-            }
-
-            setup() {
-                this.toggleButton.addEventListener('click', () => this.toggleEditMode());
-                document.addEventListener('keydown', (event) => {
-                    const editable = event.target && event.target.getAttribute('contenteditable') === 'true';
-                    if ((event.key === 'e' || event.key === 'E') && !editable) {
-                        this.toggleEditMode();
-                    }
-                    if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 's') {
-                        event.preventDefault();
-                        this.save();
-                        this.flash('Saved locally.');
-                    }
-                });
-                this.editables.forEach((node, index) => {
-                    node.dataset.editId = String(index);
-                    node.addEventListener('input', () => this.save());
-                });
-            }
-
-            toggleEditMode() {
-                this.isActive = !this.isActive;
-                document.body.classList.toggle('editing', this.isActive);
-                this.toggleButton.classList.toggle('active', this.isActive);
-                this.toggleButton.classList.add('show');
-                this.editables.forEach(node => {
-                    node.setAttribute('contenteditable', this.isActive ? 'true' : 'false');
-                });
-                this.flash(this.isActive ? 'Edit mode on. Click text to edit. Ctrl+S saves locally.' : 'Edit mode off.');
-            }
-
-            save() {
-                const payload = {};
-                this.editables.forEach((node) => {
-                    payload[node.dataset.editId] = node.innerHTML;
-                });
-                localStorage.setItem(this.storageKey, JSON.stringify(payload));
-            }
-
-            load() {
-                try {
-                    const payload = JSON.parse(localStorage.getItem(this.storageKey) || '{}');
-                    this.recoverThankYouEdits(payload);
-                    this.editables.forEach((node, index) => {
-                        if (payload[String(index)]) node.innerHTML = payload[String(index)];
-                    });
-                    localStorage.setItem(this.storageKey, JSON.stringify(payload));
-                } catch (error) {
-                    console.warn('Could not restore local edits', error);
-                }
-            }
-
-            recoverThankYouEdits(payload) {
-                const legacyKeys = ['quantum-walk-html-ppt-edits-en-v7', 'quantum-walk-html-ppt-edits-en-v6'];
-                const previousOffset = 2;
-                legacyKeys.forEach((key) => {
-                    const legacyRaw = localStorage.getItem(key);
-                    if (!legacyRaw) return;
-                    const legacy = JSON.parse(legacyRaw);
-                    this.editables.forEach((node, index) => {
-                        if (!node.closest('.thanks-slide')) return;
-                        const currentKey = String(index);
-                        const legacyKey = String(index + previousOffset);
-                        if (!payload[currentKey] && legacy[legacyKey]) {
-                            payload[currentKey] = legacy[legacyKey];
-                        }
-                    });
-                });
-            }
-
-            flash(message) {
-                this.toast.textContent = message;
-                this.toast.classList.add('show');
-                clearTimeout(this.toastTimer);
-                this.toastTimer = setTimeout(() => this.toast.classList.remove('show'), 2200);
-            }
         }
 
         /* ===========================================
@@ -6177,33 +6003,8 @@
             }
         }
 
-        /* ===========================================
-           EDIT BUTTON HOVER LOGIC
-           Keeps the hidden edit affordance clickable.
-           =========================================== */
         renderKleinBottle();
         const presentation = new SlidePresentation();
-        const editor = new InlineEditor();
-        const hotzone = document.querySelector('.edit-hotzone');
-        const editToggle = document.getElementById('editToggle');
-        let hideTimeout = null;
-
-        hotzone.addEventListener('mouseenter', () => {
-            clearTimeout(hideTimeout);
-            editToggle.classList.add('show');
-        });
-        hotzone.addEventListener('mouseleave', () => {
-            hideTimeout = setTimeout(() => {
-                if (!editor.isActive) editToggle.classList.remove('show');
-            }, 400);
-        });
-        editToggle.addEventListener('mouseenter', () => clearTimeout(hideTimeout));
-        editToggle.addEventListener('mouseleave', () => {
-            hideTimeout = setTimeout(() => {
-                if (!editor.isActive) editToggle.classList.remove('show');
-            }, 400);
-        });
-        hotzone.addEventListener('click', () => editor.toggleEditMode());
     </script>
 </body>
 </html>
