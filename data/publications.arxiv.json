@@ -1,7 +1,11 @@
 {
   "section": "arxiv",
-  "updatedAt": "2026-07-22T00:00:00.000Z",
+  "updatedAt": "2026-07-29T00:00:00.000Z",
   "items": [
+    {
+      "id": "arxiv-41",
+      "contentHtml": "Ge Yan, Shanchuan Li, Pengyue Ma, Qixin Zhang, Pingchuan Ma, Jianping Wang, Min-Hsiu Hsieh, Yuxuan Du. OmniQEC: discovering practical quantum error-correcting codes by an AI scientist. [<a href=\"https://arxiv.org/abs/2607.25865\" target=\"_blank\" rel=\"noopener\">arXiv:2607.25865</a>] (2026)."
+    },
     {
       "id": "arxiv-40",
       "contentHtml": "Kaining Zhang, Xinbiao Wang, Kunsheng Li, Qixin Zhang, Yuxuan Du, Min-Hsiu Hsieh, Dacheng Tao. Stochastic Pauli-path simulator for large-scale quantum optimization. [<a href=\"https://arxiv.org/abs/2607.17804\" target=\"_blank\" rel=\"noopener\">arXiv:2607.17804</a>] (2026)."
