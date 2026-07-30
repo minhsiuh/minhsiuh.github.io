@@ -42,11 +42,15 @@
         {
           "title": "Benchmarking quantum simulation of chemical Hamiltonians using the sorted-list encoding",
           "authors": "Calvin Ku, Yu-Cheng Chen, Alice Hu, Min-Hsiu Hsieh",
-          "venue": "Physical Review Research (accepted, 2026)",
+          "venue": "Physical Review Research 8, 033091, 2026",
           "links": [
             {
               "label": "arXiv",
               "url": "https://arxiv.org/abs/2510.01710"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1103/6q7b-h9db"
             }
           ]
         },

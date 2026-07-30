@@ -1,6 +1,6 @@
 {
   "section": "journals",
-  "updatedAt": "2026-07-29T00:00:00.000Z",
+  "updatedAt": "2026-07-30T00:00:00.000Z",
   "items": [
     {
       "id": "journals-116",
@@ -25,7 +25,7 @@
     },
     {
       "id": "journals-115",
-      "contentHtml": "Calvin Ku, Yu-Cheng Chen, Alice Hu, Min-Hsiu Hsieh. Benchmarking quantum simulation of chemical Hamiltonians using the sorted-list encoding. Physical Review Research (accepted, 2026) [<a href=\"https://arxiv.org/abs/2510.01710\" target=\"_blank\" rel=\"noopener\">arXiv:2510.01710</a>].",
+      "contentHtml": "Calvin Ku, Yu-Cheng Chen, Alice Hu, Min-Hsiu Hsieh. Benchmarking quantum simulation of chemical Hamiltonians using the sorted-list encoding. Physical Review Research 8, 033091 (2026) [<a href=\"https://arxiv.org/abs/2510.01710\" target=\"_blank\" rel=\"noopener\">arXiv:2510.01710</a>] [<a href=\"https://doi.org/10.1103/6q7b-h9db\" target=\"_blank\" rel=\"noopener\">DOI</a>].",
       "article": {
         "entryType": "article",
         "citationKey": "Ku2026benchmarking",
@@ -33,11 +33,13 @@
         "title": "Benchmarking quantum simulation of chemical Hamiltonians using the sorted-list encoding",
         "journal": "Physical Review Research",
         "year": "2026",
-        "volume": "",
-        "number": "",
-        "pages": "",
-        "doi": "",
-        "url": "https://arxiv.org/abs/2510.01710",
+        "volume": "8",
+        "number": "3",
+        "pages": "033091",
+        "doi": "10.1103/6q7b-h9db",
+        "url": "https://doi.org/10.1103/6q7b-h9db",
+        "month": "jul",
+        "publisher": "American Physical Society (APS)",
         "arxiv": "2510.01710"
       }
     },
