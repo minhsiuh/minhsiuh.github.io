@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "topic": "Quantum Machine Learning",
-  "lastCurated": "2026-03-09",
+  "lastCurated": "2026-07-30",
   "papers": [
     {
       "paperId": "P001",
@@ -147,10 +147,10 @@
       "paperId": "P015",
       "group": "📚 Recent Advances & Reviews",
       "title": "Artificial intelligence for representing and characterizing quantum systems",
-      "year": 2025,
+      "year": 2026,
       "citations": null,
-      "venue": "arXiv preprint arXiv:2509.04923, 2025",
-      "doi": null,
+      "venue": "Nature Reviews Physics, 2026",
+      "doi": "https://doi.org/10.1038/s42254-026-00962-5",
       "arxiv": "https://arxiv.org/abs/2509.04923"
     },
     {
@@ -749,6 +749,24 @@
     },
     {
       "collaboratorId": "C028",
+      "name": "Yi-Zhuang You",
+      "affiliations": [
+        {
+          "institutionId": "I014",
+          "institution": "University of California, San Diego",
+          "country": "USA",
+          "startYear": null,
+          "endYear": null,
+          "isPrimary": true,
+          "source": "manual"
+        }
+      ],
+      "paperIds": [
+        "P015"
+      ]
+    },
+    {
+      "collaboratorId": "C029",
       "name": "Haifeng Yu",
       "affiliations": [
         {
@@ -766,7 +784,7 @@
       ]
     },
     {
-      "collaboratorId": "C029",
+      "collaboratorId": "C030",
       "name": "Kaining Zhang",
       "affiliations": [
         {
@@ -797,7 +815,7 @@
       ]
     },
     {
-      "collaboratorId": "C030",
+      "collaboratorId": "C031",
       "name": "Yuan-Hang Zhang",
       "affiliations": [
         {
@@ -815,7 +833,7 @@
       ]
     },
     {
-      "collaboratorId": "C031",
+      "collaboratorId": "C032",
       "name": "Xiaobo Zhu",
       "affiliations": [
         {
@@ -833,7 +851,7 @@
       ]
     },
     {
-      "collaboratorId": "C032",
+      "collaboratorId": "C033",
       "name": "Yan Zhu",
       "affiliations": [
         {
@@ -1049,7 +1067,7 @@
     },
     {
       "paperId": "P004",
-      "collaboratorId": "C029",
+      "collaboratorId": "C030",
       "institutionId": "I007",
       "role": "coauthor"
     },
@@ -1061,7 +1079,7 @@
     },
     {
       "paperId": "P005",
-      "collaboratorId": "C029",
+      "collaboratorId": "C030",
       "institutionId": "I007",
       "role": "coauthor"
     },
@@ -1127,7 +1145,7 @@
     },
     {
       "paperId": "P007",
-      "collaboratorId": "C028",
+      "collaboratorId": "C029",
       "institutionId": "I001",
       "role": "coauthor"
     },
@@ -1229,7 +1247,7 @@
     },
     {
       "paperId": "P011",
-      "collaboratorId": "C031",
+      "collaboratorId": "C032",
       "institutionId": "I017",
       "role": "coauthor"
     },
@@ -1271,13 +1289,13 @@
     },
     {
       "paperId": "P015",
-      "collaboratorId": "C032",
+      "collaboratorId": "C033",
       "institutionId": "I011",
       "role": "coauthor"
     },
     {
       "paperId": "P015",
-      "collaboratorId": "C030",
+      "collaboratorId": "C031",
       "institutionId": "I014",
       "role": "coauthor"
     },
@@ -1295,8 +1313,8 @@
     },
     {
       "paperId": "P015",
-      "collaboratorId": "C025",
-      "institutionId": "I010",
+      "collaboratorId": "C028",
+      "institutionId": "I014",
       "role": "coauthor"
     },
     {
@@ -1324,6 +1342,12 @@
       "role": "coauthor"
     },
     {
+      "paperId": "P015",
+      "collaboratorId": "C025",
+      "institutionId": "I010",
+      "role": "coauthor"
+    },
+    {
       "paperId": "P016",
       "collaboratorId": "C005",
       "institutionId": "I018",
@@ -1331,7 +1355,7 @@
     },
     {
       "paperId": "P016",
-      "collaboratorId": "C029",
+      "collaboratorId": "C030",
       "institutionId": "I007",
       "role": "coauthor"
     },
@@ -1361,7 +1385,7 @@
     },
     {
       "paperId": "P017",
-      "collaboratorId": "C029",
+      "collaboratorId": "C030",
       "institutionId": "I007",
       "role": "coauthor"
     },
@@ -1421,7 +1445,7 @@
     },
     {
       "paperId": "P020",
-      "collaboratorId": "C029",
+      "collaboratorId": "C030",
       "institutionId": "I007",
       "role": "coauthor"
     },

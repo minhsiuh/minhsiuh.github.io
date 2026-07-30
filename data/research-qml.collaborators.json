@@ -28,6 +28,7 @@
     "Ruixia Wang",
     "Ya-Dong Wu",
     "Chao-Han Huck Yang",
+    "Yi-Zhuang You",
     "Shan You",
     "Haifeng Yu",
     "Kaining Zhang",
@@ -195,7 +196,7 @@
       "papers": [
         "Quantum noise (PRR 2021)",
         "QAS (npj QI 2022)",
-        "AI for quantum systems (arXiv 2025)"
+        "AI for quantum systems (Nature Reviews Physics 2026)"
       ]
     },
     {
@@ -238,7 +239,7 @@
         "Barry C. Sanders"
       ],
       "papers": [
-        "AI for quantum systems (arXiv 2025)",
+        "AI for quantum systems (Nature Reviews Physics 2026)",
         "Gentle Introduction (Springer 2025)"
       ]
     },
@@ -250,10 +251,11 @@
       ],
       "country": "USA",
       "collaborators": [
+        "Yi-Zhuang You",
         "Yuan-Hang Zhang"
       ],
       "papers": [
-        "AI for quantum systems (arXiv 2025)"
+        "AI for quantum systems (Nature Reviews Physics 2026)"
       ]
     },
     {

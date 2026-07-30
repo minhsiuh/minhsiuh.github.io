@@ -221,12 +221,16 @@
       "publications": [
         {
           "title": "Artificial intelligence for representing and characterizing quantum systems",
-          "authors": "Yuxuan Du, Yan Zhu, Yuan-Hang Zhang, Min-Hsiu Hsieh, Patrick Rebentrost, Weibo Gao, Ya-Dong Wu, Jens Eisert, Giulio Chiribella, Dacheng Tao, Barry C. Sanders",
-          "venue": "arXiv preprint arXiv:2509.04923, 2025",
+          "authors": "Yuxuan Du, Yan Zhu, Yuan-Hang Zhang, Min-Hsiu Hsieh, Patrick Rebentrost, Weibo Gao, Yi-Zhuang You, Jens Eisert, Giulio Chiribella, Dacheng Tao, Barry C. Sanders, Ya-Dong Wu",
+          "venue": "Nature Reviews Physics, 2026",
           "links": [
             {
               "label": "arXiv",
               "url": "https://arxiv.org/abs/2509.04923"
+            },
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1038/s42254-026-00962-5"
             }
           ]
         },
