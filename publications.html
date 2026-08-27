@@ -1540,7 +1540,7 @@
                                   ? String(b.author || (b.editor ? `${b.editor} (Ed.)` : '')).replace(/\s+and\s+/gi, ', ')
                                   : (isConf ? String(c.author || '').replace(/\s+and\s+/gi, ', ') : (j.authors || '')));
                             const typeText = String(item.type || '').trim();
-                            const isHighlightedType = /(long|short)\s*(talk|plenary)/i.test(typeText);
+                            const isHighlightedType = /\b(long talk|(long|short)?\s*plenary talk)\b/i.test(typeText);
                             const talkBadge = (isTalk && isHighlightedType) ? `<span class="talk-type-badge">${esc(typeText)}</span>` : '';
                             const talkRefInfo = isTalk
                               ? [item.venue, item.location, item.date].filter(Boolean).join(', ')

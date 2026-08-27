@@ -1,7 +1,19 @@
 {
   "section": "talks",
-  "updatedAt": "2026-03-10T04:47:13.432Z",
+  "updatedAt": "2026-08-27T04:32:00.000Z",
   "items": [
+    {
+      "id": "talks-aqis-2026-plenary",
+      "contentHtml": "Min-Hsiu Hsieh. Quantum Error Correction: Now and Future. Plenary Talk in The 26th Asian Quantum Information Science Conference (AQIS 2026), KAIST Auditorium (E15), KAIST campus, Daejeon, Korea, 27/08/2026.",
+      "title": "Quantum Error Correction: Now and Future",
+      "authors": [
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "The 26th Asian Quantum Information Science Conference (AQIS 2026)",
+      "date": "27/08/2026",
+      "location": "KAIST Auditorium (E15), KAIST campus, Daejeon, Korea",
+      "type": "Plenary Talk"
+    },
     {
       "id": "talks-1",
       "contentHtml": "Shi Jie Samuel Tan, Yifan Hong, Ting-Chun Lin, Michael J. Gullans, Min-Hsiu Hsieh. Single-Shot Universality in Quantum LDPC Codes via Code-Switching. Long Plenary Talk in The 29th Conference on Quantum Information Processing (QIP 2026).",
