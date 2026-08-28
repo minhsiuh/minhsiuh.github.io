@@ -1,6 +1,6 @@
 {
   "section": "talks",
-  "updatedAt": "2026-08-27T04:32:00.000Z",
+  "updatedAt": "2026-08-28T10:20:00.000Z",
   "items": [
     {
       "id": "talks-aqis-2026-plenary",
@@ -13,6 +13,21 @@
       "date": "27/08/2026",
       "location": "KAIST Auditorium (E15), KAIST campus, Daejeon, Korea",
       "type": "Plenary Talk"
+    },
+    {
+      "id": "talks-aqis-2026-quantum-chemistry",
+      "contentHtml": "Calvin Ku, Yu-Cheng Chen, Alice Hu, Min-Hsiu Hsieh. Optimizing Quantum Chemistry Simulations with a Hybrid Quantization Scheme. Regular Talk in The 26th Asian Quantum Information Science Conference (AQIS 2026), Main Hall (E15), KAIST campus, Daejeon, Korea, 28/08/2026.",
+      "title": "Optimizing Quantum Chemistry Simulations with a Hybrid Quantization Scheme",
+      "authors": [
+        "Calvin Ku",
+        "Yu-Cheng Chen",
+        "Alice Hu",
+        "Min-Hsiu Hsieh"
+      ],
+      "venue": "The 26th Asian Quantum Information Science Conference (AQIS 2026)",
+      "date": "28/08/2026",
+      "location": "Main Hall (E15), KAIST campus, Daejeon, Korea",
+      "type": "Regular Talk"
     },
     {
       "id": "talks-1",
