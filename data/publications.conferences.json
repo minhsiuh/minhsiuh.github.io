@@ -1,7 +1,32 @@
 {
   "section": "conferences",
-  "updatedAt": "2026-07-09T00:15:00.000Z",
+  "updatedAt": "2026-08-31T07:15:00.000Z",
   "items": [
+    {
+      "id": "conferences-46",
+      "contentHtml": "Taiga Hiroka, Min-Hsiu Hsieh, Tomoyuki Morimae. Hardness of Quantum Distribution Learning and Quantum Cryptography. The 32nd International Conference on the Theory and Application of Cryptology and Information Security (ASIACRYPT 2026) (2026). [<a href=\"https://arxiv.org/abs/2507.01292\" target=\"_blank\" rel=\"noopener\">arXiv:2507.01292</a>].",
+      "inproceedings": {
+        "entryType": "inproceedings",
+        "citationKey": "Hsieh2026Conf46",
+        "author": "Taiga Hiroka, Min-Hsiu Hsieh, Tomoyuki Morimae",
+        "title": "Hardness of Quantum Distribution Learning and Quantum Cryptography",
+        "booktitle": "The 32nd International Conference on the Theory and Application of Cryptology and Information Security (ASIACRYPT 2026)",
+        "year": "2026",
+        "pages": "",
+        "doi": "",
+        "url": "https://arxiv.org/abs/2507.01292",
+        "editor": "",
+        "series": "",
+        "volume": "",
+        "publisher": "",
+        "address": "",
+        "isbn": "",
+        "issn": "",
+        "urn": "",
+        "note": "",
+        "arxiv": "2507.01292"
+      }
+    },
     {
       "id": "conferences-44",
       "contentHtml": "Min-Hsiu Hsieh, Michael de Oliveira, Sathyawageeswar Subramanian, Xingjian Zhang. Worst-case depth hierarchy for shallow quantum circuits. 67th Annual IEEE Symposium on Foundations of Computer Science (FOCS 2026) (2026). [<a href=\"https://arxiv.org/abs/2606.16425\" target=\"_blank\" rel=\"noopener\">arXiv:2606.16425</a>].",
