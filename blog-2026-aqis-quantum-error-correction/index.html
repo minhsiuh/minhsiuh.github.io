@@ -99,6 +99,56 @@ svg {
     z-index: 1000;
 }
 
+.site-backlink {
+    position: fixed;
+    left: 22px;
+    bottom: 22px;
+    z-index: 1001;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 44px;
+    padding: 0 16px;
+    border: 1px solid var(--control-border);
+    border-radius: 8px;
+    color: var(--control-text);
+    background: var(--control-bg);
+    font: 600 14px/1 ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    text-decoration: none;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition: background 160ms ease, border-color 160ms ease;
+}
+
+.site-backlink:hover,
+.site-backlink:focus-visible {
+    border-color: rgba(255, 255, 255, 0.55);
+    background: rgba(13, 42, 67, 0.94);
+}
+
+@media (max-width: 700px) {
+    .site-backlink {
+        left: 12px;
+        bottom: 12px;
+        justify-content: center;
+        width: 44px;
+        padding: 0;
+    }
+
+    .site-backlink-label {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+    }
+
+    .deck-controls {
+        bottom: 12px;
+    }
+}
+
 /* 7. Print one fixed-size slide per page */
 @media print {
     html,
@@ -140,7 +190,8 @@ svg {
         page-break-after: auto;
     }
 
-    .deck-controls {
+    .deck-controls,
+    .site-backlink {
         display: none !important;
     }
 }
@@ -424,6 +475,11 @@ svg {
         <span class="counter" id="slideCounter">1 / 39</span>
         <button type="button" id="nextSlide" aria-label="Next slide">›</button>
     </nav>
+
+    <a class="site-backlink" href="../blog.html" aria-label="Back to Blog">
+        <span aria-hidden="true">←</span>
+        <span class="site-backlink-label">Back to Blog</span>
+    </a>
 
     <script>
         /* ===========================================
