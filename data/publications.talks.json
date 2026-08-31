@@ -1,6 +1,6 @@
 {
   "section": "talks",
-  "updatedAt": "2026-08-28T10:20:00.000Z",
+  "updatedAt": "2026-08-31T05:25:00.000Z",
   "items": [
     {
       "id": "talks-aqis-2026-plenary",
@@ -27,6 +27,20 @@
       "venue": "The 26th Asian Quantum Information Science Conference (AQIS 2026)",
       "date": "28/08/2026",
       "location": "Main Hall (E15), KAIST campus, Daejeon, Korea",
+      "type": "Regular Talk"
+    },
+    {
+      "id": "talks-aqis-2026-distribution-learning-cryptography",
+      "contentHtml": "Taiga Hiroka, Min-Hsiu Hsieh, Tomoyuki Morimae. Hardness of Quantum Distribution Learning and Quantum Cryptography. Regular Talk in The 26th Asian Quantum Information Science Conference (AQIS 2026), Hall 2 (E16-1, Rm. 207), KAIST campus, Daejeon, Korea, 25/08/2026.",
+      "title": "Hardness of Quantum Distribution Learning and Quantum Cryptography",
+      "authors": [
+        "Taiga Hiroka",
+        "Min-Hsiu Hsieh",
+        "Tomoyuki Morimae"
+      ],
+      "venue": "The 26th Asian Quantum Information Science Conference (AQIS 2026)",
+      "date": "25/08/2026",
+      "location": "Hall 2 (E16-1, Rm. 207), KAIST campus, Daejeon, Korea",
       "type": "Regular Talk"
     },
     {
