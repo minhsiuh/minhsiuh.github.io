@@ -1,7 +1,41 @@
 {
   "section": "talks",
-  "updatedAt": "2026-08-31T05:25:00.000Z",
+  "updatedAt": "2026-09-18T05:44:00.000Z",
   "items": [
+    {
+      "id": "talks-qtml-2026-aqer",
+      "contentHtml": "Kaining Zhang, Xinbiao Wang, Yuxuan Du, Min-Hsiu Hsieh, Dacheng Tao. AQER: A Scalable and Efficient Data Loader for Digital Quantum Computers. Talk in The 10th International Conference on Quantum Techniques in Machine Learning (QTML 2026), Jan Mouton Learning Centre, Stellenbosch University, Stellenbosch, South Africa, 06-11/12/2026.",
+      "title": "AQER: A Scalable and Efficient Data Loader for Digital Quantum Computers",
+      "authors": [
+        "Kaining Zhang",
+        "Xinbiao Wang",
+        "Yuxuan Du",
+        "Min-Hsiu Hsieh",
+        "Dacheng Tao"
+      ],
+      "venue": "The 10th International Conference on Quantum Techniques in Machine Learning (QTML 2026)",
+      "date": "06-11/12/2026",
+      "location": "Jan Mouton Learning Centre, Stellenbosch University, Stellenbosch, South Africa",
+      "type": "Talk"
+    },
+    {
+      "id": "talks-qtml-2026-pauli-path-simulator",
+      "contentHtml": "Kaining Zhang, Xinbiao Wang, Kunsheng Li, Qixin Zhang, Yuxuan Du, Min-Hsiu Hsieh, Dacheng Tao. Stochastic Pauli-Path Simulator for Large-Scale Quantum Optimization. Talk in The 10th International Conference on Quantum Techniques in Machine Learning (QTML 2026), Jan Mouton Learning Centre, Stellenbosch University, Stellenbosch, South Africa, 06-11/12/2026.",
+      "title": "Stochastic Pauli-Path Simulator for Large-Scale Quantum Optimization",
+      "authors": [
+        "Kaining Zhang",
+        "Xinbiao Wang",
+        "Kunsheng Li",
+        "Qixin Zhang",
+        "Yuxuan Du",
+        "Min-Hsiu Hsieh",
+        "Dacheng Tao"
+      ],
+      "venue": "The 10th International Conference on Quantum Techniques in Machine Learning (QTML 2026)",
+      "date": "06-11/12/2026",
+      "location": "Jan Mouton Learning Centre, Stellenbosch University, Stellenbosch, South Africa",
+      "type": "Talk"
+    },
     {
       "id": "talks-aqis-2026-plenary",
       "contentHtml": "Min-Hsiu Hsieh. Quantum Error Correction: Now and Future. Plenary Talk in The 26th Asian Quantum Information Science Conference (AQIS 2026), KAIST Auditorium (E15), KAIST campus, Daejeon, Korea, 27/08/2026.",
