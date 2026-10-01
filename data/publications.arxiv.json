@@ -3,6 +3,10 @@
   "updatedAt": "2026-10-01T00:00:00.000Z",
   "items": [
     {
+      "id": "arxiv-45",
+      "contentHtml": "Kosuke Matsui, Jun-Yi Wu, Min-Hsiu Hsieh, Mio Murao. Reducing the Entanglement Cost of Distributed Bipartite Quantum Computation with Constant Qubit Overhead. [<a href=\"https://arxiv.org/abs/2609.39865\" target=\"_blank\" rel=\"noopener\">arXiv:2609.39865</a>] (2026)."
+    },
+    {
       "id": "arxiv-43",
       "contentHtml": "Ryu Hayakawa, Angus Southwell, Caesnan M. G. Leditto, Kuo-Chin Chen, Min-Hsiu Hsieh. Double Localization for Quantum Gibbs Sampler Gaps: From an Abstract Framework to Finite-Group Models. [<a href=\"https://arxiv.org/abs/2609.39802\" target=\"_blank\" rel=\"noopener\">arXiv:2609.39802</a>] (2026)."
     },
