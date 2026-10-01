@@ -1,7 +1,11 @@
 {
   "section": "arxiv",
-  "updatedAt": "2026-08-09T00:00:00.000Z",
+  "updatedAt": "2026-10-01T00:00:00.000Z",
   "items": [
+    {
+      "id": "arxiv-43",
+      "contentHtml": "Ryu Hayakawa, Angus Southwell, Caesnan M. G. Leditto, Kuo-Chin Chen, Min-Hsiu Hsieh. Double Localization for Quantum Gibbs Sampler Gaps: From an Abstract Framework to Finite-Group Models. [<a href=\"https://arxiv.org/abs/2609.39802\" target=\"_blank\" rel=\"noopener\">arXiv:2609.39802</a>] (2026)."
+    },
     {
       "id": "arxiv-42",
       "contentHtml": "Gelo Noel M. Tabia, Kai-Siang Chen, Min-Hsiu Hsieh. Two-copy distillability of one-copy-undistillable negative-partial-transpose states in every dimension. [<a href=\"https://arxiv.org/abs/2608.08836\" target=\"_blank\" rel=\"noopener\">arXiv:2608.08836</a>] (2026)."
