@@ -1,7 +1,11 @@
 {
   "section": "arxiv",
-  "updatedAt": "2026-10-01T00:00:00.000Z",
+  "updatedAt": "2026-10-02T00:00:00.000Z",
   "items": [
+    {
+      "id": "arxiv-46",
+      "contentHtml": "Min-Hsiu Hsieh, Shogo Yamada. Quantum Pseudorandom Error-Correcting Codes. [<a href=\"https://arxiv.org/abs/2609.38986\" target=\"_blank\" rel=\"noopener\">arXiv:2609.38986</a>] (2026)."
+    },
     {
       "id": "arxiv-45",
       "contentHtml": "Kosuke Matsui, Jun-Yi Wu, Min-Hsiu Hsieh, Mio Murao. Reducing the Entanglement Cost of Distributed Bipartite Quantum Computation with Constant Qubit Overhead. [<a href=\"https://arxiv.org/abs/2609.39865\" target=\"_blank\" rel=\"noopener\">arXiv:2609.39865</a>] (2026)."
