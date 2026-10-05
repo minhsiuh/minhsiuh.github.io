@@ -1,7 +1,11 @@
 {
   "section": "arxiv",
-  "updatedAt": "2026-10-02T00:00:00.000Z",
+  "updatedAt": "2026-10-05T00:00:00.000Z",
   "items": [
+    {
+      "id": "arxiv-47",
+      "contentHtml": "Caesnan M. G. Leditto, Kuo-Chin Chen, Min-Hsiu Hsieh. From Heat to Homology: Spectral Gap Transfer for Exact Quantum Gibbs Sampling at All Temperatures. [<a href=\"https://arxiv.org/abs/2610.02859\" target=\"_blank\" rel=\"noopener\">arXiv:2610.02859</a>] (2026)."
+    },
     {
       "id": "arxiv-46",
       "contentHtml": "Min-Hsiu Hsieh, Shogo Yamada. Quantum Pseudorandom Error-Correcting Codes. [<a href=\"https://arxiv.org/abs/2609.38986\" target=\"_blank\" rel=\"noopener\">arXiv:2609.38986</a>] (2026)."
