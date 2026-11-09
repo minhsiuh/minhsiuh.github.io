@@ -1,7 +1,32 @@
 {
   "section": "conferences",
-  "updatedAt": "2026-08-31T07:15:00.000Z",
+  "updatedAt": "2026-11-09T10:56:58.000Z",
   "items": [
+    {
+      "id": "conferences-47",
+      "contentHtml": "Taiga Hiroka, Matthew Gray, Min-Hsiu Hsieh. Computationally Indistinguishable Learning. The 18th Innovations in Theoretical Computer Science Conference (ITCS 2027) (2027). Accepted for presentation. [<a href=\"https://itcs-conf.org/\" target=\"_blank\" rel=\"noopener\">conference</a>].",
+      "inproceedings": {
+        "entryType": "inproceedings",
+        "citationKey": "Hsieh2027ITCS",
+        "author": "Taiga Hiroka, Matthew Gray, Min-Hsiu Hsieh",
+        "title": "Computationally Indistinguishable Learning",
+        "booktitle": "The 18th Innovations in Theoretical Computer Science Conference (ITCS 2027)",
+        "year": "2027",
+        "pages": "",
+        "doi": "",
+        "url": "https://itcs-conf.org/",
+        "editor": "",
+        "series": "",
+        "volume": "",
+        "publisher": "",
+        "address": "",
+        "isbn": "",
+        "issn": "",
+        "urn": "",
+        "note": "Accepted for presentation; conference scheduled for 12–15 January 2027.",
+        "arxiv": ""
+      }
+    },
     {
       "id": "conferences-46",
       "contentHtml": "Taiga Hiroka, Min-Hsiu Hsieh, Tomoyuki Morimae. Hardness of Quantum Distribution Learning and Quantum Cryptography. The 32nd International Conference on the Theory and Application of Cryptology and Information Security (ASIACRYPT 2026) (2026). [<a href=\"https://arxiv.org/abs/2507.01292\" target=\"_blank\" rel=\"noopener\">arXiv:2507.01292</a>].",
