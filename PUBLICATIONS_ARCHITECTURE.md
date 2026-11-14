@@ -1,6 +1,6 @@
 # Publications Architecture (Canonical)
 
-Last updated: 2026-03-10
+Last updated: 2026-10-12
 
 ## 1) Data Source of Truth
 
@@ -26,6 +26,24 @@ Each file uses:
   ]
 }
 ```
+
+The arXiv section is structured as `item.arxiv` (not parsed from HTML):
+
+```json
+{
+  "id": "arxiv-39",
+  "arxiv": {
+    "title": "Paper title",
+    "authors": ["First Author", "Second Author"],
+    "year": 2024,
+    "id": "2410.13499v2",
+    "version": "v2",
+    "url": "https://arxiv.org/abs/2410.13499v2"
+  }
+}
+```
+
+`version` is present only when the source arXiv URL/identifier explicitly has a version suffix. Keep the stable outer item ID; preserve author order and the exact arXiv version URL. Do not add unknown metadata or retain `contentHtml` once this section is structured.
 
 ---
 
@@ -66,7 +84,7 @@ Goal: split into stable fields:
 Rows:
 1. title
 2. authors
-3. `arXiv:xxxx.xxxxx (year)`
+3. `arXiv:<id>[version] (year)` from `item.arxiv.id`, `version`, and `year`
 4. actions: copy plain / copy BibTeX
 
 ### books / journals / conferences
@@ -116,6 +134,8 @@ No fourth row in talks.
 Only include fields that are explicitly known.
 Do **not** invent missing values.
 
+arXiv BibTeX is generated from `item.arxiv`: authors, title, year, eprint, archivePrefix, and the explicit version note/URL when present. Do not assume a primary class when it is not in the structured source.
+
 ### Current curated hard overrides
 
 - TQC 2024 LIPIcs DOI `10.4230/LIPIcs.TQC.2024.8` -> full structured inproceedings fields.
@@ -159,6 +179,8 @@ For batch changes, run validator:
 ```bash
 node scripts/validate-publications.mjs
 ```
+
+For arXiv structured-data changes, also run `node scripts/test-arxiv-structured.mjs` to compare the full collection against its dated migration snapshot and check renderer independence from `contentHtml`.
 
 Optional link-check mode:
 

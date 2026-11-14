@@ -138,6 +138,7 @@ git push origin main
 ## 9) publications.html 長期維護規範（必遵守）
 
 1. Publications 各區塊資料以 JSON 結構化欄位為主，不以句子解析為主：
+   - arXiv -> `arxiv`（`title/authors/year/id/version/url`）
    - journals -> `article`（對齊 `@article` 欄位）
    - conferences -> `inproceedings`（對齊 `@inproceedings` 欄位）
    - books -> `book`（對齊 `@book/@incollection/@proceedings` 欄位）
@@ -148,6 +149,7 @@ git push origin main
 5. 重大清洗前先建立備份：`backups/publications.*.<YYYY-MM-DD>.json`。
 6. 會議論文排序固定為年份遞減（newest first）。
 7. 期刊統計表若使用人工維護清單，該清單視為 source-of-truth，未經明確要求不可自動覆寫。
+8. arXiv 欄位、ID/version/URL 一致性與 renderer 不依賴 `contentHtml`，須以 `node scripts/test-arxiv-structured.mjs` 回歸驗證。
 
 ---
 
@@ -156,13 +158,14 @@ git push origin main
 使用者指出 publication card 有缺漏或錯誤時，不可只修單一截圖項目後回報「都好了」。必須直接完成以下流程：
 
 1. 先定位使用者看到的 card 類型與資料來源：
+   - arXiv card → `data/publications.arxiv.json` / `arxiv`
    - conference card → `data/publications.conferences.json` / `inproceedings`
    - journal card → `data/publications.journals.json` / `article`
    - book card → `data/publications.books.json` / `book`
 2. 用 `id + title` 精準定位，不用畫面順序猜。
 3. 若補 arXiv/DOI：
-   - 同步更新 `contentHtml`
-   - 同步更新 structured field（例如 `inproceedings.arxiv`、`article.doi`）
+   - 更新該區塊的結構化欄位；arXiv 區不得依賴或重新加入 `contentHtml`
+   - 僅對仍使用 `contentHtml` 的舊區塊同步更新顯示欄位
    - 順序固定 `[arXiv] [DOI]`
 4. 若使用者說「這一類都檢查」或問題明顯是系統性缺漏，必須跑全區塊 audit：
    - 列出該 section 總筆數
@@ -200,4 +203,4 @@ node scripts/validate-publications.mjs
 
 ---
 
-_最後更新：2026-09-26_
+_最後更新：2026-10-12_

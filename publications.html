@@ -970,7 +970,7 @@
 
     <script>
         /*
-         * Publications page architecture (2026-03)
+         * Publications page architecture (2026-10)
          * ----------------------------------------
          * Data source of truth:
          *   - data/publications.arxiv.json
@@ -980,10 +980,10 @@
          *   - data/publications.talks.json
          *
          * Rendering modes:
-         *   - card            : arXiv (legacy contentHtml + structured fallback)
+         *   - card            : arXiv (`item.arxiv` structured fields only)
          *   - book-card       : books (structured `book` fields, BibTeX-aligned)
          *   - journal-card    : journals (structured `article` fields, BibTeX-aligned)
-         *   - conference-card : conferences (currently mixed; moving to structured `inproceedings`)
+         *   - conference-card : conferences (structured `inproceedings` fields)
          *   - talk-card       : talks (structured fields only; no contentHtml parsing)
          *
          * Copy behavior:
@@ -992,7 +992,7 @@
          *
          * IMPORTANT:
          *   - For all sections, do NOT re-introduce contentHtml parsing into UI rows once structured fields exist.
-         *   - Prefer structured fields (`article`/`book`/`inproceedings`/talk fields) over sentence parsing.
+         *   - Prefer structured fields (`arxiv`/`article`/`book`/`inproceedings`/talk fields) over sentence parsing.
          *   - If a field is unknown, leave blank (never fabricate metadata).
          */
         document.addEventListener('DOMContentLoaded', async function() {
@@ -1297,9 +1297,17 @@
                 const year = bibEscape(item.year || 'N/A');
 
                 if (mode === 'arxiv') {
-                    const arxivId = extractArxivId(extra.arxivHref);
-                    const primaryClass = arxivId.startsWith('quant-ph/') ? 'quant-ph' : 'quant-ph';
-                    return `@misc{${key},\n  author = {${authors}},\n  title = {${title}},\n  year = {${year}},\n  eprint = {arXiv:${arxivId}},\n  archivePrefix = {arXiv},\n  primaryClass = {${primaryClass}}\n}`;
+                    const arxiv = item.arxiv || {};
+                    const arxivId = String(arxiv.id || extractArxivId(extra.arxivHref) || '').replace(/^arXiv:/i, '');
+                    const fields = [];
+                    if (authors) fields.push(`  author = {${authors.split(/,\s*/).map((name) => name.trim()).join(' and ')}}`);
+                    if (title) fields.push(`  title = {${title}}`);
+                    if (arxiv.year) fields.push(`  year = {${bibEscape(arxiv.year)}}`);
+                    if (arxivId) fields.push(`  eprint = {${bibEscape(arxivId)}}`);
+                    if (arxivId) fields.push('  archivePrefix = {arXiv}');
+                    if (arxiv.version) fields.push(`  note = {${bibEscape(arxiv.version)}}`);
+                    if (arxiv.url) fields.push(`  url = {${bibEscape(arxiv.url)}}`);
+                    return `@misc{${key},\n${fields.join(',\n')}\n}`;
                 }
 
                 if (mode === 'conference') {
@@ -1405,23 +1413,24 @@
                     const items = Array.isArray(data.items) ? data.items : [];
 
                     if (mode === 'card') {
-                        list.innerHTML = items.map((item, i) => {
-                            const p = parseItem(item.contentHtml || '');
-                            const s = parseJournalHead(p.head || '');
-                            const titleText = cleanTitle(s.title || p.plain);
-                            const authorText = s.authors || '';
-                            const arxivId = p.arxiv ? (p.arxiv.href.match(/arxiv\.org\/abs\/([^/?#]+)/)?.[1] || 'link') : null;
-                            const arxivLink = p.arxiv ? `<a href="${p.arxiv.href}" target="_blank" rel="noopener">arXiv:${arxivId}</a>` : `<a class="disabled">arXiv</a>`;
-                            const arxivPart = arxivId && arxivId !== 'link' ? ` arXiv:${arxivId}` : '';
-                            const yearPart = p.year ? ` (${p.year})` : '';
-                            const plainEnc = encodeURIComponent(`${authorText}. ${titleText}.${arxivPart}${yearPart}.`);
-                            const bibEnc = encodeURIComponent(buildBibtex('arxiv', { title: titleText, authors: authorText, year: p.year }, `Hsieh${p.year}Arxiv${i + 1}`, { arxivHref: p.arxiv ? p.arxiv.href : '' }));
+                        list.innerHTML = items.map((item) => {
+                            const a = item.arxiv || {};
+                            const titleText = cleanTitle(a.title || '');
+                            const authors = Array.isArray(a.authors) ? a.authors : [];
+                            const authorText = authors.join(', ');
+                            const arxivId = String(a.id || '');
+                            const arxivUrl = String(a.url || '');
+                            const displayId = arxivId ? `${arxivId}${a.version && !arxivId.endsWith(a.version) ? a.version : ''}` : '';
+                            const arxivLink = arxivUrl ? `<a href="${esc(arxivUrl)}" target="_blank" rel="noopener">arXiv:${esc(displayId)}</a>` : `<span class="disabled">arXiv unavailable</span>`;
+                            const yearPart = a.year ? ` (${a.year})` : '';
+                            const plainEnc = encodeURIComponent(`${authorText}. ${titleText}.${arxivId ? ` arXiv:${displayId}` : ''}${yearPart}.`);
+                    const bibEnc = encodeURIComponent(buildBibtex('arxiv', { title: titleText, authors: authorText, year: a.year, arxiv: a }, `${item.id}Arxiv`));
                             return `
                               <li>
                                 <article class="pub-card">
                                   <h4 class="pub-title" title="${esc(titleText)}">${esc(titleText)}</h4>
                                   <p class="pub-authors">${esc(authorText).replace('Min-Hsiu Hsieh', '<span class="author-me">Min-Hsiu Hsieh</span>').replace('Hsieh, Min-Hsiu', '<span class="author-me">Hsieh, Min-Hsiu</span>')}</p>
-                                  <div class="pub-links">${arxivLink}<span style="color:#6b7280; margin-left:4px;">(${esc(p.year)})</span></div>
+                                  <div class="pub-links">${arxivLink}${a.year ? `<span style="color:#6b7280; margin-left:4px;">(${esc(a.year)})</span>` : ''}</div>
                                   <div class="pub-actions">
                                     <button type="button" data-copy="plain" data-copy-text="${plainEnc}">Copy citation (plain)</button>
                                     <button type="button" data-copy="bib" data-copy-text="${bibEnc}">Copy BibTeX</button>

@@ -32,7 +32,7 @@ function normalizeDoi(value = '') {
 }
 
 function structuredFields(item = {}) {
-  return item.article || item.inproceedings || item.book || null;
+  return item.arxiv || item.article || item.inproceedings || item.book || null;
 }
 
 function extractYear(html) {
@@ -93,9 +93,32 @@ for (const file of files) {
     idSeen.add(item.id);
 
     const html = item.contentHtml || '';
-    const { arxiv, doi, links } = extractLinks(html);
-    const year = extractYear(html);
+    const { arxiv: htmlArxiv, doi, links } = extractLinks(html);
+    const arxiv = section === 'arxiv' ? item.arxiv?.url : htmlArxiv;
+    const year = section === 'arxiv' ? Number(item.arxiv?.year) || null : extractYear(html);
     const structured = structuredFields(item);
+
+    if (section === 'arxiv') {
+      const a = item.arxiv;
+      if (!a || typeof a !== 'object' || Array.isArray(a)) {
+        errors.push(`${section}:${item.id} missing structured arxiv fields`);
+      } else {
+        for (const field of ['title', 'authors', 'year', 'id', 'url']) {
+          if (a[field] === undefined || a[field] === null || a[field] === '' || (Array.isArray(a[field]) && !a[field].length)) {
+            errors.push(`${section}:${item.id} missing arxiv.${field}`);
+          }
+        }
+        if (typeof a.title !== 'string' || !Array.isArray(a.authors) || a.authors.some((name) => typeof name !== 'string' || !name.trim())) {
+          errors.push(`${section}:${item.id} invalid structured title/authors`);
+        }
+        if (item.contentHtml !== undefined) errors.push(`${section}:${item.id} renderer source must not depend on contentHtml`);
+        const structuredId = String(a.id || '');
+        const urlId = extractArxivId(a.url || '');
+        if (structuredId !== urlId) errors.push(`${section}:${item.id} arxiv.id ${structuredId} != arxiv.url ${urlId}`);
+        const version = structuredId.match(/v(\d+)$/)?.[0] || '';
+        if ((a.version || '') !== version) errors.push(`${section}:${item.id} arxiv.version ${a.version || '(blank)'} != ID version ${version || '(none)'}`);
+      }
+    }
 
     if (!year) warnings.push(`${section}:${item.id} missing year`);
 
@@ -107,13 +130,16 @@ for (const file of files) {
     }
 
     if (arxiv) {
-      if (arxivSeen.has(arxiv) && !allowedDuplicateArxiv.has(arxiv)) {
-        errors.push(`${section}:${item.id} duplicate arXiv in same section`);
+      const arxivKey = section === 'arxiv'
+        ? extractArxivId(item.arxiv?.url || '').replace(/v\d+$/i, '').toLowerCase()
+        : arxiv;
+      if (arxivKey && arxivSeen.has(arxivKey) && !allowedDuplicateArxiv.has(arxivKey) && !allowedDuplicateArxiv.has(arxiv)) {
+        errors.push(`${section}:${item.id} duplicate arXiv ID in same section (${arxivKey})`);
       }
-      arxivSeen.add(arxiv);
+      if (arxivKey) arxivSeen.add(arxivKey);
     }
 
-    if (structured) {
+    if (structured && section !== 'arxiv') {
       const htmlArxiv = extractArxivId(arxiv || '');
       const htmlDoi = normalizeDoi(doi || '');
       const structuredArxiv = String(structured.arxiv || '').replace(/\.$/, '');
@@ -146,6 +172,10 @@ for (const file of files) {
       for (const url of links) {
         const status = await urlStatus(url);
         if (!status.ok) errors.push(`${section}:${item.id} broken link ${url} (${status.status})`);
+      }
+      if (section === 'arxiv' && item.arxiv?.url) {
+        const status = await urlStatus(item.arxiv.url);
+        if (!status.ok) errors.push(`${section}:${item.id} broken link ${item.arxiv.url} (${status.status})`);
       }
     }
   }
